@@ -143,11 +143,16 @@ await browser.close();
 // ---------- vídeo ----------
 const list = path.join(outDir, 'list.txt');
 fs.writeFileSync(list, slides.map(([n]) => `file '${n}.png'\nduration ${SECONDS_PER_SLIDE}`).join('\n') + `\nfile '${slides.at(-1)[0]}.png'\n`);
-execFileSync('ffmpeg', ['-y', '-f', 'concat', '-safe', '0', '-i', list,
-  '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo',
-  '-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart',
-  '-c:a', 'aac', '-b:a', '128k', '-shortest', '-t', String(SECONDS_PER_SLIDE * slides.length),
-  path.join(outDir, 'reel.mp4')], { stdio: 'inherit' });
+const total = SECONDS_PER_SLIDE * slides.length;
+const music = path.resolve('assets/music.mp3');
+const hasMusic = fs.existsSync(music);
+const args = ['-y', '-f', 'concat', '-safe', '0', '-i', list];
+if (hasMusic) args.push('-stream_loop', '-1', '-i', music);
+else args.push('-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo');
+args.push('-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart');
+if (hasMusic) args.push('-af', `volume=0.55,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8`);
+args.push('-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', '0:v', '-map', '1:a', '-t', String(total), path.join(outDir, 'reel.mp4'));
+execFileSync('ffmpeg', args, { stdio: 'inherit' });
 fs.unlinkSync(list);
 fs.writeFileSync(path.join(outDir, 'caption.txt'), d.caption || '');
 console.log('Vídeo listo:', path.join(outDir, 'reel.mp4'));
