@@ -1,0 +1,107 @@
+{
+  "id": "edu-015-broker",
+  "label": "Cómo elegir un bróker",
+  "accent": "green",
+  "caption": "¿Cómo elegir un bróker? 🏦 Lo que conviene mirar antes de abrir una cuenta.\n\nDesliza para ver qué comprobar: regulación, costes, mercados, herramientas y atención al cliente.\n\n💾 Guárdalo antes de abrir tu cuenta.",
+  "tags": [
+    "#broker",
+    "#bolsa",
+    "#inversion",
+    "#aprenderbolsa",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "BRÓKER",
+      "title": "Cómo elegir dónde invertir",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 190
+    },
+    {
+      "t": "point",
+      "head": "El [[intermediario]] entre tú y el mercado",
+      "body": "Un bróker es la plataforma a través de la que compras y vendes acciones, ETF y otros productos.",
+      "foot": "Tu puerta de entrada"
+    },
+    {
+      "t": "steps",
+      "head": "Lo primero: [[que esté regulado]]",
+      "steps": [
+        {
+          "t": "Autoridad supervisora",
+          "b": "En España, la CNMV; en la UE, mira su autorización."
+        },
+        {
+          "t": "Custodia de tus valores",
+          "b": "Separada del dinero de la empresa."
+        },
+        {
+          "t": "Garantía de inversores",
+          "b": "Comprueba si hay fondo de garantía y cuánto cubre."
+        },
+        {
+          "t": "Reputación",
+          "b": "Busca opiniones y su historial."
+        }
+      ],
+      "foot": "Sin esto, nada más"
+    },
+    {
+      "t": "cards",
+      "head": "Después, los costes",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Comisiones de compra y venta",
+          "b": "Fijas o porcentuales, según el mercado."
+        },
+        {
+          "t": "Custodia y mantenimiento",
+          "b": "Algunos cobran por tener la cuenta."
+        },
+        {
+          "t": "Cambio de divisa",
+          "b": "Puede ser un coste oculto si inviertes en dólares."
+        }
+      ],
+      "foot": "Los costes pequeños suman"
+    },
+    {
+      "t": "point",
+      "head": "Mercados y [[productos]]",
+      "body": "Comprueba si da acceso a lo que quieres: bolsas de EE. UU., Europa, ETF, fondos, fracciones de acciones…",
+      "foot": "No pagues por lo que no usas",
+      "kicker": "Que encaje con tu plan"
+    },
+    {
+      "t": "cards",
+      "head": "Otros detalles",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Facilidad de uso",
+          "b": "Una app clara evita errores."
+        },
+        {
+          "t": "Atención al cliente",
+          "b": "Que responda cuando haya un problema."
+        },
+        {
+          "t": "Informes fiscales",
+          "b": "Si te ayuda con los documentos para Hacienda, mejor."
+        }
+      ],
+      "foot": "Prueba antes de comprometerte"
+    },
+    {
+      "t": "close",
+      "head": "El mejor bróker es [[el que encaja contigo]]",
+      "body": "No hay uno perfecto para todos. Compara con calma antes de abrir cuenta.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

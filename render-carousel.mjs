@@ -61,6 +61,12 @@ function body(sl, accent) {
       return `<div style="display:flex;flex-direction:column;gap:${px(30)}">
         <div class="d" style="font-size:${px(130)};line-height:.92">${rich(sl.head, A)}</div>
         ${sl.steps.map((c, i) => `<div style="display:flex;gap:28px;align-items:center"><div style="flex:none;width:${px(84)};height:${px(84)};border-radius:50%;background:${GREEN};color:${INK};font-weight:700;font-size:${px(44)};display:flex;align-items:center;justify-content:center">${i + 1}</div><div><div style="font-size:${px(42)};font-weight:700">${esc(c.t)}</div><div style="font-size:${px(32)};line-height:1.25;color:${MUTED}">${esc(c.b)}</div></div></div>`).join('')}</div>`;
+    case 'stat':
+      return `<div style="display:flex;flex-direction:column;gap:${px(30)}">
+        ${sl.kicker ? `<div style="font-size:${px(40)};font-weight:700;color:${MUTED}">${esc(sl.kicker)}</div>` : ''}
+        <div class="d" style="white-space:nowrap;font-size:${px(sl.bigSize || 260)};line-height:.9;color:${sl.color === 'green' ? GREEN : sl.color === 'red' ? RED : A}">${esc(sl.big)}</div>
+        <div class="d" style="font-size:${px(88)};line-height:.98">${rich(sl.head, A)}</div>
+        <div style="font-size:${px(42)};line-height:1.33;font-weight:500;color:${SOFT}">${esc(sl.body)}</div></div>`;
     case 'myth':
       return `<div style="display:flex;flex-direction:column;gap:${px(36)}">
         <div style="font-size:${px(36)};font-weight:700;color:${RED}">MITO</div>
@@ -79,7 +85,7 @@ function body(sl, accent) {
 const mythCount = item.slides.filter(x => x.t === 'myth').length;
 function labelFor(sl, i) {
   if (sl.label) return sl.label;
-  if (sl.t === 'myth') return `Mito ${item.slides.slice(0, i + 1).filter(x => x.t === 'myth').length} de ${mythCount}`;
+  if (sl.t === 'myth' && mythCount > 1) return `Mito ${item.slides.slice(0, i + 1).filter(x => x.t === 'myth').length} de ${mythCount}`;
   return item.label || '';
 }
 
@@ -111,7 +117,11 @@ for (let i = 0; i < N; i++) {
   let s = 1;
   for (; s >= 0.55; s -= 0.05) {
     await page.evaluate(v => document.documentElement.style.setProperty('--s', v), s.toFixed(2));
-    const over = await page.evaluate(() => { const m = document.getElementById('mid'); return m.scrollHeight > m.clientHeight + 1; });
+    const over = await page.evaluate(() => {
+      const m = document.getElementById('mid');
+      if (m.scrollHeight > m.clientHeight + 1) return true;
+      return [...m.querySelectorAll('*')].some(e => e.scrollWidth > e.clientWidth + 1 && e.children.length === 0 ? true : (e.scrollWidth > m.clientWidth + 1));
+    });
     if (!over) break;
   }
   if (s < 0.55) warnings.push(`Diapositiva ${i + 1}: el texto no cabe`);

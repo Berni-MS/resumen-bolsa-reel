@@ -1,0 +1,78 @@
+{
+  "id": "edu-017-bonos",
+  "label": "Qué es un bono",
+  "accent": "green",
+  "caption": "¿Qué es un bono? 📜 Prestar dinero a un Estado o a una empresa a cambio de intereses.\n\nDesliza para ver cómo funcionan, qué riesgos tienen y por qué su precio se mueve al revés que los tipos de interés.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#bonos",
+    "#rentafija",
+    "#inversion",
+    "#bolsa",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "BONO",
+      "title": "Prestar dinero a cambio de intereses",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 220
+    },
+    {
+      "t": "point",
+      "head": "Un [[préstamo]] que haces tú",
+      "body": "Un bono es una deuda que emite un Estado o una empresa. Tú se la prestas y te pagan intereses; al vencimiento te devuelven el dinero.",
+      "foot": "Renta fija"
+    },
+    {
+      "t": "point",
+      "head": "Las tres [[claves]]",
+      "body": "El cupón (los intereses), el vencimiento (cuándo te lo devuelven) y el emisor (quién te debe el dinero).",
+      "foot": "Cupón, plazo y emisor",
+      "kicker": "Qué mirar"
+    },
+    {
+      "t": "point",
+      "head": "Precio y [[tipos]]",
+      "body": "Cuando los tipos de interés suben, los bonos ya emitidos suelen perder valor, porque los nuevos pagan más. Cuando bajan, ocurre lo contrario.",
+      "foot": "Se mueven en sentido contrario",
+      "kicker": "Una relación inversa"
+    },
+    {
+      "t": "cards",
+      "head": "Riesgos de los bonos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Riesgo de impago",
+          "b": "El emisor puede no devolver el dinero."
+        },
+        {
+          "t": "Riesgo de tipos",
+          "b": "Si suben, el precio de mercado baja."
+        },
+        {
+          "t": "Inflación",
+          "b": "Si sube más que el cupón, pierdes poder adquisitivo."
+        }
+      ],
+      "foot": "Menos ruidosos, pero no libres de riesgo"
+    },
+    {
+      "t": "point",
+      "head": "Para qué sirven en una [[cartera]]",
+      "body": "Suelen oscilar menos que las acciones y pueden aportar estabilidad. Cómo combinarlos depende de tus objetivos y de tu tolerancia al riesgo.",
+      "foot": "Equilibrio, no sustitución",
+      "kicker": "Un papel distinto"
+    },
+    {
+      "t": "close",
+      "head": "Un bono es [[otra forma]] de invertir",
+      "body": "Entender cómo se mueve ayuda a leer las noticias de tipos e inflación.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "mitos-002-lunes-negro-1987",
+  "label": "Datos · Lunes Negro",
+  "accent": "red",
+  "caption": "El 19 de octubre de 1987 el Dow Jones cayó un 22,6 % en una sola sesión 📉\n\nEl mito: «un día de pánico puede acabar con tu inversión para siempre». Los datos: el S&P 500 cayó un 20,47 % ese día y recuperó su máximo previo el 26 de julio de 1989, unos 21 meses después.\n\nDesliza para verlo.",
+  "tags": [
+    "#bolsa",
+    "#crash",
+    "#historiabursatil",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Black Monday (1987)"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−22,6 %",
+      "title": "El día que el Dow Jones se hundió",
+      "foot": "Lunes 19 de octubre de 1987",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "508 puntos",
+      "head": "Lo que cayó el Dow Jones",
+      "body": "El 19 de octubre de 1987 perdió 508 puntos, un 22,6 %: la mayor caída porcentual en una sola sesión de su historia.",
+      "foot": "Fuente: Wikipedia (Black Monday 1987)",
+      "kicker": "Lunes Negro",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "−20,47 %",
+      "head": "Lo que cayó el S&P 500",
+      "body": "Ese mismo día, el S&P 500 se desplomó un 20,47 %: la mayor caída de un solo día de su historia.",
+      "foot": "Fuente: Wikipedia (Black Monday 1987)",
+      "kicker": "Mismo día, otro índice",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Un día de pánico lo arruina todo para siempre»",
+      "reality": "El S&P 500 recuperó su máximo previo (336,77) el 26 de julio de 1989, unos 21 meses después del desplome.",
+      "foot": "Fuente: Wikipedia (Black Monday 1987)"
+    },
+    {
+      "t": "point",
+      "head": "La lección",
+      "body": "Los días de caída extrema existen y pueden ser brutales. Pero una sola sesión no define el resultado de quien invierte con plan y a largo plazo.",
+      "foot": "Un día no es una inversión",
+      "kicker": "Qué aprender"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que no significa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "No dice que siempre se recupere",
+          "b": "Cada crisis es distinta; algunas tardan años."
+        },
+        {
+          "t": "No es un consejo de aguantar",
+          "b": "Depende de tu situación y de tu tolerancia al riesgo."
+        },
+        {
+          "t": "No predice el próximo crash",
+          "b": "La historia ayuda a entender, no a adivinar."
+        }
+      ],
+      "foot": "Sentido común"
+    },
+    {
+      "t": "close",
+      "head": "Lo que pasó entonces [[no es una promesa]]",
+      "body": "La historia enseña cómo se comportan los mercados, no qué harán mañana.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

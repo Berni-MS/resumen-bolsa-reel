@@ -1,0 +1,94 @@
+{
+  "id": "edu-016-indexado-vs-etf",
+  "label": "Fondo indexado o ETF",
+  "accent": "green",
+  "caption": "Fondo indexado o ETF: ¿en qué se parecen y en qué se diferencian? ⚖️\n\nDesliza para ver las diferencias clave: cómo se compran, cuándo se ejecutan y qué cambia a nivel práctico. En España, la fiscalidad también importa: consulta tu caso.\n\n💾 Guárdalo para compararlos.",
+  "tags": [
+    "#ETF",
+    "#fondosindexados",
+    "#inversion",
+    "#bolsa",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "VS",
+      "title": "Fondo indexado o ETF",
+      "foot": "Desliza para compararlos",
+      "bigSize": 400
+    },
+    {
+      "t": "point",
+      "head": "Lo que [[comparten]]",
+      "body": "Los dos buscan replicar un índice y suelen ofrecer diversificación a costes bajos. La diferencia está en cómo se contratan y se negocian.",
+      "foot": "Mismo objetivo, distinta forma"
+    },
+    {
+      "t": "point",
+      "head": "El [[fondo indexado]]",
+      "body": "Se compra y vende a un único precio diario, el valor liquidativo. Se contrata con una gestora o bróker y suele permitir aportaciones periódicas automáticas.",
+      "foot": "Cómodo para ahorrar cada mes",
+      "kicker": "Un precio al día"
+    },
+    {
+      "t": "point",
+      "head": "El [[ETF]]",
+      "body": "Cotiza en bolsa y se compra y vende a lo largo de la sesión, como una acción. Necesitas una cuenta en un bróker.",
+      "foot": "Precio en tiempo real",
+      "kicker": "Como una acción"
+    },
+    {
+      "t": "cards",
+      "head": "Diferencias prácticas",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Aportaciones",
+          "b": "Los fondos suelen facilitar las automáticas; en ETF, depende del bróker."
+        },
+        {
+          "t": "Fraccionamiento",
+          "b": "Muchos fondos permiten importes pequeños; en ETF, depende de la plataforma."
+        },
+        {
+          "t": "Fiscalidad en España",
+          "b": "Los traspasos entre fondos no tributan, algo que no ocurre con los ETF. Consulta tu caso."
+        }
+      ],
+      "foot": "Revisa los detalles"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de elegir, [[compara]]",
+      "steps": [
+        {
+          "t": "Índice replicado",
+          "b": "Que sea el que quieres."
+        },
+        {
+          "t": "Comisiones totales",
+          "b": "Gestión, custodia y compraventa."
+        },
+        {
+          "t": "Tamaño del producto",
+          "b": "Más tamaño suele dar mayor estabilidad."
+        },
+        {
+          "t": "Comodidad",
+          "b": "Cómo vas a aportar y a vender."
+        }
+      ],
+      "foot": "No hay uno mejor para todos"
+    },
+    {
+      "t": "close",
+      "head": "No hay [[ganador]] absoluto",
+      "body": "Elige el que encaje con tu forma de invertir y tu situación.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

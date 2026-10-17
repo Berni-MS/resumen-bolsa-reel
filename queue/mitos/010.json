@@ -1,0 +1,84 @@
+{
+  "id": "mitos-010-flash-crash",
+  "label": "Datos · Flash crash",
+  "accent": "red",
+  "caption": "El 6 de mayo de 2010, el Dow Jones perdió unos 1.000 puntos en minutos 💥\n\nCayó 998,5 puntos (cerca de un 9 %) y se esfumaron temporalmente cerca de un billón de dólares de valor de mercado. Y todo se recuperó en gran parte en menos de una hora.\n\nDesliza para ver qué ocurrió.\n\nNota: billón = un millón de millones.",
+  "tags": [
+    "#flashcrash",
+    "#bolsa",
+    "#volatilidad",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, 2010 flash crash"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−9 %",
+      "title": "En 36 minutos: el «flash crash» de 2010",
+      "foot": "6 de mayo de 2010",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "998,5",
+      "head": "Puntos que perdió el Dow",
+      "body": "El 6 de mayo de 2010 el Dow Jones cayó 998,5 puntos, alrededor de un 9 %, la mayor parte en cuestión de minutos.",
+      "foot": "Fuente: Wikipedia (2010 flash crash)",
+      "kicker": "Un día de mayo",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "36 min",
+      "head": "Lo que duró la caída",
+      "body": "Empezó a las 14:32 (hora de Nueva York) y duró unos 36 minutos. A las 15:07 el Dow había recuperado la mayor parte de lo perdido.",
+      "foot": "Fuente: Wikipedia (2010 flash crash)",
+      "kicker": "Rapidísimo"
+    },
+    {
+      "t": "stat",
+      "big": "1 B$",
+      "head": "Valor que se esfumó",
+      "body": "Cerca de un billón de dólares de valor de mercado desapareció de forma temporal durante aquellos minutos.",
+      "foot": "Fuente: Wikipedia (2010 flash crash)",
+      "kicker": "Un susto enorme"
+    },
+    {
+      "t": "myth",
+      "myth": "«Los mercados siempre funcionan con normalidad»",
+      "reality": "Hubo precios absurdos durante minutos. Los informes oficiales señalaron como detonante una gran orden de venta de contratos de futuros del S&P 500.",
+      "foot": "Fuente: Wikipedia (2010 flash crash)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Las órdenes a mercado pueden salir caras",
+          "b": "En momentos así, el precio ejecutado puede ser muy malo."
+        },
+        {
+          "t": "Los stops pueden activarse en el peor momento",
+          "b": "Y vender al precio más bajo."
+        },
+        {
+          "t": "Calma",
+          "b": "Un susto breve no siempre es el resultado final."
+        }
+      ],
+      "foot": "Con calma"
+    },
+    {
+      "t": "close",
+      "head": "Un buen plan [[incluye los sustos]]",
+      "body": "Piensa cómo reaccionarías antes de que ocurra.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

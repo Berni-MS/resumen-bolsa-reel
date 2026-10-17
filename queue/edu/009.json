@@ -1,0 +1,95 @@
+{
+  "id": "edu-009-reserva-federal",
+  "label": "La Reserva Federal",
+  "accent": "green",
+  "caption": "¿Qué es la Reserva Federal y por qué todos hablan de ella? 🇺🇸\n\nDesliza para ver qué es, qué hace, qué es el FOMC y por qué sus decisiones se siguen en todo el mundo.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#reservafederal",
+    "#fed",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "FED",
+      "title": "El banco central más seguido del mundo",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "El [[banco central]] de EE. UU.",
+      "body": "La Reserva Federal, o Fed, fue creada en 1913. Es el banco central de EE. UU. y su política influye en el dólar, los bonos y las bolsas de todo el mundo.",
+      "foot": "Creada en 1913"
+    },
+    {
+      "t": "point",
+      "head": "Dos objetivos",
+      "body": "Su mandato es lograr el máximo empleo y mantener precios estables. En la práctica, suele fijarse una inflación del 2 % como referencia.",
+      "foot": "Empleo e inflación",
+      "kicker": "El mandato dual"
+    },
+    {
+      "t": "point",
+      "head": "El [[FOMC]]",
+      "body": "Es el comité que decide la política monetaria, incluidos los tipos de interés. Se reúne varias veces al año y publica un comunicado tras cada reunión.",
+      "foot": "Sus reuniones mueven mercados",
+      "kicker": "Quién decide"
+    },
+    {
+      "t": "cards",
+      "head": "Qué herramientas usa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tipos de interés",
+          "b": "Su principal herramienta para frenar o impulsar la economía."
+        },
+        {
+          "t": "Compra o venta de bonos",
+          "b": "Puede inyectar o retirar liquidez del sistema."
+        },
+        {
+          "t": "Comunicación",
+          "b": "Lo que dice y cómo lo dice influye en las expectativas."
+        }
+      ],
+      "foot": "A veces las palabras mueven más que los hechos"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo seguirla [[sin volverte loco]]",
+      "steps": [
+        {
+          "t": "Mira el calendario",
+          "b": "Las reuniones se publican con antelación."
+        },
+        {
+          "t": "Lee el comunicado",
+          "b": "Y compáralo con el anterior."
+        },
+        {
+          "t": "Atiende a las expectativas",
+          "b": "La sorpresa es lo que mueve el mercado."
+        },
+        {
+          "t": "No operes por impulso",
+          "b": "Los movimientos del día pueden revertirse."
+        }
+      ],
+      "foot": "Calma ante la noticia"
+    },
+    {
+      "t": "close",
+      "head": "La Fed no controla la bolsa, [[pero condiciona el clima]]",
+      "body": "Entender qué hace te ayuda a interpretar mejor lo que pasa.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true,
+      "headSize": 140
+    }
+  ]
+}

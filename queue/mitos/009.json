@@ -1,0 +1,84 @@
+{
+  "id": "mitos-009-apple-billones",
+  "label": "Datos · Apple",
+  "accent": "red",
+  "caption": "1, 2 y 3 billones de dólares en cuatro años 🍎\n\nApple fue la primera empresa de EE. UU. en superar el billón de dólares de valor de mercado (agosto de 2018), pasó de los 2 billones en agosto de 2020 y de los 3 billones el 3 de enero de 2022.\n\nEl mito: «una empresa gigante ya no puede crecer». Desliza para ver los datos.\n\nNota: billón = un millón de millones (trillion en inglés).",
+  "tags": [
+    "#apple",
+    "#bolsa",
+    "#capitalizacion",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Al Jazeera (03/01/2022), Apple becomes first company to reach $3 trillion market value"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "3 B$",
+      "title": "El valor de mercado de Apple en enero de 2022",
+      "foot": "En dólares: tres billones",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "1 B$",
+      "head": "Agosto de 2018",
+      "body": "Apple se convirtió en la primera empresa de EE. UU. en superar el billón de dólares de valor de mercado.",
+      "foot": "Fuente: Al Jazeera",
+      "kicker": "El primer hito"
+    },
+    {
+      "t": "stat",
+      "big": "2 B$",
+      "head": "Agosto de 2020",
+      "body": "Solo dos años después, en agosto de 2020, Apple superó los dos billones de dólares.",
+      "foot": "Fuente: Al Jazeera",
+      "kicker": "Segundo hito"
+    },
+    {
+      "t": "stat",
+      "big": "3 B$",
+      "head": "3 de enero de 2022",
+      "body": "Apple se convirtió en la primera empresa en alcanzar los 3 billones de dólares, con sus acciones subiendo hasta un 3 % ese lunes.",
+      "foot": "Fuente: Al Jazeera",
+      "kicker": "Tercer hito",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«Una empresa tan grande ya no puede crecer»",
+      "reality": "Apple multiplicó por tres su valor en poco más de tres años. Eso no significa que siga ocurriendo, pero sí que el tamaño no es un límite en sí mismo.",
+      "foot": "Fuente: Al Jazeera"
+    },
+    {
+      "t": "cards",
+      "head": "Qué no significa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "No garantiza más subidas",
+          "b": "Un valor alto también puede caer."
+        },
+        {
+          "t": "No es un consejo sobre Apple",
+          "b": "Es un ejemplo de cómo se comparan las magnitudes."
+        },
+        {
+          "t": "Valor de mercado no es beneficio",
+          "b": "Es lo que el mercado paga, no lo que gana."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "El tamaño [[no es destino]]",
+      "body": "Mide siempre lo que pagas, no solo lo grande que es una empresa.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

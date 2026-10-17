@@ -1,0 +1,85 @@
+{
+  "id": "mitos-004-burbuja-puntocom",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«Las empresas tecnológicas siempre suben.» 💻\n\nEl Nasdaq Composite cerró en 5.048,62 el 10 de marzo de 2000 y cayó un 78,4 % hasta 1.114,11 en octubre de 2002. Tardó unos 15 años en volver a un nuevo máximo: 5.056,06 el 23 de abril de 2015.\n\nDesliza para verlo.",
+  "tags": [
+    "#nasdaq",
+    "#burbujapuntocom",
+    "#tecnologia",
+    "#bolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "Fortune (23/04/2015), Nasdaq surpasses internet bubble peak"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−78 %",
+      "title": "Lo que cayó el Nasdaq tras la burbuja .com",
+      "foot": "Desliza para verlo",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "5.048,62",
+      "head": "El máximo de marzo de 2000",
+      "body": "El Nasdaq Composite cerró en esa cifra el 10 de marzo de 2000, en pleno entusiasmo por internet.",
+      "foot": "Fuente: Fortune",
+      "kicker": "La cima"
+    },
+    {
+      "t": "stat",
+      "big": "−78,4 %",
+      "head": "La caída",
+      "body": "Cayó hasta 1.114,11 puntos, unos 31 meses después de ese máximo.",
+      "foot": "Fuente: Fortune",
+      "kicker": "El suelo",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "5.056,06",
+      "head": "La recuperación",
+      "body": "No superó su máximo de 2000 hasta el 23 de abril de 2015: casi 15 años después.",
+      "foot": "Fuente: Fortune",
+      "kicker": "Abril de 2015",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«Las empresas tecnológicas siempre suben»",
+      "reality": "Un sector puede estar de moda y subir mucho, y luego caer más aún. El precio importa, y la expectativa también.",
+      "foot": "Fuente: Fortune"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "El entusiasmo no es un análisis",
+          "b": "Que todos hablen de algo no significa que esté bien valorado."
+        },
+        {
+          "t": "El precio importa",
+          "b": "Una buena idea puede ser una mala inversión si se paga demasiado."
+        },
+        {
+          "t": "El tiempo de recuperación puede ser largo",
+          "b": "Más de una década en este caso."
+        }
+      ],
+      "foot": "Con calma"
+    },
+    {
+      "t": "close",
+      "head": "Una buena historia [[no justifica cualquier precio]]",
+      "body": "Entender qué pagas es tan importante como lo que compras.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

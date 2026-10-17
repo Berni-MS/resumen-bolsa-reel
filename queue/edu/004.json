@@ -1,0 +1,95 @@
+{
+  "id": "edu-004-diversificacion",
+  "label": "La diversificación",
+  "accent": "green",
+  "caption": "¿Qué es diversificar? 🧺 No poner todos los huevos en la misma cesta, con ejemplos.\n\nDesliza para ver qué es, qué sí y qué no hace por ti y cuatro formas de repartir el riesgo.\n\n💾 Guárdalo y envíaselo a quien lo necesite.",
+  "tags": [
+    "#diversificacion",
+    "#inversion",
+    "#bolsa",
+    "#finanzas",
+    "#aprenderbolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "DIVERSIFICAR",
+      "title": "No pongas todos los huevos en la misma cesta",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 150
+    },
+    {
+      "t": "point",
+      "head": "Repartir para [[reducir riesgo]]",
+      "body": "Si inviertes en muchas empresas, sectores y países, que a una le vaya mal pesa menos en el conjunto.",
+      "foot": "Menos dependencia de una sola apuesta"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo",
+      "body": "Si todo tu dinero está en una empresa y quiebra, lo pierdes casi todo. Si está repartido en 100 empresas y una quiebra, el golpe es pequeño.",
+      "foot": "El riesgo se diluye",
+      "kicker": "Un caso sencillo"
+    },
+    {
+      "t": "steps",
+      "head": "Cuatro formas de [[diversificar]]",
+      "steps": [
+        {
+          "t": "Por empresas",
+          "b": "Muchas compañías, no una o dos."
+        },
+        {
+          "t": "Por sectores",
+          "b": "Tecnología, salud, energía, consumo…"
+        },
+        {
+          "t": "Por países",
+          "b": "No depender de una sola economía."
+        },
+        {
+          "t": "Por tipo de activo",
+          "b": "Acciones, bonos, efectivo…"
+        }
+      ],
+      "foot": "Combínalas"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que no hace",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "No elimina el riesgo",
+          "b": "Si todo el mercado cae, casi todo cae a la vez."
+        },
+        {
+          "t": "No garantiza ganancias",
+          "b": "Reduce el riesgo propio de cada empresa, no el del mercado."
+        },
+        {
+          "t": "No es comprar muchas cosas iguales",
+          "b": "Diez empresas del mismo sector no es diversificar."
+        }
+      ],
+      "foot": "Cuidado con las falsas diversificaciones"
+    },
+    {
+      "t": "point",
+      "head": "La forma más [[sencilla]]",
+      "body": "Un ETF o fondo indexado amplio reparte tu dinero entre cientos o miles de empresas con una sola compra.",
+      "foot": "Un producto, muchas empresas",
+      "kicker": "Atajo",
+      "note": "Mira siempre qué contiene y cuánto cobra."
+    },
+    {
+      "t": "close",
+      "head": "Diversificar es [[protegerte de ti mismo]]",
+      "body": "Nadie sabe qué empresa subirá más. Repartir te evita depender de acertarla.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo con quien empieza.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "mitos-012-frenos-2020",
+  "label": "Datos · Marzo 2020",
+  "accent": "red",
+  "caption": "Marzo de 2020: cuatro paradas automáticas de la bolsa en dos semanas ⏸️\n\nLos días 9, 12, 16 y 18 de marzo de 2020 se activaron paradas de negociación en Wall Street. El Dow Jones cayó un 7,79 %, un 9,99 % y un 12,93 % en tres de esas sesiones.\n\nDesliza para ver qué son y qué pasó.",
+  "tags": [
+    "#covid",
+    "#bolsa",
+    "#crash",
+    "#historiabursatil",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, 2020 stock market crash",
+    "NPR (18/08/2020)"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "4",
+      "title": "paradas automáticas en la bolsa en marzo de 2020",
+      "foot": "Los días 9, 12, 16 y 18",
+      "bigSize": 400
+    },
+    {
+      "t": "point",
+      "head": "¿Qué es un «freno»?",
+      "body": "Las bolsas tienen mecanismos que paran la negociación unos minutos si el mercado cae demasiado rápido, para dar tiempo a reaccionar.",
+      "foot": "Una pausa para respirar",
+      "kicker": "Circuit breakers"
+    },
+    {
+      "t": "stat",
+      "big": "−7,79 %",
+      "head": "9 de marzo de 2020",
+      "body": "El Dow Jones perdió 2.013,76 puntos, un 7,79 %, el primer gran día de aquella semana.",
+      "foot": "Fuente: Wikipedia (2020 stock market crash)",
+      "kicker": "Primer susto",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "−9,99 %",
+      "head": "12 de marzo de 2020",
+      "body": "Cayó 2.352,60 puntos, un 9,99 %, un día que pasó a conocerse como «jueves negro».",
+      "foot": "Fuente: Wikipedia (2020 stock market crash)",
+      "kicker": "Segundo susto",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "−12,93 %",
+      "head": "16 de marzo de 2020",
+      "body": "Perdió 2.997,10 puntos, un 12,93 %: el peor de aquellos tres días.",
+      "foot": "Fuente: Wikipedia (2020 stock market crash)",
+      "kicker": "El peor día",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Si cae así, no hay vuelta atrás»",
+      "reality": "Como vimos en otro carrusel, el S&P 500 recuperó su máximo en agosto de 2020. Pero eso no era algo que se pudiera saber de antemano.",
+      "foot": "Fuente: NPR (18/08/2020)"
+    },
+    {
+      "t": "close",
+      "head": "Las pausas [[no evitan las caídas]]",
+      "body": "Ayudan a ordenar el mercado, no a decidir por ti.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

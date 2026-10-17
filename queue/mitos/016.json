@@ -1,0 +1,73 @@
+{
+  "id": "mitos-016-indices-historia",
+  "label": "Datos · Índices",
+  "accent": "red",
+  "caption": "5 datos curiosos sobre los índices bursátiles 📊\n\n• El Dow Jones industrial nació el 26 de mayo de 1896 con 12 empresas y un valor inicial de 40,94.\n• El S&P 500 tiene su tamaño actual desde el 4 de marzo de 1957.\n• El Nasdaq 100 se creó el 31 de enero de 1985 con una base de 250.\n• El primer ETF de EE. UU., el SPY, empezó a operar el 22 de enero de 1993.\n\nDesliza para verlos.",
+  "tags": [
+    "#indices",
+    "#SP500",
+    "#dowjones",
+    "#nasdaq",
+    "#bolsa"
+  ],
+  "sources": [
+    "Wikipedia: DJIA, S&P 500, Nasdaq-100, SPDR S&P 500 ETF Trust"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "5",
+      "title": "datos curiosos sobre los índices bursátiles",
+      "foot": "Desliza para verlos",
+      "bigSize": 400
+    },
+    {
+      "t": "stat",
+      "big": "12",
+      "head": "Empresas del Dow en 1896",
+      "body": "El Dow Jones Industrial Average debutó el 26 de mayo de 1896 con 12 empresas industriales y un valor inicial de 40,94. Hoy tiene 30.",
+      "foot": "Fuente: Wikipedia (DJIA)",
+      "kicker": "Dato 1"
+    },
+    {
+      "t": "stat",
+      "big": "1957",
+      "head": "El nacimiento del S&P 500",
+      "body": "El 4 de marzo de 1957 el índice se amplió a las 500 empresas actuales. Su origen es un índice de 233 acciones de 1923.",
+      "foot": "Fuente: Wikipedia (S&P 500)",
+      "kicker": "Dato 2"
+    },
+    {
+      "t": "stat",
+      "big": "250",
+      "head": "La base del Nasdaq 100",
+      "body": "Se creó el 31 de enero de 1985 con una base de 250 puntos, y en 1994 se dividió por la mitad, igual que un split de acciones.",
+      "foot": "Fuente: Wikipedia (Nasdaq-100)",
+      "kicker": "Dato 3"
+    },
+    {
+      "t": "stat",
+      "big": "1993",
+      "head": "El primer ETF de EE. UU.",
+      "body": "El SPY, que replica el S&P 500, empezó a operar el 22 de enero de 1993 y cotizó el 29 de enero en la bolsa estadounidense.",
+      "foot": "Fuente: Wikipedia (SPY)",
+      "kicker": "Dato 4"
+    },
+    {
+      "t": "stat",
+      "big": "VOO",
+      "head": "El relevo",
+      "body": "En febrero de 2025, el ETF de Vanguard que replica el S&P 500 (VOO) superó al SPY como mayor ETF del mundo, según Wikipedia.",
+      "foot": "Fuente: Wikipedia (SPY)",
+      "kicker": "Dato 5"
+    },
+    {
+      "t": "close",
+      "head": "Los índices [[evolucionan]]",
+      "body": "Lo que hoy parece fijo tiene una historia y cambia con el tiempo.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

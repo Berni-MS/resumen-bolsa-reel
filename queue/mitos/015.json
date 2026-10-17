@@ -1,0 +1,85 @@
+{
+  "id": "mitos-015-mar-del-sur",
+  "label": "Datos · Burbuja del Mar del Sur",
+  "accent": "red",
+  "caption": "En 1720, las acciones de la Compañía del Mar del Sur pasaron de unas 128 libras en enero a casi 1.000 en agosto 🌊\n\nEl mito: «solo los novatos caen en las burbujas». Hasta Isaac Newton poseía acciones por cerca de 22.000 libras en 1722, y se le atribuye la frase: «puedo calcular el movimiento de las estrellas, pero no la locura de los hombres».\n\nDesliza para ver los datos.",
+  "tags": [
+    "#burbujas",
+    "#historia",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, South Sea Bubble"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1720",
+      "title": "Cuando hasta Newton cayó en una burbuja",
+      "foot": "La burbuja del Mar del Sur",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "128 → 1.000",
+      "head": "Libras por acción",
+      "body": "Las acciones pasaron de unas 128 libras en enero de 1720 a unas 1.000 en agosto, su máximo.",
+      "foot": "Fuente: Wikipedia (South Sea Bubble)",
+      "kicker": "La subida",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "~100",
+      "head": "Libras al terminar el año",
+      "body": "Antes de acabar 1720, el precio volvió a rondar las 100 libras por acción.",
+      "foot": "Fuente: Wikipedia (South Sea Bubble)",
+      "kicker": "La caída",
+      "color": "red"
+    },
+    {
+      "t": "point",
+      "head": "Newton y la [[locura]]",
+      "body": "Se le atribuye haber dicho: «Puedo calcular el movimiento de las estrellas, pero no la locura de los hombres». En 1722 aún tenía acciones por casi 22.000 libras; cuánto perdió realmente no se sabe con certeza.",
+      "foot": "Fuente: Wikipedia (South Sea Bubble)",
+      "kicker": "Una cita atribuida"
+    },
+    {
+      "t": "myth",
+      "myth": "«Solo los novatos caen en las burbujas»",
+      "reality": "Gente muy inteligente participó. Saber mucho no te protege de la euforia colectiva.",
+      "foot": "Fuente: Wikipedia (South Sea Bubble)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "La inteligencia no basta",
+          "b": "Las emociones influyen en todos."
+        },
+        {
+          "t": "Cuando todos compran, desconfía",
+          "b": "Que esté de moda no es un argumento."
+        },
+        {
+          "t": "Ten un plan antes de la euforia",
+          "b": "Decide con calma, no en el momento."
+        }
+      ],
+      "foot": "Con plan"
+    },
+    {
+      "t": "close",
+      "head": "Las burbujas [[no discriminan]]",
+      "body": "La mejor defensa es tener reglas claras antes de que llegue la euforia.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

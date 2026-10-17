@@ -1,0 +1,97 @@
+{
+  "id": "edu-012-opv",
+  "label": "Qué es una OPV o IPO",
+  "accent": "green",
+  "caption": "¿Qué es una OPV (o IPO)? 🚀 El día que una empresa sale a bolsa.\n\nDesliza para ver cómo funciona, qué pasos sigue y por qué un debut espectacular no garantiza nada.\n\n💾 Guárdalo para cuando oigas hablar de una salida a bolsa.",
+  "tags": [
+    "#IPO",
+    "#OPV",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Initial public offering"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "IPO",
+      "title": "Cuando una empresa sale a bolsa",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Pasar de [[privada]] a cotizada",
+      "body": "En una OPV (oferta pública de venta) o IPO, una empresa ofrece sus acciones al público por primera vez y empieza a cotizar en bolsa.",
+      "foot": "Primera venta al público"
+    },
+    {
+      "t": "point",
+      "head": "Por qué lo hacen",
+      "body": "Para obtener dinero con el que crecer o pagar deuda, y para que los socios iniciales puedan vender parte de lo que tienen.",
+      "foot": "Financiación y liquidez",
+      "kicker": "El motivo"
+    },
+    {
+      "t": "steps",
+      "head": "Los pasos [[principales]]",
+      "steps": [
+        {
+          "t": "Bancos colocadores",
+          "b": "Los llamados «underwriters» organizan la operación."
+        },
+        {
+          "t": "Folleto",
+          "b": "Documento con la información de la empresa; en EE. UU., formulario S-1."
+        },
+        {
+          "t": "Fijación del precio",
+          "b": "Se decide según la demanda de los inversores."
+        },
+        {
+          "t": "Debut",
+          "b": "Las acciones empiezan a cotizar."
+        }
+      ],
+      "foot": "Cada mercado tiene sus reglas"
+    },
+    {
+      "t": "point",
+      "head": "El [[primer día]]",
+      "body": "A veces la acción se dispara en el debut. Pero que suba el primer día no dice cómo irá a largo plazo.",
+      "foot": "Fuente: Wikipedia (IPO)",
+      "kicker": "Cuidado con el efecto escaparate",
+      "note": "En 1998, la acción de theglobe.com salió a 9 $, llegó a 97 $ en su primer día y cerró a 63 $."
+    },
+    {
+      "t": "cards",
+      "head": "Riesgos de entrar en una OPV",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Mucha publicidad",
+          "b": "El ruido puede empujarte a comprar con prisa."
+        },
+        {
+          "t": "Poco historial",
+          "b": "Hay menos datos como empresa cotizada."
+        },
+        {
+          "t": "Volatilidad",
+          "b": "Los precios suelen oscilar mucho al principio."
+        }
+      ],
+      "foot": "Calma ante el entusiasmo"
+    },
+    {
+      "t": "close",
+      "head": "Salir a bolsa es [[el principio]], no la meta",
+      "body": "Lo que importa es cómo le irá a la empresa durante años.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

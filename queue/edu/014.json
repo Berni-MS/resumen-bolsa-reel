@@ -1,0 +1,107 @@
+{
+  "id": "edu-014-stop-loss",
+  "label": "Qué es un stop loss",
+  "accent": "green",
+  "caption": "¿Qué es un stop loss? 🛑 Una orden para limitar pérdidas.\n\nDesliza para ver cómo funciona con un ejemplo, qué ventajas tiene y por qué no es un seguro infalible.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#stoploss",
+    "#bolsa",
+    "#trading",
+    "#inversion",
+    "#aprenderbolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "STOP",
+      "title": "Qué es un stop loss y cómo funciona",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 240
+    },
+    {
+      "t": "point",
+      "head": "Una [[red de seguridad]]",
+      "body": "Es una orden que vende automáticamente si el precio baja hasta el nivel que tú has fijado, para limitar cuánto puedes perder.",
+      "foot": "Salida automática"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo",
+      "body": "Compras una acción a 100 € y fijas un stop en 90 €. Si el precio baja a 90 €, la orden se activa y tu posición se vende para frenar la pérdida.",
+      "foot": "Pérdida limitada, no eliminada",
+      "kicker": "Con números"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que tiene a favor",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Disciplina",
+          "b": "Decides la salida antes, con calma."
+        },
+        {
+          "t": "Menos emociones",
+          "b": "No tienes que mirar la pantalla todo el día."
+        },
+        {
+          "t": "Pérdidas acotadas",
+          "b": "Sabes cuánto arriesgas desde el principio."
+        }
+      ],
+      "foot": "Ahora, la otra cara"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que no te cuentan",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Puede saltar por ruido",
+          "b": "Una oscilación breve puede activarlo y luego el precio se recupera."
+        },
+        {
+          "t": "No garantiza el precio",
+          "b": "Si el mercado salta, se ejecuta al siguiente precio disponible."
+        },
+        {
+          "t": "Fuera de horario no actúa igual",
+          "b": "Depende de cada mercado y bróker."
+        }
+      ],
+      "foot": "Un stop no es un seguro"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de usarlo, [[decide]]",
+      "steps": [
+        {
+          "t": "Cuánto estás dispuesto a perder",
+          "b": "Según tu situación, no según la emoción."
+        },
+        {
+          "t": "Dónde lo pones",
+          "b": "Ni tan cerca que salte, ni tan lejos que no sirva."
+        },
+        {
+          "t": "Qué tipo de orden usar",
+          "b": "Mercado, limitada…"
+        },
+        {
+          "t": "Cuándo lo revisas",
+          "b": "Y por qué razón."
+        }
+      ],
+      "foot": "Con un plan"
+    },
+    {
+      "t": "close",
+      "head": "Un stop es [[una herramienta]], no una estrategia",
+      "body": "Funciona mejor dentro de un plan que como reflejo ante el miedo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

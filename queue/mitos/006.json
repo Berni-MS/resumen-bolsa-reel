@@ -1,0 +1,85 @@
+{
+  "id": "mitos-006-apuesta-buffett",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "La apuesta de Warren Buffett contra los fondos de cobertura 💰\n\nEn 2007 apostó a que un fondo que replicase el S&P 500 superaría, durante diez años, a una cesta de fondos de cobertura. Resultado: un 7,1 % anual del índice frente a un 2,2 % de media de los fondos.\n\nDesliza para verlo.",
+  "tags": [
+    "#warrenbuffett",
+    "#fondosindexados",
+    "#inversion",
+    "#bolsa",
+    "#finanzas"
+  ],
+  "sources": [
+    "Professional Adviser, Buffett wins $1m hedge fund performance bet"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "7,1 %",
+      "title": "frente a 2,2 % al año durante diez años",
+      "foot": "La apuesta de Buffett",
+      "bigSize": 280
+    },
+    {
+      "t": "point",
+      "head": "La apuesta",
+      "body": "En 2007, Warren Buffett apostó a que un fondo que copiase al S&P 500 batiría durante diez años a una selección de fondos de cobertura (hedge funds).",
+      "foot": "Fuente: Professional Adviser",
+      "kicker": "El reto",
+      "note": "Cada parte puso 320.000 dólares en un bono cupón cero."
+    },
+    {
+      "t": "stat",
+      "big": "7,1 %",
+      "head": "Lo que ganó el índice al año",
+      "body": "El fondo indexado al S&P 500 ganó de media un 7,1 % anual a lo largo de la década.",
+      "foot": "Fuente: Professional Adviser",
+      "kicker": "Un producto sencillo",
+      "color": "green"
+    },
+    {
+      "t": "stat",
+      "big": "2,2 %",
+      "head": "Lo que ganaron los fondos",
+      "body": "La cesta de fondos de cobertura elegida por la otra parte ganó de media un 2,2 % anual.",
+      "foot": "Fuente: Professional Adviser",
+      "kicker": "La selección de expertos",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Los gestores profesionales siempre baten a un simple índice»",
+      "reality": "En esta apuesta, un fondo indexado superó con claridad a una cesta de fondos de cobertura, que cobran comisiones más altas.",
+      "foot": "Fuente: Professional Adviser"
+    },
+    {
+      "t": "cards",
+      "head": "Qué no demuestra",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "No es una ley",
+          "b": "Algunos gestores baten al mercado en algunos periodos."
+        },
+        {
+          "t": "Es un caso concreto",
+          "b": "Un solo periodo y un solo tipo de fondo."
+        },
+        {
+          "t": "El premio fue solidario",
+          "b": "Buffett donó lo ganado a una entidad benéfica."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Las comisiones [[también son rentabilidad]]",
+      "body": "Cuánto te cuesta un producto influye en lo que te queda.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

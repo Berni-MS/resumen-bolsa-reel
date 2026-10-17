@@ -1,0 +1,82 @@
+{
+  "id": "mitos-014-tulipomania",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "La tulipomanía holandesa de 1637, ¿la mayor burbuja de la historia? 🌷\n\nLa versión clásica dice que arruinó a media Holanda. Los historiadores actuales lo matizan: la historia se cuenta con datos de precios muy pobres y el daño real parece haber sido limitado.\n\nDesliza para verlo.",
+  "tags": [
+    "#tulipomania",
+    "#burbujas",
+    "#historia",
+    "#bolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Tulip mania"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1637",
+      "title": "La burbuja de los tulipanes: ¿mito o realidad?",
+      "foot": "Desliza para verlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "La versión [[clásica]]",
+      "body": "Se cuenta que entre 1636 y 1637 los precios de los bulbos de tulipán se dispararon y luego se hundieron en febrero de 1637, arruinando a mucha gente.",
+      "foot": "Fuente: Wikipedia (Tulip mania)",
+      "kicker": "Lo que se contaba"
+    },
+    {
+      "t": "stat",
+      "big": "10.000 florines",
+      "head": "El bulbo más famoso",
+      "body": "Se dice que un bulbo de «Semper Augustus» se vendió por 10.000 florines. En realidad era un tulipán afectado por un virus que producía sus pétalos rayados.",
+      "foot": "Fuente: Wikipedia (Tulip mania)",
+      "kicker": "Cuidado con las cifras",
+      "bigSize": 170
+    },
+    {
+      "t": "point",
+      "head": "Los [[datos]] eran pobres",
+      "body": "Gran parte de la información de precios procede de panfletos satíricos. Los historiadores advierten que no es fiable.",
+      "foot": "Fuente: Wikipedia (Tulip mania)",
+      "kicker": "Qué dicen los expertos"
+    },
+    {
+      "t": "myth",
+      "myth": "«La tulipomanía arruinó a media Holanda»",
+      "reality": "Según la historiadora Anne Goldgar, el mercado era limitado y casi nadie sufrió daños graves; identifica a menos de media docena de personas con problemas económicos.",
+      "foot": "Fuente: Wikipedia (Tulip mania)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Las historias se simplifican",
+          "b": "Las burbujas más famosas pueden estar exageradas."
+        },
+        {
+          "t": "Pero los excesos existen",
+          "b": "Hay episodios bien documentados de euforia y caída."
+        },
+        {
+          "t": "Contrasta las fuentes",
+          "b": "Desconfía de datos sin origen claro."
+        }
+      ],
+      "foot": "Pensamiento crítico"
+    },
+    {
+      "t": "close",
+      "head": "Hasta la historia [[hay que verificarla]]",
+      "body": "Antes de dar por cierta una anécdota, mira de dónde sale.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

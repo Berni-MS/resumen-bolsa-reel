@@ -1,0 +1,94 @@
+{
+  "id": "edu-008-tipos-interes",
+  "label": "Tipos de interés y bolsa",
+  "accent": "green",
+  "caption": "¿Por qué los tipos de interés mueven la bolsa? 🏦\n\nDesliza para ver qué son los tipos, qué hacen los bancos centrales y cómo pueden afectar a acciones y bonos. Ojo: no es una regla fija, las reacciones del mercado dependen de muchos factores.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#tiposdeinteres",
+    "#bancoscentrales",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "TIPOS",
+      "title": "Por qué los tipos de interés mueven la bolsa",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 240
+    },
+    {
+      "t": "point",
+      "head": "El [[precio del dinero]]",
+      "body": "Los tipos de interés son el coste de pedir prestado dinero. Los bancos centrales los fijan para controlar la inflación y apoyar la economía.",
+      "foot": "Lo decide el banco central"
+    },
+    {
+      "t": "point",
+      "head": "Si los tipos [[suben]]",
+      "body": "Pedir dinero es más caro para empresas y familias, y los bonos pagan más. Eso puede hacer menos atractivas las acciones.",
+      "foot": "Pero no siempre",
+      "kicker": "Un efecto habitual"
+    },
+    {
+      "t": "point",
+      "head": "Si los tipos [[bajan]]",
+      "body": "Financiarse es más barato y los bonos pagan menos. Eso puede favorecer a las acciones y a las empresas que dependen del crédito.",
+      "foot": "Pero no siempre",
+      "kicker": "El efecto contrario"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué no es una regla",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Importan las expectativas",
+          "b": "El mercado reacciona a lo que espera que ocurra, no solo a lo que ocurre."
+        },
+        {
+          "t": "Importa el porqué",
+          "b": "Una bajada por debilidad económica no es lo mismo que por controlar la inflación."
+        },
+        {
+          "t": "Hay más factores",
+          "b": "Resultados de empresas, política, geopolítica…"
+        }
+      ],
+      "foot": "Cuidado con las explicaciones simples"
+    },
+    {
+      "t": "steps",
+      "head": "Qué mirar cuando hay [[reunión de tipos]]",
+      "steps": [
+        {
+          "t": "La decisión",
+          "b": "Si sube, baja o se mantiene."
+        },
+        {
+          "t": "Lo que esperaba el mercado",
+          "b": "La sorpresa mueve más que el dato."
+        },
+        {
+          "t": "El comunicado",
+          "b": "Qué dicen sobre los próximos pasos."
+        },
+        {
+          "t": "Las previsiones",
+          "b": "Inflación, empleo y crecimiento."
+        }
+      ],
+      "foot": "Anótalo para la próxima"
+    },
+    {
+      "t": "close",
+      "head": "Los tipos son el [[hilo de fondo]]",
+      "body": "No predicen cada día de bolsa, pero ayudan a entender el contexto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

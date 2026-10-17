@@ -1,0 +1,94 @@
+{
+  "id": "edu-002-accion",
+  "label": "Qué es una acción",
+  "accent": "green",
+  "caption": "¿Qué es una acción? 🏢 Un trocito de una empresa, explicado sin tecnicismos.\n\nDesliza para ver cómo se gana (y se pierde) dinero con ellas, por qué se mueve su precio y qué preguntas conviene hacerse antes de comprar una.\n\n💾 Guárdalo para repasarlo cuando lo necesites.",
+  "tags": [
+    "#acciones",
+    "#bolsa",
+    "#inversion",
+    "#finanzas",
+    "#aprenderbolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "ACCIÓN",
+      "title": "Qué es y por qué sube o baja",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 200
+    },
+    {
+      "t": "point",
+      "head": "Una acción es un [[trocito]] de una empresa",
+      "body": "Si compras una acción te conviertes en copropietario de la empresa, aunque sea de una parte minúscula.",
+      "foot": "Eres socio, no cliente",
+      "headSize": 140
+    },
+    {
+      "t": "point",
+      "head": "Dos formas de [[ganar dinero]]",
+      "body": "Que la acción suba y puedas venderla más cara, o cobrar dividendos si la empresa reparte parte de sus beneficios. Ninguna de las dos está garantizada.",
+      "foot": "Plusvalías y dividendos",
+      "kicker": "¿Qué puedes ganar?"
+    },
+    {
+      "t": "point",
+      "head": "¿Por qué se mueve el [[precio]]?",
+      "body": "Por la oferta y la demanda: si más gente quiere comprar que vender, sube. Influyen los resultados de la empresa, las noticias y lo que esperan los inversores.",
+      "foot": "Precio = lo que alguien paga hoy"
+    },
+    {
+      "t": "cards",
+      "head": "Los riesgos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Puedes perder dinero",
+          "b": "Si la empresa va mal, su acción baja. Si quiebra, puede valer cero."
+        },
+        {
+          "t": "Es volátil",
+          "b": "El precio cambia cada día, a veces con mucha fuerza."
+        },
+        {
+          "t": "Depende de una sola historia",
+          "b": "Una sola empresa concentra todo el riesgo."
+        }
+      ],
+      "foot": "Por eso se diversifica"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de comprar una, [[pregúntate 4 cosas]]",
+      "steps": [
+        {
+          "t": "¿A qué se dedica?",
+          "b": "Si no lo entiendes, mejor no comprar."
+        },
+        {
+          "t": "¿Cómo gana dinero?",
+          "b": "Mira si tiene beneficios y si crece."
+        },
+        {
+          "t": "¿Cuánta deuda tiene?",
+          "b": "Demasiada deuda aumenta el riesgo."
+        },
+        {
+          "t": "¿A qué precio compras?",
+          "b": "Una buena empresa puede ser mala compra si está cara."
+        }
+      ],
+      "foot": "Guárdalo como checklist"
+    },
+    {
+      "t": "close",
+      "head": "Una acción es [[parte de un negocio]]",
+      "body": "No es un boleto de lotería: su valor depende, a largo plazo, de lo que la empresa gane.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y envíaselo a quien empieza en bolsa.",
+      "extraBold": true
+    }
+  ]
+}

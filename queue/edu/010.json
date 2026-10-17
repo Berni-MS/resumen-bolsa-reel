@@ -1,0 +1,70 @@
+{
+  "id": "edu-010-alcista-bajista",
+  "label": "Mercado alcista y bajista",
+  "accent": "green",
+  "caption": "¿Qué es un mercado alcista y uno bajista? 🐂🐻\n\nDesliza para ver cómo se llaman las fases del mercado, qué es una corrección y qué dice la historia sobre su duración. Son medias históricas de EE. UU., no predicciones.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#bullmarket",
+    "#bearmarket",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Bear market"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🐂 🐻",
+      "title": "Mercado alcista y mercado bajista",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 260
+    },
+    {
+      "t": "point",
+      "head": "Mercado [[alcista]]",
+      "body": "Es una fase de subidas sostenidas, con optimismo y confianza. En inglés se llama «bull market», por el toro que embiste hacia arriba.",
+      "foot": "El toro ataca hacia arriba"
+    },
+    {
+      "t": "point",
+      "head": "Mercado [[bajista]]",
+      "body": "Se suele hablar de mercado bajista cuando un índice cae un 20 % o más desde su máximo reciente. En inglés, «bear market»: el oso ataca hacia abajo.",
+      "foot": "Caída del 20 % o más"
+    },
+    {
+      "t": "point",
+      "head": "Y la [[corrección]]",
+      "body": "Es una caída más moderada, normalmente de entre el 10 % y el 20 %. Son frecuentes y no siempre acaban en mercado bajista.",
+      "foot": "Entre el 10 % y el 20 %",
+      "kicker": "Un paso intermedio"
+    },
+    {
+      "t": "stat",
+      "big": "13 meses",
+      "head": "Duración media de un mercado bajista",
+      "body": "Según un análisis histórico de EE. UU. entre 1926 y 2014, una caída media de aproximadamente el 30 %. Es una media: cada caso fue distinto.",
+      "foot": "Fuente: Wikipedia (Bear market)",
+      "kicker": "Lo que dice la historia",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "8,5 años",
+      "head": "Duración media de un mercado alcista",
+      "body": "En ese mismo análisis (1926–2014), con una rentabilidad acumulada media de unos 458 %. Las fases alcistas duraron mucho más que las bajistas.",
+      "foot": "Fuente: Wikipedia (Bear market)",
+      "kicker": "La otra cara",
+      "color": "green"
+    },
+    {
+      "t": "close",
+      "head": "Las fases [[no se anuncian]]",
+      "body": "Nadie sabe cuándo empieza ni cuándo termina cada una. Lo útil es saber en cuál crees estar y cómo reaccionas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

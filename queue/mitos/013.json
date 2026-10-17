@@ -1,0 +1,70 @@
+{
+  "id": "mitos-013-bolsa-antigua",
+  "label": "Datos · Historia",
+  "accent": "red",
+  "caption": "¿Es la bolsa un invento moderno? 🏛️ Para nada.\n\nLa Compañía Holandesa de las Indias Orientales (VOC) nació el 20 de marzo de 1602 y sus acciones se negociaban en Ámsterdam. El 17 de mayo de 1792, 24 corredores firmaron el acuerdo que dio origen a la Bolsa de Nueva York.\n\nDesliza para ver los datos.",
+  "tags": [
+    "#historia",
+    "#bolsa",
+    "#wallstreet",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Dutch East India Company",
+    "Wikipedia, New York Stock Exchange"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1602",
+      "title": "Cuando ya se negociaban acciones en la calle",
+      "foot": "La bolsa tiene siglos",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "1602",
+      "head": "La VOC",
+      "body": "El 20 de marzo de 1602 se creó la Compañía Holandesa de las Indias Orientales, una de las primeras sociedades por acciones del mundo.",
+      "foot": "Fuente: Wikipedia (VOC)",
+      "kicker": "Ámsterdam"
+    },
+    {
+      "t": "point",
+      "head": "Acciones [[al aire libre]]",
+      "body": "Cualquier ciudadano de la República Holandesa podía comprar acciones de la VOC, que se negociaban en mercados abiertos. Uno de ellos acabó siendo la Bolsa de Ámsterdam.",
+      "foot": "Fuente: Wikipedia (VOC)",
+      "kicker": "Cómo funcionaba"
+    },
+    {
+      "t": "stat",
+      "big": "1792",
+      "head": "El Acuerdo de Buttonwood",
+      "body": "El 17 de mayo de 1792, 24 corredores firmaron en Nueva York el Acuerdo de Buttonwood, origen de la Bolsa de Nueva York.",
+      "foot": "Fuente: Wikipedia (NYSE)",
+      "kicker": "Wall Street"
+    },
+    {
+      "t": "myth",
+      "myth": "«La bolsa es un invento moderno»",
+      "reality": "Se negocian acciones desde hace siglos. Cambian las herramientas, no la idea de fondo.",
+      "foot": "Fuente: Wikipedia"
+    },
+    {
+      "t": "point",
+      "head": "Qué ha [[cambiado]]",
+      "body": "Hoy el acceso es inmediato y barato. Pero la lógica sigue siendo la misma: oferta, demanda y expectativas sobre lo que valdrá una empresa.",
+      "foot": "La velocidad, no el fondo",
+      "kicker": "Lo que sí es nuevo"
+    },
+    {
+      "t": "close",
+      "head": "La bolsa lleva [[siglos]] funcionando",
+      "body": "Entender su historia ayuda a interpretar mejor el presente.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

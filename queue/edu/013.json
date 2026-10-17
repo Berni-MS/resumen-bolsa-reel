@@ -1,0 +1,78 @@
+{
+  "id": "edu-013-ordenes",
+  "label": "Órdenes de compra y venta",
+  "accent": "green",
+  "caption": "¿Qué tipos de orden existen en bolsa? 📝 Mercado, limitada y stop, explicadas sin complicaciones.\n\nDesliza para ver cuándo se usa cada una y qué puede salir mal si eliges mal.\n\n💾 Guárdalo antes de hacer tu primera compra.",
+  "tags": [
+    "#ordenes",
+    "#bolsa",
+    "#inversion",
+    "#aprenderbolsa",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "ORDEN",
+      "title": "Mercado, limitada y stop",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 220
+    },
+    {
+      "t": "point",
+      "head": "Una orden es [[una instrucción]]",
+      "body": "Cuando compras o vendes, le dices a tu bróker cómo hacerlo. Elegir bien el tipo de orden evita sorpresas con el precio.",
+      "foot": "El «cómo» importa"
+    },
+    {
+      "t": "point",
+      "head": "Orden [[de mercado]]",
+      "body": "Se ejecuta de inmediato al mejor precio disponible. Es rápida, pero el precio final puede diferir del que veías, sobre todo en acciones poco líquidas.",
+      "foot": "Prioriza la velocidad",
+      "kicker": "Rápida"
+    },
+    {
+      "t": "point",
+      "head": "Orden [[limitada]]",
+      "body": "Fijas el precio máximo al que compras o el mínimo al que vendes. Solo se ejecuta si el mercado llega a ese nivel, o mejor.",
+      "foot": "Prioriza el precio",
+      "kicker": "Con control de precio"
+    },
+    {
+      "t": "point",
+      "head": "Orden [[stop]]",
+      "body": "Se activa cuando el precio toca un nivel que tú fijas. Se usa para limitar pérdidas o proteger ganancias, y al activarse suele convertirse en orden de mercado.",
+      "foot": "Prioriza la protección",
+      "kicker": "Con disparador"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que conviene saber",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "El precio puede saltar",
+          "b": "Si hay un salto de cotización, la ejecución puede ser peor que el nivel fijado."
+        },
+        {
+          "t": "La limitada puede no ejecutarse",
+          "b": "Si el precio no llega, te quedas sin comprar."
+        },
+        {
+          "t": "Revisa la caducidad",
+          "b": "Algunas órdenes duran solo el día."
+        }
+      ],
+      "foot": "Los detalles cuentan"
+    },
+    {
+      "t": "close",
+      "head": "Elige la orden [[antes de pulsar]]",
+      "body": "Una buena decisión con una orden equivocada puede salir cara.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

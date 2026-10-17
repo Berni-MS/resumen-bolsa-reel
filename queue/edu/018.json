@@ -1,0 +1,91 @@
+{
+  "id": "edu-018-capitalizacion",
+  "label": "La capitalización bursátil",
+  "accent": "green",
+  "caption": "¿Qué es la capitalización bursátil? 🏢 Lo que vale una empresa en bolsa.\n\nDesliza para ver cómo se calcula, qué significan «gran», «mediana» y «pequeña» empresa y por qué el tamaño importa.\n\n💾 Guárdalo para entender los rankings.",
+  "tags": [
+    "#capitalizacion",
+    "#bolsa",
+    "#inversion",
+    "#aprenderbolsa",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "CAP",
+      "title": "Lo que vale una empresa en bolsa",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Precio por [[número de acciones]]",
+      "body": "La capitalización bursátil es el valor total de una empresa en el mercado: el precio de una acción multiplicado por todas las acciones en circulación.",
+      "foot": "Capitalización = precio × acciones"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo",
+      "body": "Si una empresa tiene 10 millones de acciones y cada una cuesta 20 €, su capitalización es de 200 millones de euros.",
+      "foot": "10 M × 20 € = 200 M€",
+      "kicker": "Con números"
+    },
+    {
+      "t": "point",
+      "head": "Grandes, medianas y [[pequeñas]]",
+      "body": "Se suele hablar de «large caps», «mid caps» y «small caps». No hay un umbral único: cada proveedor de índices usa el suyo.",
+      "foot": "Depende de quién lo clasifique",
+      "kicker": "Por tamaño"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué importa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Las grandes suelen ser más estables",
+          "b": "Pero pueden crecer menos en porcentaje."
+        },
+        {
+          "t": "Las pequeñas oscilan más",
+          "b": "Más potencial, más riesgo."
+        },
+        {
+          "t": "Pesan en los índices",
+          "b": "En el S&P 500, las más grandes mueven más el índice."
+        }
+      ],
+      "foot": "Tamaño no es calidad"
+    },
+    {
+      "t": "cards",
+      "head": "Ojo con interpretarla",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "No es lo que ganan",
+          "b": "Es lo que el mercado paga por ellas hoy."
+        },
+        {
+          "t": "Cambia cada día",
+          "b": "Si el precio se mueve, cambia el valor."
+        },
+        {
+          "t": "No es dinero entrante",
+          "b": "Es una valoración, no efectivo."
+        }
+      ],
+      "foot": "Un número que se mueve"
+    },
+    {
+      "t": "close",
+      "head": "La capitalización es [[una medida de tamaño]]",
+      "body": "Te dice cuánto vale una empresa en bolsa, no si es una buena inversión.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "edu-005-interes-compuesto",
+  "label": "El interés compuesto",
+  "accent": "green",
+  "caption": "¿Qué es el interés compuesto? 📈 La fuerza que hace crecer el dinero con el tiempo.\n\nUn ejemplo hipotético: 1.000 € con un 7 % anual durante 30 años se convierten en unos 7.600 €. Desliza para ver cómo funciona y por qué empezar pronto importa tanto.\n\n⚠️ Es un ejemplo ilustrativo: la rentabilidad real no es fija ni está garantizada.",
+  "tags": [
+    "#interescompuesto",
+    "#inversion",
+    "#ahorro",
+    "#finanzas",
+    "#bolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "×",
+      "title": "El interés compuesto, explicado con números",
+      "foot": "Desliza para verlo",
+      "bigSize": 380
+    },
+    {
+      "t": "point",
+      "head": "Ganar intereses sobre [[los intereses]]",
+      "body": "Cada año ganas sobre el dinero inicial y también sobre lo ya ganado. Por eso el crecimiento se acelera con el tiempo.",
+      "foot": "La bola de nieve"
+    },
+    {
+      "t": "stat",
+      "big": "1.967 €",
+      "head": "A los 10 años",
+      "body": "Ejemplo hipotético: 1.000 € con un 7 % anual y sin retirar nada se convierten en unos 1.967 €.",
+      "foot": "Ejemplo ilustrativo",
+      "kicker": "Punto de partida: 1.000 €"
+    },
+    {
+      "t": "stat",
+      "big": "3.870 €",
+      "head": "A los 20 años",
+      "body": "El mismo ejemplo: pasados 20 años serían unos 3.870 €. El crecimiento de la segunda década es mayor que el de la primera.",
+      "foot": "Ejemplo ilustrativo",
+      "kicker": "Misma inversión"
+    },
+    {
+      "t": "stat",
+      "big": "7.612 €",
+      "head": "A los 30 años",
+      "body": "Con las mismas condiciones, unos 7.612 €. El tiempo hace casi todo el trabajo.",
+      "foot": "Ejemplo ilustrativo",
+      "kicker": "El efecto bola de nieve"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que conviene recordar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "La rentabilidad real varía",
+          "b": "La bolsa no sube un 7 % cada año: hay años buenos y malos."
+        },
+        {
+          "t": "Las comisiones cuentan",
+          "b": "Un pequeño coste anual resta mucho a largo plazo."
+        },
+        {
+          "t": "Empezar pronto ayuda",
+          "b": "Cada año extra pesa más que aportar un poco más tarde."
+        }
+      ],
+      "foot": "Es un ejemplo, no una promesa"
+    },
+    {
+      "t": "close",
+      "head": "El tiempo es [[tu mejor aliado]]",
+      "body": "No hace falta acertar con el momento: hace falta constancia y paciencia.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

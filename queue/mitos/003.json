@@ -1,0 +1,83 @@
+{
+  "id": "mitos-003-nikkei",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«La bolsa siempre sube a largo plazo.» ¿Seguro? 🇯🇵\n\nEl Nikkei 225 cerró en 38.915,87 puntos el 29 de diciembre de 1989 y no volvió a superar esa marca hasta el 22 de febrero de 2024, más de 34 años después.\n\nDesliza para ver qué enseña este caso (y qué no).",
+  "tags": [
+    "#bolsa",
+    "#nikkei",
+    "#diversificacion",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Nippon.com (Nikkei index sets first record high since 1989)"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "34",
+      "title": "años tardó el Nikkei en recuperar su máximo",
+      "foot": "Un caso real",
+      "bigSize": 400
+    },
+    {
+      "t": "stat",
+      "big": "38.915,87",
+      "head": "El máximo de 1989",
+      "body": "El Nikkei 225 cerró en esa cifra el 29 de diciembre de 1989, el último día de negociación de aquel año.",
+      "foot": "Fuente: Nippon.com",
+      "kicker": "Japón, finales de los 80"
+    },
+    {
+      "t": "stat",
+      "big": "39.098,68",
+      "head": "La recuperación",
+      "body": "El 22 de febrero de 2024 volvió a cerrar por encima de su récord: 39.098,68 puntos. Habían pasado 34 años y 2 meses.",
+      "foot": "Fuente: Nippon.com",
+      "kicker": "Febrero de 2024",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«A largo plazo la bolsa siempre sube»",
+      "reality": "En un índice concreto, «largo plazo» puede ser mucho más largo de lo que alguien planea invertir. El caso japonés lo demuestra.",
+      "foot": "Fuente: Nippon.com"
+    },
+    {
+      "t": "point",
+      "head": "Qué enseña",
+      "body": "Concentrar todo en un solo país o mercado puede salir caro si empieza mal y tarda en recuperarse. Diversificar por regiones reduce esa dependencia.",
+      "foot": "No todo el mundo cae a la vez",
+      "kicker": "La lección"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que no dice",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "No dice que la bolsa sea mala",
+          "b": "Es un caso concreto con circunstancias propias."
+        },
+        {
+          "t": "No incluye dividendos",
+          "b": "Hablamos del nivel del índice, no de toda la rentabilidad."
+        },
+        {
+          "t": "No predice otros mercados",
+          "b": "Cada economía es distinta."
+        }
+      ],
+      "foot": "Con contexto"
+    },
+    {
+      "t": "close",
+      "head": "A largo plazo [[no es lo mismo que siempre]]",
+      "body": "Mira siempre el horizonte, el mercado y el momento de entrada.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

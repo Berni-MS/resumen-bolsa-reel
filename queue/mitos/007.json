@@ -1,0 +1,82 @@
+{
+  "id": "mitos-007-spiva",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "¿Los fondos de gestión activa baten al mercado? 📊\n\nSegún el informe SPIVA de S&P Dow Jones Indices, en 2024 un 65 % de los fondos activos de gran capitalización de EE. UU. rindió menos que el S&P 500. Y a 15 años, ninguna categoría tuvo a la mayoría de gestores por encima de su índice de referencia.\n\nDesliza para verlo.",
+  "tags": [
+    "#SPIVA",
+    "#fondosindexados",
+    "#inversion",
+    "#bolsa",
+    "#finanzas"
+  ],
+  "sources": [
+    "S&P Dow Jones Indices, SPIVA U.S. Year-End 2024"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "65 %",
+      "title": "de los fondos activos rindió menos que el S&P 500 en 2024",
+      "foot": "Datos de SPIVA",
+      "bigSize": 280
+    },
+    {
+      "t": "point",
+      "head": "¿Qué es SPIVA?",
+      "body": "Es un informe de S&P Dow Jones Indices que compara los resultados de los fondos de gestión activa con los de sus índices de referencia.",
+      "foot": "Fuente: S&P Global",
+      "kicker": "La fuente"
+    },
+    {
+      "t": "stat",
+      "big": "65 %",
+      "head": "En un año",
+      "body": "En 2024, el 65 % de los fondos activos de acciones de gran capitalización de EE. UU. rindió menos que el S&P 500.",
+      "foot": "Fuente: SPIVA US Year-End 2024",
+      "kicker": "Un solo año",
+      "color": "red"
+    },
+    {
+      "t": "point",
+      "head": "A [[15 años]]",
+      "body": "Según el mismo informe, ninguna categoría de fondos tuvo a la mayoría de sus gestores por encima de su índice de referencia a 15 años.",
+      "foot": "Fuente: SPIVA US Year-End 2024",
+      "kicker": "Con más tiempo"
+    },
+    {
+      "t": "myth",
+      "myth": "«Un gestor profesional te batirá al mercado»",
+      "reality": "Algunos lo logran, pero cuesta mantenerlo en el tiempo, y las comisiones restan rentabilidad.",
+      "foot": "Fuente: SPIVA US Year-End 2024"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que no dice",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "No dice que todos fallen",
+          "b": "Hay gestores que lo hacen bien en algunos periodos."
+        },
+        {
+          "t": "No se puede saber antes cuál",
+          "b": "Elegir al ganador de antemano es difícil."
+        },
+        {
+          "t": "Son datos de EE. UU.",
+          "b": "Otros mercados pueden mostrar resultados distintos."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Compara [[antes de pagar más]]",
+      "body": "Fíjate siempre en la rentabilidad después de comisiones y frente a su índice.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

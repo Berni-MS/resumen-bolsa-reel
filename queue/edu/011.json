@@ -1,0 +1,94 @@
+{
+  "id": "edu-011-per",
+  "label": "Qué es el PER",
+  "accent": "green",
+  "caption": "¿Qué es el PER? 🔢 Una forma sencilla de saber cuántos años de beneficios estás pagando por una acción.\n\nDesliza para ver cómo se calcula, con un ejemplo, y por qué un PER bajo no significa siempre que sea barata.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#PER",
+    "#valoracion",
+    "#bolsa",
+    "#inversion",
+    "#aprenderbolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "PER",
+      "title": "Cuántos años de beneficios pagas por una acción",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Precio entre [[beneficio]]",
+      "body": "El PER (price-to-earnings ratio) divide el precio de una acción entre el beneficio por acción de la empresa en un año.",
+      "foot": "PER = precio ÷ beneficio por acción"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo",
+      "body": "Si una acción cuesta 50 € y la empresa gana 5 € por acción al año, su PER es 10: pagas 10 años de beneficios actuales.",
+      "foot": "50 ÷ 5 = 10",
+      "kicker": "Con números sencillos"
+    },
+    {
+      "t": "point",
+      "head": "¿Qué indica?",
+      "body": "Un PER alto puede reflejar que el mercado espera mucho crecimiento. Uno bajo puede indicar menos expectativas, o que algo preocupa.",
+      "foot": "Es una relación, no una verdad",
+      "kicker": "Cómo se lee"
+    },
+    {
+      "t": "cards",
+      "head": "Ojo con interpretarlo mal",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Un PER bajo no es «barato»",
+          "b": "Puede ser una empresa en dificultades."
+        },
+        {
+          "t": "Un PER alto no es «caro»",
+          "b": "Puede ser una empresa que crece mucho."
+        },
+        {
+          "t": "Varía por sector",
+          "b": "No se comparan peras con manzanas."
+        }
+      ],
+      "foot": "Compáralo con empresas parecidas"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo usarlo [[mejor]]",
+      "steps": [
+        {
+          "t": "Compara con su sector",
+          "b": "Y con su propio historial."
+        },
+        {
+          "t": "Mira si crecen los beneficios",
+          "b": "Un PER sin crecimiento dice poco."
+        },
+        {
+          "t": "Combínalo con otros datos",
+          "b": "Deuda, márgenes, flujo de caja…"
+        },
+        {
+          "t": "Desconfía de beneficios puntuales",
+          "b": "Un año excepcional distorsiona el ratio."
+        }
+      ],
+      "foot": "Una herramienta más"
+    },
+    {
+      "t": "close",
+      "head": "El PER es [[una pista]], no una sentencia",
+      "body": "Sirve para empezar a analizar, no para decidir solo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "edu-006-dividendo",
+  "label": "Qué es un dividendo",
+  "accent": "green",
+  "caption": "¿Qué es un dividendo? 💶 La parte de los beneficios que algunas empresas reparten entre sus accionistas.\n\nDesliza para ver cómo funciona, qué es la rentabilidad por dividendo y por qué un dividendo alto no siempre es buena señal.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#dividendos",
+    "#bolsa",
+    "#inversion",
+    "#finanzas",
+    "#aprenderbolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "DIVIDENDO",
+      "title": "Cuando la empresa te paga por ser accionista",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 190
+    },
+    {
+      "t": "point",
+      "head": "Una parte de los [[beneficios]]",
+      "body": "Algunas empresas reparten parte de sus ganancias entre los accionistas, normalmente cada trimestre o cada año.",
+      "foot": "No todas lo hacen"
+    },
+    {
+      "t": "point",
+      "head": "La [[rentabilidad]] por dividendo",
+      "body": "Se calcula dividiendo el dividendo anual por acción entre el precio de la acción. Si una acción cuesta 100 € y paga 3 € al año, rinde un 3 %.",
+      "foot": "3 ÷ 100 = 3 %",
+      "kicker": "Un cálculo sencillo"
+    },
+    {
+      "t": "point",
+      "head": "¿Por qué algunas [[no reparten]]?",
+      "body": "Empresas en crecimiento prefieren reinvertir los beneficios en el negocio. Que no paguen no significa que vayan mal.",
+      "foot": "Reinvertir también es una opción"
+    },
+    {
+      "t": "cards",
+      "head": "Ojo con los dividendos altos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Pueden ser una señal de alarma",
+          "b": "Si el precio cae mucho, la rentabilidad por dividendo sube de forma engañosa."
+        },
+        {
+          "t": "No están garantizados",
+          "b": "La empresa puede reducirlos o suprimirlos."
+        },
+        {
+          "t": "Al pagar, el precio baja",
+          "b": "El día que se paga, la acción suele ajustarse por el importe."
+        }
+      ],
+      "foot": "Mira el negocio, no solo el porcentaje"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de fijarte en uno, [[revisa]]",
+      "steps": [
+        {
+          "t": "Beneficios",
+          "b": "Que la empresa gane lo suficiente."
+        },
+        {
+          "t": "Historial",
+          "b": "Si lo ha pagado de forma estable."
+        },
+        {
+          "t": "Deuda",
+          "b": "Que no se endeude para pagarlo."
+        },
+        {
+          "t": "Impuestos",
+          "b": "Los dividendos tributan; consulta tu caso."
+        }
+      ],
+      "foot": "Guárdalo como checklist"
+    },
+    {
+      "t": "close",
+      "head": "Un dividendo es [[un premio]], no una garantía",
+      "body": "Es una parte de la rentabilidad, no toda.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

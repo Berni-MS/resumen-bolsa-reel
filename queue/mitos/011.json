@@ -1,0 +1,84 @@
+{
+  "id": "mitos-011-knight-capital",
+  "label": "Datos · Knight Capital",
+  "accent": "red",
+  "caption": "45 minutos y más de 400 millones de dólares perdidos por un error de software 🤖\n\nEl 1 de agosto de 2012, Knight Capital lanzó órdenes erróneas: 4 millones de ejecuciones en 154 acciones. Sus acciones cayeron un 33 % ese día.\n\nDesliza para ver qué pasó.",
+  "tags": [
+    "#knightcapital",
+    "#trading",
+    "#bolsa",
+    "#tecnologia",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Knight Capital Group"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "45 min",
+      "title": "Lo que tardó un error de software en arruinar una empresa",
+      "foot": "Knight Capital, 2012",
+      "bigSize": 220
+    },
+    {
+      "t": "stat",
+      "big": "45 min",
+      "head": "Cuánto duró",
+      "body": "El 1 de agosto de 2012, un error de software de Knight Capital envió órdenes sin control durante unos 45 minutos.",
+      "foot": "Fuente: Wikipedia (Knight Capital Group)",
+      "kicker": "Cuánto tiempo hizo falta"
+    },
+    {
+      "t": "stat",
+      "big": "4 M",
+      "head": "Ejecuciones en 154 acciones",
+      "body": "El código defectuoso generó 4 millones de ejecuciones, con más de 397 millones de acciones negociadas.",
+      "foot": "Fuente: Wikipedia (Knight Capital Group)",
+      "kicker": "Descontrol"
+    },
+    {
+      "t": "stat",
+      "big": "+400 M$",
+      "head": "La pérdida",
+      "body": "La pérdida superó los 400 millones de dólares, según las fuentes consultadas (varían entre 440 y 460 millones).",
+      "foot": "Fuente: Wikipedia (Knight Capital Group)",
+      "kicker": "Cuánto costó",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«La tecnología hace que todo sea más seguro»",
+      "reality": "Los sistemas automáticos pueden fallar a gran velocidad. Knight cayó un 33 % ese día y tuvo que recibir una inyección de unos 400 millones de dólares para sobrevivir.",
+      "foot": "Fuente: Wikipedia (Knight Capital Group)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "El riesgo operativo existe",
+          "b": "No solo importa el precio de lo que compras."
+        },
+        {
+          "t": "Las pruebas importan",
+          "b": "Un cambio pequeño en un sistema puede costar muy caro."
+        },
+        {
+          "t": "Los límites protegen",
+          "b": "Los controles automáticos son clave."
+        }
+      ],
+      "foot": "Para empresas y para ti"
+    },
+    {
+      "t": "close",
+      "head": "Más velocidad [[no es más seguridad]]",
+      "body": "Automatizar bien exige controles, pruebas y límites.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

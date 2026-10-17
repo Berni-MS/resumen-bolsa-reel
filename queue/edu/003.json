@@ -1,0 +1,78 @@
+{
+  "id": "edu-003-indice",
+  "label": "Qué es un índice bursátil",
+  "accent": "green",
+  "caption": "¿Qué es un índice bursátil? 📊 El termómetro de la bolsa, explicado fácil.\n\nCuando oyes que «el S&P 500 sube» o «el Nasdaq cae», hablan de índices. Desliza para ver qué son, cómo se calculan y en qué se diferencian el S&P 500, el Nasdaq 100 y el Dow Jones.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#indices",
+    "#SP500",
+    "#nasdaq",
+    "#dowjones",
+    "#bolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "ÍNDICE",
+      "title": "El termómetro de la bolsa",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 220
+    },
+    {
+      "t": "point",
+      "head": "Un índice es una [[muestra]] del mercado",
+      "body": "Agrupa un conjunto de acciones y calcula un único número que sube o baja. Sirve para saber cómo va el mercado sin mirar empresa por empresa.",
+      "foot": "Un número, muchas empresas"
+    },
+    {
+      "t": "point",
+      "head": "El [[S&P 500]]",
+      "body": "Reúne unas 500 grandes empresas de EE. UU. y se calcula según el tamaño de cada una (capitalización bursátil ajustada por las acciones disponibles). Existe con ese tamaño desde 1957.",
+      "foot": "Las más grandes pesan más",
+      "kicker": "El más seguido"
+    },
+    {
+      "t": "point",
+      "head": "El [[Nasdaq 100]]",
+      "body": "Incluye 100 grandes empresas no financieras que cotizan en Nasdaq. Nació en 1985 y tiene mucho peso de tecnología.",
+      "foot": "Sin bancos ni aseguradoras",
+      "kicker": "El tecnológico"
+    },
+    {
+      "t": "point",
+      "head": "El [[Dow Jones]]",
+      "body": "Tiene solo 30 empresas y se pondera por precio: las acciones con precio más alto pesan más, aunque la empresa sea más pequeña. Es el más antiguo: la versión industrial nació en 1896.",
+      "foot": "Pocas empresas, mucha historia",
+      "kicker": "El veterano"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo usarlos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Para medir el mercado",
+          "b": "Comparan cómo va tu cartera frente al conjunto."
+        },
+        {
+          "t": "Para invertir",
+          "b": "Los ETF e indexados los replican."
+        },
+        {
+          "t": "Con cuidado",
+          "b": "Un índice no es una inversión por sí mismo: se invierte en productos que lo siguen."
+        }
+      ],
+      "foot": "Tres índices, tres miradas"
+    },
+    {
+      "t": "close",
+      "head": "Un índice es [[el mapa]], no el territorio",
+      "body": "Te da una foto del mercado, pero no dice qué hacer con tu dinero.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel para entender las noticias de bolsa.",
+      "extraBold": true
+    }
+  ]
+}

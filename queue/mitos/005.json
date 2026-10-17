@@ -1,0 +1,73 @@
+{
+  "id": "mitos-005-crash-1929",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "1929: el Dow Jones cayó un 89 % desde su máximo hasta julio de 1932 📉\n\nTardó hasta el 23 de noviembre de 1954 en recuperar aquel nivel. Dos días de octubre de 1929 se llevaron cerca del 13 % y el 12 % del Dow.\n\nDesliza para ver los datos y la lección.",
+  "tags": [
+    "#crash1929",
+    "#historiabursatil",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Federal Reserve History, Stock Market Crash of 1929"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−89 %",
+      "title": "Lo que cayó el Dow Jones entre 1929 y 1932",
+      "foot": "La peor caída de la historia",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "381,17",
+      "head": "El máximo de 1929",
+      "body": "El Dow Jones cerró en 381,17 puntos el 3 de septiembre de 1929.",
+      "foot": "Fuente: Federal Reserve History",
+      "kicker": "Antes del crash"
+    },
+    {
+      "t": "stat",
+      "big": "−13 % y −12 %",
+      "head": "Dos días de octubre",
+      "body": "El 28 de octubre cayó casi un 13 % y el 29, casi un 12 %. Se conocen como Lunes Negro y Martes Negro.",
+      "foot": "Fuente: Federal Reserve History",
+      "kicker": "La caída brutal",
+      "color": "red",
+      "bigSize": 180
+    },
+    {
+      "t": "stat",
+      "big": "41,22",
+      "head": "El suelo de 1932",
+      "body": "El 8 de julio de 1932 cerró en 41,22 puntos: un 89 % por debajo de su máximo.",
+      "foot": "Fuente: Federal Reserve History",
+      "kicker": "Tres años después",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Las caídas siempre se recuperan pronto»",
+      "reality": "El Dow Jones no volvió a su máximo de 1929 hasta el 23 de noviembre de 1954, 25 años después.",
+      "foot": "Fuente: Federal Reserve History"
+    },
+    {
+      "t": "point",
+      "head": "Qué enseña",
+      "body": "No todas las crisis duran lo mismo. El tamaño de la caída, el punto de partida y las circunstancias económicas cambian mucho el resultado.",
+      "foot": "Cuidado con las generalizaciones",
+      "kicker": "La lección"
+    },
+    {
+      "t": "close",
+      "head": "Una recuperación [[no es automática]]",
+      "body": "Por eso importan la diversificación, el horizonte y no invertir dinero que vas a necesitar pronto.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

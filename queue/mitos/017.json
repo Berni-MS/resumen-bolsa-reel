@@ -1,0 +1,83 @@
+{
+  "id": "mitos-017-ibex-2007",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«El IBEX 35 nunca recuperará su máximo de 2007.» 🇪🇸\n\nEl 8 de noviembre de 2007 marcó 15.945,70 puntos. En 2025 lo superó, casi 18 años después.\n\nDesliza para ver los datos y qué enseña este caso.",
+  "tags": [
+    "#ibex35",
+    "#bolsaespañola",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, IBEX 35"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "18",
+      "title": "años tardó el IBEX 35 en superar su máximo de 2007",
+      "foot": "Un caso español",
+      "bigSize": 400
+    },
+    {
+      "t": "stat",
+      "big": "15.945,70",
+      "head": "El máximo de 2007",
+      "body": "El 8 de noviembre de 2007 el IBEX 35 alcanzó los 15.945,70 puntos, su máximo histórico en aquel momento.",
+      "foot": "Fuente: Wikipedia (IBEX 35)",
+      "kicker": "La cima"
+    },
+    {
+      "t": "point",
+      "head": "Una base de [[3.000]]",
+      "body": "El índice se calcula con base 3.000 puntos a 29 de diciembre de 1989 y se inauguró el 14 de enero de 1992. Lo forman 35 empresas.",
+      "foot": "Fuente: Wikipedia (IBEX 35)",
+      "kicker": "Cómo nació"
+    },
+    {
+      "t": "stat",
+      "big": "2025",
+      "head": "El nuevo máximo",
+      "body": "En 2025 el IBEX 35 superó su máximo de 2007, casi 18 años después.",
+      "foot": "Fuente: Wikipedia (IBEX 35)",
+      "kicker": "La recuperación",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«El IBEX no volverá a su máximo de 2007»",
+      "reality": "Volvió. Pero la espera fue larguísima, y eso sin contar los dividendos que repartieron las empresas del índice.",
+      "foot": "Fuente: Wikipedia (IBEX 35)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué enseña",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Los máximos pasados pueden recuperarse",
+          "b": "Pero tardan lo que tardan."
+        },
+        {
+          "t": "El índice no incluye dividendos",
+          "b": "La rentabilidad total fue algo distinta."
+        },
+        {
+          "t": "Concentrar todo en un mercado es arriesgado",
+          "b": "Diversificar por países ayuda."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Recuperar un máximo [[puede tardar años]]",
+      "body": "Ten en cuenta tu horizonte antes de invertir.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "edu-007-inflacion",
+  "label": "La inflación y tus ahorros",
+  "accent": "green",
+  "caption": "¿Qué es la inflación y cómo afecta a tus ahorros? 🎈\n\nUn ejemplo hipotético: con una inflación del 3 % anual, lo que hoy cuesta 100 € costará unos 134 € en diez años; o, visto al revés, 100 € guardados comprarán lo que hoy cuestan unos 74 €.\n\nDesliza para entenderlo y para ver por qué se relaciona con la bolsa.",
+  "tags": [
+    "#inflacion",
+    "#ahorro",
+    "#inversion",
+    "#finanzas",
+    "#bolsa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "IPC",
+      "title": "La inflación y lo que le hace a tus ahorros",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Los precios [[suben]], tu dinero compra menos",
+      "body": "La inflación es el aumento general de los precios con el tiempo. Con el mismo dinero compras cada vez menos cosas.",
+      "foot": "Pierde poder adquisitivo"
+    },
+    {
+      "t": "stat",
+      "big": "74 €",
+      "head": "Lo que quedaría de tus 100 €",
+      "body": "Ejemplo hipotético: con una inflación del 3 % anual durante 10 años, 100 € compran lo que hoy valdrían unos 74 €.",
+      "foot": "Ejemplo ilustrativo",
+      "kicker": "Dinero guardado sin rentabilidad",
+      "color": "red"
+    },
+    {
+      "t": "point",
+      "head": "¿Cómo se mide?",
+      "body": "En España y la zona euro se sigue con índices de precios al consumo (IPC e IPCA), que miden lo que cuesta una cesta de bienes y servicios representativa.",
+      "foot": "El dato sale cada mes",
+      "kicker": "Un indicador clave"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué importa a la bolsa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Los bancos centrales reaccionan",
+          "b": "Si la inflación sube, pueden subir los tipos de interés."
+        },
+        {
+          "t": "Cambia las valoraciones",
+          "b": "Tipos más altos suelen presionar a las empresas más endeudadas o de crecimiento."
+        },
+        {
+          "t": "Las empresas la sienten",
+          "b": "Sus costes y precios también cambian."
+        }
+      ],
+      "foot": "No es una regla fija"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo se defienden [[los inversores]]",
+      "steps": [
+        {
+          "t": "Invertir a largo plazo",
+          "b": "Buscando rentabilidad por encima de la inflación."
+        },
+        {
+          "t": "Diversificar",
+          "b": "No depender de un solo activo."
+        },
+        {
+          "t": "Revisar costes",
+          "b": "Que las comisiones no se lleven la ganancia."
+        },
+        {
+          "t": "Fondo de emergencia",
+          "b": "Dinero líquido para imprevistos, sin arriesgar."
+        }
+      ],
+      "foot": "Ideas, no recomendaciones"
+    },
+    {
+      "t": "close",
+      "head": "La inflación es el [[impuesto invisible]]",
+      "body": "Guardar dinero tiene un coste, pero invertir también tiene riesgos. Lo importante es entender ambos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}
