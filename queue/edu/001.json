@@ -1,0 +1,27 @@
+{
+  "id": "edu-001-etf",
+  "label": "Qué es un ETF",
+  "accent": "green",
+  "caption": "¿Qué es un ETF? 🧺 Una cesta de inversiones que cotiza en bolsa, explicada sin tecnicismos.\n\nDesliza para ver qué es, un ejemplo con el S&P 500, sus ventajas, sus riesgos y las 4 cosas que conviene mirar antes de elegir uno.\n\n💾 Guárdalo como checklist y envíaselo a quien empieza en bolsa.",
+  "tags": ["#ETF", "#bolsa", "#inversion", "#finanzas", "#aprenderbolsa"],
+  "sources": [],
+  "slides": [
+    { "t": "cover", "big": "ETF", "title": "Qué es y cómo funciona, sin tecnicismos", "foot": "Desliza para entenderlo" },
+    { "t": "point", "head": "Un ETF es una [[cesta]] de inversiones", "headSize": 150, "body": "Es un fondo que cotiza en bolsa y agrupa muchas acciones (u otros activos) en un solo producto. Lo compras y lo vendes como si fuera una acción.", "foot": "Un producto, muchas empresas" },
+    { "t": "point", "kicker": "Un ejemplo", "head": "Un ETF del [[S&P 500]]", "body": "Replica un índice de unas 500 grandes empresas de EE. UU. Con una sola compra tienes un trocito de todas ellas, en lugar de elegir una a una.", "note": "SPY, que sale cada día en nuestros resúmenes, es uno de los ETF más conocidos que siguen este índice.", "foot": "Sigue al índice, no lo bate" },
+    { "t": "cards", "head": "Lo que tiene a favor", "accent": "green", "cards": [
+      { "t": "Diversificación", "b": "Repartes el riesgo entre muchas empresas a la vez." },
+      { "t": "Comisiones bajas", "b": "Muchos ETF indexados cobran menos que los fondos de gestión activa." },
+      { "t": "Flexibilidad", "b": "Se compran y se venden durante la sesión, como una acción." } ], "foot": "Ahora, la otra cara" },
+    { "t": "cards", "head": "Lo que no te cuentan", "accent": "red", "cards": [
+      { "t": "Sube y baja con su índice", "b": "Si el mercado cae, tu ETF cae. Diversificar no elimina el riesgo." },
+      { "t": "Tiene costes", "b": "Una comisión anual (TER) y, según el bróker, gastos de compra y venta." },
+      { "t": "No todos son iguales", "b": "Existen ETF apalancados o muy concentrados, mucho más arriesgados." } ], "foot": "Lee antes de comprar" },
+    { "t": "steps", "head": "Antes de elegir uno, [[mira 4 cosas]]", "steps": [
+      { "t": "Qué índice replica", "b": "Qué empresas o países contiene." },
+      { "t": "Su comisión anual (TER)", "b": "Un coste pequeño se nota con los años." },
+      { "t": "Tamaño y liquidez", "b": "Más volumen suele significar mejor precio al operar." },
+      { "t": "Divisa y tipo", "b": "Si acumula o reparte dividendos y en qué moneda cotiza." } ], "foot": "Guárdalo como checklist" },
+    { "t": "close", "head": "Un ETF es una [[herramienta]], no un atajo", "headSize": 160, "body": "Bien entendido, simplifica invertir. Mal entendido, es solo otra forma de perder dinero.", "extra": "Guarda este carrusel y envíaselo a quien empieza en bolsa.", "extraBold": true, "extraSize": 36, "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta." }
+  ]
+}

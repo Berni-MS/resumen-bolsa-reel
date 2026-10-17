@@ -1,0 +1,17 @@
+{
+  "id": "mitos-001-cinco-mitos",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "5 mitos de la bolsa que te cuestan dinero, con datos reales 📉📈\n\n1️⃣ «Si se desploma, se acabó»: en 2020 el S&P 500 cayó un 34 % en 33 días y volvió a máximos unos seis meses después.\n2️⃣ «Las caídas se recuperan rápido»: tras el máximo de octubre de 2007 el S&P 500 no recuperó ese nivel hasta 2013.\n3️⃣ «Espero a que se calme»: desde el mínimo de marzo de 2020 llegó a subir más de un 50 % en pocos meses.\n4️⃣ «Hace falta mucho dinero»: hoy se puede empezar con importes pequeños.\n5️⃣ «La bolsa es un casino»: especular y diversificar a largo plazo no son lo mismo.\n\n¿Cuál te habías creído? Cuéntalo en comentarios 👇",
+  "tags": ["#bolsa", "#mitos", "#inversion", "#SP500", "#finanzas"],
+  "sources": ["NPR (18/08/2020)", "Wikipedia, Closing milestones of the S&P 500"],
+  "slides": [
+    { "t": "cover", "big": "5", "bigSize": 420, "title": "mitos de la bolsa que te cuestan dinero", "foot": "Con datos reales" },
+    { "t": "myth", "myth": "«Si la bolsa se desploma, es que se acabó»", "reality": "En 2020 el S&P 500 cayó un 34 % entre el 19 de febrero y el 23 de marzo. El 18 de agosto ya cerraba en un nuevo récord: unos seis meses después.", "foot": "Fuente: NPR, 18/08/2020" },
+    { "t": "myth", "myth": "«Las caídas siempre se recuperan rápido»", "reality": "Depende. Tras el máximo de octubre de 2007, el S&P 500 llegó a cerrar en 676,53 (marzo de 2009) y no recuperó ese máximo hasta 2013. La recuperación de 2020 fue la excepción, no la norma.", "foot": "Fuente: Wikipedia, hitos del S&P 500" },
+    { "t": "myth", "myth": "«Espero a que se calme y entro»", "reality": "Tras el mínimo de marzo de 2020, el S&P 500 subió más de un 50 % en pocos meses. Quien esperó a la calma entró cuando buena parte del rebote ya había ocurrido.", "foot": "Fuente: NPR, 18/08/2020" },
+    { "t": "myth", "myth": "«Necesitas mucho dinero para empezar»", "reality": "Hoy muchos brókeres permiten empezar con importes pequeños y comprar fracciones de acciones o ETF. Lo que importa más que la cantidad es la constancia y entender qué compras.", "foot": "Comprueba las condiciones de tu bróker" },
+    { "t": "myth", "myth": "«La bolsa es un casino»", "reality": "Comprar una empresa entera o un índice diversificado no es lo mismo que apostar a corto plazo con una sola acción. Especular es posible, pero no es la única forma de participar en el mercado.", "foot": "Riesgo sí, azar puro no" },
+    { "t": "close", "head": "¿Cuál [[te habías creído]]?", "body": "Cuéntanoslo en comentarios y envía este carrusel a alguien que repita alguno de estos mitos.", "extra": "Fuentes: NPR (18/08/2020) para el desplome y la recuperación de 2020; Wikipedia, «Closing milestones of the S&P 500», para 2007–2013. Los datos del S&P 500 son históricos.", "extraSize": 30, "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros." }
+  ]
+}
