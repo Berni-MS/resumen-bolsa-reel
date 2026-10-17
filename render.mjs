@@ -105,7 +105,7 @@ function slideFactors() {
     const up = f.dir === 'up';
     return `<div style="display:flex;gap:28px;align-items:flex-start;background:${up ? GREEN : RED};color:${INK};padding:22px 32px;height:200px;overflow:hidden">
       <div style="font-size:72px;line-height:1">${up ? '▲' : '▼'}</div>
-      <div style="min-width:0"><div class="d" style="font-size:66px;line-height:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(f.title)}</div>
+      <div style="min-width:0"><div class="d" style="font-size:56px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(f.title)}</div>
       <div style="font-size:30px;font-weight:700;line-height:1.22;margin-top:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">${esc(f.text)}</div></div></div>`;
   }).join('<div style="height:20px"></div>');
   return page(INK, '#fff', `<div style="padding:250px 120px 0 80px">
