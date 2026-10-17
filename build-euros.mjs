@@ -125,8 +125,10 @@ function build(r) {
 const arg = process.argv[2];
 if (arg === '--check') {
   let bad = 0;
-  for (let i = 0; i < LIST.length; i++) {
-    try { const r = await compute(LIST[i]); console.log(`OK ${i} ${LIST[i].join(' ')} -> ${eur(r.final)} (peor caída ${dec(r.worst.dd * 100, 0)} %, S&P ${r.bench ? eur(r.bench) : '-'})`); }
+  const only = process.argv[3] ? process.argv[3].split(',').map(Number) : LIST.map((_, i) => i);
+  for (const i of only) {
+    const t0 = Date.now();
+    try { const r = await compute(LIST[i]); console.log(`OK ${i} ${LIST[i].join(' ')} -> ${eur(r.final)} (peor caída ${dec(r.worst.dd * 100, 0)} %, S&P ${r.bench ? eur(r.bench) : '-'}) ${Date.now() - t0} ms`); }
     catch (e) { bad++; console.log(`FALLA ${i} ${LIST[i].join(' ')}: ${e.message}`); }
   }
   process.exit(bad ? 1 : 0);

@@ -1,5 +1,10 @@
 name: Comprobar euros
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        required: false
+        default: '0,1,14'
 jobs:
   c:
     runs-on: ubuntu-latest
@@ -9,5 +14,5 @@ jobs:
         with:
           node-version: 22
       - run: |
-          node build-euros.mjs --check | tee out.txt || true
+          timeout 150 node build-euros.mjs --check '${{ inputs.only }}' | tee out.txt || true
           while IFS= read -r l; do echo "::notice::$l"; done < out.txt
