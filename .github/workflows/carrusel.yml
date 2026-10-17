@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "Tipo de carrusel: edu (educativo) o mitos (datos y mitos)"
+        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos) o euros (1.000 € hace N años)"
         required: true
         default: edu
       index:
@@ -42,7 +42,12 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Elegir carrusel de la semana
-        run: node select-carousel.mjs "${{ inputs.kind }}" item.json "${{ inputs.index }}"
+        run: |
+          if [ "${{ inputs.kind }}" = "euros" ]; then
+            node build-euros.mjs item.json "${{ inputs.index }}"
+          else
+            node select-carousel.mjs "${{ inputs.kind }}" item.json "${{ inputs.index }}"
+          fi
 
       - name: Generar diapositivas
         run: node render-carousel.mjs item.json out

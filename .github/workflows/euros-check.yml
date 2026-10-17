@@ -1,0 +1,13 @@
+name: Comprobar euros
+on: workflow_dispatch
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          node build-euros.mjs --check | tee out.txt || true
+          while IFS= read -r l; do echo "::notice::$l"; done < out.txt
