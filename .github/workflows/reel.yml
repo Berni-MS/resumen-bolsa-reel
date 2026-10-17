@@ -1,11 +1,13 @@
 name: Reel diario
 
 on:
+  push:
+    branches: [test-reel]   # prueba manual: usa record.sample.json
   workflow_dispatch:
     inputs:
       record_b64:
         description: Registro de RESUMEN_BOLSA (JSON en base64), lo envía Make
-        required: true
+        required: false
 
 permissions:
   contents: write
@@ -37,7 +39,11 @@ jobs:
         env:
           RECORD_B64: ${{ inputs.record_b64 }}
         run: |
-          printf '%s' "$RECORD_B64" | base64 -d > record.json
+          if [ -n "$RECORD_B64" ]; then
+            printf '%s' "$RECORD_B64" | base64 -d > record.json
+          else
+            cp record.sample.json record.json
+          fi
           node prepare.mjs record.json data.json
 
       - name: Generar pantallas y vídeo
