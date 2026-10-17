@@ -62,8 +62,8 @@ function slideOverview() {
     const w = Math.min(100, Math.abs(i.chg) / maxScale * 100).toFixed(1);
     return `<div style="position:relative;height:250px;padding:0 36px 18px;background:${up ? GREEN : RED};color:${INK};display:flex;align-items:center;justify-content:space-between;overflow:hidden">
       <div><div class="d" style="font-size:128px;line-height:.9">${esc(i.ticker)}</div><div style="font-size:32px;font-weight:700">${esc(i.name)}</div></div>
-      <div style="text-align:right"><div class="d" style="font-size:140px;line-height:.9">${pct(i.chg)}</div>
-      <div style="font-size:28px;font-weight:500">${usd(i.close)} (antes ${usd(i.prev)})</div></div>
+      <div style="text-align:right"><div class="d" style="font-size:132px;line-height:.85">${pct(i.chg)}</div>
+      <div style="font-size:28px;font-weight:500;margin-top:14px">${usd(i.close)} (antes ${usd(i.prev)})</div></div>
       <div style="position:absolute;left:0;bottom:0;width:100%;height:18px;background:rgba(15,27,51,.22)"><div style="width:${w}%;height:18px;background:${INK}"></div></div>
     </div>`;
   }).join('<div style="height:20px"></div>');
@@ -105,7 +105,7 @@ function slideFactors() {
     const up = f.dir === 'up';
     return `<div style="display:flex;gap:28px;align-items:flex-start;background:${up ? GREEN : RED};color:${INK};padding:22px 32px;height:200px;overflow:hidden">
       <div style="font-size:72px;line-height:1">${up ? '▲' : '▼'}</div>
-      <div><div style="min-width:0"><div class="d" style="font-size:66px;line-height:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(f.title)}</div>
+      <div style="min-width:0"><div class="d" style="font-size:66px;line-height:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(f.title)}</div>
       <div style="font-size:30px;font-weight:700;line-height:1.22;margin-top:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">${esc(f.text)}</div></div></div>`;
   }).join('<div style="height:20px"></div>');
   return page(INK, '#fff', `<div style="padding:250px 120px 0 80px">
