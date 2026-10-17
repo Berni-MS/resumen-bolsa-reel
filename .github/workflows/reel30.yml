@@ -107,15 +107,15 @@ jobs:
           API="https://graph.facebook.com/v21.0"
           RES=$(curl -sS -X POST "$API/$IG_USER/media" --data-urlencode "media_type=STORIES" --data-urlencode "video_url=$VIDEO_URL" --data-urlencode "access_token=$IG_TOKEN")
           ID=$(echo "$RES" | jq -r '.id // empty')
-          if [ -z "$ID" ]; then echo "No se creó el contenedor de la historia: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
+          if [ -z "$ID" ]; then echo "::error::No se creó el contenedor de la historia: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
           for i in $(seq 1 30); do
             ST=$(curl -sS "$API/$ID?fields=status_code&access_token=$IG_TOKEN" | jq -r '.status_code // "?"')
             echo "estado: $ST"
             [ "$ST" = "FINISHED" ] && break
-            [ "$ST" = "ERROR" ] && exit 1
+            [ "$ST" = "ERROR" ] && { echo "::error::Instagram rechazó el vídeo de la historia"; exit 1; }
             sleep 10
           done
-          curl -sS --fail-with-body -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN" | jq -c 'del(.access_token)'
+          OUT=$(curl -sS -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN"); echo "$OUT" | jq -e '.id' >/dev/null || { echo "::error::Fallo al publicar la historia: $(echo "$OUT" | jq -c '.error // .')"; exit 1; }; echo "Historia publicada: $(echo "$OUT" | jq -r .id)"
 
       - name: Avisar a Make
         if: ${{ inputs.dry_run != 'true' }}
