@@ -1,9 +1,8 @@
-// Carrusel «1.000 € hace N años»: calcula con datos reales (Yahoo Finance, precios ajustados mensuales,
+// Carrusel «1.000 € hace N años»: calcula con datos reales (Alpha Vantage, precios ajustados mensuales,
 // con dividendos reinvertidos y cambio dólar-euro) y escribe el JSON del carrusel.
 // Uso: node build-euros.mjs <item.json> [indice]      |   node build-euros.mjs --check
 import fs from 'node:fs';
 
-const UA = { 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36' };
 const STAKE = 1000;
 
 // Rotación semanal: activo + años atrás
@@ -11,7 +10,7 @@ const LIST = [
   ['AAPL', 'Apple', 10], ['SPY', 'el S&P 500', 10], ['KO', 'Coca-Cola', 10], ['NVDA', 'Nvidia', 10],
   ['MSFT', 'Microsoft', 10], ['SPY', 'el S&P 500', 20], ['AMZN', 'Amazon', 10], ['QQQ', 'el Nasdaq 100', 10],
   ['MCD', "McDonald's", 10], ['AAPL', 'Apple', 20], ['JNJ', 'Johnson & Johnson', 10], ['KO', 'Coca-Cola', 20],
-  ['DIS', 'Disney', 10], ['NVDA', 'Nvidia', 5], ['ITX.MC', 'Inditex', 10], ['BRK-B', 'Berkshire Hathaway', 10],
+  ['DIS', 'Disney', 10], ['NVDA', 'Nvidia', 5], ['BRK-B', 'Berkshire Hathaway', 10],
   ['SPY', 'el S&P 500', 5], ['MSFT', 'Microsoft', 20], ['PG', 'Procter & Gamble', 10], ['QQQ', 'el Nasdaq 100', 20],
   ['AMZN', 'Amazon', 5], ['NKE', 'Nike', 10], ['PEP', 'PepsiCo', 10], ['AAPL', 'Apple', 5],
   ['SPY', 'el S&P 500', 15], ['KO', 'Coca-Cola', 5],
@@ -23,28 +22,42 @@ const label = k => `${MONTHS[k % 12]} de ${Math.floor(k / 12)}`;
 const eur = n => Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' €';
 const dec = (n, d = 1) => n.toFixed(d).replace('.', ',');
 
+const KEY = process.env.ALPHAVANTAGE_API_KEY;
 const CACHE = new Map();
-async function series(sym) {
-  if (CACHE.has(sym)) return CACHE.get(sym);
-  const v = await seriesFetch(sym); CACHE.set(sym, v); return v;
-}
-async function seriesFetch(sym) {
+let lastCall = 0;
+async function av(params) {
+  if (!KEY) throw new Error('Falta ALPHAVANTAGE_API_KEY');
+  const wait = 1500 - (Date.now() - lastCall); if (wait > 0) await new Promise(r => setTimeout(r, wait));
+  lastCall = Date.now();
   let lastErr;
-  for (let t = 0; t < 4; t++) {
-    const host = t % 2 ? 'query2' : 'query1';
-    const url = `https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=max&interval=1mo&events=div%2Csplit`;
+  for (let t = 0; t < 3; t++) {
     try {
-      const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(25000) });
+      const r = await fetch(`https://www.alphavantage.co/query?${new URLSearchParams({ ...params, apikey: KEY })}`, { signal: AbortSignal.timeout(30000) });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const j = await r.json();
-      const res = j.chart.result[0];
-      const ts = res.timestamp, adj = res.indicators.adjclose?.[0]?.adjclose || res.indicators.quote[0].close;
-      const map = new Map();
-      ts.forEach((t0, i) => { if (adj[i] != null) map.set(ym(t0), adj[i]); });
-      return { currency: res.meta.currency, map, last: res.meta.regularMarketTime, lastKey: ym(res.meta.regularMarketTime) };
-    } catch (e) { lastErr = e; await new Promise(r => setTimeout(r, 15000 * (t + 1))); }
+      if (j.Note || j.Information || j['Error Message']) throw new Error(String(j.Note || j.Information || j['Error Message']).slice(0, 120));
+      return j;
+    } catch (e) { lastErr = e; await new Promise(r => setTimeout(r, 5000 * (t + 1))); }
   }
-  throw new Error(`No se pudo leer ${sym}: ${lastErr.message}`);
+  throw lastErr;
+}
+const toKey = d => { const [y, m] = d.split('-').map(Number); return y * 12 + (m - 1); };
+async function series(sym) {
+  if (CACHE.has(sym)) return CACHE.get(sym);
+  let v;
+  if (sym === 'EURUSD=X') {
+    const j = await av({ function: 'FX_MONTHLY', from_symbol: 'EUR', to_symbol: 'USD' });
+    const ts = j['Time Series FX (Monthly)']; if (!ts) throw new Error('sin datos de cambio');
+    v = { currency: 'FX', map: new Map(Object.entries(ts).map(([d, o]) => [toKey(d), Number(o['4. close'])])), lastDate: Object.keys(ts).sort().at(-1) };
+  } else {
+    const j = await av({ function: 'TIME_SERIES_MONTHLY_ADJUSTED', symbol: sym });
+    const ts = j['Monthly Adjusted Time Series']; if (!ts) throw new Error(`sin datos de ${sym}`);
+    v = { currency: 'USD', map: new Map(Object.entries(ts).map(([d, o]) => [toKey(d), Number(o['5. adjusted close'])])), lastDate: Object.keys(ts).sort().at(-1) };
+  }
+  v.lastKey = Math.max(...v.map.keys());
+  v.last = new Date(v.lastDate + 'T12:00:00Z').getTime() / 1000;
+  CACHE.set(sym, v);
+  return v;
 }
 
 // valor en euros de 1.000 € invertidos a final del mes `start`, mes a mes hasta `end`
@@ -95,7 +108,7 @@ function build(r) {
   const sign = n => (n >= 0 ? '+' : '−') + dec(Math.abs(n), 1);
   const total = ratio >= 2 ? `×${dec(ratio, 1)}` : `${sign((ratio - 1) * 100)} %`;
   const asOf = `${r.asOf.getUTCDate()} de ${MONTHS[r.asOf.getUTCMonth()]} de ${r.asOf.getUTCFullYear()}`;
-  const foot = 'Fuente: Yahoo Finance; cálculo propio';
+  const foot = 'Fuente: Alpha Vantage; cálculo propio';
   const what = r.name;
   const dd = Math.abs(r.worst.dd) * 100;
   const caption = `💶 ${eur(STAKE)} en ${what} hace ${r.years} años… hoy serían ${eur(r.final)}.\n\nDesliza para ver la rentabilidad, la peor caída del camino y qué no cuenta este cálculo. Los datos son reales: precios ajustados con dividendos reinvertidos y en euros (con el cambio incluido), sin impuestos ni comisiones.\n\n💾 Guárdalo y envíaselo a alguien que dude de invertir.`;
@@ -119,7 +132,7 @@ function build(r) {
     id: `euros-${r.sym.replace(/[^A-Za-z]/g, '')}-${r.years}a-${r.asOf.toISOString().slice(0, 10)}`,
     label: `${eur(STAKE)} hace ${r.years} años`, accent: up ? 'green' : 'red', caption,
     tags: ['#inversion', '#bolsa', '#interescompuesto', '#aprenderbolsa', tag.length > 1 ? `#${tag}` : '#acciones'],
-    sources: ['Yahoo Finance (precios ajustados mensuales)', 'cálculo propio'], slides,
+    sources: ['Alpha Vantage (precios ajustados mensuales)', 'cálculo propio'], slides,
   };
 }
 

@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: |
+      - env:
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+        run: |
           timeout 400 node build-euros.mjs --check '${{ inputs.only }}' | tee out.txt || true
           while IFS= read -r l; do echo "::notice::$l"; done < out.txt
