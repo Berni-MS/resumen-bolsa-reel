@@ -1,0 +1,11 @@
+name: Probar fuentes de datos
+on: workflow_dispatch
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          Y=$(curl -sS -m 30 -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=max&interval=1mo&events=div%2Csplit" | head -c 400)
+          echo "::notice::YAHOO: $Y"
+          S=$(curl -sS -m 30 "https://stooq.com/q/d/l/?s=aapl.us&i=m" | head -c 200)
+          echo "::notice::STOOQ: $S"
