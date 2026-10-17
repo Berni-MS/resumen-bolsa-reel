@@ -105,16 +105,16 @@ function slideTop(idx, kind) {
 function slideFactors() {
   const blocks = d.factors.slice(0, 4).map(f => {
     const up = f.dir === 'up';
-    return `<div style="display:flex;gap:22px;align-items:flex-start;background:${up ? GREEN : RED};color:${INK};padding:14px 28px;height:180px;overflow:hidden">
+    return `<div style="display:flex;gap:22px;align-items:flex-start;background:${up ? GREEN : RED};color:${INK};padding:14px 26px;height:200px;overflow:hidden">
       <div style="font-size:56px;line-height:1">${up ? '▲' : '▼'}</div>
-      <div style="min-width:0"><div class="d" style="font-size:50px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(f.title)}</div>
-      <div style="font-size:25px;font-weight:700;line-height:1.2;margin-top:4px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">${esc(f.text)}</div></div></div>`;
+      <div style="min-width:0"><div class="d" style="font-size:54px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(f.title)}</div>
+      <div style="font-size:32px;font-weight:700;line-height:1.18;margin-top:4px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">${esc(f.text)}</div></div></div>`;
   }).join('<div style="height:12px"></div>');
   return page(INK, '#fff', `<div style="padding:${SAFE_TOP}px ${SAFE_R}px 0 ${SAFE_L}px">
-    <div class="d" style="font-size:104px;line-height:.9">Qué movió la bolsa</div>
-    <div style="font-size:38px;font-weight:700;color:${MUTED};margin-top:10px">${esc(d.sessionLabel)}</div>
-    <div style="margin-top:26px">${blocks}</div>
-    <div style="margin-top:18px;font-size:23px;font-weight:500;color:${MUTED};line-height:1.3">Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.</div></div>`);
+    <div class="d" style="font-size:98px;line-height:.9">Qué movió la bolsa</div>
+    <div style="font-size:36px;font-weight:700;color:${MUTED};margin-top:8px">${esc(d.sessionLabel)}</div>
+    <div style="margin-top:20px">${blocks}</div>
+    <div style="margin-top:14px;font-size:22px;font-weight:500;color:${MUTED};line-height:1.3">Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.</div></div>`);
 }
 
 const slides = [
