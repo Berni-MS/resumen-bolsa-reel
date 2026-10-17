@@ -16,11 +16,19 @@ const sessionLabel = `Sesión del ${fmt({ weekday: 'long' })} ${fmt({ day: 'nume
 // Titular corto y determinista según los tres índices
 const chg = [r.spy_chg, r.qqq_chg, r.dia_chg];
 const down = chg.filter(x => x < 0).length, up = chg.filter(x => x > 0).length;
-const big = Math.abs(r.spy_chg) >= 1.5;
+const avg = chg.reduce((a, b) => a + b, 0) / 3;
+const names = [['S&P', r.spy_chg], ['Nasdaq', r.qqq_chg], ['Dow', r.dia_chg]];
+const joinEs = a => a.length > 1 ? a.slice(0, -1).join(', ') + ' y ' + a.at(-1) : a[0];
 let headline;
-if (down === 3) headline = big ? 'Fuerte caída en Wall Street' : 'Wall Street cierra en rojo';
-else if (up === 3) headline = big ? 'Fuerte subida en Wall Street' : 'Wall Street cierra en verde';
-else headline = 'Wall Street cierra mixto';
+if (Math.max(...chg.map(Math.abs)) < 0.2) headline = 'Wall Street cierra sin rumbo';
+else if (down === 3) headline = avg <= -1.5 ? 'Fuerte caída en Wall Street' : avg <= -0.75 ? 'Wall Street cierra con pérdidas' : 'Leves caídas en Wall Street';
+else if (up === 3) headline = avg >= 1.5 ? 'Fuerte subida en Wall Street' : avg >= 0.75 ? 'Wall Street cierra con ganancias' : 'Leves subidas en Wall Street';
+else {
+  const u = names.filter(n => n[1] > 0).map(n => n[0]), dn = names.filter(n => n[1] < 0).map(n => n[0]);
+  if (!u.length || !dn.length) headline = 'Wall Street cierra casi sin cambios';
+  else headline = cap(`${joinEs(u)} ${u.length > 1 ? 'suben' : 'sube'}, ${joinEs(dn)} ${dn.length > 1 ? 'caen' : 'cae'}`);
+}
+const big = Math.abs(r.spy_chg) >= 1.5;
 
 // Nombres cortos
 const KEEP = new Set(['APA']);
