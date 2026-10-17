@@ -23,12 +23,17 @@ const label = k => `${MONTHS[k % 12]} de ${Math.floor(k / 12)}`;
 const eur = n => Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' €';
 const dec = (n, d = 1) => n.toFixed(d).replace('.', ',');
 
+const CACHE = new Map();
 async function series(sym) {
+  if (CACHE.has(sym)) return CACHE.get(sym);
+  const v = await seriesFetch(sym); CACHE.set(sym, v); return v;
+}
+async function seriesFetch(sym) {
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=max&interval=1mo&events=div%2Csplit`;
   let lastErr;
   for (let t = 0; t < 3; t++) {
     try {
-      const r = await fetch(url, { headers: UA });
+      const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(20000) });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const j = await r.json();
       const res = j.chart.result[0];
