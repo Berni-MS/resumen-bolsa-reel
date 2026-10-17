@@ -52,15 +52,44 @@ if (!factors.length) {
 }
 
 const pctEs = x => (x < 0 ? '−' : '+') + Math.abs(x).toLocaleString('es-ES', { minimumFractionDigits: 2 }) + ' %';
-const caption = [
-  `${headline}. ${sessionLabel}.`,
-  `S&P 500 ${pctEs(r.spy_chg)} · Nasdaq 100 ${pctEs(r.qqq_chg)} · Dow Jones ${pctEs(r.dia_chg)}`,
-  '',
-  r.summary || '',
-  '',
-  'Contenido informativo, no es asesoramiento financiero.',
-  '#bolsa #wallstreet #SP500 #nasdaq #dowjones #inversion #finanzas',
-].join('\n');
+const arrow = x => (x < 0 ? '🔻' : x > 0 ? '🟢' : '⚪');
+const idxLines = [
+  `${arrow(r.spy_chg)} S&P 500 (SPY): ${pctEs(r.spy_chg)}`,
+  `${arrow(r.qqq_chg)} Nasdaq 100 (QQQ): ${pctEs(r.qqq_chg)}`,
+  `${arrow(r.dia_chg)} Dow Jones (DIA): ${pctEs(r.dia_chg)}`,
+];
+const firstWord = n => String(n).split(/\s+/)[0].replace(/[,.]$/, '');
+function topLine(label, rows, withName) {
+  return `${label}: ` + rows.map(x => `${x.ticker}${withName && firstWord(x.name) !== x.ticker ? ' (' + firstWord(x.name) + ')' : ''} ${pctEs(x.chg)}`).join(' · ');
+}
+function buildCaption(withName) {
+  const L = { SPY: 'S&P 500', QQQ: 'Nasdaq 100', DIA: 'Dow Jones' };
+  const ups = ['SPY', 'QQQ', 'DIA'].map(k => topLine(L[k], list(k === 'SPY' ? r.sp500_gainers : k === 'QQQ' ? r.nasdaq100_gainers : r.dow30_gainers), withName));
+  const dns = ['SPY', 'QQQ', 'DIA'].map(k => topLine(L[k], list(k === 'SPY' ? r.sp500_losers : k === 'QQQ' ? r.nasdaq100_losers : r.dow30_losers), withName));
+  return [
+    `${headline} 📊`,
+    `${sessionLabel}. Variación de cada índice respecto al cierre de la sesión anterior.`,
+    '',
+    '🏛️ Así cerraron los índices',
+    ...idxLines,
+    '',
+    '🚀 Las 5 acciones que más subieron',
+    ...ups,
+    '',
+    '⚠️ Las 5 acciones que más cayeron',
+    ...dns,
+    '',
+    '💬 Qué pasó',
+    r.summary || '',
+    '',
+    '🎞️ En el Reel: la variación de los tres índices, el top 5 de subidas y bajadas en cada uno y los factores que movieron el mercado.',
+    '',
+    'ℹ️ Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.',
+    '#bolsa #wallstreet #SP500 #nasdaq #dowjones #mercados #inversion #finanzas #bolsasincorbata',
+  ].join('\n');
+}
+let caption = buildCaption(true);
+if (caption.length > 2100) caption = buildCaption(false);
 
 const data = {
   dateLabel, sessionLabel, headline,
