@@ -6,6 +6,9 @@ on:
       item_b64:
         description: Guion del reel (JSON en base64), lo envía Make
         required: false
+      date:
+        description: Fecha de publicación (AAAA-MM-DD), la envía Make
+        required: false
       dry_run:
         description: "true = no avisar a Make (no se publica)"
         required: false
@@ -41,13 +44,14 @@ jobs:
       - name: Preparar guion
         env:
           ITEM_B64: ${{ inputs.item_b64 }}
+          ITEM_DATE: ${{ inputs.date }}
         run: |
           if [ -n "$ITEM_B64" ]; then
-            printf '%s' "$ITEM_B64" | base64 -d > item.json
+            printf '%s' "$ITEM_B64" | base64 -d > item.raw
           else
-            cp sample-30s.json item.json
+            cp sample-30s.json item.raw
           fi
-          jq -e '.hook and (.scenes|length>=3)' item.json >/dev/null
+          node prepare-30s.mjs item.raw item.json "$ITEM_DATE"
 
       - name: Generar vídeo
         run: node render-30s.mjs item.json out
