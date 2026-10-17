@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: reel
@@ -55,8 +56,8 @@ jobs:
           set -euo pipefail
           DATE=$(jq -r .date record.json)
           NAME="${DATE}-${GITHUB_RUN_ID}.mp4"
-          git config user.name "reel-bot"
-          git config user.email "reel-bot@users.noreply.github.com"
+          git config --global user.name "reel-bot"
+          git config --global user.email "reel-bot@users.noreply.github.com"
           REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           if git ls-remote --exit-code --heads "$REMOTE" gh-pages >/dev/null 2>&1; then
             git clone --depth 1 --branch gh-pages "$REMOTE" site
@@ -72,8 +73,10 @@ jobs:
           rm -f site/reels/0*.png
           cd site
           git add -A
-          git commit -q -m "Reel ${DATE}" || true
+          git commit -q -m "Reel ${DATE}"
           git push origin gh-pages
+          # un push hecho con GITHUB_TOKEN no lanza solo la publicación de Pages: se pide expresamente
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
           URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reels/${NAME}"
           echo "url=$URL" >> "$GITHUB_OUTPUT"
 
