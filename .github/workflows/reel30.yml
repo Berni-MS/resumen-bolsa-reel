@@ -104,7 +104,8 @@ jobs:
           VIDEO_URL: ${{ steps.publish.outputs.url }}
         run: |
           if [ -z "$IG_TOKEN" ]; then echo "Sin IG_ACCESS_TOKEN: no se publica la historia."; exit 0; fi
-          API="https://graph.facebook.com/v21.0"
+          IG_TOKEN=$(printf %s "$IG_TOKEN" | tr -d "[:space:]\"'")
+          case "$IG_TOKEN" in IG*) API="https://graph.instagram.com/v21.0";; *) API="https://graph.facebook.com/v21.0";; esac
           RES=$(curl -sS -X POST "$API/$IG_USER/media" --data-urlencode "media_type=STORIES" --data-urlencode "video_url=$VIDEO_URL" --data-urlencode "access_token=$IG_TOKEN")
           ID=$(echo "$RES" | jq -r '.id // empty')
           if [ -z "$ID" ]; then echo "::error::No se creó el contenedor de la historia: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
