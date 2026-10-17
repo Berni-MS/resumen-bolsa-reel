@@ -1,0 +1,105 @@
+name: Reel En 30 segundos
+
+on:
+  workflow_dispatch:
+    inputs:
+      item_b64:
+        description: Guion del reel (JSON en base64), lo envía Make
+        required: false
+      dry_run:
+        description: "true = no avisar a Make (no se publica)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: reel30
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar dependencias
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Preparar guion
+        env:
+          ITEM_B64: ${{ inputs.item_b64 }}
+        run: |
+          if [ -n "$ITEM_B64" ]; then
+            printf '%s' "$ITEM_B64" | base64 -d > item.json
+          else
+            cp sample-30s.json item.json
+          fi
+          jq -e '.hook and (.scenes|length>=3)' item.json >/dev/null
+
+      - name: Generar vídeo
+        run: node render-30s.mjs item.json out
+
+      - name: Publicar vídeo en GitHub Pages
+        id: publish
+        run: |
+          set -euo pipefail
+          DATE=$(jq -r .date item.json)
+          NAME="30s-${DATE}-${GITHUB_RUN_ID}.mp4"
+          git config --global user.name "reel-bot"
+          git config --global user.email "reel-bot@users.noreply.github.com"
+          REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$REMOTE" gh-pages >/dev/null 2>&1; then
+            git clone --depth 1 --branch gh-pages "$REMOTE" site
+          else
+            mkdir site && cd site && git init -q -b gh-pages && git remote add origin "$REMOTE" && cd ..
+          fi
+          mkdir -p site/reels
+          cp out/reel.mp4 "site/reels/${NAME}"
+          touch site/.nojekyll
+          # conservar solo los 14 últimos vídeos
+          ls -1t site/reels/*.mp4 | tail -n +31 | xargs -r rm -f
+          cd site
+          git add -A
+          git commit -q -m "Reel ${DATE}"
+          for i in 1 2 3 4; do git push origin gh-pages && break; git pull --rebase -q origin gh-pages; done
+          # un push hecho con GITHUB_TOKEN no lanza solo la publicación de Pages: se pide expresamente
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
+          URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reels/${NAME}"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+      - name: Esperar a que la URL esté disponible
+        run: |
+          URL="${{ steps.publish.outputs.url }}"
+          for i in $(seq 1 40); do
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true)
+            echo "intento $i: HTTP $CODE"
+            [ "$CODE" = "200" ] && exit 0
+            sleep 15
+          done
+          echo "La URL no respondió a tiempo (¿está activado GitHub Pages?)"; exit 1
+
+      - name: Avisar a Make
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          jq -n --arg url "${{ steps.publish.outputs.url }}" --rawfile caption out/caption.txt --arg date "$(jq -r .date item.json)" \
+            '{status:"ok", video_url:$url, caption:$caption, date:$date}' \
+          | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
+
+      - name: Avisar a Make si falla
+        if: ${{ failure() && inputs.dry_run != 'true' }}
+        run: |
+          curl -sS -X POST -H 'Content-Type: application/json' \
+            -d '{"status":"error","run_url":"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' "$MAKE_WEBHOOK_URL" || true
