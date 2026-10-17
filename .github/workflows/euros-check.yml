@@ -14,5 +14,5 @@ jobs:
         with:
           node-version: 22
       - run: |
-          timeout 150 node build-euros.mjs --check '${{ inputs.only }}' | tee out.txt || true
+          timeout 400 node build-euros.mjs --check '${{ inputs.only }}' | tee out.txt || true
           while IFS= read -r l; do echo "::notice::$l"; done < out.txt

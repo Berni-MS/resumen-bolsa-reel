@@ -29,11 +29,12 @@ async function series(sym) {
   const v = await seriesFetch(sym); CACHE.set(sym, v); return v;
 }
 async function seriesFetch(sym) {
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=max&interval=1mo&events=div%2Csplit`;
   let lastErr;
-  for (let t = 0; t < 3; t++) {
+  for (let t = 0; t < 4; t++) {
+    const host = t % 2 ? 'query2' : 'query1';
+    const url = `https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=max&interval=1mo&events=div%2Csplit`;
     try {
-      const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(20000) });
+      const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(25000) });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const j = await r.json();
       const res = j.chart.result[0];
@@ -41,7 +42,7 @@ async function seriesFetch(sym) {
       const map = new Map();
       ts.forEach((t0, i) => { if (adj[i] != null) map.set(ym(t0), adj[i]); });
       return { currency: res.meta.currency, map, last: res.meta.regularMarketTime, lastKey: ym(res.meta.regularMarketTime) };
-    } catch (e) { lastErr = e; await new Promise(r => setTimeout(r, 2000 * (t + 1))); }
+    } catch (e) { lastErr = e; await new Promise(r => setTimeout(r, 15000 * (t + 1))); }
   }
   throw new Error(`No se pudo leer ${sym}: ${lastErr.message}`);
 }
