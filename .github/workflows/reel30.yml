@@ -95,6 +95,28 @@ jobs:
           done
           echo "La URL no respondió a tiempo (¿está activado GitHub Pages?)"; exit 1
 
+      - name: Publicar también como historia
+        if: ${{ inputs.dry_run != 'true' }}
+        continue-on-error: true
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
+          VIDEO_URL: ${{ steps.publish.outputs.url }}
+        run: |
+          if [ -z "$IG_TOKEN" ]; then echo "Sin IG_ACCESS_TOKEN: no se publica la historia."; exit 0; fi
+          API="https://graph.facebook.com/v21.0"
+          RES=$(curl -sS -X POST "$API/$IG_USER/media" --data-urlencode "media_type=STORIES" --data-urlencode "video_url=$VIDEO_URL" --data-urlencode "access_token=$IG_TOKEN")
+          ID=$(echo "$RES" | jq -r '.id // empty')
+          if [ -z "$ID" ]; then echo "No se creó el contenedor de la historia: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
+          for i in $(seq 1 30); do
+            ST=$(curl -sS "$API/$ID?fields=status_code&access_token=$IG_TOKEN" | jq -r '.status_code // "?"')
+            echo "estado: $ST"
+            [ "$ST" = "FINISHED" ] && break
+            [ "$ST" = "ERROR" ] && exit 1
+            sleep 10
+          done
+          curl -sS --fail-with-body -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN" | jq -c 'del(.access_token)'
+
       - name: Avisar a Make
         if: ${{ inputs.dry_run != 'true' }}
         run: |
