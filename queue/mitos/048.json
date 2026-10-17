@@ -1,0 +1,86 @@
+{
+  "id": "mitos-048-media-historica",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«La bolsa da de media un 11,9 % al año, así que cada año me dará eso.» 🧮\n\nSegún los datos de Damodaran (NYU Stern), la rentabilidad media del S&P 500 con dividendos entre 1928 y 2025 fue del 11,86 % anual. Pero los años individuales van de −43,84 % (1931) a +52,56 % (1954).\n\nDesliza para verlo.",
+  "tags": [
+    "#SP500",
+    "#rentabilidad",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Damodaran (NYU Stern), Historical returns on stocks, bonds and bills"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "11,86 %",
+      "title": "rentabilidad media anual del S&P 500 (1928–2025)",
+      "foot": "Pero ningún año fue «medio»",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "11,86 %",
+      "head": "La media",
+      "body": "La media aritmética de la rentabilidad anual del S&P 500 con dividendos entre 1928 y 2025 fue del 11,86 %.",
+      "foot": "Fuente: Damodaran (NYU Stern)",
+      "kicker": "El promedio",
+      "color": "green"
+    },
+    {
+      "t": "stat",
+      "big": "−43,84 %",
+      "head": "El extremo malo",
+      "body": "El peor año, 1931, perdió un 43,84 %. El segundo, 2008, un 36,55 %.",
+      "foot": "Fuente: Damodaran (NYU Stern)",
+      "kicker": "Los años malos",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "+52,56 %",
+      "head": "El extremo bueno",
+      "body": "El mejor año, 1954, ganó un 52,56 %. En 1933 subió un 49,98 %.",
+      "foot": "Fuente: Damodaran (NYU Stern)",
+      "kicker": "Los años buenos",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«Si la media es 11,9 %, cada año me dará eso»",
+      "reality": "Ese número es un promedio de años muy distintos. Rara vez un año concreto se parece al promedio.",
+      "foot": "Fuente: Damodaran (NYU Stern)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Promedio no es garantía",
+          "b": "Sirve de referencia, no de promesa."
+        },
+        {
+          "t": "Mira la dispersión",
+          "b": "La variación entre años es enorme."
+        },
+        {
+          "t": "Y la rentabilidad real",
+          "b": "Tras comisiones, impuestos e inflación es menor."
+        }
+      ],
+      "foot": "Con realismo"
+    },
+    {
+      "t": "close",
+      "head": "Un promedio [[no es un año real]]",
+      "body": "Planifica pensando en la variación, no solo en la media.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

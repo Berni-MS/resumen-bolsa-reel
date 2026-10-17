@@ -1,0 +1,81 @@
+{
+  "id": "mitos-026-split",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«Si la acción hace un split, ahora vale más.» ✂️\n\nUn split solo reparte la empresa en más piezas: con 100 acciones a 50 $ tienes 5.000 $; tras un 2×1, 200 acciones a 25 $ siguen siendo 5.000 $.\n\nDesliza para ver cómo funciona y por qué lo hacen las empresas.",
+  "tags": [
+    "#split",
+    "#acciones",
+    "#bolsa",
+    "#inversion",
+    "#aprenderbolsa"
+  ],
+  "sources": [
+    "Wikipedia, Stock split"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "2×1",
+      "title": "Qué pasa cuando una acción hace un split",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Más piezas, [[mismo valor]]",
+      "body": "En un split, la empresa aumenta el número de acciones y cada una pasa a valer proporcionalmente menos. El valor total de la empresa no cambia.",
+      "foot": "Fuente: Wikipedia (Stock split)"
+    },
+    {
+      "t": "stat",
+      "big": "5.000 $",
+      "head": "Antes del split",
+      "body": "Con 100 acciones a 50 dólares, tu posición vale 5.000 dólares.",
+      "foot": "Fuente: Wikipedia (Stock split)",
+      "kicker": "Un ejemplo"
+    },
+    {
+      "t": "stat",
+      "big": "5.000 $",
+      "head": "Después de un 2×1",
+      "body": "Ahora tienes 200 acciones a 25 dólares. Tu posición sigue valiendo 5.000 dólares.",
+      "foot": "Fuente: Wikipedia (Stock split)",
+      "kicker": "El mismo ejemplo"
+    },
+    {
+      "t": "myth",
+      "myth": "«Un split me hace más rico»",
+      "reality": "No cambia lo que vale la empresa ni tu inversión. Es como cambiar un billete grande por varios pequeños.",
+      "foot": "Fuente: Wikipedia (Stock split)"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué lo hacen",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Atraer a pequeños inversores",
+          "b": "Un precio más bajo parece más accesible."
+        },
+        {
+          "t": "Más liquidez",
+          "b": "Más acciones en circulación, más compradores y vendedores."
+        },
+        {
+          "t": "Una señal de confianza",
+          "b": "La dirección puede querer mostrarse optimista."
+        }
+      ],
+      "foot": "Motivos habituales"
+    },
+    {
+      "t": "close",
+      "head": "Un split [[cambia el envoltorio]]",
+      "body": "Lo que importa sigue siendo el negocio de la empresa.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

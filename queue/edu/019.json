@@ -1,0 +1,94 @@
+{
+  "id": "edu-019-horarios",
+  "label": "Horarios de la bolsa",
+  "accent": "green",
+  "caption": "¿A qué hora abre la bolsa? ⏰ Madrid y Nueva York no coinciden.\n\nDesliza para ver los horarios habituales, qué es la subasta de cierre y por qué en España vemos Wall Street por la tarde.\n\n💾 Guárdalo para no perderte la apertura.",
+  "tags": [
+    "#horariobolsa",
+    "#WallStreet",
+    "#IBEX35",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "Bolsas y Mercados Españoles (BME)",
+    "NYSE, horarios de negociación"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "⏰",
+      "title": "A qué hora abre y cierra la bolsa",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "La bolsa [[española]]",
+      "body": "La sesión continua de la bolsa española va de las 9:00 a las 17:30, hora peninsular. Tras las 17:30 hay una breve subasta de cierre.",
+      "foot": "Horario habitual en días laborables",
+      "kicker": "Madrid"
+    },
+    {
+      "t": "point",
+      "head": "Wall Street",
+      "body": "La Bolsa de Nueva York y el Nasdaq operan de 9:30 a 16:00, hora de Nueva York. En España, normalmente son de 15:30 a 22:00.",
+      "foot": "Hay desfases de días al cambiar la hora",
+      "kicker": "Nueva York"
+    },
+    {
+      "t": "point",
+      "head": "Antes y después",
+      "body": "Fuera de ese horario existe negociación «pre-market» y «after-hours» en EE. UU., con menos volumen y precios más cambiantes.",
+      "foot": "Menos liquidez, más saltos",
+      "kicker": "Fuera de sesión"
+    },
+    {
+      "t": "cards",
+      "head": "Ojo con estos detalles",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Festivos distintos",
+          "b": "Cada país tiene los suyos."
+        },
+        {
+          "t": "Cambios de hora",
+          "b": "Los desfases entre países varían unas semanas al año."
+        },
+        {
+          "t": "La apertura es nerviosa",
+          "b": "Las primeras horas suelen tener más movimiento."
+        }
+      ],
+      "foot": "Compruébalo en tu bróker"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de operar",
+      "steps": [
+        {
+          "t": "Mira el horario del mercado",
+          "b": "Y los días festivos."
+        },
+        {
+          "t": "Usa órdenes limitadas",
+          "b": "Sobre todo en apertura."
+        },
+        {
+          "t": "Comprueba la divisa",
+          "b": "Un valor de EE. UU. cotiza en dólares."
+        }
+      ],
+      "foot": "Rutina sencilla"
+    },
+    {
+      "t": "close",
+      "head": "Saber cuándo [[abre el mercado]] evita sustos",
+      "body": "El horario concreto puede cambiar: consúltalo en tu bróker o en el propio mercado.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

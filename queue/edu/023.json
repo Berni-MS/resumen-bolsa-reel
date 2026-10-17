@@ -1,0 +1,78 @@
+{
+  "id": "edu-023-fondo-emergencia",
+  "label": "Fondo de emergencia",
+  "accent": "green",
+  "caption": "¿Qué es un fondo de emergencia y por qué va antes de invertir? 🛟\n\nDesliza para ver para qué sirve, cuánto suele recomendarse y dónde tenerlo.\n\n💾 Guárdalo y revisa el tuyo.",
+  "tags": [
+    "#fondodeemergencia",
+    "#ahorro",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🛟",
+      "title": "El fondo de emergencia",
+      "foot": "Antes de invertir",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué es",
+      "body": "Dinero apartado para imprevistos: una avería, una factura inesperada o un periodo sin ingresos. No es una inversión: es un colchón.",
+      "foot": "Dinero para lo inesperado"
+    },
+    {
+      "t": "point",
+      "head": "Por qué [[antes de invertir]]",
+      "body": "Si tienes que vender tus inversiones justo cuando bajan para cubrir un gasto, conviertes una pérdida temporal en una real.",
+      "foot": "Evita vender a la fuerza",
+      "kicker": "La razón"
+    },
+    {
+      "t": "point",
+      "head": "Cuánto",
+      "body": "Una pauta habitual es entre tres y seis meses de gastos básicos. Depende de tu situación: ingresos estables o variables, personas a tu cargo…",
+      "foot": "No hay una cifra universal",
+      "kicker": "Una regla orientativa"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde tenerlo",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Disponible",
+          "b": "Que puedas sacarlo rápido."
+        },
+        {
+          "t": "Sin riesgo de perder valor",
+          "b": "Una cuenta o depósito de fácil acceso."
+        },
+        {
+          "t": "Separado",
+          "b": "Mejor lejos de tu cuenta del día a día."
+        }
+      ],
+      "foot": "Liquidez y calma"
+    },
+    {
+      "t": "point",
+      "head": "Después, [[invierte]]",
+      "body": "Con el colchón hecho, puedes invertir el dinero que no vas a necesitar a corto plazo con más tranquilidad.",
+      "foot": "Primero la base",
+      "kicker": "El siguiente paso"
+    },
+    {
+      "t": "close",
+      "head": "Primero la [[red]], luego el salto",
+      "body": "Un fondo de emergencia te da tranquilidad.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

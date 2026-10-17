@@ -1,0 +1,77 @@
+{
+  "id": "edu-048-fomo",
+  "label": "FOMO en la inversión",
+  "accent": "green",
+  "caption": "¿Qué es el FOMO? 😰 El miedo a quedarse fuera.\n\nDesliza para ver cómo te empuja a comprar tarde, por qué es peligroso y qué hacer para frenarlo.\n\n💾 Guárdalo para cuando todo el mundo hable de lo mismo.",
+  "tags": [
+    "#FOMO",
+    "#psicologia",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "😰",
+      "title": "FOMO: el miedo a quedarte fuera",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué es",
+      "body": "FOMO viene de «fear of missing out»: la ansiedad por perderte algo que parece que todos aprovechan. En bolsa, comprar porque algo sube y no quieres quedarte fuera.",
+      "foot": "Emoción, no análisis"
+    },
+    {
+      "t": "point",
+      "head": "Cómo [[aparece]]",
+      "body": "Cuando un activo sube mucho, las noticias y las redes se llenan de historias de éxito. Parece que cuanto más sube, más obvio es comprar.",
+      "foot": "Ruido social",
+      "kicker": "El disparador"
+    },
+    {
+      "t": "point",
+      "head": "Por qué es [[peligroso]]",
+      "body": "Sueles comprar cuando el precio ya ha subido, con prisa y sin plan. Si luego cae, lo haces con más dinero del que tolerarías perder.",
+      "foot": "Comprar caro, con prisa",
+      "kicker": "El riesgo"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo frenarlo",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Ten un plan por escrito",
+          "b": "Qué, cuánto y por qué."
+        },
+        {
+          "t": "Espera 24 horas",
+          "b": "Antes de comprar por impulso."
+        },
+        {
+          "t": "Limita tu exposición a las redes",
+          "b": "Menos ruido, mejores decisiones."
+        }
+      ],
+      "foot": "Trucos prácticos"
+    },
+    {
+      "t": "point",
+      "head": "Lo [[contrario]]",
+      "body": "El miedo a perderlo todo también te empuja a vender en el peor momento. Ambas emociones se tratan igual: con un plan.",
+      "foot": "Miedo y codicia",
+      "kicker": "Dos caras"
+    },
+    {
+      "t": "close",
+      "head": "Un buen plan [[calma el FOMO]]",
+      "body": "Invierte con método, no por la prisa.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

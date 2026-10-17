@@ -1,0 +1,81 @@
+{
+  "id": "edu-036-impuestos-espana",
+  "label": "Impuestos de la bolsa en España",
+  "accent": "green",
+  "caption": "¿Cuánto se paga por ganar dinero en bolsa en España? 🧾\n\nDesliza para ver cómo tributan las ganancias, los tramos de 2026 y los errores más comunes.\n\n⚠️ Información general, no asesoramiento fiscal. Consulta tu caso con un profesional o con la Agencia Tributaria.",
+  "tags": [
+    "#impuestos",
+    "#IRPF",
+    "#fiscalidad",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "guiafiscal.es, tramos base del ahorro (Ley 7/2024)"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧾",
+      "title": "Impuestos de la bolsa en España",
+      "foot": "Lo básico, en 7 diapositivas",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Solo tributas si [[realizas]] la ganancia",
+      "body": "Mientras no vendas, no tributas por la subida. Al vender con beneficio, la ganancia patrimonial se declara en la renta (IRPF).",
+      "foot": "La ganancia se computa al vender",
+      "kicker": "Primera idea"
+    },
+    {
+      "t": "point",
+      "head": "Los [[tramos]] de 2026",
+      "body": "19 % hasta 6.000 €; 21 % hasta 50.000 €; 23 % hasta 200.000 €; 27 % hasta 300.000 €; 30 % por encima. Se aplican por tramos, no a toda la ganancia.",
+      "foot": "Fuente: guiafiscal.es (Ley 7/2024)",
+      "kicker": "Base del ahorro"
+    },
+    {
+      "t": "point",
+      "head": "Las [[pérdidas]] también cuentan",
+      "body": "Las pérdidas de vender con números rojos pueden compensarse con ganancias, dentro de los límites que marca la ley.",
+      "foot": "Consulta los límites vigentes",
+      "kicker": "Segunda idea"
+    },
+    {
+      "t": "point",
+      "head": "Dividendos e [[intereses]]",
+      "body": "También tributan en la base del ahorro, normalmente con los mismos tramos. Suele haber retenciones.",
+      "foot": "Se declaran en la renta",
+      "kicker": "Tercera idea"
+    },
+    {
+      "t": "cards",
+      "head": "Errores frecuentes",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Olvidar declarar",
+          "b": "Aunque tu bróker sea extranjero."
+        },
+        {
+          "t": "Ignorar la divisa",
+          "b": "Al cambiar moneda hay efectos fiscales."
+        },
+        {
+          "t": "No guardar la información",
+          "b": "Conserva los extractos de compras y ventas."
+        }
+      ],
+      "foot": "Evítalos"
+    },
+    {
+      "t": "close",
+      "head": "Pregunta [[antes de vender]]",
+      "body": "La normativa cambia y cada caso es distinto. Consulta a un asesor fiscal.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "mitos-031-madoff",
+  "label": "Datos · Fraude Madoff",
+  "accent": "red",
+  "caption": "Bernie Madoff: un fraude piramidal de casi 65.000 millones de dólares 🕵️\n\nFue detenido el 11 de diciembre de 2008. Casi 65.000 millones de dólares figuraban en las cuentas de clientes (incluyendo ganancias inventadas), aunque los inversores aportaron unos 17.300 millones.\n\nEl mito: «si lo gestiona alguien con prestigio, es seguro». Desliza para verlo.",
+  "tags": [
+    "#madoff",
+    "#fraude",
+    "#bolsa",
+    "#historiabursatil",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Bernie Madoff"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "65.000 M$",
+      "title": "el mayor fraude piramidal: el caso Madoff",
+      "foot": "Detenido el 11 de diciembre de 2008",
+      "bigSize": 200
+    },
+    {
+      "t": "point",
+      "head": "Cómo [[funcionaba]]",
+      "body": "Madoff no invertía el dinero de sus clientes: lo depositaba en una cuenta bancaria y pagaba los reembolsos con los ingresos de nuevos clientes. Los resultados se inventaban.",
+      "foot": "Fuente: Wikipedia (Bernie Madoff)",
+      "kicker": "Un esquema piramidal"
+    },
+    {
+      "t": "stat",
+      "big": "150 años",
+      "head": "Su condena",
+      "body": "Se declaró culpable de 11 delitos federales y fue condenado a 150 años de prisión el 29 de junio de 2009, el máximo posible.",
+      "foot": "Fuente: Wikipedia (Bernie Madoff)",
+      "kicker": "La sentencia"
+    },
+    {
+      "t": "point",
+      "head": "Las [[señales]] de alarma",
+      "body": "Desde el año 2000, Harry Markopolos avisó a la SEC de que las ganancias eran matemáticamente imposibles. Algunas operaciones aparecían fechadas en fines de semana y festivos.",
+      "foot": "Fuente: Wikipedia (Bernie Madoff)",
+      "kicker": "Lo que no se vio"
+    },
+    {
+      "t": "myth",
+      "myth": "«Si lo gestiona alguien prestigioso, es seguro»",
+      "reality": "Madoff tenía gran reputación y aun así el fraude duró años. Las señales existían, pero no se actuó a tiempo.",
+      "foot": "Fuente: Wikipedia (Bernie Madoff)"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo protegerte",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Desconfía de lo que no entiendes",
+          "b": "Si no sabes cómo gana dinero, pregunta."
+        },
+        {
+          "t": "Comprueba la regulación",
+          "b": "Y quién custodia tu dinero."
+        },
+        {
+          "t": "Rentabilidades extraordinarias",
+          "b": "Si parecen demasiado buenas, investiga."
+        }
+      ],
+      "foot": "Con prudencia"
+    },
+    {
+      "t": "close",
+      "head": "La reputación [[no sustituye a la verificación]]",
+      "body": "Comprueba siempre quién custodia tu dinero y cómo se gestiona.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

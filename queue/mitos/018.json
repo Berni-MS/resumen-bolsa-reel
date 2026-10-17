@@ -1,0 +1,84 @@
+{
+  "id": "mitos-018-vix",
+  "label": "Datos · VIX",
+  "accent": "red",
+  "caption": "El «índice del miedo» alcanzó su récord el 16 de marzo de 2020 😨\n\nEl VIX cerró en 82,69, superando el máximo anterior de 80,74 (21 de noviembre de 2008). Mide la volatilidad que esperan los inversores en el S&P 500 a 30 días, a partir del precio de sus opciones.\n\nDesliza para entenderlo.",
+  "tags": [
+    "#VIX",
+    "#volatilidad",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "CNBC (16/03/2020), Wall Street’s fear gauge hits highest level ever"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "VIX",
+      "title": "El «índice del miedo» de Wall Street",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué mide",
+      "body": "El VIX refleja la volatilidad que el mercado espera para el S&P 500 en los próximos 30 días, calculada a partir de los precios de las opciones sobre ese índice.",
+      "foot": "Fuente: CNBC",
+      "kicker": "Volatilidad esperada"
+    },
+    {
+      "t": "stat",
+      "big": "82,69",
+      "head": "Su récord de cierre",
+      "body": "El 16 de marzo de 2020, en plena crisis del coronavirus, el VIX cerró en 82,69, el nivel más alto de su historia.",
+      "foot": "Fuente: CNBC",
+      "kicker": "Marzo de 2020",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "80,74",
+      "head": "El récord anterior",
+      "body": "Se había marcado el 21 de noviembre de 2008, en plena crisis financiera.",
+      "foot": "Fuente: CNBC",
+      "kicker": "Noviembre de 2008",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«El VIX predice cuándo va a caer la bolsa»",
+      "reality": "No predice: refleja la volatilidad que se espera. Suele subir cuando hay miedo, pero no dice qué hará el mercado mañana.",
+      "foot": "Fuente: CNBC"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo leerlo sin engañarte",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Subida = más incertidumbre",
+          "b": "No es lo mismo que una caída asegurada."
+        },
+        {
+          "t": "Bajada = calma",
+          "b": "Tampoco garantiza que no vaya a pasar nada."
+        },
+        {
+          "t": "Es un termómetro, no una bola de cristal",
+          "b": "Describe el ánimo del momento."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "El miedo [[se mide]], no se predice",
+      "body": "Entender qué refleja el VIX te ayuda a leer mejor las noticias de mercado.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

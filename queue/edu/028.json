@@ -1,0 +1,78 @@
+{
+  "id": "edu-028-apalancamiento",
+  "label": "Qué es el apalancamiento",
+  "accent": "green",
+  "caption": "¿Qué es el apalancamiento? 🏋️ Operar con más dinero del que pones.\n\nDesliza para ver cómo multiplica ganancias y pérdidas, con un ejemplo inventado, y por qué es una de las fuentes de riesgo más serias.\n\n⚠️ Información educativa, no recomendación.",
+  "tags": [
+    "#apalancamiento",
+    "#riesgo",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏋️",
+      "title": "Qué es el apalancamiento",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Dinero [[prestado]]",
+      "body": "Apalancarse es operar con una cantidad mayor que la que aportas, usando dinero prestado o productos que multiplican la exposición.",
+      "foot": "Más exposición con menos capital"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo [[ficticio]]",
+      "body": "Pones 1.000 € y tomas prestados otros 1.000 €. Si el activo sube un 10 %, ganas 200 € sobre tus 1.000 €: un 20 %.",
+      "foot": "Ejemplo con cifras sencillas",
+      "kicker": "Ganas el doble"
+    },
+    {
+      "t": "point",
+      "head": "Y al [[revés]]",
+      "body": "Si baja un 10 %, pierdes esos 200 €, un 20 % de lo tuyo. Y si el activo cae un 50 %, lo pierdes todo.",
+      "foot": "Más riesgo, no más rentabilidad segura",
+      "kicker": "Pierdes el doble"
+    },
+    {
+      "t": "cards",
+      "head": "Riesgos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Pérdidas amplificadas",
+          "b": "Pueden superar lo esperado."
+        },
+        {
+          "t": "Llamadas de margen",
+          "b": "Pueden obligarte a vender en el peor momento."
+        },
+        {
+          "t": "Intereses",
+          "b": "El préstamo tiene un coste."
+        }
+      ],
+      "foot": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Por qué [[seduce]]",
+      "body": "Porque multiplica ganancias en los buenos momentos. Pero la misma palanca funciona en sentido contrario.",
+      "foot": "La palanca es de doble filo",
+      "kicker": "La trampa"
+    },
+    {
+      "t": "close",
+      "head": "La palanca [[amplifica todo]]",
+      "body": "Antes de usarla, entiende cuánto puedes perder.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

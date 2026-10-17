@@ -1,0 +1,78 @@
+{
+  "id": "edu-033-oro-materias",
+  "label": "Oro y materias primas",
+  "accent": "green",
+  "caption": "¿Qué son las materias primas y por qué se habla tanto del oro? 🥇\n\nDesliza para ver qué son, cómo se invierte en ellas y qué debes tener en cuenta.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#oro",
+    "#materiasprimas",
+    "#commodities",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🥇",
+      "title": "Oro y materias primas",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué son",
+      "body": "Las materias primas («commodities») son bienes básicos que se negocian: petróleo, gas, metales, cereales… Sus precios dependen de la oferta y la demanda.",
+      "foot": "Bienes que se compran y venden"
+    },
+    {
+      "t": "point",
+      "head": "El [[oro]]",
+      "body": "Muchos lo ven como un «valor refugio» en épocas de incertidumbre. Pero su precio también sube y baja, y no genera dividendos ni intereses.",
+      "foot": "No paga dividendos",
+      "kicker": "Un caso especial"
+    },
+    {
+      "t": "point",
+      "head": "Cómo [[invertir]]",
+      "body": "Normalmente se hace con ETF o fondos que replican su precio, o con futuros. Comprar físicamente tiene costes de almacenaje y venta.",
+      "foot": "Los futuros son complejos",
+      "kicker": "Opciones"
+    },
+    {
+      "t": "cards",
+      "head": "Cuidado con",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Mucha volatilidad",
+          "b": "Los precios pueden oscilar bruscamente."
+        },
+        {
+          "t": "Sin flujo de caja",
+          "b": "El rendimiento depende solo del precio."
+        },
+        {
+          "t": "Costes",
+          "b": "Los productos que las replican cobran comisiones."
+        }
+      ],
+      "foot": "No es un seguro"
+    },
+    {
+      "t": "point",
+      "head": "Su papel en una [[cartera]]",
+      "body": "Algunos inversores le dan un pequeño peso para diversificar, porque a veces se mueve distinto a las acciones. No siempre.",
+      "foot": "Diversificar, no prometer",
+      "kicker": "Para qué se usa"
+    },
+    {
+      "t": "close",
+      "head": "Un refugio [[no es una garantía]]",
+      "body": "Ningún activo evita las oscilaciones.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

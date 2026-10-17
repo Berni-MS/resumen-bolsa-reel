@@ -1,0 +1,78 @@
+{
+  "id": "edu-029-cortos",
+  "label": "Qué es vender en corto",
+  "accent": "green",
+  "caption": "¿Qué es vender en corto? 🐻 Ganar cuando una acción baja.\n\nDesliza para ver cómo funciona, un ejemplo inventado y por qué las pérdidas pueden ser mayores que lo que pones.\n\n⚠️ Información educativa, no recomendación.",
+  "tags": [
+    "#cortos",
+    "#shortselling",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🐻",
+      "title": "Qué es vender en corto",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Vender [[antes de comprar]]",
+      "body": "Un inversor toma prestadas acciones, las vende y espera recomprarlas más baratas para devolverlas. Apuesta a que el precio bajará.",
+      "foot": "Ganar si baja"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo [[ficticio]]",
+      "body": "Vendes una acción prestada a 100 €. Baja a 70 €, la recompras y ganas 30 € (menos costes). Si sube a 150 €, pierdes 50 €.",
+      "foot": "Ejemplo ficticio",
+      "kicker": "Con cifras sencillas"
+    },
+    {
+      "t": "point",
+      "head": "La asimetría",
+      "body": "Si compras una acción, lo máximo que puedes perder es lo que pagaste. En corto, una acción puede subir sin límite, y la pérdida también.",
+      "foot": "Pérdida potencial ilimitada",
+      "kicker": "El gran riesgo"
+    },
+    {
+      "t": "cards",
+      "head": "Otros riesgos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Coste del préstamo",
+          "b": "Se paga por tomar prestadas las acciones."
+        },
+        {
+          "t": "Squeeze",
+          "b": "Una subida rápida puede forzar recompras."
+        },
+        {
+          "t": "Dividendos",
+          "b": "Hay que compensarlos."
+        }
+      ],
+      "foot": "No es para novatos"
+    },
+    {
+      "t": "point",
+      "head": "Para qué [[sirven]]",
+      "body": "Los cortos pueden ayudar a que los precios reflejen mejor la información, y algunos inversores los usan para cubrir riesgos.",
+      "foot": "También se usan para cubrirse",
+      "kicker": "Su función"
+    },
+    {
+      "t": "close",
+      "head": "Apostar a la baja [[tiene sus peligros]]",
+      "body": "Entiende las pérdidas posibles antes de plantearlo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

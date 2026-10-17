@@ -1,0 +1,79 @@
+{
+  "id": "edu-047-curva-tipos",
+  "label": "Bono a 10 años y curva de tipos",
+  "accent": "green",
+  "caption": "¿Por qué todo el mundo mira el bono a 10 años? 📐\n\nDesliza para ver qué es la rentabilidad de un bono, qué es la curva de tipos y qué significa que se «invierta».\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#bonos",
+    "#curvadetipos",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📐",
+      "title": "La curva de tipos",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "La [[rentabilidad]] de un bono",
+      "body": "Es lo que ganas por mantenerlo hasta el vencimiento. Cuando el precio del bono sube, su rentabilidad baja, y al revés.",
+      "foot": "Precio y rentabilidad, en sentido contrario",
+      "kicker": "Primero, el bono"
+    },
+    {
+      "t": "point",
+      "head": "Por qué el [[bono a 10 años]]",
+      "body": "Es una referencia para el coste del dinero a largo plazo. Influye en hipotecas, en créditos a empresas y en la valoración de las acciones.",
+      "foot": "Un precio clave",
+      "kicker": "La referencia"
+    },
+    {
+      "t": "point",
+      "head": "La [[curva]]",
+      "body": "Une la rentabilidad de bonos de distintos plazos: 3 meses, 2 años, 10 años, 30 años. Normalmente, a más plazo, más rentabilidad.",
+      "foot": "Plazo en un eje, rentabilidad en el otro",
+      "kicker": "Cómo se dibuja"
+    },
+    {
+      "t": "point",
+      "head": "Curva [[invertida]]",
+      "body": "Cuando los bonos a corto plazo rinden más que los de largo plazo. Históricamente se ha mirado como posible aviso de debilidad económica, aunque no es infalible.",
+      "foot": "Señal, no certeza",
+      "kicker": "Un aviso"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué importa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Costes de financiación",
+          "b": "Más caros o más baratos."
+        },
+        {
+          "t": "Valoración de acciones",
+          "b": "Tipos altos suelen pesar en las valoraciones."
+        },
+        {
+          "t": "Expectativas",
+          "b": "Reflejan lo que espera el mercado."
+        }
+      ],
+      "foot": "Efectos"
+    },
+    {
+      "t": "close",
+      "head": "La curva de tipos [[cuenta expectativas]]",
+      "body": "Es una pista, no una bola de cristal.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

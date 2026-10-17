@@ -1,0 +1,78 @@
+{
+  "id": "edu-044-opa-fusiones",
+  "label": "OPA y fusiones",
+  "accent": "green",
+  "caption": "¿Qué es una OPA? 🤝 Cuando alguien ofrece comprar una empresa cotizada.\n\nDesliza para ver cómo funciona, qué cambia para los accionistas y qué es una fusión.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#OPA",
+    "#fusiones",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🤝",
+      "title": "Qué es una OPA",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Una [[oferta pública]]",
+      "body": "Una OPA (oferta pública de adquisición) es una oferta a todos los accionistas para comprar sus acciones, normalmente a un precio concreto.",
+      "foot": "Se dirige a todos"
+    },
+    {
+      "t": "point",
+      "head": "El [[precio]]",
+      "body": "Suele ofrecerse una prima sobre el precio de mercado, para animar a los accionistas a vender. Puede pagarse en efectivo o en acciones.",
+      "foot": "Prima sobre el mercado",
+      "kicker": "Cuánto se paga"
+    },
+    {
+      "t": "point",
+      "head": "Lo que [[hace la acción]]",
+      "body": "Al anunciarse una OPA, el precio de la acción suele acercarse al de la oferta. Pero no siempre sale adelante.",
+      "foot": "La oferta puede fracasar",
+      "kicker": "En bolsa"
+    },
+    {
+      "t": "point",
+      "head": "Fusión y [[adquisición]]",
+      "body": "En una fusión, dos empresas se unen en una. En una adquisición, una compra a otra. En ambos casos, cambia quién manda.",
+      "foot": "M&A: fusiones y adquisiciones",
+      "kicker": "Otras operaciones"
+    },
+    {
+      "t": "cards",
+      "head": "Qué conviene mirar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Condiciones",
+          "b": "Precio, plazos y requisitos."
+        },
+        {
+          "t": "Opinión del consejo",
+          "b": "Si la recomienda o no."
+        },
+        {
+          "t": "Autoridades",
+          "b": "Pueden exigir aprobaciones."
+        }
+      ],
+      "foot": "Como accionista"
+    },
+    {
+      "t": "close",
+      "head": "Una OPA es una [[oferta, no una certeza]]",
+      "body": "Lee las condiciones antes de decidir.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

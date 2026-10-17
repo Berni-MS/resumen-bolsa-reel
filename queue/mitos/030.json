@@ -1,0 +1,73 @@
+{
+  "id": "mitos-030-enron",
+  "label": "Datos · Enron",
+  "accent": "red",
+  "caption": "Enron: de 83 $ por acción a 0,61 $ en menos de un año 💡\n\nLa acción valía 83,13 $ el 31 de diciembre de 2000 y el 28 de noviembre de 2001 cerró a 0,61 $. Casi el 62 % de los empleados tenía su plan de ahorro invertido en acciones de la propia empresa.\n\nEl mito: «invertir en la empresa donde trabajas es seguro». Desliza para ver los datos.",
+  "tags": [
+    "#enron",
+    "#diversificacion",
+    "#bolsa",
+    "#historiabursatil",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Enron scandal"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "0,61 $",
+      "title": "lo que valía una acción de Enron el 28 de noviembre de 2001",
+      "foot": "Y 83,13 $ a finales de 2000",
+      "bigSize": 220
+    },
+    {
+      "t": "stat",
+      "big": "83,13 $",
+      "head": "Cierre de 2000",
+      "body": "La acción de Enron cotizaba a 83,13 dólares el 31 de diciembre de 2000.",
+      "foot": "Fuente: Wikipedia (Enron scandal)",
+      "kicker": "Antes del desplome"
+    },
+    {
+      "t": "stat",
+      "big": "0,61 $",
+      "head": "Noviembre de 2001",
+      "body": "El 28 de noviembre de 2001 cerró a 0,61 dólares. Enron se acogió a la ley de quiebras el 2 de diciembre de 2001.",
+      "foot": "Fuente: Wikipedia (Enron scandal)",
+      "kicker": "Menos de un año después",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "62 %",
+      "head": "De los planes de ahorro",
+      "body": "De unos 15.000 empleados, casi el 62 % tenía su plan de ahorro basado en acciones de Enron. Se perdieron unos 4.000 empleos.",
+      "foot": "Fuente: Wikipedia (Enron scandal)",
+      "kicker": "El riesgo concentrado",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Invertir en la empresa donde trabajo es seguro»",
+      "reality": "Si la empresa quiebra, pierdes el empleo y los ahorros a la vez. Concentrar todo en una sola compañía multiplica el riesgo.",
+      "foot": "Fuente: Wikipedia (Enron scandal)"
+    },
+    {
+      "t": "point",
+      "head": "Las [[consecuencias]]",
+      "body": "La auditora Arthur Andersen fue declarada culpable de obstrucción a la justicia el 15 de junio de 2002, y el 30 de julio de 2002 se aprobó la ley Sarbanes-Oxley para reforzar los controles contables.",
+      "foot": "Fuente: Wikipedia (Enron scandal)",
+      "kicker": "Lo que cambió"
+    },
+    {
+      "t": "close",
+      "head": "Tu trabajo y tus ahorros [[no deberían depender de lo mismo]]",
+      "body": "Diversificar incluye no apostar tu patrimonio a tu propia empresa.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true,
+      "headSize": 150
+    }
+  ]
+}

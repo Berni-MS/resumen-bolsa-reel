@@ -1,0 +1,90 @@
+{
+  "id": "edu-031-spread",
+  "label": "Spread y liquidez",
+  "accent": "green",
+  "caption": "¿Por qué hay un precio de compra y otro de venta? 🔁 Spread y liquidez, explicados.\n\nDesliza para ver qué es el «bid» y el «ask», por qué importa y cómo evitar pagar de más.\n\n💾 Guárdalo antes de tu próxima orden.",
+  "tags": [
+    "#spread",
+    "#liquidez",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔁",
+      "title": "Spread y liquidez",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Dos [[precios]]",
+      "body": "El «bid» es lo máximo que alguien paga por una acción; el «ask», lo mínimo por lo que alguien la vende. Siempre hay una diferencia.",
+      "foot": "Bid = compra, Ask = venta"
+    },
+    {
+      "t": "point",
+      "head": "Eso es el [[spread]]",
+      "body": "La diferencia entre ask y bid es el spread. Es un coste implícito de operar: si compras y vendes al instante, pierdes esa diferencia.",
+      "foot": "Spread = ask − bid",
+      "kicker": "Un coste oculto"
+    },
+    {
+      "t": "point",
+      "head": "Y la [[liquidez]]",
+      "body": "Un activo es líquido si puedes comprarlo o venderlo rápido sin mover el precio. Suelen tener spreads pequeños.",
+      "foot": "Mucho volumen, poco spread",
+      "kicker": "Lo fácil de vender"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde pesa más",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Valores poco negociados",
+          "b": "Spreads más amplios."
+        },
+        {
+          "t": "Fuera de horario",
+          "b": "Menos operaciones, más diferencia."
+        },
+        {
+          "t": "Momentos de pánico",
+          "b": "Los precios se separan."
+        }
+      ],
+      "foot": "Cuidado"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo no pagar de más",
+      "steps": [
+        {
+          "t": "Usa órdenes limitadas",
+          "b": "Fijas tu precio máximo o mínimo."
+        },
+        {
+          "t": "Evita horas de poca liquidez",
+          "b": "Como la apertura o el cierre extendido."
+        },
+        {
+          "t": "Mira el volumen",
+          "b": "Antes de comprar."
+        }
+      ],
+      "foot": "Rutina sencilla"
+    },
+    {
+      "t": "close",
+      "head": "Hay que mirar [[el spread]]",
+      "body": "Es un coste que no aparece en las comisiones.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

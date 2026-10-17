@@ -1,0 +1,74 @@
+{
+  "id": "mitos-021-hitos-dow",
+  "label": "Datos · Dow Jones",
+  "accent": "red",
+  "caption": "El Dow Jones tardó más de 26 años en pasar de 1.000 a 10.000 puntos (1972–1999) 📈\n\nY menos de 2 años en pasar de 40.000 a 50.000 (mayo de 2024 – febrero de 2026).\n\nEl mito: «los máximos históricos son una señal para vender». Desliza para ver los hitos.",
+  "tags": [
+    "#dowjones",
+    "#bolsa",
+    "#historiabursatil",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Closing milestones of the Dow Jones Industrial Average"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "50.000",
+      "title": "El Dow Jones superó esa cifra en febrero de 2026",
+      "foot": "Un repaso a sus hitos",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "1.003,16",
+      "head": "Noviembre de 1972",
+      "body": "El Dow Jones cerró por primera vez por encima de los 1.000 puntos el 14 de noviembre de 1972.",
+      "foot": "Fuente: Wikipedia (Dow milestones)",
+      "kicker": "Hito 1.000"
+    },
+    {
+      "t": "stat",
+      "big": "10.006,78",
+      "head": "Marzo de 1999",
+      "body": "Superó los 10.000 puntos el 29 de marzo de 1999, 26 años y 4 meses después de los 1.000.",
+      "foot": "Fuente: Wikipedia (Dow milestones)",
+      "kicker": "Hito 10.000"
+    },
+    {
+      "t": "stat",
+      "big": "20.068,51",
+      "head": "Enero de 2017",
+      "body": "Tardó casi 18 años en pasar de 10.000 a 20.000 (25 de enero de 2017). Luego llegó a 30.046,24 (24 de noviembre de 2020) y a 40.003,59 (17 de mayo de 2024).",
+      "foot": "Fuente: Wikipedia (Dow milestones)",
+      "kicker": "Hito 20.000",
+      "bigSize": 190
+    },
+    {
+      "t": "stat",
+      "big": "50.115,67",
+      "head": "Febrero de 2026",
+      "body": "El Dow cerró por encima de 50.000 el 6 de febrero de 2026, menos de dos años después de los 40.000.",
+      "foot": "Fuente: Wikipedia (Dow milestones)",
+      "kicker": "Hito 50.000",
+      "color": "green",
+      "bigSize": 190
+    },
+    {
+      "t": "myth",
+      "myth": "«Un récord histórico es una señal para vender»",
+      "reality": "En mercados al alza los récords son frecuentes. Un máximo no dice si el siguiente movimiento será hacia arriba o hacia abajo.",
+      "foot": "Fuente: Wikipedia (Dow milestones)"
+    },
+    {
+      "t": "close",
+      "head": "Un máximo [[no es un pronóstico]]",
+      "body": "Importa más lo que pagas y tu horizonte que el titular de récord.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

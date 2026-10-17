@@ -1,0 +1,87 @@
+{
+  "id": "mitos-033-abril-2025",
+  "label": "Datos · Abril de 2025",
+  "accent": "red",
+  "caption": "Abril de 2025: una caída de casi el 10 % en dos días y un rebote del 9,52 % en uno 🎢\n\nEl 3 y 4 de abril el S&P 500 perdió un 4,84 % y un 5,97 %. El 9 de abril subió un 9,52 %, su mayor subida diaria desde 2008.\n\nEl mito: «si cae tan fuerte, lo mejor es salir ya». Desliza para ver los datos.",
+  "tags": [
+    "#aranceles",
+    "#bolsa",
+    "#volatilidad",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, 2025 stock market crash"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−10 %",
+      "title": "En dos días cayó el S&P 500 en abril de 2025",
+      "foot": "Y luego subió un 9,52 % en uno",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "−4,84 %",
+      "head": "3 de abril de 2025",
+      "body": "El S&P 500 cerró en 5.396,52 puntos tras el anuncio de nuevos aranceles de EE. UU. El Dow Jones perdió un 3,98 %.",
+      "foot": "Fuente: Wikipedia (2025 stock market crash)",
+      "kicker": "Primer día",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "−5,97 %",
+      "head": "4 de abril de 2025",
+      "body": "El S&P 500 cerró en 5.074,08 puntos. En dos días perdió cerca del 10 %, su peor caída en dos sesiones, con unos 6,6 billones de dólares de valor menos.",
+      "foot": "Fuente: Wikipedia (2025 stock market crash)",
+      "kicker": "Segundo día",
+      "color": "red",
+      "bigSize": 230
+    },
+    {
+      "t": "stat",
+      "big": "+9,52 %",
+      "head": "9 de abril de 2025",
+      "body": "Tras la pausa de los aranceles, el S&P 500 subió un 9,52 % y cerró en 5.456,90, su mayor subida diaria desde 2008.",
+      "foot": "Fuente: Wikipedia (2025 stock market crash)",
+      "kicker": "El rebote",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«Si cae tan fuerte, hay que salir ya»",
+      "reality": "Entre el cierre del 4 y el del 9 de abril, el S&P 500 subió algo más de un 7 %. Los giros bruscos pueden llegar en días, y nadie sabe cuándo.",
+      "foot": "Fuente: Wikipedia (2025 stock market crash)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "No hay forma fiable de predecir los giros",
+          "b": "Ni las caídas ni los rebotes."
+        },
+        {
+          "t": "Decide antes, no en el pánico",
+          "b": "Un plan evita decisiones impulsivas."
+        },
+        {
+          "t": "Tu horizonte manda",
+          "b": "Si necesitas el dinero pronto, no deberías estar expuesto así."
+        }
+      ],
+      "foot": "Con plan"
+    },
+    {
+      "t": "close",
+      "head": "El pánico [[es mal consejero]]",
+      "body": "Las decisiones se toman mejor antes de que llegue la tormenta.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

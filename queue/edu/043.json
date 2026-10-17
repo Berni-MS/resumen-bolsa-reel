@@ -1,0 +1,79 @@
+{
+  "id": "edu-043-leer-cotizacion",
+  "label": "Leer una cotización",
+  "accent": "green",
+  "caption": "¿Cómo se lee una ficha de cotización? 🔍\n\nDesliza para ver qué significan precio, volumen, máximo, mínimo y capitalización.\n\n💾 Guárdalo para tu próxima búsqueda.",
+  "tags": [
+    "#cotizacion",
+    "#bolsa",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔍",
+      "title": "Cómo leer una cotización",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Precio y [[variación]]",
+      "body": "El último precio de la acción y su cambio respecto al cierre anterior, en euros y en porcentaje.",
+      "foot": "Cambio desde el último cierre",
+      "kicker": "Lo primero"
+    },
+    {
+      "t": "point",
+      "head": "Máximo y [[mínimo]]",
+      "body": "El precio más alto y más bajo del día. También se suele mostrar el rango de las últimas 52 semanas.",
+      "foot": "Día y año",
+      "kicker": "El rango"
+    },
+    {
+      "t": "point",
+      "head": "[[Volumen]]",
+      "body": "El número de acciones negociadas en el día. Un volumen alto indica más actividad e interés.",
+      "foot": "Más volumen, más liquidez",
+      "kicker": "La actividad"
+    },
+    {
+      "t": "point",
+      "head": "[[Capitalización]]",
+      "body": "Es el valor de la empresa en bolsa: precio de la acción multiplicado por el número de acciones.",
+      "foot": "Precio × acciones",
+      "kicker": "El tamaño"
+    },
+    {
+      "t": "cards",
+      "head": "Otros datos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "PER",
+          "b": "Cuántos años de beneficios pagas."
+        },
+        {
+          "t": "Dividendo",
+          "b": "Cuánto reparte la empresa."
+        },
+        {
+          "t": "Bid y ask",
+          "b": "Precios de compra y venta."
+        }
+      ],
+      "foot": "Complementarios"
+    },
+    {
+      "t": "close",
+      "head": "Los datos [[se leen juntos]]",
+      "body": "Un solo número cuenta poco.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

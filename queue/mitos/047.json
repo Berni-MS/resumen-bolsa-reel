@@ -1,0 +1,86 @@
+{
+  "id": "mitos-047-anos-negativos",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«La bolsa sube todos los años.» ¿De verdad? 📅\n\nSegún los datos de la Universidad de Nueva York (Damodaran), el S&P 500 con dividendos tuvo 26 años con rentabilidad negativa de 98 entre 1928 y 2025. Es decir, algo más de uno de cada cuatro.\n\nDesliza para ver los datos.",
+  "tags": [
+    "#SP500",
+    "#bolsa",
+    "#historiabursatil",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Damodaran (NYU Stern), Historical returns on stocks, bonds and bills"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "26 de 98",
+      "title": "años con rentabilidad negativa del S&P 500",
+      "foot": "De 1928 a 2025",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "26 de 98",
+      "head": "Años negativos",
+      "body": "Entre 1928 y 2025, el S&P 500 con dividendos tuvo 26 años con rentabilidad negativa. Hubo 72 años positivos.",
+      "foot": "Fuente: Damodaran (NYU Stern)",
+      "kicker": "Casi uno de cada cuatro",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "−43,84 %",
+      "head": "El peor año: 1931",
+      "body": "En 1931 el S&P 500 cayó un 43,84 %. Le siguen 2008 (−36,55 %) y 1937 (−35,34 %).",
+      "foot": "Fuente: Damodaran (NYU Stern)",
+      "kicker": "Los peores",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "+52,56 %",
+      "head": "El mejor año: 1954",
+      "body": "En 1954 subió un 52,56 %. Le siguen 1933 (+49,98 %) y 1935 (+46,74 %).",
+      "foot": "Fuente: Damodaran (NYU Stern)",
+      "kicker": "Los mejores",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«La bolsa sube todos los años»",
+      "reality": "Sube más veces de las que cae, pero las caídas no son raras: más de una cuarta parte de los años fueron negativos.",
+      "foot": "Fuente: Damodaran (NYU Stern)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué conviene recordar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Son datos históricos",
+          "b": "No predicen lo que pasará."
+        },
+        {
+          "t": "Incluyen dividendos",
+          "b": "Y no descuentan impuestos ni comisiones."
+        },
+        {
+          "t": "Un año negativo no es el final",
+          "b": "Pero conviene estar preparado."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Lo normal [[incluye años malos]]",
+      "body": "Invierte sabiendo que algunos años perderás valor.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

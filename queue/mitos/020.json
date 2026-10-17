@@ -1,0 +1,85 @@
+{
+  "id": "mitos-020-crisis-2008",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "Octubre de 2007 – marzo de 2009: el Dow Jones cayó un 54,5 % en 17 meses 📉\n\nPasó de 14.164,41 a 6.440,08 puntos. El S&P 500 no recuperó su máximo de 2007 hasta 2013.\n\nEl mito: «tras una crisis, el mercado rebota enseguida». Desliza para ver los datos.",
+  "tags": [
+    "#crisis2008",
+    "#bolsa",
+    "#historiabursatil",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Bear market",
+    "Wikipedia, Closing milestones of the S&P 500"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−54,5 %",
+      "title": "Lo que cayó el Dow Jones entre 2007 y 2009",
+      "foot": "17 meses de caída",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "14.164,41",
+      "head": "El máximo de 2007",
+      "body": "El Dow Jones cerró en 14.164,41 puntos el 9 de octubre de 2007.",
+      "foot": "Fuente: Wikipedia (Bear market)",
+      "kicker": "Antes de la crisis"
+    },
+    {
+      "t": "stat",
+      "big": "6.440,08",
+      "head": "El mínimo de 2009",
+      "body": "El 9 de marzo de 2009 cerró en 6.440,08, un 54,5 % menos, 17 meses después.",
+      "foot": "Fuente: Wikipedia (Bear market)",
+      "kicker": "El suelo",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "1.565,15",
+      "head": "El máximo del S&P 500",
+      "body": "El S&P 500 cerró en 1.565,15 el 9 de octubre de 2007 y no recuperó ese nivel hasta la primavera de 2013.",
+      "foot": "Fuente: Wikipedia (S&P 500 milestones)",
+      "kicker": "Cinco años y medio"
+    },
+    {
+      "t": "myth",
+      "myth": "«Tras una crisis, el mercado rebota enseguida»",
+      "reality": "Después de la crisis financiera, los índices tardaron años en volver a sus máximos. Cada crisis tiene su propio calendario.",
+      "foot": "Fuente: Wikipedia"
+    },
+    {
+      "t": "cards",
+      "head": "Qué enseña",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Las caídas pueden ser largas",
+          "b": "Esta duró casi año y medio y la recuperación aún más."
+        },
+        {
+          "t": "El horizonte importa",
+          "b": "No inviertas dinero que vayas a necesitar pronto."
+        },
+        {
+          "t": "Diversificar ayuda",
+          "b": "Pero no evita las caídas generales."
+        }
+      ],
+      "foot": "Con prudencia"
+    },
+    {
+      "t": "close",
+      "head": "La paciencia [[tiene un precio]]",
+      "body": "Pregúntate cuánto tiempo puedes esperar antes de invertir.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "edu-049-aversion-perdidas",
+  "label": "Aversión a las pérdidas",
+  "accent": "green",
+  "caption": "¿Por qué duele más perder que lo que alegra ganar? 😖 La aversión a las pérdidas.\n\nDesliza para ver qué es, cómo afecta a tus decisiones y qué puedes hacer.\n\n💾 Guárdalo para tomar mejores decisiones.",
+  "tags": [
+    "#sesgos",
+    "#psicologia",
+    "#finanzasconductuales",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "😖",
+      "title": "La aversión a las pérdidas",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué es",
+      "body": "Es la tendencia a sentir las pérdidas con más intensidad que las ganancias del mismo tamaño. Fue estudiada por Daniel Kahneman y Amos Tversky.",
+      "foot": "Finanzas conductuales"
+    },
+    {
+      "t": "point",
+      "head": "Cómo te [[afecta]]",
+      "body": "Te lleva a aferrarte a las inversiones que pierden, para no «materializar» la pérdida, y a vender demasiado pronto las que ganan.",
+      "foot": "Esperar a «recuperarse»",
+      "kicker": "Una trampa"
+    },
+    {
+      "t": "point",
+      "head": "Un error [[típico]]",
+      "body": "Pensar «no vendo hasta recuperar lo que pagué». El mercado no sabe lo que pagaste: lo que importa es si hoy compraría ese activo.",
+      "foot": "Lo pasado ya no cuenta",
+      "kicker": "El precio de compra"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo reducirlo",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Define cuándo vender",
+          "b": "Antes de comprar."
+        },
+        {
+          "t": "Revisa con regularidad",
+          "b": "No cada hora."
+        },
+        {
+          "t": "Pregúntate: ¿lo compraría hoy?",
+          "b": "Si no, quizá toque salir."
+        }
+      ],
+      "foot": "Reglas simples"
+    },
+    {
+      "t": "point",
+      "head": "No es [[eliminable]]",
+      "body": "Es parte de cómo funcionamos. Lo útil es reconocerlo y diseñar reglas que decidan por ti cuando la emoción aprieta.",
+      "foot": "Cuanto antes, mejor",
+      "kicker": "Aceptarlo"
+    },
+    {
+      "t": "close",
+      "head": "Conocer tus sesgos [[es ventaja]]",
+      "body": "Decidir con reglas protege tu cartera de tus emociones.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

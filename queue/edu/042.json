@@ -1,0 +1,91 @@
+{
+  "id": "edu-042-medias-moviles",
+  "label": "Medias móviles",
+  "accent": "green",
+  "caption": "¿Qué es una media móvil? 〰️\n\nDesliza para ver cómo se calcula, cómo se lee y qué problemas tiene.\n\n💾 Guárdalo para tus gráficos.",
+  "tags": [
+    "#mediamovil",
+    "#analisistecnico",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "〰️",
+      "title": "Qué es una media móvil",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "El precio medio de los [[últimos días]]",
+      "body": "Una media móvil promedia los precios de cierre de los últimos N días. Cada día, se descarta el más antiguo y se añade el nuevo.",
+      "foot": "Se actualiza a diario"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo [[sencillo]]",
+      "body": "Media de 5 días con cierres de 10, 11, 12, 11 y 11 €: (10 + 11 + 12 + 11 + 11) ÷ 5 = 11 €.",
+      "foot": "Ejemplo ficticio",
+      "kicker": "Con cifras ficticias"
+    },
+    {
+      "t": "point",
+      "head": "Para qué sirve",
+      "body": "Suaviza el ruido del día a día y ayuda a ver la tendencia. Las más usadas son las de 50 y 200 días.",
+      "foot": "Cuanto más larga, más lenta",
+      "kicker": "Ver la tendencia"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo se interpreta",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Precio sobre la media",
+          "b": "Se suele ver como tendencia alcista."
+        },
+        {
+          "t": "Precio bajo la media",
+          "b": "Se suele ver como tendencia bajista."
+        },
+        {
+          "t": "Cruce de dos medias",
+          "b": "Algunos lo usan como señal."
+        }
+      ],
+      "foot": "Lecturas habituales"
+    },
+    {
+      "t": "cards",
+      "head": "Sus límites",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Va con retraso",
+          "b": "Se calcula con precios pasados."
+        },
+        {
+          "t": "Señales falsas",
+          "b": "En mercados laterales, muchas."
+        },
+        {
+          "t": "No predice",
+          "b": "Solo resume."
+        }
+      ],
+      "foot": "Cuidado"
+    },
+    {
+      "t": "close",
+      "head": "La media [[describe]], no adivina",
+      "body": "Úsala como contexto, no como oráculo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

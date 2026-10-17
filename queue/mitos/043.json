@@ -1,0 +1,85 @@
+{
+  "id": "mitos-043-svb",
+  "label": "Datos · Silicon Valley Bank",
+  "accent": "red",
+  "caption": "Marzo de 2023: Silicon Valley Bank cayó en cuestión de días 🏦\n\nEl 9 de marzo sus clientes retiraron unos 42.000 millones de dólares y el 10 de marzo el regulador de California lo cerró. Tenía 209.000 millones en activos a finales de 2022.\n\nEl mito: «mi dinero en el banco está asegurado al 100 %». Desliza para ver los datos.",
+  "tags": [
+    "#SVB",
+    "#bancos",
+    "#bolsa",
+    "#finanzas",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Collapse of Silicon Valley Bank"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "42.000 M$",
+      "title": "retirados en un solo día de Silicon Valley Bank",
+      "foot": "9 de marzo de 2023",
+      "bigSize": 220
+    },
+    {
+      "t": "stat",
+      "big": "42.000 M$",
+      "head": "Las retiradas",
+      "body": "Para el cierre del 9 de marzo de 2023, los clientes habían retirado unos 42.000 millones de dólares de Silicon Valley Bank.",
+      "foot": "Fuente: Wikipedia (SVB)",
+      "kicker": "Una «corrida» bancaria"
+    },
+    {
+      "t": "stat",
+      "big": "10/03/2023",
+      "head": "El cierre",
+      "body": "El regulador de California intervino el banco la mañana del 10 de marzo de 2023 y lo puso bajo administración de la FDIC.",
+      "foot": "Fuente: Wikipedia (SVB)",
+      "kicker": "La intervención",
+      "bigSize": 170
+    },
+    {
+      "t": "stat",
+      "big": "209.000 M$",
+      "head": "Sus activos",
+      "body": "A 31 de diciembre de 2022 tenía 209.000 millones de dólares en activos. Fue el mayor banco quebrado desde la crisis de 2008 por activos.",
+      "foot": "Fuente: Wikipedia (SVB)",
+      "kicker": "Un banco grande",
+      "bigSize": 180
+    },
+    {
+      "t": "myth",
+      "myth": "«Mi dinero en el banco está asegurado al 100 %»",
+      "reality": "En EE. UU. la garantía legal cubre 250.000 dólares por cuenta. Lo que supere ese límite no está protegido. En cada país y banco los límites son distintos.",
+      "foot": "Fuente: Wikipedia (SVB)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué conviene revisar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Límites de garantía de tu país",
+          "b": "En la UE hay un fondo de garantía de depósitos con límite por titular."
+        },
+        {
+          "t": "Reparte si hace falta",
+          "b": "No todo en una sola entidad."
+        },
+        {
+          "t": "Entiende lo que contratas",
+          "b": "No es lo mismo un depósito que un producto de inversión."
+        }
+      ],
+      "foot": "Con prudencia"
+    },
+    {
+      "t": "close",
+      "head": "Asegurado [[tiene un límite]]",
+      "body": "Conoce cuánto está garantizado antes de que importe.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "edu-038-emergentes",
+  "label": "Mercados emergentes",
+  "accent": "green",
+  "caption": "¿Qué son los mercados emergentes? 🌏\n\nDesliza para ver qué países se consideran así, por qué ofrecen potencial y qué riesgos tienen.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#emergentes",
+    "#diversificacion",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🌏",
+      "title": "Mercados emergentes",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué son",
+      "body": "Son economías en desarrollo que están creciendo y modernizando sus mercados. Los proveedores de índices las clasifican según su desarrollo y la accesibilidad de sus bolsas.",
+      "foot": "Los índices los clasifican"
+    },
+    {
+      "t": "point",
+      "head": "Por qué [[interesan]]",
+      "body": "Pueden crecer más rápido que las economías desarrolladas y ofrecen diversificación geográfica.",
+      "foot": "Potencial de crecimiento",
+      "kicker": "El atractivo"
+    },
+    {
+      "t": "cards",
+      "head": "Sus riesgos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Políticos",
+          "b": "Cambios de gobierno o de normas."
+        },
+        {
+          "t": "Divisa",
+          "b": "Las monedas pueden depreciarse."
+        },
+        {
+          "t": "Menos transparencia",
+          "b": "Y menor protección al inversor."
+        }
+      ],
+      "foot": "Más incertidumbre"
+    },
+    {
+      "t": "point",
+      "head": "Crecimiento económico [[no es rentabilidad]]",
+      "body": "Una economía que crece rápido no garantiza que sus empresas coticen bien: el precio ya puede reflejarlo.",
+      "foot": "Expectativas incluidas",
+      "kicker": "Un matiz importante"
+    },
+    {
+      "t": "point",
+      "head": "Cómo [[incluirlos]]",
+      "body": "Muchos inversores lo hacen con un ETF o fondo global, o con uno específico de emergentes con un peso pequeño.",
+      "foot": "Diversificado, no apuestas sueltas",
+      "kicker": "Formas de acceso"
+    },
+    {
+      "t": "close",
+      "head": "Más potencial, [[más riesgo]]",
+      "body": "Su peso debe encajar con tu perfil y tu plazo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

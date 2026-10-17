@@ -1,0 +1,85 @@
+{
+  "id": "mitos-024-berkshire",
+  "label": "Datos · Berkshire Hathaway",
+  "accent": "red",
+  "caption": "Una acción de Berkshire Hathaway costaba más de 700.000 dólares en agosto de 2024 💵\n\nNunca la ha dividido en acciones más pequeñas. El mito: «una acción cara es una acción buena (o mala)».\n\nDesliza para ver los datos.",
+  "tags": [
+    "#berkshirehathaway",
+    "#warrenbuffett",
+    "#acciones",
+    "#bolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Berkshire Hathaway"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "700.000 $",
+      "title": "lo que valía una acción Clase A de Berkshire en agosto de 2024",
+      "foot": "Nunca ha hecho un split",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "1965",
+      "head": "El año de Buffett",
+      "body": "Warren Buffett tomó el control de Berkshire Hathaway en 1965.",
+      "foot": "Fuente: Wikipedia (Berkshire Hathaway)",
+      "kicker": "El comienzo"
+    },
+    {
+      "t": "stat",
+      "big": "100.000 $",
+      "head": "Octubre de 2006",
+      "body": "Las acciones Clase A cerraron por primera vez por encima de los 100.000 dólares el 23 de octubre de 2006. Superaron los 200.000 el 14 de agosto de 2014.",
+      "foot": "Fuente: Wikipedia (Berkshire Hathaway)",
+      "kicker": "Hitos de precio",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "500.000 $",
+      "head": "Marzo de 2022",
+      "body": "Superaron los 500.000 dólares el 16 de marzo de 2022 y llegaron a 700.000 en agosto de 2024.",
+      "foot": "Fuente: Wikipedia (Berkshire Hathaway)",
+      "kicker": "Más hitos",
+      "bigSize": 200
+    },
+    {
+      "t": "myth",
+      "myth": "«Una acción cara es buena (o mala) por serlo»",
+      "reality": "El precio por acción no dice nada por sí solo. Lo que importa es cuánto vale la empresa entera y cuánto ganará.",
+      "foot": "Fuente: Wikipedia (Berkshire Hathaway)"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué no hace split",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Atraer inversores a largo plazo",
+          "b": "Según la propia compañía, para evitar a los especuladores a corto plazo."
+        },
+        {
+          "t": "Clase B para pequeños",
+          "b": "Creó acciones Clase B en 1996, más asequibles."
+        },
+        {
+          "t": "No cambia el valor",
+          "b": "Un split no altera lo que vale la empresa."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "El precio de una acción [[no es su valor]]",
+      "body": "Compara empresas por lo que valen y ganan, no por el precio de cada acción.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

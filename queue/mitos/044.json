@@ -1,0 +1,84 @@
+{
+  "id": "mitos-044-sec-1934",
+  "label": "Datos · La SEC",
+  "accent": "red",
+  "caption": "Tras el crash de 1929 nació el organismo que vigila la bolsa de EE. UU. 🛡️\n\nLa SEC se creó en 1934 con la Ley del Mercado de Valores y su primer presidente fue Joseph P. Kennedy. Su misión: proteger a los inversores, mantener mercados justos y ordenados y facilitar la formación de capital.\n\nEl mito: «los mercados siempre han funcionado sin supervisión». Desliza para ver los datos.",
+  "tags": [
+    "#SEC",
+    "#crash1929",
+    "#regulacion",
+    "#bolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Great Depression",
+    "Wikipedia, Securities and Exchange Commission"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1934",
+      "title": "El año en que nació la SEC, tras el crash de 1929",
+      "foot": "Datos y contexto",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "25 %",
+      "head": "El desempleo en 1933",
+      "body": "La Gran Depresión duró de 1929 a 1939. El desempleo en EE. UU. llegó al 25 % en 1933 y el PIB cayó un 30 % entre 1929 y 1932.",
+      "foot": "Fuente: Wikipedia (Great Depression)",
+      "kicker": "El contexto",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "1934",
+      "head": "La SEC",
+      "body": "La Securities and Exchange Commission se creó en 1934 con la Ley del Mercado de Valores (Securities Exchange Act). Su primer presidente fue Joseph P. Kennedy.",
+      "foot": "Fuente: Wikipedia (SEC)",
+      "kicker": "El organismo"
+    },
+    {
+      "t": "point",
+      "head": "Su [[misión]]",
+      "body": "Proteger a los inversores, mantener mercados justos, ordenados y eficientes, y facilitar la formación de capital.",
+      "foot": "Fuente: Wikipedia (SEC)",
+      "kicker": "Tres objetivos"
+    },
+    {
+      "t": "myth",
+      "myth": "«Los mercados siempre se han autorregulado»",
+      "reality": "Los grandes escándalos y crisis llevaron a crear organismos de supervisión. Hoy, en EE. UU., las empresas cotizadas presentan sus informes en la base de datos EDGAR de la SEC.",
+      "foot": "Fuente: Wikipedia (SEC)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué puedes hacer tú",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Busca información oficial",
+          "b": "Los informes de las empresas son públicos."
+        },
+        {
+          "t": "Comprueba que tu bróker esté regulado",
+          "b": "En España, la CNMV; en EE. UU., la SEC."
+        },
+        {
+          "t": "Desconfía de lo que no figure en ninguna parte",
+          "b": "Si no puedes verificarlo, no inviertas."
+        }
+      ],
+      "foot": "Con prudencia"
+    },
+    {
+      "t": "close",
+      "head": "La regulación [[nace de las crisis]]",
+      "body": "Conocer tus derechos como inversor es parte de invertir bien.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

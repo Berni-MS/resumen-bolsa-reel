@@ -1,0 +1,81 @@
+{
+  "id": "edu-035-costes-ter",
+  "label": "Costes y TER",
+  "accent": "green",
+  "caption": "¿Cuánto te cuesta invertir? 💸 Un 1 % parece poco, pero con los años pesa mucho.\n\nDesliza para ver un ejemplo con cifras inventadas que compara dos costes anuales durante 30 años.\n\n💾 Guárdalo y revisa los tuyos.",
+  "tags": [
+    "#TER",
+    "#comisiones",
+    "#fondos",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "💸",
+      "title": "Cuánto te cuestan tus inversiones",
+      "foot": "El poder de los costes",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué es el [[TER]]",
+      "body": "El TER (ratio de gastos totales) es el coste anual de un fondo o ETF, expresado en porcentaje de lo invertido. Se descuenta de la rentabilidad.",
+      "foot": "Lo pagas aunque no lo veas",
+      "kicker": "El coste anual"
+    },
+    {
+      "t": "point",
+      "head": "Otros [[costes]]",
+      "body": "Comisiones de compra y venta del bróker, de custodia, de cambio de divisa, y el spread. Suman a lo largo del tiempo.",
+      "foot": "Revisa todo",
+      "kicker": "Más allá del TER"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo [[ficticio]]",
+      "body": "Inviertes 10.000 € durante 30 años con un 5 % anual antes de costes. Un producto con costes del 0,1 % anual llega a unos 42.000 €. Con costes del 1,5 %, a unos 28.000 €.",
+      "foot": "Ejemplo ficticio, sin impuestos",
+      "kicker": "Con cifras inventadas"
+    },
+    {
+      "t": "stat",
+      "big": "~14.000 €",
+      "head": "de diferencia",
+      "body": "En el ejemplo, la diferencia de costes se lleva aproximadamente un tercio del resultado. La rentabilidad real nunca es segura, pero los costes sí se pagan.",
+      "foot": "Cálculo propio sobre datos ficticios",
+      "kicker": "El efecto",
+      "color": "red"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo reducirlos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Compara TER",
+          "b": "Entre productos similares."
+        },
+        {
+          "t": "Elige bróker con costes claros",
+          "b": "Mira todas las tarifas."
+        },
+        {
+          "t": "Opera menos",
+          "b": "Cada operación puede costar."
+        }
+      ],
+      "foot": "Controlas lo que pagas"
+    },
+    {
+      "t": "close",
+      "head": "Lo que pagas [[lo controlas]]",
+      "body": "No controlas el mercado, pero sí tus costes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

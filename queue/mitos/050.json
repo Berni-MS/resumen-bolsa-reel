@@ -1,0 +1,86 @@
+{
+  "id": "mitos-050-inflacion-2022",
+  "label": "Datos · Inflación 2022",
+  "accent": "red",
+  "caption": "2022: la inflación en el euro superó el 10 % por primera vez desde que hay registros 🎈\n\nSegún Wikipedia, EE. UU. llegó al 9,1 % en junio de 2022, la zona euro al 10,7 % en octubre y el Reino Unido al 10,1 % en julio. El BCE subió tipos por primera vez en once años.\n\nEl mito: «la inflación alta es cosa del pasado». Desliza para ver los datos.",
+  "tags": [
+    "#inflacion",
+    "#BCE",
+    "#tiposdeinteres",
+    "#bolsa",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, 2021–2023 inflation surge"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "10,7 %",
+      "title": "la inflación en la zona euro en octubre de 2022",
+      "foot": "El máximo desde 1997",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "9,1 %",
+      "head": "EE. UU., junio de 2022",
+      "body": "La inflación anual en EE. UU. llegó al 9,1 % en junio de 2022, la más alta desde 1981.",
+      "foot": "Fuente: Wikipedia (2021–2023 inflation surge)",
+      "kicker": "Estados Unidos",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "10,7 %",
+      "head": "Zona euro, octubre de 2022",
+      "body": "La inflación anual de la zona euro alcanzó el 10,7 % en octubre de 2022, la más alta desde que existen registros (1997).",
+      "foot": "Fuente: Wikipedia (2021–2023 inflation surge)",
+      "kicker": "Zona euro",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "4 %",
+      "head": "El tipo del BCE en 2023",
+      "body": "El BCE subió tipos por primera vez en once años en junio de 2022. El 14 de septiembre de 2023 los subió por décima vez consecutiva, hasta el 4 %, el nivel más alto desde el lanzamiento del euro en 1999.",
+      "foot": "Fuente: Wikipedia (2021–2023 inflation surge)",
+      "kicker": "La respuesta",
+      "bigSize": 230
+    },
+    {
+      "t": "myth",
+      "myth": "«La inflación alta es cosa del pasado»",
+      "reality": "En 2022, la inflación llegó a máximos de varias décadas en grandes economías. La historia no descarta que vuelva a ocurrir.",
+      "foot": "Fuente: Wikipedia (2021–2023 inflation surge)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Revisa el efecto en tu dinero",
+          "b": "La inflación reduce el poder adquisitivo."
+        },
+        {
+          "t": "Los tipos suben como respuesta",
+          "b": "Y eso afecta a bonos y acciones."
+        },
+        {
+          "t": "Mantén un plan flexible",
+          "b": "Los entornos cambian."
+        }
+      ],
+      "foot": "Con atención"
+    },
+    {
+      "t": "close",
+      "head": "La inflación [[vuelve a importar]]",
+      "body": "Entenderla es parte de cuidar tu dinero.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

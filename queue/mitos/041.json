@@ -1,0 +1,84 @@
+{
+  "id": "mitos-041-bankia",
+  "label": "Datos · Bankia",
+  "accent": "red",
+  "caption": "Bankia salió a bolsa el 20 de julio de 2011 y se incorporó al IBEX 35 🏦\n\nRecaudó 3.100 millones de euros, el 98 % de ellos de inversores en España, en buena parte clientes del propio banco. En 2016, el Tribunal Supremo concluyó que el folleto tenía «graves inexactitudes» y Bankia ofreció devolver el 100 % de lo invertido más un 1 % anual a los accionistas minoristas de la OPV.\n\nEl mito: «si te lo vende tu banco, es seguro». Desliza para ver los datos.",
+  "tags": [
+    "#bankia",
+    "#ibex35",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Bankia"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "3.100 M€",
+      "title": "lo que recaudó la salida a bolsa de Bankia en 2011",
+      "foot": "98 % de inversores españoles",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "20/07/2011",
+      "head": "Su estreno",
+      "body": "Bankia empezó a cotizar en la Bolsa de Madrid el 20 de julio de 2011 y entró en el IBEX 35. La OPV recaudó 3.100 millones de euros, el 98 % de ellos en España, en buena parte de clientes del propio banco.",
+      "foot": "Fuente: Wikipedia (Bankia)",
+      "kicker": "La salida a bolsa",
+      "bigSize": 170
+    },
+    {
+      "t": "stat",
+      "big": "19.000 M€",
+      "head": "El rescate de 2012",
+      "body": "En 2012 la Comisión Europea aprobó un rescate que incluía una inyección de 4.465 millones en capital y una garantía de liquidez de 19.000 millones para BFA, de los que 12.000 irían a Bankia.",
+      "foot": "Fuente: Wikipedia (Bankia)",
+      "kicker": "El rescate",
+      "bigSize": 190
+    },
+    {
+      "t": "point",
+      "head": "La [[justicia]] y los minoristas",
+      "body": "En enero de 2016, el Tribunal Supremo ordenó a Bankia reembolsar a dos pequeños inversores por considerar que el folleto tenía «graves inexactitudes». En febrero de 2016, el banco ofreció devolver el 100 % de lo invertido más un 1 % anual.",
+      "foot": "Fuente: Wikipedia (Bankia)",
+      "kicker": "Lo que pasó después"
+    },
+    {
+      "t": "myth",
+      "myth": "«Si me lo vende mi banco, es seguro»",
+      "reality": "Que un producto lo ofrezca tu banco no significa que no tenga riesgo. Lee siempre el folleto y pregunta qué pasa si sale mal.",
+      "foot": "Fuente: Wikipedia (Bankia)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Lee el folleto",
+          "b": "Y pregunta lo que no entiendas."
+        },
+        {
+          "t": "No te dejes llevar por el entorno",
+          "b": "Que todos compren no es una razón."
+        },
+        {
+          "t": "Diversifica",
+          "b": "Evita depender de un solo emisor."
+        }
+      ],
+      "foot": "Con prudencia"
+    },
+    {
+      "t": "close",
+      "head": "Pregunta antes de [[firmar]]",
+      "body": "Conocer el riesgo es parte del producto.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "edu-027-resultados-trimestrales",
+  "label": "Resultados trimestrales",
+  "accent": "green",
+  "caption": "¿Qué son los resultados trimestrales? 📑 Cuatro veces al año, las empresas cotizadas rinden cuentas.\n\nDesliza para ver qué miran los analistas y por qué la bolsa a veces se mueve mucho en esos días.\n\n💾 Guárdalo para la próxima temporada de resultados.",
+  "tags": [
+    "#resultados",
+    "#BPA",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📑",
+      "title": "Resultados trimestrales",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Cuentas [[cada trimestre]]",
+      "body": "Muchas empresas cotizadas publican sus resultados cada tres meses: ventas, beneficios, deuda y previsiones.",
+      "foot": "Cuatro veces al año"
+    },
+    {
+      "t": "point",
+      "head": "BPA: beneficio por [[acción]]",
+      "body": "El BPA (EPS en inglés) divide el beneficio entre el número de acciones. Es una de las cifras más seguidas.",
+      "foot": "BPA = beneficio ÷ acciones",
+      "kicker": "Una cifra clave"
+    },
+    {
+      "t": "point",
+      "head": "Frente a las [[expectativas]]",
+      "body": "Los analistas publican previsiones antes de los resultados. El mercado reacciona a si la empresa las supera, las iguala o se queda corta.",
+      "foot": "Importan las expectativas",
+      "kicker": "Lo que se espera"
+    },
+    {
+      "t": "point",
+      "head": "Las [[previsiones]]",
+      "body": "A veces importan más las perspectivas que da la empresa para los próximos trimestres que los números del trimestre pasado.",
+      "foot": "La bolsa mira hacia delante",
+      "kicker": "Mirar hacia delante"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo leerlos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Ventas",
+          "b": "¿Crecen o caen?"
+        },
+        {
+          "t": "Márgenes",
+          "b": "¿Gana más o menos por cada euro vendido?"
+        },
+        {
+          "t": "Deuda y caja",
+          "b": "¿Está la empresa sana?"
+        }
+      ],
+      "foot": "Más allá del titular"
+    },
+    {
+      "t": "close",
+      "head": "Un buen trimestre [[no garantiza nada]]",
+      "body": "Mira la tendencia, no un solo dato.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

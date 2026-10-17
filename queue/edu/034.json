@@ -1,0 +1,92 @@
+{
+  "id": "edu-034-cripto-vs-bolsa",
+  "label": "Cripto vs bolsa",
+  "accent": "green",
+  "caption": "¿En qué se diferencia una criptomoneda de una acción? ₿\n\nDesliza para ver qué hay detrás de cada una, qué regulación tienen y qué riesgos comparten.\n\n⚠️ Información educativa, no recomendación.",
+  "tags": [
+    "#cripto",
+    "#bitcoin",
+    "#acciones",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "₿",
+      "title": "Cripto vs acciones",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Una acción es [[un trozo]] de empresa",
+      "body": "Quien tiene una acción es dueño de una parte de una compañía, que genera ingresos y beneficios y a veces paga dividendos.",
+      "foot": "Respaldada por un negocio",
+      "kicker": "Lo que compras"
+    },
+    {
+      "t": "point",
+      "head": "Una criptomoneda es [[un activo digital]]",
+      "body": "No es parte de una empresa. Su valor depende de la demanda, de la confianza y de su utilidad, no de unos beneficios.",
+      "foot": "Sin flujos de caja asociados",
+      "kicker": "Lo que compras"
+    },
+    {
+      "t": "cards",
+      "head": "Diferencias clave",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Valoración",
+          "b": "En acciones hay beneficios y activos; en cripto, es más difícil."
+        },
+        {
+          "t": "Supervisión",
+          "b": "Las bolsas están muy reguladas; el mundo cripto, menos."
+        },
+        {
+          "t": "Custodia",
+          "b": "Con cripto, perder las claves puede significar perder todo."
+        }
+      ],
+      "foot": "Dos mundos distintos"
+    },
+    {
+      "t": "point",
+      "head": "Lo que [[comparten]]",
+      "body": "Ambas pueden subir o bajar mucho, y ninguna garantiza ganancias. La volatilidad del cripto suele ser mayor.",
+      "foot": "Riesgo en ambas",
+      "kicker": "Un punto común"
+    },
+    {
+      "t": "cards",
+      "head": "Antes de plantearte comprar",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Entiende qué compras",
+          "b": "Y por qué podría valer algo."
+        },
+        {
+          "t": "Usa plataformas fiables",
+          "b": "Comprueba su supervisión."
+        },
+        {
+          "t": "Solo dinero que puedas perder",
+          "b": "Y en un peso pequeño."
+        }
+      ],
+      "foot": "Con cabeza"
+    },
+    {
+      "t": "close",
+      "head": "No es lo mismo [[invertir que apostar]]",
+      "body": "Si no entiendes un activo, no pongas ahí tu dinero.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

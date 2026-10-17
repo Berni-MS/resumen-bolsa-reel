@@ -1,0 +1,92 @@
+{
+  "id": "edu-022-rebalanceo",
+  "label": "Qué es rebalancear",
+  "accent": "green",
+  "caption": "¿Qué es rebalancear tu cartera? ⚖️\n\nDesliza para ver por qué una cartera se desvía con el tiempo y qué opciones hay para devolverla a su reparto inicial.\n\n💾 Guárdalo para revisar tu cartera.",
+  "tags": [
+    "#rebalanceo",
+    "#carteras",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "⚖️",
+      "title": "Qué es rebalancear",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "El reparto [[inicial]]",
+      "body": "Supón que decides tener 60 % en acciones y 40 % en bonos. Es tu reparto objetivo, según tu plan.",
+      "foot": "Ejemplo con cifras redondas",
+      "kicker": "El punto de partida"
+    },
+    {
+      "t": "point",
+      "head": "Se [[desvía]]",
+      "body": "Si las acciones suben más que los bonos, tu cartera pasa de 60/40 a, digamos, 70/30. Ahora tienes más riesgo del que querías.",
+      "foot": "Sin que hagas nada",
+      "kicker": "Con el tiempo"
+    },
+    {
+      "t": "point",
+      "head": "Rebalancear",
+      "body": "Es volver al reparto original, vendiendo parte de lo que ha subido y comprando lo que ha quedado atrás. O dirigir las nuevas aportaciones a lo que pesa menos.",
+      "foot": "Dos maneras de hacerlo",
+      "kicker": "Volver al plan"
+    },
+    {
+      "t": "cards",
+      "head": "Cuándo hacerlo",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cada cierto tiempo",
+          "b": "Por ejemplo, una vez al año."
+        },
+        {
+          "t": "Cuando se desvíe mucho",
+          "b": "Fijas un margen, como 5 puntos."
+        },
+        {
+          "t": "Con nuevas aportaciones",
+          "b": "Evita vender y pagar impuestos."
+        }
+      ],
+      "foot": "Elige una regla y cúmplela"
+    },
+    {
+      "t": "cards",
+      "head": "Ojo con",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Comisiones",
+          "b": "Cada operación puede costar."
+        },
+        {
+          "t": "Impuestos",
+          "b": "Vender con ganancias puede tributar."
+        },
+        {
+          "t": "Hacerlo por impulso",
+          "b": "Una regla evita decidir con emociones."
+        }
+      ],
+      "foot": "Costes que pesan"
+    },
+    {
+      "t": "close",
+      "head": "Rebalancear es [[volver a tu plan]]",
+      "body": "No es predecir el mercado, es mantener el riesgo que elegiste.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

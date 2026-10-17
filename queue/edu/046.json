@@ -1,0 +1,79 @@
+{
+  "id": "edu-046-pib-datos",
+  "label": "PIB y datos macro",
+  "accent": "green",
+  "caption": "¿Qué datos económicos mueven los mercados? 📊 PIB, paro, inflación y más.\n\nDesliza para ver los cuatro más seguidos y qué miran los inversores.\n\n💾 Guárdalo para los titulares.",
+  "tags": [
+    "#PIB",
+    "#macro",
+    "#IPC",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📊",
+      "title": "Los datos que mueven los mercados",
+      "foot": "PIB, paro, inflación…",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "El [[PIB]]",
+      "body": "Mide el valor de todos los bienes y servicios producidos en un país en un periodo. Su variación indica si la economía crece o se contrae.",
+      "foot": "Crecimiento trimestral y anual",
+      "kicker": "El tamaño de la economía"
+    },
+    {
+      "t": "point",
+      "head": "La [[inflación]]",
+      "body": "Mide cuánto suben los precios. Se calcula con el IPC. Es importante porque influye en las decisiones de los bancos centrales.",
+      "foot": "IPC = índice de precios al consumo",
+      "kicker": "Los precios"
+    },
+    {
+      "t": "point",
+      "head": "El [[empleo]]",
+      "body": "La tasa de paro y los datos de creación de empleo muestran la salud del mercado laboral y del consumo.",
+      "foot": "Paro y empleo",
+      "kicker": "El trabajo"
+    },
+    {
+      "t": "point",
+      "head": "Los [[tipos de interés]]",
+      "body": "Los fijan los bancos centrales. Afectan a hipotecas, empresas y a la valoración de bonos y acciones.",
+      "foot": "Decisiones del banco central",
+      "kicker": "El precio del dinero"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo mirarlos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Frente a lo esperado",
+          "b": "Importa la sorpresa, no solo el dato."
+        },
+        {
+          "t": "En tendencia",
+          "b": "Un dato suelto dice poco."
+        },
+        {
+          "t": "Juntos",
+          "b": "Ninguno lo explica todo."
+        }
+      ],
+      "foot": "Con perspectiva"
+    },
+    {
+      "t": "close",
+      "head": "Los datos macro [[dan contexto]]",
+      "body": "No predicen la bolsa, pero ayudan a entender las noticias.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

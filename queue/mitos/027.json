@@ -1,0 +1,71 @@
+{
+  "id": "mitos-027-nyse-datos",
+  "label": "Datos · Bolsa de Nueva York",
+  "accent": "red",
+  "caption": "La Bolsa de Nueva York, en datos 🏛️\n\nEs la mayor bolsa del mundo por capitalización: 44,7 billones de dólares a diciembre de 2025. En julio de 2024 cotizaban en ella 2.223 compañías y abre de lunes a viernes de 9:30 a 16:00, hora de Nueva York.\n\nDesliza para verlo.\n\nNota: billón = un millón de millones.",
+  "tags": [
+    "#NYSE",
+    "#wallstreet",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, New York Stock Exchange"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "44,7 B$",
+      "title": "La capitalización de la Bolsa de Nueva York en 2025",
+      "foot": "Datos del NYSE",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "1792",
+      "head": "Su origen",
+      "body": "La Bolsa de Nueva York nació del Acuerdo de Buttonwood, firmado el 17 de mayo de 1792 por 24 corredores.",
+      "foot": "Fuente: Wikipedia (NYSE)",
+      "kicker": "Más de dos siglos"
+    },
+    {
+      "t": "stat",
+      "big": "2.223",
+      "head": "Compañías cotizadas",
+      "body": "En julio de 2024 había 2.223 compañías listadas en la Bolsa de Nueva York.",
+      "foot": "Fuente: Wikipedia (NYSE)",
+      "kicker": "Cuántas cotizan"
+    },
+    {
+      "t": "stat",
+      "big": "44,7 B$",
+      "head": "Su tamaño",
+      "body": "A diciembre de 2025 su capitalización era de 44,7 billones de dólares: la mayor del mundo.",
+      "foot": "Fuente: Wikipedia (NYSE)",
+      "kicker": "La mayor del mundo",
+      "color": "green"
+    },
+    {
+      "t": "point",
+      "head": "Su [[horario]]",
+      "body": "La sesión regular va de lunes a viernes, de 9:30 a 16:00 hora de Nueva York, excepto festivos. Eso suele equivaler a 15:30–22:00 en la España peninsular, con ligeras diferencias unas semanas al año por los cambios de hora.",
+      "foot": "Cuidado con los cambios de hora",
+      "kicker": "Cuándo opera"
+    },
+    {
+      "t": "myth",
+      "myth": "«La bolsa de EE. UU. es solo una cosa: Wall Street»",
+      "reality": "Hay varias bolsas, con sus propias reglas y empresas. El NYSE es la mayor, pero no es la única.",
+      "foot": "Fuente: Wikipedia (NYSE)"
+    },
+    {
+      "t": "close",
+      "head": "Wall Street [[es más que un nombre]]",
+      "body": "Conocer cómo funciona el mercado te ayuda a entender las noticias.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

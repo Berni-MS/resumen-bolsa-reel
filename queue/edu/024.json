@@ -1,0 +1,79 @@
+{
+  "id": "edu-024-riesgo-horizonte",
+  "label": "Riesgo y horizonte temporal",
+  "accent": "green",
+  "caption": "¿Cuánto riesgo puedo asumir? 🧭 Depende de dos cosas: cuánto aguantas y cuándo necesitas el dinero.\n\nDesliza para ver la diferencia entre capacidad y tolerancia al riesgo.\n\n💾 Guárdalo para tu plan.",
+  "tags": [
+    "#riesgo",
+    "#horizontetemporal",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧭",
+      "title": "Riesgo y horizonte temporal",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Horizonte [[temporal]]",
+      "body": "Es el tiempo que falta hasta que necesitas el dinero. No es lo mismo ahorrar para una entrada dentro de dos años que para la jubilación dentro de treinta.",
+      "foot": "¿Cuándo lo necesitas?",
+      "kicker": "Primera pregunta"
+    },
+    {
+      "t": "point",
+      "head": "Capacidad de [[asumir riesgo]]",
+      "body": "Es cuánto puedes perder sin que tu vida se resienta: ingresos estables, ahorros, deudas, personas a tu cargo.",
+      "foot": "Lo que te permite tu situación",
+      "kicker": "Segunda pregunta"
+    },
+    {
+      "t": "point",
+      "head": "Tolerancia al [[riesgo]]",
+      "body": "Es cuánto aguantas emocionalmente. Dos personas con la misma situación pueden reaccionar de forma muy distinta ante una caída.",
+      "foot": "Lo que te permite tu cabeza",
+      "kicker": "Tercera pregunta"
+    },
+    {
+      "t": "cards",
+      "head": "Resultado",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Plazo corto",
+          "b": "Menos riesgo: no hay tiempo para recuperarse."
+        },
+        {
+          "t": "Plazo largo",
+          "b": "Puedes asumir más oscilaciones."
+        },
+        {
+          "t": "Si dudas",
+          "b": "Elige el menor de los dos riesgos."
+        }
+      ],
+      "foot": "Regla práctica"
+    },
+    {
+      "t": "point",
+      "head": "No es [[fijo]]",
+      "body": "Tu situación cambia: la edad, los ingresos, la familia. Conviene revisar tu perfil cada cierto tiempo.",
+      "foot": "Revisa tu plan",
+      "kicker": "Con el tiempo"
+    },
+    {
+      "t": "close",
+      "head": "Invierte según [[tu plazo y tu calma]]",
+      "body": "No según lo que haga otra persona.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

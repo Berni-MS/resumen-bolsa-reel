@@ -1,0 +1,79 @@
+{
+  "id": "edu-051-leer-empresa",
+  "label": "Leer los resultados de una empresa",
+  "accent": "green",
+  "caption": "¿Cómo se leen las cuentas de una empresa? 🧮 Tres documentos, tres preguntas.\n\nDesliza para ver qué cuenta cada estado financiero y qué mirar primero.\n\n💾 Guárdalo para tu próxima empresa.",
+  "tags": [
+    "#estadosfinancieros",
+    "#analisisfundamental",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧮",
+      "title": "Cómo leer las cuentas de una empresa",
+      "foot": "Tres documentos, tres preguntas",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "La cuenta de [[resultados]]",
+      "body": "¿Gana dinero? Muestra ingresos, gastos y beneficio en un periodo.",
+      "foot": "Ingresos − gastos = beneficio",
+      "kicker": "Pregunta 1"
+    },
+    {
+      "t": "point",
+      "head": "El [[balance]]",
+      "body": "¿Qué tiene y qué debe? Muestra los activos, las deudas y el patrimonio neto en una fecha concreta.",
+      "foot": "Activos = pasivos + patrimonio",
+      "kicker": "Pregunta 2"
+    },
+    {
+      "t": "point",
+      "head": "El [[flujo de caja]]",
+      "body": "¿Entra dinero de verdad? Muestra el efectivo que entra y sale. Una empresa puede tener beneficios y problemas de caja.",
+      "foot": "Beneficio no es caja",
+      "kicker": "Pregunta 3"
+    },
+    {
+      "t": "cards",
+      "head": "Qué mirar primero",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tendencia de ingresos",
+          "b": "¿Crecen?"
+        },
+        {
+          "t": "Deuda frente a beneficios",
+          "b": "¿Puede pagarla?"
+        },
+        {
+          "t": "Caja generada",
+          "b": "¿Sostiene sus dividendos?"
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Dónde [[encontrarlas]]",
+      "body": "Las empresas cotizadas publican sus informes en su web y en el regulador del mercado: CNMV en España y SEC en EE. UU.",
+      "foot": "Información pública",
+      "kicker": "Fuentes oficiales"
+    },
+    {
+      "t": "close",
+      "head": "Las cuentas [[cuentan la historia]]",
+      "body": "Lee más allá del titular.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

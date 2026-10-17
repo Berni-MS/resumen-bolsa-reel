@@ -1,0 +1,82 @@
+{
+  "id": "mitos-052-nasdaq100-datos",
+  "label": "Datos · Nasdaq 100",
+  "accent": "red",
+  "caption": "El Nasdaq 100 no incluye bancos ni aseguradoras 💻\n\nSe creó el 31 de enero de 1985 con base 250. Incluye 100 grandes empresas no financieras listadas en Nasdaq, y ninguna puede pesar más del 24 %. Se revisa cada año el tercer viernes de diciembre.\n\nDesliza para ver los datos.",
+  "tags": [
+    "#nasdaq",
+    "#nasdaq100",
+    "#indices",
+    "#bolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Nasdaq-100"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "24 %",
+      "title": "el peso máximo de una empresa en el Nasdaq 100",
+      "foot": "Y otros datos del índice",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "1985",
+      "head": "Su origen",
+      "body": "El Nasdaq 100 se creó el 31 de enero de 1985 con un valor base de 250. En enero de 1994 se dividió su valor a la mitad, como un split.",
+      "foot": "Fuente: Wikipedia (Nasdaq-100)",
+      "kicker": "El comienzo"
+    },
+    {
+      "t": "point",
+      "head": "Qué [[incluye]]",
+      "body": "Las 100 mayores empresas no financieras con cotización principal en Nasdaq y un valor medio diario negociado de al menos 5 millones de dólares. Los bancos y aseguradoras quedan fuera.",
+      "foot": "Fuente: Wikipedia (Nasdaq-100)",
+      "kicker": "Quién entra"
+    },
+    {
+      "t": "stat",
+      "big": "24 %",
+      "head": "Su tope",
+      "body": "Se pondera por capitalización con un peso máximo del 24 % para la mayor empresa.",
+      "foot": "Fuente: Wikipedia (Nasdaq-100)",
+      "kicker": "Un límite"
+    },
+    {
+      "t": "myth",
+      "myth": "«El Nasdaq 100 son las 100 mayores empresas de Nasdaq, sin más»",
+      "reality": "Hay filtros: no incluye empresas financieras, exige un mínimo de valor negociado y limita el peso máximo de cada compañía.",
+      "foot": "Fuente: Wikipedia (Nasdaq-100)"
+    },
+    {
+      "t": "cards",
+      "head": "Cuándo se revisa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cada año",
+          "b": "Tras el cierre del tercer viernes de diciembre."
+        },
+        {
+          "t": "Cada trimestre",
+          "b": "Se actualizan acciones en circulación y capital flotante."
+        },
+        {
+          "t": "Cuando hace falta",
+          "b": "Ha habido ajustes especiales en 1998, 2011 y 2023."
+        }
+      ],
+      "foot": "Un índice vivo"
+    },
+    {
+      "t": "close",
+      "head": "Cada índice [[tiene sus reglas]]",
+      "body": "Léelas antes de invertir en un producto que lo replique.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

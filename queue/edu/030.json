@@ -1,0 +1,78 @@
+{
+  "id": "edu-030-opciones",
+  "label": "Opciones: lo básico",
+  "accent": "green",
+  "caption": "¿Qué es una opción financiera? 🎯 Un contrato con derecho a comprar o vender a un precio fijado.\n\nDesliza para ver las dos piezas básicas, call y put, con un ejemplo, y por qué son productos complejos.\n\n⚠️ Información educativa, no recomendación.",
+  "tags": [
+    "#opciones",
+    "#derivados",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🎯",
+      "title": "Opciones: lo básico",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Un [[derecho]], no una obligación",
+      "body": "Una opción da a quien la compra el derecho (no la obligación) de comprar o vender un activo a un precio acordado, hasta una fecha determinada.",
+      "foot": "Precio de ejercicio y vencimiento"
+    },
+    {
+      "t": "point",
+      "head": "Call y [[put]]",
+      "body": "La call da derecho a comprar; la put, a vender. Quien compra paga una prima por ese derecho.",
+      "foot": "Call = comprar, put = vender",
+      "kicker": "Las dos piezas"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo [[ficticio]]",
+      "body": "Pagas 5 € de prima por una call con precio de ejercicio de 100 €. Si al vencimiento la acción vale 120 €, el derecho vale 20 € (ganas 15 €). Si vale 90 €, no se ejerce y pierdes los 5 €.",
+      "foot": "Ejemplo ficticio",
+      "kicker": "Con cifras sencillas"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué son complejas",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Caducan",
+          "b": "Pierden valor con el paso del tiempo."
+        },
+        {
+          "t": "Pérdida total posible",
+          "b": "Puedes perder toda la prima."
+        },
+        {
+          "t": "Vender opciones",
+          "b": "Puede suponer pérdidas mucho mayores."
+        }
+      ],
+      "foot": "No son para empezar"
+    },
+    {
+      "t": "point",
+      "head": "Para qué se [[usan]]",
+      "body": "Para especular o para cubrir riesgos, por ejemplo protegiendo una cartera ante caídas.",
+      "foot": "Cobertura y especulación",
+      "kicker": "Dos usos"
+    },
+    {
+      "t": "close",
+      "head": "Las opciones son [[herramientas avanzadas]]",
+      "body": "Antes de usarlas, estudia y practica sin dinero real.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

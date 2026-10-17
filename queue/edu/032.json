@@ -1,0 +1,78 @@
+{
+  "id": "edu-032-reit",
+  "label": "REIT y SOCIMI",
+  "accent": "green",
+  "caption": "¿Se puede invertir en inmuebles desde la bolsa? 🏢 REIT y SOCIMI.\n\nDesliza para ver qué son, cómo ganan dinero y qué riesgos tienen.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#REIT",
+    "#SOCIMI",
+    "#inmobiliario",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏢",
+      "title": "REIT y SOCIMI",
+      "foot": "Inmuebles en bolsa",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué son",
+      "body": "Son empresas que poseen y gestionan inmuebles, como oficinas, centros comerciales o viviendas en alquiler, y cotizan en bolsa. En EE. UU. se llaman REIT; en España, SOCIMI.",
+      "foot": "Inmuebles con liquidez"
+    },
+    {
+      "t": "point",
+      "head": "Cómo [[ganan dinero]]",
+      "body": "Sobre todo con los alquileres. Muchas están obligadas a repartir buena parte de sus beneficios como dividendos.",
+      "foot": "Alquileres y dividendos",
+      "kicker": "Su negocio"
+    },
+    {
+      "t": "point",
+      "head": "Una ventaja [[clara]]",
+      "body": "Puedes invertir en inmuebles con poco dinero y vender cuando quieras, sin comprar una vivienda entera.",
+      "foot": "Accesibilidad y liquidez",
+      "kicker": "Lo bueno"
+    },
+    {
+      "t": "cards",
+      "head": "Sus riesgos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Tipos de interés",
+          "b": "Si suben, suelen afectarles."
+        },
+        {
+          "t": "Ocupación",
+          "b": "Si faltan inquilinos, caen los ingresos."
+        },
+        {
+          "t": "Cotizan como acciones",
+          "b": "Su precio oscila a diario."
+        }
+      ],
+      "foot": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Cómo [[mirarlas]]",
+      "body": "Se fijan en los ingresos por alquiler, la ocupación, la deuda y el valor de los inmuebles frente al precio de la acción.",
+      "foot": "Más allá del dividendo",
+      "kicker": "Qué comprobar"
+    },
+    {
+      "t": "close",
+      "head": "Inmuebles en bolsa [[no son menos arriesgados]]",
+      "body": "Cotizan, y por tanto oscilan.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

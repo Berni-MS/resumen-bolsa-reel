@@ -1,0 +1,79 @@
+{
+  "id": "edu-025-crecimiento-valor",
+  "label": "Crecimiento vs valor",
+  "accent": "green",
+  "caption": "¿Acciones de crecimiento o de valor? 🌱💎 Dos estilos de elegir empresas.\n\nDesliza para ver qué busca cada uno, qué riesgos tiene y por qué no hay uno «mejor» siempre.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#growth",
+    "#value",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🌱💎",
+      "title": "Crecimiento vs valor",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Empresas de [[crecimiento]]",
+      "body": "Son compañías que se espera que aumenten sus ventas y beneficios más rápido que la media. Suelen reinvertir y pagar poco dividendo.",
+      "foot": "Se paga por el futuro",
+      "kicker": "Growth"
+    },
+    {
+      "t": "point",
+      "head": "Empresas de [[valor]]",
+      "body": "Son compañías cuyo precio parece bajo respecto a sus beneficios o activos. Suelen ser negocios más maduros y a menudo pagan dividendo.",
+      "foot": "Se busca precio razonable",
+      "kicker": "Value"
+    },
+    {
+      "t": "cards",
+      "head": "Los riesgos de cada una",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Crecimiento",
+          "b": "Si no cumple lo esperado, el precio puede caer mucho."
+        },
+        {
+          "t": "Valor",
+          "b": "Puede ser barata por una buena razón."
+        },
+        {
+          "t": "Ambas",
+          "b": "Pueden ir mejor o peor según el momento."
+        }
+      ],
+      "foot": "Ninguna es segura"
+    },
+    {
+      "t": "point",
+      "head": "No hay [[ganador fijo]]",
+      "body": "A lo largo de la historia, cada estilo ha ido por delante en distintos periodos. Acertar cuándo toca cada uno es muy difícil.",
+      "foot": "Se alternan",
+      "kicker": "Ciclos"
+    },
+    {
+      "t": "point",
+      "head": "Una [[forma sencilla]]",
+      "body": "Un fondo indexado global ya contiene empresas de ambos estilos, sin tener que elegir.",
+      "foot": "Diversificación",
+      "kicker": "Si no quieres elegir"
+    },
+    {
+      "t": "close",
+      "head": "Crecimiento y valor [[no son bandos]]",
+      "body": "Son formas de mirar una empresa.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

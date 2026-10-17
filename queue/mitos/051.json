@@ -1,0 +1,87 @@
+{
+  "id": "mitos-051-spy-vs-voo",
+  "label": "Datos · SPY",
+  "accent": "red",
+  "caption": "El primer ETF de EE. UU. dejó de ser el mayor en febrero de 2025 🏆\n\nEl SPY se constituyó el 22 de enero de 1993 (cotizó por primera vez el 29) y fue el primer ETF en superar los 500.000 millones de dólares (febrero de 2024). En febrero de 2025, el VOO de Vanguard lo superó como mayor ETF. Su ratio de gastos bruto es del 0,0945 %.\n\nDesliza para ver los datos.",
+  "tags": [
+    "#ETF",
+    "#SPY",
+    "#VOO",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, SPDR S&P 500 ETF Trust"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1993",
+      "title": "El año en que empezó el primer ETF de EE. UU.",
+      "foot": "El SPY",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "22/01/1993",
+      "head": "El comienzo",
+      "body": "El fondo SPY se constituyó el 22 de enero de 1993 con una emisión inicial de 150.000 participaciones, y cotizó por primera vez el 29 de enero.",
+      "foot": "Fuente: Wikipedia (SPY)",
+      "kicker": "El primer ETF",
+      "bigSize": 190
+    },
+    {
+      "t": "stat",
+      "big": "0,0945 %",
+      "head": "Su coste anual",
+      "body": "Su ratio de gastos bruto es del 0,0945 % anual. Es un coste bajo, pero otros ETF sobre el mismo índice pueden cobrar menos.",
+      "foot": "Fuente: Wikipedia (SPY)",
+      "kicker": "Cuánto cuesta",
+      "bigSize": 190
+    },
+    {
+      "t": "stat",
+      "big": "500.000 M$",
+      "head": "Febrero de 2024",
+      "body": "Fue el primer ETF en superar los 500.000 millones de dólares en activos (febrero de 2024) y los 600.000 millones en octubre de 2024.",
+      "foot": "Fuente: Wikipedia (SPY)",
+      "kicker": "Un gigante",
+      "color": "green",
+      "bigSize": 190
+    },
+    {
+      "t": "myth",
+      "myth": "«El ETF más antiguo y famoso es siempre el mejor»",
+      "reality": "En febrero de 2025, el VOO de Vanguard superó al SPY como mayor ETF. Ser el primero no garantiza ser el mejor ni el más barato.",
+      "foot": "Fuente: Wikipedia (SPY)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué comparar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Coste anual (TER)",
+          "b": "Pequeñas diferencias se acumulan."
+        },
+        {
+          "t": "Tamaño y liquidez",
+          "b": "Importan para comprar y vender."
+        },
+        {
+          "t": "Tu bróker y tu fiscalidad",
+          "b": "En España, mira ETF comercializables aquí."
+        }
+      ],
+      "foot": "Con cabeza"
+    },
+    {
+      "t": "close",
+      "head": "Ser el primero [[no es ser el mejor]]",
+      "body": "Compara antes de elegir.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

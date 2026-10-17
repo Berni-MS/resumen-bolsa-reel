@@ -1,0 +1,87 @@
+{
+  "id": "mitos-049-bolsa-vs-economia",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«La bolsa refleja la economía de hoy.» 🧭\n\nEn el segundo trimestre de 2020, el PIB de EE. UU. cayó a un ritmo anualizado del 33 % y el paro llegó al 14,7 % en abril. Aun así, el S&P 500 marcó un récord el 18 de agosto de 2020.\n\nDesliza para ver los datos.",
+  "tags": [
+    "#bolsa",
+    "#economia",
+    "#covid",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, COVID-19 recession",
+    "NPR (18/08/2020)"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−33 %",
+      "title": "cayó el PIB de EE. UU. en el segundo trimestre de 2020",
+      "foot": "Y la bolsa marcó récord en agosto",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "−33 %",
+      "head": "El PIB en el 2.º trimestre",
+      "body": "Según los datos del 30 de julio de 2020, el PIB de EE. UU. cayó a un ritmo anualizado del 33 % en el segundo trimestre de 2020.",
+      "foot": "Fuente: Wikipedia (COVID-19 recession)",
+      "kicker": "La economía",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "14,7 %",
+      "head": "El paro en abril",
+      "body": "La tasa de paro en EE. UU. subió del 3,5 % en febrero al 14,7 % en abril de 2020, la más alta desde 1941.",
+      "foot": "Fuente: Wikipedia (COVID-19 recession)",
+      "kicker": "El empleo",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "18/08/2020",
+      "head": "La bolsa",
+      "body": "El S&P 500 cerró en un récord histórico el 18 de agosto de 2020.",
+      "foot": "Fuente: NPR (18/08/2020)",
+      "kicker": "Los mercados",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«La bolsa refleja la economía de hoy»",
+      "reality": "La bolsa mira hacia delante: descuenta lo que se espera, no solo lo que ya ocurre. La recesión de 2020 fue la más corta registrada: unos dos meses.",
+      "foot": "Fuente: Wikipedia; NPR"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Bolsa y economía no son lo mismo",
+          "b": "Pueden ir en direcciones distintas."
+        },
+        {
+          "t": "Las expectativas mandan",
+          "b": "Los precios se mueven por lo que se espera."
+        },
+        {
+          "t": "No uses un dato suelto",
+          "b": "Ni el PIB ni la bolsa lo cuentan todo."
+        }
+      ],
+      "foot": "Con perspectiva"
+    },
+    {
+      "t": "close",
+      "head": "La bolsa mira [[hacia delante]]",
+      "body": "Entender las expectativas ayuda a interpretar lo que parece contradictorio.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

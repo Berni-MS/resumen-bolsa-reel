@@ -1,0 +1,112 @@
+{
+  "id": "edu-052-plan-personal",
+  "label": "Tu plan de inversión",
+  "accent": "green",
+  "caption": "¿Cómo montar tu propio plan de inversión? 🗺️ Cinco preguntas antes de invertir un euro.\n\nDesliza para ver los pasos básicos, sin recetas mágicas.\n\n💾 Guárdalo y respóndelas por escrito.\n\n⚠️ Contenido educativo, no asesoramiento personalizado.",
+  "tags": [
+    "#plandeinversion",
+    "#metas",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🗺️",
+      "title": "Tu plan de inversión",
+      "foot": "Cinco preguntas, antes de invertir",
+      "bigSize": 300
+    },
+    {
+      "t": "steps",
+      "head": "Las cinco [[preguntas]]",
+      "steps": [
+        {
+          "t": "¿Para qué invierto?",
+          "b": "Una meta concreta: jubilación, vivienda, libertad."
+        },
+        {
+          "t": "¿Cuándo necesito el dinero?",
+          "b": "Tu plazo manda."
+        },
+        {
+          "t": "¿Cuánto riesgo aguanto?",
+          "b": "Pensando en caídas reales."
+        },
+        {
+          "t": "¿Cuánto puedo aportar?",
+          "b": "Sin tocar tu fondo de emergencia."
+        },
+        {
+          "t": "¿Cómo invertiré?",
+          "b": "Productos, costes y reparto."
+        }
+      ],
+      "foot": "Responde por escrito"
+    },
+    {
+      "t": "point",
+      "head": "Primero la [[base]]",
+      "body": "Fondo de emergencia hecho y deudas caras controladas. Sin esto, cualquier caída te obliga a vender.",
+      "foot": "Colchón y deudas",
+      "kicker": "Antes de empezar"
+    },
+    {
+      "t": "point",
+      "head": "Después, [[sencillez]]",
+      "body": "Muchas estrategias razonables son sencillas: diversificar, costes bajos y aportar de forma regular durante años.",
+      "foot": "Diversificación y constancia",
+      "kicker": "Menos es más"
+    },
+    {
+      "t": "cards",
+      "head": "Revisa, no obsesiones",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Una vez al año",
+          "b": "Mira si tu plan sigue encajando."
+        },
+        {
+          "t": "Rebalancea",
+          "b": "Si te has desviado mucho."
+        },
+        {
+          "t": "No cambies por las noticias",
+          "b": "Solo por cambios en tu vida."
+        }
+      ],
+      "foot": "Rutina razonable"
+    },
+    {
+      "t": "cards",
+      "head": "Evita",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Promesas de rentabilidad",
+          "b": "Nadie las garantiza."
+        },
+        {
+          "t": "Productos que no entiendes",
+          "b": "Si no sabes explicarlo, no lo compres."
+        },
+        {
+          "t": "Invertir lo que necesitas pronto",
+          "b": "El plazo importa."
+        }
+      ],
+      "foot": "Alertas"
+    },
+    {
+      "t": "close",
+      "head": "Un plan por escrito [[vale más que mil impulsos]]",
+      "body": "Si lo necesitas, consulta con un profesional.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

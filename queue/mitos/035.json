@@ -1,0 +1,85 @@
+{
+  "id": "mitos-035-pets-com",
+  "label": "Datos · Pets.com",
+  "accent": "red",
+  "caption": "Pets.com: de la salida a bolsa a la liquidación en menos de un año 🐶\n\nSalió a bolsa en febrero de 2000 a 11 $ por acción, recaudando 82,5 millones de dólares, tras un anuncio en la Super Bowl de 1,2 millones de dólares. Dejó de aceptar pedidos el 9 de noviembre de 2000.\n\nEl mito: «si una empresa gasta mucho en publicidad, es que va bien». Desliza para ver los datos.",
+  "tags": [
+    "#petscom",
+    "#burbujapuntocom",
+    "#bolsa",
+    "#historiabursatil",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Pets.com"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "9 meses",
+      "title": "de la salida a bolsa a la liquidación de Pets.com",
+      "foot": "De febrero a noviembre de 2000",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "11 $",
+      "head": "Su precio de salida",
+      "body": "Pets.com salió a bolsa en febrero de 2000 a 11 dólares por acción y recaudó 82,5 millones de dólares en Nasdaq.",
+      "foot": "Fuente: Wikipedia (Pets.com)",
+      "kicker": "La OPV"
+    },
+    {
+      "t": "stat",
+      "big": "1,2 M$",
+      "head": "Su anuncio de Super Bowl",
+      "body": "En enero de 2000 emitió un anuncio en la Super Bowl XXXIV que costó 1,2 millones de dólares y fue el quinto mejor valorado por USA Today.",
+      "foot": "Fuente: Wikipedia (Pets.com)",
+      "kicker": "La publicidad"
+    },
+    {
+      "t": "stat",
+      "big": "09/11/2000",
+      "head": "El final",
+      "body": "Dejó de aceptar pedidos el 9 de noviembre de 2000, unos nueve meses después de salir a bolsa.",
+      "foot": "Fuente: Wikipedia (Pets.com)",
+      "kicker": "La liquidación",
+      "color": "red",
+      "bigSize": 190
+    },
+    {
+      "t": "myth",
+      "myth": "«Si gasta mucho en publicidad, va bien»",
+      "reality": "Un anuncio famoso no es lo mismo que un negocio rentable. Conviene mirar los ingresos, los costes y si la empresa puede sostenerse.",
+      "foot": "Fuente: Wikipedia (Pets.com)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "La notoriedad no es beneficio",
+          "b": "Que todos la conozcan no paga las facturas."
+        },
+        {
+          "t": "Revisa el modelo de negocio",
+          "b": "Cómo gana dinero y cuánto gasta."
+        },
+        {
+          "t": "La euforia engaña",
+          "b": "En 1999–2000 muchas salidas a bolsa fueron así."
+        }
+      ],
+      "foot": "Con cabeza"
+    },
+    {
+      "t": "close",
+      "head": "Que suene mucho [[no significa que valga mucho]]",
+      "body": "Antes de entrar, mira de dónde vienen los ingresos.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

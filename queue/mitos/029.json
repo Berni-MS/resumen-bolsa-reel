@@ -1,0 +1,85 @@
+{
+  "id": "mitos-029-ltcm",
+  "label": "Datos · LTCM",
+  "accent": "red",
+  "caption": "Dos premios Nobel de Economía y 4.600 millones de dólares perdidos en menos de cuatro meses 🎓💥\n\nLong-Term Capital Management, un fondo de cobertura fundado en 1994 con Myron Scholes y Robert Merton entre sus socios, perdió 4.600 millones de dólares en 1998 y tuvo que ser rescatado con la mediación de la Reserva Federal.\n\nEl mito: «con genios al mando, no se pierde». Desliza para verlo.",
+  "tags": [
+    "#LTCM",
+    "#apalancamiento",
+    "#bolsa",
+    "#historiabursatil",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Long-Term Capital Management"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "4.600 M$",
+      "title": "perdidos en menos de cuatro meses por un fondo con dos Nobel",
+      "foot": "LTCM, 1998",
+      "bigSize": 220
+    },
+    {
+      "t": "point",
+      "head": "Un fondo [[de élite]]",
+      "body": "Long-Term Capital Management empezó a operar el 24 de febrero de 1994. Entre sus socios estaban Myron Scholes y Robert Merton, premios Nobel de Economía en 1997.",
+      "foot": "Fuente: Wikipedia (LTCM)",
+      "kicker": "Quiénes eran"
+    },
+    {
+      "t": "stat",
+      "big": "25 a 1",
+      "head": "Su apalancamiento",
+      "body": "A principios de 1998 tenía unos 4.700 millones de dólares de capital propio y más de 124.500 millones en deuda: más de 25 dólares prestados por cada dólar propio.",
+      "foot": "Fuente: Wikipedia (LTCM)",
+      "kicker": "Mucha deuda",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "250 a 1",
+      "head": "Al final de septiembre",
+      "body": "A finales de septiembre de 1998, su capital había caído a unos 400 millones frente a más de 100.000 millones de deuda, un apalancamiento superior a 250 a 1.",
+      "foot": "Fuente: Wikipedia (LTCM)",
+      "kicker": "Todo se complicó",
+      "color": "red",
+      "bigSize": 200
+    },
+    {
+      "t": "myth",
+      "myth": "«Con genios al mando, no se pierde»",
+      "reality": "Perdió 4.600 millones de dólares en menos de cuatro meses y tuvo que ser rescatado con la participación de la Reserva Federal de Nueva York.",
+      "foot": "Fuente: Wikipedia (LTCM)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "El apalancamiento multiplica todo",
+          "b": "Las ganancias y también las pérdidas."
+        },
+        {
+          "t": "Los modelos no son la realidad",
+          "b": "Pueden fallar cuando el mercado cambia."
+        },
+        {
+          "t": "La inteligencia no sustituye al riesgo",
+          "b": "Se gestiona, no se ignora."
+        }
+      ],
+      "foot": "Con humildad"
+    },
+    {
+      "t": "close",
+      "head": "Un buen modelo [[no elimina el riesgo]]",
+      "body": "Cuanta más deuda, menos margen de error.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

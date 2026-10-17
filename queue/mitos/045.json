@@ -1,0 +1,86 @@
+{
+  "id": "mitos-045-volcker-1981",
+  "label": "Datos · Tipos al 20 %",
+  "accent": "red",
+  "caption": "En junio de 1981, los tipos de interés de la Reserva Federal llegaron al 20 % ⚡\n\nEn 1979 rondaban el 11 %. La inflación en EE. UU. se disparó hasta el 13,5 % en 1980 y el paro alcanzó el 10,8 % en noviembre y diciembre de 1982.\n\nEl mito: «unos tipos del 4 o 5 % son altísimos». Desliza para ver los datos.",
+  "tags": [
+    "#reservafederal",
+    "#tiposdeinteres",
+    "#inflacion",
+    "#bolsa",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Early 1980s recession"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "20 %",
+      "title": "los tipos de la Fed en junio de 1981",
+      "foot": "La lucha contra la inflación",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "~11 %",
+      "head": "Los tipos en 1979",
+      "body": "En 1979 los tipos de interés de la Reserva Federal rondaban el 11 %.",
+      "foot": "Fuente: Wikipedia (Early 1980s recession)",
+      "kicker": "El punto de partida"
+    },
+    {
+      "t": "stat",
+      "big": "20 %",
+      "head": "Junio de 1981",
+      "body": "La Fed subió los tipos hasta el 20 % en junio de 1981, en plena lucha contra la inflación.",
+      "foot": "Fuente: Wikipedia (Early 1980s recession)",
+      "kicker": "El máximo",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "13,5 %",
+      "head": "La inflación de 1980",
+      "body": "La inflación en EE. UU. llegó a un 13,5 % en 1980. El paro alcanzó el 10,8 % en noviembre y diciembre de 1982, el más alto desde la Gran Depresión.",
+      "foot": "Fuente: Wikipedia (Early 1980s recession)",
+      "kicker": "El precio",
+      "color": "red",
+      "bigSize": 230
+    },
+    {
+      "t": "myth",
+      "myth": "«Un 4 o un 5 % de tipos es altísimo»",
+      "reality": "Es alto frente a la década de 2010, pero no frente a la historia. Lo que importa es el contexto: inflación, crecimiento y expectativas.",
+      "foot": "Fuente: Wikipedia (Early 1980s recession)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Los ciclos cambian",
+          "b": "Lo «normal» depende de la época."
+        },
+        {
+          "t": "Controlar la inflación tiene costes",
+          "b": "Por ejemplo, más paro."
+        },
+        {
+          "t": "Cuidado con comparar épocas",
+          "b": "Cada ciclo tiene sus circunstancias."
+        }
+      ],
+      "foot": "Con perspectiva"
+    },
+    {
+      "t": "close",
+      "head": "Alto o bajo [[depende de con qué compares]]",
+      "body": "Mira siempre los tipos junto con la inflación.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

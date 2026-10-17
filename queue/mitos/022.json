@@ -1,0 +1,73 @@
+{
+  "id": "mitos-022-hitos-sp500",
+  "label": "Datos · S&P 500",
+  "accent": "red",
+  "caption": "S&P 500: de 1.000 puntos en 1998 a más de 7.000 en 2026 📈\n\nEstos son los hitos de cierre: 1.001,27 (2 de febrero de 1998), 2.000,02 (26 de agosto de 2014), 5.026,61 (9 de febrero de 2024), 6.001,35 (11 de noviembre de 2024) y 7.022,95 (15 de abril de 2026).\n\nDesliza para verlos.",
+  "tags": [
+    "#SP500",
+    "#bolsa",
+    "#historiabursatil",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Closing milestones of the S&P 500"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "7.000",
+      "title": "El S&P 500 superó esa cifra en abril de 2026",
+      "foot": "Un repaso a sus hitos",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "1.001,27",
+      "head": "2 de febrero de 1998",
+      "body": "Primer cierre por encima de 1.000 puntos del S&P 500.",
+      "foot": "Fuente: Wikipedia (S&P 500 milestones)",
+      "kicker": "Hito 1.000"
+    },
+    {
+      "t": "stat",
+      "big": "2.000,02",
+      "head": "26 de agosto de 2014",
+      "body": "Tardó más de 16 años en doblar esa marca. Lo dice el calendario: en medio hubo dos grandes caídas.",
+      "foot": "Fuente: Wikipedia (S&P 500 milestones)",
+      "kicker": "Hito 2.000"
+    },
+    {
+      "t": "stat",
+      "big": "5.026,61",
+      "head": "9 de febrero de 2024",
+      "body": "Primer cierre por encima de 5.000 puntos. Pasó por 3.013,77 el 12 de julio de 2019 y por 4.019,87 el 1 de abril de 2021.",
+      "foot": "Fuente: Wikipedia (S&P 500 milestones)",
+      "kicker": "Hito 5.000",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "6.001,35",
+      "head": "11 de noviembre de 2024",
+      "body": "Primer cierre por encima de 6.000, solo nueve meses después de los 5.000.",
+      "foot": "Fuente: Wikipedia (S&P 500 milestones)",
+      "kicker": "Hito 6.000",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«Con el S&P 500 tan alto, ya no se puede ganar»",
+      "reality": "En 1998 también parecía alto. Un nivel no dice si es caro o barato: importan los beneficios y los precios de las empresas.",
+      "foot": "Fuente: Wikipedia (S&P 500 milestones)"
+    },
+    {
+      "t": "close",
+      "head": "Un número alto [[no es un número caro]]",
+      "body": "Valorar exige comparar precio con beneficios, no mirar un nivel.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

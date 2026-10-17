@@ -1,0 +1,80 @@
+{
+  "id": "mitos-039-mercados-eficientes",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "«Nadie puede batir al mercado.» ¿De verdad? 🧠\n\nLa hipótesis de los mercados eficientes, impulsada por Eugene Fama, sostiene que los precios reflejan toda la información disponible. Pero tiene críticas serias desde la economía del comportamiento.\n\nDesliza para ver los argumentos de cada lado.",
+  "tags": [
+    "#mercadoseficientes",
+    "#bolsa",
+    "#inversion",
+    "#economia",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Efficient-market hypothesis"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "EMH",
+      "title": "La hipótesis de los mercados eficientes",
+      "foot": "Desliza para entenderla",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "La [[idea]]",
+      "body": "Si los precios reflejan toda la información disponible, batir al mercado de forma sistemática, una vez ajustado el riesgo, sería casi imposible.",
+      "foot": "Fuente: Wikipedia (EMH)",
+      "kicker": "Qué dice"
+    },
+    {
+      "t": "point",
+      "head": "Tres [[niveles]]",
+      "body": "Eugene Fama distinguió tres formas: débil (los precios pasados no ayudan a predecir), semifuerte (la información pública ya está en el precio) y fuerte (también la privada).",
+      "foot": "Fuente: Wikipedia (EMH)",
+      "kicker": "Según Fama (1970)"
+    },
+    {
+      "t": "point",
+      "head": "Las [[críticas]]",
+      "body": "La economía del comportamiento señala sesgos como el exceso de confianza o la reacción exagerada. También se han observado anomalías, como mayor rentabilidad de empresas con PER bajo.",
+      "foot": "Fuente: Wikipedia (EMH)",
+      "kicker": "El otro lado"
+    },
+    {
+      "t": "myth",
+      "myth": "«Nadie puede batir al mercado» o «cualquiera puede batirlo»",
+      "reality": "Ninguna de las dos es cierta del todo. La evidencia es mixta: algunos mercados son más eficientes que otros, y batirlo de forma sistemática es muy difícil.",
+      "foot": "Fuente: Wikipedia (EMH)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué conviene recordar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Es una teoría, no una ley",
+          "b": "Tiene apoyo y críticas."
+        },
+        {
+          "t": "Coste y riesgo importan",
+          "b": "Batir al mercado exige superar las comisiones."
+        },
+        {
+          "t": "Tu plan debería sobrevivir a ambas",
+          "b": "Sea quien sea el que tenga razón."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Entre dos extremos [[hay un camino]]",
+      "body": "Invertir con calma y bajos costes funciona sin necesidad de decidir quién tiene razón.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "edu-039-sectores",
+  "label": "Los sectores de la bolsa",
+  "accent": "green",
+  "caption": "¿En qué sectores se divide la bolsa? 🧩 Los 11 sectores GICS.\n\nDesliza para ver cómo se clasifican las empresas y por qué algunos sectores van mejor en ciertos momentos.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#sectores",
+    "#GICS",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Global Industry Classification Standard"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "11",
+      "title": "sectores en los que se divide la bolsa",
+      "foot": "La clasificación GICS",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Una clasificación [[común]]",
+      "body": "GICS (Global Industry Classification Standard) fue creada en 1999 por MSCI y S&P. Divide las empresas en 11 sectores.",
+      "foot": "Fuente: Wikipedia (GICS)",
+      "kicker": "El estándar"
+    },
+    {
+      "t": "cards",
+      "head": "Los 11 sectores (1/2)",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Energía y Materiales",
+          "b": "Petróleo, gas, minería, química."
+        },
+        {
+          "t": "Industriales",
+          "b": "Maquinaria, transporte, defensa."
+        },
+        {
+          "t": "Consumo discrecional",
+          "b": "Coches, ropa, ocio."
+        }
+      ],
+      "foot": "Fuente: Wikipedia (GICS)"
+    },
+    {
+      "t": "cards",
+      "head": "Los 11 sectores (2/2)",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Consumo básico y Salud",
+          "b": "Alimentación, farmacia, hospitales."
+        },
+        {
+          "t": "Financiero e Inmobiliario",
+          "b": "Bancos, seguros, inmuebles."
+        },
+        {
+          "t": "Tecnología, Comunicaciones y Servicios públicos",
+          "b": "Software, medios, electricidad."
+        }
+      ],
+      "foot": "Fuente: Wikipedia (GICS)"
+    },
+    {
+      "t": "point",
+      "head": "Cíclicos y [[defensivos]]",
+      "body": "Algunos sectores dependen más del ciclo económico (como el consumo discrecional); otros son más estables (como el consumo básico).",
+      "foot": "Generalización",
+      "kicker": "Dos comportamientos"
+    },
+    {
+      "t": "point",
+      "head": "Por qué [[importa]]",
+      "body": "Si todo tu dinero está en un solo sector, un mal momento para ese sector te afecta de lleno. Un índice amplio reparte el riesgo.",
+      "foot": "No concentrar",
+      "kicker": "Diversificar"
+    },
+    {
+      "t": "close",
+      "head": "Conocer los sectores [[ayuda a diversificar]]",
+      "body": "Revisa en qué sectores está tu cartera.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "mitos-025-bonos-2022",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "2022: cayeron a la vez las acciones y los bonos 📉\n\nEl S&P 500 perdió un 25 % desde su máximo del 3 de enero (4.796 puntos) hasta octubre de 2022, el Nasdaq cayó un 33 % en el año y fue el peor año para los bonos desde 1994. La Fed subió los tipos 11 veces.\n\nEl mito: «los bonos siempre protegen cuando cae la bolsa». Desliza para ver los datos.",
+  "tags": [
+    "#bonos",
+    "#bolsa",
+    "#inflacion",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, 2022 stock market decline"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "2022",
+      "title": "El año en que cayeron acciones y bonos a la vez",
+      "foot": "Desliza para verlo",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "−25 %",
+      "head": "El S&P 500",
+      "body": "El S&P 500 marcó 4.796 puntos el 3 de enero de 2022 y cayó un 25 % hasta su mínimo de octubre.",
+      "foot": "Fuente: Wikipedia (2022 stock market decline)",
+      "kicker": "Las acciones",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "−33 %",
+      "head": "El Nasdaq Composite",
+      "body": "El índice tecnológico perdió un 33 % a lo largo de 2022.",
+      "foot": "Fuente: Wikipedia (2022 stock market decline)",
+      "kicker": "La tecnología",
+      "color": "red"
+    },
+    {
+      "t": "stat",
+      "big": "1994",
+      "head": "El peor año para los bonos",
+      "body": "2022 fue el peor año para el mercado de bonos desde 1994, según la misma fuente. La Reserva Federal subió los tipos 11 veces desde marzo.",
+      "foot": "Fuente: Wikipedia (2022 stock market decline)",
+      "kicker": "Los bonos",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Los bonos siempre protegen cuando cae la bolsa»",
+      "reality": "No siempre. Cuando suben los tipos de interés, los bonos ya emitidos pierden valor, y en 2022 coincidió con la caída de las acciones.",
+      "foot": "Fuente: Wikipedia (2022 stock market decline)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Diversificar no es infalible",
+          "b": "A veces caen varios activos a la vez."
+        },
+        {
+          "t": "El tipo de bono importa",
+          "b": "Cuanto mayor el plazo, más sensible a los tipos."
+        },
+        {
+          "t": "Revisa tu plan",
+          "b": "Sus supuestos pueden fallar en un año concreto."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "La diversificación [[reduce, no elimina]]",
+      "body": "Entiende cómo se comporta cada activo antes de depender de él.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

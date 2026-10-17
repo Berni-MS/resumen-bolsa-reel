@@ -1,0 +1,78 @@
+{
+  "id": "edu-026-split",
+  "label": "Qué es un split",
+  "accent": "green",
+  "caption": "¿Qué es un split de acciones? ✂️ Dividir una acción en varias, sin cambiar el valor de la empresa.\n\nDesliza para ver un ejemplo y por qué dividir no te hace más rico.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#split",
+    "#acciones",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "✂️",
+      "title": "Qué es un split",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Dividir la [[acción]]",
+      "body": "En un split, una empresa convierte cada acción en varias. Por ejemplo, en un split 2 por 1, cada acción pasa a ser dos.",
+      "foot": "Más acciones, cada una más barata"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo",
+      "body": "Tienes 10 acciones a 100 € (1.000 €). Tras un split 2 por 1 tienes 20 acciones a 50 € (1.000 €). Tu dinero es el mismo.",
+      "foot": "10 × 100 = 20 × 50",
+      "kicker": "Con cifras sencillas"
+    },
+    {
+      "t": "point",
+      "head": "Por qué se hace",
+      "body": "Para que el precio por acción sea más accesible y fácil de negociar. El valor de la empresa no cambia por el split en sí.",
+      "foot": "Es un cambio de formato",
+      "kicker": "El motivo"
+    },
+    {
+      "t": "point",
+      "head": "El [[contrario]]",
+      "body": "El contrasplit (o split inverso) agrupa acciones: por ejemplo, cada 10 pasan a ser una. Se usa, a veces, para subir un precio muy bajo.",
+      "foot": "Menos acciones, más caras",
+      "kicker": "Al revés"
+    },
+    {
+      "t": "cards",
+      "head": "Ojo con",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "No es una ganga",
+          "b": "No te hace ganar valor."
+        },
+        {
+          "t": "Las noticias lo celebran",
+          "b": "Pero lo importante es el negocio."
+        },
+        {
+          "t": "Mira el precio ajustado",
+          "b": "Los gráficos históricos se corrigen."
+        }
+      ],
+      "foot": "No te confundas"
+    },
+    {
+      "t": "close",
+      "head": "Un split cambia [[el trozo]], no la tarta",
+      "body": "El valor de la empresa sigue dependiendo de su negocio.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

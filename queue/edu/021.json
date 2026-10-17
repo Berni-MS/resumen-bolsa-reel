@@ -1,0 +1,80 @@
+{
+  "id": "edu-021-aportaciones",
+  "label": "Aportaciones periódicas",
+  "accent": "green",
+  "caption": "¿Invertir todo de golpe o poco a poco? 📆 Las aportaciones periódicas (DCA).\n\nDesliza para ver un ejemplo con números inventados que muestra cómo funciona y qué límites tiene.\n\n💾 Guárdalo para tu plan.",
+  "tags": [
+    "#DCA",
+    "#aportacionesperiodicas",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📆",
+      "title": "Invertir poco a poco",
+      "foot": "Aportaciones periódicas",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "La [[idea]]",
+      "body": "Consiste en invertir una cantidad fija a intervalos regulares, por ejemplo cada mes, sin importar si el mercado sube o baja.",
+      "foot": "En inglés: dollar-cost averaging"
+    },
+    {
+      "t": "point",
+      "head": "Un ejemplo [[inventado]]",
+      "body": "Inviertes 100 € al mes durante cinco meses. El precio por participación es 10, 8, 5, 8 y 10 €.",
+      "foot": "Datos ficticios",
+      "kicker": "Con números sencillos"
+    },
+    {
+      "t": "stat",
+      "big": "65",
+      "head": "participaciones compradas",
+      "body": "Con 500 € invertidos compras 65 participaciones (10 + 12,5 + 20 + 12,5 + 10). Al precio final de 10 €, valen 650 €.",
+      "foot": "Ejemplo ficticio",
+      "kicker": "El resultado",
+      "color": "green"
+    },
+    {
+      "t": "cards",
+      "head": "Lo bueno y lo malo",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Disciplina",
+          "b": "Quitas la decisión de «cuándo»."
+        },
+        {
+          "t": "Suaviza el precio",
+          "b": "Compras más cuando está bajo."
+        },
+        {
+          "t": "No garantiza ganar",
+          "b": "Si el precio solo baja, pierdes igualmente."
+        }
+      ],
+      "foot": "Una herramienta de hábito"
+    },
+    {
+      "t": "point",
+      "head": "Frente a invertir [[todo de golpe]]",
+      "body": "Si el mercado sube de manera sostenida, invertir todo antes suele salir mejor. Si baja, ir poco a poco suele salir mejor. Nadie sabe de antemano cuál será.",
+      "foot": "Depende del recorrido",
+      "kicker": "No hay ganador seguro"
+    },
+    {
+      "t": "close",
+      "head": "La constancia [[pesa más que acertar]]",
+      "body": "Lo importante es poder mantenerlo en el tiempo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

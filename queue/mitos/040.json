@@ -1,0 +1,83 @@
+{
+  "id": "mitos-040-bogle-indexado",
+  "label": "Datos · Fondos indexados",
+  "accent": "red",
+  "caption": "El primer fondo indexado para el gran público se llamó «la locura de Bogle» 🧡\n\nJohn Bogle puso en marcha el First Index Investment Trust el 31 de diciembre de 1975, con unos 11 millones de dólares. En noviembre de 1999 gestionaba 100.000 millones.\n\nEl mito: «los fondos indexados son un invento reciente y poco probado». Desliza para ver los datos.",
+  "tags": [
+    "#fondosindexados",
+    "#bogle",
+    "#vanguard",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Index fund"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "11 M$",
+      "title": "con lo que empezó el primer fondo indexado de Bogle",
+      "foot": "31 de diciembre de 1975",
+      "bigSize": 280
+    },
+    {
+      "t": "stat",
+      "big": "1975",
+      "head": "El inicio",
+      "body": "John Bogle puso en marcha el First Index Investment Trust el 31 de diciembre de 1975, con unos 11 millones de dólares de patrimonio.",
+      "foot": "Fuente: Wikipedia (Index fund)",
+      "kicker": "Vanguard"
+    },
+    {
+      "t": "point",
+      "head": "La [[locura]] de Bogle",
+      "body": "En su lanzamiento fue apodado «Bogle’s folly» (la locura de Bogle): se dudaba de que un fondo que solo copiase un índice pudiera atraer a inversores.",
+      "foot": "Fuente: Wikipedia (Index fund)",
+      "kicker": "Un comienzo escéptico"
+    },
+    {
+      "t": "stat",
+      "big": "100.000 M$",
+      "head": "Noviembre de 1999",
+      "body": "El fondo creció de 11 millones a 100.000 millones de dólares en gestión en noviembre de 1999.",
+      "foot": "Fuente: Wikipedia (Index fund)",
+      "kicker": "Un éxito",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«Los fondos indexados son un invento reciente y poco probado»",
+      "reality": "Existen desde los años setenta. Wells Fargo ya había creado los dos primeros fondos indexados sobre el S&P Composite en 1973.",
+      "foot": "Fuente: Wikipedia (Index fund)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué conviene recordar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Siguen a un índice",
+          "b": "Suben y bajan con él."
+        },
+        {
+          "t": "Su ventaja es el coste",
+          "b": "Suelen cobrar menos que la gestión activa."
+        },
+        {
+          "t": "No son perfectos",
+          "b": "No evitan las caídas del mercado."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Lo sencillo [[puede funcionar]]",
+      "body": "Copiar un índice a bajo coste es una estrategia con décadas de historia.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

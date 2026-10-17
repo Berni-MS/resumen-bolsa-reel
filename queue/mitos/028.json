@@ -1,0 +1,82 @@
+{
+  "id": "mitos-028-sp500-peso",
+  "label": "Datos · S&P 500",
+  "accent": "red",
+  "caption": "¿Cuánto del mercado de EE. UU. representa el S&P 500? 📊\n\nSegún Wikipedia, alrededor del 83 % de la capitalización de las empresas cotizadas de EE. UU. Su valor total superaba los 61,1 billones de dólares a 31 de diciembre de 2025.\n\nDesliza para verlo.\n\nNota: billón = un millón de millones.",
+  "tags": [
+    "#SP500",
+    "#bolsa",
+    "#indices",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, S&P 500"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "83 %",
+      "title": "del mercado de EE. UU. representa el S&P 500",
+      "foot": "Datos del índice",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "61,1 B$",
+      "head": "Su valor total",
+      "body": "A 31 de diciembre de 2025, la capitalización agregada del S&P 500 superaba los 61,1 billones de dólares.",
+      "foot": "Fuente: Wikipedia (S&P 500)",
+      "kicker": "Un gigante"
+    },
+    {
+      "t": "stat",
+      "big": "~83 %",
+      "head": "Del mercado de EE. UU.",
+      "body": "Incluye aproximadamente el 83 % de la capitalización total de las empresas cotizadas de EE. UU.",
+      "foot": "Fuente: Wikipedia (S&P 500)",
+      "kicker": "Casi todo"
+    },
+    {
+      "t": "point",
+      "head": "Cómo se [[elige]]",
+      "body": "Un comité selecciona las empresas del índice; no es automático. El índice se pondera por capitalización ajustada por las acciones disponibles desde 2005.",
+      "foot": "Fuente: Wikipedia (S&P 500)",
+      "kicker": "Quién decide"
+    },
+    {
+      "t": "myth",
+      "myth": "«El S&P 500 son simplemente las 500 mayores empresas»",
+      "reality": "No exactamente: un comité aplica criterios de selección, por lo que no es una lista automática por tamaño.",
+      "foot": "Fuente: Wikipedia (S&P 500)"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que conviene saber",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Concentración",
+          "b": "Las mayores empresas pesan mucho en el índice."
+        },
+        {
+          "t": "Solo EE. UU.",
+          "b": "No incluye otros países."
+        },
+        {
+          "t": "Cambia con el tiempo",
+          "b": "Entran y salen empresas."
+        }
+      ],
+      "foot": "Un índice, no el mercado entero"
+    },
+    {
+      "t": "close",
+      "head": "El S&P 500 es [[mucho, pero no todo]]",
+      "body": "Si lo usas para invertir, conoce lo que incluye y lo que no.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

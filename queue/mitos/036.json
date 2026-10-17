@@ -1,0 +1,87 @@
+{
+  "id": "mitos-036-cisco",
+  "label": "Datos · Cisco",
+  "accent": "red",
+  "caption": "Cisco fue la empresa más valiosa del mundo en marzo de 2000, con más de 500.000 millones de dólares de capitalización 🌐\n\nPerdió unos 431.000 millones. Según Wikipedia, en 2021 sus acciones, a 46,25 $, seguían un 42 % por debajo de su máximo de 2000.\n\nEl mito: «una empresa líder nunca decae». Desliza para ver los datos.",
+  "tags": [
+    "#cisco",
+    "#burbujapuntocom",
+    "#bolsa",
+    "#historiabursatil",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Cisco"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "500.000 M$",
+      "title": "la capitalización de Cisco en marzo de 2000",
+      "foot": "La empresa más valiosa del mundo",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "+500.000 M$",
+      "head": "Marzo de 2000",
+      "body": "A finales de marzo de 2000, en plena burbuja puntocom, Cisco se convirtió en la empresa más valiosa del mundo, con más de 500.000 millones de dólares de capitalización, superando a Microsoft.",
+      "foot": "Fuente: Wikipedia (Cisco)",
+      "kicker": "La cima",
+      "bigSize": 190
+    },
+    {
+      "t": "stat",
+      "big": "−431.000 M$",
+      "head": "Lo que perdió",
+      "body": "Cuando estalló la burbuja, la empresa perdió unos 431.000 millones de dólares de valor de mercado.",
+      "foot": "Fuente: Wikipedia (Cisco)",
+      "kicker": "El desplome",
+      "color": "red",
+      "bigSize": 190
+    },
+    {
+      "t": "stat",
+      "big": "−42 %",
+      "head": "En 2021",
+      "body": "En 2021 la acción llegó a 46,25 dólares, aún un 42 % por debajo de su máximo del año 2000.",
+      "foot": "Fuente: Wikipedia (Cisco)",
+      "kicker": "Veinte años después",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Una empresa líder nunca decae»",
+      "reality": "Cisco siguió siendo un gran negocio, pero quien compró en el máximo seguía con pérdidas del 42 % en 2021, más de veinte años después.",
+      "foot": "Fuente: Wikipedia (Cisco)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Un buen negocio no es una buena compra",
+          "b": "A cualquier precio no."
+        },
+        {
+          "t": "El precio manda",
+          "b": "Pagar demasiado puede lastrar una inversión durante años."
+        },
+        {
+          "t": "Los líderes cambian",
+          "b": "Hoy lo dominante puede ser otro."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Una gran empresa [[puede ser una mala compra]]",
+      "body": "Importa tanto cuánto pagas como lo que compras.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "mitos-042-peter-lynch",
+  "label": "Datos · Peter Lynch",
+  "accent": "red",
+  "caption": "Peter Lynch obtuvo un 29,2 % anual de media con el fondo Magellan entre 1977 y 1990 🏆\n\nMientras tanto, el S&P 500 ganó un 15,8 % anual de media. El patrimonio del fondo pasó de 18 millones a 14.000 millones de dólares.\n\nEl mito: «basta con invertir en lo que conoces». Desliza para ver los datos.",
+  "tags": [
+    "#peterlynch",
+    "#inversion",
+    "#bolsa",
+    "#gestionactiva",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Peter Lynch"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "29,2 %",
+      "title": "rentabilidad media anual de Magellan con Peter Lynch",
+      "foot": "1977–1990",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "29,2 %",
+      "head": "La rentabilidad de Magellan",
+      "body": "Entre 1977 y 1990, Peter Lynch gestionó el fondo Fidelity Magellan con una rentabilidad media del 29,2 % anual.",
+      "foot": "Fuente: Wikipedia (Peter Lynch)",
+      "kicker": "El fondo",
+      "color": "green"
+    },
+    {
+      "t": "stat",
+      "big": "15,8 %",
+      "head": "La del S&P 500",
+      "body": "En el mismo periodo, el S&P 500 ganó de media un 15,8 % anual, según la misma fuente.",
+      "foot": "Fuente: Wikipedia (Peter Lynch)",
+      "kicker": "Su referencia"
+    },
+    {
+      "t": "stat",
+      "big": "18 M$ → 14.000 M$",
+      "head": "El tamaño del fondo",
+      "body": "En sus 13 años, el patrimonio de Magellan creció de 18 millones a 14.000 millones de dólares.",
+      "foot": "Fuente: Wikipedia (Peter Lynch)",
+      "kicker": "El crecimiento",
+      "bigSize": 150
+    },
+    {
+      "t": "myth",
+      "myth": "«Basta con invertir en lo que conoces»",
+      "reality": "Su máxima era «invierte en lo que conoces», pero era el punto de partida de un análisis profundo, no un atajo. Y pocos gestores repiten resultados así.",
+      "foot": "Fuente: Wikipedia (Peter Lynch)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Conocer es el primer paso",
+          "b": "Después hay que analizar el negocio y el precio."
+        },
+        {
+          "t": "Los casos extraordinarios son raros",
+          "b": "No son la regla."
+        },
+        {
+          "t": "El pasado no garantiza el futuro",
+          "b": "Ni el de un gestor ni el de un fondo."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Conocer algo [[no es analizarlo]]",
+      "body": "Una buena idea necesita datos, precio y paciencia.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

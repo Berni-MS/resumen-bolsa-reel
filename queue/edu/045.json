@@ -1,0 +1,80 @@
+{
+  "id": "edu-045-recesion",
+  "label": "Qué es una recesión",
+  "accent": "green",
+  "caption": "¿Qué es una recesión? 📉 Y por qué no es lo mismo que una caída de la bolsa.\n\nDesliza para ver cómo se define, quién la declara y qué relación tiene con los mercados.\n\n💾 Guárdalo para entender las noticias.",
+  "tags": [
+    "#recesion",
+    "#economia",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, COVID-19 recession"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📉",
+      "title": "Qué es una recesión",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Una caída de la [[actividad]]",
+      "body": "Una recesión es un descenso significativo y generalizado de la actividad económica que dura más que unos pocos meses.",
+      "foot": "Producción, empleo, ingresos"
+    },
+    {
+      "t": "point",
+      "head": "La regla [[informal]]",
+      "body": "Se suele decir que hay recesión tras dos trimestres consecutivos de caída del PIB. Es una regla práctica, no una definición oficial en todos los países.",
+      "foot": "Dos trimestres seguidos",
+      "kicker": "El atajo"
+    },
+    {
+      "t": "point",
+      "head": "Quién [[la declara]]",
+      "body": "En EE. UU. la fecha la determina el NBER, que mira varios indicadores, no solo el PIB. La de 2020 se dató de febrero a abril.",
+      "foot": "Fuente: Wikipedia (COVID-19 recession)",
+      "kicker": "El árbitro"
+    },
+    {
+      "t": "point",
+      "head": "Y la [[bolsa]]",
+      "body": "Bolsa y economía no van siempre a la par: la bolsa mira hacia delante. Puede caer antes de una recesión o recuperarse antes de que acabe.",
+      "foot": "Los mercados anticipan",
+      "kicker": "La relación"
+    },
+    {
+      "t": "cards",
+      "head": "Qué hacer",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Revisa tu plan",
+          "b": "No improvises con las noticias."
+        },
+        {
+          "t": "Mantén tu fondo de emergencia",
+          "b": "Es para estos momentos."
+        },
+        {
+          "t": "Evita decisiones por miedo",
+          "b": "Las prisas salen caras."
+        }
+      ],
+      "foot": "Con calma"
+    },
+    {
+      "t": "close",
+      "head": "Una recesión [[no es el fin del mundo]]",
+      "body": "Pero tampoco es un detalle: prepárate con antelación.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

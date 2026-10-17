@@ -1,0 +1,79 @@
+{
+  "id": "edu-041-soporte-resistencia",
+  "label": "Soportes y resistencias",
+  "accent": "green",
+  "caption": "¿Qué son soportes y resistencias? 🧱\n\nDesliza para ver qué son estos niveles, por qué se usan y por qué no son una barrera mágica.\n\n💾 Guárdalo para tus gráficos.",
+  "tags": [
+    "#soporte",
+    "#resistencia",
+    "#analisistecnico",
+    "#aprenderbolsa",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧱",
+      "title": "Soportes y resistencias",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "El [[soporte]]",
+      "body": "Es un nivel de precio donde, en el pasado, la bajada se ha detenido o rebotado. Funciona como un «suelo».",
+      "foot": "Donde han entrado compradores",
+      "kicker": "El suelo"
+    },
+    {
+      "t": "point",
+      "head": "La [[resistencia]]",
+      "body": "Es un nivel donde, en el pasado, la subida se ha frenado. Funciona como un «techo».",
+      "foot": "Donde han entrado vendedores",
+      "kicker": "El techo"
+    },
+    {
+      "t": "point",
+      "head": "Por qué se [[usan]]",
+      "body": "Muchos inversores observan los mismos niveles, y eso puede hacer que se respeten. Cuando se rompen, a veces se invierten: un techo roto puede pasar a ser suelo.",
+      "foot": "Efecto de expectativas",
+      "kicker": "La lógica"
+    },
+    {
+      "t": "cards",
+      "head": "No son infalibles",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Se rompen",
+          "b": "Ningún nivel es una garantía."
+        },
+        {
+          "t": "Son subjetivos",
+          "b": "Dos personas pueden dibujar niveles distintos."
+        },
+        {
+          "t": "Funcionan por creencia",
+          "b": "Y las creencias cambian."
+        }
+      ],
+      "foot": "Con cautela"
+    },
+    {
+      "t": "point",
+      "head": "Cómo [[usarlos]]",
+      "body": "Como referencia para planificar entradas y salidas, y para decidir hasta dónde aguantas una pérdida. Nunca como única razón.",
+      "foot": "Un dato más",
+      "kicker": "Un uso sensato"
+    },
+    {
+      "t": "close",
+      "head": "Un nivel es [[una pista]]",
+      "body": "No una promesa de lo que hará el precio.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

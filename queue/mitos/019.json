@@ -1,0 +1,86 @@
+{
+  "id": "mitos-019-lehman",
+  "label": "Datos · Lehman Brothers",
+  "accent": "red",
+  "caption": "El 15 de septiembre de 2008, Lehman Brothers se declaró en quiebra 🏦\n\nFue la mayor quiebra de la historia de EE. UU., con 639.000 millones de dólares en activos. Sus acciones se desplomaron más de un 90 % ese día.\n\nEl mito: «un banco grande nunca quiebra». Desliza para ver los datos.",
+  "tags": [
+    "#lehman",
+    "#crisis2008",
+    "#bolsa",
+    "#historiabursatil",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Lehman Brothers"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "639.000 M$",
+      "title": "en activos: la mayor quiebra de la historia de EE. UU.",
+      "foot": "Lehman Brothers, 2008",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "15/09/2008",
+      "head": "La quiebra",
+      "body": "Lehman Brothers se acogió a protección por bancarrota (Chapter 11) poco antes de la 1:00 de la madrugada de aquel lunes.",
+      "foot": "Fuente: Wikipedia (Lehman Brothers)",
+      "kicker": "Un lunes de septiembre",
+      "bigSize": 170
+    },
+    {
+      "t": "stat",
+      "big": "639.000 M$",
+      "head": "Sus activos",
+      "body": "En su solicitud declaró 639.000 millones de dólares en activos, con unos 613.000 millones en deuda bancaria y 155.000 millones en deuda en bonos.",
+      "foot": "Fuente: Wikipedia (Lehman Brothers)",
+      "kicker": "Un gigante",
+      "bigSize": 180
+    },
+    {
+      "t": "stat",
+      "big": "−90 %",
+      "head": "En un solo día",
+      "body": "Sus acciones se desplomaron más de un 90 % el 15 de septiembre de 2008. Una semana antes ya habían caído un 45 %.",
+      "foot": "Fuente: Wikipedia (Lehman Brothers)",
+      "kicker": "Un colapso",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Un banco tan grande no puede quebrar»",
+      "reality": "Lehman tenía unos 25.000 empleados en todo el mundo. Su caída fue la mayor quiebra de la historia de EE. UU. hasta entonces.",
+      "foot": "Fuente: Wikipedia (Lehman Brothers)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tamaño no es seguridad",
+          "b": "Las empresas grandes también pueden fallar."
+        },
+        {
+          "t": "La deuda amplifica el riesgo",
+          "b": "Cuanto más apalancada, más frágil."
+        },
+        {
+          "t": "Diversifica",
+          "b": "No pongas todo en un solo emisor."
+        }
+      ],
+      "foot": "Lecciones de 2008"
+    },
+    {
+      "t": "close",
+      "head": "Que sea grande [[no significa que sea seguro]]",
+      "body": "Mira siempre el riesgo detrás de un nombre conocido.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

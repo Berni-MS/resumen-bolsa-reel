@@ -1,0 +1,80 @@
+{
+  "id": "edu-020-volatilidad",
+  "label": "Qué es la volatilidad",
+  "accent": "green",
+  "caption": "¿Qué es la volatilidad? 🎢 Cuánto se mueve el precio de algo, hacia arriba y hacia abajo.\n\nDesliza para ver qué significa, qué es el índice VIX y por qué más movimiento no siempre es más peligro.\n\n💾 Guárdalo para repasarlo.",
+  "tags": [
+    "#volatilidad",
+    "#VIX",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Cboe, VIX"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📈📉",
+      "title": "Qué es la volatilidad",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Cuánto [[se mueve]]",
+      "body": "La volatilidad mide cuánto fluctúa el precio de un activo. Más volatilidad significa cambios de precio más grandes y rápidos.",
+      "foot": "Hacia arriba y hacia abajo"
+    },
+    {
+      "t": "point",
+      "head": "No es [[sinónimo de caída]]",
+      "body": "Un activo puede ser muy volátil y subir. La volatilidad habla de la intensidad del movimiento, no de su dirección.",
+      "foot": "Subidas y bajadas",
+      "kicker": "Una confusión común"
+    },
+    {
+      "t": "point",
+      "head": "El índice [[VIX]]",
+      "body": "El VIX mide la volatilidad esperada del S&P 500 en los próximos 30 días. Por eso se le llama a veces «índice del miedo».",
+      "foot": "Fuente: Cboe",
+      "kicker": "Un termómetro"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo convivir con ella",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Es normal",
+          "b": "Los mercados se mueven a diario."
+        },
+        {
+          "t": "Depende de tu plazo",
+          "b": "Para el largo plazo, importa menos."
+        },
+        {
+          "t": "Y de tu tolerancia",
+          "b": "Si no duermes, quizá asumes demasiado."
+        }
+      ],
+      "foot": "Cada inversor, la suya"
+    },
+    {
+      "t": "point",
+      "head": "El riesgo [[real]]",
+      "body": "Para quien necesita el dinero pronto, la volatilidad puede obligar a vender en mal momento. Por eso el plazo importa tanto.",
+      "foot": "Plazo y riesgo van juntos",
+      "kicker": "El punto clave"
+    },
+    {
+      "t": "close",
+      "head": "La volatilidad es [[el precio de estar dentro]]",
+      "body": "Entenderla ayuda a no reaccionar por impulso.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "mitos-037-tesla-sp500",
+  "label": "Datos · Tesla",
+  "accent": "red",
+  "caption": "Tesla fue la empresa más valiosa jamás incorporada al S&P 500 📈\n\nSalió a bolsa el 29 de junio de 2010 a 17 $ por acción, recaudando 226 millones de dólares. Entró en el S&P 500 el 21 de diciembre de 2020.\n\nEl mito: «el S&P 500 son empresas consolidadas y rentables desde hace décadas». Desliza para ver los datos.",
+  "tags": [
+    "#tesla",
+    "#SP500",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Tesla, Inc."
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "17 $",
+      "title": "el precio de salida a bolsa de Tesla en 2010",
+      "foot": "Hasta entrar en el S&P 500",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "29/06/2010",
+      "head": "Su salida a bolsa",
+      "body": "Tesla salió a bolsa en Nasdaq el 29 de junio de 2010 a 17 dólares por acción, con 13,3 millones de acciones y 226 millones de dólares recaudados.",
+      "foot": "Fuente: Wikipedia (Tesla)",
+      "kicker": "La OPV",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "21/12/2020",
+      "head": "Entra en el S&P 500",
+      "body": "Se incorporó al S&P 500 el 21 de diciembre de 2020 y fue la empresa más valiosa jamás añadida al índice.",
+      "foot": "Fuente: Wikipedia (Tesla)",
+      "kicker": "Un hito",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "1 B$",
+      "head": "Octubre de 2021",
+      "body": "En octubre de 2021 se convirtió en la sexta empresa de EE. UU. en alcanzar un billón de dólares de capitalización.",
+      "foot": "Fuente: Wikipedia (Tesla)",
+      "kicker": "Otro hito",
+      "color": "green"
+    },
+    {
+      "t": "myth",
+      "myth": "«El S&P 500 solo tiene empresas consolidadas de hace décadas»",
+      "reality": "Un comité elige las empresas, y entran compañías que han crecido rápido, como Tesla, que salió a bolsa solo 10 años antes de entrar.",
+      "foot": "Fuente: Wikipedia (Tesla)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué implica",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Los índices evolucionan",
+          "b": "Entran empresas nuevas y salen otras."
+        },
+        {
+          "t": "El tamaño pesa",
+          "b": "Una nueva empresa grande cambia el índice."
+        },
+        {
+          "t": "Replicar un índice es replicar esos cambios",
+          "b": "Y los riesgos de cada época."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Un índice [[no es un museo]]",
+      "body": "Cambia con la economía. Mira qué contiene cuando lo uses.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

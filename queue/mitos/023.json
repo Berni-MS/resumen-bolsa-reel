@@ -1,0 +1,85 @@
+{
+  "id": "mitos-023-facebook-ipo",
+  "label": "Mitos vs datos",
+  "accent": "red",
+  "caption": "La salida a bolsa de Facebook (18 de mayo de 2012) 📱\n\nSalió a 38 $ y recaudó unos 16.000 millones de dólares. El primer día cerró a 38,23 $. En septiembre de 2012 llegó a cotizar por debajo de 18 $ y no volvió a 38 $ hasta agosto de 2013.\n\nEl mito: «una OPV muy esperada es un pelotazo seguro». Desliza para verlo.",
+  "tags": [
+    "#facebook",
+    "#IPO",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Initial public offering of Facebook"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "38 $",
+      "title": "El precio de salida de Facebook en 2012",
+      "foot": "Y lo que pasó después",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "16.000 M$",
+      "head": "Lo que recaudó",
+      "body": "Facebook salió a bolsa el 18 de mayo de 2012 a 38 dólares por acción y recaudó unos 16.000 millones de dólares.",
+      "foot": "Fuente: Wikipedia (IPO of Facebook)",
+      "kicker": "Una de las mayores OPV",
+      "bigSize": 170
+    },
+    {
+      "t": "stat",
+      "big": "38,23 $",
+      "head": "El primer día",
+      "body": "Cerró su primera sesión en 38,23 dólares, apenas 23 céntimos por encima del precio de salida.",
+      "foot": "Fuente: Wikipedia (IPO of Facebook)",
+      "kicker": "Un debut flojo"
+    },
+    {
+      "t": "stat",
+      "big": "< 18 $",
+      "head": "En septiembre de 2012",
+      "body": "Cuatro meses después, la acción llegó a cotizar por debajo de 18 dólares, menos de la mitad del precio de salida.",
+      "foot": "Fuente: Wikipedia (IPO of Facebook)",
+      "kicker": "El batacazo",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«Una OPV muy esperada es un pelotazo seguro»",
+      "reality": "Facebook tardó unos 16 meses en volver a su precio de salida. Que una salida a bolsa tenga mucha atención no garantiza ganancias.",
+      "foot": "Fuente: Wikipedia (IPO of Facebook)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "La publicidad no es rentabilidad",
+          "b": "Que todos hablen de ella no significa que esté bien valorada."
+        },
+        {
+          "t": "El precio de salida importa",
+          "b": "Pagar mucho limita la ganancia posible."
+        },
+        {
+          "t": "Paciencia",
+          "b": "Algunas OPV se recuperan, pero no todas."
+        }
+      ],
+      "foot": "Con calma"
+    },
+    {
+      "t": "close",
+      "head": "El ruido [[no es un análisis]]",
+      "body": "Antes de entrar en una OPV, mira cuánto pagas y qué esperas.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

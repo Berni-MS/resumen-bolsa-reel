@@ -1,0 +1,78 @@
+{
+  "id": "edu-040-velas",
+  "label": "Cómo leer una vela",
+  "accent": "green",
+  "caption": "¿Cómo se lee una vela japonesa? 🕯️\n\nDesliza para ver qué representa cada parte y por qué un gráfico de velas muestra más que una simple línea.\n\n💾 Guárdalo para tus primeros gráficos.",
+  "tags": [
+    "#velas",
+    "#analisistecnico",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🕯️",
+      "title": "Cómo leer una vela japonesa",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Una vela, un [[periodo]]",
+      "body": "Cada vela resume lo que ocurrió en un periodo: un minuto, un día, una semana. Muestra cuatro precios.",
+      "foot": "Apertura, máximo, mínimo, cierre"
+    },
+    {
+      "t": "point",
+      "head": "El [[cuerpo]]",
+      "body": "El cuerpo une el precio de apertura y el de cierre. Si cierra por encima de donde abrió, suele pintarse en verde; si cierra por debajo, en rojo.",
+      "foot": "Los colores pueden variar",
+      "kicker": "La parte gruesa"
+    },
+    {
+      "t": "point",
+      "head": "Las [[mechas]]",
+      "body": "Las líneas finas por encima y por debajo del cuerpo marcan el máximo y el mínimo del periodo.",
+      "foot": "Rango completo",
+      "kicker": "Los extremos"
+    },
+    {
+      "t": "cards",
+      "head": "Qué cuentan",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cuerpo grande",
+          "b": "Movimiento claro en un sentido."
+        },
+        {
+          "t": "Mechas largas",
+          "b": "El precio fue lejos y volvió."
+        },
+        {
+          "t": "Cuerpo pequeño",
+          "b": "Poco movimiento entre apertura y cierre."
+        }
+      ],
+      "foot": "Lecturas básicas"
+    },
+    {
+      "t": "point",
+      "head": "Con [[prudencia]]",
+      "body": "Los patrones de velas no predicen el futuro. Sirven para describir lo ocurrido; interpretarlos con certeza es un error común.",
+      "foot": "Descriptivo, no predictivo",
+      "kicker": "Un aviso"
+    },
+    {
+      "t": "close",
+      "head": "Una vela es [[un resumen]]",
+      "body": "Cuenta lo que pasó, no lo que pasará.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

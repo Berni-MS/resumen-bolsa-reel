@@ -1,0 +1,83 @@
+{
+  "id": "mitos-046-charles-dow",
+  "label": "Datos · Charles Dow",
+  "accent": "red",
+  "caption": "El primer promedio de Charles Dow (1884) tenía 11 acciones, casi todas de ferrocarriles 🚂\n\nEl 16 de febrero de 1885 pasó a ser el Dow Jones Average con 14 acciones, y el 26 de mayo de 1896 debutó el Dow Jones Industrial Average con 12 empresas industriales y un valor inicial de 40,94.\n\nDesliza para ver los datos.",
+  "tags": [
+    "#dowjones",
+    "#charlesdow",
+    "#historiabursatil",
+    "#bolsa",
+    "#inversion"
+  ],
+  "sources": [
+    "Wikipedia, Dow Jones Industrial Average"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1884",
+      "title": "El año en que Charles Dow creó su primer promedio",
+      "foot": "Datos del Dow Jones",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "11",
+      "head": "Su primer promedio",
+      "body": "En 1884, Charles Dow creó su primer promedio bursátil con 11 acciones, la mayoría de ferrocarriles.",
+      "foot": "Fuente: Wikipedia (DJIA)",
+      "kicker": "El comienzo"
+    },
+    {
+      "t": "stat",
+      "big": "14",
+      "head": "El Dow Jones Average",
+      "body": "El 16 de febrero de 1885 se lanzó el Dow Jones Average con 14 acciones.",
+      "foot": "Fuente: Wikipedia (DJIA)",
+      "kicker": "Segundo paso"
+    },
+    {
+      "t": "stat",
+      "big": "40,94",
+      "head": "El industrial",
+      "body": "El 26 de mayo de 1896 debutó el Dow Jones Industrial Average con 12 acciones industriales y un valor inicial de 40,94 puntos.",
+      "foot": "Fuente: Wikipedia (DJIA)",
+      "kicker": "El que conocemos"
+    },
+    {
+      "t": "myth",
+      "myth": "«El Dow Jones siempre ha sido igual»",
+      "reality": "Ha cambiado de empresas y de tamaño: de 11 acciones de ferrocarriles a 30 empresas hoy. Su nombre homenajea a Charles Dow y a su socio Edward Jones.",
+      "foot": "Fuente: Wikipedia (DJIA)"
+    },
+    {
+      "t": "cards",
+      "head": "Qué aprender",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Los índices reflejan su época",
+          "b": "Los ferrocarriles de ayer son la tecnología de hoy."
+        },
+        {
+          "t": "Pocas empresas, mucho peso",
+          "b": "El Dow sigue siendo una muestra pequeña."
+        },
+        {
+          "t": "La historia se repite poco",
+          "b": "Pero rima."
+        }
+      ],
+      "foot": "Con matices"
+    },
+    {
+      "t": "close",
+      "head": "Los índices [[se reinventan]]",
+      "body": "Lo que hoy parece eterno una vez fue una novedad.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "edu-050-overtrading",
+  "label": "Operar demasiado",
+  "accent": "green",
+  "caption": "¿Operar más es ganar más? 🔄 El exceso de operaciones suele salir caro.\n\nDesliza para ver por qué comprar y vender sin parar suele perjudicar y cómo evitarlo.\n\n💾 Guárdalo para tu disciplina.",
+  "tags": [
+    "#overtrading",
+    "#disciplina",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔄",
+      "title": "Operar demasiado",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Qué es",
+      "body": "Es hacer muchas operaciones de compra y venta, a menudo sin un motivo claro, empujado por la emoción o la sensación de «tener que hacer algo».",
+      "foot": "Actividad no es resultado"
+    },
+    {
+      "t": "point",
+      "head": "Los [[costes]]",
+      "body": "Cada operación puede suponer comisiones, spread e impuestos. Con muchas operaciones, esos costes se acumulan y se comen la rentabilidad.",
+      "foot": "Costes que suman",
+      "kicker": "Lo que se pierde"
+    },
+    {
+      "t": "point",
+      "head": "El [[sesgo]]",
+      "body": "Operar mucho alimenta la confianza excesiva: sientes que controlas, pero cada decisión extra es una oportunidad de equivocarte.",
+      "foot": "Más decisiones, más errores",
+      "kicker": "Autoconfianza"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo evitarlo",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Plan con reglas",
+          "b": "Cuándo comprar y cuándo vender."
+        },
+        {
+          "t": "Menos pantalla",
+          "b": "Mirar la cartera menos veces."
+        },
+        {
+          "t": "Aportaciones periódicas",
+          "b": "Automatiza y deja de decidir."
+        }
+      ],
+      "foot": "Disciplina"
+    },
+    {
+      "t": "point",
+      "head": "Invertir es [[aburrido]]",
+      "body": "Muchas estrategias sensatas son poco emocionantes. Si buscas emoción, limítala a una pequeña parte de tu dinero.",
+      "foot": "La emoción tiene coste",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "close",
+      "head": "Menos acción, [[más método]]",
+      "body": "La paciencia suele valer más que el movimiento.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

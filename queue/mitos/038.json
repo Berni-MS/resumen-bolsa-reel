@@ -1,0 +1,73 @@
+{
+  "id": "mitos-038-volkswagen-squeeze",
+  "label": "Datos · Volkswagen",
+  "accent": "red",
+  "caption": "Octubre de 2008: Volkswagen se convirtió, por unas horas, en la empresa más valiosa del mundo 🚗\n\nSus acciones pasaron de 210,85 € a más de 1.000 € en menos de dos días, y los inversores que apostaban a la baja perdieron unos 30.000 millones de dólares.\n\nEl mito: «el precio siempre refleja el valor real». Desliza para ver qué es un «short squeeze».",
+  "tags": [
+    "#volkswagen",
+    "#shortsqueeze",
+    "#bolsa",
+    "#historiabursatil",
+    "#finanzas"
+  ],
+  "sources": [
+    "International Banker, The Volkswagen short squeeze 2008"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "210 → 1.005 €",
+      "title": "el salto de Volkswagen en octubre de 2008",
+      "foot": "Un «short squeeze» histórico",
+      "bigSize": 150
+    },
+    {
+      "t": "point",
+      "head": "Qué es un [[short squeeze]]",
+      "body": "Los vendedores en corto piden prestadas acciones, las venden y esperan recomprarlas más baratas. Si el precio sube mucho, deben recomprar a precios más altos y pierden dinero.",
+      "foot": "Fuente: International Banker",
+      "kicker": "Un apretón"
+    },
+    {
+      "t": "stat",
+      "big": "210,85 €",
+      "head": "El punto de partida",
+      "body": "Porsche reveló el 26 de octubre de 2008 que controlaba el 42,6 % de las acciones ordinarias más un 31,5 % en opciones, un total del 74,1 %. Baja Sajonia tenía el 20 %: quedaba menos del 6 % en el mercado.",
+      "foot": "Fuente: International Banker",
+      "kicker": "El detonante",
+      "bigSize": 190
+    },
+    {
+      "t": "stat",
+      "big": "1.005 €",
+      "head": "El máximo",
+      "body": "El 28 de octubre de 2008 los vendedores en corto llegaron a pagar hasta 1.005 euros por acción. Volkswagen fue, brevemente, la empresa más valiosa del mundo.",
+      "foot": "Fuente: International Banker",
+      "kicker": "El pico",
+      "color": "green"
+    },
+    {
+      "t": "stat",
+      "big": "−58 %",
+      "head": "La caída posterior",
+      "body": "La acción cayó un 58 % en cuatro días tras el máximo y un 70 % un mes después. Los inversores en corto perdieron unos 30.000 millones de dólares.",
+      "foot": "Fuente: International Banker",
+      "kicker": "El desplome",
+      "color": "red"
+    },
+    {
+      "t": "myth",
+      "myth": "«El precio siempre refleja el valor real de la empresa»",
+      "reality": "En unas horas el precio de una empresa industrial se disparó por un bloqueo de acciones disponibles, no porque valiera cinco veces más.",
+      "foot": "Fuente: International Banker"
+    },
+    {
+      "t": "close",
+      "head": "Precio [[no siempre es valor]]",
+      "body": "Los movimientos extremos pueden deberse a la mecánica del mercado.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

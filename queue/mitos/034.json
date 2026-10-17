@@ -1,0 +1,72 @@
+{
+  "id": "mitos-034-bolsa-espanola",
+  "label": "Datos · Bolsa española",
+  "accent": "red",
+  "caption": "La Bolsa de Madrid, en datos 🇪🇸\n\nSe fundó oficialmente en 1831 y su sede histórica es el Palacio de la Bolsa. La negociación electrónica funciona de 9:00 a 17:30. El IBEX 35 se calcula con base 3.000 a 29 de diciembre de 1989 y se revisa en junio y diciembre.\n\nDesliza para ver los datos.",
+  "tags": [
+    "#IBEX35",
+    "#bolsaespañola",
+    "#bolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Bolsa de Madrid",
+    "Wikipedia, IBEX 35"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1831",
+      "title": "El año oficial de nacimiento de la Bolsa de Madrid",
+      "foot": "Datos de la bolsa española",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "1831",
+      "head": "Su fundación",
+      "body": "La Bolsa de Madrid se fundó oficialmente en 1831. Su sede tradicional es el Palacio de la Bolsa, un edificio del siglo XIX.",
+      "foot": "Fuente: Wikipedia (Bolsa de Madrid)",
+      "kicker": "Casi dos siglos"
+    },
+    {
+      "t": "stat",
+      "big": "9:00–17:30",
+      "head": "Su horario",
+      "body": "La negociación electrónica (SIBE) funciona de lunes a viernes de 9:00 a 17:30, hora española.",
+      "foot": "Fuente: Wikipedia (Bolsa de Madrid)",
+      "kicker": "Cuándo opera",
+      "bigSize": 180
+    },
+    {
+      "t": "stat",
+      "big": "35",
+      "head": "Empresas del IBEX",
+      "body": "El IBEX 35 se calcula con base 3.000 puntos a 29 de diciembre de 1989 y se inauguró el 14 de enero de 1992.",
+      "foot": "Fuente: Wikipedia (IBEX 35)",
+      "kicker": "El índice de referencia"
+    },
+    {
+      "t": "point",
+      "head": "Cómo se [[revisa]]",
+      "body": "El Comité Asesor Técnico revisa la composición del IBEX 35 dos veces al año, en junio y en diciembre. Las empresas se eligen por volumen de negociación y deben cumplir requisitos de capital flotante.",
+      "foot": "Fuente: Wikipedia (IBEX 35)",
+      "kicker": "Quién decide"
+    },
+    {
+      "t": "myth",
+      "myth": "«El IBEX 35 son las 35 empresas más grandes de España»",
+      "reality": "No exactamente: se eligen por su volumen de negociación en euros de los últimos seis meses y por requisitos de capital flotante y frecuencia de negociación.",
+      "foot": "Fuente: Wikipedia (IBEX 35)"
+    },
+    {
+      "t": "close",
+      "head": "Conocer el índice [[ayuda a leerlo]]",
+      "body": "Entender cómo se compone te evita malas interpretaciones.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

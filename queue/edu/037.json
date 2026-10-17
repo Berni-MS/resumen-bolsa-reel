@@ -1,0 +1,78 @@
+{
+  "id": "edu-037-acumulacion-distribucion",
+  "label": "ETF de acumulación o distribución",
+  "accent": "green",
+  "caption": "¿ETF de acumulación o de distribución? 🌀\n\nDesliza para ver en qué se diferencian, cómo se reflejan los dividendos en cada uno y qué conviene mirar.\n\n💾 Guárdalo antes de elegir.",
+  "tags": [
+    "#ETF",
+    "#dividendos",
+    "#aprenderbolsa",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🌀",
+      "title": "ETF de acumulación o distribución",
+      "foot": "Desliza para entenderlo",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Los [[dividendos]] de las empresas",
+      "body": "Las empresas de un ETF pueden pagar dividendos. Lo que se hace con ese dinero depende del tipo de ETF.",
+      "foot": "Dos maneras de gestionarlos"
+    },
+    {
+      "t": "point",
+      "head": "De [[distribución]]",
+      "body": "Reparte los dividendos a los partícipes, normalmente en tu cuenta. Recibes efectivo cada cierto tiempo.",
+      "foot": "Cobras los dividendos",
+      "kicker": "Opción 1"
+    },
+    {
+      "t": "point",
+      "head": "De [[acumulación]]",
+      "body": "Reinvierte los dividendos dentro del propio ETF. No los recibes: se incorporan al valor de la participación.",
+      "foot": "Se reinvierten solos",
+      "kicker": "Opción 2"
+    },
+    {
+      "t": "cards",
+      "head": "Qué conviene mirar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Fiscalidad",
+          "b": "Depende de tu país y de la ficha del producto."
+        },
+        {
+          "t": "Tu objetivo",
+          "b": "Cobrar rentas o dejar crecer el dinero."
+        },
+        {
+          "t": "Comisiones de reinversión",
+          "b": "Si reinviertes a mano, pueden sumar."
+        }
+      ],
+      "foot": "No hay uno mejor para todos"
+    },
+    {
+      "t": "point",
+      "head": "¿Qué cambia en la [[rentabilidad]]?",
+      "body": "En teoría, la rentabilidad total es parecida. Cambian el momento en que cobras, la fiscalidad y la comodidad.",
+      "foot": "Misma inversión, forma distinta",
+      "kicker": "Lo esencial"
+    },
+    {
+      "t": "close",
+      "head": "Acumulación o distribución: [[elige según tu plan]]",
+      "body": "Revisa la ficha del ETF y la fiscalidad de tu caso.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}

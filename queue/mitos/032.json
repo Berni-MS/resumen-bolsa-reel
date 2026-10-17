@@ -1,0 +1,75 @@
+{
+  "id": "mitos-032-nvidia-hitos",
+  "label": "Datos · Nvidia",
+  "accent": "red",
+  "caption": "Nvidia: de 1 billón de dólares en mayo de 2023 a 5 billones el 29 de octubre de 2025 💚\n\nTambién protagonizó la mayor pérdida de valor en un día de una empresa de EE. UU.: unos 600.000 millones de dólares en enero de 2025.\n\nEl mito: «una gran empresa no se mueve mucho». Desliza para ver los datos.\n\nNota: billón = un millón de millones.",
+  "tags": [
+    "#nvidia",
+    "#bolsa",
+    "#volatilidad",
+    "#inversion",
+    "#finanzas"
+  ],
+  "sources": [
+    "Wikipedia, Nvidia"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "5 B$",
+      "title": "El valor de Nvidia el 29 de octubre de 2025",
+      "foot": "Primera empresa en lograrlo",
+      "bigSize": 250
+    },
+    {
+      "t": "stat",
+      "big": "1 B$",
+      "head": "Mayo de 2023",
+      "body": "Nvidia superó el billón de dólares de capitalización en mayo de 2023, la séptima empresa de EE. UU. en lograrlo.",
+      "foot": "Fuente: Wikipedia (Nvidia)",
+      "kicker": "Primer hito"
+    },
+    {
+      "t": "stat",
+      "big": "2 B$",
+      "head": "1 de marzo de 2024",
+      "body": "Cerró por encima de 2 billones de dólares, la tercera empresa de EE. UU. en conseguirlo. El 18 de junio de 2024 superó los 3,3 billones y fue la más valiosa del mundo.",
+      "foot": "Fuente: Wikipedia (Nvidia)",
+      "kicker": "Segundo hito",
+      "bigSize": 230
+    },
+    {
+      "t": "stat",
+      "big": "5 B$",
+      "head": "29 de octubre de 2025",
+      "body": "Fue la primera empresa en alcanzar los 5 billones de dólares. Había cerrado por encima de 4 billones por primera vez el 10 de julio de 2025.",
+      "foot": "Fuente: Wikipedia (Nvidia)",
+      "kicker": "Último hito",
+      "color": "green"
+    },
+    {
+      "t": "stat",
+      "big": "−600.000 M$",
+      "head": "En un solo día",
+      "body": "En enero de 2025 perdió unos 600.000 millones de dólares de valor en una sesión, un récord para una empresa de EE. UU. Se atribuyó a la noticia del modelo de IA DeepSeek.",
+      "foot": "Fuente: Wikipedia (Nvidia)",
+      "kicker": "La otra cara",
+      "color": "red",
+      "bigSize": 170
+    },
+    {
+      "t": "myth",
+      "myth": "«Una empresa tan grande no se mueve mucho»",
+      "reality": "Ni mucho ni poco: la volatilidad existe incluso en las mayores. Un movimiento porcentual pequeño en una empresa enorme equivale a cientos de miles de millones de dólares.",
+      "foot": "Fuente: Wikipedia (Nvidia)"
+    },
+    {
+      "t": "close",
+      "head": "Grande [[no significa estable]]",
+      "body": "El tamaño no elimina la volatilidad: revisa tu tolerancia al riesgo.",
+      "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
+      "extra": "Guarda este carrusel y compártelo.",
+      "extraBold": true
+    }
+  ]
+}
