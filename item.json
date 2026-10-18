@@ -1,0 +1,76 @@
+{
+  "id": "calendario-2026-10-19",
+  "label": "Calendario de la semana",
+  "accent": "green",
+  "caption": "Semana del 19 de octubre al 23 de octubre 📅\n\nSemana tranquila en el calendario de grandes citas. Desliza para ver los próximos eventos.\n\nLas fechas de resultados las pueden cambiar las empresas: confírmalas en su web.\n\n💾 Guárdalo y actívate las notificaciones: cada domingo, la agenda de la semana.",
+  "tags": [
+    "#bolsa",
+    "#calendarioeconomico",
+    "#Fed",
+    "#BCE",
+    "#inversion",
+    "#aprenderbolsa"
+  ],
+  "sources": [
+    "federalreserve.gov",
+    "ecb.europa.eu",
+    "bls.gov",
+    "nyse.com",
+    "bolsasymercados.es"
+  ],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "19–23",
+      "bigSize": 330,
+      "title": "de octubre: lo que mueve los mercados esta semana",
+      "foot": "Desliza: qué pasa cada día"
+    },
+    {
+      "t": "point",
+      "head": "Semana [[tranquila]] en el calendario",
+      "body": "No hay citas de máximo impacto (bancos centrales, inflación o empleo). Las noticias de empresas y del día a día mandarán más que el calendario.",
+      "foot": "Menos citas no es menos riesgo"
+    },
+    {
+      "t": "agenda",
+      "head": "En el radar",
+      "kicker": "Las próximas tres semanas",
+      "rows": [
+        {
+          "d": "28 OCT",
+          "t": "19:00",
+          "n": "La Fed decide los tipos de interés",
+          "k": 3
+        },
+        {
+          "d": "29 OCT",
+          "t": "14:15",
+          "n": "El BCE decide los tipos de interés",
+          "k": 3
+        },
+        {
+          "d": "6 NOV",
+          "t": "14:30",
+          "n": "Empleo de EE. UU. (nóminas y paro)",
+          "k": 3
+        },
+        {
+          "d": "10 NOV",
+          "t": "14:30",
+          "n": "Inflación de EE. UU. (IPC)",
+          "k": 3
+        }
+      ],
+      "foot": "Anótalo en el calendario"
+    },
+    {
+      "t": "close",
+      "head": "Guarda [[la semana]]",
+      "headSize": 150,
+      "body": "Cada domingo, el calendario de lo que mueve los mercados: bancos centrales, inflación, empleo, resultados, festivos y vencimientos.",
+      "extra": "Sígueme y activa las notificaciones para no perderte ninguna cita.",
+      "foot": "Tu Amigo de las Finanzas"
+    }
+  ]
+}

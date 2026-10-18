@@ -101,6 +101,8 @@ jobs:
       - name: Avisar a Make
         if: ${{ inputs.dry_run != 'true' }}
         run: |
+          N=$(ls out/*.jpg | wc -l)
+          if [ "$N" != "7" ]; then echo "::error::El carrusel tiene $N diapositivas y Instagram necesita exactamente 7: no se publica"; exit 1; fi
           BASE="${{ steps.publish.outputs.base }}"
           jq -n --arg base "$BASE" --rawfile caption out/caption.txt --arg id "$(jq -r .id item.json)" \
             '{status:"carousel", id:$id, caption:$caption, images:[range(1; ($n|tonumber)+1) | ($base + "/" + (if . < 10 then "0" else "" end) + (. | tostring) + ".jpg")]}' --arg n "$(ls out/*.jpg | wc -l)" \

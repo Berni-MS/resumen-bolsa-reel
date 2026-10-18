@@ -139,6 +139,19 @@ if (star && EXPL[star.type]) {
 if (radar.length) {
   slides.push({ t: 'agenda', head: 'En el radar', kicker: 'Las próximas tres semanas', rows: radar.slice(0, 5).map(e => ({ d: `${parse(e.date).getUTCDate()} ${MES3[parse(e.date).getUTCMonth()].toUpperCase()}`, t: e.time || '', n: e.title, k: e.impact })), foot: 'Anótalo en el calendario' });
 }
+// Relleno: el carrusel debe tener SIEMPRE 7 diapositivas distintas (lo exige la publicación en Instagram)
+const TIPS = [
+  { t: 'point', kicker: 'Para leer el calendario', head: 'Rojo y [[verde]]', body: 'Rojo: citas que suelen mover los mercados (bancos centrales, inflación, empleo). Verde: citas a vigilar, con menos impacto. No predicen subidas ni bajadas: avisan de cuándo puede haber más movimiento.', foot: 'Cómo usar el calendario' },
+  { t: 'point', kicker: 'Una idea clave', head: 'Mueve [[la sorpresa]]', body: 'El mercado ya cuenta con lo que espera. Una cifra buena puede sentar mal si se esperaba más, y una mala puede animar si se esperaba algo peor.', note: 'Por eso una cita no es una predicción.', foot: 'Qué mueve realmente los precios' },
+  { t: 'point', kicker: 'Resultados de empresas', head: 'Cada trimestre, [[las cuentas]]', body: 'Las empresas cotizadas publican sus resultados cada trimestre. Las cifras y, sobre todo, las previsiones suelen mover su acción y a veces a todo su sector.', foot: 'Las fechas las puede cambiar cada empresa' },
+  { t: 'point', kicker: 'Festivos y cierres', head: 'Si el mercado [[cierra]]', body: 'Cuando una bolsa cierra por festivo no hay precios nuevos en ella, y algunos días cierra antes de lo habitual. Conviene saberlo para no esperar un movimiento que no puede ocurrir.', foot: 'Revisa los cierres anticipados' },
+  { t: 'point', kicker: 'Opciones y futuros', head: 'El tercer [[viernes]]', body: 'Los contratos de opciones y futuros caducan normalmente el tercer viernes de cada mes. Ese día se cierran muchas posiciones a la vez y puede haber más movimiento de lo habitual.', foot: 'Vencimientos mensuales' },
+];
+const usedTypes = new Set(star ? [star.type] : []);
+const extras = [];
+for (const e of radar) { if (EXPL[e.type] && !usedTypes.has(e.type)) { usedTypes.add(e.type); const [h, b] = EXPL[e.type]; extras.push({ t: 'point', kicker: `Lo que viene: ${parse(e.date).getUTCDate()} de ${MES[parse(e.date).getUTCMonth()]}`, head: h, body: b, note: 'Contenido educativo: no sabemos cómo reaccionará el mercado, solo cuándo habrá que estar atento.', foot: 'Qué es y por qué importa' }); } }
+extras.push(...TIPS);
+while (slides.length < 6 && extras.length) slides.push(extras.shift());
 slides.push({ t: 'close', head: 'Guarda [[la semana]]', headSize: 150, body: 'Cada domingo, el calendario de lo que mueve los mercados: bancos centrales, inflación, empleo, resultados, festivos y vencimientos.', extra: 'Sígueme y activa las notificaciones para no perderte ninguna cita.', foot: 'Tu Amigo de las Finanzas' });
 
 const lines = [];
