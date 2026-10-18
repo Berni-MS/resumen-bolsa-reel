@@ -10,11 +10,11 @@ jobs:
         run: |
           mkdir -p out
           H='User-Agent: Mozilla/5.0 (compatible; tuamigodelasfinanzas)'
-          curl -sS -m 60 -H "$H" -o out/tablas.json "https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/IPC" || echo FAIL > out/tablas.json
+          curl -sS -m 60 -H "$H" -o out/tablas.json "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/76125?nult=2" || echo FAIL > out/tablas.json
           python3 - <<'PY' > out/tablas.txt
-          import json
+          import json,datetime
           d=json.load(open('out/tablas.json'))
-          for t in d: print(t.get('Id'),'|',t.get('Nombre'),'|',t.get('Ultima_Modificacion') or t.get('Anyo_Periodo_ini'),'|',t.get('Anyo_Periodo_fin'))
+          for t in d: print(t['COD'],'|',t['Nombre'][:120],'|',[(datetime.datetime.utcfromtimestamp(x['Fecha']/1000+43200).strftime('%Y-%m'),x['Valor']) for x in t['Data']])
           PY
           git config --global user.name bot; git config --global user.email bot@users.noreply.github.com
           git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
