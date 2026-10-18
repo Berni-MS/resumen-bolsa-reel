@@ -55,7 +55,7 @@ ${m.before != null ? `<div style="background:${CARD};border-radius:28px;padding:
 } else if (item.kind === 'ipc') {
   header = 'Inflación';
   const hundred = 100 * (1 + item.annual / 100);
-  const arrow = (v, p) => p == null ? '' : `<div style="font-size:${S(38)};font-weight:700;color:${v <= p ? GREEN : RED}">${v <= p ? '▼' : '▲'} <span style="color:${MUTED};font-weight:500">${item.prevMonth ? 'en ' + esc(item.prevMonth) + ': ' : 'antes: '}${esc(nf(p, 1))} %</span></div>`;
+  const arrow = (v, p) => p == null ? '' : `<div style="font-size:${S(38)};font-weight:700;color:${v <= p ? GREEN : RED}">${v <= p ? '▼' : '▲'} <span style="color:${MUTED};font-weight:500">${v <= p ? 'baja' : 'sube'} desde ${esc(nf(p, 1))} %${item.prevMonth ? ' en ' + esc(item.prevMonth) : ''}</span></div>`;
   const rows = item.groups.map(g => `<div style="display:flex;align-items:center;justify-content:space-between;background:${CARD};border-radius:28px;padding:${S(20)} ${S(38)}"><span style="font-size:${S(44)};font-weight:700">${esc(g.name)}</span><span style="font-size:${S(52)};font-weight:700;color:${g.v >= item.annual ? RED : GREEN}">${g.v >= 0 ? '' : '−'}${esc(nf(Math.abs(g.v), 1))} %</span></div>`).join('');
   body = `<div class="d" style="font-size:${S(190)};line-height:1">La <span style="color:${GREEN}">inflación</span></div>
 <div style="font-size:${S(46)};font-weight:700;color:${MUTED}">IPC de ${esc(item.month)} · variación en 12 meses</div>
