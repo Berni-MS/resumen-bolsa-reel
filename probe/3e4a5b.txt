@@ -1,0 +1,5 @@
+{"COD":"IPC278296", "Nombre":"Nacional. Índice general. Media anual. ", "FK_Unidad":133, "FK_Escala":1, "Data":[{"Fecha":1672527600000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2023, "Valor":112.219, "Secreto":false}
+,{"Fecha":1704063600000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2024, "Valor":115.333, "Secreto":false}
+,{"Fecha":1735686000000, "FK_TipoDato":1, "FK_Periodo":28, "Anyo":2025, "Valor":118.415, "Secreto":false}
+]
+}
