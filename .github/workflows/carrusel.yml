@@ -123,7 +123,7 @@ jobs:
           REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           rm -rf site2 && git clone --depth 1 --branch gh-pages "$REMOTE" site2
           which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
-          mkdir -p site2/historias && ffmpeg -y -loop 1 -framerate 30 -t 7 -i teaser.png -f lavfi -t 7 -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart teaser.mp4 || rm -f teaser.mp4
+          mkdir -p site2/historias && ffmpeg -y -loop 1 -framerate 30 -t 15 -i teaser.png -f lavfi -t 15 -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart teaser.mp4 || rm -f teaser.mp4
           cp teaser.png "site2/historias/$NAME" && { [ -f teaser.mp4 ] && cp teaser.mp4 "site2/historias/${NAME%.png}.mp4" || true; } && touch site2/.nojekyll
           ls -1t site2/historias/* | tail -n +61 | xargs -r rm -f
           cd site2 && git add -A && git commit -q -m "Historia de aviso $NAME"
