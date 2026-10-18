@@ -129,7 +129,7 @@ for (const e of week.filter(e => e.impact === 3 && e.type !== 'opciones').slice(
 for (const e of week.filter(e => e.type === 'opciones' || e.type === 'festivo').slice(0, 2)) lines.push(`• ${DIA[parse(e.date).getUTCDay()]} ${parse(e.date).getUTCDate()}: ${e.title}`);
 for (const e of earnWeek.slice(0, 4)) lines.push(`• ${DIA[parse(e.date).getUTCDay()]} ${parse(e.date).getUTCDate()}: ${e.name} presenta resultados`);
 const intro = lines.length ? `Semana del ${fecha(monday)} al ${fecha(friday)} 📅\n\nLo que hay en el calendario:\n${lines.join('\n')}\n\nDesliza para ver cada día y qué significa.` : `Semana del ${fecha(monday)} al ${fecha(friday)} 📅\n\nSemana tranquila en el calendario de grandes citas. Desliza para ver los próximos eventos.`;
-const caption = `${intro}\n\n💾 Guárdalo y actívate las notificaciones: cada domingo, la agenda de la semana.`;
+const caption = `${intro}\n\nLas fechas de resultados las pueden cambiar las empresas: confírmalas en su web.\n\n💾 Guárdalo y actívate las notificaciones: cada domingo, la agenda de la semana.`;
 const sources = ['federalreserve.gov', 'ecb.europa.eu', 'bls.gov', 'nyse.com', 'bolsasymercados.es'].concat(earningsOk ? ['Alpha Vantage'] : []);
 const out = { id: `calendario-${iso(monday)}`, label: 'Calendario de la semana', accent: 'green', caption, tags: ['#bolsa', '#calendarioeconomico', '#Fed', '#BCE', '#inversion', '#aprenderbolsa'], sources, slides };
 if (!bmeCovered) console.warn('AVISO: festivos de la bolsa española sin confirmar para estas fechas.');
