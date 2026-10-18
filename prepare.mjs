@@ -1,6 +1,7 @@
 // Convierte el registro de RESUMEN_BOLSA (Make) en data.json para render.mjs
 // Uso: node prepare.mjs <record.json | -> <data.json>
 import fs from 'node:fs';
+import { ctaBlock } from './cta.mjs';
 
 const src = process.argv[2];
 const dst = process.argv[3] || 'data.json';
@@ -83,6 +84,8 @@ function buildCaption(withName) {
     r.summary || '',
     '',
     '🎞️ En el Reel: la variación de los tres índices, el top 5 de subidas y bajadas en cada uno y los factores que movieron el mercado.',
+    '',
+    ctaBlock('', 'bolsa'),
     '',
     'ℹ️ Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.',
     '#bolsa #wallstreet #SP500 #nasdaq #dowjones #mercados #inversion #finanzas #tuamigodelasfinanzas',

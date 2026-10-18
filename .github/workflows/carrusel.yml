@@ -53,7 +53,7 @@ jobs:
           fi
 
       - name: Generar diapositivas
-        run: node render-carousel.mjs item.json out
+        run: CAROUSEL_KIND="${{ inputs.kind }}" node render-carousel.mjs item.json out
 
       - name: Publicar imágenes en GitHub Pages
         id: publish

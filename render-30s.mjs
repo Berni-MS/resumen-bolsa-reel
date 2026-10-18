@@ -3,6 +3,7 @@
 // item.json: { date, mood: up|down|neutral, hook, scenes:[{kicker,text,big?}] (4), caption, source, tags? }
 // Marcar una frase clave con [[frase]] para resaltarla en color.
 import fs from 'node:fs';
+import { ctaBlock } from './cta.mjs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { spawn } from 'node:child_process';
@@ -162,7 +163,7 @@ fs.unlinkSync(f);
 
 // pie del Reel
 const tags = (item.tags && item.tags.length ? item.tags : ['#bolsa', '#inversion', '#finanzas', '#aprenderbolsa']).slice(0, 8);
-const caption = `${item.caption}\n\nFuente: ${item.source || 'medios financieros'}.\n\nContenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.\n\n${[...new Set([...tags, '#tuamigodelasfinanzas'])].join(' ')}`;
+const caption = `${item.caption}\n\n${ctaBlock(item.caption, item.badge ? 'consejo' : 'bolsa')}\n\nFuente: ${item.source || 'medios financieros'}.\n\nContenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.\n\n${[...new Set([...tags, '#tuamigodelasfinanzas'])].join(' ')}`;
 if (caption.length > 2200) throw new Error('El pie supera 2.200 caracteres');
 fs.writeFileSync(path.join(outDir, 'caption.txt'), caption);
 console.log('Vídeo listo:', path.join(outDir, 'reel.mp4'));

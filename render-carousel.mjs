@@ -1,6 +1,7 @@
 // Genera las 7 diapositivas (JPEG 1080x1350) y el texto de un carrusel.
 // Uso: node render-carousel.mjs <item.json> <outDir>
 import fs from 'node:fs';
+import { ctaBlock } from './cta.mjs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
@@ -143,7 +144,8 @@ await browser.close();
 const legal = 'ℹ️ Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.';
 const src = item.sources && item.sources.length ? '\n\nFuentes: ' + item.sources.join(' · ') : '';
 const tags = [...new Set([...(item.tags || []), '#tuamigodelasfinanzas'])].join(' ');
-const caption = `${item.caption}${src}\n\n${legal}\n\n${tags}`;
+const kindArg = process.env.CAROUSEL_KIND || '';
+const caption = `${item.caption}${src}\n\n${ctaBlock(item.caption, kindArg, item.id || '')}\n\n${legal}\n\n${tags}`;
 fs.writeFileSync(path.join(outDir, 'caption.txt'), caption);
 console.log(`Texto: ${caption.length} caracteres`);
 if (caption.length > 2200) warnings.push(`Texto demasiado largo (${caption.length})`);
