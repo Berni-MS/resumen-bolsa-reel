@@ -32,6 +32,12 @@ jobs:
         run: node build-calculadora.mjs day.json "${{ inputs.date }}"
       - name: Generar imagen
         run: node render-datos.mjs day.json story.png
+      - name: Crear vídeo de la historia
+        continue-on-error: true
+        run: |
+          DUR=$(cat story.dur 2>/dev/null || echo 12)
+          ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -f lavfi -t "$DUR" -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart story.mp4
+          echo "Vídeo de ${DUR} s creado"
       - name: Publicar imagen en GitHub Pages
         id: publish
         run: |
@@ -41,8 +47,8 @@ jobs:
           git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
           REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git clone --depth 1 --branch gh-pages "$REMOTE" site
-          mkdir -p site/historias && cp story.png "site/historias/$NAME" && touch site/.nojekyll
-          ls -1t site/historias/* | tail -n +31 | xargs -r rm -f
+          mkdir -p site/historias && cp story.png "site/historias/$NAME" && { [ -f story.mp4 ] && cp story.mp4 "site/historias/${NAME%.png}.mp4" || true; } && touch site/.nojekyll
+          ls -1t site/historias/* | tail -n +61 | xargs -r rm -f
           cd site && git add -A && git commit -q -m "Historia $NAME"
           for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
           curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
@@ -52,23 +58,18 @@ jobs:
             [ "$CODE" = "200" ] && break; [ "$i" = "40" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
           done
           echo "url=$URL" >> "$GITHUB_OUTPUT"
+          if [ -f story.mp4 ]; then
+            VURL="${URL%.png}.mp4"
+            for i in $(seq 1 40); do
+              CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$VURL" || true); echo "vídeo intento $i: HTTP $CODE"
+              [ "$CODE" = "200" ] && { echo "video=$VURL" >> "$GITHUB_OUTPUT"; break; }; sleep 15
+            done
+          fi
       - name: Publicar historia en Instagram
         if: ${{ inputs.dry_run != 'true' && steps.publish.outputs.url != '' }}
         env:
           IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER: "17841438528056370"
           IMAGE_URL: ${{ steps.publish.outputs.url }}
-        run: |
-          if [ -z "$IG_TOKEN" ]; then echo "::error::Falta IG_ACCESS_TOKEN"; exit 1; fi
-          IG_TOKEN=$(printf %s "$IG_TOKEN" | tr -d "[:space:]\"'")
-          case "$IG_TOKEN" in IG*) API="https://graph.instagram.com/v21.0";; *) API="https://graph.facebook.com/v21.0";; esac
-          RES=$(curl -sS -X POST "$API/$IG_USER/media" --data-urlencode "media_type=STORIES" --data-urlencode "image_url=$IMAGE_URL" --data-urlencode "access_token=$IG_TOKEN")
-          ID=$(echo "$RES" | jq -r '.id // empty')
-          if [ -z "$ID" ]; then echo "::error::No se creó el contenedor: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
-          for i in $(seq 1 30); do
-            ST=$(curl -sS "$API/$ID?fields=status_code&access_token=$IG_TOKEN" | jq -r '.status_code // "?"'); echo "estado: $ST"
-            [ "$ST" = "FINISHED" ] && break; [ "$ST" = "ERROR" ] && { echo "::error::Instagram rechazó la imagen"; exit 1; }; sleep 5
-          done
-          OUT=$(curl -sS -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN")
-          echo "$OUT" | jq -e '.id' >/dev/null || { echo "::error::Fallo al publicar: $(echo "$OUT" | jq -c '.error // .')"; exit 1; }
-          echo "::notice::Historia publicada: $(echo "$OUT" | jq -r .id)"
+          VIDEO_URL: ${{ steps.publish.outputs.video }}
+        run: bash tools/ig-story.sh

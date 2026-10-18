@@ -1,6 +1,7 @@
 // Historias de datos (PNG 1080x1920): luz de mañana y «Tu dinero hoy».
 // Uso: node render-datos.mjs <datos.json> <salida.png>
 import fs from 'node:fs';
+import { storySeconds } from './story-dur.mjs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { nf, pct } from './lib-datos.mjs';
@@ -102,5 +103,8 @@ for (; s >= 0.5; s -= 0.05) {
 }
 if (s < 0.5) console.warn('AVISO: el contenido no cabe');
 await page.screenshot({ path: outFile, type: 'png' });
+const { words, seconds } = storySeconds(await page.evaluate(() => document.querySelector('.root').innerText));
+fs.writeFileSync(outFile.replace(/\.png$/, '.dur'), String(seconds));
+console.log(`Texto: ${words} palabras → duración recomendada ${seconds} s`);
 await browser.close();
 console.log('Historia generada, escala', s.toFixed(2));

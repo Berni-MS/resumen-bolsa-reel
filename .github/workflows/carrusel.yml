@@ -122,8 +122,9 @@ jobs:
           git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
           REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           rm -rf site2 && git clone --depth 1 --branch gh-pages "$REMOTE" site2
-          mkdir -p site2/historias && cp teaser.png "site2/historias/$NAME" && touch site2/.nojekyll
-          ls -1t site2/historias/* | tail -n +31 | xargs -r rm -f
+          mkdir -p site2/historias && ffmpeg -y -loop 1 -framerate 30 -t 7 -i teaser.png -f lavfi -t 7 -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart teaser.mp4 || rm -f teaser.mp4
+          cp teaser.png "site2/historias/$NAME" && { [ -f teaser.mp4 ] && cp teaser.mp4 "site2/historias/${NAME%.png}.mp4" || true; } && touch site2/.nojekyll
+          ls -1t site2/historias/* | tail -n +61 | xargs -r rm -f
           cd site2 && git add -A && git commit -q -m "Historia de aviso $NAME"
           for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
           cd ..
@@ -132,22 +133,19 @@ jobs:
             CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true); echo "intento $i: HTTP $CODE"
             [ "$CODE" = "200" ] && break; [ "$i" = "40" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
           done
+          VIDEO_URL=""
+          if [ -f teaser.mp4 ]; then
+            for i in $(seq 1 40); do
+              CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "${URL%.png}.mp4" || true); echo "vídeo intento $i: HTTP $CODE"
+              [ "$CODE" = "200" ] && { VIDEO_URL="${URL%.png}.mp4"; break; }; sleep 15
+            done
+          fi
           if [ "$DRY" = "true" ]; then echo "Prueba: historia generada, no publicada"; exit 0; fi
           if [ -z "$IG_TOKEN" ]; then echo "::error::Falta IG_ACCESS_TOKEN"; exit 1; fi
           # esperar a que Make haya publicado el carrusel
           sleep 150
-          IG_TOKEN=$(printf %s "$IG_TOKEN" | tr -d "[:space:]\"'")
-          case "$IG_TOKEN" in IG*) API="https://graph.instagram.com/v21.0";; *) API="https://graph.facebook.com/v21.0";; esac
-          RES=$(curl -sS -X POST "$API/$IG_USER/media" --data-urlencode "media_type=STORIES" --data-urlencode "image_url=$URL" --data-urlencode "access_token=$IG_TOKEN")
-          ID=$(echo "$RES" | jq -r '.id // empty')
-          if [ -z "$ID" ]; then echo "::error::No se creó el contenedor: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
-          for i in $(seq 1 30); do
-            ST=$(curl -sS "$API/$ID?fields=status_code&access_token=$IG_TOKEN" | jq -r '.status_code // "?"'); echo "estado: $ST"
-            [ "$ST" = "FINISHED" ] && break; [ "$ST" = "ERROR" ] && { echo "::error::Instagram rechazó la imagen"; exit 1; }; sleep 5
-          done
-          OUT=$(curl -sS -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN")
-          echo "$OUT" | jq -e '.id' >/dev/null || { echo "::error::Fallo al publicar: $(echo "$OUT" | jq -c '.error // .')"; exit 1; }
-          echo "::notice::Historia de aviso publicada: $(echo "$OUT" | jq -r .id)"
+          export IMAGE_URL="$URL" VIDEO_URL
+          bash tools/ig-story.sh
 
       - name: Avisar a Make si falla
         if: ${{ failure() && inputs.dry_run != 'true' }}

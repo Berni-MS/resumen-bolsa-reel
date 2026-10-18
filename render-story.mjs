@@ -1,6 +1,7 @@
 // Historia «Hoy en los mercados» (PNG 1080x1920) a partir del JSON de build-calendar.mjs --day
 // Uso: node render-story.mjs <day.json> <salida.png>
 import fs from 'node:fs';
+import { storySeconds } from './story-dur.mjs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
@@ -41,5 +42,8 @@ for (; s >= 0.5; s -= 0.05) {
   if (!(await page.evaluate(() => { const m = document.getElementById('mid'); return m.scrollHeight > m.clientHeight + 1; }))) break;
 }
 await page.screenshot({ path: outFile, type: 'png' });
+const { words, seconds } = storySeconds(await page.evaluate(() => document.querySelector('.root').innerText));
+fs.writeFileSync(outFile.replace(/\.png$/, '.dur'), String(seconds));
+console.log(`Texto: ${words} palabras → duración recomendada ${seconds} s`);
 await browser.close();
 console.log('Historia generada, escala', s.toFixed(2));
