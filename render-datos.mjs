@@ -63,6 +63,14 @@ ${m.before != null ? `<div style="background:${CARD};border-radius:28px;padding:
 <div style="background:${CARD};border-radius:28px;padding:${S(26)} ${S(38)};font-size:${S(42)};font-weight:700;line-height:1.3">Lo que hace un año costaba 100 €, hoy cuesta <span style="color:${item.annual > 0 ? RED : GREEN}">${esc(nf(hundred, 2))} €</span></div>
 <div style="font-size:${S(34)};font-weight:700;color:${MUTED}">Cuánto ha subido cada cosa en un año</div>${rows}`;
   footer = 'Tasa anual del IPC, base 2025 · Fuente: INE · En rojo, lo que sube más que la media';
+} else if (item.kind === 'calc') {
+  header = 'Calculadora de la semana';
+  const rows = item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:${S(24)} ${S(38)}"><div style="font-size:${S(36)};font-weight:700;color:${MUTED}">${esc(r.a)}</div><div class="d" style="font-size:${S(100)};line-height:1.05;color:${item.bad ? RED : GREEN}">${esc(r.b)}</div><div style="font-size:${S(32)};color:${SOFT}">${esc(r.c)}</div></div>`).join('');
+  body = `<div class="d" style="font-size:${S(170)};line-height:1">${esc(item.title)} <span style="color:${GREEN}">${esc(item.accent)}</span></div>
+<div style="font-size:${S(44)};font-weight:700;color:${MUTED};line-height:1.25">${esc(item.q)}</div>${rows}
+<div style="font-size:${S(32)};color:${MUTED}">${esc(item.note)}</div>
+<div style="background:${CARD};border-radius:28px;padding:${S(26)} ${S(38)};font-size:${S(40)};font-weight:700;line-height:1.3">Cuéntame tu caso por mensaje 💬<div style="font-size:${S(32)};font-weight:500;color:${MUTED};margin-top:${S(6)}">Y guárdala para cuando la necesites.</div></div>`;
+  footer = item.footer;
 } else {
   header = 'Tu dinero hoy';
   const rows = item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:${S(24)} ${S(38)};display:flex;align-items:center;justify-content:space-between;gap:${S(24)}">
