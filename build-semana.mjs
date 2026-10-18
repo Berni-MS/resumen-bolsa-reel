@@ -36,11 +36,11 @@ const [ibex, spx, gold, brent, eur, btc] = await Promise.all([
 if (!ibex && !spx) throw new Error('Faltan los índices de la semana');
 
 const foot = 'Contenido informativo. No es asesoramiento financiero.';
-const kwh = v => `${nf(v, 3)} €/kWh`;
+const kwh = v => `${nf(v, 3).replace(/^-/, '−')} €/kWh`;
 const slides = [
   { t: 'cover', big: `${Number(monday.slice(8))}–${Number(sunday.slice(8))}`, bigSize: 330, title: 'La semana en [[datos]]', foot: `Del lunes ${dm(monday)} al domingo ${dm(sunday)}` },
   { t: 'stat', kicker: 'La luz', big: nf(wavg, 3), bigSize: 280, color: 'green', head: '€/kWh de media esta semana', body: `${lwd != null ? `${nf(Math.abs(lwd), 0)} % ${lwd <= 0 ? 'más barata' : 'más cara'} que la semana anterior. ` : ''}Día más barato: ${dayName(cheapD.d).toLowerCase()} (${kwh(cheapD.avg)}). Día más caro: ${dayName(dearD.d).toLowerCase()} (${kwh(dearD.avg)}).`, foot: 'Precio PVPC (tarifa regulada) · Fuente: Red Eléctrica' },
-  { t: 'point', kicker: 'La luz, hora a hora', head: `La hora más barata: [[${dayName(minH.date).toLowerCase()} a las ${minH.hour}:00]]`, body: `${kwh(minH.p)}. La más cara: ${dayName(maxH.date).toLowerCase()} a las ${maxH.hour}:00, a ${kwh(maxH.p)}${minH.p > 0 ? `, unas ${nf(maxH.p / minH.p, 0)} veces más` : ''}.`, note: 'El precio cambia mucho según la hora: por eso importa cuándo consumes, si tienes tarifa regulada.', foot },
+  { t: 'point', kicker: 'La luz, hora a hora', head: `La hora más barata: [[${dayName(minH.date).toLowerCase()} a las ${minH.hour}:00]]`, body: `${kwh(minH.p)}${minH.p < 0 ? ' (precio negativo)' : ''}. La más cara: ${dayName(maxH.date).toLowerCase()} a las ${maxH.hour}:00, a ${kwh(maxH.p)}${minH.p > 0 ? `, unas ${nf(maxH.p / minH.p, 0)} veces más` : ''}.`, note: 'El precio cambia mucho según la hora: por eso importa cuándo consumes, si tienes tarifa regulada.', foot },
 ];
 const lead = ibex || spx;
 slides.push({ t: 'stat', kicker: 'La bolsa', big: pct(lead.ch), bigSize: 250, color: lead.ch >= 0 ? 'green' : 'red', head: ibex ? 'IBEX 35 en la semana' : 'S&P 500 en la semana', body: `${ibex && spx ? `S&P 500: ${pct(spx.ch)} (${nf(spx.last, 0)} puntos). ` : ibex ? `Cierre: ${nf(ibex.last, 0)} puntos. ` : ''}Variación entre el cierre del viernes anterior y el de esta semana.`, foot });
@@ -50,7 +50,7 @@ if (gold) cards.push({ t: `Oro: ${nf(gold.last, 0)} $ la onza`, b: `${pct(gold.c
 if (brent) cards.push({ t: `Brent: ${nf(brent.last, 2)} $ el barril`, b: `${pct(brent.ch)} en la semana` });
 if (btc) cards.push({ t: `Bitcoin: ${nf(btc.last, 0)} €`, b: `${pct(btc.ch)} en 7 días` });
 if (cards.length < 2) throw new Error('Faltan datos de divisas y materias primas');
-slides.push({ t: 'cards', head: 'Divisas, oro, petróleo y [[bitcoin]]', accent: 'green', cards, foot: 'Fuentes: BCE, Yahoo Finance, CoinGecko · Datos con posible retraso' });
+slides.push({ t: 'cards', head: 'Divisas, oro, petróleo y bitcoin', accent: 'green', cards, foot: 'Fuentes: BCE, Yahoo Finance, CoinGecko · Datos con posible retraso' });
 slides.push({ t: 'point', kicker: 'Y ahora…', head: 'La agenda de la semana [[llega esta noche]]', body: 'Hoy a las 19:20 publicamos el calendario con las citas que mueven los mercados: bancos centrales, inflación, empleo y resultados.', foot });
 slides.push({ t: 'close', head: 'Guarda [[la semana]]', headSize: 150, body: 'Cada domingo, los datos que importan a tu bolsillo: luz, bolsa, divisas, oro, petróleo y bitcoin.', extra: 'Mándaselo a alguien al que le sube la factura de la luz.', extraBold: true, foot });
 
