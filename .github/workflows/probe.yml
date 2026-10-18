@@ -8,24 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Probar
-        env:
-          AV: ${{ secrets.ALPHAVANTAGE_API_KEY }}
         run: |
-          probe() { echo "### $1"; curl -sS -m 25 -A "Mozilla/5.0" -o /tmp/o.txt -w 'HTTP %{http_code}\n' "$1" 2>&1 | head -3; head -c 700 /tmp/o.txt; echo; echo; }
-          {
-          probe "https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2026-10-18T00:00&end_date=2026-10-19T23:59&time_trunc=hour"
-          probe "https://api.preciodelaluz.org/v1/prices/all?zone=PCB"
-          probe "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?lastNObservations=3&format=csvdata"
-          probe "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur&include_24hr_change=true"
-          probe "https://stooq.com/q/l/?s=%5Eibex&f=sd2t2ohlcv&h&e=csv"
-          probe "https://stooq.com/q/d/l/?s=%5Espx&i=d"
-          probe "https://stooq.com/q/l/?s=xauusd&f=sd2t2ohlcv&h&e=csv"
-          probe "https://query1.finance.yahoo.com/v8/finance/chart/%5EIBEX?range=5d&interval=1d"
-          probe "https://www.alphavantage.co/query?function=BRENT&interval=daily&apikey=$AV"
-          probe "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=XAU&to_currency=USD&apikey=$AV"
-          } > probe.txt 2>&1
-          sed -i "s/$AV/***/g" probe.txt
+          curl -sS -m 25 -A "Mozilla/5.0" "https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=2026-10-17T00:00&end_date=2026-10-19T23:59&time_trunc=hour" -o ree.json
+          curl -sS -m 25 -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?range=1mo&interval=1d" -o gc.json
+          curl -sS -m 25 -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/BZ%3DF?range=1mo&interval=1d" -o bz.json
+          curl -sS -m 25 -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d" -o spx.json
+          curl -sS -m 25 -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?range=5d&interval=1d" -o eur.json
           git config --global user.name reel-bot; git config --global user.email reel-bot@users.noreply.github.com
           git clone -q --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
-          mkdir -p site/probe && cp probe.txt site/probe/probe.txt
-          cd site && git add -A && git commit -q -m "probe" && git push -q origin gh-pages
+          mkdir -p site/probe && cp ree.json gc.json bz.json spx.json eur.json site/probe/
+          cd site && git add -A && git commit -q -m "probe2" && git push -q origin gh-pages
