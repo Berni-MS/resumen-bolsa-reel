@@ -1,5 +1,0 @@
-carb 200 12144266
-https://data-api.ecb.europa.eu/service/data/FM/M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA?lastNObservations=4&format=csvdata 200 1919 -> 7340cd
-https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.RT.MM.EURIBOR1YD_.HSTA?lastNObservations=4&format=csvdata 404 472 -> 4551e7
-https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPC278296?nult=3 200 434 -> 3e4a5b
-https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/50902?nult=1 200 12674 -> 662df8

@@ -1,0 +1,59 @@
+24077 | Índice general nacional. Series desde enero de 1961 | 1791961200000 | None
+24080 | Índice nacionales de grupos ECOICOP. Series desde enero de 1993 | 1768464000000 | None
+35083 | Índices nacionales: Componentes para el análisis de la COVID-19 | 1642147200000 | None
+53458 | Índices por comunidades autónomas de subgrupos | 1791961200000 | 2026
+76125 | Índices nacionales: general y de grupos ECOICOP ver.2 | 1791961200000 | None
+76131 | Índices nacionales a impuestos constantes: general y de grupos ECOICOP ver.2 | 1791961200000 | None
+76134 | Tasa de variacion del índice general nacional. Series desde enero de 1961 | 1791961200000 | None
+76136 | Índices por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1791961200000 | None
+76141 | Índices provinciales: general y de grupos ECOICOP ver.2 | 1791961200000 | None
+76150 | Índices por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1770969600000 | None
+76154 | Índices provinciales: general y de grupos ECOICOP ver.2 | 1770969600000 | None
+76156 | Ponderaciones: general y de grupos ECOICOP ver.2 | 1769760000000 | None
+76162 | Ponderaciones por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1769760000000 | None
+76166 | Ponderaciones provinciales: general y de grupos ECOICOP ver.2 | 1769760000000 | None
+79181 | Índices nacionales: general y de grupos ECOICOP ver.2 | 1791961200000 | None
+24078 | Índice general por comunidades autónomas. Series desde enero de 1978. | 1791961200000 | None
+25331 | Ponderaciones: general y de grupos ECOICOP | 1675065600000 | None
+53459 | Índices provinciales de subgrupos | 1791961200000 | 2026
+76126 | Índices nacionales de subgrupos ECOICOP ver.2 | 1791961200000 | None
+76132 | Índices nacionales a impuestos constantes de subclases ECOICOP ver.2 | 1791961200000 | None
+76135 | Tasa de variación del índice nacionales de grupos ECOICOP ver.2. Series desde enero de 2002 | 1791961200000 | None
+76137 | Índices por comunidades autónomas de subgrupos ECOICOP ver.2 | 1791961200000 | None
+76142 | Índices provinciales de subgrupos ECOICOP ver.2 | 1791961200000 | None
+76144 | Índices nacionales: general y de grupos ECOICOP ver.2 | 1770969600000 | None
+76151 | Índices por comunidades autónomas de subgrupos ECOICOP ver.2 | 1770969600000 | None
+76155 | Índices provinciales de subgrupos ECOICOP ver.2 | 1770969600000 | None
+76157 | Ponderaciones de subgrupos ECOICOP ver.2 | 1769760000000 | None
+76163 | Ponderaciones por comunidades autónomas de subgrupos ECOICOP ver.2 | 1769760000000 | None
+76167 | Ponderaciones provinciales de subgrupos ECOICOP ver.2 | 1769760000000 | None
+79182 | Índices por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1791961200000 | None
+24079 | Índice Nacional de la Vivienda en Alquiler. Series desde enero de 1961 | 1791961200000 | None
+25333 | Índices nacionales: general y de grupos ECOICOP | 1791961200000 | None
+76127 | Índices nacionales de clases ECOICOP ver.2 | 1791961200000 | None
+76133 | Índices nacionales a impuestos constantes de grupos especiales | 1791961200000 | None
+76138 | Índices por comunidades autónomas de rúbricas | 1791961200000 | None
+76143 | Tasa de variación del índice general por provincias. Series desde enero de 1993 | 1791961200000 | None
+76145 | Índices nacionales de subgrupos ECOICOP ver.2 | 1770969600000 | None
+76152 | Índices por comunidades autónomas de rúbricas | 1770969600000 | None
+76158 | Ponderaciones de clases ECOICOP ver.2 | 1769760000000 | None
+76164 | Ponderaciones por comunidades autónomas de rúbricas | 1769760000000 | None
+79183 | Índices nacionales de subgrupos ECOICOP ver.2 | 1791961200000 | None
+76128 | Índices nacionales de subclases ECOICOP ver.2 | 1791961200000 | None
+76139 | Índices por comunidades autónomas de grupos especiales | 1791961200000 | None
+76146 | Índices nacionales de clases ECOICOP ver.2 | 1770969600000 | None
+76153 | Índices por comunidades autónomas de grupos especiales | 1770969600000 | None
+76159 | Ponderaciones de subclases ECOICOP ver.2 | 1769760000000 | None
+76165 | Ponderaciones por comunidades autónomas de grupos especiales | 1770969600000 | None
+78680 | Índice nacionales de grupos ECOICOP ver. 2. Series desde enero de 2002 | 1791961200000 | None
+79184 | Índices nacionales de subclases ECOICOP ver.2 | 1791961200000 | None
+24081 | Índice general por provincias. Series desde enero de 1993 | 1791961200000 | None
+76129 | Índices nacionales de rúbricas | 1791961200000 | None
+76140 | Tasa de variación del índice general por comunidades autónomas. Series desde enero de 1978 | 1791961200000 | None
+76147 | Índices nacionales de subclases ECOICOP ver.2 | 1770969600000 | None
+76160 | Ponderaciones de rúbricas | 1769760000000 | None
+79185 | Ponderaciones: general y de grupos ECOICOP ver.2 | 1486634400000 | None
+76130 | Índices nacionales de grupos especiales | 1791961200000 | None
+76148 | Índices nacionales de rúbricas | 1770969600000 | None
+76161 | Ponderaciones de grupos especiales | 1770969600000 | None
+76149 | Índices nacionales de grupos especiales | 1770969600000 | None
