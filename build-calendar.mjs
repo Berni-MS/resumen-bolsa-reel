@@ -134,4 +134,5 @@ const sources = ['federalreserve.gov', 'ecb.europa.eu', 'bls.gov', 'nyse.com', '
 const out = { id: `calendario-${iso(monday)}`, label: 'Calendario de la semana', accent: 'green', caption, tags: ['#bolsa', '#calendarioeconomico', '#Fed', '#BCE', '#inversion', '#aprenderbolsa'], sources, slides };
 if (!bmeCovered) console.warn('AVISO: festivos de la bolsa española sin confirmar para estas fechas.');
 fs.writeFileSync(dst, JSON.stringify(out, null, 2));
+console.log(`::notice::Resultados (${earningsOk ? 'ok' : 'no disponibles'}): ${earnWeek.map(e => e.date.slice(5) + ' ' + e.name).join(', ') || 'ninguno esta semana'}`);
 console.log(`Semana ${iso(monday)}: ${week.length} eventos, ${earnWeek.length} resultados, ${radar.length} en el radar, ${slides.length} diapositivas`);
