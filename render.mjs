@@ -72,7 +72,7 @@ function slideOverview() {
   const note = allUp || allDown ? 'La barra mide el cambio frente a un máximo de 3 %.' : 'La barra mide el cambio frente a un máximo de 3 %. Verde sube, rojo baja.';
   return page(INK, '#fff', `<div style="padding:${SAFE_TOP}px ${SAFE_R}px 0 ${SAFE_L}px">
     <div style="font-size:36px;font-weight:700;color:${MUTED}">${esc(d.dateLabel)}</div>
-    <div class="d" style="font-size:116px;line-height:.9;margin-top:12px;max-height:214px;overflow:hidden">${esc(d.headline)}</div>
+    <div class="d" style="font-size:116px;line-height:1.08;margin-top:12px;max-height:262px;overflow:hidden">${esc(d.headline)}</div>
     <div style="margin-top:28px">${slabs}</div>
     <div style="margin-top:22px;font-size:25px;font-weight:500;color:${MUTED};line-height:1.3">${note} Variación respecto al cierre de la sesión anterior.</div>
   </div>`);

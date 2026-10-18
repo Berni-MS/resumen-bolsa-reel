@@ -68,8 +68,8 @@ body{background:${INK}}
 .bar i{display:block;height:10px;width:0;background:${ACC}}
 .sc{position:absolute;left:${SAFE_L}px;right:${SAFE_R}px;top:${SAFE_TOP}px;bottom:${SAFE_BOTTOM}px;display:flex;flex-direction:column;justify-content:center;opacity:0}
 .kick{display:inline-block;align-self:flex-start;background:${CARD};color:${ACC};font-size:40px;font-weight:700;padding:12px 24px;margin-bottom:34px;border-left:10px solid ${ACC}}
-.big{font-size:260px;line-height:.85;margin-bottom:22px;color:${ACC};white-space:nowrap}
-.txt{font-size:120px;line-height:1.0;font-family:'Big Shoulders Display','Arial Narrow','Liberation Sans Narrow',sans-serif;font-weight:900;overflow:hidden}
+.big{font-size:260px;line-height:.95;margin-bottom:26px;color:${ACC};white-space:nowrap}
+.txt{font-size:120px;line-height:1.14;font-family:'Big Shoulders Display','Arial Narrow','Liberation Sans Narrow',sans-serif;font-weight:900;overflow:hidden}
 .hook .txt{font-size:170px}
 .w{display:inline-block;opacity:0;margin-right:.22em}
 .hi{color:${ACC}}

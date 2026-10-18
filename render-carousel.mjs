@@ -46,45 +46,45 @@ function body(sl, accent) {
     case 'cover':
       return `<div style="display:flex;flex-direction:column;gap:${px(36)}">
         <div class="d" style="font-size:${px(sl.bigSize || 300)};line-height:.85;color:${A}">${esc(sl.big)}</div>
-        <div class="d" style="font-size:${px(120)};line-height:.95">${rich(sl.title, A)}</div></div>`;
+        <div class="d" style="font-size:${px(120)};line-height:1.1">${rich(sl.title, A)}</div></div>`;
     case 'point':
       return `<div style="display:flex;flex-direction:column;gap:${px(38)}">
         ${sl.kicker ? `<div style="font-size:${px(40)};font-weight:700;color:${MUTED}">${esc(sl.kicker)}</div>` : ''}
-        <div class="d" style="font-size:${px(sl.headSize || 150)};line-height:.92">${rich(sl.head, A)}</div>
+        <div class="d" style="font-size:${px(sl.headSize || 150)};line-height:1.1">${rich(sl.head, A)}</div>
         <div style="font-size:${px(44)};line-height:1.35;font-weight:500;color:${SOFT}">${esc(sl.body)}</div>
         ${sl.note ? `<div style="background:${CARD};border-radius:24px;padding:${px(32)} ${px(36)};font-size:${px(36)};line-height:1.3;color:${MUTED}">${esc(sl.note)}</div>` : ''}</div>`;
     case 'cards':
       return `<div style="display:flex;flex-direction:column;gap:${px(32)}">
-        <div class="d" style="font-size:${px(130)};line-height:.92;color:${sl.accent === 'red' ? RED : GREEN}">${esc(sl.head)}</div>
+        <div class="d" style="font-size:${px(130)};line-height:1.1;color:${sl.accent === 'red' ? RED : GREEN}">${esc(sl.head)}</div>
         ${sl.cards.map(c => `<div style="background:${CARD};border-radius:24px;padding:${px(28)} ${px(36)}"><div style="font-size:${px(46)};font-weight:700">${esc(c.t)}</div><div style="font-size:${px(34)};line-height:1.3;color:${MUTED};margin-top:8px">${esc(c.b)}</div></div>`).join('')}</div>`;
     case 'agenda': {
       const dot = k => (k >= 3 ? RED : GREEN);
       return `<div style="display:flex;flex-direction:column;gap:${px(26)}">
         ${sl.kicker ? `<div style="font-size:${px(40)};font-weight:700;color:${MUTED}">${esc(sl.kicker)}</div>` : ''}
-        <div class="d" style="font-size:${px(130)};line-height:.92">${rich(sl.head, A)}</div>
+        <div class="d" style="font-size:${px(130)};line-height:1.1">${rich(sl.head, A)}</div>
         ${sl.rows.map(r => `<div style="background:${CARD};border-radius:24px;padding:${px(26)} ${px(34)};display:flex;gap:${px(30)};align-items:center">
-          <div style="flex:none;width:${px(150)};text-align:left"><div class="d" style="font-size:${px(66)};line-height:.95;color:${dot(r.k)}">${esc(r.d)}</div>${r.t ? `<div style="font-size:${px(32)};font-weight:700;color:${MUTED}">${esc(r.t)}</div>` : ''}</div>
+          <div style="flex:none;width:${px(150)};text-align:left"><div class="d" style="font-size:${px(66)};line-height:1.08;color:${dot(r.k)}">${esc(r.d)}</div>${r.t ? `<div style="font-size:${px(32)};font-weight:700;color:${MUTED}">${esc(r.t)}</div>` : ''}</div>
           <div style="font-size:${px(42)};line-height:1.2;font-weight:700">${esc(r.n)}</div></div>`).join('')}</div>`;
     }
     case 'steps':
       return `<div style="display:flex;flex-direction:column;gap:${px(30)}">
-        <div class="d" style="font-size:${px(130)};line-height:.92">${rich(sl.head, A)}</div>
+        <div class="d" style="font-size:${px(130)};line-height:1.1">${rich(sl.head, A)}</div>
         ${sl.steps.map((c, i) => `<div style="display:flex;gap:28px;align-items:center"><div style="flex:none;width:${px(84)};height:${px(84)};border-radius:50%;background:${GREEN};color:${INK};font-weight:700;font-size:${px(44)};display:flex;align-items:center;justify-content:center">${i + 1}</div><div><div style="font-size:${px(42)};font-weight:700">${esc(c.t)}</div><div style="font-size:${px(32)};line-height:1.25;color:${MUTED}">${esc(c.b)}</div></div></div>`).join('')}</div>`;
     case 'stat':
       return `<div style="display:flex;flex-direction:column;gap:${px(30)}">
         ${sl.kicker ? `<div style="font-size:${px(40)};font-weight:700;color:${MUTED}">${esc(sl.kicker)}</div>` : ''}
         <div class="d" style="white-space:nowrap;font-size:${px(sl.bigSize || 260)};line-height:.9;color:${sl.color === 'green' ? GREEN : sl.color === 'red' ? RED : A}">${esc(sl.big)}</div>
-        <div class="d" style="font-size:${px(88)};line-height:.98">${rich(sl.head, A)}</div>
+        <div class="d" style="font-size:${px(88)};line-height:1.1">${rich(sl.head, A)}</div>
         <div style="font-size:${px(42)};line-height:1.33;font-weight:500;color:${SOFT}">${esc(sl.body)}</div></div>`;
     case 'myth':
       return `<div style="display:flex;flex-direction:column;gap:${px(36)}">
         <div style="font-size:${px(36)};font-weight:700;color:${RED}">MITO</div>
-        <div class="d" style="font-size:${px(140)};line-height:.92">${esc(sl.myth)}</div>
+        <div class="d" style="font-size:${px(140)};line-height:1.1">${esc(sl.myth)}</div>
         <div style="font-size:${px(36)};font-weight:700;color:${GREEN};margin-top:${px(20)}">REALIDAD</div>
         <div style="font-size:${px(42)};line-height:1.3;font-weight:500;color:${SOFT}">${esc(sl.reality)}</div></div>`;
     case 'close':
       return `<div style="display:flex;flex-direction:column;gap:${px(40)}">
-        <div class="d" style="font-size:${px(sl.headSize || 170)};line-height:.9">${rich(sl.head, A)}</div>
+        <div class="d" style="font-size:${px(sl.headSize || 170)};line-height:1.1">${rich(sl.head, A)}</div>
         <div style="font-size:${px(44)};line-height:1.35;font-weight:500;color:${SOFT}">${esc(sl.body)}</div>
         ${sl.extra ? `<div style="background:${CARD};border-radius:24px;padding:${px(32)} ${px(36)};font-size:${px(sl.extraSize || 34)};line-height:1.35;font-weight:${sl.extraBold ? 700 : 500};color:${sl.extraBold ? '#fff' : MUTED}">${esc(sl.extra)}</div>` : ''}</div>`;
     default: throw new Error('Tipo de diapositiva desconocido: ' + sl.t);
