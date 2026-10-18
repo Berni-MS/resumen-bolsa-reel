@@ -1,0 +1,47 @@
+name: Informe semanal
+
+on:
+  workflow_dispatch:
+    inputs:
+      data_b64:
+        description: "Publicaciones recientes de Instagram (JSON en base64) enviadas por Make"
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: informe
+  cancel-in-progress: false
+
+jobs:
+  informe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generar informe
+        run: |
+          printf '%s' "${{ inputs.data_b64 }}" | base64 -d > datos.json
+          node build-informe.mjs datos.json informe.html
+      - name: Publicar en GitHub Pages
+        run: |
+          set -euo pipefail
+          git config --global user.name "reel-bot"
+          git config --global user.email "reel-bot@users.noreply.github.com"
+          REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git clone --depth 1 --branch gh-pages "$REMOTE" site
+          mkdir -p site/informe
+          D=$(date +%F)
+          cp informe.html site/informe/index.html
+          cp informe.html "site/informe/${D}.html"
+          touch site/.nojekyll
+          ls -1t site/informe/20*.html | tail -n +27 | xargs -r rm -f
+          cd site
+          git add -A
+          git commit -q -m "Informe ${D}" || true
+          git push origin gh-pages
