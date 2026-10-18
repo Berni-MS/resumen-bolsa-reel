@@ -1,59 +1,56 @@
-24077 | Índice general nacional. Series desde enero de 1961 | 1791961200000 | None
-24080 | Índice nacionales de grupos ECOICOP. Series desde enero de 1993 | 1768464000000 | None
-35083 | Índices nacionales: Componentes para el análisis de la COVID-19 | 1642147200000 | None
-53458 | Índices por comunidades autónomas de subgrupos | 1791961200000 | 2026
-76125 | Índices nacionales: general y de grupos ECOICOP ver.2 | 1791961200000 | None
-76131 | Índices nacionales a impuestos constantes: general y de grupos ECOICOP ver.2 | 1791961200000 | None
-76134 | Tasa de variacion del índice general nacional. Series desde enero de 1961 | 1791961200000 | None
-76136 | Índices por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1791961200000 | None
-76141 | Índices provinciales: general y de grupos ECOICOP ver.2 | 1791961200000 | None
-76150 | Índices por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1770969600000 | None
-76154 | Índices provinciales: general y de grupos ECOICOP ver.2 | 1770969600000 | None
-76156 | Ponderaciones: general y de grupos ECOICOP ver.2 | 1769760000000 | None
-76162 | Ponderaciones por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1769760000000 | None
-76166 | Ponderaciones provinciales: general y de grupos ECOICOP ver.2 | 1769760000000 | None
-79181 | Índices nacionales: general y de grupos ECOICOP ver.2 | 1791961200000 | None
-24078 | Índice general por comunidades autónomas. Series desde enero de 1978. | 1791961200000 | None
-25331 | Ponderaciones: general y de grupos ECOICOP | 1675065600000 | None
-53459 | Índices provinciales de subgrupos | 1791961200000 | 2026
-76126 | Índices nacionales de subgrupos ECOICOP ver.2 | 1791961200000 | None
-76132 | Índices nacionales a impuestos constantes de subclases ECOICOP ver.2 | 1791961200000 | None
-76135 | Tasa de variación del índice nacionales de grupos ECOICOP ver.2. Series desde enero de 2002 | 1791961200000 | None
-76137 | Índices por comunidades autónomas de subgrupos ECOICOP ver.2 | 1791961200000 | None
-76142 | Índices provinciales de subgrupos ECOICOP ver.2 | 1791961200000 | None
-76144 | Índices nacionales: general y de grupos ECOICOP ver.2 | 1770969600000 | None
-76151 | Índices por comunidades autónomas de subgrupos ECOICOP ver.2 | 1770969600000 | None
-76155 | Índices provinciales de subgrupos ECOICOP ver.2 | 1770969600000 | None
-76157 | Ponderaciones de subgrupos ECOICOP ver.2 | 1769760000000 | None
-76163 | Ponderaciones por comunidades autónomas de subgrupos ECOICOP ver.2 | 1769760000000 | None
-76167 | Ponderaciones provinciales de subgrupos ECOICOP ver.2 | 1769760000000 | None
-79182 | Índices por comunidades autónomas: general y de grupos ECOICOP ver.2 | 1791961200000 | None
-24079 | Índice Nacional de la Vivienda en Alquiler. Series desde enero de 1961 | 1791961200000 | None
-25333 | Índices nacionales: general y de grupos ECOICOP | 1791961200000 | None
-76127 | Índices nacionales de clases ECOICOP ver.2 | 1791961200000 | None
-76133 | Índices nacionales a impuestos constantes de grupos especiales | 1791961200000 | None
-76138 | Índices por comunidades autónomas de rúbricas | 1791961200000 | None
-76143 | Tasa de variación del índice general por provincias. Series desde enero de 1993 | 1791961200000 | None
-76145 | Índices nacionales de subgrupos ECOICOP ver.2 | 1770969600000 | None
-76152 | Índices por comunidades autónomas de rúbricas | 1770969600000 | None
-76158 | Ponderaciones de clases ECOICOP ver.2 | 1769760000000 | None
-76164 | Ponderaciones por comunidades autónomas de rúbricas | 1769760000000 | None
-79183 | Índices nacionales de subgrupos ECOICOP ver.2 | 1791961200000 | None
-76128 | Índices nacionales de subclases ECOICOP ver.2 | 1791961200000 | None
-76139 | Índices por comunidades autónomas de grupos especiales | 1791961200000 | None
-76146 | Índices nacionales de clases ECOICOP ver.2 | 1770969600000 | None
-76153 | Índices por comunidades autónomas de grupos especiales | 1770969600000 | None
-76159 | Ponderaciones de subclases ECOICOP ver.2 | 1769760000000 | None
-76165 | Ponderaciones por comunidades autónomas de grupos especiales | 1770969600000 | None
-78680 | Índice nacionales de grupos ECOICOP ver. 2. Series desde enero de 2002 | 1791961200000 | None
-79184 | Índices nacionales de subclases ECOICOP ver.2 | 1791961200000 | None
-24081 | Índice general por provincias. Series desde enero de 1993 | 1791961200000 | None
-76129 | Índices nacionales de rúbricas | 1791961200000 | None
-76140 | Tasa de variación del índice general por comunidades autónomas. Series desde enero de 1978 | 1791961200000 | None
-76147 | Índices nacionales de subclases ECOICOP ver.2 | 1770969600000 | None
-76160 | Ponderaciones de rúbricas | 1769760000000 | None
-79185 | Ponderaciones: general y de grupos ECOICOP ver.2 | 1486634400000 | None
-76130 | Índices nacionales de grupos especiales | 1791961200000 | None
-76148 | Índices nacionales de rúbricas | 1770969600000 | None
-76161 | Ponderaciones de grupos especiales | 1770969600000 | None
-76149 | Índices nacionales de grupos especiales | 1770969600000 | None
+IPC290751 | Nacional. Índice general. Índice.  | [('2026-09', 104.978), ('2026-08', 104.638)]
+IPC290752 | Nacional. Índice general. Variación mensual.  | [('2026-09', 0.3), ('2026-08', 0.7)]
+IPC290750 | Nacional. Índice general. Variación anual.  | [('2026-09', 4.9), ('2026-08', 4.3)]
+IPC290753 | Nacional. Índice general. Variación en lo que va de año.  | [('2026-09', 3.6), ('2026-08', 3.3)]
+IPC290755 | Nacional. Alimentos y bebidas no alcohólicas. Índice.  | [('2026-09', 101.934), ('2026-08', 101.71)]
+IPC290756 | Nacional. Alimentos y bebidas no alcohólicas. Variación mensual.  | [('2026-09', 0.2), ('2026-08', -0.1)]
+IPC290754 | Nacional. Alimentos y bebidas no alcohólicas. Variación anual.  | [('2026-09', 2.7), ('2026-08', 2.3)]
+IPC290757 | Nacional. Alimentos y bebidas no alcohólicas. Variación en lo que va de año.  | [('2026-09', 0.7), ('2026-08', 0.5)]
+IPC290779 | Nacional. Bebidas alcohólicas y tabaco. Índice.  | [('2026-09', 103.289), ('2026-08', 103.106)]
+IPC290780 | Nacional. Bebidas alcohólicas y tabaco. Variación mensual.  | [('2026-09', 0.2), ('2026-08', -0.1)]
+IPC290778 | Nacional. Bebidas alcohólicas y tabaco. Variación anual.  | [('2026-09', 2.8), ('2026-08', 2.8)]
+IPC290781 | Nacional. Bebidas alcohólicas y tabaco. Variación en lo que va de año.  | [('2026-09', 1.8), ('2026-08', 1.7)]
+IPC290759 | Nacional. Vestido y calzado. Índice.  | [('2026-09', 98.092), ('2026-08', 91.743)]
+IPC290760 | Nacional. Vestido y calzado. Variación mensual.  | [('2026-09', 6.9), ('2026-08', -1.0)]
+IPC290758 | Nacional. Vestido y calzado. Variación anual.  | [('2026-09', 2.1), ('2026-08', -2.1)]
+IPC290761 | Nacional. Vestido y calzado. Variación en lo que va de año.  | [('2026-09', -8.4), ('2026-08', -14.4)]
+IPC290763 | Nacional. Vivienda, agua, electricidad, gas y otros combustibles. Índice.  | [('2026-09', 107.637), ('2026-08', 106.491)]
+IPC290764 | Nacional. Vivienda, agua, electricidad, gas y otros combustibles. Variación mensual.  | [('2026-09', 1.1), ('2026-08', 0.6)]
+IPC290762 | Nacional. Vivienda, agua, electricidad, gas y otros combustibles. Variación anual.  | [('2026-09', 7.2), ('2026-08', 6.4)]
+IPC290765 | Nacional. Vivienda, agua, electricidad, gas y otros combustibles. Variación en lo que va de año.  | [('2026-09', 5.8), ('2026-08', 4.6)]
+IPC290767 | Nacional. Muebles, artículos del hogar y artículos para el mantenimiento corriente del hogar. Índice.  | [('2026-09', 101.45), ('2026-08', 101.245)]
+IPC290768 | Nacional. Muebles, artículos del hogar y artículos para el mantenimiento corriente del hogar. Variación mensual.  | [('2026-09', 0.2), ('2026-08', 0.0)]
+IPC290766 | Nacional. Muebles, artículos del hogar y artículos para el mantenimiento corriente del hogar. Variación anual.  | [('2026-09', 1.5), ('2026-08', 1.4)]
+IPC290769 | Nacional. Muebles, artículos del hogar y artículos para el mantenimiento corriente del hogar. Variación en lo que va de  | [('2026-09', 1.0), ('2026-08', 0.8)]
+IPC290771 | Nacional. Sanidad. Índice.  | [('2026-09', 102.357), ('2026-08', 102.297)]
+IPC290772 | Nacional. Sanidad. Variación mensual.  | [('2026-09', 0.1), ('2026-08', 0.1)]
+IPC290770 | Nacional. Sanidad. Variación anual.  | [('2026-09', 2.0), ('2026-08', 2.0)]
+IPC290773 | Nacional. Sanidad. Variación en lo que va de año.  | [('2026-09', 1.6), ('2026-08', 1.5)]
+IPC290775 | Nacional. Transporte. Índice.  | [('2026-09', 110.574), ('2026-08', 110.33)]
+IPC290776 | Nacional. Transporte. Variación mensual.  | [('2026-09', 0.2), ('2026-08', 3.3)]
+IPC290774 | Nacional. Transporte. Variación anual.  | [('2026-09', 10.5), ('2026-08', 9.5)]
+IPC290777 | Nacional. Transporte. Variación en lo que va de año.  | [('2026-09', 9.8), ('2026-08', 9.6)]
+IPC290783 | Nacional. Información y comunicaciones. Índice.  | [('2026-09', 102.338), ('2026-08', 102.348)]
+IPC290784 | Nacional. Información y comunicaciones. Variación mensual.  | [('2026-09', 0.0), ('2026-08', 1.1)]
+IPC290782 | Nacional. Información y comunicaciones. Variación anual.  | [('2026-09', 3.2), ('2026-08', 3.1)]
+IPC290785 | Nacional. Información y comunicaciones. Variación en lo que va de año.  | [('2026-09', 3.3), ('2026-08', 3.3)]
+IPC290787 | Nacional. Actividades recreativas, deporte y cultura. Índice.  | [('2026-09', 103.541), ('2026-08', 106.198)]
+IPC290788 | Nacional. Actividades recreativas, deporte y cultura. Variación mensual.  | [('2026-09', -2.5), ('2026-08', 0.7)]
+IPC290786 | Nacional. Actividades recreativas, deporte y cultura. Variación anual.  | [('2026-09', 3.6), ('2026-08', 1.2)]
+IPC290789 | Nacional. Actividades recreativas, deporte y cultura. Variación en lo que va de año.  | [('2026-09', 1.9), ('2026-08', 4.5)]
+IPC290791 | Nacional. Enseñanza. Índice.  | [('2026-09', 102.764), ('2026-08', 101.89)]
+IPC290792 | Nacional. Enseñanza. Variación mensual.  | [('2026-09', 0.9), ('2026-08', 0.0)]
+IPC290790 | Nacional. Enseñanza. Variación anual.  | [('2026-09', 2.0), ('2026-08', 2.5)]
+IPC290793 | Nacional. Enseñanza. Variación en lo que va de año.  | [('2026-09', 1.0), ('2026-08', 0.1)]
+IPC290795 | Nacional. Restaurantes y servicios de alojamiento. Índice.  | [('2026-09', 106.55), ('2026-08', 106.132)]
+IPC290796 | Nacional. Restaurantes y servicios de alojamiento. Variación mensual.  | [('2026-09', 0.4), ('2026-08', 0.2)]
+IPC290794 | Nacional. Restaurantes y servicios de alojamiento. Variación anual.  | [('2026-09', 4.9), ('2026-08', 4.8)]
+IPC290797 | Nacional. Restaurantes y servicios de alojamiento. Variación en lo que va de año.  | [('2026-09', 5.4), ('2026-08', 5.0)]
+IPC290799 | Nacional. Seguros y servicios financieros. Índice.  | [('2026-09', 104.575), ('2026-08', 104.454)]
+IPC290800 | Nacional. Seguros y servicios financieros. Variación mensual.  | [('2026-09', 0.1), ('2026-08', 0.0)]
+IPC290798 | Nacional. Seguros y servicios financieros. Variación anual.  | [('2026-09', 3.4), ('2026-08', 3.3)]
+IPC290801 | Nacional. Seguros y servicios financieros. Variación en lo que va de año.  | [('2026-09', 3.4), ('2026-08', 3.3)]
+IPC290803 | Nacional. Cuidado personal, protección social, y bienes y servicios diversos. Índice.  | [('2026-09', 103.31), ('2026-08', 103.325)]
+IPC290804 | Nacional. Cuidado personal, protección social, y bienes y servicios diversos. Variación mensual.  | [('2026-09', 0.0), ('2026-08', 0.2)]
+IPC290802 | Nacional. Cuidado personal, protección social, y bienes y servicios diversos. Variación anual.  | [('2026-09', 3.1), ('2026-08', 3.2)]
+IPC290805 | Nacional. Cuidado personal, protección social, y bienes y servicios diversos. Variación en lo que va de año.  | [('2026-09', 2.3), ('2026-08', 2.3)]
