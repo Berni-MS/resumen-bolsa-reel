@@ -3,8 +3,10 @@
 // Uso: node build-calendar.mjs <item.json> [YYYY-MM-DD lunes de la semana]
 import fs from 'node:fs';
 
-const dst = process.argv[2] || 'item.json';
-const forcedMonday = process.argv[3];
+const ARGS = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const DAY_MODE = process.argv.includes('--day');
+const dst = ARGS[0] || 'item.json';
+const forcedMonday = ARGS[1];
 const CAL = JSON.parse(fs.readFileSync(new URL('./data/calendar.json', import.meta.url), 'utf8'));
 
 const MES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
@@ -99,6 +101,21 @@ const EXPL = {
   opciones: ['El vencimiento de opciones', 'Los contratos de opciones y futuros tienen fecha de caducidad, normalmente el tercer viernes del mes. Ese día se cierran muchas posiciones a la vez, hay más volumen y pueden darse movimientos bruscos sin noticia nueva.'],
   festivo: ['Mercados cerrados', 'Cuando un mercado cierra por festivo, no hay precios nuevos en él. Conviene saberlo para no esperar una subida o bajada que no puede ocurrir ese día, y porque los días de cierre anticipado suelen tener poco volumen.']
 };
+
+
+if (DAY_MODE) {
+  const today = forcedMonday || madridToday;
+  const evs = events.filter(e => e.date === today && e.impact >= 2);
+  const earn = earnings.filter(e => e.date === today);
+  const BLURB = { fed: 'Decisión sobre los tipos y mensaje de su presidente: ahí están las pistas.', bce: 'Decisión a las 14:15 y rueda de prensa después.', ipc: 'Si sale por encima de lo esperado, el mercado teme tipos altos más tiempo.', empleo: 'Empleo muy fuerte o muy débil: ambos pueden mover los índices.', opciones: 'Más volumen y movimientos bruscos sin noticia nueva.', festivo: 'Sin precios nuevos en ese mercado.' };
+  const rowsD = evs.map(e => ({ t: e.time || '', n: e.title, k: e.impact, b: BLURB[e.type] || '' }));
+  for (const e of earn) rowsD.push({ t: whenTxt(e.when), n: `${e.name} presenta resultados`, k: 1, b: 'Las cifras y las previsiones suelen mover la acción y a su sector.' });
+  const d = parse(today);
+  const out = { empty: rowsD.length === 0, date: today, label: `${DIA[d.getUTCDay()]} ${d.getUTCDate()} de ${MES[d.getUTCMonth()]}`, rows: rowsD.slice(0, 4), earningsOk };
+  fs.writeFileSync(dst, JSON.stringify(out, null, 2));
+  console.log(`::notice::Día ${today}: ${rowsD.length} citas`);
+  process.exit(0);
+}
 
 const slides = [];
 const range = `${monday.getUTCDate()}–${friday.getUTCDate()}`;
