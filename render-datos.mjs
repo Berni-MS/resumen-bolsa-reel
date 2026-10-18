@@ -31,6 +31,38 @@ if (item.kind === 'luz') {
 <div style="background:${CARD};border-radius:28px;padding:${S(26)} ${S(38)}"><div style="font-size:${S(32)};font-weight:700;color:${MUTED}">La hora más cara</div><div style="display:flex;align-items:baseline;gap:${S(24)}"><span class="d" style="font-size:${S(96)};color:${RED}">${item.max.h}</span><span style="font-size:${S(40)};font-weight:700">${nf(item.max.p, 3)} €/kWh</span></div></div>
 <div style="background:${CARD};border-radius:28px;padding:${S(26)} ${S(38)};font-size:${S(40)};font-weight:700;line-height:1.25">Media del día: ${nf(item.avg, 3)} €/kWh${item.delta != null ? `<div style="font-size:${S(34)};font-weight:500;color:${MUTED}">${nf(Math.abs(item.delta), 0)} % ${item.delta <= 0 ? 'más barata' : 'más cara'} que hoy</div>` : ''}</div>`;
   footer = 'Precio PVPC (tarifa regulada) · Fuente: Red Eléctrica · No aplica si tienes precio fijo';
+} else if (item.kind === 'carburantes') {
+  header = 'Carburantes';
+  const chip = ch => ch == null ? '' : `<span style="font-size:${S(36)};font-weight:700;color:${ch <= 0 ? GREEN : RED}">${ch <= 0 ? '▼' : '▲'} ${esc(nf(Math.abs(ch), 1))} % ${item.daysAgo === 7 ? 'en la semana' : `en ${item.daysAgo} días`}</span>`;
+  const fuel = (name, f) => `<div style="flex:1;background:${CARD};border-radius:28px;padding:${S(26)} ${S(32)}"><div style="font-size:${S(36)};font-weight:700;color:${MUTED}">${name}</div><div class="d" style="font-size:${S(120)};line-height:1.05">${esc(nf(f.avg, 3))}</div><div style="font-size:${S(30)};color:${MUTED}">€ por litro</div>${chip(f.ch)}<div style="margin-top:${S(10)};font-size:${S(34)};font-weight:700">Depósito de 50 L: ${esc(nf(f.tank, 0))} €</div></div>`;
+  const list = (title, arr, c) => `<div style="background:${CARD};border-radius:28px;padding:${S(24)} ${S(38)}"><div style="font-size:${S(32)};font-weight:700;color:${MUTED};margin-bottom:${S(6)}">${title}</div>${arr.map(r => `<div style="display:flex;justify-content:space-between;font-size:${S(44)};font-weight:700;line-height:1.35"><span>${esc(r.name)}</span><span style="color:${c}">${esc(nf(r.g, 3))} €/l</span></div>`).join('')}</div>`;
+  body = `<div class="d" style="font-size:${S(170)};line-height:1">Gasolina y <span style="color:${GREEN}">diésel</span></div>
+<div style="font-size:${S(44)};font-weight:700;color:${MUTED}">Precio medio en España · ${esc(item.label)}</div>
+<div style="display:flex;gap:${S(24)}">${fuel('Gasolina 95', item.g)}${fuel('Diésel', item.d)}</div>
+${list('Gasolina 95 · provincias más baratas', item.cheap, GREEN)}${list('Gasolina 95 · provincias más caras', item.dear, RED)}
+<div style="background:${CARD};border-radius:28px;padding:${S(24)} ${S(38)};font-size:${S(38)};font-weight:700;line-height:1.3">Llenar 50 L en ${esc(item.cheap[0].name)} en vez de en ${esc(item.dear[0].name)} son <span style="color:${GREEN}">${esc(nf(item.saving, 0))} € menos</span></div>`;
+  footer = 'Media de estaciones de la Península y Baleares · Fuente: Ministerio para la Transición Ecológica';
+} else if (item.kind === 'euribor') {
+  header = 'Euríbor';
+  const dpp = (a, b) => a - b;
+  const chip = (label, other) => other == null ? '' : `<div style="font-size:${S(38)};font-weight:700;color:${dpp(item.value, other) <= 0 ? GREEN : RED}">${dpp(item.value, other) <= 0 ? '▼' : '▲'} ${esc(nf(Math.abs(dpp(item.value, other)), 2))} puntos <span style="color:${MUTED};font-weight:500">${label} (${esc(nf(other, 3))} %)</span></div>`;
+  const m = item.mortgage;
+  body = `<div class="d" style="font-size:${S(190)};line-height:1">El <span style="color:${GREEN}">Euríbor</span></div>
+<div style="font-size:${S(46)};font-weight:700;color:${MUTED}">Media de ${esc(item.label)} · a 12 meses</div>
+<div style="background:${CARD};border-radius:28px;padding:${S(30)} ${S(38)}"><div class="d" style="font-size:${S(250)};line-height:1">${esc(nf(item.value, 3))} %</div>${chip('frente al mes anterior', item.prev)}${chip('frente a hace un año', item.yago)}</div>
+${m.before != null ? `<div style="background:${CARD};border-radius:28px;padding:${S(30)} ${S(38)}"><div style="font-size:${S(32)};font-weight:700;color:${MUTED}">Ejemplo: hipoteca variable de ${esc(nf(m.capital, 0))} € a ${m.years} años (Euríbor + ${m.spread} %)</div><div style="display:flex;align-items:baseline;gap:${S(24)}"><span class="d" style="font-size:${S(120)};color:${m.diff <= 0 ? GREEN : RED}">${m.diff <= 0 ? '−' : '+'}${esc(nf(Math.abs(m.diff), 0))} €</span><span style="font-size:${S(40)};font-weight:700">al mes que hace un año</span></div><div style="font-size:${S(34)};color:${MUTED}">Cuota de ${esc(nf(m.now, 0))} € hoy · ${esc(nf(m.before, 0))} € entonces</div></div>` : `<div style="background:${CARD};border-radius:28px;padding:${S(30)} ${S(38)};font-size:${S(40)};font-weight:700">Cuota de ejemplo (${esc(nf(m.capital, 0))} € a ${m.years} años, Euríbor + ${m.spread} %): ${esc(nf(m.now, 0))} € al mes</div>`}`;
+  footer = 'Euríbor a 12 meses, media mensual · Fuente: BCE · Ejemplo orientativo; tu banco revisa en su fecha · No es asesoramiento';
+} else if (item.kind === 'ipc') {
+  header = 'Inflación';
+  const hundred = 100 * (1 + item.annual / 100);
+  const arrow = (v, p) => p == null ? '' : `<div style="font-size:${S(38)};font-weight:700;color:${v <= p ? GREEN : RED}">${v <= p ? '▼' : '▲'} <span style="color:${MUTED};font-weight:500">${item.prevMonth ? 'en ' + esc(item.prevMonth) + ': ' : 'antes: '}${esc(nf(p, 1))} %</span></div>`;
+  const rows = item.groups.map(g => `<div style="display:flex;align-items:center;justify-content:space-between;background:${CARD};border-radius:28px;padding:${S(20)} ${S(38)}"><span style="font-size:${S(44)};font-weight:700">${esc(g.name)}</span><span style="font-size:${S(52)};font-weight:700;color:${g.v >= item.annual ? RED : GREEN}">${g.v >= 0 ? '' : '−'}${esc(nf(Math.abs(g.v), 1))} %</span></div>`).join('');
+  body = `<div class="d" style="font-size:${S(190)};line-height:1">La <span style="color:${GREEN}">inflación</span></div>
+<div style="font-size:${S(46)};font-weight:700;color:${MUTED}">IPC de ${esc(item.month)} · variación en 12 meses</div>
+<div style="background:${CARD};border-radius:28px;padding:${S(30)} ${S(38)}"><div class="d" style="font-size:${S(250)};line-height:1">${esc(nf(item.annual, 1))} %</div>${arrow(item.annual, item.annualPrev)}<div style="font-size:${S(36)};color:${MUTED}">${item.monthly >= 0 ? '+' : '−'}${esc(nf(Math.abs(item.monthly), 1))} % respecto al mes anterior</div></div>
+<div style="background:${CARD};border-radius:28px;padding:${S(26)} ${S(38)};font-size:${S(42)};font-weight:700;line-height:1.3">Lo que hace un año costaba 100 €, hoy cuesta <span style="color:${item.annual > 0 ? RED : GREEN}">${esc(nf(hundred, 2))} €</span></div>
+<div style="font-size:${S(34)};font-weight:700;color:${MUTED}">Cuánto ha subido cada cosa en un año</div>${rows}`;
+  footer = 'Tasa anual del IPC, base 2025 · Fuente: INE · En rojo, lo que sube más que la media';
 } else {
   header = 'Tu dinero hoy';
   const rows = item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:${S(24)} ${S(38)};display:flex;align-items:center;justify-content:space-between;gap:${S(24)}">
