@@ -115,7 +115,7 @@ jobs:
           DRY: ${{ inputs.dry_run }}
         run: |
           set -uo pipefail
-          node render-teaser.mjs out/01.jpg "$(jq -r '.label // empty' item.json)" teaser.png
+          node render-teaser.mjs out/01.jpg "$(cat out/series.txt 2>/dev/null || jq -r '.label // empty' item.json)" teaser.png
           NAME="aviso-$(jq -r .id item.json | tr -c 'A-Za-z0-9\n_-' '-')-${GITHUB_RUN_ID}.png"
           git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
           REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"

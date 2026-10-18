@@ -2,6 +2,7 @@
 // Uso: node render-carousel.mjs <item.json> <outDir>
 import fs from 'node:fs';
 import { ctaBlock } from './cta.mjs';
+import { SERIES, episode } from './series.mjs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
@@ -17,6 +18,9 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const INK = '#0F1B33', GREEN = '#35D07F', RED = '#FF5247', MUTED = '#9FB0CC', CARD = '#16264A', SOFT = '#DCE5F5';
 const N = item.slides.length;
+const SER = SERIES[process.env.CAROUSEL_KIND || ''];
+const EP = SER ? episode(process.env.CAROUSEL_KIND, item.id || '') : 0;
+const SERIES_LABEL = SER ? `${SER.name} · Nº ${EP}` : '';
 if (N < 2 || N > 10) throw new Error('El carrusel debe tener entre 2 y 10 diapositivas');
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -46,6 +50,7 @@ function body(sl, accent) {
   switch (sl.t) {
     case 'cover':
       return `<div style="display:flex;flex-direction:column;gap:${px(36)}">
+        ${SER ? `<div style="align-self:flex-start;background:${A};color:${INK};border-radius:999px;padding:${px(10)} ${px(30)};font-size:${px(38)};font-weight:700">${esc(SERIES_LABEL)}</div>` : ''}
         <div class="d" style="font-size:${px(sl.bigSize || 300)};line-height:.85;color:${A}">${esc(sl.big)}</div>
         <div class="d" style="font-size:${px(120)};line-height:1.1">${rich(sl.title, A)}</div></div>`;
     case 'point':
@@ -95,7 +100,8 @@ function body(sl, accent) {
 const mythCount = item.slides.filter(x => x.t === 'myth').length;
 function labelFor(sl, i) {
   if (sl.label) return sl.label;
-  if (sl.t === 'myth' && mythCount > 1) return `Mito ${item.slides.slice(0, i + 1).filter(x => x.t === 'myth').length} de ${mythCount}`;
+  if (sl.t === 'myth' && mythCount > 1) return `Mito ${item.slides.slice(0, i + 1).filter(x => x.t === 'myth').length} de ${mythCount}${SER ? ` · Nº ${EP}` : ''}`;
+  if (SER && !(i === 0 && item.label && item.label !== SER.name)) return SERIES_LABEL;
   return item.label || '';
 }
 
@@ -143,10 +149,11 @@ await browser.close();
 // Texto de la publicación
 const legal = 'ℹ️ Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.';
 const src = item.sources && item.sources.length ? '\n\nFuentes: ' + item.sources.join(' · ') : '';
-const tags = [...new Set([...(item.tags || []), '#tuamigodelasfinanzas'])].join(' ');
+const tags = [...new Set([...(item.tags || []), ...(SER ? [SER.tag] : []), '#tuamigodelasfinanzas'])].join(' ');
 const kindArg = process.env.CAROUSEL_KIND || '';
-const caption = `${item.caption}${src}\n\n${ctaBlock(item.caption, kindArg, item.id || '')}\n\n${legal}\n\n${tags}`;
+const caption = `${item.caption}${src}\n\n${ctaBlock(item.caption, kindArg, item.id || '')}${SER ? `\n📌 Serie «${SER.name}», cada ${SER.day}.` : ''}\n\n${legal}\n\n${tags}`;
 fs.writeFileSync(path.join(outDir, 'caption.txt'), caption);
+if (SER) fs.writeFileSync(path.join(outDir, 'series.txt'), SERIES_LABEL);
 console.log(`Texto: ${caption.length} caracteres`);
 if (caption.length > 2200) warnings.push(`Texto demasiado largo (${caption.length})`);
 if ((caption.match(/#/g) || []).length > 30) warnings.push('Más de 30 hashtags');
