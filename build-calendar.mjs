@@ -127,7 +127,7 @@ if (week.length === 0 && earnWeek.length === 0) {
   const merged = [...week.map(e => ({ date: e.date, time: e.time || '', ...rowOf(e) })), ...earnWeek.map(e => ({ date: e.date, time: '', d: label(parse(e.date)), t: whenTxt(e.when), n: `${e.name} presenta resultados`, k: 1 }))]
     .sort((a, b) => a.date.localeCompare(b.date) || (a.t || '').localeCompare(b.t || ''));
   for (let i = 0; i < merged.length && slides.length < 3; i += 5) {
-    slides.push({ t: 'agenda', head: i === 0 ? 'Tu semana, día a día' : 'Y además…', kicker: 'Hora de Madrid', rows: merged.slice(i, i + 5).map(({ d, t, n, k }) => ({ d, t, n, k })), foot: 'Rojo: mueve el mercado · Verde: a vigilar' });
+    slides.push({ t: 'agenda', head: i === 0 ? 'Tu semana' : 'Y además…', kicker: 'Día a día · hora de Madrid', rows: merged.slice(i, i + 5).map(({ d, t, n, k }) => ({ d, t, n, k })), foot: 'Rojo: mueve el mercado · Verde: a vigilar' });
   }
 }
 // Explicación del evento principal
