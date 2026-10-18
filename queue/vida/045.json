@@ -1,0 +1,81 @@
+{
+  "id": "vida-045-extracto",
+  "label": "Cómo leer tu extracto",
+  "accent": "green",
+  "caption": "Cómo leer tu extracto bancario 🔍 Diez minutos que revelan mucho.\n\nDesliza para ver qué buscar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#banca",
+    "#extracto",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔍",
+      "title": "Cómo leer tu extracto bancario",
+      "foot": "Diez minutos que revelan mucho"
+    },
+    {
+      "t": "point",
+      "head": "Tu extracto es [[tu mapa]]",
+      "body": "Ahí está todo lo que entra y sale. Revisarlo cada mes te da una foto real de tu dinero.",
+      "foot": "Una foto real",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "steps",
+      "head": "Qué buscar",
+      "steps": [
+        {
+          "t": "Cargos que no reconoces",
+          "b": "Pueden ser errores o fraudes."
+        },
+        {
+          "t": "Suscripciones olvidadas",
+          "b": "Cuotas repetidas."
+        },
+        {
+          "t": "Comisiones",
+          "b": "Mantenimiento y otros."
+        },
+        {
+          "t": "Tus mayores gastos",
+          "b": "Los cinco principales."
+        }
+      ],
+      "foot": "Cuatro cosas"
+    },
+    {
+      "t": "point",
+      "head": "Clasifica [[por categorías]]",
+      "body": "Vivienda, comida, ocio, transporte… Verás dónde se va el dinero de verdad.",
+      "foot": "Orden",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Si ves algo raro, [[avisa]]",
+      "body": "Contacta con tu banco cuanto antes. Los plazos para reclamar importan.",
+      "foot": "Actúa",
+      "kicker": "Importante"
+    },
+    {
+      "t": "point",
+      "head": "Haz de esto un [[hábito]]",
+      "body": "Un día al mes, con un café. Es la mejor inversión de diez minutos.",
+      "foot": "Rutina",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Lo que no miras, [[no controlas]]",
+      "body": "Abre hoy tu último extracto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa el tuyo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

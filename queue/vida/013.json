@@ -1,0 +1,81 @@
+{
+  "id": "vida-013-garantias",
+  "label": "Garantías y devoluciones",
+  "accent": "green",
+  "caption": "Garantías y devoluciones 🔁 Tus derechos cuando algo falla o no te convence.\n\nDesliza para ver lo básico. Información general: consulta la normativa vigente.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#consumo",
+    "#garantia",
+    "#devoluciones",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔁",
+      "title": "Garantías y devoluciones",
+      "foot": "Tus derechos de consumidor"
+    },
+    {
+      "t": "point",
+      "head": "La [[garantía legal]]",
+      "body": "Si compras un producto y tiene un defecto, tienes derecho a que lo reparen, sustituyan o te devuelvan el dinero, según el caso.",
+      "foot": "Qué es",
+      "kicker": "Primero"
+    },
+    {
+      "t": "point",
+      "head": "En compras [[online]]",
+      "body": "Por lo general, tienes un plazo para desistir y devolver sin explicar el motivo. Mira las condiciones de cada compra.",
+      "foot": "Derecho de desistimiento",
+      "kicker": "Online"
+    },
+    {
+      "t": "steps",
+      "head": "Si algo falla",
+      "steps": [
+        {
+          "t": "Guarda el ticket o la factura",
+          "b": "Es tu prueba."
+        },
+        {
+          "t": "Contacta con el vendedor",
+          "b": "Por escrito."
+        },
+        {
+          "t": "Describe el problema",
+          "b": "Con fotos."
+        },
+        {
+          "t": "Si no responden, reclama",
+          "b": "Con las vías oficiales."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Lee [[la política de devolución]]",
+      "body": "Algunos comercios ofrecen más plazo que el mínimo legal. Compruébalo antes de comprar.",
+      "foot": "Antes de comprar",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Conserva [[la prueba]]",
+      "body": "Facturas y comunicaciones sirven si hay un conflicto. Guárdalas en un sitio fácil de encontrar.",
+      "foot": "Orden",
+      "kicker": "Hábito"
+    },
+    {
+      "t": "close",
+      "head": "Conocer tus derechos [[es ahorrar]]",
+      "body": "Guarda tus tickets de las compras importantes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta la normativa vigente.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

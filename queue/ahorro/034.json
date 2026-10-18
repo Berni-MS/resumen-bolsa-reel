@@ -1,0 +1,97 @@
+{
+  "id": "ahorro-034-vacaciones",
+  "label": "Vacaciones sin deudas",
+  "accent": "green",
+  "caption": "Vacaciones sin deudas ✈️ Cómo pagarlas con lo que has ahorrado, no con lo que deberás.\n\nDesliza para ver cómo planificar tu viaje con calma.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vacaciones",
+    "#ahorro",
+    "#viajes",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "✈️",
+      "title": "Vacaciones sin deudas",
+      "foot": "Pagarlas con lo que ya tienes"
+    },
+    {
+      "t": "point",
+      "head": "Primero, [[cuánto cuestan]]",
+      "body": "Alojamiento, transporte, comida, actividades y un margen para imprevistos. Pon un número total.",
+      "foot": "Haz el presupuesto",
+      "kicker": "Paso 1"
+    },
+    {
+      "t": "stat",
+      "big": "÷ meses",
+      "head": "Divide entre los meses que quedan",
+      "body": "Si tu viaje cuesta 1.200 euros y faltan 6 meses, necesitas ahorrar 200 euros al mes. Son números de ejemplo.",
+      "foot": "La fórmula",
+      "kicker": "Paso 2",
+      "color": "green",
+      "bigSize": 170
+    },
+    {
+      "t": "steps",
+      "head": "Cómo organizarlo",
+      "steps": [
+        {
+          "t": "Abre un apartado «Viaje»",
+          "b": "Con nombre."
+        },
+        {
+          "t": "Programa el ahorro",
+          "b": "Una cantidad fija mensual."
+        },
+        {
+          "t": "Reserva con antelación",
+          "b": "Suele salir más barato."
+        },
+        {
+          "t": "Deja un colchón",
+          "b": "Un 10 % para imprevistos."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde se puede ahorrar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Fechas",
+          "b": "Fuera de temporada o entre semana."
+        },
+        {
+          "t": "Alojamiento",
+          "b": "Compara tipos y zonas."
+        },
+        {
+          "t": "Comidas",
+          "b": "Mezcla restaurantes y mercados."
+        }
+      ],
+      "foot": "Sin renunciar"
+    },
+    {
+      "t": "point",
+      "head": "Evita pagar a [[crédito]]",
+      "body": "Financiar un viaje con tarjeta puede salir caro. Si no llegas, mejor un viaje más corto.",
+      "foot": "Sin intereses",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Viaja [[sin que la deuda viaje contigo]]",
+      "body": "Pon cifra y fecha a tu próximo viaje.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y planifica el tuyo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

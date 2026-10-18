@@ -1,0 +1,84 @@
+{
+  "id": "ahorro-023-redondeo",
+  "label": "Ahorro por redondeo",
+  "accent": "green",
+  "caption": "El ahorro por redondeo 🪙 Ahorrar sin darte cuenta, euro a euro.\n\nDesliza para ver cómo funciona y cómo hacerlo a mano si tu banco no lo ofrece.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#redondeo",
+    "#habitos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🪙",
+      "title": "Ahorra sin darte cuenta",
+      "foot": "El truco del redondeo"
+    },
+    {
+      "t": "point",
+      "head": "La idea: [[redondea]] cada compra",
+      "body": "Si pagas 3,40 €, apartas 0,60 € hasta llegar a 4 €. Es poco cada vez, pero se suma.",
+      "foot": "Pequeño y constante",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "stat",
+      "big": "180 €",
+      "head": "en un año, con 30 compras al mes",
+      "body": "Si redondeas 30 compras al mes a unos 0,50 € de media, apartas 15 € al mes: 180 € al año. Con 60 compras, serían 360.",
+      "foot": "Un ejemplo ilustrativo",
+      "kicker": "Con números",
+      "color": "green",
+      "bigSize": 190
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Mira si tu banco lo ofrece",
+          "b": "Algunos lo incluyen."
+        },
+        {
+          "t": "Si no, hazlo a mano",
+          "b": "Una transferencia semanal."
+        },
+        {
+          "t": "Elige un redondeo",
+          "b": "A 1 euro o al siguiente 5."
+        },
+        {
+          "t": "Revisa el total cada mes",
+          "b": "Verás cómo crece."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Funciona porque [[no lo notas]]",
+      "body": "Son cantidades pequeñas. La constancia hace el trabajo.",
+      "foot": "Psicología a tu favor",
+      "kicker": "La clave"
+    },
+    {
+      "t": "point",
+      "head": "No es sustituto de un [[ahorro fijo]]",
+      "body": "Es un complemento. Mantén tu transferencia mensual.",
+      "foot": "Suma, no resta",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Los euros pequeños [[también cuentan]]",
+      "body": "Prueba un mes y mira el resultado.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y pruébalo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

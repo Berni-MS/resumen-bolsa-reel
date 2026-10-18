@@ -1,0 +1,82 @@
+{
+  "id": "vida-024-fgd",
+  "label": "Tus depósitos están protegidos",
+  "accent": "green",
+  "caption": "¿Están protegidos tus ahorros? 🛡️ El Fondo de Garantía de Depósitos explicado.\n\nDesliza para ver qué protege y hasta cuánto.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#fondodegarantia",
+    "#ahorro",
+    "#banca",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "100.000 €",
+      "title": "por titular y por entidad",
+      "foot": "Tus depósitos están protegidos",
+      "bigSize": 200
+    },
+    {
+      "t": "point",
+      "head": "Existe un [[fondo de garantía]]",
+      "body": "Si una entidad quiebra, el Fondo de Garantía de Depósitos protege los depósitos hasta un límite.",
+      "foot": "La red de seguridad",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "stat",
+      "big": "100.000 €",
+      "head": "El límite de la garantía",
+      "body": "Por titular y por entidad. Si tienes una cuenta conjunta, el límite se aplica a cada titular.",
+      "foot": "Límite oficial",
+      "kicker": "Cuánto",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "cards",
+      "head": "Qué suele cubrir",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cuentas",
+          "b": "Corrientes y de ahorro."
+        },
+        {
+          "t": "Depósitos a plazo",
+          "b": "Con el límite."
+        },
+        {
+          "t": "Intereses devengados",
+          "b": "Dentro del límite."
+        }
+      ],
+      "foot": "Principalmente"
+    },
+    {
+      "t": "point",
+      "head": "No cubre [[las inversiones]]",
+      "body": "Acciones o fondos de inversión no están en esa garantía, aunque los compres en un banco.",
+      "foot": "Importante",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Si superas el límite, [[reparte]]",
+      "body": "Algunas personas dividen el dinero entre varias entidades. Valora la comodidad y las comisiones.",
+      "foot": "Una opción",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Saber qué está protegido [[da tranquilidad]]",
+      "body": "Consulta el límite y las condiciones en fuentes oficiales.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

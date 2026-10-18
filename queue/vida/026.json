@@ -1,0 +1,81 @@
+{
+  "id": "vida-026-irpf",
+  "label": "Qué es el IRPF",
+  "accent": "green",
+  "caption": "Qué es el IRPF 💶 El impuesto que ves en tu nómina.\n\nDesliza para entender cómo funciona sin tecnicismos. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#irpf",
+    "#impuestos",
+    "#nomina",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "IRPF",
+      "title": "El impuesto que ves en tu nómina",
+      "foot": "Explicado sin tecnicismos"
+    },
+    {
+      "t": "point",
+      "head": "Un impuesto sobre [[tus ingresos]]",
+      "body": "Es el Impuesto sobre la Renta de las Personas Físicas. Cuanto más ganas, mayor es el porcentaje que corresponde.",
+      "foot": "Progresivo",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "point",
+      "head": "Se llama [[progresivo]]",
+      "body": "No todo tu dinero tributa al mismo porcentaje: se aplica por tramos. Pasar a un tramo superior no hace que tributes más por todo.",
+      "foot": "Un error muy común",
+      "kicker": "Un mito"
+    },
+    {
+      "t": "point",
+      "head": "En tu nómina, [[la retención]]",
+      "body": "Tu empresa descuenta un adelanto y lo ingresa a Hacienda. En la Renta se ajusta.",
+      "foot": "Un adelanto",
+      "kicker": "En la práctica"
+    },
+    {
+      "t": "point",
+      "head": "Circunstancias [[personales]]",
+      "body": "Hijos, discapacidad o hipoteca pueden afectar a lo que pagas. Revísalo con tu empresa o gestor.",
+      "foot": "Cada caso es distinto",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Qué puedes hacer",
+      "steps": [
+        {
+          "t": "Mira tu nómina",
+          "b": "Cuánto te retienen."
+        },
+        {
+          "t": "Revisa tus datos",
+          "b": "Que estén al día."
+        },
+        {
+          "t": "Comunica cambios a tu empresa",
+          "b": "Si cambia tu situación."
+        },
+        {
+          "t": "Haz la Renta con tiempo",
+          "b": "Para evitar prisas."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Entender tu nómina [[es entender tu dinero]]",
+      "body": "Información general: consulta fuentes oficiales.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa tu retención.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

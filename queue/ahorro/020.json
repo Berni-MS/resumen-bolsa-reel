@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-020-base-cero",
+  "label": "Presupuesto base cero",
+  "accent": "green",
+  "caption": "Presupuesto base cero 0️⃣ Que cada euro tenga un destino.\n\nDesliza para ver cómo se hace y por qué ayuda tanto a ahorrar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#presupuesto",
+    "#ahorro",
+    "#basecero",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "0",
+      "title": "Presupuesto base cero",
+      "foot": "Que cada euro tenga un destino"
+    },
+    {
+      "t": "point",
+      "head": "Ingresos [[menos]] gastos [[igual a cero]]",
+      "body": "Asignas todo tu sueldo a algo: gastos, ahorro, deudas. Lo que no tiene destino se gasta sin pensar.",
+      "foot": "La idea",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Apunta tu sueldo neto",
+          "b": "Lo que llega a la cuenta."
+        },
+        {
+          "t": "Resta lo fijo",
+          "b": "Alquiler, suministros, cuotas."
+        },
+        {
+          "t": "Asigna ahorro",
+          "b": "Antes que lo variable."
+        },
+        {
+          "t": "Reparte el resto",
+          "b": "Comida, ocio, imprevistos."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "El ahorro [[también es un gasto]]",
+      "body": "Ponlo en la lista con su cantidad. Así deja de ser «lo que sobre».",
+      "foot": "Prioridades",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "point",
+      "head": "Deja un [[margen]]",
+      "body": "Una categoría «imprevistos» evita que un gasto inesperado rompa tu plan.",
+      "foot": "Realismo",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Revísalo [[cada mes]]",
+      "body": "Si te pasas en una categoría, ajusta otra. El presupuesto es una herramienta, no un examen.",
+      "foot": "Flexibilidad",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Cuando todo tiene destino, [[nada se pierde]]",
+      "body": "Haz el tuyo este fin de semana.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y hazlo con papel y lápiz.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,92 +1,76 @@
 {
-  "id": "ahorro-009-ingresos-variables",
-  "label": "Ingresos variables",
+  "id": "ahorro-009-24-horas",
+  "label": "Regla de las 24 horas",
   "accent": "green",
-  "caption": "Ingresos variables 🎢 Si cobras distinto cada mes, ordenar el dinero cuesta más. Esta es una forma sencilla de hacerlo.\n\nDesliza para ver el método del «sueldo propio».\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "caption": "La regla de las 24 horas ⏳ Un truco sencillo para dejar de comprar por impulso.\n\nDesliza para ver cómo se aplica y qué preguntas te ayudan a decidir.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
     "#ahorro",
-    "#autonomos",
-    "#presupuesto",
+    "#compras",
+    "#finanzaspersonales",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "🎢",
-      "title": "Si cobras distinto cada mes",
-      "foot": "Cómo ordenar un sueldo variable"
+      "big": "24 h",
+      "title": "antes de comprar por impulso",
+      "foot": "El truco más simple"
     },
     {
       "t": "point",
-      "head": "El problema: no sabes [[cuánto vendrá]]",
-      "body": "Un mes entra mucho y otro poco. Gastar según lo que entra te deja sin margen en los meses flojos.",
-      "foot": "La montaña rusa",
-      "kicker": "Por qué cuesta"
-    },
-    {
-      "t": "steps",
-      "head": "El método del «sueldo propio»",
-      "steps": [
-        {
-          "t": "Calcula tu mes mínimo",
-          "b": "Lo que necesitas para vivir."
-        },
-        {
-          "t": "Mira tus peores meses",
-          "b": "Y tus ingresos medios."
-        },
-        {
-          "t": "Ponte un sueldo fijo",
-          "b": "Una cantidad que sea realista."
-        },
-        {
-          "t": "Mueve el resto a un colchón",
-          "b": "Los meses buenos cubren los malos."
-        }
-      ],
-      "foot": "Cuatro pasos"
+      "head": "La [[regla]]",
+      "body": "Si no es una necesidad urgente, espera 24 horas antes de pagar. Para compras grandes, espera una semana.",
+      "foot": "Esperar es gratis",
+      "kicker": "Cómo funciona"
     },
     {
       "t": "point",
-      "head": "Una cuenta para [[cobrar]], otra para [[vivir]]",
-      "body": "Todo lo que entra va a la primera. Cada mes te transfieres a la segunda tu sueldo propio.",
-      "foot": "Dos cuentas",
-      "kicker": "Cómo organizarlo"
-    },
-    {
-      "t": "point",
-      "head": "Piensa en [[impuestos]]",
-      "body": "Si eres autónomo, aparta un porcentaje de cada ingreso para cuotas e impuestos. Consúltalo con tu gestor.",
-      "foot": "No gastes lo que no es tuyo",
-      "kicker": "Un aviso"
+      "head": "Por qué [[funciona]]",
+      "body": "El impulso baja con las horas. Muchas veces, al día siguiente ya no lo quieres tanto.",
+      "foot": "La emoción se enfría",
+      "kicker": "La razón"
     },
     {
       "t": "cards",
-      "head": "Cuida tu colchón",
+      "head": "Tres preguntas antes de comprar",
       "accent": "green",
       "cards": [
         {
-          "t": "Más grande que el estándar",
-          "b": "Con ingresos variables, 6 meses de gastos suele ser más prudente."
+          "t": "¿Lo necesito o lo quiero?",
+          "b": "Ser sincero ayuda."
         },
         {
-          "t": "Sepáralo del resto",
-          "b": "Para que no se mezcle."
+          "t": "¿Cuántas horas de trabajo cuesta?",
+          "b": "Divide el precio entre lo que ganas por hora."
         },
         {
-          "t": "Repón lo que uses",
-          "b": "Prioridad en los meses buenos."
+          "t": "¿Tengo algo parecido?",
+          "b": "A veces ya lo tienes."
         }
       ],
-      "foot": "Más seguridad"
+      "foot": "Para decidir mejor"
+    },
+    {
+      "t": "point",
+      "head": "Pon un [[botón de pausa]]",
+      "body": "Guarda el producto en la cesta o en una lista de deseos. Si en una semana sigues queriéndolo, cómpralo sin culpa.",
+      "foot": "Una lista de espera",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "No es [[privarte]]",
+      "body": "Es decidir con la cabeza fría. Habrá cosas que merezcan la pena, y entonces las disfrutarás más.",
+      "foot": "Sin culpa",
+      "kicker": "Ojo"
     },
     {
       "t": "close",
-      "head": "Tu sueldo puede ser [[estable]], aunque tus ingresos no",
-      "body": "Con dos cuentas y un sueldo propio, ordenas el caos.",
+      "head": "Esperar es [[ahorrar]]",
+      "body": "Prueba una semana y cuenta cuántas compras ya no te hacían falta.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y envíaselo a un autónomo.",
+      "extra": "Guárdalo para la próxima vez que tengas un impulso.",
       "extraBold": true,
       "extraSize": 36
     }

@@ -14,7 +14,9 @@ const START = Date.UTC(2026, 9, 19);
 const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());
 const [y, m, d] = today.split('-').map(Number);
 const week = Math.floor((Date.UTC(y, m - 1, d) - START) / (7 * 86400000));
-const idx = forced !== undefined && forced !== '' ? Number(forced) : ((week % queue.length) + queue.length) % queue.length;
+// ahorro y vida: el nº 1 de cada cola ya se publicó como prueba, así que arrancan en el 2 y el 1 cierra el ciclo
+const OFFSET = { ahorro: 1, vida: 1 }[kind] || 0;
+const idx = forced !== undefined && forced !== '' ? Number(forced) : (((week + OFFSET) % queue.length) + queue.length) % queue.length;
 const item = queue[idx];
 if (!item) throw new Error(`No hay carrusel con índice ${idx}`);
 fs.writeFileSync(dst, JSON.stringify(item, null, 2));

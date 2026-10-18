@@ -1,0 +1,94 @@
+{
+  "id": "vida-032-letras-tesoro",
+  "label": "Letras del Tesoro",
+  "accent": "green",
+  "caption": "Letras del Tesoro 🏛️ Prestarle dinero al Estado: qué son y cómo funcionan.\n\nDesliza para ver lo básico. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#letrasdeltesoro",
+    "#ahorro",
+    "#rentafija",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏛️",
+      "title": "Letras del Tesoro",
+      "foot": "Prestarle dinero al Estado"
+    },
+    {
+      "t": "point",
+      "head": "Deuda [[a corto plazo]]",
+      "body": "Son títulos de deuda pública emitidos por el Estado con vencimientos de menos de dos años.",
+      "foot": "Qué son",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "Se compran con [[descuento]]",
+      "body": "Pagas menos que el valor que recibirás al vencimiento. La diferencia es tu rentabilidad.",
+      "foot": "Cómo ganan",
+      "kicker": "Cómo funcionan"
+    },
+    {
+      "t": "cards",
+      "head": "Qué tener en cuenta",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Rentabilidad variable",
+          "b": "Depende del tipo en cada subasta."
+        },
+        {
+          "t": "Venta antes del vencimiento",
+          "b": "Puedes vender, pero con el precio de mercado."
+        },
+        {
+          "t": "Riesgo",
+          "b": "Bajo, pero no inexistente."
+        }
+      ],
+      "foot": "Matices"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo se contratan",
+      "steps": [
+        {
+          "t": "Con el Tesoro o tu entidad",
+          "b": "Consulta canales oficiales."
+        },
+        {
+          "t": "Elige un plazo",
+          "b": "Según tu objetivo."
+        },
+        {
+          "t": "Revisa comisiones",
+          "b": "De custodia o compra."
+        },
+        {
+          "t": "Vigila el vencimiento",
+          "b": "Y qué haces con el dinero."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "No es una [[promesa de rentabilidad]]",
+      "body": "Mira la inflación y las alternativas. Infórmate con fuentes oficiales.",
+      "foot": "Con cabeza",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Conocer las opciones [[es tener más poder]]",
+      "body": "Consulta la información oficial del Tesoro.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento ni recomendación.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

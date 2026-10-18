@@ -1,0 +1,85 @@
+{
+  "id": "vida-042-pedir-subida",
+  "label": "Pedir una subida de sueldo",
+  "accent": "green",
+  "caption": "Pedir una subida de sueldo 📈 Cómo prepararte para la conversación.\n\nDesliza para ver un plan en 5 pasos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#sueldo",
+    "#trabajo",
+    "#negociar",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📈",
+      "title": "Pedir una subida de sueldo",
+      "foot": "Cómo preparar la conversación"
+    },
+    {
+      "t": "point",
+      "head": "Prepárate [[antes]]",
+      "body": "Pide una reunión con calma, no en el pasillo. Llega con argumentos y con una cifra razonable.",
+      "foot": "La base",
+      "kicker": "Primero"
+    },
+    {
+      "t": "steps",
+      "head": "Los pasos",
+      "steps": [
+        {
+          "t": "Apunta tus logros",
+          "b": "Con ejemplos concretos."
+        },
+        {
+          "t": "Investiga el mercado",
+          "b": "Rangos de tu puesto."
+        },
+        {
+          "t": "Elige una cifra",
+          "b": "Y un mínimo aceptable."
+        },
+        {
+          "t": "Elige el momento",
+          "b": "Tras un buen resultado."
+        },
+        {
+          "t": "Pide con tranquilidad",
+          "b": "Y escucha."
+        }
+      ],
+      "foot": "Cinco pasos"
+    },
+    {
+      "t": "point",
+      "head": "Habla de [[valor]], no de necesidades",
+      "body": "Tu empresa responde mejor a lo que aportas que a tus gastos personales.",
+      "foot": "Argumenta",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Si dicen [[que no]]",
+      "body": "Pregunta qué tendrías que lograr para una subida y cuándo podéis revisarlo. Pide un plan por escrito.",
+      "foot": "No es el final",
+      "kicker": "Plan B"
+    },
+    {
+      "t": "point",
+      "head": "Considera el [[paquete completo]]",
+      "body": "Formación, flexibilidad o vacaciones también tienen valor. A veces ayudan donde el sueldo no llega.",
+      "foot": "Más allá del salario",
+      "kicker": "Opciones"
+    },
+    {
+      "t": "close",
+      "head": "Quien no pregunta, [[no consigue]]",
+      "body": "Apunta hoy tus tres mayores logros.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y prepara tu conversación.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

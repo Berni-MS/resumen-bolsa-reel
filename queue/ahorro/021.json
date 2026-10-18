@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-021-tres-cuentas",
+  "label": "El método de las 3 cuentas",
+  "accent": "green",
+  "caption": "El método de las 3 cuentas 🏦 Una forma simple de separar tu dinero.\n\nDesliza para ver para qué sirve cada una.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#cuentas",
+    "#organizacion",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "3",
+      "title": "cuentas para ordenar tu dinero",
+      "foot": "Cada una con su función"
+    },
+    {
+      "t": "point",
+      "head": "Separar ayuda a [[no mezclar]]",
+      "body": "Cuando todo está en una cuenta es difícil saber qué es gasto y qué es ahorro.",
+      "foot": "El problema",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "cards",
+      "head": "Las tres cuentas",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cuenta de gastos",
+          "b": "Recibe tu sueldo y paga lo del día a día."
+        },
+        {
+          "t": "Cuenta de ahorro",
+          "b": "Fondo de emergencia y metas. Sin tarjeta."
+        },
+        {
+          "t": "Cuenta de proyectos",
+          "b": "Gastos anuales o viajes. Con nombre."
+        }
+      ],
+      "foot": "Cada una, un papel"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo organizarlo",
+      "steps": [
+        {
+          "t": "Abre las cuentas que falten",
+          "b": "Muchas son gratuitas."
+        },
+        {
+          "t": "Programa transferencias",
+          "b": "El día de cobro."
+        },
+        {
+          "t": "Ponles nombre",
+          "b": "Eso motiva."
+        },
+        {
+          "t": "No las mezcles",
+          "b": "Salvo emergencia real."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Para [[no complicarte]]",
+      "body": "Si no quieres tres bancos, usa apartados dentro de una misma entidad.",
+      "foot": "Versión sencilla",
+      "kicker": "Alternativa"
+    },
+    {
+      "t": "point",
+      "head": "Mira las [[comisiones]]",
+      "body": "Comprueba que las cuentas no tengan costes de mantenimiento.",
+      "foot": "Antes de abrir",
+      "kicker": "Un detalle"
+    },
+    {
+      "t": "close",
+      "head": "Con tres cuentas, [[tu dinero se ordena solo]]",
+      "body": "Empieza separando solo el ahorro.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y abre la primera.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

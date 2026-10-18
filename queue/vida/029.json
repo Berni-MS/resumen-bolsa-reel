@@ -1,0 +1,94 @@
+{
+  "id": "vida-029-pensiones",
+  "label": "Cómo pensar en tu jubilación",
+  "accent": "green",
+  "caption": "Cómo pensar en tu jubilación 🧓 Sin asustarte y sin dejarlo para el final.\n\nDesliza para ver los tres pilares habituales y por qué cuanto antes, mejor. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#jubilacion",
+    "#pensiones",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧓",
+      "title": "Cómo pensar en tu jubilación",
+      "foot": "Sin asustarte ni dejarlo para luego"
+    },
+    {
+      "t": "cards",
+      "head": "Los tres pilares",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Pensión pública",
+          "b": "Se financia con las cotizaciones de quienes trabajan."
+        },
+        {
+          "t": "Planes de empresa",
+          "b": "Algunas empresas aportan a planes de sus empleados."
+        },
+        {
+          "t": "Ahorro privado",
+          "b": "Lo que tú decidas apartar por tu cuenta."
+        }
+      ],
+      "foot": "No dependas de uno solo"
+    },
+    {
+      "t": "point",
+      "head": "Infórmate de tu [[pensión estimada]]",
+      "body": "La Seguridad Social ofrece información sobre tu vida laboral. Conocer la cifra ayuda a planificar.",
+      "foot": "Primer paso",
+      "kicker": "Empieza por aquí"
+    },
+    {
+      "t": "point",
+      "head": "El [[tiempo]] pesa más que la cantidad",
+      "body": "Empezar pronto con poco suele ayudar más que empezar tarde con mucho, por el efecto del interés compuesto.",
+      "foot": "Cuanto antes, mejor",
+      "kicker": "La clave"
+    },
+    {
+      "t": "steps",
+      "head": "Pasos sencillos",
+      "steps": [
+        {
+          "t": "Revisa tu vida laboral",
+          "b": "Comprueba que está todo correcto."
+        },
+        {
+          "t": "Calcula cuánto necesitarías",
+          "b": "Estima tus gastos futuros."
+        },
+        {
+          "t": "Decide si quieres ahorrar aparte",
+          "b": "Y de qué forma."
+        },
+        {
+          "t": "Compara productos y costes",
+          "b": "Fíjate en comisiones."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[comisiones]]",
+      "body": "En productos de ahorro a largo plazo, un coste pequeño anual se nota mucho al cabo de los años.",
+      "foot": "Mira los costes",
+      "kicker": "Un aviso"
+    },
+    {
+      "t": "close",
+      "head": "Tu yo de dentro de 30 años [[lo agradecerá]]",
+      "body": "Es un tema complejo: consulta con un profesional antes de decidir.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a tus padres o a un amigo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-013-cuesta-enero",
+  "label": "La cuesta de enero",
+  "accent": "red",
+  "caption": "La cuesta de enero 📉 Después de las fiestas, el mes se hace largo. Así puedes prepararla.\n\nDesliza para ver un plan de 5 pasos para llegar a fin de mes con calma.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#cuestadeenero",
+    "#ahorro",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📉",
+      "title": "La cuesta de enero",
+      "foot": "Cómo llegar a fin de mes con calma"
+    },
+    {
+      "t": "point",
+      "head": "Por qué [[cuesta]]",
+      "body": "Gastos de Navidad, pagos anuales y, a veces, rebajas. Todo junto, con el mismo sueldo.",
+      "foot": "Gastos que se juntan",
+      "kicker": "El motivo"
+    },
+    {
+      "t": "steps",
+      "head": "Un plan para enero",
+      "steps": [
+        {
+          "t": "Mira lo que hay en la cuenta",
+          "b": "Y cuánto tiene que durar."
+        },
+        {
+          "t": "Reparte por semanas",
+          "b": "Un presupuesto de cada una."
+        },
+        {
+          "t": "Pospón lo no urgente",
+          "b": "Compras grandes, a febrero."
+        },
+        {
+          "t": "Revisa los pagos de enero",
+          "b": "Seguros o cuotas anuales."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde recortar sin sufrir",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Comidas",
+          "b": "Planifica el menú y compra con lista."
+        },
+        {
+          "t": "Ocio",
+          "b": "Planes gratis o más baratos."
+        },
+        {
+          "t": "Compras",
+          "b": "Pausa de un mes en lo no esencial."
+        }
+      ],
+      "foot": "Pequeños gestos"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[rebajas]]",
+      "body": "Si no estaba en tu lista, no es un ahorro. Es un gasto con descuento.",
+      "foot": "Con cabeza",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Para [[el año que viene]]",
+      "body": "Aparta cada mes una pequeña cantidad para Navidad y pagos anuales. Enero ya no pesará.",
+      "foot": "Prevenir",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "close",
+      "head": "Enero se supera [[con un plan]]",
+      "body": "Haz hoy tu presupuesto de semanas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para el mes que viene.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

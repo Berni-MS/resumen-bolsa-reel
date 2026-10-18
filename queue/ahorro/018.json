@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-018-ahorro-pareja",
+  "label": "Dinero en pareja",
+  "accent": "green",
+  "caption": "Dinero en pareja 💑 Hablar de dinero sin discutir es posible, y empieza por tres decisiones.\n\nDesliza para ver tres modelos habituales para organizar los gastos comunes.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#pareja",
+    "#ahorro",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "💑",
+      "title": "Dinero en pareja",
+      "foot": "Tres modelos para organizarlo"
+    },
+    {
+      "t": "point",
+      "head": "Hablar de dinero [[no es romántico]], pero ayuda",
+      "body": "Muchas discusiones nacen de expectativas que nadie dijo en voz alta.",
+      "foot": "Empieza por hablar",
+      "kicker": "El primer paso"
+    },
+    {
+      "t": "cards",
+      "head": "Tres modelos habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Todo junto",
+          "b": "Una cuenta común para todo. Sencillo, pero exige confianza total."
+        },
+        {
+          "t": "Cada uno lo suyo",
+          "b": "Cuentas separadas y se reparten los gastos. Más independencia."
+        },
+        {
+          "t": "Mixto",
+          "b": "Una cuenta común para gastos compartidos y cuentas personales."
+        }
+      ],
+      "foot": "No hay uno mejor"
+    },
+    {
+      "t": "point",
+      "head": "El reparto [[justo]] no siempre es 50/50",
+      "body": "Si uno gana el doble, puede ser proporcional a los ingresos. Lo importante es que los dos lo vean justo.",
+      "foot": "Proporcional a los ingresos",
+      "kicker": "Cómo repartir"
+    },
+    {
+      "t": "steps",
+      "head": "Para empezar",
+      "steps": [
+        {
+          "t": "Poned los números sobre la mesa",
+          "b": "Ingresos, deudas y gastos."
+        },
+        {
+          "t": "Definid metas comunes",
+          "b": "Viaje, casa, ahorro."
+        },
+        {
+          "t": "Elegid el modelo",
+          "b": "Y probadlo 3 meses."
+        },
+        {
+          "t": "Revisad cada cierto tiempo",
+          "b": "Las situaciones cambian."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Un [[margen personal]]",
+      "body": "Un dinero para gastar sin dar explicaciones evita muchas fricciones.",
+      "foot": "Libertad dentro del plan",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "close",
+      "head": "Hablarlo [[pronto]] ahorra problemas",
+      "body": "Elegid un día tranquilo, sin prisas, y empezad por las metas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a tu pareja.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

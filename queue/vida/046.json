@@ -1,0 +1,81 @@
+{
+  "id": "vida-046-contratos",
+  "label": "Leer un contrato",
+  "accent": "green",
+  "caption": "Cómo leer un contrato 📄 Lo que conviene mirar antes de firmar.\n\nDesliza para ver los puntos clave. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#contratos",
+    "#consumo",
+    "#educacionfinanciera",
+    "#ahorro"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📄",
+      "title": "Cómo leer un contrato",
+      "foot": "Lo que mirar antes de firmar"
+    },
+    {
+      "t": "point",
+      "head": "Nunca firmes [[sin leer]]",
+      "body": "Pide el contrato con tiempo y léelo con calma. Si te meten prisa, es una señal de alerta.",
+      "foot": "Sin prisas",
+      "kicker": "Regla 1"
+    },
+    {
+      "t": "steps",
+      "head": "Qué mirar",
+      "steps": [
+        {
+          "t": "Precio total y forma de pago",
+          "b": "Incluidos extras."
+        },
+        {
+          "t": "Duración y renovación",
+          "b": "Si se renueva solo."
+        },
+        {
+          "t": "Permanencias y penalizaciones",
+          "b": "Cuánto cuesta salir."
+        },
+        {
+          "t": "Cómo se cancela",
+          "b": "Plazos y forma."
+        }
+      ],
+      "foot": "Cuatro puntos"
+    },
+    {
+      "t": "point",
+      "head": "Presta atención a la [[letra pequeña]]",
+      "body": "Cláusulas sobre cambios de precio, comisiones o exclusiones. Pregunta lo que no entiendas.",
+      "foot": "Detalles",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Pide [[una copia]]",
+      "body": "Guárdala en un lugar accesible. La necesitarás si hay problemas.",
+      "foot": "Prueba",
+      "kicker": "Siempre"
+    },
+    {
+      "t": "point",
+      "head": "Si tienes dudas, [[pregunta a un experto]]",
+      "body": "Un asesor o una asociación de consumidores pueden ayudarte antes de firmar.",
+      "foot": "Ayuda",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Leer cinco minutos [[ahorra años de problemas]]",
+      "body": "La próxima vez, pide el contrato un día antes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta a un profesional si lo necesitas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

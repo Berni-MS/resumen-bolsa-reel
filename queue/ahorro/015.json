@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-015-52-semanas",
+  "label": "Reto de las 52 semanas",
+  "accent": "green",
+  "caption": "El reto de las 52 semanas 🗓️ Ahorra 1 € la primera semana, 2 € la segunda… y así hasta la 52.\n\nDesliza para ver cuánto sumarías y cómo adaptarlo si lo quieres más suave.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#reto",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1.378 €",
+      "title": "ahorrados en 52 semanas",
+      "foot": "El reto más popular",
+      "bigSize": 240
+    },
+    {
+      "t": "point",
+      "head": "Así funciona el [[reto]]",
+      "body": "La semana 1 ahorras 1 euro, la 2 ahorras 2, la 3 ahorras 3… hasta la semana 52, en la que ahorras 52.",
+      "foot": "Cada semana, un euro más",
+      "kicker": "Las reglas"
+    },
+    {
+      "t": "stat",
+      "big": "1.378 €",
+      "head": "Total al terminar el año",
+      "body": "La suma de los números del 1 al 52 es 1.378 euros. Sin intereses ni nada: solo constancia.",
+      "foot": "La cuenta",
+      "kicker": "El resultado",
+      "color": "green",
+      "bigSize": 220
+    },
+    {
+      "t": "point",
+      "head": "La parte [[difícil]]",
+      "body": "Las últimas semanas piden más: 40, 45, 50 euros. Si te cuesta, hay una versión al revés.",
+      "foot": "Al final pesa",
+      "kicker": "El truco"
+    },
+    {
+      "t": "steps",
+      "head": "Tres formas de adaptarlo",
+      "steps": [
+        {
+          "t": "Al revés",
+          "b": "Empieza con 52 y baja: lo difícil, al principio."
+        },
+        {
+          "t": "Con múltiplos",
+          "b": "Ahorra 2 o 5 euros por número."
+        },
+        {
+          "t": "Mensual",
+          "b": "12 meses, del 1 al 12, multiplicado por 10."
+        }
+      ],
+      "foot": "Elige tu versión"
+    },
+    {
+      "t": "point",
+      "head": "Dónde [[guardarlo]]",
+      "body": "En una cuenta aparte, para no gastarlo sin querer. Si da algo de interés, mejor.",
+      "foot": "Separado del día a día",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Lo importante es [[empezar]]",
+      "body": "Da igual la versión. Lo que cuenta es crear el hábito.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y reta a un amigo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

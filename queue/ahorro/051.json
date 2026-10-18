@@ -1,0 +1,78 @@
+{
+  "id": "ahorro-051-planes-sociales",
+  "label": "Ahorrar sin perder vida social",
+  "accent": "green",
+  "caption": "Ahorrar sin perder vida social 🍻 Quedar con amigos sin que se vaya el presupuesto.\n\nDesliza para ver cómo equilibrarlo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#ocio",
+    "#amigos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🍻",
+      "title": "Ahorrar sin perder vida social",
+      "foot": "Planes buenos y baratos"
+    },
+    {
+      "t": "point",
+      "head": "Fija un [[presupuesto de ocio]]",
+      "body": "Una cantidad mensual para salidas, sin culpa. Cuando se acaba, planes más baratos.",
+      "foot": "Tope claro",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Ideas de planes baratos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "En casa",
+          "b": "Cenas compartiendo ingredientes."
+        },
+        {
+          "t": "Al aire libre",
+          "b": "Parques, rutas, playa."
+        },
+        {
+          "t": "Cultura gratis",
+          "b": "Museos con días gratuitos."
+        }
+      ],
+      "foot": "Para disfrutar"
+    },
+    {
+      "t": "point",
+      "head": "Habla [[claro]]",
+      "body": "Si un plan te desborda, proponer otro es normal. Los buenos amigos lo entienden.",
+      "foot": "Sin vergüenza",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con [[las rondas]]",
+      "body": "Una ronda que no pediste puede ser una cuenta enorme. Pide cuentas separadas si prefieres.",
+      "foot": "Con cabeza",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Elige [[qué planes valen la pena]]",
+      "body": "No tienes que ir a todo. Prioriza los que más disfrutas.",
+      "foot": "Calidad sobre cantidad",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Disfrutar y ahorrar [[caben juntos]]",
+      "body": "Fija hoy tu presupuesto de ocio.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo con tus amigos.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

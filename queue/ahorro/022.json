@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-022-super",
+  "label": "Ahorrar en el súper",
+  "accent": "green",
+  "caption": "Ahorrar en el súper 🛒 Pequeños hábitos que se notan en la factura de comida.\n\nDesliza para ver cinco trucos que no te hacen comer peor.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#supermercado",
+    "#compra",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🛒",
+      "title": "Ahorrar en el súper",
+      "foot": "Sin comer peor"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de ir",
+      "steps": [
+        {
+          "t": "Planifica el menú",
+          "b": "Una semana de comidas."
+        },
+        {
+          "t": "Mira lo que ya tienes",
+          "b": "Nevera y despensa."
+        },
+        {
+          "t": "Haz la lista",
+          "b": "Y cíñete a ella."
+        },
+        {
+          "t": "Come antes de ir",
+          "b": "Con hambre compras más."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Dentro del súper",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Compara el precio por kilo",
+          "b": "No el del envase."
+        },
+        {
+          "t": "Mira abajo y arriba",
+          "b": "Lo barato suele estar fuera de la altura de los ojos."
+        },
+        {
+          "t": "Marca blanca",
+          "b": "Muchas veces, misma calidad."
+        }
+      ],
+      "foot": "Cabeza fría"
+    },
+    {
+      "t": "point",
+      "head": "Congela y [[aprovecha]]",
+      "body": "Cocinar de más y congelar evita tirar comida, que también es tirar dinero.",
+      "foot": "Menos desperdicio",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[ofertas]]",
+      "body": "Un 2×1 solo ahorra si ibas a usar los dos. Si no, es un gasto de más.",
+      "foot": "Ofertas con cabeza",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Productos de [[temporada]]",
+      "body": "Fruta y verdura de temporada suele ser más barata y sabrosa.",
+      "foot": "Más barato",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Planificar es [[ahorrar]]",
+      "body": "Haz hoy el menú de la semana.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para la próxima compra.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

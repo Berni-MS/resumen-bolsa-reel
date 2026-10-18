@@ -1,0 +1,86 @@
+{
+  "id": "vida-017-deudas",
+  "label": "Bola de nieve o avalancha",
+  "accent": "green",
+  "caption": "Deudas: bola de nieve o avalancha ⛄ Dos métodos para pagarlas con un plan.\n\nDesliza para ver en qué se diferencian y cuál te puede venir mejor.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#deudas",
+    "#finanzaspersonales",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "⛄",
+      "title": "Deudas: bola de nieve o avalancha",
+      "foot": "Dos métodos para salir de ellas"
+    },
+    {
+      "t": "point",
+      "head": "Primero: [[lista todas]] tus deudas",
+      "body": "Apunta cuánto debes, el interés de cada una y la cuota mínima. Sin esto, es difícil elegir.",
+      "foot": "Ver el total",
+      "kicker": "Paso 0"
+    },
+    {
+      "t": "cards",
+      "head": "Los dos métodos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Bola de nieve",
+          "b": "Pagas primero la deuda más pequeña. Ganas motivación al cerrar deudas."
+        },
+        {
+          "t": "Avalancha",
+          "b": "Pagas primero la de mayor interés. Ahorras más en intereses."
+        }
+      ],
+      "foot": "Mientras pagas el mínimo del resto"
+    },
+    {
+      "t": "point",
+      "head": "La [[avalancha]] ahorra más",
+      "body": "Matemáticamente, es la más barata, porque ataca los intereses más altos primero.",
+      "foot": "Más eficiente",
+      "kicker": "Ventaja"
+    },
+    {
+      "t": "point",
+      "head": "La [[bola de nieve]] motiva más",
+      "body": "Cerrar una deuda pronto da ánimo. Para algunas personas, mantener la constancia vale más que optimizar.",
+      "foot": "Más motivadora",
+      "kicker": "Ventaja"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo ponerlo en práctica",
+      "steps": [
+        {
+          "t": "Paga el mínimo en todas",
+          "b": "Para evitar recargos."
+        },
+        {
+          "t": "Elige el método",
+          "b": "Según lo que te motive."
+        },
+        {
+          "t": "Destina el extra a una sola deuda",
+          "b": "Y cuando se cierre, pasa a la siguiente."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "close",
+      "head": "El mejor método es el que [[sí vas a seguir]]",
+      "body": "Si tienes dudas con tus deudas, consulta con tu entidad o con un asesor.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y elige tu método.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

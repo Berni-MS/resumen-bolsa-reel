@@ -1,0 +1,84 @@
+{
+  "id": "ahorro-035-estilo-vida",
+  "label": "La inflación del estilo de vida",
+  "accent": "red",
+  "caption": "La inflación del estilo de vida 📈 Ganas más… y sigues igual. Pasa más de lo que parece.\n\nDesliza para ver por qué ocurre y cómo evitarlo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#sueldo",
+    "#habitos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📈",
+      "title": "Ganas más y sigues igual",
+      "foot": "La inflación del estilo de vida"
+    },
+    {
+      "t": "point",
+      "head": "Qué es",
+      "body": "Cuando cobras más, gastas más: mejor coche, más salidas, más cuotas. El ahorro no crece.",
+      "foot": "Sube el gasto",
+      "kicker": "La trampa"
+    },
+    {
+      "t": "point",
+      "head": "Por qué [[pasa]]",
+      "body": "Nos acostumbramos pronto a un nivel de vida y lo damos por normal. Lo nuevo se vuelve necesidad.",
+      "foot": "La adaptación",
+      "kicker": "La razón"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo evitarla",
+      "steps": [
+        {
+          "t": "Decide un % de la subida",
+          "b": "Para ahorrar antes de gastarla."
+        },
+        {
+          "t": "Automatízalo",
+          "b": "Sube tu transferencia de ahorro."
+        },
+        {
+          "t": "Gasta con intención",
+          "b": "Elige qué mejoras de verdad."
+        },
+        {
+          "t": "Revisa tu gasto fijo",
+          "b": "Que no crezca sin darte cuenta."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "stat",
+      "big": "50 %",
+      "head": "de la subida, al ahorro",
+      "body": "Una regla sencilla: la mitad de cada aumento va al ahorro y la otra mitad a tu vida. Es un ejemplo, adáptalo.",
+      "foot": "Una idea",
+      "kicker": "Un reparto",
+      "color": "green",
+      "bigSize": 260
+    },
+    {
+      "t": "point",
+      "head": "No es [[no disfrutar]]",
+      "body": "Es decidir qué mejoras quieres, en lugar de dejar que el gasto suba por inercia.",
+      "foot": "Intención",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "close",
+      "head": "Gana más, [[ahorra más]]",
+      "body": "Decide hoy qué haces con tu próxima subida.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para la próxima subida.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

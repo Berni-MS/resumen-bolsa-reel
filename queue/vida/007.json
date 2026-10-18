@@ -1,11 +1,11 @@
 {
-  "id": "vida-007-regla-72",
-  "label": "La regla del 72",
+  "id": "vida-007-compras-online",
+  "label": "Compras online seguras",
   "accent": "green",
-  "caption": "La regla del 72 ⚡ Un truco de cabeza para saber en cuántos años se duplica un dinero.\n\nDesliza para ver cómo se usa con ejemplos. Son cálculos aproximados con tipos supuestos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "caption": "Compras online seguras 🛒 Cómo comprar por internet sin sustos.\n\nDesliza para ver qué comprobar antes de pagar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#interescompuesto",
-    "#regladel72",
+    "#compraonline",
+    "#seguridad",
     "#ahorro",
     "#educacionfinanciera"
   ],
@@ -13,60 +13,80 @@
   "slides": [
     {
       "t": "cover",
-      "big": "72",
-      "title": "El truco para duplicar tu dinero",
-      "foot": "Cálculo mental en 5 segundos"
+      "big": "🛒",
+      "title": "Compras online seguras",
+      "foot": "Qué comprobar antes de pagar"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de comprar",
+      "steps": [
+        {
+          "t": "Comprueba la tienda",
+          "b": "Opiniones y datos de contacto."
+        },
+        {
+          "t": "Mira la dirección web",
+          "b": "Que empiece por https."
+        },
+        {
+          "t": "Lee las condiciones",
+          "b": "Envío, plazos y devoluciones."
+        },
+        {
+          "t": "Desconfía de precios imposibles",
+          "b": "Si es demasiado bueno…"
+        }
+      ],
+      "foot": "Cuatro pasos"
     },
     {
       "t": "point",
-      "head": "Divide 72 entre el [[tipo anual]]",
-      "body": "El resultado son los años aproximados que tarda en duplicarse un dinero con interés compuesto.",
-      "foot": "La regla",
-      "kicker": "Cómo se usa"
-    },
-    {
-      "t": "stat",
-      "big": "12 años",
-      "head": "Con un 6 % anual",
-      "body": "72 entre 6 son 12. Es un tipo supuesto, no una promesa de rentabilidad.",
-      "foot": "Ejemplo 1",
-      "kicker": "Con números",
-      "color": "green",
-      "bigSize": 200
-    },
-    {
-      "t": "stat",
-      "big": "18 años",
-      "head": "Con un 4 % anual",
-      "body": "72 entre 4 son 18. Con menos rentabilidad, el tiempo se alarga.",
-      "foot": "Ejemplo 2",
-      "kicker": "Con números",
-      "color": "green",
-      "bigSize": 200
-    },
-    {
-      "t": "stat",
-      "big": "24 años",
-      "head": "Con un 3 % anual",
-      "body": "72 entre 3 son 24. El tiempo y la rentabilidad cambian mucho el resultado.",
-      "foot": "Ejemplo 3",
-      "kicker": "Con números",
-      "color": "green",
-      "bigSize": 200
+      "head": "Paga con [[métodos seguros]]",
+      "body": "Tarjeta virtual o pasarelas conocidas ofrecen más protección que transferencias a desconocidos.",
+      "foot": "Más protección",
+      "kicker": "Pago"
     },
     {
       "t": "point",
-      "head": "También sirve para la [[inflación]]",
-      "body": "Con una inflación del 3 %, los precios se duplican en unos 24 años. Tu dinero parado compra la mitad.",
-      "foot": "Al revés",
-      "kicker": "Un uso curioso"
+      "head": "Usa una [[tarjeta virtual]]",
+      "body": "Algunos bancos permiten crear tarjetas con límite o de un solo uso. Reducen riesgos.",
+      "foot": "Una opción",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "cards",
+      "head": "Guarda siempre",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Confirmación del pedido",
+          "b": "Captura o correo."
+        },
+        {
+          "t": "Justificante de pago",
+          "b": "Por si hay problemas."
+        },
+        {
+          "t": "Comunicaciones con la tienda",
+          "b": "Por escrito."
+        }
+      ],
+      "foot": "Pruebas"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[ofertas de redes]]",
+      "body": "Anuncios con descuentos enormes pueden ser fraudes. Comprueba la tienda antes de pagar.",
+      "foot": "Cuidado",
+      "kicker": "Cuidado"
     },
     {
       "t": "close",
-      "head": "Un cálculo [[aproximado]], pero muy útil",
-      "body": "No es exacta, pero da una idea rápida. No es una promesa de rentabilidad.",
+      "head": "Compra sin [[prisas]]",
+      "body": "Comprueba tres cosas antes de pagar.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y haz tus cuentas.",
+      "extra": "Guárdalo y compártelo antes de las rebajas.",
       "extraBold": true,
       "extraSize": 36
     }

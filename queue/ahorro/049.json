@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-049-calendario",
+  "label": "Tu calendario financiero",
+  "accent": "green",
+  "caption": "Tu calendario financiero 🗓️ Un mapa del año para que ningún pago te pille.\n\nDesliza para ver cómo montarlo en 15 minutos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#planificacion",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🗓️",
+      "title": "Tu calendario financiero",
+      "foot": "Un mapa del año para tu dinero"
+    },
+    {
+      "t": "point",
+      "head": "Ver el año [[de un vistazo]]",
+      "body": "Marca cuándo cobras, cuándo llegan los pagos grandes y cuándo cae algún ingreso extra.",
+      "foot": "Anticiparte",
+      "kicker": "La idea"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo montarlo",
+      "steps": [
+        {
+          "t": "Abre un calendario",
+          "b": "Papel o digital."
+        },
+        {
+          "t": "Marca tus ingresos",
+          "b": "Sueldo y pagas extra."
+        },
+        {
+          "t": "Marca los pagos anuales",
+          "b": "Seguros, impuestos, matrículas."
+        },
+        {
+          "t": "Marca los eventos",
+          "b": "Navidad, vacaciones, cumpleaños."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pon [[avisos]]",
+      "body": "Un recordatorio una semana antes de cada pago te da margen para prepararte.",
+      "foot": "Sin sorpresas",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Detecta los [[meses difíciles]]",
+      "body": "Seguramente verás que hay meses con muchos pagos. Prepáralos con ahorro previo.",
+      "foot": "Previsión",
+      "kicker": "El resultado"
+    },
+    {
+      "t": "point",
+      "head": "Actualízalo [[cada trimestre]]",
+      "body": "Cambian las cuotas y las fechas. Un vistazo cada tres meses basta.",
+      "foot": "Mantenimiento",
+      "kicker": "Rutina"
+    },
+    {
+      "t": "close",
+      "head": "Quien ve venir el año, [[duerme mejor]]",
+      "body": "Marca hoy tus cinco fechas más pesadas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y marca las tuyas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,105 +1,92 @@
 {
-  "id": "vida-003-alquilar-comprar",
-  "label": "¿Alquilar o comprar?",
+  "id": "vida-003-hipoteca-tipos",
+  "label": "Hipoteca fija, variable o mixta",
   "accent": "green",
-  "caption": "¿Alquilar o comprar? 🔑 No hay una respuesta única: depende de tu vida, no de lo que digan por ahí.\n\nDesliza para ver las preguntas que conviene hacerse.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "caption": "Hipoteca fija, variable o mixta 🏠 Tres formas de pagar el mismo préstamo, con riesgos distintos.\n\nDesliza para ver cómo funciona cada una y qué mirar antes de firmar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#alquiler",
-    "#vivienda",
     "#hipoteca",
+    "#vivienda",
+    "#finanzaspersonales",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "🔑",
-      "title": "¿Alquilar o comprar?",
-      "foot": "Las preguntas que conviene hacerse"
-    },
-    {
-      "t": "point",
-      "head": "No es [[tirar el dinero]] ni [[inversión segura]]",
-      "body": "Alquilar da flexibilidad. Comprar da estabilidad, pero tiene costes y compromisos.",
-      "foot": "Depende de tu caso",
-      "kicker": "Dos mitos"
+      "big": "🏠",
+      "title": "Hipoteca fija, variable o mixta",
+      "foot": "Qué cambia en cada una"
     },
     {
       "t": "cards",
-      "head": "Qué cuesta comprar",
-      "accent": "red",
-      "cards": [
-        {
-          "t": "La entrada",
-          "b": "Suele ser un porcentaje del precio."
-        },
-        {
-          "t": "Los gastos de compra",
-          "b": "Impuestos, notaría y registro, entre otros."
-        },
-        {
-          "t": "El mantenimiento",
-          "b": "Comunidad, IBI y reparaciones."
-        }
-      ],
-      "foot": "Más allá de la cuota"
-    },
-    {
-      "t": "cards",
-      "head": "Qué ofrece alquilar",
+      "head": "Los tres tipos",
       "accent": "green",
       "cards": [
         {
-          "t": "Flexibilidad",
-          "b": "Cambiar de ciudad o de trabajo con menos trabas."
+          "t": "Fija",
+          "b": "El tipo de interés no cambia. Sabes cuánto pagas cada mes."
         },
         {
-          "t": "Menos desembolso inicial",
-          "b": "Normalmente, fianza y primeras mensualidades."
+          "t": "Variable",
+          "b": "El interés sigue a un índice de referencia. La cuota puede subir o bajar."
         },
         {
-          "t": "Sin gastos de propiedad",
-          "b": "Ni IBI ni grandes reparaciones."
+          "t": "Mixta",
+          "b": "Una parte del plazo es fija y el resto es variable."
         }
       ],
-      "foot": "Pero sin construir patrimonio"
-    },
-    {
-      "t": "steps",
-      "head": "Tus preguntas clave",
-      "steps": [
-        {
-          "t": "¿Cuánto tiempo vas a vivir allí?",
-          "b": "A corto plazo, comprar suele pesar más."
-        },
-        {
-          "t": "¿Tienes entrada y colchón?",
-          "b": "Sin dejarte sin ahorros."
-        },
-        {
-          "t": "¿Aguantas una subida de cuota?",
-          "b": "Si es variable."
-        },
-        {
-          "t": "¿Qué harías con la diferencia?",
-          "b": "Si alquilas, ¿la ahorras de verdad?"
-        }
-      ],
-      "foot": "Cuatro preguntas"
+      "foot": "Cómo funcionan"
     },
     {
       "t": "point",
-      "head": "Mira el [[conjunto]]",
-      "body": "Compara el coste total de cada opción en tu ciudad, no solo la cuota mensual contra el alquiler.",
-      "foot": "Haz la cuenta completa",
-      "kicker": "Para decidir"
+      "head": "La fija da [[tranquilidad]]",
+      "body": "Sabes siempre cuánto pagas. A cambio, suele empezar con un interés algo más alto que la variable.",
+      "foot": "Previsible",
+      "kicker": "Ventaja de la fija"
+    },
+    {
+      "t": "point",
+      "head": "La variable puede [[subir]]",
+      "body": "Si los tipos suben, tu cuota también. Si bajan, pagas menos. Conviene tener margen en tu presupuesto.",
+      "foot": "Riesgo de la variable",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Qué mirar antes de firmar",
+      "steps": [
+        {
+          "t": "El TAE",
+          "b": "El coste real, con comisiones."
+        },
+        {
+          "t": "Las comisiones",
+          "b": "De apertura, amortización y cancelación."
+        },
+        {
+          "t": "Los productos vinculados",
+          "b": "Seguros o cuentas que te piden contratar."
+        },
+        {
+          "t": "La ficha informativa",
+          "b": "Compara al menos tres ofertas."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Calcula si te [[sale bien]]",
+      "body": "Una pauta habitual es que la cuota no supere cierto porcentaje de tus ingresos netos. Pregunta a tu banco cuál aplican.",
+      "foot": "Con margen",
+      "kicker": "Una pauta"
     },
     {
       "t": "close",
-      "head": "La mejor opción es la que [[encaja con tu vida]]",
-      "body": "Hazte las preguntas antes de mirar pisos.",
+      "head": "Elige según [[cuánto riesgo aguantas]]",
+      "body": "No hay una opción perfecta, sino la que encaja contigo.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y compártelo con quien esté dudando.",
+      "extra": "Guárdalo y compara ofertas.",
       "extraBold": true,
       "extraSize": 36
     }

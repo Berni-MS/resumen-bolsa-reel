@@ -1,0 +1,107 @@
+{
+  "id": "ahorro-042-segunda-mano",
+  "label": "Comprar de segunda mano",
+  "accent": "green",
+  "caption": "Comprar de segunda mano ♻️ Ahorra y cuida el planeta, si compras con criterio.\n\nDesliza para ver qué conviene comprar así y qué revisar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#segundamano",
+    "#ahorro",
+    "#sostenibilidad",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "♻️",
+      "title": "Comprar de segunda mano",
+      "foot": "Ahorrar con criterio"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que suele compensar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Muebles",
+          "b": "Duran y se pueden restaurar."
+        },
+        {
+          "t": "Libros y material",
+          "b": "Casi no pierden utilidad."
+        },
+        {
+          "t": "Ropa infantil",
+          "b": "Se usa poco tiempo."
+        }
+      ],
+      "foot": "Buenos candidatos"
+    },
+    {
+      "t": "steps",
+      "head": "Qué revisar antes de comprar",
+      "steps": [
+        {
+          "t": "El estado real",
+          "b": "Pide fotos y pruébalo."
+        },
+        {
+          "t": "El precio nuevo",
+          "b": "Compara con el original."
+        },
+        {
+          "t": "El vendedor",
+          "b": "Opiniones o valoración."
+        },
+        {
+          "t": "Garantías y devolución",
+          "b": "Qué ofrece la plataforma."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que conviene mirar con más cuidado",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Electrónica",
+          "b": "Revisa batería y garantía."
+        },
+        {
+          "t": "Cascos y seguridad",
+          "b": "Mejor nuevos."
+        },
+        {
+          "t": "Colchones y similares",
+          "b": "Higiene y estado."
+        }
+      ],
+      "foot": "Con cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con los [[fraudes]]",
+      "body": "Evita pagar fuera de la plataforma o por adelantado a desconocidos. Desconfía de precios demasiado bajos.",
+      "foot": "Seguridad",
+      "kicker": "Importante"
+    },
+    {
+      "t": "point",
+      "head": "Vende lo que [[no usas]]",
+      "body": "Es también una forma de ahorro: ingresas dinero y liberas espacio.",
+      "foot": "Doble efecto",
+      "kicker": "Una idea"
+    },
+    {
+      "t": "close",
+      "head": "Lo bueno no siempre es [[nuevo]]",
+      "body": "Prueba con tu próxima compra.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y mira primero la segunda mano.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

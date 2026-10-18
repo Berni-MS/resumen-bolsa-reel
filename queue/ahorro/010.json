@@ -1,11 +1,11 @@
 {
-  "id": "ahorro-010-objetivos",
-  "label": "Ahorrar para una meta",
+  "id": "ahorro-010-pagas-extra",
+  "label": "Qué hacer con las pagas extra",
   "accent": "green",
-  "caption": "Ahorra para una meta 🎯 Un viaje, un coche, una entrada: con una cuenta sencilla pasas del deseo al plan.\n\nDesliza para ver la fórmula y un ejemplo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "caption": "¿Qué haces con la paga extra? 💶 Un plan sencillo para que no se evapore.\n\nDesliza para ver una forma de repartirla sin complicarte.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
+    "#pagaextra",
     "#ahorro",
-    "#objetivos",
     "#finanzaspersonales",
     "#educacionfinanciera"
   ],
@@ -13,73 +13,70 @@
   "slides": [
     {
       "t": "cover",
-      "big": "🎯",
-      "title": "Ahorrar para una meta concreta",
-      "foot": "De «algún día» a un plan"
+      "big": "💶",
+      "title": "¿Qué haces con tu paga extra?",
+      "foot": "Un plan para que no se evapore"
     },
     {
       "t": "point",
-      "head": "Un objetivo sin cifra es [[un deseo]]",
-      "body": "«Quiero ahorrar para un viaje» no es lo mismo que «necesito 3.600 euros en 12 meses».",
-      "foot": "Ponle número y fecha",
-      "kicker": "El primer paso"
-    },
-    {
-      "t": "stat",
-      "big": "÷",
-      "head": "Meta entre meses",
-      "body": "Divide lo que necesitas entre los meses que tienes. Es la cantidad que debes apartar cada mes.",
-      "foot": "La fórmula",
-      "kicker": "La cuenta",
-      "color": "green",
-      "bigSize": 300
-    },
-    {
-      "t": "stat",
-      "big": "300 €",
-      "head": "al mes para llegar a 3.600 €",
-      "body": "3.600 euros entre 12 meses son 300 euros al mes. Si te parece mucho, alarga el plazo: a 18 meses, serían 200.",
-      "foot": "Ejemplo",
-      "kicker": "Con números",
-      "color": "green",
-      "bigSize": 230
+      "head": "Que llegue no quiere decir que [[sobre]]",
+      "body": "Muchas pagas extra ya están contadas: seguros, impuestos o gastos anuales que pagas de golpe.",
+      "foot": "Antes de gastar",
+      "kicker": "Primero"
     },
     {
       "t": "steps",
-      "head": "Cómo conseguirlo",
+      "head": "Un reparto sencillo",
       "steps": [
         {
-          "t": "Escribe la meta y la fecha",
-          "b": "Concreta y medible."
+          "t": "Cubre lo que ya tenías previsto",
+          "b": "Gastos anuales o deudas pendientes."
         },
         {
-          "t": "Calcula la cuota mensual",
-          "b": "Con la fórmula anterior."
+          "t": "Aparta una parte para ahorrar",
+          "b": "Por ejemplo, un porcentaje fijo."
         },
         {
-          "t": "Abre una «hucha» aparte",
-          "b": "Con el nombre del objetivo."
+          "t": "Un trozo para disfrutarla",
+          "b": "Sin culpa, pero con tope."
         },
         {
-          "t": "Automatiza la transferencia",
-          "b": "El día de cobro."
+          "t": "Si hay fondo de emergencia, súmalo",
+          "b": "Antes de cualquier otra cosa."
         }
       ],
       "foot": "Cuatro pasos"
     },
     {
       "t": "point",
-      "head": "Pon un [[nombre]] a tu cuenta",
-      "body": "Muchos bancos permiten nombrar los apartados. «Viaje a Japón» motiva más que «Ahorro 2».",
-      "foot": "Un detalle que ayuda",
-      "kicker": "Un truco"
+      "head": "Decide el reparto [[antes de cobrar]]",
+      "body": "Si lo decides con calma, no gastas por impulso cuando ves el dinero en la cuenta.",
+      "foot": "El truco",
+      "kicker": "Una clave"
+    },
+    {
+      "t": "stat",
+      "big": "3",
+      "head": "reparte en tres partes",
+      "body": "Una para obligaciones, otra para ahorro y otra para ti. Un ejemplo: 40 %, 40 % y 20 %.",
+      "foot": "Ajústalo a tu caso",
+      "kicker": "Una idea",
+      "color": "green",
+      "bigSize": 330
+    },
+    {
+      "t": "point",
+      "head": "Si tienes [[deudas caras]]",
+      "body": "Amortizarlas puede ser un buen destino para parte de la paga. Valora el coste de cada una.",
+      "foot": "Pagar intereses es perder dinero",
+      "kicker": "Ojo"
     },
     {
       "t": "close",
-      "head": "Una meta con [[fecha y cifra]] se cumple más",
-      "body": "Elige hoy una y calcula tu cuota mensual.",
+      "head": "Decídelo [[antes que llegue]]",
+      "body": "Una paga con plan rinde mucho más.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y cuéntanos tu meta en comentarios.",
+      "extra": "Guárdalo para la próxima paga.",
       "extraBold": true,
       "extraSize": 36
     }

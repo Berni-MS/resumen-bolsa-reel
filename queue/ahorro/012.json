@@ -1,92 +1,85 @@
 {
-  "id": "ahorro-012-ahorro-pareja",
-  "label": "Dinero en pareja",
+  "id": "ahorro-012-propositos",
+  "label": "Propósitos financieros",
   "accent": "green",
-  "caption": "Dinero en pareja 💑 Hablar de dinero sin discutir es posible, y empieza por tres decisiones.\n\nDesliza para ver tres modelos habituales para organizar los gastos comunes.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "caption": "Propósitos financieros de año nuevo 🎯 Menos «voy a ahorrar más» y más acciones concretas.\n\nDesliza para ver 5 propósitos con fecha y cifra.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#pareja",
+    "#propositos",
+    "#añonuevo",
     "#ahorro",
-    "#finanzaspersonales",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "💑",
-      "title": "Dinero en pareja",
-      "foot": "Tres modelos para organizarlo"
+      "big": "5",
+      "title": "propósitos financieros que sí se cumplen",
+      "foot": "Con acción concreta"
     },
     {
       "t": "point",
-      "head": "Hablar de dinero [[no es romántico]], pero ayuda",
-      "body": "Muchas discusiones nacen de expectativas que nadie dijo en voz alta.",
-      "foot": "Empieza por hablar",
-      "kicker": "El primer paso"
+      "head": "«Ahorrar más» [[no es un propósito]]",
+      "body": "Un buen propósito es concreto: qué hago, cuánto y cuándo.",
+      "foot": "Hazlo medible",
+      "kicker": "Primero"
     },
     {
       "t": "cards",
-      "head": "Tres modelos habituales",
+      "head": "Cinco ideas",
       "accent": "green",
       "cards": [
         {
-          "t": "Todo junto",
-          "b": "Una cuenta común para todo. Sencillo, pero exige confianza total."
+          "t": "Un ahorro automático",
+          "b": "Una cantidad fija el día de cobro."
         },
         {
-          "t": "Cada uno lo suyo",
-          "b": "Cuentas separadas y se reparten los gastos. Más independencia."
+          "t": "Revisar suscripciones",
+          "b": "Una vez cada seis meses."
         },
         {
-          "t": "Mixto",
-          "b": "Una cuenta común para gastos compartidos y cuentas personales."
+          "t": "Un presupuesto mensual",
+          "b": "Diez minutos el primer día de cada mes."
         }
       ],
-      "foot": "No hay uno mejor"
+      "foot": "Primeras tres"
+    },
+    {
+      "t": "cards",
+      "head": "Dos más",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Montar el fondo de emergencia",
+          "b": "Con un plazo y una cuota mensual."
+        },
+        {
+          "t": "Aprender algo nuevo",
+          "b": "Un libro o curso de finanzas al trimestre."
+        }
+      ],
+      "foot": "Para cerrar"
     },
     {
       "t": "point",
-      "head": "El reparto [[justo]] no siempre es 50/50",
-      "body": "Si uno gana el doble, puede ser proporcional a los ingresos. Lo importante es que los dos lo vean justo.",
-      "foot": "Proporcional a los ingresos",
-      "kicker": "Cómo repartir"
-    },
-    {
-      "t": "steps",
-      "head": "Para empezar",
-      "steps": [
-        {
-          "t": "Poned los números sobre la mesa",
-          "b": "Ingresos, deudas y gastos."
-        },
-        {
-          "t": "Definid metas comunes",
-          "b": "Viaje, casa, ahorro."
-        },
-        {
-          "t": "Elegid el modelo",
-          "b": "Y probadlo 3 meses."
-        },
-        {
-          "t": "Revisad cada cierto tiempo",
-          "b": "Las situaciones cambian."
-        }
-      ],
-      "foot": "Cuatro pasos"
+      "head": "Elige [[solo uno o dos]]",
+      "body": "Muchos propósitos a la vez no se sostienen. Empieza con los que más impacto tengan.",
+      "foot": "Menos es más",
+      "kicker": "Un consejo"
     },
     {
       "t": "point",
-      "head": "Un [[margen personal]]",
-      "body": "Un dinero para gastar sin dar explicaciones evita muchas fricciones.",
-      "foot": "Libertad dentro del plan",
+      "head": "Ponles [[fecha]]",
+      "body": "«Antes del 31 de marzo tendré el fondo de emergencia a la mitad» es mejor que «este año».",
+      "foot": "Con calendario",
       "kicker": "Un truco"
     },
     {
       "t": "close",
-      "head": "Hablarlo [[pronto]] ahorra problemas",
-      "body": "Elegid un día tranquilo, sin prisas, y empezad por las metas.",
+      "head": "Un propósito pequeño, [[cumplido]], vale más",
+      "body": "Elige el tuyo y ponle fecha hoy.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y envíaselo a tu pareja.",
+      "extra": "Guárdalo y cuéntanos el tuyo.",
       "extraBold": true,
       "extraSize": 36
     }

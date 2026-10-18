@@ -1,0 +1,94 @@
+{
+  "id": "vida-039-tarifas",
+  "label": "Comparar tarifas de luz y gas",
+  "accent": "green",
+  "caption": "Comparar tarifas de luz y gas 🔥 Cómo hacerlo sin liarte.\n\nDesliza para ver qué comparar. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#luz",
+    "#gas",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔥",
+      "title": "Comparar tarifas de luz y gas",
+      "foot": "Sin liarte"
+    },
+    {
+      "t": "point",
+      "head": "Tu [[consumo real]] manda",
+      "body": "Mira el consumo anual en tus facturas. Es el dato para comparar ofertas con sentido.",
+      "foot": "Primero",
+      "kicker": "Antes de comparar"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo comparar",
+      "steps": [
+        {
+          "t": "Reúne tus datos",
+          "b": "Consumo, potencia y horarios."
+        },
+        {
+          "t": "Usa un comparador oficial",
+          "b": "O contrasta varios."
+        },
+        {
+          "t": "Mira el coste total",
+          "b": "No solo el precio unitario."
+        },
+        {
+          "t": "Lee las condiciones",
+          "b": "Permanencias y revisiones."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Cuidado con",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Ofertas con permanencia",
+          "b": "Penalizan si te vas pronto."
+        },
+        {
+          "t": "Precios que cambian",
+          "b": "Fijo o variable."
+        },
+        {
+          "t": "Servicios añadidos",
+          "b": "Que no necesitas."
+        }
+      ],
+      "foot": "Letra pequeña"
+    },
+    {
+      "t": "point",
+      "head": "Revisa [[cada año]]",
+      "body": "Las ofertas cambian a menudo. Un repaso anual puede ahorrarte dinero.",
+      "foot": "Constancia",
+      "kicker": "Un hábito"
+    },
+    {
+      "t": "point",
+      "head": "Pide [[por escrito]]",
+      "body": "Si cambias de compañía, guarda las condiciones por escrito.",
+      "foot": "Pruebas",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Comparar [[tiene premio]]",
+      "body": "Reserva una tarde al año para revisarlo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta las condiciones de cada oferta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

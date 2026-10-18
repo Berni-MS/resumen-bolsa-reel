@@ -77,11 +77,11 @@ body{background:${INK}}
 .handle{font-size:72px;color:${ACC};margin-top:28px}
 .logo{position:absolute;left:${SAFE_L}px;bottom:${SAFE_BOTTOM + 10}px;font-size:30px;font-weight:700;color:${MUTED}}
 </style></head><body><div class="root">
-<div class="top"><span class="badge">EN 30 SEGUNDOS</span><span class="count d" id="count">30</span></div>
+<div class="top"><span class="badge">${esc(item.badge || 'EN 30 SEGUNDOS')}</span><span class="count d" id="count">30</span></div>
 <div class="bar"><i id="prog"></i></div>
 ${sceneHtml('hook', `<div class="kick" id="hk">${esc(item.date_label || 'Hoy en bolsa')}</div><div class="txt" data-fit>${words(item.hook)}</div>`)}
 ${scenes.map((s, i) => sceneHtml('body', `<div class="kick">${esc(s.kicker)}</div>${s.big ? `<div class="big d">${esc(s.big)}</div>` : ''}<div class="txt" data-fit>${words(s.text)}</div>`)).join('\n')}
-${sceneHtml('outro', `<div class="kick">¿Lo entendiste?</div><div class="txt" data-fit>${words('Mañana, [[otro]] en 30 segundos')}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
+${sceneHtml('outro', `<div class="kick">¿Lo entendiste?</div><div class="txt" data-fit>${words(item.badge ? 'La semana que viene, [[otro consejo]]' : 'Mañana, [[otro]] en 30 segundos')}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
 </div></body></html>`;
 
 const f = path.join(outDir, 'reel.html');

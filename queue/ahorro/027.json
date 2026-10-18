@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-027-movil",
+  "label": "Ahorrar en móvil e internet",
+  "accent": "green",
+  "caption": "Ahorrar en móvil e internet 📱 Revisar tu tarifa una vez al año suele compensar.\n\nDesliza para ver cómo comparar sin perderte.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#movil",
+    "#facturas",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📱",
+      "title": "Ahorrar en móvil e internet",
+      "foot": "Revisa tu tarifa cada año"
+    },
+    {
+      "t": "point",
+      "head": "Lo que no se revisa [[se encarece]]",
+      "body": "Muchas ofertas son temporales y suben el precio al terminar. Compruébalo en tu factura.",
+      "foot": "Ojo a las promociones",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo revisar",
+      "steps": [
+        {
+          "t": "Mira lo que pagas ahora",
+          "b": "Móvil, fibra y extras."
+        },
+        {
+          "t": "Mira lo que consumes de verdad",
+          "b": "Datos, minutos, canales."
+        },
+        {
+          "t": "Compara tarifas",
+          "b": "Con tu consumo, no con el mayor."
+        },
+        {
+          "t": "Pregunta a tu compañía",
+          "b": "A veces mejoran la oferta."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Cuidado con",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Permanencias",
+          "b": "Pueden costar si te vas antes."
+        },
+        {
+          "t": "Servicios añadidos",
+          "b": "Que no usas y se cobran."
+        },
+        {
+          "t": "Precios que suben",
+          "b": "Al acabar la promoción."
+        }
+      ],
+      "foot": "Lee la letra pequeña"
+    },
+    {
+      "t": "point",
+      "head": "Valora [[agrupar]] o separar",
+      "body": "Un paquete puede salir más barato o no. Compara el total con las dos opciones.",
+      "foot": "Haz la cuenta",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "No pagues por [[datos que no usas]]",
+      "body": "Mira tu consumo medio de los últimos meses y ajústalo.",
+      "foot": "A tu medida",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "close",
+      "head": "Diez minutos, [[todo el año]]",
+      "body": "Pon un recordatorio anual para revisarlo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa tu factura.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

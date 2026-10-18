@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-040-primer-sueldo",
+  "label": "Tu primer sueldo",
+  "accent": "green",
+  "caption": "Tu primer sueldo 🥳 Lo que conviene hacer desde el primer mes.\n\nDesliza para ver un plan sencillo para empezar con buen pie.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#primersueldo",
+    "#ahorro",
+    "#jovenes",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🥳",
+      "title": "Tu primer sueldo",
+      "foot": "Cómo empezar con buen pie"
+    },
+    {
+      "t": "point",
+      "head": "Los primeros meses [[marcan hábitos]]",
+      "body": "Lo que hagas ahora será tu normalidad. Por eso conviene empezar con un plan, aunque sea simple.",
+      "foot": "Hábitos",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "steps",
+      "head": "Un plan para empezar",
+      "steps": [
+        {
+          "t": "Mira tu nómina",
+          "b": "Entiende bruto, neto y descuentos."
+        },
+        {
+          "t": "Haz un presupuesto",
+          "b": "Aunque sea de una hoja."
+        },
+        {
+          "t": "Automatiza el ahorro",
+          "b": "Aunque sea poco."
+        },
+        {
+          "t": "Abre un fondo de emergencia",
+          "b": "Primer objetivo."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Errores típicos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Gastar todo el primer mes",
+          "b": "Sin dejar nada."
+        },
+        {
+          "t": "Pedir crédito pronto",
+          "b": "Para consumo."
+        },
+        {
+          "t": "No ahorrar «hasta que gane más»",
+          "b": "Cuando sube el gasto."
+        }
+      ],
+      "foot": "Evítalos"
+    },
+    {
+      "t": "point",
+      "head": "Empieza con un [[porcentaje]]",
+      "body": "Un 10 % del neto es una buena primera meta. Ya es un hábito para toda la vida.",
+      "foot": "Un primer paso",
+      "kicker": "Una idea"
+    },
+    {
+      "t": "point",
+      "head": "Aprende [[poco a poco]]",
+      "body": "Un libro, un canal o un curso al mes. El conocimiento financiero es una inversión.",
+      "foot": "Formación",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Tu yo de dentro de diez años [[te lo agradecerá]]",
+      "body": "Elige tu primer porcentaje.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a alguien que empieza.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

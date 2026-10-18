@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-043-revision-semanal",
+  "label": "Diez minutos a la semana",
+  "accent": "green",
+  "caption": "Diez minutos a la semana ⏱️ El hábito que mantiene tu dinero ordenado.\n\nDesliza para ver qué revisar en cada sesión.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#habitos",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "10'",
+      "title": "a la semana con tu dinero",
+      "foot": "El hábito que lo ordena todo"
+    },
+    {
+      "t": "point",
+      "head": "Lo que no se mira, [[se descontrola]]",
+      "body": "Un repaso corto evita sorpresas y te ayuda a ajustar a tiempo.",
+      "foot": "Poco, pero siempre",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "steps",
+      "head": "Qué revisar",
+      "steps": [
+        {
+          "t": "Tus movimientos",
+          "b": "De la semana."
+        },
+        {
+          "t": "Tu presupuesto",
+          "b": "¿Vas bien en cada categoría?"
+        },
+        {
+          "t": "Los pagos que vienen",
+          "b": "Los próximos 7 días."
+        },
+        {
+          "t": "Tu ahorro",
+          "b": "¿Se hizo la transferencia?"
+        }
+      ],
+      "foot": "Cuatro puntos"
+    },
+    {
+      "t": "point",
+      "head": "Elige un [[día fijo]]",
+      "body": "Por ejemplo, el domingo por la noche o el lunes por la mañana. Pon una alarma.",
+      "foot": "Constancia",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Hazlo [[agradable]]",
+      "body": "Con un café, música o en el sofá. Si es agradable, se mantiene.",
+      "foot": "Un matiz",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Apunta [[una decisión]]",
+      "body": "Cada semana, una cosa que cambiarás: cancelar algo, mover dinero o reducir un gasto.",
+      "foot": "Acción",
+      "kicker": "Cierre"
+    },
+    {
+      "t": "close",
+      "head": "Diez minutos, [[mucha tranquilidad]]",
+      "body": "Pon la alarma ahora.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y elige tu día.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

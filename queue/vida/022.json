@@ -1,0 +1,103 @@
+{
+  "id": "vida-022-seguro-hogar",
+  "label": "Seguro de hogar",
+  "accent": "green",
+  "caption": "Seguro de hogar 🏠 Qué cubre, qué no y cómo compararlos.\n\nDesliza para ver qué mirar antes de contratar. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#seguros",
+    "#hogar",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏠",
+      "title": "Seguro de hogar",
+      "foot": "Qué mirar antes de contratar"
+    },
+    {
+      "t": "cards",
+      "head": "Las dos partes",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Continente",
+          "b": "El edificio: paredes, techos, instalaciones."
+        },
+        {
+          "t": "Contenido",
+          "b": "Lo que hay dentro: muebles, ropa, aparatos."
+        }
+      ],
+      "foot": "Qué se asegura"
+    },
+    {
+      "t": "point",
+      "head": "Calcula bien el [[valor]]",
+      "body": "Asegurar de menos puede hacer que la indemnización sea menor. Asegurar de más, pagar de más.",
+      "foot": "Ni más ni menos",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Coberturas habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Incendio y agua",
+          "b": "Los daños más comunes."
+        },
+        {
+          "t": "Robo",
+          "b": "Según condiciones."
+        },
+        {
+          "t": "Responsabilidad civil",
+          "b": "Daños a terceros."
+        }
+      ],
+      "foot": "Revisa"
+    },
+    {
+      "t": "point",
+      "head": "Lee las [[exclusiones]]",
+      "body": "Toda póliza tiene casos que no cubre. Pregunta qué no está incluido y qué franquicia tiene.",
+      "foot": "Letra pequeña",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo compararlos",
+      "steps": [
+        {
+          "t": "Pide varias ofertas",
+          "b": "Con las mismas coberturas."
+        },
+        {
+          "t": "Compara el total",
+          "b": "Prima anual y franquicias."
+        },
+        {
+          "t": "Mira las opiniones",
+          "b": "Sobre la gestión de siniestros."
+        },
+        {
+          "t": "Revisa cada año",
+          "b": "Los precios cambian."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Asegura lo importante, [[no lo accesorio]]",
+      "body": "Revisa tu póliza actual hoy.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; lee siempre tu póliza.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

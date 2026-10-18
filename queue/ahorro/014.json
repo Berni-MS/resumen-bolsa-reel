@@ -1,0 +1,107 @@
+{
+  "id": "ahorro-014-rebajas",
+  "label": "Rebajas con cabeza",
+  "accent": "green",
+  "caption": "Rebajas con cabeza 🏷️ Cuándo merece la pena comprar y cuándo no.\n\nDesliza para ver cuatro preguntas que te ayudan a decidir.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#rebajas",
+    "#ahorro",
+    "#compras",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏷️",
+      "title": "Rebajas con cabeza",
+      "foot": "Cuándo merece la pena comprar"
+    },
+    {
+      "t": "point",
+      "head": "Una rebaja solo es buena si [[ibas a comprarlo]]",
+      "body": "Comprar lo que no necesitabas a mitad de precio sigue siendo gastar.",
+      "foot": "La regla de oro",
+      "kicker": "Primero"
+    },
+    {
+      "t": "steps",
+      "head": "Cuatro preguntas antes de pagar",
+      "steps": [
+        {
+          "t": "¿Lo necesito?",
+          "b": "Si no, déjalo."
+        },
+        {
+          "t": "¿Lo habría comprado a precio normal?",
+          "b": "Si no, no es un chollo."
+        },
+        {
+          "t": "¿Cuántas veces lo usaré?",
+          "b": "Divide el precio entre usos."
+        },
+        {
+          "t": "¿Dónde lo guardaré?",
+          "b": "Si no tienes sitio, cuenta como coste."
+        }
+      ],
+      "foot": "Cuatro preguntas"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que suele valer la pena",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Lo que ya estaba en tu lista",
+          "b": "Con calidad y duración."
+        },
+        {
+          "t": "Básicos que se gastan",
+          "b": "Ropa de uso diario."
+        },
+        {
+          "t": "Lo que usas mucho",
+          "b": "Se amortiza antes."
+        }
+      ],
+      "foot": "Rebajas buenas"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que suele no valerla",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Compras de impulso",
+          "b": "Se acumulan sin usar."
+        },
+        {
+          "t": "Cosas de moda pasajera",
+          "b": "Se quedan viejas."
+        },
+        {
+          "t": "«Solo hoy»",
+          "b": "La prisa juega contra ti."
+        }
+      ],
+      "foot": "Rebajas trampa"
+    },
+    {
+      "t": "point",
+      "head": "Fija un [[tope]]",
+      "body": "Una cantidad máxima para toda la campaña y apunta lo que gastas.",
+      "foot": "Control",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "close",
+      "head": "La mejor rebaja es [[la que no compras]]",
+      "body": "Hazte las cuatro preguntas antes de pagar.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para la próxima rebaja.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

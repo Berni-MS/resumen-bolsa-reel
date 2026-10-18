@@ -1,0 +1,94 @@
+{
+  "id": "vida-023-seguro-coche",
+  "label": "Seguro de coche",
+  "accent": "green",
+  "caption": "Seguro de coche 🚗 Tipos de seguro y qué mirar al elegir.\n\nDesliza para ver las diferencias básicas. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#seguros",
+    "#coche",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🚗",
+      "title": "Seguro de coche",
+      "foot": "Qué tipo necesitas"
+    },
+    {
+      "t": "point",
+      "head": "Uno es [[obligatorio]]",
+      "body": "El seguro de responsabilidad civil obligatoria cubre los daños que causes a terceros. Es el mínimo legal.",
+      "foot": "Mínimo legal",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Los tipos más habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "A terceros",
+          "b": "El mínimo, con coberturas básicas."
+        },
+        {
+          "t": "A terceros ampliado",
+          "b": "Añade lunas, robo o incendio."
+        },
+        {
+          "t": "A todo riesgo",
+          "b": "Cubre también tus daños, a veces con franquicia."
+        }
+      ],
+      "foot": "Elige según tu coche"
+    },
+    {
+      "t": "point",
+      "head": "La [[franquicia]]",
+      "body": "Es la parte que pagas tú en un siniestro. Una franquicia más alta baja la prima, pero cuesta más si hay un parte.",
+      "foot": "Un equilibrio",
+      "kicker": "Un concepto"
+    },
+    {
+      "t": "point",
+      "head": "No solo el [[precio]]",
+      "body": "Compara coberturas, asistencia en carretera y la gestión de siniestros. Barato puede salir caro.",
+      "foot": "Calidad también",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo elegir",
+      "steps": [
+        {
+          "t": "Valora tu coche",
+          "b": "Valor y antigüedad."
+        },
+        {
+          "t": "Pide varias ofertas",
+          "b": "Con las mismas condiciones."
+        },
+        {
+          "t": "Compara coberturas",
+          "b": "Y franquicias."
+        },
+        {
+          "t": "Renueva con criterio",
+          "b": "Revisa antes de cada año."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "El seguro bueno es [[el que cubre lo que necesitas]]",
+      "body": "Compara tres ofertas esta semana.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; lee siempre tu póliza.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

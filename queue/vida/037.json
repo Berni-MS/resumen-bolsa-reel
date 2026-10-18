@@ -1,0 +1,107 @@
+{
+  "id": "vida-037-refinanciar",
+  "label": "Refinanciar una deuda",
+  "accent": "green",
+  "caption": "Refinanciar una deuda 🔄 Cuándo puede ayudarte y cuándo no.\n\nDesliza para ver los pros y los contras. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#deudas",
+    "#refinanciar",
+    "#prestamos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔄",
+      "title": "Refinanciar una deuda",
+      "foot": "Cuándo ayuda y cuándo no"
+    },
+    {
+      "t": "point",
+      "head": "Cambiar [[las condiciones]]",
+      "body": "Refinanciar es sustituir una deuda por otra con condiciones distintas, como un plazo más largo o un interés diferente.",
+      "foot": "Qué es",
+      "kicker": "La idea"
+    },
+    {
+      "t": "cards",
+      "head": "Cuándo puede ayudar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Interés más bajo",
+          "b": "Pagarás menos en total."
+        },
+        {
+          "t": "Agrupar deudas",
+          "b": "Una sola cuota más sencilla."
+        },
+        {
+          "t": "Aliviar la cuota",
+          "b": "Si hay dificultades."
+        }
+      ],
+      "foot": "Ventajas"
+    },
+    {
+      "t": "cards",
+      "head": "Cuidado con",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Plazo más largo",
+          "b": "Pagas más intereses en total."
+        },
+        {
+          "t": "Comisiones",
+          "b": "De la nueva operación."
+        },
+        {
+          "t": "Garantías extra",
+          "b": "Que te pidan más."
+        }
+      ],
+      "foot": "Riesgos"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de decidir",
+      "steps": [
+        {
+          "t": "Suma lo que pagarás en total",
+          "b": "Antes y después."
+        },
+        {
+          "t": "Compara la TAE",
+          "b": "De ambas."
+        },
+        {
+          "t": "Revisa las comisiones",
+          "b": "De la cancelación."
+        },
+        {
+          "t": "Pide asesoramiento",
+          "b": "Si dudas."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pide [[ayuda a tiempo]]",
+      "body": "Si no puedes pagar, habla con tu entidad cuanto antes. Suele haber más opciones al principio.",
+      "foot": "No esperes",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "close",
+      "head": "Refinanciar no es [[borrar la deuda]]",
+      "body": "Es cambiar sus condiciones. Haz las cuentas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

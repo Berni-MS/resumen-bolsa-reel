@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-038-energia",
+  "label": "Ahorrar energía en casa",
+  "accent": "green",
+  "caption": "Ahorrar energía en casa ⚡ Hábitos sencillos para que la factura baje.\n\nDesliza para ver los que más impacto tienen. Son pautas generales.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#energia",
+    "#hogar",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "⚡",
+      "title": "Ahorrar energía en casa",
+      "foot": "Hábitos que se notan en la factura"
+    },
+    {
+      "t": "point",
+      "head": "Lo grande [[pesa más]]",
+      "body": "Calefacción o aire, agua caliente y electrodomésticos grandes suelen ser lo que más consume.",
+      "foot": "Empieza por ahí",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Hábitos con impacto",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Climatización",
+          "b": "Ajusta la temperatura y cierra puertas."
+        },
+        {
+          "t": "Agua caliente",
+          "b": "Bajar un poco el termostato y duchas más cortas."
+        },
+        {
+          "t": "Electrodomésticos",
+          "b": "Programas eco y llenar la lavadora."
+        }
+      ],
+      "foot": "Lo que más cuenta"
+    },
+    {
+      "t": "point",
+      "head": "Apaga lo que [[no usas]]",
+      "body": "Los aparatos en espera también consumen. Regletas con interruptor ayudan.",
+      "foot": "Pequeño pero constante",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Iluminación [[LED]]",
+      "body": "Gastan mucho menos que las bombillas antiguas y duran más.",
+      "foot": "Una inversión pequeña",
+      "kicker": "Un cambio"
+    },
+    {
+      "t": "steps",
+      "head": "Revisa tu factura",
+      "steps": [
+        {
+          "t": "Mira tu potencia contratada",
+          "b": "¿Necesitas tanta?"
+        },
+        {
+          "t": "Compara tarifas",
+          "b": "Con tu consumo real."
+        },
+        {
+          "t": "Elige el horario",
+          "b": "Si tienes discriminación horaria."
+        },
+        {
+          "t": "Revisa cada año",
+          "b": "Las ofertas cambian."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Menos consumo, [[más margen]]",
+      "body": "Elige un hábito esta semana.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y elige el tuyo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

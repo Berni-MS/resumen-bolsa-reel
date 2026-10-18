@@ -1,0 +1,129 @@
+{
+  "id": "ahorro-052-plan-30-dias",
+  "label": "Plan de ahorro de 30 días",
+  "accent": "green",
+  "caption": "Plan de ahorro de 30 días 📅 Un mes para poner en marcha tu sistema de ahorro.\n\nDesliza para ver qué hacer cada semana.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#reto",
+    "#plan",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "30",
+      "title": "días para poner en marcha tu ahorro",
+      "foot": "Un plan semana a semana"
+    },
+    {
+      "t": "steps",
+      "head": "Semana 1: conoce tus números",
+      "steps": [
+        {
+          "t": "Apunta tus ingresos",
+          "b": "Netos."
+        },
+        {
+          "t": "Apunta tus gastos fijos",
+          "b": "Todos."
+        },
+        {
+          "t": "Revisa tus extractos",
+          "b": "Último mes."
+        },
+        {
+          "t": "Calcula lo que queda",
+          "b": "Tu margen."
+        }
+      ],
+      "foot": "Mira dónde estás"
+    },
+    {
+      "t": "steps",
+      "head": "Semana 2: recorta",
+      "steps": [
+        {
+          "t": "Revisa suscripciones",
+          "b": "Cancela lo que no uses."
+        },
+        {
+          "t": "Detecta gastos hormiga",
+          "b": "Elige uno a recortar."
+        },
+        {
+          "t": "Compara tus facturas",
+          "b": "Móvil, luz, seguro."
+        },
+        {
+          "t": "Fija tus topes",
+          "b": "Por categorías."
+        }
+      ],
+      "foot": "Gasta con intención"
+    },
+    {
+      "t": "steps",
+      "head": "Semana 3: automatiza",
+      "steps": [
+        {
+          "t": "Elige tu cantidad",
+          "b": "Aunque sea pequeña."
+        },
+        {
+          "t": "Abre una cuenta aparte",
+          "b": "Con tu objetivo."
+        },
+        {
+          "t": "Programa la transferencia",
+          "b": "El día de cobro."
+        },
+        {
+          "t": "Pon una alarma",
+          "b": "Para revisar."
+        }
+      ],
+      "foot": "Que se haga solo"
+    },
+    {
+      "t": "steps",
+      "head": "Semana 4: asegura",
+      "steps": [
+        {
+          "t": "Calcula tu fondo de emergencia",
+          "b": "Meta en meses."
+        },
+        {
+          "t": "Fija una meta concreta",
+          "b": "Con cifra y fecha."
+        },
+        {
+          "t": "Revisa los pagos anuales",
+          "b": "Calendario del año."
+        },
+        {
+          "t": "Celebra el avance",
+          "b": "Un premio pequeño."
+        }
+      ],
+      "foot": "Consolida"
+    },
+    {
+      "t": "point",
+      "head": "Al final, [[repite]]",
+      "body": "Cada mes revisa tu sistema y ajusta. Lo importante es que se mantenga.",
+      "foot": "Hábito",
+      "kicker": "Después"
+    },
+    {
+      "t": "close",
+      "head": "En 30 días, [[un sistema que funciona]]",
+      "body": "Elige la fecha de inicio.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y empieza este lunes.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

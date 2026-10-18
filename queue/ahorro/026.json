@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-026-transporte",
+  "label": "Ahorrar en transporte",
+  "accent": "green",
+  "caption": "Ahorrar en transporte 🚌 Moverte cuesta: así puedes recortar sin renunciar a lo importante.\n\nDesliza para ver cómo comparar opciones.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#transporte",
+    "#coche",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🚌",
+      "title": "Ahorrar en transporte",
+      "foot": "Moverte cuesta: compáralo"
+    },
+    {
+      "t": "point",
+      "head": "Calcula lo que [[te cuesta]] ir y volver",
+      "body": "Mira combustible, abono, aparcamiento o peajes. Divide el total mensual entre los viajes.",
+      "foot": "Haz la cuenta",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Opciones",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Transporte público",
+          "b": "Abonos, descuentos y bonos mensuales."
+        },
+        {
+          "t": "Bici o andar",
+          "b": "Gratis y buen ejercicio."
+        },
+        {
+          "t": "Compartir coche",
+          "b": "Reparte combustible y peajes."
+        }
+      ],
+      "foot": "Compara"
+    },
+    {
+      "t": "point",
+      "head": "Si tienes coche, [[cuida los costes]]",
+      "body": "Revisiones al día, presión de neumáticos y conducción suave gastan menos combustible.",
+      "foot": "Mantenimiento",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con los [[gastos fijos]]",
+      "body": "Seguro, impuestos y aparcamiento cuestan aunque lo uses poco. Súmalos al coste real.",
+      "foot": "El coste total",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "steps",
+      "head": "Plan de ahorro",
+      "steps": [
+        {
+          "t": "Calcula tu coste mensual",
+          "b": "Todos los conceptos."
+        },
+        {
+          "t": "Compara con alternativas",
+          "b": "Para tus trayectos habituales."
+        },
+        {
+          "t": "Prueba una semana",
+          "b": "Cambia un hábito."
+        },
+        {
+          "t": "Decide con datos",
+          "b": "Y ajusta."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Cuenta lo que [[te cuesta moverte]]",
+      "body": "A veces ahorras más de lo que crees.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz tu cálculo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

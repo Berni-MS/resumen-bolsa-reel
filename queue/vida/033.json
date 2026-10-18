@@ -1,0 +1,81 @@
+{
+  "id": "vida-033-aval",
+  "label": "Qué es un aval",
+  "accent": "green",
+  "caption": "Qué es un aval ✍️ Antes de firmar por otra persona, lee esto.\n\nDesliza para ver qué implica. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#aval",
+    "#deudas",
+    "#prestamos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "✍️",
+      "title": "Qué es un aval",
+      "foot": "Antes de firmar por otra persona"
+    },
+    {
+      "t": "point",
+      "head": "Una [[garantía]] para el prestamista",
+      "body": "Si el deudor no paga, el avalista responde con su patrimonio. Es una responsabilidad real, no un trámite.",
+      "foot": "Qué es",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "Respondes con [[todo lo que tienes]]",
+      "body": "El avalista puede tener que pagar la deuda con sus bienes presentes y futuros.",
+      "foot": "Riesgo",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de ser avalista",
+      "steps": [
+        {
+          "t": "Pregunta cuánto y por cuánto tiempo",
+          "b": "Importes y plazos."
+        },
+        {
+          "t": "Valora la situación de la otra persona",
+          "b": "Con sinceridad."
+        },
+        {
+          "t": "Pregunta si puedes salir",
+          "b": "Y cómo."
+        },
+        {
+          "t": "Pide asesoramiento",
+          "b": "Antes de firmar."
+        }
+      ],
+      "foot": "Cuatro preguntas"
+    },
+    {
+      "t": "point",
+      "head": "Piensa si puedes [[asumirlo]]",
+      "body": "Hazte esta pregunta: si tuviera que pagar toda la deuda, ¿podría?",
+      "foot": "Un test",
+      "kicker": "Tu test"
+    },
+    {
+      "t": "point",
+      "head": "Hay [[alternativas]]",
+      "body": "A veces hay otras formas de apoyar sin comprometer tu patrimonio.",
+      "foot": "Otras vías",
+      "kicker": "Opciones"
+    },
+    {
+      "t": "close",
+      "head": "Avalar es [[prestar tu patrimonio]]",
+      "body": "Piénsalo con calma y asesórate.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta con un profesional.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

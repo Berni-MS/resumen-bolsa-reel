@@ -1,0 +1,81 @@
+{
+  "id": "vida-050-desempleo",
+  "label": "La prestación por desempleo",
+  "accent": "green",
+  "caption": "La prestación por desempleo 🗂️ Qué es y cómo funciona, a grandes rasgos.\n\nDesliza para ver lo básico. Información general: consulta fuentes oficiales.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#paro",
+    "#empleo",
+    "#prestaciones",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🗂️",
+      "title": "La prestación por desempleo",
+      "foot": "A grandes rasgos"
+    },
+    {
+      "t": "point",
+      "head": "Una [[ayuda temporal]]",
+      "body": "Es una prestación para quien ha perdido su empleo y cumple ciertos requisitos de cotización.",
+      "foot": "Qué es",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "Depende de [[lo cotizado]]",
+      "body": "Su duración y cuantía dependen del tiempo cotizado y de otros factores. Consulta tu caso en fuentes oficiales.",
+      "foot": "De qué depende",
+      "kicker": "Cómo se calcula"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Reúne la documentación",
+          "b": "Contrato y certificados."
+        },
+        {
+          "t": "Solicítala a tiempo",
+          "b": "Hay plazos."
+        },
+        {
+          "t": "Mantén tus obligaciones",
+          "b": "Renovar demanda de empleo."
+        },
+        {
+          "t": "Consulta dudas",
+          "b": "En el servicio oficial."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Planifica con [[tu presupuesto]]",
+      "body": "La prestación suele ser menor que tu sueldo. Ajusta tus gastos desde el primer mes.",
+      "foot": "Ajusta",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "point",
+      "head": "No te [[olvides de los plazos]]",
+      "body": "Pedirla tarde puede suponer perder parte de la prestación. Infórmate cuanto antes.",
+      "foot": "Fechas",
+      "kicker": "Importante"
+    },
+    {
+      "t": "close",
+      "head": "Informarte pronto [[te protege]]",
+      "body": "Consulta la web oficial del servicio de empleo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

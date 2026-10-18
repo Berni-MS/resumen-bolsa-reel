@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-037-fondo-reparaciones",
+  "label": "El fondo de reparaciones",
+  "accent": "green",
+  "caption": "El fondo de reparaciones 🔧 Para los gastos que sabes que llegarán, aunque no sepas cuándo.\n\nDesliza para ver cómo montarlo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#imprevistos",
+    "#hogar",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔧",
+      "title": "El fondo de reparaciones",
+      "foot": "Para los gastos que sabes que llegarán"
+    },
+    {
+      "t": "point",
+      "head": "Imprevistos [[previsibles]]",
+      "body": "La lavadora se romperá, el coche necesitará revisión, el móvil se estropeará. No sabes cuándo, pero sí que pasará.",
+      "foot": "Casi seguro",
+      "kicker": "La idea"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo montarlo",
+      "steps": [
+        {
+          "t": "Haz una lista",
+          "b": "De lo que puede estropearse."
+        },
+        {
+          "t": "Estima un coste anual",
+          "b": "Aproximado."
+        },
+        {
+          "t": "Divide entre 12",
+          "b": "Tu cuota mensual."
+        },
+        {
+          "t": "Ábrelo aparte",
+          "b": "Con un nombre claro."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Distinto del [[fondo de emergencia]]",
+      "body": "Este cubre gastos pequeños y frecuentes. El de emergencia, golpes grandes como perder el empleo.",
+      "foot": "Dos colchones",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "point",
+      "head": "Funciona porque [[quita el susto]]",
+      "body": "Cuando llega la avería, ya tienes el dinero. No pagas con tarjeta ni deshaces tu ahorro.",
+      "foot": "Tranquilidad",
+      "kicker": "El efecto"
+    },
+    {
+      "t": "point",
+      "head": "Empieza [[pequeño]]",
+      "body": "Con 15 o 20 euros al mes ya cubres pequeñas reparaciones. Ajusta con el tiempo.",
+      "foot": "Poco a poco",
+      "kicker": "Ánimo"
+    },
+    {
+      "t": "close",
+      "head": "Prepara lo [[que seguro llegará]]",
+      "body": "Haz tu lista de imprevistos hoy.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y abre tu fondo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "vida-048-seguro-vida",
+  "label": "Seguros de vida y salud",
+  "accent": "green",
+  "caption": "Seguros de vida y salud ❤️ Cuándo pensar en ellos y qué preguntar.\n\nDesliza para ver lo básico. Información general, no asesoramiento.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#seguros",
+    "#vida",
+    "#salud",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "❤️",
+      "title": "Seguros de vida y salud",
+      "foot": "Cuándo tienen sentido"
+    },
+    {
+      "t": "cards",
+      "head": "Para qué sirven",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Seguro de vida",
+          "b": "Protege económicamente a tus allegados si faltas."
+        },
+        {
+          "t": "Seguro de salud",
+          "b": "Da acceso a servicios médicos privados."
+        },
+        {
+          "t": "Seguro de baja o invalidez",
+          "b": "Complementa ingresos si no puedes trabajar."
+        }
+      ],
+      "foot": "Tres ideas"
+    },
+    {
+      "t": "point",
+      "head": "Piensa en [[quién depende de ti]]",
+      "body": "Si otras personas dependen de tus ingresos, un seguro puede protegerlas. Si no, quizá no lo necesites.",
+      "foot": "Para quién",
+      "kicker": "La pregunta"
+    },
+    {
+      "t": "steps",
+      "head": "Qué preguntar",
+      "steps": [
+        {
+          "t": "Qué cubre y qué no",
+          "b": "Y desde cuándo."
+        },
+        {
+          "t": "Cuánto cuesta y cómo evoluciona",
+          "b": "Con la edad."
+        },
+        {
+          "t": "Qué exclusiones tiene",
+          "b": "Preexistencias."
+        },
+        {
+          "t": "Cómo se gestionan las reclamaciones",
+          "b": "Opiniones y plazos."
+        }
+      ],
+      "foot": "Cuatro preguntas"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[ventas con prisas]]",
+      "body": "No firmes sin leer. Pide la póliza completa y tiempo para decidir.",
+      "foot": "Sin presión",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Compara [[varias opciones]]",
+      "body": "Las primas y condiciones varían mucho. Pide más de una oferta.",
+      "foot": "Compara",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Protege lo que [[no quieres perder]]",
+      "body": "Piensa a quién protegería un seguro en tu caso.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

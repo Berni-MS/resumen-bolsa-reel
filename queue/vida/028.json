@@ -1,0 +1,65 @@
+{
+  "id": "vida-028-renta-errores",
+  "label": "Errores comunes en la Renta",
+  "accent": "red",
+  "caption": "Errores comunes en la Renta ⚠️ Los fallos que más se repiten y cómo evitarlos.\n\nDesliza para ver cinco. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#impuestos",
+    "#errores",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "5",
+      "title": "errores comunes en la Renta",
+      "foot": "Y cómo evitarlos"
+    },
+    {
+      "t": "point",
+      "head": "1. [[No revisar]] el borrador",
+      "body": "El borrador puede no incluir todo. Compruébalo antes de confirmar.",
+      "foot": "Revisa",
+      "kicker": "Error 1"
+    },
+    {
+      "t": "point",
+      "head": "2. Dejar [[ingresos sin declarar]]",
+      "body": "Si tuviste más de un pagador o ingresos extra, comprueba que todo esté incluido.",
+      "foot": "Todo cuenta",
+      "kicker": "Error 2"
+    },
+    {
+      "t": "point",
+      "head": "3. No aportar [[datos personales]] nuevos",
+      "body": "Hijos, discapacidad o cambios de domicilio pueden cambiar el resultado.",
+      "foot": "Actualiza",
+      "kicker": "Error 3"
+    },
+    {
+      "t": "point",
+      "head": "4. Presentar [[sin guardar justificantes]]",
+      "body": "Guarda los documentos por si te los piden más adelante.",
+      "foot": "Conserva",
+      "kicker": "Error 4"
+    },
+    {
+      "t": "point",
+      "head": "5. Dejarlo [[para el último día]]",
+      "body": "Con prisas aumentan los errores. Mejor hacerlo con tiempo.",
+      "foot": "Con calma",
+      "kicker": "Error 5"
+    },
+    {
+      "t": "close",
+      "head": "Con tiempo y orden, [[menos errores]]",
+      "body": "Pon una alarma para empezar pronto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

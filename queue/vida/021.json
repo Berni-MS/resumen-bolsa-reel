@@ -1,0 +1,94 @@
+{
+  "id": "vida-021-alquiler-fianza",
+  "label": "Alquiler: fianza y lo básico",
+  "accent": "green",
+  "caption": "Alquiler: fianza y lo básico 🔑 Lo que conviene saber antes de firmar.\n\nDesliza para ver lo esencial. Información general: consulta la normativa y tu contrato.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#alquiler",
+    "#fianza",
+    "#vivienda",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔑",
+      "title": "Alquilar: lo básico antes de firmar",
+      "foot": "Fianza, contrato y gastos"
+    },
+    {
+      "t": "point",
+      "head": "La [[fianza]]",
+      "body": "Es una garantía que se entrega al empezar. Se devuelve al terminar si la vivienda está en buen estado y no hay deudas.",
+      "foot": "Qué es",
+      "kicker": "Primero"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de firmar",
+      "steps": [
+        {
+          "t": "Lee el contrato completo",
+          "b": "Duración, renta, actualización."
+        },
+        {
+          "t": "Revisa el estado de la vivienda",
+          "b": "Con fotos."
+        },
+        {
+          "t": "Pregunta por los gastos",
+          "b": "Qué paga cada parte."
+        },
+        {
+          "t": "Guarda todo por escrito",
+          "b": "Pagos y comunicaciones."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Cosas que revisar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Subidas de renta",
+          "b": "Cómo y cuándo se actualiza."
+        },
+        {
+          "t": "Duración y prórrogas",
+          "b": "Qué pasa al terminar."
+        },
+        {
+          "t": "Quién paga qué",
+          "b": "Suministros y reparaciones."
+        }
+      ],
+      "foot": "En el contrato"
+    },
+    {
+      "t": "point",
+      "head": "Pide un [[inventario]]",
+      "body": "Si está amueblado, apunta lo que hay y su estado. Evita discusiones al salir.",
+      "foot": "Con fotos",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con [[pagos fuera del contrato]]",
+      "body": "Desconfía de pedir dinero por adelantado sin contrato o a cuentas extrañas.",
+      "foot": "Cuidado",
+      "kicker": "Seguridad"
+    },
+    {
+      "t": "close",
+      "head": "Un contrato claro [[evita problemas]]",
+      "body": "Léelo con calma y pregunta lo que no entiendas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta la normativa y tu contrato.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

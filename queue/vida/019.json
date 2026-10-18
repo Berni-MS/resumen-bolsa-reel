@@ -1,0 +1,107 @@
+{
+  "id": "vida-019-amortizar",
+  "label": "¿Amortizar la hipoteca?",
+  "accent": "green",
+  "caption": "¿Amortizar la hipoteca? 🏠 Pagar antes puede ayudarte, pero no siempre es lo mejor.\n\nDesliza para ver los pros y los contras. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#hipoteca",
+    "#amortizar",
+    "#vivienda",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏠",
+      "title": "¿Amortizar la hipoteca?",
+      "foot": "Pros y contras de pagar antes"
+    },
+    {
+      "t": "point",
+      "head": "Qué es",
+      "body": "Es devolver parte del capital antes de lo previsto. Reduces la cuota o el plazo, y los intereses que pagarás.",
+      "foot": "Pagar antes",
+      "kicker": "La idea"
+    },
+    {
+      "t": "cards",
+      "head": "A favor",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Menos intereses",
+          "b": "Pagas menos en total."
+        },
+        {
+          "t": "Más tranquilidad",
+          "b": "Menos deuda pendiente."
+        },
+        {
+          "t": "Cuota o plazo menores",
+          "b": "Según cómo lo hagas."
+        }
+      ],
+      "foot": "Ventajas"
+    },
+    {
+      "t": "cards",
+      "head": "En contra",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Menos liquidez",
+          "b": "Tu dinero queda en la casa."
+        },
+        {
+          "t": "Comisiones",
+          "b": "Puede haberlas: mira tu contrato."
+        },
+        {
+          "t": "Otras opciones",
+          "b": "Con ese dinero, quizá puedas hacer otra cosa."
+        }
+      ],
+      "foot": "Inconvenientes"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de decidir",
+      "steps": [
+        {
+          "t": "Mira tu fondo de emergencia",
+          "b": "Primero, colchón."
+        },
+        {
+          "t": "Compara tu interés con alternativas",
+          "b": "Según tu tipo."
+        },
+        {
+          "t": "Revisa comisiones",
+          "b": "De amortización."
+        },
+        {
+          "t": "Valora tu horizonte",
+          "b": "Cuánto tiempo seguirás en esa casa."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "No hay una [[respuesta única]]",
+      "body": "Depende de tu situación y de tu tolerancia al riesgo. Consulta con tu entidad o un asesor.",
+      "foot": "Cada caso",
+      "kicker": "Importante"
+    },
+    {
+      "t": "close",
+      "head": "Haz las cuentas [[antes de pagar de más]]",
+      "body": "Pide a tu banco una simulación.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "vida-018-euribor",
+  "label": "Qué es el Euríbor",
+  "accent": "green",
+  "caption": "Qué es el Euríbor 📉 El número que mueve las hipotecas variables.\n\nDesliza para ver qué es y cómo te afecta.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#euribor",
+    "#hipoteca",
+    "#tipos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Euríbor",
+      "title": "El número que mueve las hipotecas",
+      "foot": "Explicado fácil"
+    },
+    {
+      "t": "point",
+      "head": "Un [[tipo de referencia]]",
+      "body": "Es el tipo de interés medio al que los bancos europeos se prestan dinero entre sí. Se publica a distintos plazos.",
+      "foot": "Qué es",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "Y tu hipoteca [[variable]]",
+      "body": "Muchas hipotecas variables fijan su interés como el Euríbor más un diferencial. Si sube el Euríbor, sube tu cuota.",
+      "foot": "Cómo te afecta",
+      "kicker": "En la práctica"
+    },
+    {
+      "t": "cards",
+      "head": "Qué significa para ti",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Euríbor sube",
+          "b": "La cuota de una hipoteca variable puede subir."
+        },
+        {
+          "t": "Euríbor baja",
+          "b": "La cuota puede bajar."
+        },
+        {
+          "t": "Hipoteca fija",
+          "b": "No se ve afectada por sus cambios."
+        }
+      ],
+      "foot": "Efectos"
+    },
+    {
+      "t": "point",
+      "head": "Se [[revisa]] en fechas",
+      "body": "Tu hipoteca se revisa cada cierto tiempo, normalmente cada seis o doce meses. Mira tu contrato.",
+      "foot": "Periodos de revisión",
+      "kicker": "Cuándo"
+    },
+    {
+      "t": "point",
+      "head": "Ten [[margen]] en tu presupuesto",
+      "body": "Si tienes variable, deja un colchón para posibles subidas de cuota.",
+      "foot": "Prevención",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Entender tu tipo [[te prepara]]",
+      "body": "Mira en tu contrato qué referencia usa tu hipoteca.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

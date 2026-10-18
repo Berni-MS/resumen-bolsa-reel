@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-019-sobres",
+  "label": "El método de los sobres",
+  "accent": "green",
+  "caption": "El método de los sobres ✉️ Un truco clásico para controlar el gasto del día a día.\n\nDesliza para ver cómo se usa, también en versión digital.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#presupuesto",
+    "#sobres",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "✉️",
+      "title": "El método de los sobres",
+      "foot": "Un clásico para controlar el gasto"
+    },
+    {
+      "t": "point",
+      "head": "La idea: [[un sobre por categoría]]",
+      "body": "Al cobrar, reparte el dinero de los gastos variables en sobres: comida, ocio, transporte. Cuando se acaba, se acaba.",
+      "foot": "Límite visible",
+      "kicker": "Cómo funciona"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo ponerlo en práctica",
+      "steps": [
+        {
+          "t": "Mira tus gastos variables",
+          "b": "Del último mes."
+        },
+        {
+          "t": "Elige 3 o 4 categorías",
+          "b": "Las que más se te escapan."
+        },
+        {
+          "t": "Asigna una cantidad a cada una",
+          "b": "Realista."
+        },
+        {
+          "t": "Cuando se acaba, paras",
+          "b": "Hasta el mes siguiente."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Versión [[digital]]",
+      "body": "Sin efectivo: varias cuentas o apartados, uno por categoría, con una tarjeta o transferencia automática.",
+      "foot": "Sin billetes",
+      "kicker": "Hoy"
+    },
+    {
+      "t": "cards",
+      "head": "Ventajas",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Ves lo que queda",
+          "b": "Sin cuentas complicadas."
+        },
+        {
+          "t": "Frena el gasto impulsivo",
+          "b": "El límite es físico."
+        },
+        {
+          "t": "Te enseña a priorizar",
+          "b": "Y a decidir."
+        }
+      ],
+      "foot": "Por qué funciona"
+    },
+    {
+      "t": "point",
+      "head": "No es para [[todo]]",
+      "body": "Úsalo en las categorías donde más gastas de más: ocio, comida fuera o compras.",
+      "foot": "Elige tus batallas",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Un límite claro [[calma la cabeza]]",
+      "body": "Prueba un solo sobre este mes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y elige tu categoría.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

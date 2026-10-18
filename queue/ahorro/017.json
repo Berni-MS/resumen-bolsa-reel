@@ -1,0 +1,85 @@
+{
+  "id": "ahorro-017-emergencia-5",
+  "label": "Fondo de emergencia en 5 pasos",
+  "accent": "green",
+  "caption": "Fondo de emergencia en 5 pasos 🧯 Tu colchón para los imprevistos.\n\nDesliza para ver cuánto tener y cómo construirlo sin agobiarte.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#fondodeemergencia",
+    "#ahorro",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧯",
+      "title": "Tu fondo de emergencia en 5 pasos",
+      "foot": "El colchón que te da tranquilidad"
+    },
+    {
+      "t": "point",
+      "head": "Qué es y para qué sirve",
+      "body": "Dinero apartado para imprevistos: una avería, una baja o perder el empleo. No es para caprichos.",
+      "foot": "Tu red de seguridad",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "point",
+      "head": "¿Cuánto [[necesitas]]?",
+      "body": "Una pauta habitual es entre 3 y 6 meses de gastos básicos. Con ingresos variables, más.",
+      "foot": "Según tu caso",
+      "kicker": "La cifra"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo construirlo",
+      "steps": [
+        {
+          "t": "Calcula tus gastos básicos",
+          "b": "Alquiler, comida, suministros."
+        },
+        {
+          "t": "Multiplica por los meses",
+          "b": "Tu objetivo."
+        },
+        {
+          "t": "Aparta una cantidad fija",
+          "b": "Cada mes, automática."
+        },
+        {
+          "t": "Guárdalo aparte",
+          "b": "Una cuenta separada."
+        },
+        {
+          "t": "Solo para emergencias",
+          "b": "Y repónlo si lo usas."
+        }
+      ],
+      "foot": "Cinco pasos"
+    },
+    {
+      "t": "point",
+      "head": "Dónde [[guardarlo]]",
+      "body": "En algo disponible sin riesgo de perder dinero, como una cuenta de ahorro. La disponibilidad pesa más que la rentabilidad.",
+      "foot": "Líquido y seguro",
+      "kicker": "Un detalle"
+    },
+    {
+      "t": "point",
+      "head": "Empieza por [[un mes]]",
+      "body": "Un primer mes de gastos ya te da un respiro. Luego, amplíalo poco a poco.",
+      "foot": "Poco a poco",
+      "kicker": "Ánimo"
+    },
+    {
+      "t": "close",
+      "head": "Un colchón te deja [[dormir tranquilo]]",
+      "body": "Calcula hoy tu objetivo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y monta el tuyo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

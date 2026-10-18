@@ -1,0 +1,68 @@
+{
+  "id": "ahorro-036-dinero-inesperado",
+  "label": "Un dinero inesperado",
+  "accent": "green",
+  "caption": "Un dinero inesperado 🎉 Bonus, devolución, regalo: cómo repartirlo sin que se esfume.\n\nDesliza para ver una regla simple.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#bonus",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🎉",
+      "title": "Llega un dinero inesperado",
+      "foot": "Cómo repartirlo sin que se esfume"
+    },
+    {
+      "t": "point",
+      "head": "Antes de gastar, [[para un día]]",
+      "body": "La emoción empuja a gastar. Guárdalo en la cuenta y decide al día siguiente.",
+      "foot": "Primero, calma",
+      "kicker": "Paso 1"
+    },
+    {
+      "t": "stat",
+      "big": "50 · 30 · 20",
+      "head": "Una regla simple de reparto",
+      "body": "50 % a tu futuro (ahorro o deudas), 30 % a un objetivo, 20 % a disfrutarlo. Es una guía, ajústala.",
+      "foot": "Una idea",
+      "kicker": "Un ejemplo",
+      "color": "green",
+      "bigSize": 170
+    },
+    {
+      "t": "point",
+      "head": "Si tienes [[deudas caras]]",
+      "body": "Amortizarlas es un destino muy rentable: dejas de pagar intereses.",
+      "foot": "Destino 1",
+      "kicker": "Prioridad"
+    },
+    {
+      "t": "point",
+      "head": "Si no, [[tu fondo]]",
+      "body": "Si aún no tienes colchón, esa suele ser la mejor primera opción.",
+      "foot": "Destino 2",
+      "kicker": "Prioridad"
+    },
+    {
+      "t": "point",
+      "head": "Y [[disfrútalo]] un poco",
+      "body": "Un capricho planificado ayuda a no sentir que te lo quitas todo.",
+      "foot": "Con cabeza",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "close",
+      "head": "Lo inesperado [[también se planifica]]",
+      "body": "Decide hoy tu reparto antes de que llegue.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando llegue.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

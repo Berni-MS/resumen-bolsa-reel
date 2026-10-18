@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-031-negociar-facturas",
+  "label": "Negociar una factura",
+  "accent": "green",
+  "caption": "Negociar una factura 📞 Preguntar cuesta poco y puede ahorrarte mucho.\n\nDesliza para ver cómo prepararte y qué decir.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#facturas",
+    "#negociar",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📞",
+      "title": "Negociar una factura",
+      "foot": "Preguntar es gratis"
+    },
+    {
+      "t": "point",
+      "head": "Muchas empresas [[mejoran la oferta]]",
+      "body": "Si ven que puedes irte, a veces ofrecen descuentos o mejores condiciones. No pierdes nada por preguntar.",
+      "foot": "Probar",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo prepararte",
+      "steps": [
+        {
+          "t": "Mira lo que pagas",
+          "b": "Y qué incluye."
+        },
+        {
+          "t": "Compara ofertas",
+          "b": "De otras compañías."
+        },
+        {
+          "t": "Llama o escribe",
+          "b": "Con calma y educación."
+        },
+        {
+          "t": "Pide por escrito",
+          "b": "Lo que te ofrezcan."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Qué decir",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "«Quiero revisar mi tarifa»",
+          "b": "Directo y tranquilo."
+        },
+        {
+          "t": "«He visto ofertas mejores»",
+          "b": "Con datos."
+        },
+        {
+          "t": "«¿Qué puede hacer por mí?»",
+          "b": "Dejas que propongan."
+        }
+      ],
+      "foot": "Frases útiles"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[permanencias]]",
+      "body": "Si te ofrecen un descuento, mira si te atan por un tiempo.",
+      "foot": "Letra pequeña",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Si no mejora, [[cambia]]",
+      "body": "Compara y valora si compensa. A veces cambiar es lo que más ahorra.",
+      "foot": "Decide",
+      "kicker": "Alternativa"
+    },
+    {
+      "t": "close",
+      "head": "Un cuarto de hora, [[todo el año]]",
+      "body": "Elige hoy una factura para revisar.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz la llamada.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

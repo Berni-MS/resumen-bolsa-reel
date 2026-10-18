@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-024-ingresos-variables",
+  "label": "Ingresos variables",
+  "accent": "green",
+  "caption": "Ingresos variables 🎢 Si cobras distinto cada mes, ordenar el dinero cuesta más. Esta es una forma sencilla de hacerlo.\n\nDesliza para ver el método del «sueldo propio».\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#autonomos",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🎢",
+      "title": "Si cobras distinto cada mes",
+      "foot": "Cómo ordenar un sueldo variable"
+    },
+    {
+      "t": "point",
+      "head": "El problema: no sabes [[cuánto vendrá]]",
+      "body": "Un mes entra mucho y otro poco. Gastar según lo que entra te deja sin margen en los meses flojos.",
+      "foot": "La montaña rusa",
+      "kicker": "Por qué cuesta"
+    },
+    {
+      "t": "steps",
+      "head": "El método del «sueldo propio»",
+      "steps": [
+        {
+          "t": "Calcula tu mes mínimo",
+          "b": "Lo que necesitas para vivir."
+        },
+        {
+          "t": "Mira tus peores meses",
+          "b": "Y tus ingresos medios."
+        },
+        {
+          "t": "Ponte un sueldo fijo",
+          "b": "Una cantidad que sea realista."
+        },
+        {
+          "t": "Mueve el resto a un colchón",
+          "b": "Los meses buenos cubren los malos."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Una cuenta para [[cobrar]], otra para [[vivir]]",
+      "body": "Todo lo que entra va a la primera. Cada mes te transfieres a la segunda tu sueldo propio.",
+      "foot": "Dos cuentas",
+      "kicker": "Cómo organizarlo"
+    },
+    {
+      "t": "point",
+      "head": "Piensa en [[impuestos]]",
+      "body": "Si eres autónomo, aparta un porcentaje de cada ingreso para cuotas e impuestos. Consúltalo con tu gestor.",
+      "foot": "No gastes lo que no es tuyo",
+      "kicker": "Un aviso"
+    },
+    {
+      "t": "cards",
+      "head": "Cuida tu colchón",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Más grande que el estándar",
+          "b": "Con ingresos variables, 6 meses de gastos suele ser más prudente."
+        },
+        {
+          "t": "Sepáralo del resto",
+          "b": "Para que no se mezcle."
+        },
+        {
+          "t": "Repón lo que uses",
+          "b": "Prioridad en los meses buenos."
+        }
+      ],
+      "foot": "Más seguridad"
+    },
+    {
+      "t": "close",
+      "head": "Tu sueldo puede ser [[estable]], aunque tus ingresos no",
+      "body": "Con dos cuentas y un sueldo propio, ordenas el caos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a un autónomo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

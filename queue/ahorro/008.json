@@ -1,76 +1,92 @@
 {
-  "id": "ahorro-008-24-horas",
-  "label": "Regla de las 24 horas",
+  "id": "ahorro-008-regalos-navidad",
+  "label": "Regalos de Navidad con presupuesto",
   "accent": "green",
-  "caption": "La regla de las 24 horas ⏳ Un truco sencillo para dejar de comprar por impulso.\n\nDesliza para ver cómo se aplica y qué preguntas te ayudan a decidir.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "caption": "Regalos de Navidad con presupuesto 🎁 Regalar sin que enero te asuste.\n\nDesliza para ver cómo repartir lo que gastas y ideas para gastar menos sin quedar mal.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
+    "#navidad",
     "#ahorro",
-    "#compras",
-    "#finanzaspersonales",
+    "#presupuesto",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "24 h",
-      "title": "antes de comprar por impulso",
-      "foot": "El truco más simple"
+      "big": "🎁",
+      "title": "Regalos de Navidad sin sustos en enero",
+      "foot": "Un presupuesto en 4 pasos"
     },
     {
       "t": "point",
-      "head": "La [[regla]]",
-      "body": "Si no es una necesidad urgente, espera 24 horas antes de pagar. Para compras grandes, espera una semana.",
-      "foot": "Esperar es gratis",
-      "kicker": "Cómo funciona"
+      "head": "Primero, [[un tope total]]",
+      "body": "Decide cuánto puedes gastar en total en regalos, comidas y extras. Ese número manda.",
+      "foot": "Antes de comprar",
+      "kicker": "Paso 1"
     },
     {
-      "t": "point",
-      "head": "Por qué [[funciona]]",
-      "body": "El impulso baja con las horas. Muchas veces, al día siguiente ya no lo quieres tanto.",
-      "foot": "La emoción se enfría",
-      "kicker": "La razón"
+      "t": "steps",
+      "head": "Cómo repartirlo",
+      "steps": [
+        {
+          "t": "Lista de personas",
+          "b": "A quién regalas de verdad."
+        },
+        {
+          "t": "Reparte el tope",
+          "b": "Entre cada persona, según tu criterio."
+        },
+        {
+          "t": "Apunta lo que compras",
+          "b": "En el móvil, al momento."
+        },
+        {
+          "t": "Para cuando llegues al tope",
+          "b": "Se acabó: pasa a regalos hechos o detalles."
+        }
+      ],
+      "foot": "Cuatro pasos"
     },
     {
       "t": "cards",
-      "head": "Tres preguntas antes de comprar",
+      "head": "Ideas para gastar menos",
       "accent": "green",
       "cards": [
         {
-          "t": "¿Lo necesito o lo quiero?",
-          "b": "Ser sincero ayuda."
+          "t": "Amigo invisible",
+          "b": "Un solo regalo por grupo, con tope."
         },
         {
-          "t": "¿Cuántas horas de trabajo cuesta?",
-          "b": "Divide el precio entre lo que ganas por hora."
+          "t": "Regalos de experiencia",
+          "b": "Tiempo contigo, una comida, un plan."
         },
         {
-          "t": "¿Tengo algo parecido?",
-          "b": "A veces ya lo tienes."
+          "t": "Hecho a mano",
+          "b": "Un detalle personal vale más que su precio."
         }
       ],
-      "foot": "Para decidir mejor"
+      "foot": "Mejor con intención"
     },
     {
       "t": "point",
-      "head": "Pon un [[botón de pausa]]",
-      "body": "Guarda el producto en la cesta o en una lista de deseos. Si en una semana sigues queriéndolo, cómpralo sin culpa.",
-      "foot": "Una lista de espera",
-      "kicker": "Un truco"
-    },
-    {
-      "t": "point",
-      "head": "No es [[privarte]]",
-      "body": "Es decidir con la cabeza fría. Habrá cosas que merezcan la pena, y entonces las disfrutarás más.",
-      "foot": "Sin culpa",
+      "head": "No olvides los [[gastos de las comidas]]",
+      "body": "Cenas, viajes y decoración suman. Inclúyelos en el tope desde el principio.",
+      "foot": "Los gastos ocultos",
       "kicker": "Ojo"
     },
     {
+      "t": "point",
+      "head": "Compra [[pronto]] y compara",
+      "body": "Comprar con calma evita las prisas y los recargos de última hora.",
+      "foot": "Con tiempo",
+      "kicker": "Un consejo"
+    },
+    {
       "t": "close",
-      "head": "Esperar es [[ahorrar]]",
-      "body": "Prueba una semana y cuenta cuántas compras ya no te hacían falta.",
+      "head": "La Navidad se disfruta más [[sin deudas]]",
+      "body": "Fija tu tope hoy.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo para la próxima vez que tengas un impulso.",
+      "extra": "Guárdalo y comparte con tu familia.",
       "extraBold": true,
       "extraSize": 36
     }

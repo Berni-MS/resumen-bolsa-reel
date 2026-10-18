@@ -1,0 +1,94 @@
+{
+  "id": "vida-038-factura-luz",
+  "label": "Cómo leer tu factura de la luz",
+  "accent": "green",
+  "caption": "Cómo leer tu factura de la luz 💡 Qué pagas realmente.\n\nDesliza para ver las partes principales. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#luz",
+    "#facturas",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "💡",
+      "title": "Cómo leer tu factura de la luz",
+      "foot": "Qué pagas realmente"
+    },
+    {
+      "t": "cards",
+      "head": "Las partes principales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Potencia",
+          "b": "Lo que pagas por tener contratada cierta capacidad."
+        },
+        {
+          "t": "Energía",
+          "b": "Lo que has consumido en el periodo."
+        },
+        {
+          "t": "Impuestos y otros",
+          "b": "Impuestos, alquiler del contador y otros conceptos."
+        }
+      ],
+      "foot": "Tres bloques"
+    },
+    {
+      "t": "point",
+      "head": "La [[potencia contratada]]",
+      "body": "Si es mayor de lo que necesitas, pagas de más cada mes. Revísala con tus consumos reales.",
+      "foot": "Ajústala",
+      "kicker": "Primero"
+    },
+    {
+      "t": "point",
+      "head": "El [[consumo]]",
+      "body": "Mira en qué horas consumes. Con ciertas tarifas, el precio cambia según el horario.",
+      "foot": "Horarios",
+      "kicker": "Después"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo revisarla",
+      "steps": [
+        {
+          "t": "Mira tu consumo mensual",
+          "b": "Y compáralo con meses anteriores."
+        },
+        {
+          "t": "Comprueba la potencia",
+          "b": "Que se ajuste a ti."
+        },
+        {
+          "t": "Revisa el tipo de tarifa",
+          "b": "Y sus condiciones."
+        },
+        {
+          "t": "Compara ofertas",
+          "b": "Con tu consumo real."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con [[servicios añadidos]]",
+      "body": "Mantenimientos o seguros que no pediste. Pregunta por cada concepto.",
+      "foot": "Revisa",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "close",
+      "head": "Entender tu factura [[es poder ahorrar]]",
+      "body": "Mira hoy tu última factura.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta tu contrato.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

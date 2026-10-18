@@ -1,0 +1,81 @@
+{
+  "id": "vida-036-divisas",
+  "label": "Pagar en el extranjero",
+  "accent": "green",
+  "caption": "Pagar en el extranjero 🌍 ¿En euros o en moneda local? La duda de cada viaje.\n\nDesliza para ver qué conviene.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#viajes",
+    "#divisas",
+    "#tarjetas",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🌍",
+      "title": "Pagar en el extranjero",
+      "foot": "¿Euros o moneda local?"
+    },
+    {
+      "t": "point",
+      "head": "Te preguntarán [[en qué moneda pagar]]",
+      "body": "En datáfonos y cajeros fuera de la zona euro es habitual. La respuesta importa para el precio final.",
+      "foot": "La pregunta",
+      "kicker": "Primero"
+    },
+    {
+      "t": "point",
+      "head": "Suele convenir la [[moneda local]]",
+      "body": "Si aceptas pagar en euros, el comercio o el cajero aplican su propio tipo de cambio, que suele ser menos favorable.",
+      "foot": "La regla general",
+      "kicker": "Qué elegir"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de viajar",
+      "steps": [
+        {
+          "t": "Pregunta a tu banco",
+          "b": "Comisiones por pagos en divisas."
+        },
+        {
+          "t": "Mira tarjetas sin comisión",
+          "b": "Si es lo que necesitas."
+        },
+        {
+          "t": "Evita cambiar en aeropuertos",
+          "b": "Suelen ser caros."
+        },
+        {
+          "t": "Avisa a tu banco",
+          "b": "Para evitar bloqueos."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Lleva [[algo de efectivo]]",
+      "body": "Para pequeños gastos. Pero no demasiado: es un riesgo si lo pierdes.",
+      "foot": "Un equilibrio",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Revisa tus [[movimientos]]",
+      "body": "Cuando vuelvas, comprueba que no haya cargos duplicados o raros.",
+      "foot": "Al volver",
+      "kicker": "Importante"
+    },
+    {
+      "t": "close",
+      "head": "Una decisión pequeña, [[un ahorro grande]]",
+      "body": "La próxima vez, elige moneda local.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo antes de tu viaje.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

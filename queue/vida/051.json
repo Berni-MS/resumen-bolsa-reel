@@ -1,0 +1,78 @@
+{
+  "id": "vida-051-ipc",
+  "label": "Qué es el IPC",
+  "accent": "green",
+  "caption": "Qué es el IPC 📊 El indicador que mide cómo suben los precios.\n\nDesliza para ver qué mide y cómo te afecta. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ipc",
+    "#inflacion",
+    "#economia",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "IPC",
+      "title": "El indicador de los precios",
+      "foot": "Qué mide y cómo te afecta"
+    },
+    {
+      "t": "point",
+      "head": "Una [[cesta]] de productos",
+      "body": "El Índice de Precios de Consumo sigue el precio de una cesta representativa de lo que consumen los hogares.",
+      "foot": "Qué mide",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "Su variación es la [[inflación]]",
+      "body": "Si sube un 3 % en un año, de media los precios de esa cesta suben un 3 %. No es lo mismo para todos.",
+      "foot": "Inflación",
+      "kicker": "Cómo se lee"
+    },
+    {
+      "t": "point",
+      "head": "Tu [[inflación personal]]",
+      "body": "Si gastas más en alquiler o energía, la subida que notas puede ser distinta a la media.",
+      "foot": "Tu caso",
+      "kicker": "Matiz"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde aparece",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Alquileres",
+          "b": "Algunos contratos se actualizan con un índice."
+        },
+        {
+          "t": "Salarios",
+          "b": "En negociaciones y convenios."
+        },
+        {
+          "t": "Pensiones",
+          "b": "Y otras prestaciones, según normas."
+        }
+      ],
+      "foot": "Por qué importa"
+    },
+    {
+      "t": "point",
+      "head": "Úsalo para [[comparar]]",
+      "body": "Al valorar una subida de sueldo o de tu alquiler, compara con la inflación para saber si ganas o pierdes poder de compra.",
+      "foot": "Un consejo",
+      "kicker": "Un uso"
+    },
+    {
+      "t": "close",
+      "head": "Entender el IPC [[te da contexto]]",
+      "body": "Compara tu último aumento con la inflación.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

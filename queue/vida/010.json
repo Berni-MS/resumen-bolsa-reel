@@ -1,58 +1,92 @@
 {
-  "id": "vida-010-mitos-dinero",
-  "label": "5 mitos del dinero",
+  "id": "vida-010-phishing",
+  "label": "No caigas en el phishing",
   "accent": "red",
-  "caption": "5 mitos sobre el dinero que te hacen perder 🙅 ¿Cuántos te habías creído?\n\nDesliza y cuéntanos en comentarios cuál era el tuyo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "caption": "No caigas en el phishing 🎣 Los mensajes falsos que imitan a tu banco.\n\nDesliza para ver cómo reconocerlos y qué hacer.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#mitos",
-    "#finanzaspersonales",
-    "#ahorro",
+    "#seguridad",
+    "#phishing",
+    "#estafas",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "5",
-      "title": "mitos del dinero",
-      "foot": "Que te hacen perder"
+      "big": "🎣",
+      "title": "No caigas en el phishing",
+      "foot": "Los mensajes falsos que imitan a tu banco"
     },
     {
-      "t": "myth",
-      "myth": "«El dinero en el banco no se pierde»",
-      "reality": "En euros, el saldo no baja, pero con la inflación cada euro compra un poco menos. Parado, pierde poder de compra.",
-      "foot": "Inflación"
+      "t": "point",
+      "head": "Qué es",
+      "body": "Mensajes por SMS, correo o llamada que se hacen pasar por tu banco o por una empresa para que entregues tus datos.",
+      "foot": "El engaño",
+      "kicker": "La idea"
     },
     {
-      "t": "myth",
-      "myth": "«Invertir es solo para ricos»",
-      "reality": "Hoy se puede empezar con cantidades pequeñas. Lo que más importa es entender lo que haces y la constancia.",
-      "foot": "Empezar con poco"
+      "t": "cards",
+      "head": "Señales de alarma",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Urgencia",
+          "b": "«Tu cuenta se bloqueará en 1 hora»."
+        },
+        {
+          "t": "Enlaces raros",
+          "b": "Direcciones parecidas a la real."
+        },
+        {
+          "t": "Piden claves",
+          "b": "Contraseñas o códigos por SMS."
+        }
+      ],
+      "foot": "Desconfía"
     },
     {
-      "t": "myth",
-      "myth": "«Pedir un préstamo siempre es malo»",
-      "reality": "Depende. Una deuda con un coste razonable para algo útil puede tener sentido. El problema son las deudas caras y sin control.",
-      "foot": "Deuda buena y mala"
+      "t": "point",
+      "head": "Tu banco [[nunca te pide]] tus claves",
+      "body": "Ni por teléfono, ni por mensaje ni por correo. Si lo hace alguien, es un fraude.",
+      "foot": "Regla de oro",
+      "kicker": "Importante"
     },
     {
-      "t": "myth",
-      "myth": "«Ahorrar es ganar poco»",
-      "reality": "Ahorrar es una decisión, no un sueldo. Con cantidades pequeñas y constantes se llega más lejos de lo que parece.",
-      "foot": "El hábito"
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No pulses el enlace",
+          "b": "Ni respondas."
+        },
+        {
+          "t": "Entra por tu app o web",
+          "b": "Escribiendo tú la dirección."
+        },
+        {
+          "t": "Llama a tu banco",
+          "b": "Al teléfono oficial."
+        },
+        {
+          "t": "Si has dado datos, avisa ya",
+          "b": "Y bloquea la tarjeta."
+        }
+      ],
+      "foot": "Cuatro pasos"
     },
     {
-      "t": "myth",
-      "myth": "«Ya lo haré cuando gane más»",
-      "reality": "Los gastos suelen crecer con el sueldo. Empezar ahora, aunque sea con poco, crea el hábito.",
-      "foot": "Empieza ya"
+      "t": "point",
+      "head": "Activa [[las alertas]]",
+      "body": "Avisos de cada movimiento y verificación en dos pasos. Detectarás antes cualquier fraude.",
+      "foot": "Protección extra",
+      "kicker": "Un consejo"
     },
     {
       "t": "close",
-      "head": "¿Cuál [[te habías creído]]?",
-      "body": "Cuéntanoslo en comentarios y envía este carrusel a alguien que repita alguno de ellos.",
+      "head": "Si desconfías, [[no pulses]]",
+      "body": "Revisa hoy las alertas de tu banco.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo para recordarlo.",
+      "extra": "Guárdalo y envíaselo a alguien mayor.",
       "extraBold": true,
       "extraSize": 36
     }

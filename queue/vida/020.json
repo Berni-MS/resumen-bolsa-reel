@@ -1,0 +1,94 @@
+{
+  "id": "vida-020-gastos-compra-casa",
+  "label": "Gastos de comprar una casa",
+  "accent": "red",
+  "caption": "Gastos de comprar una casa 🔑 No es solo el precio: hay más.\n\nDesliza para ver qué gastos suelen aparecer. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#compra",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔑",
+      "title": "Comprar una casa no es solo el precio",
+      "foot": "Los gastos que suelen aparecer"
+    },
+    {
+      "t": "point",
+      "head": "El precio es [[solo una parte]]",
+      "body": "Además de la vivienda, hay impuestos y gastos de gestión. Cuéntalos en tu presupuesto desde el principio.",
+      "foot": "Más allá del precio",
+      "kicker": "La idea"
+    },
+    {
+      "t": "cards",
+      "head": "Gastos habituales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Impuestos",
+          "b": "Según el tipo de vivienda y la zona."
+        },
+        {
+          "t": "Notaría y registro",
+          "b": "Para formalizar y registrar."
+        },
+        {
+          "t": "Gestoría y tasación",
+          "b": "Según el caso."
+        }
+      ],
+      "foot": "En la compra"
+    },
+    {
+      "t": "point",
+      "head": "La [[entrada]]",
+      "body": "Normalmente el banco no financia el 100 %. Tendrás que aportar una parte con tus ahorros.",
+      "foot": "Tu aportación",
+      "kicker": "Además"
+    },
+    {
+      "t": "point",
+      "head": "Y luego, [[el mantenimiento]]",
+      "body": "Comunidad, seguros, impuestos locales y reparaciones. Cuéntalos en tus gastos mensuales.",
+      "foot": "Después de comprar",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo prepararte",
+      "steps": [
+        {
+          "t": "Pide un desglose",
+          "b": "De todos los gastos."
+        },
+        {
+          "t": "Calcula tu aportación total",
+          "b": "Entrada más gastos."
+        },
+        {
+          "t": "Mantén un colchón",
+          "b": "Después de comprar."
+        },
+        {
+          "t": "Compara ofertas",
+          "b": "De varias entidades."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Haz la cuenta [[completa]]",
+      "body": "Pide un desglose antes de decidirte.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta las condiciones de tu entidad.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

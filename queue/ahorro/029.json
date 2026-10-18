@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-029-propositos-no",
+  "label": "30 días sin caprichos",
+  "accent": "green",
+  "caption": "Reto: 30 días sin caprichos 🗓️ Un mes para resetear tus hábitos de gasto.\n\nDesliza para ver las reglas y cómo hacerlo sin agobiarte.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#reto",
+    "#ahorro",
+    "#habitos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "30",
+      "title": "días sin caprichos",
+      "foot": "Un reto para resetear tus hábitos"
+    },
+    {
+      "t": "point",
+      "head": "Las reglas son [[sencillas]]",
+      "body": "Durante 30 días, solo gastas en necesidades: vivienda, comida, transporte, salud y facturas.",
+      "foot": "Qué entra",
+      "kicker": "El reto"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo empezar",
+      "steps": [
+        {
+          "t": "Define qué es un capricho",
+          "b": "Para ti, en concreto."
+        },
+        {
+          "t": "Apunta lo que ahorras",
+          "b": "Cada día."
+        },
+        {
+          "t": "Busca planes gratis",
+          "b": "Parques, amigos en casa."
+        },
+        {
+          "t": "Mueve el ahorro",
+          "b": "A una cuenta aparte."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Habrá [[tentaciones]]",
+      "body": "Usa la regla de las 24 horas: lo que quieras, anótalo y decide pasado el reto.",
+      "foot": "Con paciencia",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "No es un [[castigo]]",
+      "body": "Es un experimento para ver qué gastos realmente echas de menos y cuáles no.",
+      "foot": "Aprendes de ti",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "point",
+      "head": "Al final, [[decide]]",
+      "body": "Revisa qué cosas retomarás y cuáles dejarás. Ahí está el ahorro real.",
+      "foot": "Conclusiones",
+      "kicker": "Cierre"
+    },
+    {
+      "t": "close",
+      "head": "Un mes que te cambia [[los hábitos]]",
+      "body": "Elige la fecha de inicio y empieza.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y reta a un amigo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "vida-044-paga-ninos",
+  "label": "La paga de los niños",
+  "accent": "green",
+  "caption": "La paga de los niños 🧒 Una forma sencilla de enseñar a gestionar el dinero.\n\nDesliza para ver ideas por edades.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#educacionfinanciera",
+    "#familia",
+    "#ninos",
+    "#ahorro"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧒",
+      "title": "La paga de los niños",
+      "foot": "Enseñar a gestionar el dinero"
+    },
+    {
+      "t": "point",
+      "head": "Una paga es [[una escuela]]",
+      "body": "Aprender a gestionar cantidades pequeñas prepara para decisiones grandes en el futuro.",
+      "foot": "Por qué",
+      "kicker": "La idea"
+    },
+    {
+      "t": "cards",
+      "head": "Ideas por edades",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "6-9 años",
+          "b": "Una cantidad muy pequeña y una hucha con objetivo."
+        },
+        {
+          "t": "10-13 años",
+          "b": "Una paga fija semanal con tres partes: gastar, ahorrar y compartir."
+        },
+        {
+          "t": "14 años o más",
+          "b": "Una cantidad mensual y una cuenta con tarjeta, si es posible."
+        }
+      ],
+      "foot": "Orientativo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo organizarla",
+      "steps": [
+        {
+          "t": "Fija una cantidad y un día",
+          "b": "Constancia."
+        },
+        {
+          "t": "Decidid juntos qué cubre",
+          "b": "Qué compran ellos."
+        },
+        {
+          "t": "Divide en partes",
+          "b": "Gastar, ahorrar, compartir."
+        },
+        {
+          "t": "Hablad de los errores",
+          "b": "Sin sermones."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "No la uses [[como premio o castigo]]",
+      "body": "Mezclarla con las tareas del hogar puede confundir. Separar ambas ayuda.",
+      "foot": "Un matiz",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Deja que [[se equivoquen]]",
+      "body": "Gastarse la paga en un capricho enseña más que una explicación. Con cantidades pequeñas, el riesgo es bajo.",
+      "foot": "Aprender",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Aprender con poco, [[para gestionar mucho]]",
+      "body": "Elige hoy cantidad y día.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo con otras familias.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

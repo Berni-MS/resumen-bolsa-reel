@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-050-ahorro-hijos",
+  "label": "Ahorro con hijos",
+  "accent": "green",
+  "caption": "Ahorro con hijos 👨‍👩‍👧 Organizar el dinero cuando la familia crece.\n\nDesliza para ver ideas sencillas. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#familia",
+    "#ahorro",
+    "#hijos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "👨‍👩‍👧",
+      "title": "Ahorrar con hijos",
+      "foot": "Organizar el dinero en familia"
+    },
+    {
+      "t": "point",
+      "head": "Los gastos [[cambian]]",
+      "body": "Con hijos aparecen gastos nuevos y fijos durante años. Conviene actualizarlo todo.",
+      "foot": "Rehaz tu presupuesto",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde suele ir el dinero",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cuidados y educación",
+          "b": "Guardería, material, extraescolares."
+        },
+        {
+          "t": "Alimentación y ropa",
+          "b": "Cambian rápido."
+        },
+        {
+          "t": "Imprevistos",
+          "b": "Salud, viajes, regalos."
+        }
+      ],
+      "foot": "Gastos habituales"
+    },
+    {
+      "t": "steps",
+      "head": "Ideas para ahorrar",
+      "steps": [
+        {
+          "t": "Segunda mano",
+          "b": "Ropa y juguetes."
+        },
+        {
+          "t": "Planifica el menú",
+          "b": "Cocinar en familia."
+        },
+        {
+          "t": "Planes gratis",
+          "b": "Parques y museos con días gratuitos."
+        },
+        {
+          "t": "Comparte con otras familias",
+          "b": "Material y cuidados."
+        }
+      ],
+      "foot": "Cuatro ideas"
+    },
+    {
+      "t": "point",
+      "head": "Enseña con el [[ejemplo]]",
+      "body": "Hablar de dinero en casa y dar una paga pequeña les enseña a gestionar.",
+      "foot": "Educación financiera",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Piensa en [[el largo plazo]]",
+      "body": "Un ahorro mensual pequeño para su futuro puede ayudar con estudios u otras metas.",
+      "foot": "Poco a poco",
+      "kicker": "Una idea"
+    },
+    {
+      "t": "close",
+      "head": "Educar es [[también ahorrar]]",
+      "body": "Hoy, una conversación en casa sobre dinero.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo con otra familia.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

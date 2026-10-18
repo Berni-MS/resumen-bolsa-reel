@@ -1,0 +1,81 @@
+{
+  "id": "vida-043-negociar-sueldo",
+  "label": "Negociar un sueldo nuevo",
+  "accent": "green",
+  "caption": "Negociar tu sueldo en una oferta nueva 🤝 Qué decir cuando te preguntan cuánto quieres cobrar.\n\nDesliza para ver cómo responder.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#sueldo",
+    "#empleo",
+    "#negociar",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🤝",
+      "title": "Negociar un sueldo nuevo",
+      "foot": "Qué decir cuando te preguntan"
+    },
+    {
+      "t": "point",
+      "head": "Investiga [[antes]]",
+      "body": "Mira el rango habitual de tu puesto, sector y ciudad. Sin datos, negocias a ciegas.",
+      "foot": "Datos primero",
+      "kicker": "Preparación"
+    },
+    {
+      "t": "point",
+      "head": "Piensa en [[tu cifra]]",
+      "body": "Define un rango: el que te gustaría, uno razonable y tu mínimo. No bajes de tu mínimo.",
+      "foot": "Tu rango",
+      "kicker": "Tus números"
+    },
+    {
+      "t": "steps",
+      "head": "Durante la conversación",
+      "steps": [
+        {
+          "t": "Deja que propongan primero",
+          "b": "Si es posible."
+        },
+        {
+          "t": "Pide tiempo para pensarlo",
+          "b": "Sin presión."
+        },
+        {
+          "t": "Pregunta por el paquete",
+          "b": "Variable, beneficios."
+        },
+        {
+          "t": "Pide la oferta por escrito",
+          "b": "Siempre."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Habla de [[bruto y neto]]",
+      "body": "Asegúrate de comparar la misma cifra. El bruto anual y el neto mensual no son lo mismo.",
+      "foot": "Aclara",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Recuerda: [[es normal negociar]]",
+      "body": "Las empresas suelen esperar cierta negociación. Hazlo con educación y seguridad.",
+      "foot": "Con calma",
+      "kicker": "Ánimo"
+    },
+    {
+      "t": "close",
+      "head": "Una buena negociación [[dura años]]",
+      "body": "Investiga hoy el rango de tu puesto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para tu próxima oferta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

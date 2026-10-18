@@ -121,8 +121,8 @@ jobs:
       - name: Avisar a Make
         if: ${{ inputs.dry_run != 'true' }}
         run: |
-          jq -n --arg url "${{ steps.publish.outputs.url }}" --rawfile caption out/caption.txt --arg date "$(jq -r .date item.json)" \
-            '{status:"ok", video_url:$url, caption:$caption, date:$date}' \
+          jq -n --arg url "${{ steps.publish.outputs.url }}" --rawfile caption out/caption.txt --arg date "$(jq -r .date item.json)" --arg title "$(jq -r 'if .badge then "Un consejo para tu bolsillo" else "En 30 segundos" end' item.json)" \
+            '{status:"ok", video_url:$url, caption:$caption, date:$date, title:$title}' \
           | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
 
       - name: Avisar a Make si falla

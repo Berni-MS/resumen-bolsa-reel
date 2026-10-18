@@ -1,11 +1,11 @@
 {
-  "id": "ahorro-011-inflacion-ahorro",
-  "label": "El ahorro y la inflación",
-  "accent": "red",
-  "caption": "Tu ahorro y la inflación 🔥 Guardar dinero parado es seguro… pero cada año compra un poco menos.\n\nDesliza para ver un ejemplo con números y qué puedes hacer.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "id": "ahorro-011-loteria",
+  "label": "Si te toca un premio",
+  "accent": "green",
+  "caption": "Si te toca un premio 🍀 Lo primero que conviene hacer (y no hacer) con un dinero inesperado.\n\nDesliza para ver un plan de 5 pasos. Es información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#inflacion",
-    "#ahorro",
+    "#loteria",
+    "#navidad",
     "#finanzaspersonales",
     "#educacionfinanciera"
   ],
@@ -13,68 +13,84 @@
   "slides": [
     {
       "t": "cover",
-      "big": "−26 %",
-      "title": "de poder de compra en 10 años",
-      "foot": "Con una inflación del 3 % anual",
-      "bigSize": 240
+      "big": "🍀",
+      "title": "Si te toca un premio",
+      "foot": "Qué hacer primero con un dinero inesperado"
     },
     {
       "t": "point",
-      "head": "La inflación es [[un impuesto silencioso]]",
-      "body": "Cuando los precios suben, el mismo dinero compra menos. No lo notas de golpe, pero se acumula.",
-      "foot": "Todo sube",
-      "kicker": "Qué es"
+      "head": "No decidas [[el primer día]]",
+      "body": "La emoción juega en contra. Guarda el dinero en una cuenta segura y date unas semanas para pensar.",
+      "foot": "Primero, calma",
+      "kicker": "Paso 1"
     },
     {
-      "t": "stat",
-      "big": "744 €",
-      "head": "Lo que valdrían 1.000 € en 10 años",
-      "body": "Con una inflación del 3 % anual constante (un supuesto), 1.000 euros de hoy compran lo que 744 euros dentro de 10 años.",
-      "foot": "Ejemplo ilustrativo",
-      "kicker": "Con números",
-      "color": "red",
-      "bigSize": 230
-    },
-    {
-      "t": "point",
-      "head": "¿Entonces, [[guardar o no]]?",
-      "body": "Sí: necesitas un fondo líquido para emergencias. Lo que no conviene es tener parado más de lo que necesitas.",
-      "foot": "Cada euro con su función",
-      "kicker": "Matiz"
+      "t": "steps",
+      "head": "Un plan en cinco pasos",
+      "steps": [
+        {
+          "t": "Infórmate de los impuestos",
+          "b": "Un premio puede tributar: consulta con un profesional."
+        },
+        {
+          "t": "Paga deudas caras",
+          "b": "Si las tienes."
+        },
+        {
+          "t": "Refuerza tu fondo de emergencia",
+          "b": "Seguridad primero."
+        },
+        {
+          "t": "Define metas a largo plazo",
+          "b": "Vivienda, estudios, jubilación."
+        },
+        {
+          "t": "Reserva un capricho",
+          "b": "Una parte pequeña y disfrutada."
+        }
+      ],
+      "foot": "Cinco pasos"
     },
     {
       "t": "cards",
-      "head": "Qué puedes hacer",
-      "accent": "green",
+      "head": "Errores habituales",
+      "accent": "red",
       "cards": [
         {
-          "t": "Fondo de emergencia",
-          "b": "Cubre imprevistos sin tocar lo demás."
+          "t": "Prestar o regalar sin pensar",
+          "b": "Puede dañar relaciones."
         },
         {
-          "t": "Dinero a corto plazo",
-          "b": "Cuentas remuneradas o depósitos: infórmate."
+          "t": "Comprar lo caro de golpe",
+          "b": "Con gastos de mantenimiento."
         },
         {
-          "t": "Dinero a largo plazo",
-          "b": "Otras opciones con más riesgo. Conoce antes de entrar."
+          "t": "Invertir sin entender",
+          "b": "Con prisas y sin plan."
         }
       ],
-      "foot": "Informarte primero"
+      "foot": "Evítalos"
     },
     {
       "t": "point",
-      "head": "Compara con la [[inflación]], no con cero",
-      "body": "Un 2 % de interés con un 3 % de inflación es perder poder de compra, aunque el saldo suba.",
-      "foot": "Rentabilidad real",
-      "kicker": "La clave"
+      "head": "Habla con un [[profesional]]",
+      "body": "Un asesor fiscal o financiero independiente puede ayudarte a ordenar los siguientes pasos.",
+      "foot": "Una consulta bien empleada",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Y sobre jugar: es [[entretenimiento]]",
+      "body": "La lotería no es una forma de ahorrar ni de invertir. Juega solo lo que estés dispuesto a perder.",
+      "foot": "Con cabeza",
+      "kicker": "Ojo"
     },
     {
       "t": "close",
-      "head": "No se trata de asustarse, sino de [[enterarse]]",
-      "body": "Conocer la inflación te ayuda a tomar mejores decisiones.",
+      "head": "Un premio no cambia tus [[hábitos]]",
+      "body": "Tus decisiones de siempre son las que cuentan.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y envíaselo a alguien con mucho dinero parado.",
+      "extra": "Guárdalo por si algún día te toca.",
       "extraBold": true,
       "extraSize": 36
     }

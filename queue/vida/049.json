@@ -1,0 +1,81 @@
+{
+  "id": "vida-049-crisis",
+  "label": "Si pierdes el empleo",
+  "accent": "red",
+  "caption": "Si pierdes tu fuente de ingresos 🧭 Qué hacer en las primeras semanas.\n\nDesliza para ver un plan. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#empleo",
+    "#crisis",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧭",
+      "title": "Si pierdes tu fuente de ingresos",
+      "foot": "Qué hacer en las primeras semanas"
+    },
+    {
+      "t": "steps",
+      "head": "Primeras acciones",
+      "steps": [
+        {
+          "t": "Respira y haz números",
+          "b": "Cuánto tienes y cuánto gastas."
+        },
+        {
+          "t": "Mira tus derechos",
+          "b": "Prestaciones y finiquito."
+        },
+        {
+          "t": "Recorta lo no esencial",
+          "b": "Temporalmente."
+        },
+        {
+          "t": "Avisa a quien corresponda",
+          "b": "Si puedes tener dificultades de pago."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Tu fondo de emergencia [[es para esto]]",
+      "body": "Si tienes uno, es el momento de usarlo con cabeza. Calcula cuántos meses te da.",
+      "foot": "Tu colchón",
+      "kicker": "Prioridad"
+    },
+    {
+      "t": "point",
+      "head": "Habla con [[tus acreedores]]",
+      "body": "Si prevés dificultades con hipoteca o préstamos, hablar pronto abre más opciones.",
+      "foot": "No esperes",
+      "kicker": "Importante"
+    },
+    {
+      "t": "point",
+      "head": "Evita [[decisiones en pánico]]",
+      "body": "No pidas créditos caros ni vendas apresuradamente. Da un paso cada vez.",
+      "foot": "Calma",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Busca [[ayuda]]",
+      "body": "Servicios de empleo, servicios sociales o asociaciones pueden orientarte.",
+      "foot": "No estás solo",
+      "kicker": "Apoyo"
+    },
+    {
+      "t": "close",
+      "head": "Con un plan, [[se supera]]",
+      "body": "Si estás en esta situación, empieza por hacer números.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-044-patrimonio-neto",
+  "label": "Tu patrimonio neto",
+  "accent": "green",
+  "caption": "Tu patrimonio neto 🧮 Lo que tienes menos lo que debes: el termómetro real de tu dinero.\n\nDesliza para ver cómo calcularlo en 5 minutos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#patrimonio",
+    "#finanzaspersonales",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "=",
+      "title": "Lo que tienes menos lo que debes",
+      "foot": "Tu patrimonio neto"
+    },
+    {
+      "t": "point",
+      "head": "Una [[resta]] sencilla",
+      "body": "Suma lo que tienes (cuentas, inversiones, vivienda) y resta lo que debes (hipoteca, préstamos, tarjetas).",
+      "foot": "La fórmula",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo calcularlo",
+      "steps": [
+        {
+          "t": "Apunta tus activos",
+          "b": "Cuentas, ahorros, inversiones."
+        },
+        {
+          "t": "Apunta tus deudas",
+          "b": "Todas, con su saldo."
+        },
+        {
+          "t": "Resta",
+          "b": "Activos menos deudas."
+        },
+        {
+          "t": "Guarda la cifra",
+          "b": "Y repite cada seis meses."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Lo importante es [[la tendencia]]",
+      "body": "No es tan relevante el número como si sube con el tiempo. Mide tu progreso, no tu valía.",
+      "foot": "Mira la evolución",
+      "kicker": "La clave"
+    },
+    {
+      "t": "point",
+      "head": "Puede salir [[negativo]]",
+      "body": "Es normal al empezar, sobre todo con estudios o hipoteca. Lo importante es tener un plan.",
+      "foot": "Sin dramatizar",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Una vez [[cada seis meses]]",
+      "body": "Bastan diez minutos. Verás cómo tus decisiones se reflejan en el número.",
+      "foot": "Seguimiento",
+      "kicker": "Rutina"
+    },
+    {
+      "t": "close",
+      "head": "Lo que se mide, [[mejora]]",
+      "body": "Haz hoy tu primer cálculo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y calcula el tuyo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

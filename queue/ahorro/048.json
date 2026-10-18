@@ -1,0 +1,107 @@
+{
+  "id": "ahorro-048-coste-coche",
+  "label": "El coste real de tener coche",
+  "accent": "red",
+  "caption": "El coste real de tener coche 🚗 Más allá de la gasolina.\n\nDesliza para ver los gastos que no se ven y cómo calcular el total.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#coche",
+    "#ahorro",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🚗",
+      "title": "El coste real de tener coche",
+      "foot": "Más allá de la gasolina"
+    },
+    {
+      "t": "cards",
+      "head": "Gastos fijos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Seguro",
+          "b": "Se paga aunque no uses el coche."
+        },
+        {
+          "t": "Impuestos",
+          "b": "Circulación y otros."
+        },
+        {
+          "t": "Aparcamiento",
+          "b": "Si no tienes plaza."
+        }
+      ],
+      "foot": "Los que no se van"
+    },
+    {
+      "t": "cards",
+      "head": "Gastos variables",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Combustible",
+          "b": "Según los kilómetros."
+        },
+        {
+          "t": "Mantenimiento",
+          "b": "Revisiones y reparaciones."
+        },
+        {
+          "t": "Neumáticos y ITV",
+          "b": "Cada cierto tiempo."
+        }
+      ],
+      "foot": "Los que dependen del uso"
+    },
+    {
+      "t": "point",
+      "head": "Y la [[pérdida de valor]]",
+      "body": "Un coche vale menos cada año. Es un coste real, aunque no salga de tu cuenta.",
+      "foot": "Depreciación",
+      "kicker": "Otro coste"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo calcular tu coste",
+      "steps": [
+        {
+          "t": "Suma todos los gastos del año",
+          "b": "Incluida la pérdida de valor."
+        },
+        {
+          "t": "Divide entre 12",
+          "b": "Coste mensual."
+        },
+        {
+          "t": "Divide entre los km",
+          "b": "Coste por kilómetro."
+        },
+        {
+          "t": "Compara con alternativas",
+          "b": "Transporte público o compartir."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "No es [[tirar el dinero]]",
+      "body": "Si lo necesitas, es un gasto razonable. Lo importante es saber cuánto cuesta.",
+      "foot": "Con datos",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "close",
+      "head": "Saber lo que cuesta, [[te da el control]]",
+      "body": "Calcula tu coste mensual real.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz tu cálculo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

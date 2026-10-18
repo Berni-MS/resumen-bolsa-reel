@@ -1,0 +1,87 @@
+{
+  "id": "ahorro-028-comer-fuera",
+  "label": "Comer fuera vs. en casa",
+  "accent": "green",
+  "caption": "Comer fuera vs. en casa 🍽️ Las cuentas de un hábito que sale caro sin darnos cuenta.\n\nDesliza para ver un ejemplo con números redondos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#comida",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🍽️",
+      "title": "Comer fuera cada día",
+      "foot": "Haz la cuenta"
+    },
+    {
+      "t": "stat",
+      "big": "240 €",
+      "head": "al mes con un menú de 12 €",
+      "body": "Un menú de 12 euros durante 20 días laborables son 240 euros al mes. Son números de ejemplo: pon los tuyos.",
+      "foot": "Ejemplo",
+      "kicker": "La cuenta",
+      "color": "red",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "100 €",
+      "head": "al mes cocinando 5 € por comida",
+      "body": "Si cocinas en casa a unos 5 euros por comida, los mismos 20 días cuestan 100 euros. La diferencia, 140 euros al mes.",
+      "foot": "Ejemplo",
+      "kicker": "La alternativa",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "point",
+      "head": "No se trata de [[no salir]]",
+      "body": "Se trata de elegir cuándo disfrutas y cuándo es solo comodidad.",
+      "foot": "Equilibrio",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo reducirlo sin sufrir",
+      "steps": [
+        {
+          "t": "Cocina en tanda",
+          "b": "Un día para toda la semana."
+        },
+        {
+          "t": "Lleva tupper",
+          "b": "Los días de más prisa."
+        },
+        {
+          "t": "Elige tus salidas",
+          "b": "Las que sí te hacen ilusión."
+        },
+        {
+          "t": "Apunta lo que gastas",
+          "b": "Una semana basta."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "El ahorro [[va a tu meta]]",
+      "body": "Lo que te sobra en comida puede ir directo a tu fondo de emergencia.",
+      "foot": "Con destino",
+      "kicker": "Una idea"
+    },
+    {
+      "t": "close",
+      "head": "Elige tus caprichos, [[no los hábitos]]",
+      "body": "Prueba una semana de tuppers.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz la cuenta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

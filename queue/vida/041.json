@@ -1,0 +1,90 @@
+{
+  "id": "vida-041-autonomo",
+  "label": "Autónomo o asalariado",
+  "accent": "green",
+  "caption": "Autónomo o asalariado 🧑‍💼 Qué cambia en tu dinero.\n\nDesliza para ver las diferencias básicas. Información general: cada caso es distinto.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#autonomos",
+    "#empleo",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🧑‍💼",
+      "title": "Autónomo o asalariado",
+      "foot": "Qué cambia en tu dinero"
+    },
+    {
+      "t": "cards",
+      "head": "En lo básico",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Asalariado",
+          "b": "Cobras una nómina y tu empresa gestiona retenciones."
+        },
+        {
+          "t": "Autónomo",
+          "b": "Facturas, y tú gestionas impuestos y cuotas."
+        }
+      ],
+      "foot": "Dos modelos"
+    },
+    {
+      "t": "point",
+      "head": "Ingresos [[más variables]]",
+      "body": "Como autónomo, tus ingresos pueden cambiar mucho de un mes a otro. Planifica con margen.",
+      "foot": "Variabilidad",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "point",
+      "head": "Gastos [[que se suman]]",
+      "body": "Cuotas de Seguridad Social, impuestos y gastos de actividad. Calcula tu neto real.",
+      "foot": "Neto real",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Un colchón [[mayor]]",
+      "body": "Con ingresos variables, un fondo de emergencia de más meses ofrece tranquilidad.",
+      "foot": "Más margen",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de dar el paso",
+      "steps": [
+        {
+          "t": "Calcula tus ingresos estimados",
+          "b": "Con prudencia."
+        },
+        {
+          "t": "Suma tus costes",
+          "b": "Cuotas, impuestos, gastos."
+        },
+        {
+          "t": "Consulta con un gestor",
+          "b": "Antes de decidir."
+        },
+        {
+          "t": "Piensa en tu colchón",
+          "b": "Y en tu seguro."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "No hay uno mejor: [[hay el que te encaja]]",
+      "body": "Haz tus cuentas con prudencia.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta a un profesional.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

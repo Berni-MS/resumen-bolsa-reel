@@ -1,0 +1,81 @@
+{
+  "id": "vida-040-iva",
+  "label": "Qué es el IVA",
+  "accent": "green",
+  "caption": "Qué es el IVA 🧾 El impuesto que pagas casi cada día sin darte cuenta.\n\nDesliza para ver cómo funciona de forma sencilla. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#iva",
+    "#impuestos",
+    "#consumo",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "IVA",
+      "title": "El impuesto que pagas casi cada día",
+      "foot": "Explicado en 1 minuto"
+    },
+    {
+      "t": "point",
+      "head": "Un impuesto [[sobre el consumo]]",
+      "body": "Lo pagas al comprar bienes y servicios. Va incluido en el precio final que ves en la etiqueta.",
+      "foot": "Qué es",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "Lo paga el [[consumidor final]]",
+      "body": "Las empresas lo recaudan y lo ingresan a Hacienda. Tú lo pagas al comprar.",
+      "foot": "Quién lo paga",
+      "kicker": "Quién"
+    },
+    {
+      "t": "point",
+      "head": "Hay [[distintos tipos]]",
+      "body": "Dependiendo del producto o servicio, se aplica un tipo u otro. Algunos productos básicos tributan menos.",
+      "foot": "Varios tipos",
+      "kicker": "Cuánto"
+    },
+    {
+      "t": "point",
+      "head": "Mira el [[precio final]]",
+      "body": "En tiendas y facturas, comprueba si el precio incluye IVA. En negocios, a veces se muestra aparte.",
+      "foot": "Con o sin IVA",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Para tu bolsillo",
+      "steps": [
+        {
+          "t": "Compara precios con IVA",
+          "b": "Siempre el mismo criterio."
+        },
+        {
+          "t": "Guarda las facturas",
+          "b": "Si las necesitas."
+        },
+        {
+          "t": "Si eres autónomo",
+          "b": "Consulta tus obligaciones."
+        },
+        {
+          "t": "Pide la factura",
+          "b": "Cuando la necesites."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Saber qué pagas [[te da control]]",
+      "body": "Mira hoy el IVA de una de tus facturas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

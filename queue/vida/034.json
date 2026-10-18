@@ -1,0 +1,81 @@
+{
+  "id": "vida-034-prestamo-personal",
+  "label": "Comparar un préstamo personal",
+  "accent": "green",
+  "caption": "Comparar un préstamo personal 📄 Mira más allá de la cuota.\n\nDesliza para ver qué mirar. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#prestamos",
+    "#TAE",
+    "#deudas",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📄",
+      "title": "Un préstamo personal",
+      "foot": "Mira más allá de la cuota"
+    },
+    {
+      "t": "point",
+      "head": "La cuota [[engaña]]",
+      "body": "Una cuota baja puede esconder un plazo largo o más intereses. Mira el total que pagarás.",
+      "foot": "Total a pagar",
+      "kicker": "Primero"
+    },
+    {
+      "t": "steps",
+      "head": "Qué comparar",
+      "steps": [
+        {
+          "t": "La TAE",
+          "b": "El coste real anual."
+        },
+        {
+          "t": "El importe total devuelto",
+          "b": "Al final del préstamo."
+        },
+        {
+          "t": "Las comisiones",
+          "b": "Apertura o cancelación."
+        },
+        {
+          "t": "Los seguros vinculados",
+          "b": "Si te obligan a contratarlos."
+        }
+      ],
+      "foot": "Cuatro puntos"
+    },
+    {
+      "t": "point",
+      "head": "Pide la [[ficha informativa]]",
+      "body": "Es un documento oficial que resume las condiciones. Pídela antes de decidir.",
+      "foot": "Compara con ella",
+      "kicker": "Tu aliada"
+    },
+    {
+      "t": "point",
+      "head": "¿Lo [[necesitas]]?",
+      "body": "Antes de pedir, pregúntate si puedes ahorrar para ello. Un préstamo es dinero que pagarás con intereses.",
+      "foot": "Pregúntate",
+      "kicker": "Antes de pedir"
+    },
+    {
+      "t": "point",
+      "head": "Ten [[margen]]",
+      "body": "Que la cuota no comprometa tu presupuesto. Piensa en imprevistos.",
+      "foot": "Prudencia",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Compara el [[total]], no la cuota",
+      "body": "Pide al menos tres ofertas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

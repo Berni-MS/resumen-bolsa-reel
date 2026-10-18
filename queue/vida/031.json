@@ -1,0 +1,94 @@
+{
+  "id": "vida-031-remunerada",
+  "label": "La cuenta remunerada",
+  "accent": "green",
+  "caption": "La cuenta remunerada 💰 Una cuenta que paga intereses: qué mirar.\n\nDesliza para ver cómo funcionan. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#cuentaremunerada",
+    "#ahorro",
+    "#banca",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "💰",
+      "title": "La cuenta remunerada",
+      "foot": "Qué mirar antes de abrirla"
+    },
+    {
+      "t": "point",
+      "head": "Una cuenta que [[paga intereses]]",
+      "body": "A diferencia de una cuenta corriente normal, te da una rentabilidad por el saldo, con condiciones.",
+      "foot": "Qué es",
+      "kicker": "La idea"
+    },
+    {
+      "t": "cards",
+      "head": "Condiciones habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tipo variable",
+          "b": "Pueden cambiarlo."
+        },
+        {
+          "t": "Límites de saldo",
+          "b": "Solo se remunera hasta cierta cantidad."
+        },
+        {
+          "t": "Requisitos",
+          "b": "Domiciliar nómina o contratar productos."
+        }
+      ],
+      "foot": "Revisa"
+    },
+    {
+      "t": "point",
+      "head": "La TAE es la [[referencia]]",
+      "body": "Compara siempre TAE con TAE, y mira cuánto tiempo dura la promoción.",
+      "foot": "Cuánto dura",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Ideal para [[el colchón]]",
+      "body": "Tu fondo de emergencia necesita disponibilidad. Una cuenta remunerada puede ser una opción razonable.",
+      "foot": "Un buen uso",
+      "kicker": "Uso"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de abrirla",
+      "steps": [
+        {
+          "t": "Compara varias",
+          "b": "Con las mismas condiciones."
+        },
+        {
+          "t": "Lee las comisiones",
+          "b": "Y los requisitos."
+        },
+        {
+          "t": "Mira la protección",
+          "b": "Garantía de depósitos."
+        },
+        {
+          "t": "Revisa cada año",
+          "b": "Las condiciones cambian."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Tu dinero parado [[puede trabajar un poco]]",
+      "body": "Compara antes de abrir.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

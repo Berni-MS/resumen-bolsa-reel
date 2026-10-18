@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-039-independizarse",
+  "label": "Independizarse: el presupuesto",
+  "accent": "green",
+  "caption": "Independizarte: el presupuesto 🏡 Antes de dar el paso, haz las cuentas.\n\nDesliza para ver qué gastos cuentan y cómo comprobar si te sale.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#independizarse",
+    "#alquiler",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏡",
+      "title": "Independizarte: haz las cuentas",
+      "foot": "Antes de dar el paso"
+    },
+    {
+      "t": "point",
+      "head": "Mira más allá del [[alquiler]]",
+      "body": "Suministros, comunidad, internet, seguros, comida y transporte. Todo suma.",
+      "foot": "Gastos reales",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Gastos de entrada",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Fianza",
+          "b": "Se suele pagar al empezar."
+        },
+        {
+          "t": "Primeras mensualidades",
+          "b": "Pueden pedirse por adelantado."
+        },
+        {
+          "t": "Equipamiento",
+          "b": "Muebles y electrodomésticos."
+        }
+      ],
+      "foot": "Una cantidad inicial"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo comprobar si te sale",
+      "steps": [
+        {
+          "t": "Suma tus gastos mensuales",
+          "b": "Con una estimación realista."
+        },
+        {
+          "t": "Resta de tu sueldo neto",
+          "b": "Mira lo que queda."
+        },
+        {
+          "t": "Comprueba el ahorro",
+          "b": "¿Sigues ahorrando?"
+        },
+        {
+          "t": "Deja un colchón",
+          "b": "Para los imprevistos."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Una pauta [[habitual]]",
+      "body": "Muchas personas intentan que la vivienda no supere en torno a un tercio de sus ingresos. Es orientativo.",
+      "foot": "No es una ley",
+      "kicker": "Una referencia"
+    },
+    {
+      "t": "point",
+      "head": "Valora [[compartir]]",
+      "body": "Compartir piso puede reducir gastos y darte margen para ahorrar.",
+      "foot": "Una opción",
+      "kicker": "Alternativa"
+    },
+    {
+      "t": "close",
+      "head": "Un número claro [[evita sustos]]",
+      "body": "Haz tu presupuesto antes de firmar.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y hazlo antes de mirar pisos.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

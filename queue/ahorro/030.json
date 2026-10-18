@@ -1,0 +1,74 @@
+{
+  "id": "ahorro-030-ahorro-inversion",
+  "label": "Ahorro e inversión",
+  "accent": "green",
+  "caption": "Ahorro e inversión 📊 No son lo mismo y conviene no confundirlos.\n\nDesliza para ver en qué se diferencian. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#inversion",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "≠",
+      "title": "Ahorro e inversión no son lo mismo",
+      "foot": "Y conviene no confundirlos"
+    },
+    {
+      "t": "cards",
+      "head": "En qué se diferencian",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Ahorrar",
+          "b": "Guardar dinero con poco o ningún riesgo y disponible."
+        },
+        {
+          "t": "Invertir",
+          "b": "Poner el dinero a trabajar aceptando que puede subir o bajar."
+        }
+      ],
+      "foot": "Dos funciones"
+    },
+    {
+      "t": "point",
+      "head": "Ahorro para lo [[que viene pronto]]",
+      "body": "Imprevistos y metas a corto plazo: viajes, reformas o gastos de este año.",
+      "foot": "Seguridad",
+      "kicker": "Ahorro"
+    },
+    {
+      "t": "point",
+      "head": "Inversión para lo [[lejano]]",
+      "body": "Metas a muchos años, como la jubilación, donde las caídas temporales se pueden asumir.",
+      "foot": "Largo plazo",
+      "kicker": "Inversión"
+    },
+    {
+      "t": "point",
+      "head": "Orden [[recomendable]]",
+      "body": "Primero, fondo de emergencia y deudas caras. Después, valorar invertir con calma y conociendo el riesgo.",
+      "foot": "Primero la base",
+      "kicker": "Los pasos"
+    },
+    {
+      "t": "point",
+      "head": "Invertir implica [[riesgo]]",
+      "body": "Puedes perder parte del dinero. No hay rentabilidades garantizadas. Infórmate antes.",
+      "foot": "Sin promesas",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Cada euro, [[con su función]]",
+      "body": "Decide qué dinero es ahorro y cuál podría ser inversión.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para tener las ideas claras.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

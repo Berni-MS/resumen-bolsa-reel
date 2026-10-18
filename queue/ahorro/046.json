@@ -1,0 +1,90 @@
+{
+  "id": "ahorro-046-frugal",
+  "label": "Frugalidad no es tacañería",
+  "accent": "green",
+  "caption": "Frugalidad no es tacañería 🌱 Gastar bien es distinto de gastar poco.\n\nDesliza para ver la diferencia y cómo aplicarla.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#frugalidad",
+    "#ahorro",
+    "#habitos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🌱",
+      "title": "Frugalidad no es tacañería",
+      "foot": "Gastar bien, no gastar poco"
+    },
+    {
+      "t": "cards",
+      "head": "La diferencia",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tacañería",
+          "b": "Evitar gastar aunque te perjudique."
+        },
+        {
+          "t": "Frugalidad",
+          "b": "Gastar en lo que valoras y recortar lo que no."
+        }
+      ],
+      "foot": "Dos actitudes"
+    },
+    {
+      "t": "point",
+      "head": "Gasta en lo que [[te importa]]",
+      "body": "Si disfrutas viajar, ahorra en otras cosas para poder hacerlo. El dinero es una herramienta.",
+      "foot": "Valores",
+      "kicker": "La idea"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo aplicarlo",
+      "steps": [
+        {
+          "t": "Haz tu lista de valores",
+          "b": "Qué te da bienestar."
+        },
+        {
+          "t": "Mira tus gastos",
+          "b": "¿Coinciden con tu lista?"
+        },
+        {
+          "t": "Recorta lo que no encaja",
+          "b": "Sin culpa."
+        },
+        {
+          "t": "Aumenta lo que sí encaja",
+          "b": "Con intención."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "No es [[renunciar]]",
+      "body": "Es elegir. Muchas veces gastas en cosas por costumbre y no porque te hagan feliz.",
+      "foot": "Conciencia",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "point",
+      "head": "Con [[generosidad]]",
+      "body": "Ahorrar no impide invitar o regalar. Decide cuánto y con cabeza.",
+      "foot": "Equilibrio",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Gasta [[a propósito]]",
+      "body": "Revisa hoy tus tres mayores gastos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz la revisión.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

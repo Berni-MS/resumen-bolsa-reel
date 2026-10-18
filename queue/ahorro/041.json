@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-041-pagar-tarjeta",
+  "label": "Pagar sin dolor",
+  "accent": "red",
+  "caption": "Pagar sin dolor 💳 Por qué pagar con tarjeta o móvil nos hace gastar más.\n\nDesliza para ver el efecto y cómo contrarrestarlo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#psicologia",
+    "#tarjetas",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "💳",
+      "title": "Pagar sin dolor",
+      "foot": "Por qué la tarjeta nos hace gastar más"
+    },
+    {
+      "t": "point",
+      "head": "Pagar con efectivo [[duele más]]",
+      "body": "Ver el dinero salir de la cartera lo hace tangible. Con tarjeta o móvil, el gasto parece menos real.",
+      "foot": "El «dolor de pagar»",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "Resultado: [[gastas más]]",
+      "body": "Algunos estudios sugieren que pagar con tarjeta puede aumentar el gasto. Es un efecto psicológico.",
+      "foot": "Sin darte cuenta",
+      "kicker": "Consecuencia"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo contrarrestarlo",
+      "steps": [
+        {
+          "t": "Revisa tus movimientos cada semana",
+          "b": "Hazlo visible."
+        },
+        {
+          "t": "Activa avisos de gasto",
+          "b": "En la app del banco."
+        },
+        {
+          "t": "Usa efectivo en una categoría",
+          "b": "La que más se te escapa."
+        },
+        {
+          "t": "Pon un límite diario",
+          "b": "Si tu banco lo permite."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pregúntate [[antes de pagar]]",
+      "body": "¿Lo compraría si tuviera que contar los billetes? Ese segundo cambia decisiones.",
+      "foot": "Un truco",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "No es malo [[pagar con tarjeta]]",
+      "body": "Es cómodo y seguro. Lo importante es seguir viendo cuánto sale y adónde.",
+      "foot": "Visibilidad",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "close",
+      "head": "Hazlo [[visible]]",
+      "body": "Revisa hoy tus últimos 20 movimientos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz la revisión.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

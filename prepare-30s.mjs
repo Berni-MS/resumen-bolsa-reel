@@ -16,6 +16,7 @@ it.scenes = it.scenes.map((s, n) => ({
   text: str(s.text, 130, `text ${n + 1}`),
   ...(s.big && String(s.big).length <= 9 ? { big: String(s.big) } : {}),
 }));
+if (it.badge) it.badge = str(it.badge, 20, 'badge').toUpperCase();
 it.caption = str(it.caption, 900, 'caption');
 it.source = str(it.source, 90, 'source');
 if (!['up', 'down', 'neutral'].includes(it.mood)) it.mood = 'neutral';

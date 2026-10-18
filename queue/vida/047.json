@@ -1,0 +1,97 @@
+{
+  "id": "vida-047-morosos",
+  "label": "Los ficheros de morosos",
+  "accent": "red",
+  "caption": "Los ficheros de morosos 📋 Qué son, cuándo te incluyen y qué hacer.\n\nDesliza para ver lo básico. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#morosidad",
+    "#deudas",
+    "#credito",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📋",
+      "title": "Los ficheros de morosos",
+      "foot": "Qué son y cómo evitarlos"
+    },
+    {
+      "t": "point",
+      "head": "Una [[lista de deudas impagadas]]",
+      "body": "Son ficheros donde las entidades pueden incluir impagos. Estar en uno dificulta pedir créditos o contratar servicios.",
+      "foot": "Qué son",
+      "kicker": "La idea"
+    },
+    {
+      "t": "point",
+      "head": "No te incluyen [[sin más]]",
+      "body": "Debe haber una deuda cierta, vencida y exigible, y te deben avisar antes. Si no estás de acuerdo, puedes reclamar.",
+      "foot": "Tus derechos",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo evitarlo",
+      "steps": [
+        {
+          "t": "Revisa tus cargos y cuotas",
+          "b": "Cada mes."
+        },
+        {
+          "t": "Paga lo que debes",
+          "b": "O negocia si no puedes."
+        },
+        {
+          "t": "Guarda justificantes",
+          "b": "De cada pago."
+        },
+        {
+          "t": "Responde a los avisos",
+          "b": "Siempre."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "steps",
+      "head": "Si te incluyen",
+      "steps": [
+        {
+          "t": "Comprueba si la deuda es real",
+          "b": "Con tus justificantes."
+        },
+        {
+          "t": "Habla con el acreedor",
+          "b": "Para pagar o negociar."
+        },
+        {
+          "t": "Si es un error, reclama",
+          "b": "Por escrito."
+        },
+        {
+          "t": "Pide asesoramiento",
+          "b": "Si tienes dudas."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pide [[tus datos]]",
+      "body": "Tienes derecho a saber si apareces y por qué. Consulta con las entidades responsables de los ficheros.",
+      "foot": "Tu derecho",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "Lo mejor es [[prevenir]]",
+      "body": "Revisa hoy tus cuotas y fechas de pago.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta a un profesional.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

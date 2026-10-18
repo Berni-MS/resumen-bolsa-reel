@@ -1,0 +1,91 @@
+{
+  "id": "vida-012-siete-habitos",
+  "label": "7 hábitos de buenas finanzas",
+  "accent": "green",
+  "caption": "7 hábitos de buenas finanzas ✅ Pocos, sencillos y con efecto a largo plazo.\n\nDesliza y elige uno para empezar esta semana.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#habitos",
+    "#finanzaspersonales",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "7",
+      "title": "hábitos de buenas finanzas",
+      "foot": "Elige uno para esta semana"
+    },
+    {
+      "t": "cards",
+      "head": "Los tres primeros",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Ahorra antes de gastar",
+          "b": "Con transferencia automática."
+        },
+        {
+          "t": "Conoce tus números",
+          "b": "Un repaso semanal de diez minutos."
+        },
+        {
+          "t": "Ten un colchón",
+          "b": "Tu fondo de emergencia."
+        }
+      ],
+      "foot": "Base"
+    },
+    {
+      "t": "cards",
+      "head": "Los siguientes",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Evita deudas caras",
+          "b": "Y paga primero las de mayor interés."
+        },
+        {
+          "t": "Compara antes de contratar",
+          "b": "Seguros, facturas y préstamos."
+        },
+        {
+          "t": "Espera antes de comprar",
+          "b": "La regla de las 24 horas."
+        }
+      ],
+      "foot": "Cuidar"
+    },
+    {
+      "t": "point",
+      "head": "Y el séptimo: [[sigue aprendiendo]]",
+      "body": "Un libro, un curso o una cuenta fiable al trimestre. Cuanto más entiendes, mejor decides.",
+      "foot": "Aprende",
+      "kicker": "Siete"
+    },
+    {
+      "t": "point",
+      "head": "No cambies [[todo a la vez]]",
+      "body": "Elige un hábito, mantenlo un mes y suma otro. Así se afianzan.",
+      "foot": "Poco a poco",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "point",
+      "head": "Apunta [[tu hábito]]",
+      "body": "Ponlo en un sitio visible. Los hábitos que se ven, se cumplen más.",
+      "foot": "Visible",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "close",
+      "head": "Uno hoy, [[siete en un año]]",
+      "body": "Elige tu primer hábito ahora.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y elige el tuyo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

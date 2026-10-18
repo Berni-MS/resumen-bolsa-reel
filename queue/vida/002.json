@@ -1,92 +1,92 @@
 {
-  "id": "vida-002-hipoteca-tipos",
-  "label": "Hipoteca fija, variable o mixta",
-  "accent": "green",
-  "caption": "Hipoteca fija, variable o mixta 🏠 Tres formas de pagar el mismo préstamo, con riesgos distintos.\n\nDesliza para ver cómo funciona cada una y qué mirar antes de firmar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "id": "vida-002-comisiones",
+  "label": "Comisiones bancarias",
+  "accent": "red",
+  "caption": "Comisiones bancarias 🏦 Pequeñas cantidades que se cobran sin que te des cuenta.\n\nDesliza para ver dónde suelen aparecer y cómo reducirlas o evitarlas.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#hipoteca",
-    "#vivienda",
-    "#finanzaspersonales",
+    "#banca",
+    "#comisiones",
+    "#ahorro",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "🏠",
-      "title": "Hipoteca fija, variable o mixta",
-      "foot": "Qué cambia en cada una"
+      "big": "🏦",
+      "title": "Comisiones bancarias",
+      "foot": "Dónde se esconden y cómo evitarlas"
     },
     {
       "t": "cards",
-      "head": "Los tres tipos",
-      "accent": "green",
+      "head": "Las más habituales",
+      "accent": "red",
       "cards": [
         {
-          "t": "Fija",
-          "b": "El tipo de interés no cambia. Sabes cuánto pagas cada mes."
+          "t": "Mantenimiento de cuenta",
+          "b": "Una cuota por tener la cuenta."
         },
         {
-          "t": "Variable",
-          "b": "El interés sigue a un índice de referencia. La cuota puede subir o bajar."
+          "t": "Tarjeta",
+          "b": "Emisión o mantenimiento anual."
         },
         {
-          "t": "Mixta",
-          "b": "Una parte del plazo es fija y el resto es variable."
+          "t": "Transferencias y retiradas",
+          "b": "Según el tipo y el cajero."
         }
       ],
-      "foot": "Cómo funcionan"
+      "foot": "Revisa tu contrato"
     },
     {
       "t": "point",
-      "head": "La fija da [[tranquilidad]]",
-      "body": "Sabes siempre cuánto pagas. A cambio, suele empezar con un interés algo más alto que la variable.",
-      "foot": "Previsible",
-      "kicker": "Ventaja de la fija"
-    },
-    {
-      "t": "point",
-      "head": "La variable puede [[subir]]",
-      "body": "Si los tipos suben, tu cuota también. Si bajan, pagas menos. Conviene tener margen en tu presupuesto.",
-      "foot": "Riesgo de la variable",
+      "head": "Pregunta si están [[condicionadas]]",
+      "body": "Muchas se eliminan si domicilias la nómina o contratas otros productos. Mira qué te piden a cambio.",
+      "foot": "Gratis, pero ¿a qué precio?",
       "kicker": "Ojo"
     },
     {
       "t": "steps",
-      "head": "Qué mirar antes de firmar",
+      "head": "Cómo reducirlas",
       "steps": [
         {
-          "t": "El TAE",
-          "b": "El coste real, con comisiones."
+          "t": "Lista tus comisiones del año",
+          "b": "Mira tus extractos."
         },
         {
-          "t": "Las comisiones",
-          "b": "De apertura, amortización y cancelación."
+          "t": "Compara con otras entidades",
+          "b": "Hay cuentas sin comisiones."
         },
         {
-          "t": "Los productos vinculados",
-          "b": "Seguros o cuentas que te piden contratar."
+          "t": "Negocia con tu banco",
+          "b": "A veces las eliminan."
         },
         {
-          "t": "La ficha informativa",
-          "b": "Compara al menos tres ofertas."
+          "t": "Valora cambiar de cuenta",
+          "b": "Si no mejoran."
         }
       ],
       "foot": "Cuatro pasos"
     },
     {
       "t": "point",
-      "head": "Calcula si te [[sale bien]]",
-      "body": "Una pauta habitual es que la cuota no supere cierto porcentaje de tus ingresos netos. Pregunta a tu banco cuál aplican.",
-      "foot": "Con margen",
-      "kicker": "Una pauta"
+      "head": "Saca dinero en [[cajeros de tu red]]",
+      "body": "Retirar en cajeros de otros bancos o en el extranjero puede tener coste. Consulta las condiciones.",
+      "foot": "Un detalle",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con el [[extranjero]]",
+      "body": "Pagar en otra moneda puede llevar comisiones o un tipo de cambio poco favorable.",
+      "foot": "Antes de viajar",
+      "kicker": "Viajes"
     },
     {
       "t": "close",
-      "head": "Elige según [[cuánto riesgo aguantas]]",
-      "body": "No hay una opción perfecta, sino la que encaja contigo.",
+      "head": "Lo que no ves, [[también cuesta]]",
+      "body": "Dedica 10 minutos a revisar tus comisiones.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y compara ofertas.",
+      "extra": "Guárdalo y revisa tu extracto.",
       "extraBold": true,
       "extraSize": 36
     }

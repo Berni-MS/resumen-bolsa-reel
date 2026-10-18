@@ -1,0 +1,81 @@
+{
+  "id": "vida-035-tarjeta-perdida",
+  "label": "Si pierdes la tarjeta",
+  "accent": "red",
+  "caption": "Si pierdes la tarjeta 🪪 Qué hacer en los primeros minutos.\n\nDesliza para ver los pasos. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#seguridad",
+    "#tarjetas",
+    "#banca",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🪪",
+      "title": "Has perdido la tarjeta",
+      "foot": "Qué hacer en los primeros minutos"
+    },
+    {
+      "t": "steps",
+      "head": "Haz esto ya",
+      "steps": [
+        {
+          "t": "Bloquéala",
+          "b": "Desde la app o el teléfono de tu banco."
+        },
+        {
+          "t": "Revisa los últimos movimientos",
+          "b": "Por si hay cargos que no reconoces."
+        },
+        {
+          "t": "Avisa al banco de lo raro",
+          "b": "Y denuncia si hace falta."
+        },
+        {
+          "t": "Pide una nueva",
+          "b": "Y cambia tus claves."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Bloquear es [[reversible]]",
+      "body": "Si la encuentras, puedes desbloquearla. No pierdes nada por bloquearla ya.",
+      "foot": "Mejor prevenir",
+      "kicker": "Importante"
+    },
+    {
+      "t": "point",
+      "head": "Guarda el [[teléfono de tu banco]]",
+      "body": "Tenlo anotado en un lugar que no sea la cartera. Muchos bancos tienen un número 24 horas.",
+      "foot": "Anótalo hoy",
+      "kicker": "Prepárate"
+    },
+    {
+      "t": "point",
+      "head": "Tu [[responsabilidad]]",
+      "body": "Si avisas a tiempo, tu responsabilidad por usos fraudulentos suele ser limitada. Consulta tu contrato.",
+      "foot": "Avisar pronto",
+      "kicker": "Qué pasa"
+    },
+    {
+      "t": "point",
+      "head": "Activa las [[notificaciones]]",
+      "body": "Cada compra te avisa. Detectarás cualquier uso extraño al momento.",
+      "foot": "Protección",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "close",
+      "head": "Avisar pronto [[es lo que más ayuda]]",
+      "body": "Guarda hoy el teléfono de tu banco.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta tu contrato.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

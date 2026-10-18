@@ -1,0 +1,84 @@
+{
+  "id": "ahorro-032-gastos-anuales",
+  "label": "Gastos anuales entre 12",
+  "accent": "green",
+  "caption": "Gastos anuales entre 12 🗓️ El truco para que los pagos de una vez no te pillen.\n\nDesliza para ver cómo prepararlos mes a mes.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#presupuesto",
+    "#gastosanuales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "÷12",
+      "title": "Gastos anuales entre 12",
+      "foot": "Para que no te pillen por sorpresa"
+    },
+    {
+      "t": "point",
+      "head": "Los gastos de [[una vez al año]] se olvidan",
+      "body": "Seguros, impuestos, matrículas o regalos. Llegan de golpe y desequilibran el mes.",
+      "foot": "El problema",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo prepararlos",
+      "steps": [
+        {
+          "t": "Haz la lista",
+          "b": "Todos los pagos anuales."
+        },
+        {
+          "t": "Súmalos",
+          "b": "El total del año."
+        },
+        {
+          "t": "Divide entre 12",
+          "b": "Tu cuota mensual."
+        },
+        {
+          "t": "Apártala cada mes",
+          "b": "En una cuenta aparte."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "stat",
+      "big": "1.200 €",
+      "head": "al año son 100 € al mes",
+      "body": "Si tus pagos anuales suman 1.200 euros, apartas 100 al mes y llegas a cada pago con el dinero listo. Es un ejemplo.",
+      "foot": "La cuenta",
+      "kicker": "Con números",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "point",
+      "head": "Incluye las [[cosas pequeñas]]",
+      "body": "Dominios, suscripciones anuales, revisiones o cumpleaños. Se olvidan fácil.",
+      "foot": "No te dejes nada",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Revisa [[cada año]]",
+      "body": "Cambian las cuotas y las fechas. Ajusta tu lista una vez al año.",
+      "foot": "Mantenimiento",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "close",
+      "head": "Lo que se ve venir, [[no pesa]]",
+      "body": "Haz hoy la lista de pagos anuales.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz tu lista.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

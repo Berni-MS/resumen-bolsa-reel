@@ -1,63 +1,79 @@
 {
-  "id": "vida-011-errores-ahorrar",
-  "label": "Errores al empezar a ahorrar",
-  "accent": "red",
-  "caption": "5 errores al empezar a ahorrar ⚠️ Y cómo evitarlos desde el principio.\n\nDesliza para ver los más habituales.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "id": "vida-011-herencias",
+  "label": "Hablar de herencias",
+  "accent": "green",
+  "caption": "Hablar de herencias 📜 Un tema incómodo que conviene ordenar a tiempo.\n\nDesliza para ver por qué y cómo empezar. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#ahorro",
-    "#errores",
-    "#finanzaspersonales",
+    "#herencia",
+    "#testamento",
+    "#familia",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "5",
-      "title": "errores al empezar a ahorrar",
-      "foot": "Y cómo evitarlos"
+      "big": "📜",
+      "title": "Hablar de herencias",
+      "foot": "Un tema incómodo que conviene ordenar"
     },
     {
       "t": "point",
-      "head": "1. No tener un [[objetivo]]",
-      "body": "Ahorrar sin saber para qué cuesta más. Ponle nombre, cifra y fecha.",
-      "foot": "Da sentido",
-      "kicker": "Error 1"
+      "head": "Ordenar [[evita conflictos]]",
+      "body": "Un testamento y una buena comunicación familiar evitan malentendidos y trámites más largos.",
+      "foot": "Por qué",
+      "kicker": "La idea"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo empezar",
+      "steps": [
+        {
+          "t": "Haz una lista de lo que tienes",
+          "b": "Cuentas, bienes, seguros."
+        },
+        {
+          "t": "Decide qué quieres",
+          "b": "Y a quién."
+        },
+        {
+          "t": "Consulta a un notario o abogado",
+          "b": "Con tus datos."
+        },
+        {
+          "t": "Informa a tu familia",
+          "b": "Dónde está todo."
+        }
+      ],
+      "foot": "Cuatro pasos"
     },
     {
       "t": "point",
-      "head": "2. Querer [[ahorrar demasiado]]",
-      "body": "Fijarte un 40 % de golpe y abandonar a los dos meses. Mejor empezar con poco y subir.",
-      "foot": "Constancia",
-      "kicker": "Error 2"
+      "head": "Cada [[territorio]] tiene sus reglas",
+      "body": "La normativa varía según donde vivas. Consulta con un profesional de tu zona.",
+      "foot": "Ojo",
+      "kicker": "Importante"
     },
     {
       "t": "point",
-      "head": "3. Ahorrar [[sin colchón]]",
-      "body": "Si surge un imprevisto, acabas endeudado. Primero, un fondo de emergencia.",
-      "foot": "Seguridad",
-      "kicker": "Error 3"
-    },
-    {
-      "t": "point",
-      "head": "4. Tener todo en [[un solo sitio]]",
-      "body": "Mezclar ahorro y gasto diario facilita gastarlo. Separa cuentas.",
+      "head": "Guarda [[los documentos]]",
+      "body": "Que tu familia sepa dónde están contratos, seguros y claves importantes.",
       "foot": "Orden",
-      "kicker": "Error 4"
+      "kicker": "Un consejo"
     },
     {
       "t": "point",
-      "head": "5. [[No revisar]] nunca",
-      "body": "Los gastos y los objetivos cambian. Dedica un rato al mes a revisar.",
-      "foot": "Ajustar",
-      "kicker": "Error 5"
+      "head": "Actualiza [[cuando cambie algo]]",
+      "body": "Matrimonio, hijos o nuevos bienes pueden pedir un cambio.",
+      "foot": "Revísalo",
+      "kicker": "Hábito"
     },
     {
       "t": "close",
-      "head": "Un error común, una [[solución simple]]",
-      "body": "Elige uno de estos cinco y corrígelo esta semana.",
+      "head": "Dejarlo claro [[es cuidar]]",
+      "body": "Esta semana, haz la lista de lo que tienes.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y comparte tu error en comentarios.",
+      "extra": "Información general; consulta a un profesional.",
       "extraBold": true,
       "extraSize": 36
     }

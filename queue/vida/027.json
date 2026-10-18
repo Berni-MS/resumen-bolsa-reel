@@ -1,0 +1,107 @@
+{
+  "id": "vida-027-renta-documentos",
+  "label": "Prepara tu Renta",
+  "accent": "green",
+  "caption": "Prepara tu Renta 🗂️ Lo que conviene tener a mano antes de empezar.\n\nDesliza para ver una lista de documentos habituales. Es información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#impuestos",
+    "#documentos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🗂️",
+      "title": "Prepara tu Renta",
+      "foot": "Lo que conviene tener a mano"
+    },
+    {
+      "t": "point",
+      "head": "Con orden, son [[minutos]]",
+      "body": "Tener los documentos a mano evita búsquedas de última hora y errores.",
+      "foot": "Prepararse ayuda",
+      "kicker": "Por qué"
+    },
+    {
+      "t": "cards",
+      "head": "Documentos habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Datos fiscales",
+          "b": "Descargables desde el servicio oficial."
+        },
+        {
+          "t": "Certificados",
+          "b": "De tu empresa o entidades."
+        },
+        {
+          "t": "Recibos y facturas",
+          "b": "Si tienes gastos que se declaran."
+        }
+      ],
+      "foot": "Para empezar"
+    },
+    {
+      "t": "cards",
+      "head": "Según tu situación",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Si tienes vivienda",
+          "b": "Datos de hipoteca o alquiler."
+        },
+        {
+          "t": "Si tienes hijos",
+          "b": "Libro de familia y datos."
+        },
+        {
+          "t": "Si eres autónomo",
+          "b": "Libros de ingresos y gastos."
+        }
+      ],
+      "foot": "Casos concretos"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo organizarlo",
+      "steps": [
+        {
+          "t": "Crea una carpeta",
+          "b": "Física o digital."
+        },
+        {
+          "t": "Guarda todo el año",
+          "b": "Cuando llegue."
+        },
+        {
+          "t": "Revisa el borrador",
+          "b": "Con los datos de arriba."
+        },
+        {
+          "t": "Pide ayuda si dudas",
+          "b": "Un gestor o la Agencia."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Guarda el [[justificante]]",
+      "body": "Después de presentar, guarda copia de la declaración y del justificante.",
+      "foot": "Importante",
+      "kicker": "Al final"
+    },
+    {
+      "t": "close",
+      "head": "Una carpeta ordenada [[te ahorra horas]]",
+      "body": "Crea hoy la carpeta del año.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

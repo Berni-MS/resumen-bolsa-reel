@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-047-vuelta-cole",
+  "label": "Vuelta al cole sin sobresaltos",
+  "accent": "green",
+  "caption": "Vuelta al cole sin sobresaltos 🎒 Septiembre trae muchos gastos juntos.\n\nDesliza para ver cómo organizarlos y gastar con cabeza.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vueltaalcole",
+    "#ahorro",
+    "#familia",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🎒",
+      "title": "Vuelta al cole sin sobresaltos",
+      "foot": "Los gastos de septiembre, ordenados"
+    },
+    {
+      "t": "point",
+      "head": "Septiembre [[junta mucho]]",
+      "body": "Material, libros, uniformes, matrículas y actividades. Mejor verlo en una sola lista.",
+      "foot": "Un solo número",
+      "kicker": "El reto"
+    },
+    {
+      "t": "steps",
+      "head": "Un plan sencillo",
+      "steps": [
+        {
+          "t": "Haz la lista completa",
+          "b": "Todo lo que necesitas."
+        },
+        {
+          "t": "Mira lo que ya tienes",
+          "b": "Mucho material se reutiliza."
+        },
+        {
+          "t": "Compara precios",
+          "b": "Tiendas y segunda mano."
+        },
+        {
+          "t": "Fija un tope",
+          "b": "Y apunta lo que gastas."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Para gastar menos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Libros de segunda mano",
+          "b": "Intercambios o bancos de libros."
+        },
+        {
+          "t": "Compra por grupo",
+          "b": "Entre familias, si es posible."
+        },
+        {
+          "t": "Evita lo de marca",
+          "b": "Que no mejora el aprendizaje."
+        }
+      ],
+      "foot": "Ideas"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[extraescolares]]",
+      "body": "Suman por mes y por todo el curso. Calcula el total anual antes de apuntarte.",
+      "foot": "Cuenta el año",
+      "kicker": "Cuidado"
+    },
+    {
+      "t": "point",
+      "head": "Prepáralo con [[tiempo]]",
+      "body": "Aparta una pequeña cantidad cada mes del año para septiembre. La cuesta pesa mucho menos.",
+      "foot": "Prevenir",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "close",
+      "head": "Septiembre se prepara [[en marzo]]",
+      "body": "Abre un apartado para el próximo curso.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para el año que viene.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

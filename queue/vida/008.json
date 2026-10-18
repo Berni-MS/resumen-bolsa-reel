@@ -1,84 +1,92 @@
 {
-  "id": "vida-008-deudas",
-  "label": "Bola de nieve o avalancha",
-  "accent": "green",
-  "caption": "Deudas: bola de nieve o avalancha ⛄ Dos métodos para pagarlas con un plan.\n\nDesliza para ver en qué se diferencian y cuál te puede venir mejor.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "id": "vida-008-bizum",
+  "label": "Bizum con seguridad",
+  "accent": "red",
+  "caption": "Bizum con seguridad 📲 Rápido y cómodo, pero con estafas conocidas.\n\nDesliza para ver cómo usarlo bien.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
   "tags": [
-    "#deudas",
-    "#finanzaspersonales",
-    "#ahorro",
+    "#bizum",
+    "#seguridad",
+    "#estafas",
     "#educacionfinanciera"
   ],
   "sources": [],
   "slides": [
     {
       "t": "cover",
-      "big": "⛄",
-      "title": "Deudas: bola de nieve o avalancha",
-      "foot": "Dos métodos para salir de ellas"
+      "big": "📲",
+      "title": "Bizum con seguridad",
+      "foot": "Cómodo, pero con estafas conocidas"
     },
     {
       "t": "point",
-      "head": "Primero: [[lista todas]] tus deudas",
-      "body": "Apunta cuánto debes, el interés de cada una y la cuota mínima. Sin esto, es difícil elegir.",
-      "foot": "Ver el total",
-      "kicker": "Paso 0"
+      "head": "Pensado para [[personas que se conocen]]",
+      "body": "Es ideal para repartir gastos con amigos o familia. No es una herramienta para pagar a desconocidos.",
+      "foot": "Para quién",
+      "kicker": "Qué es"
     },
     {
       "t": "cards",
-      "head": "Los dos métodos",
-      "accent": "green",
+      "head": "Estafas habituales",
+      "accent": "red",
       "cards": [
         {
-          "t": "Bola de nieve",
-          "b": "Pagas primero la deuda más pequeña. Ganas motivación al cerrar deudas."
+          "t": "«Te envié dinero por error»",
+          "b": "Te piden que lo devuelvas."
         },
         {
-          "t": "Avalancha",
-          "b": "Pagas primero la de mayor interés. Ahorras más en intereses."
+          "t": "Compras en anuncios",
+          "b": "Pagas y no llega nada."
+        },
+        {
+          "t": "Cobros que te piden “para recibir”",
+          "b": "Nunca hay que pagar para cobrar."
         }
       ],
-      "foot": "Mientras pagas el mínimo del resto"
-    },
-    {
-      "t": "point",
-      "head": "La [[avalancha]] ahorra más",
-      "body": "Matemáticamente, es la más barata, porque ataca los intereses más altos primero.",
-      "foot": "Más eficiente",
-      "kicker": "Ventaja"
-    },
-    {
-      "t": "point",
-      "head": "La [[bola de nieve]] motiva más",
-      "body": "Cerrar una deuda pronto da ánimo. Para algunas personas, mantener la constancia vale más que optimizar.",
-      "foot": "Más motivadora",
-      "kicker": "Ventaja"
+      "foot": "Cuidado"
     },
     {
       "t": "steps",
-      "head": "Cómo ponerlo en práctica",
+      "head": "Cómo usarlo seguro",
       "steps": [
         {
-          "t": "Paga el mínimo en todas",
-          "b": "Para evitar recargos."
+          "t": "Comprueba el nombre del destinatario",
+          "b": "Antes de enviar."
         },
         {
-          "t": "Elige el método",
-          "b": "Según lo que te motive."
+          "t": "No pagues a desconocidos",
+          "b": "En compras de segunda mano."
         },
         {
-          "t": "Destina el extra a una sola deuda",
-          "b": "Y cuando se cierre, pasa a la siguiente."
+          "t": "Revisa tus movimientos",
+          "b": "Y tu límite."
+        },
+        {
+          "t": "Si dudas, no envíes",
+          "b": "Pregunta primero."
         }
       ],
-      "foot": "Tres pasos"
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Si te pasa, [[avisa pronto]]",
+      "body": "Contacta con tu banco y denuncia. Cuanto antes, más opciones.",
+      "foot": "Actúa",
+      "kicker": "Si ocurre"
+    },
+    {
+      "t": "point",
+      "head": "Pon un [[límite]]",
+      "body": "Muchos bancos permiten ajustar los límites de Bizum. Un límite bajo reduce el daño.",
+      "foot": "Protección",
+      "kicker": "Un consejo"
     },
     {
       "t": "close",
-      "head": "El mejor método es el que [[sí vas a seguir]]",
-      "body": "Si tienes dudas con tus deudas, consulta con tu entidad o con un asesor.",
+      "head": "Úsalo con quien [[conoces]]",
+      "body": "Revisa tu límite en la app.",
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
-      "extra": "Guárdalo y elige tu método.",
+      "extra": "Guárdalo y compártelo.",
       "extraBold": true,
       "extraSize": 36
     }

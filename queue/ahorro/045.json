@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-045-apps",
+  "label": "Elegir una app de finanzas",
+  "accent": "green",
+  "caption": "Elegir una app de finanzas 📲 Una herramienta ayuda, pero solo si la usas.\n\nDesliza para ver qué mirar antes de elegir.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#apps",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📲",
+      "title": "Elegir una app de finanzas",
+      "foot": "La mejor es la que sí abres"
+    },
+    {
+      "t": "point",
+      "head": "Lo primero, [[qué necesitas]]",
+      "body": "¿Ver tus gastos, hacer presupuestos o ahorrar automáticamente? Cada app destaca en una cosa.",
+      "foot": "Define tu uso",
+      "kicker": "Paso 1"
+    },
+    {
+      "t": "steps",
+      "head": "Qué mirar",
+      "steps": [
+        {
+          "t": "Privacidad",
+          "b": "Qué datos pide y cómo los usa."
+        },
+        {
+          "t": "Coste",
+          "b": "Gratuita o de pago."
+        },
+        {
+          "t": "Facilidad",
+          "b": "¿La abrirás cada semana?"
+        },
+        {
+          "t": "Conexión con el banco",
+          "b": "Si la necesitas."
+        }
+      ],
+      "foot": "Cuatro criterios"
+    },
+    {
+      "t": "point",
+      "head": "Cuidado con los [[permisos]]",
+      "body": "Si conecta tu banco, comprueba que usa métodos seguros y que puedes desvincularla.",
+      "foot": "Seguridad",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "No necesitas [[una app]]",
+      "body": "Una hoja de cálculo o un cuaderno también funcionan. Lo importante es el hábito.",
+      "foot": "Alternativas",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "point",
+      "head": "Prueba [[un mes]]",
+      "body": "Si la abres cada semana, quédate. Si no, prueba otra o vuelve a lo simple.",
+      "foot": "Experimenta",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "La herramienta es [[lo de menos]]",
+      "body": "Lo que cuenta es mirar tu dinero con regularidad.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y elige la tuya.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

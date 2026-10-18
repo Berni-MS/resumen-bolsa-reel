@@ -1,0 +1,94 @@
+{
+  "id": "vida-025-renta-que-es",
+  "label": "Declaración de la Renta: qué es",
+  "accent": "green",
+  "caption": "La declaración de la Renta 📝 Qué es, para qué sirve y por qué no hay que tenerle miedo.\n\nDesliza para ver lo básico. Información general: consulta siempre la normativa vigente y, si lo necesitas, a un profesional.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#irpf",
+    "#impuestos",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "📝",
+      "title": "La declaración de la Renta",
+      "foot": "Qué es y para qué sirve"
+    },
+    {
+      "t": "point",
+      "head": "Es el [[ajuste anual]] de tu IRPF",
+      "body": "Durante el año te van reteniendo un adelanto en la nómina. En la Renta se compara con lo que realmente te corresponde pagar.",
+      "foot": "Un ajuste",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Tres resultados posibles",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "A devolver",
+          "b": "Te retuvieron de más."
+        },
+        {
+          "t": "A pagar",
+          "b": "Te retuvieron de menos."
+        },
+        {
+          "t": "Resultado cero",
+          "b": "Casi lo justo."
+        }
+      ],
+      "foot": "Depende de tu caso"
+    },
+    {
+      "t": "point",
+      "head": "Se presenta [[una vez al año]]",
+      "body": "Suele ser en primavera, hasta verano. Mira el calendario oficial de la Agencia Tributaria.",
+      "foot": "Fechas oficiales",
+      "kicker": "Cuándo"
+    },
+    {
+      "t": "point",
+      "head": "No todo el mundo está [[obligado]]",
+      "body": "Depende de tus ingresos y de otras circunstancias. Compruébalo en la web de la Agencia Tributaria.",
+      "foot": "Compruébalo",
+      "kicker": "Quién"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo prepararte",
+      "steps": [
+        {
+          "t": "Reúne tus documentos",
+          "b": "Nómina, datos fiscales, recibos."
+        },
+        {
+          "t": "Entra en el servicio oficial",
+          "b": "Con identificación digital."
+        },
+        {
+          "t": "Revisa el borrador",
+          "b": "Antes de confirmarlo."
+        },
+        {
+          "t": "Presenta dentro del plazo",
+          "b": "Y guarda el justificante."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Con orden, la Renta es [[más sencilla]]",
+      "body": "Guarda tus documentos durante el año.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general; consulta fuentes oficiales.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

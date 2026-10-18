@@ -1,0 +1,81 @@
+{
+  "id": "vida-014-plan-una-hoja",
+  "label": "Tu plan financiero en una hoja",
+  "accent": "green",
+  "caption": "Tu plan financiero en una hoja 🗒️ Un resumen sencillo de dónde estás y adónde vas.\n\nDesliza para ver qué incluir.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#plan",
+    "#finanzaspersonales",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🗒️",
+      "title": "Tu plan financiero en una hoja",
+      "foot": "Dónde estás y adónde vas"
+    },
+    {
+      "t": "point",
+      "head": "Una hoja, [[cuatro bloques]]",
+      "body": "No necesitas un documento enorme. Una página con lo esencial es más útil que un plan que no abres.",
+      "foot": "Sencillez",
+      "kicker": "La idea"
+    },
+    {
+      "t": "steps",
+      "head": "Los cuatro bloques",
+      "steps": [
+        {
+          "t": "Dónde estoy",
+          "b": "Ingresos, gastos, ahorro y deudas."
+        },
+        {
+          "t": "Adónde quiero ir",
+          "b": "Tus metas con cifra y fecha."
+        },
+        {
+          "t": "Cómo lo haré",
+          "b": "Cuánto aparto cada mes."
+        },
+        {
+          "t": "Cuándo lo reviso",
+          "b": "Fechas fijas del año."
+        }
+      ],
+      "foot": "Una página"
+    },
+    {
+      "t": "point",
+      "head": "Empieza por [[tus metas]]",
+      "body": "Escribe tres: una a corto, una a medio y una a largo plazo. Con cifra y fecha.",
+      "foot": "Metas",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Incluye tus [[reglas]]",
+      "body": "Por ejemplo: «ahorro antes de gastar» o «24 horas antes de comprar». Te ayudan a decidir.",
+      "foot": "Tus normas",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Revísalo [[dos veces al año]]",
+      "body": "Ajusta metas y cuotas cuando cambie algo importante.",
+      "foot": "Actualiza",
+      "kicker": "Rutina"
+    },
+    {
+      "t": "close",
+      "head": "Un plan sencillo [[se cumple]]",
+      "body": "Escribe hoy tus tres metas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz tu hoja este fin de semana.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

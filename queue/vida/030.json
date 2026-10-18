@@ -1,0 +1,87 @@
+{
+  "id": "vida-030-plan-vs-fondo",
+  "label": "Plan de pensiones o fondo",
+  "accent": "green",
+  "caption": "Plan de pensiones o fondo de inversión 🤔 Dos formas de ahorrar a largo plazo.\n\nDesliza para ver las diferencias básicas. Información general.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#pensiones",
+    "#fondos",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🤔",
+      "title": "Plan de pensiones o fondo",
+      "foot": "Dos formas de ahorrar a largo plazo"
+    },
+    {
+      "t": "cards",
+      "head": "En lo básico",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Plan de pensiones",
+          "b": "Pensado para la jubilación, con restricciones para recuperarlo."
+        },
+        {
+          "t": "Fondo de inversión",
+          "b": "Más flexible: puedes rescatar cuando quieras, con sus condiciones."
+        }
+      ],
+      "foot": "Dos productos"
+    },
+    {
+      "t": "point",
+      "head": "Ambos pueden [[subir o bajar]]",
+      "body": "Según lo que contengan. Ninguno garantiza rentabilidad, salvo productos con condiciones específicas.",
+      "foot": "Riesgo",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "cards",
+      "head": "Qué mirar en los dos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Comisiones",
+          "b": "Pequeñas diferencias pesan mucho con los años."
+        },
+        {
+          "t": "Qué contienen",
+          "b": "Renta fija, variable o mixta."
+        },
+        {
+          "t": "Condiciones de salida",
+          "b": "Cuándo y cómo recuperas el dinero."
+        }
+      ],
+      "foot": "Compara"
+    },
+    {
+      "t": "point",
+      "head": "La fiscalidad [[cambia]]",
+      "body": "Puede haber ventajas o diferencias según el producto y tu situación. Consulta con un profesional.",
+      "foot": "Cada caso",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "point",
+      "head": "Empieza por [[entender]]",
+      "body": "Antes de contratar, pregunta qué es, cuánto cuesta y cuándo podrás recuperarlo.",
+      "foot": "Sin prisa",
+      "kicker": "Consejo"
+    },
+    {
+      "t": "close",
+      "head": "No hay uno mejor: [[hay el que encaja con tu plan]]",
+      "body": "Compara costes y condiciones.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Información general, no es asesoramiento ni recomendación.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

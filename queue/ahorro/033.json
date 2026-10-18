@@ -1,0 +1,81 @@
+{
+  "id": "ahorro-033-cuanto-ahorrar",
+  "label": "¿Cuánto ahorrar al mes?",
+  "accent": "green",
+  "caption": "¿Cuánto ahorrar al mes? 🤔 No hay un número mágico, pero sí una forma de calcularlo.\n\nDesliza para ver cómo salir de dudas.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#presupuesto",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "?",
+      "title": "¿Cuánto ahorrar al mes?",
+      "foot": "No hay un número mágico"
+    },
+    {
+      "t": "point",
+      "head": "Depende de tus [[metas]]",
+      "body": "Un fondo de emergencia, un viaje, una entrada o la jubilación: cada meta pide un ritmo distinto.",
+      "foot": "Primero el objetivo",
+      "kicker": "La clave"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo calcularlo",
+      "steps": [
+        {
+          "t": "Pon una meta y una fecha",
+          "b": "Concreta."
+        },
+        {
+          "t": "Divide entre los meses",
+          "b": "Eso es tu cuota."
+        },
+        {
+          "t": "Compáralo con tu margen",
+          "b": "¿Cabe en tu presupuesto?"
+        },
+        {
+          "t": "Ajusta plazo o cuota",
+          "b": "Hasta que cuadre."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Una referencia [[habitual]]",
+      "body": "Muchas guías hablan de ahorrar en torno al 10-20 % del sueldo neto. Es una pauta, no una obligación.",
+      "foot": "Orientativa",
+      "kicker": "Referencia"
+    },
+    {
+      "t": "point",
+      "head": "Si no llegas, [[empieza menos]]",
+      "body": "Un 3 % constante es mejor que un 15 % que abandonas. Súbelo cuando puedas.",
+      "foot": "Constancia",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Revisa [[cada año]]",
+      "body": "Tus ingresos, gastos y metas cambian. Ajusta tu ahorro cuando cambien.",
+      "foot": "Adáptalo",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "close",
+      "head": "Tu número es [[el que puedes mantener]]",
+      "body": "Calcula hoy tu cuota para tu primera meta.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz tus cuentas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}
