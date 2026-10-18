@@ -104,6 +104,47 @@ jobs:
             '{status:"carousel", id:$id, caption:$caption, images:[range(1; ($n|tonumber)+1) | ($base + "/" + (if . < 10 then "0" else "" end) + (. | tostring) + ".jpg")]}' --arg n "$(ls out/*.jpg | wc -l)" \
           | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
 
+      - name: Historia de aviso del carrusel
+        if: ${{ always() && steps.publish.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          set -uo pipefail
+          node render-teaser.mjs out/01.jpg "$(jq -r '.label // empty' item.json)" teaser.png
+          NAME="aviso-$(jq -r .id item.json | tr -c 'A-Za-z0-9\n_-' '-')-${GITHUB_RUN_ID}.png"
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          rm -rf site2 && git clone --depth 1 --branch gh-pages "$REMOTE" site2
+          mkdir -p site2/historias && cp teaser.png "site2/historias/$NAME" && touch site2/.nojekyll
+          ls -1t site2/historias/* | tail -n +31 | xargs -r rm -f
+          cd site2 && git add -A && git commit -q -m "Historia de aviso $NAME"
+          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
+          cd ..
+          URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/historias/$NAME"
+          for i in $(seq 1 40); do
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true); echo "intento $i: HTTP $CODE"
+            [ "$CODE" = "200" ] && break; [ "$i" = "40" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
+          done
+          if [ "$DRY" = "true" ]; then echo "Prueba: historia generada, no publicada"; exit 0; fi
+          if [ -z "$IG_TOKEN" ]; then echo "::error::Falta IG_ACCESS_TOKEN"; exit 1; fi
+          # esperar a que Make haya publicado el carrusel
+          sleep 150
+          IG_TOKEN=$(printf %s "$IG_TOKEN" | tr -d "[:space:]\"'")
+          case "$IG_TOKEN" in IG*) API="https://graph.instagram.com/v21.0";; *) API="https://graph.facebook.com/v21.0";; esac
+          RES=$(curl -sS -X POST "$API/$IG_USER/media" --data-urlencode "media_type=STORIES" --data-urlencode "image_url=$URL" --data-urlencode "access_token=$IG_TOKEN")
+          ID=$(echo "$RES" | jq -r '.id // empty')
+          if [ -z "$ID" ]; then echo "::error::No se creó el contenedor: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
+          for i in $(seq 1 30); do
+            ST=$(curl -sS "$API/$ID?fields=status_code&access_token=$IG_TOKEN" | jq -r '.status_code // "?"'); echo "estado: $ST"
+            [ "$ST" = "FINISHED" ] && break; [ "$ST" = "ERROR" ] && { echo "::error::Instagram rechazó la imagen"; exit 1; }; sleep 5
+          done
+          OUT=$(curl -sS -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN")
+          echo "$OUT" | jq -e '.id' >/dev/null || { echo "::error::Fallo al publicar: $(echo "$OUT" | jq -c '.error // .')"; exit 1; }
+          echo "::notice::Historia de aviso publicada: $(echo "$OUT" | jq -r .id)"
+
       - name: Avisar a Make si falla
         if: ${{ failure() && inputs.dry_run != 'true' }}
         run: |
