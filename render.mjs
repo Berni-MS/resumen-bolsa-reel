@@ -35,7 +35,7 @@ function fontFace() {
     for (const w of weights) {
       const f = path.join(base, pkg, 'files', `${pkg}-latin-${w}-normal.woff2`);
       if (fs.existsSync(f)) {
-        faces.push(`@font-face{font-family:'${family}';font-weight:${w};src:url('${pathToFileURL(f).href}') format('woff2');}`);
+        faces.push(`@font-face{font-family:'${family}';font-weight:${w};src:url('data:font/woff2;base64,${fs.readFileSync(f).toString('base64')}') format('woff2');}`);
       }
     }
   };

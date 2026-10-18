@@ -14,7 +14,7 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 const base = path.resolve('node_modules/@fontsource');
 const faces = [];
 for (const [pkg, fam, ws] of [['big-shoulders-display', 'Big Shoulders Display', [800, 900]], ['hanken-grotesk', 'Hanken Grotesk', [500, 700]]])
-  for (const w of ws) { const f = path.join(base, pkg, 'files', `${pkg}-latin-${w}-normal.woff2`); if (fs.existsSync(f)) faces.push(`@font-face{font-family:'${fam}';font-weight:${w};src:url('${pathToFileURL(f).href}') format('woff2');}`); }
+  for (const w of ws) { const f = path.join(base, pkg, 'files', `${pkg}-latin-${w}-normal.woff2`); if (fs.existsSync(f)) faces.push(`@font-face{font-family:'${fam}';font-weight:${w};src:url('data:font/woff2;base64,${fs.readFileSync(f).toString('base64')}') format('woff2');}`); }
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>${faces.join('\n')}
 *{box-sizing:border-box}body{margin:0}:root{--s:1}
 .root{width:1080px;height:1920px;background:${INK};color:#fff;font-family:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif;padding:260px 80px 360px;display:flex;flex-direction:column;gap:28px;overflow:hidden}
@@ -23,7 +23,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${faces.jo
 </style></head><body><div class="root">
 <div style="font-size:36px;font-weight:700;color:${MUTED}">@bolsasincorbata · ${esc(item.label)}</div>
 <div id="mid">
-<div class="d" style="font-size:calc(190px*var(--s));line-height:1.06">Hoy en los <span style="color:${GREEN}">mercados</span></div>
+<div class="d" style="font-size:calc(190px*var(--s));line-height:1.08">Hoy en los <span style="color:${GREEN}">mercados</span></div>
 ${item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:calc(34px*var(--s)) calc(40px*var(--s))">
   <div style="display:flex;align-items:baseline;gap:24px"><span class="d" style="font-size:calc(76px*var(--s));color:${r.k >= 3 ? RED : GREEN}">${esc(r.t || 'Hoy')}</span><span style="font-size:calc(44px*var(--s));font-weight:700;line-height:1.15">${esc(r.n)}</span></div>
   ${r.b ? `<div style="font-size:calc(34px*var(--s));line-height:1.3;color:${MUTED};margin-top:10px">${esc(r.b)}</div>` : ''}</div>`).join('')}
