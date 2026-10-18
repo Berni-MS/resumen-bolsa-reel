@@ -1,0 +1,25 @@
+name: probe
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probar fuentes
+        run: |
+          mkdir -p out
+          H='User-Agent: Mozilla/5.0 (compatible; tuamigodelasfinanzas)'
+          curl -sS -m 60 -H "$H" -o out/carb.json -w "carb %{http_code} %{size_download}\n" "https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/" > out/log.txt 2>&1 || true
+          head -c 1500 out/carb.json > out/carb_head.txt || true
+          for u in \
+            "https://data-api.ecb.europa.eu/service/data/FM/M.U2.EUR.RT.MM.EURIBOR1YD_.HSTA?lastNObservations=4&format=csvdata" \
+            "https://data-api.ecb.europa.eu/service/data/FM/D.U2.EUR.RT.MM.EURIBOR1YD_.HSTA?lastNObservations=4&format=csvdata" \
+            "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPC278296?nult=3" \
+            "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/50902?nult=1" ; do
+            n=$(echo "$u" | md5sum | cut -c1-6)
+            curl -sS -m 60 -H "$H" -o "out/$n.txt" -w "$u %{http_code} %{size_download} -> $n\n" "$u" >> out/log.txt 2>&1 || echo "FAIL $u" >> out/log.txt
+          done
+          git config --global user.name bot; git config --global user.email bot@users.noreply.github.com
+          git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
+          mkdir -p site/probe && cp out/* site/probe/ && cd site && git add -A && git commit -q -m probe && git push origin gh-pages
