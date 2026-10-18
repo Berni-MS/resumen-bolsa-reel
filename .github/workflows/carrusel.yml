@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos) o euros (1.000 € hace N años)"
+        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos), euros (1.000 € hace N años) o calendario (agenda de la semana)"
         required: true
         default: edu
       index:
-        description: "Opcional: número del carrusel en la cola (empezando en 0) para forzar uno concreto"
+        description: "Opcional: número del carrusel en la cola (empezando en 0) para forzar uno concreto; en calendario, el lunes de la semana (AAAA-MM-DD)"
         required: false
       dry_run:
         description: "true = genera y sube las imágenes pero NO avisa a Make (no publica)"
@@ -46,6 +46,8 @@ jobs:
         run: |
           if [ "${{ inputs.kind }}" = "euros" ]; then
             node build-euros.mjs item.json "${{ inputs.index }}"
+          elif [ "${{ inputs.kind }}" = "calendario" ]; then
+            node build-calendar.mjs item.json "${{ inputs.index }}"
           else
             node select-carousel.mjs "${{ inputs.kind }}" item.json "${{ inputs.index }}"
           fi

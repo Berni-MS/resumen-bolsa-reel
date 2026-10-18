@@ -57,6 +57,15 @@ function body(sl, accent) {
       return `<div style="display:flex;flex-direction:column;gap:${px(32)}">
         <div class="d" style="font-size:${px(130)};line-height:.92;color:${sl.accent === 'red' ? RED : GREEN}">${esc(sl.head)}</div>
         ${sl.cards.map(c => `<div style="background:${CARD};border-radius:24px;padding:${px(28)} ${px(36)}"><div style="font-size:${px(46)};font-weight:700">${esc(c.t)}</div><div style="font-size:${px(34)};line-height:1.3;color:${MUTED};margin-top:8px">${esc(c.b)}</div></div>`).join('')}</div>`;
+    case 'agenda': {
+      const dot = k => (k >= 3 ? RED : GREEN);
+      return `<div style="display:flex;flex-direction:column;gap:${px(26)}">
+        ${sl.kicker ? `<div style="font-size:${px(40)};font-weight:700;color:${MUTED}">${esc(sl.kicker)}</div>` : ''}
+        <div class="d" style="font-size:${px(130)};line-height:.92">${rich(sl.head, A)}</div>
+        ${sl.rows.map(r => `<div style="background:${CARD};border-radius:24px;padding:${px(26)} ${px(34)};display:flex;gap:${px(30)};align-items:center">
+          <div style="flex:none;width:${px(150)};text-align:left"><div class="d" style="font-size:${px(66)};line-height:.95;color:${dot(r.k)}">${esc(r.d)}</div>${r.t ? `<div style="font-size:${px(32)};font-weight:700;color:${MUTED}">${esc(r.t)}</div>` : ''}</div>
+          <div style="font-size:${px(42)};line-height:1.2;font-weight:700">${esc(r.n)}</div></div>`).join('')}</div>`;
+    }
     case 'steps':
       return `<div style="display:flex;flex-direction:column;gap:${px(30)}">
         <div class="d" style="font-size:${px(130)};line-height:.92">${rich(sl.head, A)}</div>
