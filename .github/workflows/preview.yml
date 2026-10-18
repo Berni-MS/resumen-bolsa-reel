@@ -1,0 +1,26 @@
+name: Vista previa de textos (temporal)
+on:
+  workflow_dispatch:
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - run: |
+          mkdir -p prev
+          STILL_ONLY=3,9,15,21,27 node render-30s.mjs sample-30s.json prev/v30
+          node build-calendar.mjs prev/cal.json 2026-10-26 && node render-carousel.mjs prev/cal.json prev/cal
+          node render-carousel.mjs queue/edu/001.json prev/edu
+          node build-calendar.mjs prev/day.json --day 2026-10-28 && node render-story.mjs prev/day.json prev/story.png
+          node render.mjs record.sample.json prev/morning || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preview
+          path: prev
