@@ -85,7 +85,7 @@ function buildCaption(withName) {
     '🎞️ En el Reel: la variación de los tres índices, el top 5 de subidas y bajadas en cada uno y los factores que movieron el mercado.',
     '',
     'ℹ️ Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.',
-    '#bolsa #wallstreet #SP500 #nasdaq #dowjones #mercados #inversion #finanzas #bolsasincorbata',
+    '#bolsa #wallstreet #SP500 #nasdaq #dowjones #mercados #inversion #finanzas #tuamigodelasfinanzas',
   ].join('\n');
 }
 let caption = buildCaption(true);

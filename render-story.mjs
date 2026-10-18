@@ -21,7 +21,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${faces.jo
 .d{font-family:'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:900}
 #mid{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:calc(26px*var(--s));overflow:hidden}
 </style></head><body><div class="root">
-<div style="font-size:36px;font-weight:700;color:${MUTED}">@bolsasincorbata · ${esc(item.label)}</div>
+<div style="font-size:36px;font-weight:700;color:${MUTED}">@tuamigodelasfinanzas · ${esc(item.label)}</div>
 <div id="mid">
 <div class="d" style="font-size:calc(190px*var(--s));line-height:1.08">Hoy en los <span style="color:${GREEN}">mercados</span></div>
 ${item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:calc(34px*var(--s)) calc(40px*var(--s))">

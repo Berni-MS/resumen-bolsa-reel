@@ -139,7 +139,7 @@ if (star && EXPL[star.type]) {
 if (radar.length) {
   slides.push({ t: 'agenda', head: 'En el radar', kicker: 'Las próximas tres semanas', rows: radar.slice(0, 5).map(e => ({ d: `${parse(e.date).getUTCDate()} ${MES3[parse(e.date).getUTCMonth()].toUpperCase()}`, t: e.time || '', n: e.title, k: e.impact })), foot: 'Anótalo en el calendario' });
 }
-slides.push({ t: 'close', head: 'Guarda [[la semana]]', headSize: 150, body: 'Cada domingo, el calendario de lo que mueve los mercados: bancos centrales, inflación, empleo, resultados, festivos y vencimientos.', extra: 'Síguenos y activa las notificaciones para no perderte ninguna cita.', foot: 'Bolsa sin Corbata' });
+slides.push({ t: 'close', head: 'Guarda [[la semana]]', headSize: 150, body: 'Cada domingo, el calendario de lo que mueve los mercados: bancos centrales, inflación, empleo, resultados, festivos y vencimientos.', extra: 'Sígueme y activa las notificaciones para no perderte ninguna cita.', foot: 'Tu Amigo de las Finanzas' });
 
 const lines = [];
 for (const e of week.filter(e => e.impact === 3 && e.type !== 'opciones').slice(0, 4)) lines.push(`• ${DIA[parse(e.date).getUTCDay()]} ${parse(e.date).getUTCDate()}: ${e.title}`);

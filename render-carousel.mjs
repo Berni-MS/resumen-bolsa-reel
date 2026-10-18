@@ -111,7 +111,7 @@ ${fontFace()}
 .mid{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
 .bot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex:none;font-weight:700;color:${MUTED}}
 </style></head><body><div class="root">
-<div class="top"><span>@bolsasincorbata</span><span>${esc(labelFor(sl, i))}</span></div>
+<div class="top"><span>@tuamigodelasfinanzas</span><span>${esc(labelFor(sl, i))}</span></div>
 <div class="mid" id="mid">${body(sl, accent)}</div>
 <div class="bot"><span style="font-size:${isClose ? 28 : 32}px;line-height:1.3;font-weight:${isClose ? 500 : 700};max-width:850px">${esc(sl.foot || '')}</span><span style="font-size:32px;color:${GREEN}">${i + 1}/${N}</span></div>
 </div></body></html>`;
@@ -142,7 +142,7 @@ await browser.close();
 // Texto de la publicación
 const legal = 'ℹ️ Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.';
 const src = item.sources && item.sources.length ? '\n\nFuentes: ' + item.sources.join(' · ') : '';
-const tags = [...new Set([...(item.tags || []), '#bolsasincorbata'])].join(' ');
+const tags = [...new Set([...(item.tags || []), '#tuamigodelasfinanzas'])].join(' ');
 const caption = `${item.caption}${src}\n\n${legal}\n\n${tags}`;
 fs.writeFileSync(path.join(outDir, 'caption.txt'), caption);
 console.log(`Texto: ${caption.length} caracteres`);
