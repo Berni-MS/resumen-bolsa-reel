@@ -9,7 +9,7 @@ const GUIAS = {
 export function pickKey(kind, id = '') {
   if (/renta|irpf|hacienda|declaraci/i.test(id)) return 'RENTA';
   if (kind === 'ahorro' || kind === 'consejo') return 'AHORRO';
-  if (kind === 'vida') return 'GASTOS';
+  if (kind === 'vida' || kind === 'semana') return 'GASTOS';
   return 'BOLSA';
 }
 export function ctaBlock(caption, kind, id = '') {
