@@ -21,14 +21,15 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${faces.jo
 .d{font-family:'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:900}
 #mid{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:calc(26px*var(--s));overflow:hidden}
 </style></head><body><div class="root">
-<div style="font-size:36px;font-weight:700;color:${MUTED}">@tuamigodelasfinanzas · ${esc(item.label)}</div>
+<div style="font-size:36px;font-weight:700;color:${MUTED}">@tuamigodelasfinanzas · ${esc(item.pregunta ? 'Pregunta de la semana' : item.label)}</div>
 <div id="mid">
-<div class="d" style="font-size:calc(190px*var(--s));line-height:1.08">Hoy en los <span style="color:${GREEN}">mercados</span></div>
+${item.pregunta ? `<div class="d" style="font-size:calc(200px*var(--s));line-height:1.08">${esc(item.pregunta)}</div>
+<div style="background:${CARD};border-radius:28px;padding:calc(34px*var(--s)) calc(40px*var(--s));font-size:calc(46px*var(--s));font-weight:700;line-height:1.25">Respóndeme por mensaje directo 💬<div style="font-size:calc(36px*var(--s));font-weight:500;color:${MUTED};margin-top:10px">Elegiré tus dudas para los próximos contenidos.</div></div>` : `<div class="d" style="font-size:calc(190px*var(--s));line-height:1.08">Hoy en los <span style="color:${GREEN}">mercados</span></div>
 ${item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:calc(34px*var(--s)) calc(40px*var(--s))">
   <div style="display:flex;align-items:baseline;gap:24px"><span class="d" style="font-size:calc(76px*var(--s));color:${r.k >= 3 ? RED : GREEN}">${esc(r.t || 'Hoy')}</span><span style="font-size:calc(44px*var(--s));font-weight:700;line-height:1.15">${esc(r.n)}</span></div>
-  ${r.b ? `<div style="font-size:calc(34px*var(--s));line-height:1.3;color:${MUTED};margin-top:10px">${esc(r.b)}</div>` : ''}</div>`).join('')}
+  ${r.b ? `<div style="font-size:calc(34px*var(--s));line-height:1.3;color:${MUTED};margin-top:10px">${esc(r.b)}</div>` : ''}</div>`).join('')}`}
 </div>
-<div style="font-size:32px;font-weight:700;color:${MUTED}">Hora de Madrid · Contenido informativo, no es asesoramiento financiero</div>
+<div style="font-size:32px;font-weight:700;color:${MUTED}">${item.pregunta ? 'Contenido informativo, no es asesoramiento financiero' : 'Hora de Madrid · Contenido informativo, no es asesoramiento financiero'}</div>
 </div></body></html>`;
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });

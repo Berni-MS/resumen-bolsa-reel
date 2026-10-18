@@ -1,0 +1,90 @@
+{
+  "id": "vida-004-tae-tin",
+  "label": "TAE y TIN",
+  "accent": "green",
+  "caption": "TAE vs. TIN 🔎 Dos siglas que aparecen en préstamos, cuentas y depósitos, y que no significan lo mismo.\n\nDesliza para aprender a compararlas sin liarte.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#TAE",
+    "#TIN",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "TAE",
+      "title": "y TIN: no son lo mismo",
+      "foot": "Y se confunden mucho"
+    },
+    {
+      "t": "point",
+      "head": "El [[TIN]]",
+      "body": "Es el tipo de interés nominal: el precio puro del dinero, sin contar comisiones ni cuándo se pagan los intereses.",
+      "foot": "El precio básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "point",
+      "head": "La [[TAE]]",
+      "body": "Es la tasa anual equivalente. Incluye el TIN, la frecuencia de los pagos y algunos gastos. Sirve para comparar.",
+      "foot": "El coste (o la rentabilidad) real",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Cuándo mirar cada una",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "En un préstamo",
+          "b": "Compara la TAE: refleja mejor lo que pagarás."
+        },
+        {
+          "t": "En un depósito",
+          "b": "Compara la TAE: refleja mejor lo que ganarás."
+        },
+        {
+          "t": "Para entender el precio",
+          "b": "El TIN te da la base de partida."
+        }
+      ],
+      "foot": "La TAE para comparar"
+    },
+    {
+      "t": "point",
+      "head": "La TAE no [[lo cuenta todo]]",
+      "body": "No siempre incluye todos los gastos, como seguros vinculados. Lee la ficha informativa.",
+      "foot": "Cuidado",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "steps",
+      "head": "Para comparar bien",
+      "steps": [
+        {
+          "t": "Pide la ficha informativa",
+          "b": "Es obligatoria."
+        },
+        {
+          "t": "Compara TAE con TAE",
+          "b": "Misma duración y condiciones."
+        },
+        {
+          "t": "Pregunta por las comisiones",
+          "b": "Y por lo que te obligan a contratar."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "close",
+      "head": "Compara [[TAE con TAE]]",
+      "body": "Es la forma más sencilla de no equivocarte.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y consúltalo antes de contratar.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

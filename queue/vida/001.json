@@ -1,0 +1,90 @@
+{
+  "id": "vida-001-bruto-neto",
+  "label": "Sueldo bruto y neto",
+  "accent": "green",
+  "caption": "Sueldo bruto vs. neto 🧾 ¿Por qué no llega a tu cuenta lo que pone en el contrato?\n\nDesliza para entender qué se descuenta y cómo comparar ofertas de trabajo sin equivocarte.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#nomina",
+    "#sueldo",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Bruto",
+      "title": "no es lo que cobras",
+      "foot": "Neto es lo que llega a tu cuenta"
+    },
+    {
+      "t": "point",
+      "head": "[[Bruto]] y [[neto]]",
+      "body": "El bruto es lo que paga la empresa antes de descuentos. El neto es lo que ingresas en tu cuenta cada mes.",
+      "foot": "Dos cifras, dos significados",
+      "kicker": "Lo básico"
+    },
+    {
+      "t": "cards",
+      "head": "Qué se descuenta",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cotizaciones a la Seguridad Social",
+          "b": "Financian pensiones, paro y sanidad."
+        },
+        {
+          "t": "Retención del IRPF",
+          "b": "Un adelanto de tu impuesto sobre la renta."
+        },
+        {
+          "t": "Otros conceptos",
+          "b": "Según el caso, como un seguro de empresa."
+        }
+      ],
+      "foot": "Aparece en tu nómina"
+    },
+    {
+      "t": "point",
+      "head": "La retención [[no es lo que pagas al final]]",
+      "body": "Es un adelanto. Al hacer la declaración de la Renta, se ajusta: puede salir a pagar o a devolver.",
+      "foot": "Un adelanto",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "point",
+      "head": "Al comparar ofertas, mira el [[neto]]",
+      "body": "Dos ofertas con el mismo bruto pueden dar netos distintos según tu situación y las pagas.",
+      "foot": "Pregunta cuántas pagas",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo leer tu nómina",
+      "steps": [
+        {
+          "t": "Busca el devengo total",
+          "b": "Lo que te corresponde antes de descuentos."
+        },
+        {
+          "t": "Revisa las deducciones",
+          "b": "Seguridad Social e IRPF."
+        },
+        {
+          "t": "Comprueba el líquido a percibir",
+          "b": "Lo que de verdad llega a tu cuenta."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "close",
+      "head": "Conocer tu nómina es [[conocer tu dinero]]",
+      "body": "Si algo no lo entiendes, pregunta a tu empresa o gestoría.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa tu última nómina.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

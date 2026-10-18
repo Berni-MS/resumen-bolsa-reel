@@ -1,0 +1,75 @@
+{
+  "id": "ahorro-004-100-al-mes",
+  "label": "100 euros al mes",
+  "accent": "green",
+  "caption": "100 € al mes durante 20 años 📈 ¿Cuánto puede ser? Depende de la rentabilidad, y aquí tienes tres escenarios.\n\nDesliza para ver el cálculo. Son supuestos ilustrativos, no promesas de rentabilidad.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#interescompuesto",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "100 €",
+      "title": "al mes durante 20 años",
+      "foot": "¿Cuánto llegarías a tener?",
+      "bigSize": 300
+    },
+    {
+      "t": "point",
+      "head": "Primero, lo que [[pones tú]]",
+      "body": "Ahorrar 100 euros al mes durante 20 años son 240 aportaciones: 24.000 euros en total.",
+      "foot": "Lo seguro",
+      "kicker": "Punto de partida"
+    },
+    {
+      "t": "stat",
+      "big": "24.000 €",
+      "head": "Sin ninguna rentabilidad",
+      "body": "Es lo que habrías aportado tú, guardado sin que crezca. Y con la inflación, tendría menos poder de compra.",
+      "foot": "Escenario 1",
+      "kicker": "Debajo del colchón",
+      "color": "red",
+      "bigSize": 210
+    },
+    {
+      "t": "stat",
+      "big": "≈32.800 €",
+      "head": "Con un 3 % anual (supuesto)",
+      "body": "Cálculo con 100 euros al mes y un 3 % anual compuesto mensualmente. Los intereses aportan unos 8.800 euros.",
+      "foot": "Escenario 2",
+      "kicker": "Un ejemplo prudente",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "≈41.100 €",
+      "head": "Con un 5 % anual (supuesto)",
+      "body": "Mismo cálculo con un 5 % anual. Pero una rentabilidad así no está garantizada, y el valor puede bajar.",
+      "foot": "Escenario 3",
+      "kicker": "Un ejemplo más optimista",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "point",
+      "head": "Lo que [[tú controlas]]",
+      "body": "No controlas la rentabilidad, pero sí cuánto ahorras, desde cuándo y durante cuánto tiempo.",
+      "foot": "Constancia y tiempo",
+      "kicker": "La lección"
+    },
+    {
+      "t": "close",
+      "head": "El tiempo es [[tu mejor aliado]]",
+      "body": "Los supuestos son ilustrativos: no son una promesa ni una recomendación de producto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz tu propio cálculo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

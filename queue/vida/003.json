@@ -1,0 +1,107 @@
+{
+  "id": "vida-003-alquilar-comprar",
+  "label": "¿Alquilar o comprar?",
+  "accent": "green",
+  "caption": "¿Alquilar o comprar? 🔑 No hay una respuesta única: depende de tu vida, no de lo que digan por ahí.\n\nDesliza para ver las preguntas que conviene hacerse.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#alquiler",
+    "#vivienda",
+    "#hipoteca",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🔑",
+      "title": "¿Alquilar o comprar?",
+      "foot": "Las preguntas que conviene hacerse"
+    },
+    {
+      "t": "point",
+      "head": "No es [[tirar el dinero]] ni [[inversión segura]]",
+      "body": "Alquilar da flexibilidad. Comprar da estabilidad, pero tiene costes y compromisos.",
+      "foot": "Depende de tu caso",
+      "kicker": "Dos mitos"
+    },
+    {
+      "t": "cards",
+      "head": "Qué cuesta comprar",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "La entrada",
+          "b": "Suele ser un porcentaje del precio."
+        },
+        {
+          "t": "Los gastos de compra",
+          "b": "Impuestos, notaría y registro, entre otros."
+        },
+        {
+          "t": "El mantenimiento",
+          "b": "Comunidad, IBI y reparaciones."
+        }
+      ],
+      "foot": "Más allá de la cuota"
+    },
+    {
+      "t": "cards",
+      "head": "Qué ofrece alquilar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Flexibilidad",
+          "b": "Cambiar de ciudad o de trabajo con menos trabas."
+        },
+        {
+          "t": "Menos desembolso inicial",
+          "b": "Normalmente, fianza y primeras mensualidades."
+        },
+        {
+          "t": "Sin gastos de propiedad",
+          "b": "Ni IBI ni grandes reparaciones."
+        }
+      ],
+      "foot": "Pero sin construir patrimonio"
+    },
+    {
+      "t": "steps",
+      "head": "Tus preguntas clave",
+      "steps": [
+        {
+          "t": "¿Cuánto tiempo vas a vivir allí?",
+          "b": "A corto plazo, comprar suele pesar más."
+        },
+        {
+          "t": "¿Tienes entrada y colchón?",
+          "b": "Sin dejarte sin ahorros."
+        },
+        {
+          "t": "¿Aguantas una subida de cuota?",
+          "b": "Si es variable."
+        },
+        {
+          "t": "¿Qué harías con la diferencia?",
+          "b": "Si alquilas, ¿la ahorras de verdad?"
+        }
+      ],
+      "foot": "Cuatro preguntas"
+    },
+    {
+      "t": "point",
+      "head": "Mira el [[conjunto]]",
+      "body": "Compara el coste total de cada opción en tu ciudad, no solo la cuota mensual contra el alquiler.",
+      "foot": "Haz la cuenta completa",
+      "kicker": "Para decidir"
+    },
+    {
+      "t": "close",
+      "head": "La mejor opción es la que [[encaja con tu vida]]",
+      "body": "Hazte las preguntas antes de mirar pisos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo con quien esté dudando.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

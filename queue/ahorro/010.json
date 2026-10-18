@@ -1,0 +1,87 @@
+{
+  "id": "ahorro-010-objetivos",
+  "label": "Ahorrar para una meta",
+  "accent": "green",
+  "caption": "Ahorra para una meta 🎯 Un viaje, un coche, una entrada: con una cuenta sencilla pasas del deseo al plan.\n\nDesliza para ver la fórmula y un ejemplo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#objetivos",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🎯",
+      "title": "Ahorrar para una meta concreta",
+      "foot": "De «algún día» a un plan"
+    },
+    {
+      "t": "point",
+      "head": "Un objetivo sin cifra es [[un deseo]]",
+      "body": "«Quiero ahorrar para un viaje» no es lo mismo que «necesito 3.600 euros en 12 meses».",
+      "foot": "Ponle número y fecha",
+      "kicker": "El primer paso"
+    },
+    {
+      "t": "stat",
+      "big": "÷",
+      "head": "Meta entre meses",
+      "body": "Divide lo que necesitas entre los meses que tienes. Es la cantidad que debes apartar cada mes.",
+      "foot": "La fórmula",
+      "kicker": "La cuenta",
+      "color": "green",
+      "bigSize": 300
+    },
+    {
+      "t": "stat",
+      "big": "300 €",
+      "head": "al mes para llegar a 3.600 €",
+      "body": "3.600 euros entre 12 meses son 300 euros al mes. Si te parece mucho, alarga el plazo: a 18 meses, serían 200.",
+      "foot": "Ejemplo",
+      "kicker": "Con números",
+      "color": "green",
+      "bigSize": 230
+    },
+    {
+      "t": "steps",
+      "head": "Cómo conseguirlo",
+      "steps": [
+        {
+          "t": "Escribe la meta y la fecha",
+          "b": "Concreta y medible."
+        },
+        {
+          "t": "Calcula la cuota mensual",
+          "b": "Con la fórmula anterior."
+        },
+        {
+          "t": "Abre una «hucha» aparte",
+          "b": "Con el nombre del objetivo."
+        },
+        {
+          "t": "Automatiza la transferencia",
+          "b": "El día de cobro."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pon un [[nombre]] a tu cuenta",
+      "body": "Muchos bancos permiten nombrar los apartados. «Viaje a Japón» motiva más que «Ahorro 2».",
+      "foot": "Un detalle que ayuda",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "close",
+      "head": "Una meta con [[fecha y cifra]] se cumple más",
+      "body": "Elige hoy una y calcula tu cuota mensual.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y cuéntanos tu meta en comentarios.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

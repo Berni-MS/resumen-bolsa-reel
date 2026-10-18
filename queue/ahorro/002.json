@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-002-paga-primero",
+  "label": "Págate a ti primero",
+  "accent": "green",
+  "caption": "Págate a ti primero 💸 El truco de ahorrar antes de gastar, no con lo que sobre.\n\nDesliza para ver por qué «ahorro lo que sobre» casi nunca funciona y cómo automatizarlo en 5 minutos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#habitos",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1º",
+      "title": "Págate a ti primero",
+      "foot": "El truco para ahorrar sin pensarlo"
+    },
+    {
+      "t": "point",
+      "head": "«Ahorro lo que [[sobre]]»",
+      "body": "Suena razonable, pero el gasto se estira hasta llenar el mes. Lo que sobra suele ser cero.",
+      "foot": "El problema",
+      "kicker": "Por qué falla"
+    },
+    {
+      "t": "point",
+      "head": "Al revés: ahorra [[antes]] de gastar",
+      "body": "El día que cobras, aparta una cantidad fija. Con lo que queda, vives el mes.",
+      "foot": "La idea",
+      "kicker": "El truco"
+    },
+    {
+      "t": "steps",
+      "head": "Automatízalo en 5 minutos",
+      "steps": [
+        {
+          "t": "Elige una cantidad",
+          "b": "Pequeña pero que no puedas olvidar."
+        },
+        {
+          "t": "Abre una cuenta aparte",
+          "b": "Para no mezclarla con el día a día."
+        },
+        {
+          "t": "Programa una transferencia",
+          "b": "Al día siguiente de cobrar."
+        },
+        {
+          "t": "No la toques",
+          "b": "Salvo emergencia real."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Por qué funciona",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "No dependes de la fuerza de voluntad",
+          "b": "Se hace solo, cada mes."
+        },
+        {
+          "t": "Te acostumbras",
+          "b": "Ajustas tu gasto a lo que queda."
+        },
+        {
+          "t": "Se nota con los meses",
+          "b": "La constancia pesa más que la cantidad."
+        }
+      ],
+      "foot": "La psicología a tu favor"
+    },
+    {
+      "t": "point",
+      "head": "¿Y si el mes viene [[justo]]?",
+      "body": "Baja la cantidad, no la elimines. Mantener el hábito vale más que la cifra.",
+      "foot": "Constancia antes que cantidad",
+      "kicker": "Un matiz"
+    },
+    {
+      "t": "close",
+      "head": "Tu yo del futuro [[te lo agradecerá]]",
+      "body": "Empieza este mes con la cantidad más pequeña que te parezca ridícula.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a alguien a quien le venga bien.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

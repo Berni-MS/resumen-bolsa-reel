@@ -1,0 +1,94 @@
+{
+  "id": "vida-005-comisiones",
+  "label": "Comisiones bancarias",
+  "accent": "red",
+  "caption": "Comisiones bancarias 🏦 Pequeñas cantidades que se cobran sin que te des cuenta.\n\nDesliza para ver dónde suelen aparecer y cómo reducirlas o evitarlas.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#banca",
+    "#comisiones",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏦",
+      "title": "Comisiones bancarias",
+      "foot": "Dónde se esconden y cómo evitarlas"
+    },
+    {
+      "t": "cards",
+      "head": "Las más habituales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Mantenimiento de cuenta",
+          "b": "Una cuota por tener la cuenta."
+        },
+        {
+          "t": "Tarjeta",
+          "b": "Emisión o mantenimiento anual."
+        },
+        {
+          "t": "Transferencias y retiradas",
+          "b": "Según el tipo y el cajero."
+        }
+      ],
+      "foot": "Revisa tu contrato"
+    },
+    {
+      "t": "point",
+      "head": "Pregunta si están [[condicionadas]]",
+      "body": "Muchas se eliminan si domicilias la nómina o contratas otros productos. Mira qué te piden a cambio.",
+      "foot": "Gratis, pero ¿a qué precio?",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo reducirlas",
+      "steps": [
+        {
+          "t": "Lista tus comisiones del año",
+          "b": "Mira tus extractos."
+        },
+        {
+          "t": "Compara con otras entidades",
+          "b": "Hay cuentas sin comisiones."
+        },
+        {
+          "t": "Negocia con tu banco",
+          "b": "A veces las eliminan."
+        },
+        {
+          "t": "Valora cambiar de cuenta",
+          "b": "Si no mejoran."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Saca dinero en [[cajeros de tu red]]",
+      "body": "Retirar en cajeros de otros bancos o en el extranjero puede tener coste. Consulta las condiciones.",
+      "foot": "Un detalle",
+      "kicker": "Un truco"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con el [[extranjero]]",
+      "body": "Pagar en otra moneda puede llevar comisiones o un tipo de cambio poco favorable.",
+      "foot": "Antes de viajar",
+      "kicker": "Viajes"
+    },
+    {
+      "t": "close",
+      "head": "Lo que no ves, [[también cuesta]]",
+      "body": "Dedica 10 minutos a revisar tus comisiones.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa tu extracto.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

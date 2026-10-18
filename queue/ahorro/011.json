@@ -1,0 +1,82 @@
+{
+  "id": "ahorro-011-inflacion-ahorro",
+  "label": "El ahorro y la inflación",
+  "accent": "red",
+  "caption": "Tu ahorro y la inflación 🔥 Guardar dinero parado es seguro… pero cada año compra un poco menos.\n\nDesliza para ver un ejemplo con números y qué puedes hacer.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#inflacion",
+    "#ahorro",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "−26 %",
+      "title": "de poder de compra en 10 años",
+      "foot": "Con una inflación del 3 % anual",
+      "bigSize": 240
+    },
+    {
+      "t": "point",
+      "head": "La inflación es [[un impuesto silencioso]]",
+      "body": "Cuando los precios suben, el mismo dinero compra menos. No lo notas de golpe, pero se acumula.",
+      "foot": "Todo sube",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "stat",
+      "big": "744 €",
+      "head": "Lo que valdrían 1.000 € en 10 años",
+      "body": "Con una inflación del 3 % anual constante (un supuesto), 1.000 euros de hoy compran lo que 744 euros dentro de 10 años.",
+      "foot": "Ejemplo ilustrativo",
+      "kicker": "Con números",
+      "color": "red",
+      "bigSize": 230
+    },
+    {
+      "t": "point",
+      "head": "¿Entonces, [[guardar o no]]?",
+      "body": "Sí: necesitas un fondo líquido para emergencias. Lo que no conviene es tener parado más de lo que necesitas.",
+      "foot": "Cada euro con su función",
+      "kicker": "Matiz"
+    },
+    {
+      "t": "cards",
+      "head": "Qué puedes hacer",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Fondo de emergencia",
+          "b": "Cubre imprevistos sin tocar lo demás."
+        },
+        {
+          "t": "Dinero a corto plazo",
+          "b": "Cuentas remuneradas o depósitos: infórmate."
+        },
+        {
+          "t": "Dinero a largo plazo",
+          "b": "Otras opciones con más riesgo. Conoce antes de entrar."
+        }
+      ],
+      "foot": "Informarte primero"
+    },
+    {
+      "t": "point",
+      "head": "Compara con la [[inflación]], no con cero",
+      "body": "Un 2 % de interés con un 3 % de inflación es perder poder de compra, aunque el saldo suba.",
+      "foot": "Rentabilidad real",
+      "kicker": "La clave"
+    },
+    {
+      "t": "close",
+      "head": "No se trata de asustarse, sino de [[enterarse]]",
+      "body": "Conocer la inflación te ayuda a tomar mejores decisiones.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a alguien con mucho dinero parado.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

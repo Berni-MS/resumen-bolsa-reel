@@ -1,0 +1,74 @@
+{
+  "id": "vida-007-regla-72",
+  "label": "La regla del 72",
+  "accent": "green",
+  "caption": "La regla del 72 ⚡ Un truco de cabeza para saber en cuántos años se duplica un dinero.\n\nDesliza para ver cómo se usa con ejemplos. Son cálculos aproximados con tipos supuestos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#interescompuesto",
+    "#regladel72",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "72",
+      "title": "El truco para duplicar tu dinero",
+      "foot": "Cálculo mental en 5 segundos"
+    },
+    {
+      "t": "point",
+      "head": "Divide 72 entre el [[tipo anual]]",
+      "body": "El resultado son los años aproximados que tarda en duplicarse un dinero con interés compuesto.",
+      "foot": "La regla",
+      "kicker": "Cómo se usa"
+    },
+    {
+      "t": "stat",
+      "big": "12 años",
+      "head": "Con un 6 % anual",
+      "body": "72 entre 6 son 12. Es un tipo supuesto, no una promesa de rentabilidad.",
+      "foot": "Ejemplo 1",
+      "kicker": "Con números",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "18 años",
+      "head": "Con un 4 % anual",
+      "body": "72 entre 4 son 18. Con menos rentabilidad, el tiempo se alarga.",
+      "foot": "Ejemplo 2",
+      "kicker": "Con números",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "stat",
+      "big": "24 años",
+      "head": "Con un 3 % anual",
+      "body": "72 entre 3 son 24. El tiempo y la rentabilidad cambian mucho el resultado.",
+      "foot": "Ejemplo 3",
+      "kicker": "Con números",
+      "color": "green",
+      "bigSize": 200
+    },
+    {
+      "t": "point",
+      "head": "También sirve para la [[inflación]]",
+      "body": "Con una inflación del 3 %, los precios se duplican en unos 24 años. Tu dinero parado compra la mitad.",
+      "foot": "Al revés",
+      "kicker": "Un uso curioso"
+    },
+    {
+      "t": "close",
+      "head": "Un cálculo [[aproximado]], pero muy útil",
+      "body": "No es exacta, pero da una idea rápida. No es una promesa de rentabilidad.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz tus cuentas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

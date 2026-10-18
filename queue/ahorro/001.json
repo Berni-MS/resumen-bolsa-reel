@@ -1,0 +1,96 @@
+{
+  "id": "ahorro-001-5030",
+  "label": "La regla 50/30/20",
+  "accent": "green",
+  "caption": "La regla 50/30/20 🧮 La forma más sencilla de ordenar tu sueldo sin hojas de cálculo.\n\nDesliza para ver qué va en cada parte, un ejemplo con números y cómo adaptarla si tu sueldo no da para tanto.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#presupuesto",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "50/30/20",
+      "title": "La regla más simple para ordenar tu sueldo",
+      "foot": "Desliza y haz tus cuentas"
+    },
+    {
+      "t": "point",
+      "head": "Reparte tu sueldo en [[3 partes]]",
+      "body": "Es una guía, no una ley: el 50 % para lo que necesitas, el 30 % para lo que quieres y el 20 % para ahorrar o pagar deudas.",
+      "foot": "Sencilla de recordar"
+    },
+    {
+      "t": "cards",
+      "head": "Qué va en cada parte",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "50 % · Necesidades",
+          "b": "Alquiler o hipoteca, comida, suministros, transporte, seguros."
+        },
+        {
+          "t": "30 % · Caprichos",
+          "b": "Ocio, salidas, suscripciones, viajes, ropa."
+        },
+        {
+          "t": "20 % · Futuro",
+          "b": "Ahorro, fondo de emergencia, deudas que quieras reducir."
+        }
+      ],
+      "foot": "Todo suma 100 %"
+    },
+    {
+      "t": "stat",
+      "big": "1.500 €",
+      "head": "Un ejemplo con 1.500 € netos al mes",
+      "body": "Serían 750 € para necesidades, 450 € para caprichos y 300 € para ahorro. Son números redondos de ejemplo: ajusta los tuyos.",
+      "foot": "Ejemplo ilustrativo",
+      "kicker": "Con números",
+      "color": "green",
+      "bigSize": 230
+    },
+    {
+      "t": "point",
+      "head": "¿Tu alquiler se come el [[50 %]]?",
+      "body": "Pasa mucho. Si las necesidades pesan más, prueba 60/20/20 o 70/20/10. Lo importante es que el ahorro no sea cero.",
+      "foot": "Adáptala a tu vida",
+      "kicker": "Si no te cuadra"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo ponerla en marcha",
+      "steps": [
+        {
+          "t": "Mira tu sueldo neto",
+          "b": "Lo que de verdad llega a tu cuenta."
+        },
+        {
+          "t": "Apunta tus gastos del último mes",
+          "b": "Basta con mirar el extracto."
+        },
+        {
+          "t": "Colócalos en las 3 partes",
+          "b": "Sin trampas: ¿necesidad o capricho?"
+        },
+        {
+          "t": "Programa el 20 % el día de cobro",
+          "b": "Una transferencia automática."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "close",
+      "head": "Empieza por [[un porcentaje]], aunque sea pequeño",
+      "body": "Mejor un 5 % constante que un 20 % que dura un mes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a alguien a quien le venga bien.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

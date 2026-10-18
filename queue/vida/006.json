@@ -1,0 +1,90 @@
+{
+  "id": "vida-006-tarjetas",
+  "label": "Débito, crédito y revolving",
+  "accent": "red",
+  "caption": "Tarjeta de débito, de crédito y revolving 💳 Se parecen por fuera, pero funcionan muy distinto.\n\nDesliza para ver las diferencias y el peligro de la tarjeta revolving.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tarjetas",
+    "#credito",
+    "#revolving",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "💳",
+      "title": "Débito, crédito o revolving",
+      "foot": "Se parecen, pero no son iguales"
+    },
+    {
+      "t": "cards",
+      "head": "Los tres tipos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Débito",
+          "b": "El pago sale directo de tu cuenta."
+        },
+        {
+          "t": "Crédito",
+          "b": "El banco adelanta el dinero y lo pagas al mes siguiente."
+        },
+        {
+          "t": "Revolving",
+          "b": "Pagas una cuota fija y el resto se financia con intereses."
+        }
+      ],
+      "foot": "Cómo funcionan"
+    },
+    {
+      "t": "point",
+      "head": "El problema del [[revolving]]",
+      "body": "Al pagar solo una cuota pequeña, el saldo pendiente genera intereses. Si la TAE es alta, la deuda puede tardar años en bajar.",
+      "foot": "Se hace bola",
+      "kicker": "El riesgo"
+    },
+    {
+      "t": "point",
+      "head": "La TAE puede ser [[muy alta]]",
+      "body": "Compara con la de un préstamo personal. Lee con calma las condiciones antes de aceptar una tarjeta así.",
+      "foot": "Mira la ficha",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo usar bien una tarjeta de crédito",
+      "steps": [
+        {
+          "t": "Paga el total cada mes",
+          "b": "Así no hay intereses."
+        },
+        {
+          "t": "Fija un límite que puedas pagar",
+          "b": "Menos tentación."
+        },
+        {
+          "t": "Revisa los movimientos",
+          "b": "Detecta cargos raros."
+        }
+      ],
+      "foot": "Tres hábitos"
+    },
+    {
+      "t": "point",
+      "head": "Si ya tienes una [[revolving]]",
+      "body": "Mira la TAE, pide información sobre cómo amortizarla antes y valora refinanciar si hay una opción más barata.",
+      "foot": "Salir de ahí",
+      "kicker": "Si estás dentro"
+    },
+    {
+      "t": "close",
+      "head": "Una tarjeta es una [[herramienta]]",
+      "body": "Úsala para comodidad, no para vivir por encima de tus posibilidades.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa tus tarjetas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

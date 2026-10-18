@@ -1,0 +1,65 @@
+{
+  "id": "vida-011-errores-ahorrar",
+  "label": "Errores al empezar a ahorrar",
+  "accent": "red",
+  "caption": "5 errores al empezar a ahorrar ⚠️ Y cómo evitarlos desde el principio.\n\nDesliza para ver los más habituales.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#errores",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "5",
+      "title": "errores al empezar a ahorrar",
+      "foot": "Y cómo evitarlos"
+    },
+    {
+      "t": "point",
+      "head": "1. No tener un [[objetivo]]",
+      "body": "Ahorrar sin saber para qué cuesta más. Ponle nombre, cifra y fecha.",
+      "foot": "Da sentido",
+      "kicker": "Error 1"
+    },
+    {
+      "t": "point",
+      "head": "2. Querer [[ahorrar demasiado]]",
+      "body": "Fijarte un 40 % de golpe y abandonar a los dos meses. Mejor empezar con poco y subir.",
+      "foot": "Constancia",
+      "kicker": "Error 2"
+    },
+    {
+      "t": "point",
+      "head": "3. Ahorrar [[sin colchón]]",
+      "body": "Si surge un imprevisto, acabas endeudado. Primero, un fondo de emergencia.",
+      "foot": "Seguridad",
+      "kicker": "Error 3"
+    },
+    {
+      "t": "point",
+      "head": "4. Tener todo en [[un solo sitio]]",
+      "body": "Mezclar ahorro y gasto diario facilita gastarlo. Separa cuentas.",
+      "foot": "Orden",
+      "kicker": "Error 4"
+    },
+    {
+      "t": "point",
+      "head": "5. [[No revisar]] nunca",
+      "body": "Los gastos y los objetivos cambian. Dedica un rato al mes a revisar.",
+      "foot": "Ajustar",
+      "kicker": "Error 5"
+    },
+    {
+      "t": "close",
+      "head": "Un error común, una [[solución simple]]",
+      "body": "Elige uno de estos cinco y corrígelo esta semana.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y comparte tu error en comentarios.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

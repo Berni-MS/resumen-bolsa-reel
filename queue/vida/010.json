@@ -1,0 +1,60 @@
+{
+  "id": "vida-010-mitos-dinero",
+  "label": "5 mitos del dinero",
+  "accent": "red",
+  "caption": "5 mitos sobre el dinero que te hacen perder 🙅 ¿Cuántos te habías creído?\n\nDesliza y cuéntanos en comentarios cuál era el tuyo.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#mitos",
+    "#finanzaspersonales",
+    "#ahorro",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "5",
+      "title": "mitos del dinero",
+      "foot": "Que te hacen perder"
+    },
+    {
+      "t": "myth",
+      "myth": "«El dinero en el banco no se pierde»",
+      "reality": "En euros, el saldo no baja, pero con la inflación cada euro compra un poco menos. Parado, pierde poder de compra.",
+      "foot": "Inflación"
+    },
+    {
+      "t": "myth",
+      "myth": "«Invertir es solo para ricos»",
+      "reality": "Hoy se puede empezar con cantidades pequeñas. Lo que más importa es entender lo que haces y la constancia.",
+      "foot": "Empezar con poco"
+    },
+    {
+      "t": "myth",
+      "myth": "«Pedir un préstamo siempre es malo»",
+      "reality": "Depende. Una deuda con un coste razonable para algo útil puede tener sentido. El problema son las deudas caras y sin control.",
+      "foot": "Deuda buena y mala"
+    },
+    {
+      "t": "myth",
+      "myth": "«Ahorrar es ganar poco»",
+      "reality": "Ahorrar es una decisión, no un sueldo. Con cantidades pequeñas y constantes se llega más lejos de lo que parece.",
+      "foot": "El hábito"
+    },
+    {
+      "t": "myth",
+      "myth": "«Ya lo haré cuando gane más»",
+      "reality": "Los gastos suelen crecer con el sueldo. Empezar ahora, aunque sea con poco, crea el hábito.",
+      "foot": "Empieza ya"
+    },
+    {
+      "t": "close",
+      "head": "¿Cuál [[te habías creído]]?",
+      "body": "Cuéntanoslo en comentarios y envía este carrusel a alguien que repita alguno de ellos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para recordarlo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

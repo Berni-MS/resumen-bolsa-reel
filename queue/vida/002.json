@@ -1,0 +1,94 @@
+{
+  "id": "vida-002-hipoteca-tipos",
+  "label": "Hipoteca fija, variable o mixta",
+  "accent": "green",
+  "caption": "Hipoteca fija, variable o mixta 🏠 Tres formas de pagar el mismo préstamo, con riesgos distintos.\n\nDesliza para ver cómo funciona cada una y qué mirar antes de firmar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#hipoteca",
+    "#vivienda",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "🏠",
+      "title": "Hipoteca fija, variable o mixta",
+      "foot": "Qué cambia en cada una"
+    },
+    {
+      "t": "cards",
+      "head": "Los tres tipos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Fija",
+          "b": "El tipo de interés no cambia. Sabes cuánto pagas cada mes."
+        },
+        {
+          "t": "Variable",
+          "b": "El interés sigue a un índice de referencia. La cuota puede subir o bajar."
+        },
+        {
+          "t": "Mixta",
+          "b": "Una parte del plazo es fija y el resto es variable."
+        }
+      ],
+      "foot": "Cómo funcionan"
+    },
+    {
+      "t": "point",
+      "head": "La fija da [[tranquilidad]]",
+      "body": "Sabes siempre cuánto pagas. A cambio, suele empezar con un interés algo más alto que la variable.",
+      "foot": "Previsible",
+      "kicker": "Ventaja de la fija"
+    },
+    {
+      "t": "point",
+      "head": "La variable puede [[subir]]",
+      "body": "Si los tipos suben, tu cuota también. Si bajan, pagas menos. Conviene tener margen en tu presupuesto.",
+      "foot": "Riesgo de la variable",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Qué mirar antes de firmar",
+      "steps": [
+        {
+          "t": "El TAE",
+          "b": "El coste real, con comisiones."
+        },
+        {
+          "t": "Las comisiones",
+          "b": "De apertura, amortización y cancelación."
+        },
+        {
+          "t": "Los productos vinculados",
+          "b": "Seguros o cuentas que te piden contratar."
+        },
+        {
+          "t": "La ficha informativa",
+          "b": "Compara al menos tres ofertas."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "Calcula si te [[sale bien]]",
+      "body": "Una pauta habitual es que la cuota no supere cierto porcentaje de tus ingresos netos. Pregunta a tu banco cuál aplican.",
+      "foot": "Con margen",
+      "kicker": "Una pauta"
+    },
+    {
+      "t": "close",
+      "head": "Elige según [[cuánto riesgo aguantas]]",
+      "body": "No hay una opción perfecta, sino la que encaja contigo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compara ofertas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

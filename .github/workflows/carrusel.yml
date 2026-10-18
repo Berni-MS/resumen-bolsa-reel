@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos), euros (1.000 € hace N años) o calendario (agenda de la semana)"
+        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos), ahorro (ahorro y presupuesto), vida (vida cotidiana), euros (1.000 € hace N años) o calendario (agenda de la semana)"
         required: true
         default: edu
       index:

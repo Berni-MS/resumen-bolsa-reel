@@ -1,0 +1,94 @@
+{
+  "id": "ahorro-005-presupuesto-15",
+  "label": "Presupuesto en 15 minutos",
+  "accent": "green",
+  "caption": "Presupuesto en 15 minutos ⏱️ Sin apps raras ni hojas de cálculo enormes.\n\nDesliza para ver los pasos y quédate con la plantilla de tres columnas.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#presupuesto",
+    "#ahorro",
+    "#finanzaspersonales",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "15'",
+      "title": "Tu presupuesto en 15 minutos",
+      "foot": "Sin apps raras ni hojas gigantes"
+    },
+    {
+      "t": "steps",
+      "head": "Cuatro pasos y listo",
+      "steps": [
+        {
+          "t": "Apunta lo que ingresas",
+          "b": "Tu sueldo neto y otros ingresos fijos."
+        },
+        {
+          "t": "Lista tus gastos fijos",
+          "b": "Alquiler, suministros, seguros, cuotas."
+        },
+        {
+          "t": "Estima los variables",
+          "b": "Comida, transporte, ocio. Mira tu extracto."
+        },
+        {
+          "t": "Resta y mira qué queda",
+          "b": "Eso es lo que puedes ahorrar."
+        }
+      ],
+      "foot": "Todo en un papel"
+    },
+    {
+      "t": "point",
+      "head": "La plantilla de [[tres columnas]]",
+      "body": "Ingresos, gastos fijos y gastos variables. Con eso, ya ves el mes entero en una sola página.",
+      "foot": "Menos es más",
+      "kicker": "Para empezar"
+    },
+    {
+      "t": "cards",
+      "head": "Errores típicos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Olvidar los gastos anuales",
+          "b": "Seguros, impuestos o regalos: divídelos entre 12."
+        },
+        {
+          "t": "No dejar margen",
+          "b": "Un colchón del 5-10 % para imprevistos."
+        },
+        {
+          "t": "Hacerlo una vez y abandonarlo",
+          "b": "Revísalo cada mes, solo 5 minutos."
+        }
+      ],
+      "foot": "Y cómo evitarlos"
+    },
+    {
+      "t": "point",
+      "head": "Si no cuadra, [[no te agobies]]",
+      "body": "Mirar tus números ya es el primer paso. Ajusta una cosa cada mes, no todo de golpe.",
+      "foot": "Poco a poco",
+      "kicker": "Un consejo"
+    },
+    {
+      "t": "point",
+      "head": "Elige una [[herramienta]] y quédate con ella",
+      "body": "Cuaderno, hoja de cálculo o app del banco. La mejor es la que de verdad abres.",
+      "foot": "Sin complicarte",
+      "kicker": "Cuál usar"
+    },
+    {
+      "t": "close",
+      "head": "Un presupuesto no es un castigo, es [[claridad]]",
+      "body": "Hoy son 15 minutos. Dentro de un año, mucha tranquilidad.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y hazlo este fin de semana.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

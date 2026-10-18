@@ -1,0 +1,98 @@
+{
+  "id": "ahorro-003-hormiga",
+  "label": "Gastos hormiga",
+  "accent": "red",
+  "caption": "Gastos hormiga 🐜 Pequeños, casi invisibles… y suman mucho a final de año.\n\nDesliza para ver cuánto pueden costar, cómo detectarlos sin agobiarte y qué hacer con ellos.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#gastoshormiga",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "1.095 €",
+      "title": "al año en un gasto de 3 € al día",
+      "foot": "Los gastos hormiga existen",
+      "bigSize": 250
+    },
+    {
+      "t": "point",
+      "head": "Qué es un gasto [[hormiga]]",
+      "body": "Un gasto pequeño y repetido que no notas: el café de cada día, una app, un snack, una comisión.",
+      "foot": "Pequeño, pero constante",
+      "kicker": "La definición"
+    },
+    {
+      "t": "stat",
+      "big": "1.095 €",
+      "head": "3 € al día, durante un año",
+      "body": "3 euros por 365 días son 1.095 euros. Si son 5 euros al día, serían 1.825 euros.",
+      "foot": "Cuenta redonda",
+      "kicker": "Las cuentas",
+      "color": "red",
+      "bigSize": 230
+    },
+    {
+      "t": "steps",
+      "head": "Cómo detectarlos",
+      "steps": [
+        {
+          "t": "Revisa 1 mes de movimientos",
+          "b": "Mira el extracto de tu tarjeta."
+        },
+        {
+          "t": "Marca lo pequeño y repetido",
+          "b": "Compras de menos de 10 euros."
+        },
+        {
+          "t": "Súmalos por categorías",
+          "b": "Café, comida fuera, apps, envíos."
+        },
+        {
+          "t": "Elige 1 o 2 a recortar",
+          "b": "No todos: solo los que no te aportan nada."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "point",
+      "head": "No se trata de [[no disfrutar]]",
+      "body": "Si el café de la mañana te hace feliz, mantenlo. El objetivo es gastar conscientemente, no por inercia.",
+      "foot": "Equilibrio",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde suelen esconderse",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Suscripciones olvidadas",
+          "b": "Apps o plataformas que ya no usas."
+        },
+        {
+          "t": "Comisiones",
+          "b": "Mantenimiento de cuenta o de tarjeta."
+        },
+        {
+          "t": "Pedidos a domicilio",
+          "b": "La comodidad también cuesta."
+        }
+      ],
+      "foot": "Revisa tu extracto"
+    },
+    {
+      "t": "close",
+      "head": "Lo pequeño, [[sumado]], es grande",
+      "body": "Haz hoy el ejercicio con tu último mes. Te sorprenderá.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a alguien a quien le venga bien.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

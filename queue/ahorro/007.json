@@ -1,0 +1,97 @@
+{
+  "id": "ahorro-007-suscripciones",
+  "label": "Auditoría de suscripciones",
+  "accent": "red",
+  "caption": "Auditoría de suscripciones 🔍 ¿Pagas por cosas que ya no usas?\n\nDesliza para ver cómo revisarlas en 10 minutos y qué preguntas hacerte antes de cancelar.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#ahorro",
+    "#suscripciones",
+    "#presupuesto",
+    "#educacionfinanciera"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "10'",
+      "title": "para revisar tus suscripciones",
+      "foot": "Un ahorro rápido"
+    },
+    {
+      "t": "point",
+      "head": "Se acumulan [[sin que lo notes]]",
+      "body": "Plataformas, apps, gimnasio, almacenamiento en la nube. Cada una es poco, juntas suman.",
+      "foot": "Pequeñas cuotas",
+      "kicker": "El problema"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo revisarlas",
+      "steps": [
+        {
+          "t": "Mira tu extracto",
+          "b": "De los últimos 3 meses, busca cargos repetidos."
+        },
+        {
+          "t": "Haz una lista",
+          "b": "Nombre, precio y cada cuánto se cobra."
+        },
+        {
+          "t": "Calcula el coste anual",
+          "b": "Multiplica la cuota mensual por 12."
+        },
+        {
+          "t": "Decide una por una",
+          "b": "Mantener, pausar o cancelar."
+        }
+      ],
+      "foot": "Cuatro pasos"
+    },
+    {
+      "t": "cards",
+      "head": "Pregúntate",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "¿La usé este mes?",
+          "b": "Si no, es la primera candidata."
+        },
+        {
+          "t": "¿Me aporta lo que cuesta?",
+          "b": "Valor por euro, no por costumbre."
+        },
+        {
+          "t": "¿La puedo compartir o pausar?",
+          "b": "Algunas ofrecen planes familiares."
+        }
+      ],
+      "foot": "Antes de cancelar"
+    },
+    {
+      "t": "stat",
+      "big": "12 ×",
+      "head": "Mira el coste anual",
+      "body": "Una cuota de 10 euros al mes parece poco, pero son 120 al año. Multiplicar por 12 cambia la perspectiva.",
+      "foot": "Un truco mental",
+      "kicker": "La clave",
+      "color": "red",
+      "bigSize": 260
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[pruebas gratuitas]]",
+      "body": "Ponte un recordatorio antes de que termine el periodo gratis, o desactiva la renovación el primer día.",
+      "foot": "Evita sorpresas",
+      "kicker": "Un detalle"
+    },
+    {
+      "t": "close",
+      "head": "Menos cuotas, [[más margen]]",
+      "body": "Haz hoy esta revisión y repítela cada seis meses.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa tu extracto.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}
