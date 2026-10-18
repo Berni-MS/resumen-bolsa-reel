@@ -17,7 +17,7 @@ for (const [pkg, fam, ws] of [['big-shoulders-display', 'Big Shoulders Display',
   for (const w of ws) { const f = path.join(base, pkg, 'files', `${pkg}-latin-${w}-normal.woff2`); if (fs.existsSync(f)) faces.push(`@font-face{font-family:'${fam}';font-weight:${w};src:url('data:font/woff2;base64,${fs.readFileSync(f).toString('base64')}') format('woff2');}`); }
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>${faces.join('\n')}
 *{box-sizing:border-box}body{margin:0}
-.root{width:1080px;height:1920px;background:${INK};color:#fff;font-family:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif;padding:260px 80px 360px;display:flex;flex-direction:column;align-items:center;gap:30px;overflow:hidden}
+.root{width:1080px;height:1920px;background:${INK};color:#fff;font-family:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif;padding:260px 80px 360px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;overflow:hidden}
 .d{font-family:'Big Shoulders Display','Arial Narrow',sans-serif;font-weight:900}
 </style></head><body><div class="root">
 <div style="align-self:flex-start;font-size:36px;font-weight:700;color:${MUTED}">@tuamigodelasfinanzas${label ? ' · ' + esc(label) : ''}</div>
