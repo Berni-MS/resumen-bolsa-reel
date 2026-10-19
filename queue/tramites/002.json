@@ -1,0 +1,92 @@
+{
+  "id": "tramites-002-certificado-digital",
+  "label": "Certificado digital",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Tu firma electrónica con validez legal 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Firma",
+      "title": "digital",
+      "foot": "Tu firma en internet"
+    },
+    {
+      "t": "point",
+      "head": "Tu [[firma electrónica]] con validez legal",
+      "body": "El certificado digital te identifica en internet y permite firmar documentos y presentar trámites.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Para qué sirve",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Trámites",
+          "b": "Hacienda, Seguridad Social y otros organismos."
+        },
+        {
+          "t": "Firmar",
+          "b": "Documentos con validez legal."
+        },
+        {
+          "t": "Presentar",
+          "b": "Escritos y recursos en sede electrónica."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Se pide en [[tres pasos]]",
+      "body": "Solicitud online, acreditación de tu identidad en una oficina y descarga en tu equipo.",
+      "note": "Puede cambiar el procedimiento; compruébalo en la web de la FNMT.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo conseguirlo",
+      "steps": [
+        {
+          "t": "Solicítalo en la web oficial",
+          "b": "Obtendrás un código."
+        },
+        {
+          "t": "Acredita tu identidad",
+          "b": "En una oficina autorizada, con tu DNI."
+        },
+        {
+          "t": "Descárgalo",
+          "b": "Y haz una copia de seguridad."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Hazle una [[copia de seguridad]]",
+      "body": "Si pierdes el equipo y no tienes copia, tendrás que pedirlo de nuevo.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Tenerlo te [[ahorra colas]]",
+      "body": "Muchas gestiones se resuelven en minutos desde casa.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando lo necesites.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "tramites-022-becas",
+  "label": "Becas de estudios",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Las becas tienen requisitos y plazos 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Becas",
+      "title": "de estudios",
+      "foot": "Mira los plazos"
+    },
+    {
+      "t": "point",
+      "head": "Las becas [[tienen requisitos y plazos]]",
+      "body": "Hay becas estatales y de las comunidades. Se piden cada curso, con requisitos de renta y rendimiento.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué se mira",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Renta familiar",
+          "b": "Con umbrales máximos."
+        },
+        {
+          "t": "Notas",
+          "b": "Rendimiento académico."
+        },
+        {
+          "t": "Estudios",
+          "b": "Que den derecho a beca."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Se pide [[cada curso]]",
+      "body": "La convocatoria suele abrirse en primavera o verano. Pedirla tarde puede dejarte sin ella.",
+      "note": "Mira el Ministerio de Educación y tu comunidad.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Mira la convocatoria",
+          "b": "En la web oficial."
+        },
+        {
+          "t": "Reúne los datos",
+          "b": "De tu hogar."
+        },
+        {
+          "t": "Presenta la solicitud",
+          "b": "Y guarda el justificante."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Apunta la [[fecha límite]]",
+      "body": "Pedirla cuando acaba el plazo es perderla.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Estudiar [[con ayuda]]",
+      "body": "Una beca puede cubrir parte de los gastos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo si estudias o tienes hijos estudiando.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

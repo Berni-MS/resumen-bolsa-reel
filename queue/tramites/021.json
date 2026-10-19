@@ -1,0 +1,92 @@
+{
+  "id": "tramites-021-herencia",
+  "label": "Herencia",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Una herencia tiene pasos y plazos 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Herencia",
+      "title": "primeros pasos",
+      "foot": "Cuando toca organizar"
+    },
+    {
+      "t": "point",
+      "head": "Una herencia [[tiene pasos y plazos]]",
+      "body": "Tras un fallecimiento hay que reunir documentos y pagar el impuesto de sucesiones dentro de un plazo.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Documentos clave",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Certificado de defunción",
+          "b": "Del Registro Civil."
+        },
+        {
+          "t": "Últimas voluntades",
+          "b": "Y seguros de vida."
+        },
+        {
+          "t": "Testamento",
+          "b": "Si existe."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "El plazo suele ser de [[seis meses]]",
+      "body": "Para presentar el impuesto de sucesiones se suele disponer de 6 meses, con posible prórroga.",
+      "note": "Cambia según la comunidad; infórmate en tu comunidad.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo empezar",
+      "steps": [
+        {
+          "t": "Pide los certificados",
+          "b": "Defunción, últimas voluntades y seguros."
+        },
+        {
+          "t": "Haz inventario",
+          "b": "De bienes y deudas."
+        },
+        {
+          "t": "Pide asesoramiento",
+          "b": "De un notario o gestor."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Decide con [[información]]",
+      "body": "Aceptar o renunciar a una herencia tiene consecuencias. Estudia el caso.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "En un momento difícil, [[ordena lo básico]]",
+      "body": "Conocer los plazos evita problemas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo por si algún día lo necesitas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "tramites-004-vida-laboral",
+  "label": "Vida laboral",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Tu vida laboral en minutos 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Vida laboral",
+      "title": "descárgala gratis",
+      "foot": "Un documento que se usa mucho"
+    },
+    {
+      "t": "point",
+      "head": "Tu [[vida laboral]] en minutos",
+      "body": "Es el informe de tus altas y bajas en la Seguridad Social. Se descarga gratis desde la sede electrónica.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Para qué la necesitas",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Pedir el paro",
+          "b": "O una prestación."
+        },
+        {
+          "t": "Una hipoteca o alquiler",
+          "b": "Para demostrar estabilidad."
+        },
+        {
+          "t": "Tu jubilación",
+          "b": "Para revisar tus años cotizados."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Revísala [[una vez al año]]",
+      "body": "Comprueba que no falten periodos trabajados ni haya altas que no reconozcas.",
+      "note": "Si algo no cuadra, pídelo a la Seguridad Social cuanto antes.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo conseguirla",
+      "steps": [
+        {
+          "t": "Entra en la sede electrónica",
+          "b": "De la Seguridad Social."
+        },
+        {
+          "t": "Identifícate",
+          "b": "Con Cl@ve o certificado."
+        },
+        {
+          "t": "Descarga el informe",
+          "b": "Guárdalo en PDF."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Gratis, [[sin intermediarios]]",
+      "body": "Si alguien te cobra por conseguirla, ese gasto no es necesario.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Un documento [[que conviene tener]]",
+      "body": "Revisarla a tiempo evita sorpresas cuando la necesitas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revísala hoy.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

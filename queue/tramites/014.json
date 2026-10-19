@@ -1,0 +1,92 @@
+{
+  "id": "tramites-014-reclamar-banco",
+  "label": "Reclamar al banco",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Puedes reclamar a tu banco 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Reclamar",
+      "title": "al banco",
+      "foot": "Tienes derecho a hacerlo"
+    },
+    {
+      "t": "point",
+      "head": "Puedes [[reclamar]] a tu banco",
+      "body": "Si tienes un problema con una comisión o un cobro, hay un camino para reclamar paso a paso.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "El camino",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Atención al Cliente",
+          "b": "Es la primera reclamación."
+        },
+        {
+          "t": "Espera la respuesta",
+          "b": "Tienen un plazo para contestar."
+        },
+        {
+          "t": "Banco de España",
+          "b": "Si no contestan o no estás de acuerdo."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Hazlo [[por escrito]]",
+      "body": "Una reclamación escrita deja constancia de lo que pides y de cuándo lo pides.",
+      "note": "El banco tiene un plazo máximo de dos meses para responder.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Qué incluir",
+      "steps": [
+        {
+          "t": "Tus datos y el contrato",
+          "b": "Producto y fecha."
+        },
+        {
+          "t": "Qué ha pasado",
+          "b": "Con hechos y fechas."
+        },
+        {
+          "t": "Qué pides",
+          "b": "Y la documentación."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Guarda [[todo]]",
+      "body": "Conserva correos, extractos y contratos. Serán tu prueba.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Reclamar [[no es ser pesado]]",
+      "body": "Es usar un derecho.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando lo necesites.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

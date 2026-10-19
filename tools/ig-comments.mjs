@@ -1,4 +1,4 @@
-// Responde en público a los comentarios que piden una guía con su palabra clave (AHORRO, RENTA, BOLSA, GASTOS, VIVIENDA, ESTAFAS).
+// Responde en público a los comentarios que piden una guía con su palabra clave (AHORRO, RENTA, BOLSA, GASTOS, VIVIENDA, ESTAFAS, TRAMITES).
 // Uso: IG_TOKEN=… IG_USER=… [DRY=true] node tools/ig-comments.mjs
 // Sin estado: un comentario ya contestado por la cuenta no se vuelve a contestar.
 const token = String(process.env.IG_TOKEN || '').replace(/[\s"']/g, ''), user = process.env.IG_USER, DRY = process.env.DRY === 'true';
@@ -12,6 +12,7 @@ const GUIAS = {
   gastos: ['la lista para revisar tus gastos fijos y comisiones', 'gastos'],
   vivienda: ['el checklist para comprar o alquilar con cabeza', 'vivienda'],
   estafas: ['la guía antiestafas', 'estafas'],
+  tramites: ['la guía de trámites y ayudas', 'tramites'],
 };
 const PLANTILLAS = [
   '¡Hola @{u}! 👋 Aquí tienes {guia}: {url} Es gratis y sin registro. ¡Ojalá te sirva!',

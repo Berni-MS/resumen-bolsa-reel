@@ -1,0 +1,92 @@
+{
+  "id": "tramites-020-fondo-garantia",
+  "label": "Fondo de Garantía de Depósitos",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Tus depósitos están protegidos hasta 100.000 € 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Fondo de",
+      "title": "garantía",
+      "foot": "Tus ahorros, protegidos"
+    },
+    {
+      "t": "point",
+      "head": "Tus depósitos están protegidos [[hasta 100.000 €]]",
+      "body": "Si un banco quiebra, el Fondo de Garantía de Depósitos cubre hasta 100.000 euros por titular y entidad.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué incluye",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cuentas",
+          "b": "Corrientes y de ahorro."
+        },
+        {
+          "t": "Depósitos",
+          "b": "A plazo."
+        },
+        {
+          "t": "Por titular y banco",
+          "b": "No por cuenta."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Es un [[límite por banco]]",
+      "body": "Si tienes más de 100.000 € en un banco, la parte que sobra no está cubierta. Repartirlo puede ayudar.",
+      "note": "Confirma los detalles en el Fondo de Garantía.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo comprobarlo",
+      "steps": [
+        {
+          "t": "Mira qué banco es",
+          "b": "Y si está adherido."
+        },
+        {
+          "t": "Suma tus depósitos",
+          "b": "En la misma entidad."
+        },
+        {
+          "t": "Revisa el límite",
+          "b": "Por titular."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No todo está [[cubierto]]",
+      "body": "Productos de inversión, como los fondos o las acciones, no entran en esta garantía.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Saber qué está protegido [[da tranquilidad]]",
+      "body": "Revisa dónde tienes tu dinero.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

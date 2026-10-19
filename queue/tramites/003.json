@@ -1,0 +1,92 @@
+{
+  "id": "tramites-003-cita-previa",
+  "label": "Cita previa",
+  "accent": "green",
+  "caption": "Trámites y ayudas: La cita previa es gratuita 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Cita previa",
+      "title": "sin intermediarios",
+      "foot": "Casi siempre es gratis"
+    },
+    {
+      "t": "point",
+      "head": "La cita previa [[es gratuita]]",
+      "body": "Pedir cita con la Seguridad Social, el SEPE, la Agencia Tributaria o la DGT no cuesta nada si lo haces en su web oficial.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde pedirla",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "En la web oficial",
+          "b": "De cada organismo."
+        },
+        {
+          "t": "Por teléfono",
+          "b": "Con el número de la propia web."
+        },
+        {
+          "t": "En la app",
+          "b": "Si el organismo tiene una."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Si te cobran, [[desconfía]]",
+      "body": "Hay páginas que cobran por algo gratuito. Escribe tú la dirección oficial del organismo y desconfía de los anuncios.",
+      "note": "La comprobación es siempre la dirección web oficial.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de pedirla",
+      "steps": [
+        {
+          "t": "Busca el organismo",
+          "b": "Escribe tú su dirección."
+        },
+        {
+          "t": "Elige el trámite",
+          "b": "Y la oficina que te toca."
+        },
+        {
+          "t": "Guarda el justificante",
+          "b": "Y revisa día y hora."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "El [[anuncio]] no es la web oficial",
+      "body": "Los primeros resultados de un buscador pueden ser anuncios. Comprueba la dirección antes de dar datos.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una cita [[sin pagar de más]]",
+      "body": "Si hay que pagar, que sea una tasa oficial y no una gestoría que no pediste.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

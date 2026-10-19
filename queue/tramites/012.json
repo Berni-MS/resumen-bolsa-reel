@@ -1,0 +1,92 @@
+{
+  "id": "tramites-012-empadronamiento",
+  "label": "Empadronamiento",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Estar empadronado es una obligación 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Padrón",
+      "title": "empadronarte",
+      "foot": "Un papel que sirve para mucho"
+    },
+    {
+      "t": "point",
+      "head": "Estar [[empadronado]] es una obligación",
+      "body": "Es inscribirte en el padrón de tu ayuntamiento. Sirve para muchas gestiones: ayudas, colegio, sanidad.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Para qué lo piden",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Ayudas y becas",
+          "b": "Para acreditar tu residencia."
+        },
+        {
+          "t": "Trámites",
+          "b": "Con otros organismos."
+        },
+        {
+          "t": "Servicios",
+          "b": "Del ayuntamiento y de tu zona."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Cada ayuntamiento [[tiene su modo]]",
+      "body": "Algunos permiten hacerlo online, otros con cita. Pide siempre el volante o certificado.",
+      "note": "Consulta la web de tu ayuntamiento.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Mira la web de tu ayuntamiento",
+          "b": "Y busca \"empadronamiento\"."
+        },
+        {
+          "t": "Reúne documentos",
+          "b": "DNI y contrato o escritura."
+        },
+        {
+          "t": "Pide el certificado",
+          "b": "Cuando lo necesites."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con los [[cambios de domicilio]]",
+      "body": "Cuando te mudas, comunícalo para que tus datos estén al día.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Un papel [[que abre muchas puertas]]",
+      "body": "Mantener el padrón al día evita problemas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa el tuyo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

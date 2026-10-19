@@ -1,0 +1,92 @@
+{
+  "id": "tramites-008-ayudas-alquiler",
+  "label": "Ayudas al alquiler",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Las ayudas al alquiler dependen de tu comunidad 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ayudas",
+      "title": "al alquiler",
+      "foot": "Cada comunidad decide"
+    },
+    {
+      "t": "point",
+      "head": "Las ayudas al alquiler [[dependen de tu comunidad]]",
+      "body": "Las convocatorias, requisitos e importes los fija cada comunidad autónoma, con fondos estatales y propios.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué suelen pedir",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Contrato de alquiler",
+          "b": "En vigor y a tu nombre."
+        },
+        {
+          "t": "Ingresos máximos",
+          "b": "Según tu hogar."
+        },
+        {
+          "t": "Estar al día",
+          "b": "Con Hacienda y la Seguridad Social."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Los [[plazos]] son cortos",
+      "body": "Las convocatorias suelen abrirse una vez al año y durar pocas semanas.",
+      "note": "Consulta la web de vivienda de tu comunidad.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo seguir la pista",
+      "steps": [
+        {
+          "t": "Busca tu comunidad",
+          "b": "Y \"ayudas al alquiler\"."
+        },
+        {
+          "t": "Anota el plazo",
+          "b": "Y los requisitos."
+        },
+        {
+          "t": "Prepara los documentos",
+          "b": "Antes de que abra."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No pagues [[por enterarte]]",
+      "body": "La información sobre convocatorias es pública y gratuita.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "La ayuda existe, [[pero hay que pedirla]]",
+      "body": "Un recordatorio en el calendario puede ahorrarte meses de alquiler.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y míralo esta semana.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

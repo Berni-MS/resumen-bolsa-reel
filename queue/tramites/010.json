@@ -1,0 +1,92 @@
+{
+  "id": "tramites-010-maternidad",
+  "label": "Deducción por maternidad",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Una deducción de hasta 1.200 € al año 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Deducción",
+      "title": "por maternidad",
+      "foot": "Un ahorro en tu Renta"
+    },
+    {
+      "t": "point",
+      "head": "Una deducción de [[hasta 1.200 € al año]]",
+      "body": "Es una deducción en el IRPF por cada hijo menor de 3 años, para mujeres con hijos que trabajan y cotizan.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué se suele pedir",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Hijo menor de 3 años",
+          "b": "Que viva contigo."
+        },
+        {
+          "t": "Actividad",
+          "b": "Trabajar por cuenta propia o ajena."
+        },
+        {
+          "t": "Cotización",
+          "b": "Estar dada de alta en la Seguridad Social."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Se puede cobrar [[mes a mes]]",
+      "body": "Puedes pedir el abono anticipado cada mes (modelo 140) o aplicarla en la declaración.",
+      "note": "Los importes y requisitos pueden cambiar: mira la Agencia Tributaria.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo aprovecharla",
+      "steps": [
+        {
+          "t": "Comprueba requisitos",
+          "b": "En la web de la Agencia Tributaria."
+        },
+        {
+          "t": "Elige cobro anticipado o Renta",
+          "b": "Según te convenga."
+        },
+        {
+          "t": "Guarda los justificantes",
+          "b": "Por si te los piden."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No la [[dejes pasar]]",
+      "body": "Aunque no la pidas por adelantado, puedes aplicarla en la declaración.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Revisa [[qué te corresponde]]",
+      "body": "Hay deducciones que no se aplican solas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para tu próxima Renta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

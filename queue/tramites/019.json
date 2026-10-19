@@ -1,0 +1,92 @@
+{
+  "id": "tramites-019-transferencia-erronea",
+  "label": "Transferencia errónea",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Si envías dinero a quien no era 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Envío",
+      "title": "por error",
+      "foot": "Qué hacer en los primeros minutos"
+    },
+    {
+      "t": "point",
+      "head": "Si envías dinero [[a quien no era]]",
+      "body": "Un error en el número de cuenta o en un Bizum se puede intentar resolver, pero hay que actuar rápido.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué hacer primero",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Avisa a tu banco",
+          "b": "Ahora mismo."
+        },
+        {
+          "t": "Informa del error",
+          "b": "Con fecha y datos."
+        },
+        {
+          "t": "Guarda el justificante",
+          "b": "De la operación."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "El banco [[puede ayudar]]",
+      "body": "Puede contactar con el banco del destinatario. Devolver el dinero depende de que el destinatario acepte.",
+      "note": "Si no se devuelve, existe la vía judicial.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Pasos",
+      "steps": [
+        {
+          "t": "Llama a tu banco",
+          "b": "Cuanto antes."
+        },
+        {
+          "t": "Pide que lo comuniquen",
+          "b": "Al banco receptor."
+        },
+        {
+          "t": "Reclama por escrito",
+          "b": "Si hace falta."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Y si te llega [[dinero por error]]",
+      "body": "No lo gastes. Avisa a tu banco para devolverlo.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Comprueba [[antes de enviar]]",
+      "body": "Un segundo de revisión te ahorra el disgusto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

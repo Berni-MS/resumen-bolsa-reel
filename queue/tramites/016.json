@@ -1,0 +1,92 @@
+{
+  "id": "tramites-016-recibo-domiciliado",
+  "label": "Devolver un recibo",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Puedes pedir la devolución de un recibo 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Devolver",
+      "title": "un recibo",
+      "foot": "Un cobro que no reconoces"
+    },
+    {
+      "t": "point",
+      "head": "Puedes [[pedir la devolución]] de un recibo",
+      "body": "Si te cobran un recibo domiciliado que no reconoces, puedes pedir al banco la devolución en unos plazos.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Los plazos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Recibos autorizados",
+          "b": "Unas 8 semanas desde el cobro."
+        },
+        {
+          "t": "Sin tu autorización",
+          "b": "Hasta 13 meses."
+        },
+        {
+          "t": "Ante la duda",
+          "b": "Contacta con tu banco cuanto antes."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Actúa [[cuanto antes]]",
+      "body": "Cuanto antes avises, más fácil es que se resuelva.",
+      "note": "Los plazos pueden depender del tipo de recibo; confírmalos con tu banco.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Revisa el extracto",
+          "b": "Comprueba el cobro."
+        },
+        {
+          "t": "Contacta con tu banco",
+          "b": "Y pide la devolución."
+        },
+        {
+          "t": "Guarda la respuesta",
+          "b": "Por si hay que reclamar."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Y si es una [[estafa]]",
+      "body": "Si crees que hay un fraude, avisa al banco y bloquea la tarjeta.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Revisa tus [[recibos]] cada mes",
+      "body": "Un cobro raro se ve a tiempo si miras.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

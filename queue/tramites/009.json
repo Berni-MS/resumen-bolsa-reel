@@ -1,0 +1,92 @@
+{
+  "id": "tramites-009-nacimiento",
+  "label": "Prestación por nacimiento",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Una prestación cuando nace tu hijo 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Hijo",
+      "title": "recién nacido",
+      "foot": "Tu prestación como progenitor"
+    },
+    {
+      "t": "point",
+      "head": "Una [[prestación]] cuando nace tu hijo",
+      "body": "La Seguridad Social paga una prestación a cada progenitor durante el descanso por nacimiento y cuidado.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué se suele exigir",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cotización",
+          "b": "Un periodo mínimo según tu edad."
+        },
+        {
+          "t": "Baja efectiva",
+          "b": "Cese de la actividad durante el descanso."
+        },
+        {
+          "t": "Solicitud",
+          "b": "Online o con cita."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Un descanso de [[16 semanas]] por progenitor",
+      "body": "Es el descanso general para cada progenitor. Una parte inmediata al parto es obligatoria.",
+      "note": "Confirma duración e importe según tu caso en la Seguridad Social.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo tramitarla",
+      "steps": [
+        {
+          "t": "Avisa a tu empresa",
+          "b": "Cuando sepas las fechas."
+        },
+        {
+          "t": "Pide la prestación",
+          "b": "En la web de la Seguridad Social."
+        },
+        {
+          "t": "Guarda el justificante",
+          "b": "Y el libro de familia."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pídela [[cuanto antes]]",
+      "body": "Presentar la solicitud con retraso puede afectar a lo que cobras.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Prepárate [[antes del parto]]",
+      "body": "Tener la documentación a mano evita prisas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo si te interesa.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

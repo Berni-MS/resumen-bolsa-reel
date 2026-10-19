@@ -1,0 +1,92 @@
+{
+  "id": "tramites-017-compra-online",
+  "label": "Desistir de una compra online",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Tienes 14 días para desistir 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Compra online",
+      "title": "te arrepientes",
+      "foot": "14 días para devolver"
+    },
+    {
+      "t": "point",
+      "head": "Tienes [[14 días]] para desistir",
+      "body": "En la mayoría de compras online puedes devolver el producto en 14 días naturales sin dar explicaciones.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo funciona",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Plazo",
+          "b": "14 días desde que lo recibes."
+        },
+        {
+          "t": "Comunicación",
+          "b": "Avisa al vendedor por escrito."
+        },
+        {
+          "t": "Devolución",
+          "b": "Del importe, con ciertas condiciones."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Hay [[excepciones]]",
+      "body": "No siempre se puede: productos personalizados, precintados por higiene, contenidos digitales ya descargados.",
+      "note": "Mira siempre las condiciones del vendedor.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Comunica el desistimiento",
+          "b": "Por escrito y con fecha."
+        },
+        {
+          "t": "Devuelve el producto",
+          "b": "Como indique el vendedor."
+        },
+        {
+          "t": "Guarda el justificante",
+          "b": "Del envío."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con los [[gastos de envío]]",
+      "body": "Algunos vendedores los cobran por la devolución. Mira las condiciones antes de comprar.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Compra tranquilo, [[devuelve a tiempo]]",
+      "body": "Saber tu plazo te da margen.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para tu próxima compra.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

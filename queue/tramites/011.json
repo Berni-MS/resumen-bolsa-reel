@@ -1,0 +1,92 @@
+{
+  "id": "tramites-011-jubilacion",
+  "label": "Simulador de jubilación",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Puedes simular tu pensión 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Tu jubilación",
+      "title": "simúlala",
+      "foot": "Cuánto cobrarás, aproximadamente"
+    },
+    {
+      "t": "point",
+      "head": "Puedes [[simular tu pensión]]",
+      "body": "La Seguridad Social tiene un simulador que calcula una estimación de tu jubilación con tu vida laboral.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué influye",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Años cotizados",
+          "b": "Cuantos más, mejor."
+        },
+        {
+          "t": "Bases de cotización",
+          "b": "Lo que cotizaste."
+        },
+        {
+          "t": "Edad de jubilación",
+          "b": "Adelantarla o retrasarla cambia el importe."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Es una [[estimación]]",
+      "body": "El simulador usa los datos y las normas de hoy. La cifra real puede variar cuando te jubiles.",
+      "note": "Úsalo como referencia, no como promesa.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Entra en Tu Seguridad Social",
+          "b": "Con Cl@ve o certificado."
+        },
+        {
+          "t": "Abre el simulador",
+          "b": "Y revisa tus datos."
+        },
+        {
+          "t": "Prueba escenarios",
+          "b": "Con distintas edades."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Revisa [[tus datos]]",
+      "body": "Si faltan periodos en tu vida laboral, corrígelo cuanto antes.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Mirar tu pensión [[no es cosa de mayores]]",
+      "body": "Cuanto antes la conozcas, más margen tienes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y simula la tuya.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

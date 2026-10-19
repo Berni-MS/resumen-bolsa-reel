@@ -1,0 +1,92 @@
+{
+  "id": "tramites-024-carpeta-ciudadana",
+  "label": "Carpeta Ciudadana",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Todos tus trámites en un sitio 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Carpeta",
+      "title": "ciudadana",
+      "foot": "Tus trámites en un sitio"
+    },
+    {
+      "t": "point",
+      "head": "Todos tus trámites [[en un sitio]]",
+      "body": "La Carpeta Ciudadana es un servicio público que reúne tus expedientes, notificaciones y datos.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué encuentras",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tus trámites",
+          "b": "Y su estado."
+        },
+        {
+          "t": "Notificaciones",
+          "b": "De organismos públicos."
+        },
+        {
+          "t": "Tus datos",
+          "b": "En distintos organismos."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Las [[notificaciones]] cuentan",
+      "body": "Algunas notificaciones electrónicas se entienden recibidas aunque no las abras. Revísalo.",
+      "note": "Mira cómo funciona en la sede.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo entrar",
+      "steps": [
+        {
+          "t": "Busca el portal oficial",
+          "b": "Con la dirección correcta."
+        },
+        {
+          "t": "Identifícate",
+          "b": "Con Cl@ve."
+        },
+        {
+          "t": "Revisa tus expedientes",
+          "b": "Y avisos."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Mira de vez en cuando",
+      "body": "Un aviso importante no se ve si no entras nunca.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Un vistazo al mes [[te evita sustos]]",
+      "body": "Es el mejor atajo para tus trámites.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y míralo hoy.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

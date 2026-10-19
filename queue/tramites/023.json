@@ -1,0 +1,92 @@
+{
+  "id": "tramites-023-morosos",
+  "label": "Ficheros de morosos",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Puedes consultar si apareces 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ficheros de",
+      "title": "morosos",
+      "foot": "Mira si estás"
+    },
+    {
+      "t": "point",
+      "head": "Puedes [[consultar si apareces]]",
+      "body": "Los ficheros de solvencia, como ASNEF, guardan datos de deudas impagadas. Tienes derecho a saber qué datos tienen de ti.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Tus derechos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Acceso",
+          "b": "Pedir qué datos tienen."
+        },
+        {
+          "t": "Rectificación",
+          "b": "Corregir errores."
+        },
+        {
+          "t": "Cancelación",
+          "b": "Que borren la deuda ya pagada."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Es un [[trámite gratuito]]",
+      "body": "Pedir los datos a estos ficheros no cuesta nada. Se hace por escrito.",
+      "note": "Consulta las instrucciones de cada fichero.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Escribe al fichero",
+          "b": "Con tu DNI."
+        },
+        {
+          "t": "Espera la respuesta",
+          "b": "Tienen un plazo."
+        },
+        {
+          "t": "Si hay errores",
+          "b": "Reclama al acreedor."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con quien [[promete limpiarlo]]",
+      "body": "Nadie puede borrarte de un fichero si la deuda es real y está vigente.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Saber dónde estás [[es el primer paso]]",
+      "body": "Revisa tus datos con calma.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

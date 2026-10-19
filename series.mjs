@@ -7,6 +7,7 @@ export const SERIES = {
   vida: { name: 'Finanzas de la vida real', day: 'viernes', tag: '#FinanzasDeLaVidaReal' },
   semana: { name: 'La semana en datos', day: 'domingo', tag: '#LaSemanaEnDatos' },
   vivienda: { name: 'Tu casa, tus cuentas', day: 'sábado', tag: '#TuCasaTusCuentas' },
+  tramites: { name: 'Trámites y ayudas', day: 'martes', tag: '#TramitesYAyudas' },
   estafas: { name: 'Alerta estafa', day: 'miércoles', tag: '#AlertaEstafa' },
   renta: { name: 'Renta sin miedo', day: 'jueves', tag: '#RentaSinMiedo' },
   calendario: { name: 'Tu semana en bolsa', day: 'domingo', tag: '#TuSemanaEnBolsa' },

@@ -1,0 +1,92 @@
+{
+  "id": "tramites-005-paro",
+  "label": "Paro",
+  "accent": "green",
+  "caption": "Trámites y ayudas: El paro tiene un plazo 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "El paro",
+      "title": "cómo se pide",
+      "foot": "Plazos y requisitos"
+    },
+    {
+      "t": "point",
+      "head": "El paro [[tiene un plazo]]",
+      "body": "Tras quedarte sin empleo, tienes un plazo corto para pedirlo. Se solicita ante el SEPE.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que mira el SEPE",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cotización",
+          "b": "Haber cotizado un mínimo de tiempo."
+        },
+        {
+          "t": "Situación legal de desempleo",
+          "b": "Que tu salida sea reconocida como tal."
+        },
+        {
+          "t": "Inscripción",
+          "b": "Como demandante de empleo."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "No esperes: [[el plazo corre]]",
+      "body": "El plazo habitual es de 15 días hábiles desde que te quedas sin empleo. Si te pasas, puedes perder días de prestación.",
+      "note": "Confírmalo en el SEPE según tu caso.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Pide el certificado de empresa",
+          "b": "Tu empresa lo comunica al SEPE."
+        },
+        {
+          "t": "Solicítalo online o con cita",
+          "b": "Siempre en la web del SEPE."
+        },
+        {
+          "t": "Guarda el justificante",
+          "b": "Y atiende a sus avisos."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Cumple las [[obligaciones]]",
+      "body": "Renovar la demanda de empleo y aceptar ofertas adecuadas forma parte de la prestación.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Infórmate [[el primer día]]",
+      "body": "Cada día cuenta cuando se quedan sin empleo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo por si alguien lo necesita.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

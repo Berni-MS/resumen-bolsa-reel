@@ -1,0 +1,92 @@
+{
+  "id": "tramites-018-vuelo-retrasado",
+  "label": "Vuelo retrasado o cancelado",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Un vuelo retrasado puede darte derecho a una compensación 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Vuelo",
+      "title": "retrasado",
+      "foot": "Puede haber compensación"
+    },
+    {
+      "t": "point",
+      "head": "Un vuelo retrasado [[puede darte derecho]] a una compensación",
+      "body": "En la Unión Europea, el reglamento europeo protege al pasajero ante grandes retrasos, cancelaciones y overbooking.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué importa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "El retraso",
+          "b": "Normalmente desde cierto número de horas."
+        },
+        {
+          "t": "La causa",
+          "b": "Algunas están exentas."
+        },
+        {
+          "t": "La distancia",
+          "b": "Cambia el importe."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Las [[cantidades]] oscilan",
+      "body": "Pueden ir de 250 a 600 € por pasajero según la distancia, si se dan las condiciones.",
+      "note": "Cada caso se evalúa; consulta la aerolínea o Aviación Civil.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo reclamar",
+      "steps": [
+        {
+          "t": "Guarda tu billete",
+          "b": "Y la tarjeta de embarque."
+        },
+        {
+          "t": "Reclama a la aerolínea",
+          "b": "Por escrito."
+        },
+        {
+          "t": "Si no responde",
+          "b": "Recurre a Aviación Civil."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Cuidado con los [[intermediarios]]",
+      "body": "Algunas empresas se quedan una parte de la compensación. Puedes reclamar directamente.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Viajar con [[tus derechos]]",
+      "body": "Conocerlos te da margen frente a la aerolínea.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo antes de tu próximo viaje.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "tramites-015-hoja-reclamaciones",
+  "label": "Hoja de reclamaciones",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Cualquier negocio debe tenerla 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Hoja de",
+      "title": "reclamaciones",
+      "foot": "Un derecho de consumidor"
+    },
+    {
+      "t": "point",
+      "head": "Cualquier negocio [[debe tenerla]]",
+      "body": "Si compras un producto o servicio, puedes pedir la hoja de reclamaciones. El negocio está obligado a dártela.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo se usa",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "La pides",
+          "b": "En el propio negocio."
+        },
+        {
+          "t": "La rellenas",
+          "b": "Con tus datos y lo ocurrido."
+        },
+        {
+          "t": "La presentas",
+          "b": "En consumo o en la OMIC."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Antes, [[intenta resolverlo]]",
+      "body": "Muchas veces una queja directa o por escrito soluciona el problema sin tramitar nada más.",
+      "note": "Cada comunidad tiene su sistema; mira consumo.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Pasos",
+      "steps": [
+        {
+          "t": "Guarda el ticket",
+          "b": "O el contrato."
+        },
+        {
+          "t": "Haz fotos",
+          "b": "Si hay un defecto."
+        },
+        {
+          "t": "Presenta la reclamación",
+          "b": "Con una copia para ti."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Hazlo [[sin dejar pasar el tiempo]]",
+      "body": "Cuanto antes reclames, más fácil es probar lo ocurrido.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Conocer tus derechos [[te ahorra dinero]]",
+      "body": "Un recibo guardado vale más que una discusión.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

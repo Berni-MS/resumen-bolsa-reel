@@ -1,0 +1,92 @@
+{
+  "id": "tramites-013-autonomo",
+  "label": "Alta de autónomo",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Ser autónomo implica varias altas 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alta de autónomo",
+      "title": "lo básico",
+      "foot": "Antes de empezar"
+    },
+    {
+      "t": "point",
+      "head": "Ser autónomo implica [[varias altas]]",
+      "body": "Para empezar normalmente te das de alta en Hacienda y en el régimen especial de la Seguridad Social.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Las gestiones habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Hacienda",
+          "b": "Alta censal en la Agencia Tributaria."
+        },
+        {
+          "t": "Seguridad Social",
+          "b": "Alta en el RETA."
+        },
+        {
+          "t": "Facturas y trimestres",
+          "b": "Declaraciones periódicas."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Hay una [[cuota reducida]] al principio",
+      "body": "Al empezar puede haber una cuota reducida durante los primeros meses.",
+      "note": "Importes y condiciones cambian: consulta la Seguridad Social.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de lanzarte",
+      "steps": [
+        {
+          "t": "Calcula tus gastos fijos",
+          "b": "Cuota, gestoría, seguros."
+        },
+        {
+          "t": "Infórmate de las ayudas",
+          "b": "De tu comunidad."
+        },
+        {
+          "t": "Valora una gestoría",
+          "b": "Si no lo tienes claro."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No olvides [[los trimestres]]",
+      "body": "Las declaraciones periódicas tienen fechas fijas. Saltártelas puede costar recargos.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Emprender también es [[hacer números]]",
+      "body": "Conocer cuotas e impuestos te evita sustos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo si piensas emprender.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

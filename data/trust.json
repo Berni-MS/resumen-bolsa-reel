@@ -8,6 +8,7 @@
     "ahorro": ["Banco de España", "INE", "CNMV"],
     "vida": ["INE", "Banco de España", "Agencia Tributaria"],
     "vivienda": ["Banco de España", "Ministerio de Vivienda", "Agencia Tributaria", "BOE"],
+    "tramites": ["Seguridad Social", "SEPE", "Agencia Tributaria", "Banco de España"],
     "estafas": ["INCIBE (017)", "Policía Nacional", "Banco de España"],
     "renta": ["Agencia Tributaria", "BOE"],
     "mitos": ["Fuentes citadas en cada dato"]
@@ -18,6 +19,7 @@
     { "id": "festivos-bme", "name": "Festivos de la bolsa española (BME)", "where": "data/calendar.json (festivos_es, horizonte_bme)", "validUntil": "2026-12-31", "blocks": [] },
     { "id": "calendario-bancos-centrales", "name": "Calendario de la Fed, el BCE, el IPC y el empleo de EE. UU.", "where": "data/calendar.json (horizonte)", "validUntil": "2027-12-31", "blocks": [] },
     { "id": "hipoteca-supuestos", "name": "Supuestos de la calculadora de hipoteca (3,5 %, 25 años, 35 % de cuota)", "where": "build-calculadora.mjs (cap)", "validUntil": "2027-04-30", "blocks": [] },
+    { "id": "tramites-ayudas", "name": "Plazos, importes y requisitos de los trámites y ayudas (paro, bono social, deducción por maternidad, becas…)", "where": "queue/tramites/*.json y guias/build.py (tramites)", "validUntil": "2027-04-30", "blocks": [] },
     { "id": "vivienda-gastos", "name": "Porcentajes de entrada, gastos de compra y fianza de las guías de vivienda", "where": "guias/build.py (vivienda) y queue/vivienda/*.json", "validUntil": "2027-04-30", "blocks": [] }
   ]
 }

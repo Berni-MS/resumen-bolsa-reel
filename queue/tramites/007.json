@@ -1,0 +1,92 @@
+{
+  "id": "tramites-007-bono-social",
+  "label": "Bono social eléctrico",
+  "accent": "green",
+  "caption": "Trámites y ayudas: El bono social baja tu factura 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Bono social",
+      "title": "eléctrico",
+      "foot": "Un descuento en la luz"
+    },
+    {
+      "t": "point",
+      "head": "El [[bono social]] baja tu factura",
+      "body": "Es un descuento en la factura de la luz para consumidores vulnerables.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Quién puede pedirlo",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Hogares con ingresos bajos",
+          "b": "Según la renta y los miembros."
+        },
+        {
+          "t": "Familias numerosas",
+          "b": "Con los requisitos fijados."
+        },
+        {
+          "t": "Pensionistas",
+          "b": "Con pensión mínima."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Se pide a [[tu comercializadora]]",
+      "body": "Debe ser una comercializadora de referencia. Ella te dirá qué documentos presentar.",
+      "note": "Los descuentos y requisitos pueden cambiar; confirma en el Ministerio.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Mira si cumples",
+          "b": "En la web oficial del Ministerio."
+        },
+        {
+          "t": "Pide el formulario",
+          "b": "A una comercializadora de referencia."
+        },
+        {
+          "t": "Reúne la documentación",
+          "b": "Y guarda lo que envíes."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Renuévalo [[a tiempo]]",
+      "body": "El bono tiene fecha de caducidad. Anota cuándo toca pedirlo de nuevo.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Un descuento [[que se pierde por no pedirlo]]",
+      "body": "Revisa si te corresponde.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para recordarlo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

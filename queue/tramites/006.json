@@ -1,0 +1,92 @@
+{
+  "id": "tramites-006-ingreso-minimo",
+  "label": "Ingreso mínimo vital",
+  "accent": "green",
+  "caption": "Trámites y ayudas: El ingreso mínimo vital es una prestación 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ingreso mínimo",
+      "title": "vital",
+      "foot": "Una ayuda que pocos piden"
+    },
+    {
+      "t": "point",
+      "head": "El [[ingreso mínimo vital]] es una prestación",
+      "body": "Es una ayuda de la Seguridad Social para hogares con pocos ingresos y patrimonio. Cada caso se valora.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué se tiene en cuenta",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Ingresos",
+          "b": "De todo el hogar."
+        },
+        {
+          "t": "Patrimonio",
+          "b": "Sin contar tu vivienda habitual."
+        },
+        {
+          "t": "Residencia",
+          "b": "Vivir legalmente en España."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Se pide [[solo en canales oficiales]]",
+      "body": "Se solicita en la sede electrónica de la Seguridad Social, con cita o con ayuda de entidades autorizadas.",
+      "note": "Los requisitos y cuantías cambian; mira la web oficial.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo empezar",
+      "steps": [
+        {
+          "t": "Mira el simulador",
+          "b": "En la web de la Seguridad Social."
+        },
+        {
+          "t": "Reúne tu documentación",
+          "b": "De todo el hogar."
+        },
+        {
+          "t": "Presenta la solicitud",
+          "b": "Y guarda el justificante."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Que nadie [[te cobre]]",
+      "body": "Es una prestación pública: no hace falta pagar a nadie por tramitarla.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Si crees que te corresponde, [[pregunta]]",
+      "body": "Pedirlo no te compromete a nada.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo con quien lo necesite.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "tramites-001-clave",
+  "label": "Cl@ve",
+  "accent": "green",
+  "caption": "Trámites y ayudas: Con Cl@ve haces trámites sin salir de casa 📋 Qué hacer, dónde y con qué, sin vueltas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#tramites",
+    "#ayudas",
+    "#administracion",
+    "#finanzaspersonales",
+    "#TramitesYAyudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Cl@ve",
+      "title": "tu llave digital",
+      "foot": "Un trámite que te abre muchos otros"
+    },
+    {
+      "t": "point",
+      "head": "Con [[Cl@ve]] haces trámites sin salir de casa",
+      "body": "Es el sistema de identificación de las administraciones públicas. Con él entras en la Agencia Tributaria, la Seguridad Social, la DGT y más.",
+      "foot": "Lo básico",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Para darte de alta",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Documento en vigor",
+          "b": "DNI o NIE."
+        },
+        {
+          "t": "Un móvil y un correo",
+          "b": "Para recibir los códigos."
+        },
+        {
+          "t": "Registro",
+          "b": "Online o en una oficina de atención."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Un solo acceso, [[muchas gestiones]]",
+      "body": "Una vez registrado, usas el mismo acceso en la mayoría de webs oficiales.",
+      "note": "Los métodos disponibles pueden variar; consulta clave.gob.es.",
+      "foot": "Dato clave",
+      "kicker": "Importante"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo conseguirla",
+      "steps": [
+        {
+          "t": "Entra en clave.gob.es",
+          "b": "Busca la opción de registro."
+        },
+        {
+          "t": "Verifica tu identidad",
+          "b": "Online o presencialmente."
+        },
+        {
+          "t": "Prueba el acceso",
+          "b": "Entra en la web de un organismo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Ojo con las [[webs falsas]]",
+      "body": "Escribe tú la dirección oficial. Nadie te pide tus claves por mensaje ni por llamada.",
+      "foot": "No te despistes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Saca tu Cl@ve [[antes de necesitarla]]",
+      "body": "Cuando llega un plazo, la prisa juega en tu contra.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y hazlo esta semana.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}
