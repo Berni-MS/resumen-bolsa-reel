@@ -69,7 +69,7 @@ jobs:
           done
           echo "url=$URL" >> "$GITHUB_OUTPUT"
           echo "::notice::mp4 local: $(ls -la story.mp4 2>&1)"
-          if [ -f story.mp4 ]; then
+          if [ -f "$GITHUB_WORKSPACE/story.mp4" ]; then
             VURL="${URL%.png}.mp4"
             for i in $(seq 1 40); do
               CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$VURL" || true); echo "vídeo intento $i: HTTP $CODE"

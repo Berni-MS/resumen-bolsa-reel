@@ -60,7 +60,7 @@ jobs:
             [ "$CODE" = "200" ] && break; [ "$i" = "40" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
           done
           echo "url=$URL" >> "$GITHUB_OUTPUT"
-          if [ -f story.mp4 ]; then
+          if [ -f "$GITHUB_WORKSPACE/story.mp4" ]; then
             VURL="${URL%.png}.mp4"
             for i in $(seq 1 40); do
               CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$VURL" || true); echo "vídeo intento $i: HTTP $CODE"
