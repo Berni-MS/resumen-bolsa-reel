@@ -49,9 +49,10 @@ jobs:
         continue-on-error: true
         if: ${{ steps.data.outputs.skip == 'false' }}
         run: |
-          which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+          exec 2>&1
+          which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; } || echo "::warning::No se pudo instalar ffmpeg"
           DUR=$(cat story.dur 2>/dev/null || echo 12)
-          ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -f lavfi -t "$DUR" -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart story.mp4
+          ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -f lavfi -t "$DUR" -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart story.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 600 ffmpeg.log | tr '\n' ' ')"; exit 1; }
           echo "Vídeo de ${DUR} s creado"
       - name: Publicar imagen en GitHub Pages
         id: publish
