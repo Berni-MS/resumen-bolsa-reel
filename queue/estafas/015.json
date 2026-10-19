@@ -1,0 +1,92 @@
+{
+  "id": "estafas-015-pago-de-mas",
+  "label": "Te pagan de más",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Te he pagado de más, devuélveme la diferencia\".\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#segundamano"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"te he pagado de más\"",
+      "foot": "El falso sobrepago"
+    },
+    {
+      "t": "point",
+      "head": "Te envían [[más dinero del acordado]]",
+      "body": "Un comprador o inquilino te paga de más y te pide que le devuelvas la diferencia. El pago original no existe o es falso.",
+      "foot": "El truco es la prisa",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Un pago mayor",
+          "b": "Sin motivo claro."
+        },
+        {
+          "t": "Te piden devolver rápido",
+          "b": "Antes de que se confirme."
+        },
+        {
+          "t": "Un comprobante",
+          "b": "Que no es el banco real."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Comprueba [[tu cuenta]]",
+      "body": "Un comprobante o un mensaje no es dinero. Mira en tu banco que el pago ha llegado y está confirmado antes de devolver nada.",
+      "note": "Si no llegó, no devuelvas.",
+      "foot": "Fíate del banco",
+      "kicker": "Regla básica"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No devuelvas nada",
+          "b": "Hasta ver el ingreso real."
+        },
+        {
+          "t": "Consulta tu banco",
+          "b": "Si dudas del movimiento."
+        },
+        {
+          "t": "Guarda la conversación",
+          "b": "Por si hay que denunciar."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Avisa [[ya]]",
+      "body": "Llama a tu banco, cuéntales lo ocurrido y denuncia. Cuanto antes, más opciones.",
+      "foot": "Rapidez",
+      "kicker": "Si ya devolviste"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Un pago de verdad no necesita prisa.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien venda por internet.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

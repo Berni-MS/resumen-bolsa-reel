@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-015-cambiar-hipoteca",
+  "label": "Cambiar de hipoteca",
+  "accent": "green",
+  "caption": "¿Puedes cambiar tu hipoteca a otro banco? 🔁 Cuándo compensa y cómo se hace.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#subrogacion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Cambiar",
+      "title": "de hipoteca",
+      "foot": "Cuándo compensa"
+    },
+    {
+      "t": "point",
+      "head": "Puedes [[llevarte la hipoteca]] a otro banco",
+      "body": "Otro banco puede ofrecerte mejores condiciones y subrogarse en tu préstamo. También puedes renegociar con el tuyo.",
+      "foot": "Pide ofertas",
+      "kicker": "La idea"
+    },
+    {
+      "t": "cards",
+      "head": "Dos caminos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Renegociar con tu banco",
+          "b": "Pedir un cambio de tipo o de condiciones."
+        },
+        {
+          "t": "Cambiar de banco",
+          "b": "El nuevo cancela la deuda y te da otra."
+        },
+        {
+          "t": "Cambiar de variable a fija",
+          "b": "Si quieres estabilidad."
+        }
+      ],
+      "foot": "Tú eliges"
+    },
+    {
+      "t": "point",
+      "head": "Compara el [[coste total]]",
+      "body": "Suma comisiones, gastos y lo que ahorras en intereses. Solo compensa si el ahorro supera los costes.",
+      "note": "La ley limita algunas comisiones; revisa tu contrato.",
+      "foot": "Calcula con la TAE",
+      "kicker": "La cuenta"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Pide tu situación a tu banco",
+          "b": "Capital pendiente y condiciones."
+        },
+        {
+          "t": "Pide ofertas a otros bancos",
+          "b": "Por escrito, con la FEIN."
+        },
+        {
+          "t": "Compara y decide",
+          "b": "Con números."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Mira [[las vinculaciones]]",
+      "body": "Una oferta con tipo muy bajo puede exigirte productos que te cuestan dinero cada año.",
+      "foot": "Suma todo",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Tu hipoteca [[no es una cadena]]",
+      "body": "Revísala de vez en cuando.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revisa la tuya.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

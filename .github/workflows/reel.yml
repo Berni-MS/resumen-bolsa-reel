@@ -20,7 +20,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
     steps:
@@ -96,6 +96,20 @@ jobs:
           jq -n --arg url "${{ steps.publish.outputs.url }}" --rawfile caption out/caption.txt --arg date "$(jq -r .date record.json)" \
             '{status:"ok", video_url:$url, caption:$caption, date:$date}' \
           | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
+
+      - name: Historia de aviso del reel
+        if: ${{ always() && steps.publish.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KIND: reel
+        run: |
+          ffmpeg -y -loglevel error -i out/reel.mp4 -frames:v 1 cover.jpg
+          export COVER=cover.jpg
+          export LABEL="Resumen Bolsa"
+          bash tools/announce-story.sh
 
       - name: Avisar a Make si falla
         if: failure()

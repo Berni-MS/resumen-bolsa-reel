@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-019-obra-nueva",
+  "label": "Comprar obra nueva",
+  "accent": "green",
+  "caption": "Comprar obra nueva sobre plano 🏗️ Lo que te protege si no se entrega.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#obranueva"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Obra nueva",
+      "title": "cómo protegerte",
+      "foot": "Antes de pagar la señal"
+    },
+    {
+      "t": "point",
+      "head": "Exige [[aval o seguro]]",
+      "body": "Si entregas dinero antes de que esté construida, la promotora debe garantizarlo con un aval o un seguro de las cantidades entregadas a cuenta.",
+      "foot": "Pide la garantía por escrito",
+      "kicker": "La protección"
+    },
+    {
+      "t": "cards",
+      "head": "Antes de firmar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Licencia de obras",
+          "b": "Comprueba que existe."
+        },
+        {
+          "t": "Plazo de entrega",
+          "b": "Y qué pasa si se retrasa."
+        },
+        {
+          "t": "Memoria de calidades",
+          "b": "Materiales y acabados."
+        }
+      ],
+      "foot": "Tres cosas"
+    },
+    {
+      "t": "point",
+      "head": "Los [[gastos]] no son los mismos",
+      "body": "En obra nueva se paga IVA y el impuesto de actos jurídicos documentados, en lugar del de transmisiones. Calcula el total.",
+      "note": "Los tipos varían según la comunidad.",
+      "foot": "Pide un presupuesto total",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Para comprar tranquilo",
+      "steps": [
+        {
+          "t": "Investiga a la promotora",
+          "b": "Obras anteriores y opiniones."
+        },
+        {
+          "t": "Lee el contrato con un abogado",
+          "b": "Sobre todo penalizaciones."
+        },
+        {
+          "t": "Guarda todos los recibos",
+          "b": "De cada pago."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "[[Revisa]] antes de firmar",
+      "body": "Comprueba el estado real, haz la lista de defectos y exige que se corrijan. Tienes garantías posteriores.",
+      "foot": "Hay garantía por defectos",
+      "kicker": "Al recibir la casa"
+    },
+    {
+      "t": "close",
+      "head": "Una compra sobre plano [[exige papeles]]",
+      "body": "Sin garantía por escrito, no entregues dinero.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo si piensas comprar obra nueva.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

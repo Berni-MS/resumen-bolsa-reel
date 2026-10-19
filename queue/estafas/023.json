@@ -1,0 +1,92 @@
+{
+  "id": "estafas-023-tecnico-a-domicilio",
+  "label": "Falso técnico a domicilio",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 El \"técnico\" que llama a tu puerta: cómo no caer.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#hogar"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "el \"técnico\" que llama a tu puerta",
+      "foot": "Visitas a domicilio"
+    },
+    {
+      "t": "point",
+      "head": "Dice venir de [[la luz o el gas]]",
+      "body": "Alguien llama a tu puerta como técnico de una compañía o para una inspección y te ofrece cambiar de contrato o pagar en el acto.",
+      "foot": "Aprovecha tu confianza",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Sin cita previa",
+          "b": "Nadie te ha avisado."
+        },
+        {
+          "t": "Pide pagar o firmar",
+          "b": "Allí mismo."
+        },
+        {
+          "t": "Prisa y presión",
+          "b": "Para que decidas ya."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Pide [[identificación]]",
+      "body": "Un técnico real te avisa antes, se identifica y no te pide firmar ni pagar en el momento. Llama tú a tu compañía.",
+      "note": "No des tus datos ni facturas.",
+      "foot": "Verifica con la compañía",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No abras si dudas",
+          "b": "Y pregunta quién es."
+        },
+        {
+          "t": "Llama a la compañía",
+          "b": "Al teléfono de tu factura."
+        },
+        {
+          "t": "No firmes nada",
+          "b": "Sin leerlo con calma."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Tienes [[derecho a desistir]]",
+      "body": "En contratos a domicilio puedes desistir durante un plazo. Guarda la copia y reclama por escrito.",
+      "foot": "Reclama por escrito",
+      "kicker": "Si ya firmaste"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Con tu compañía hablas tú, no quien llama a tu puerta.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Envíaselo a tus mayores.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

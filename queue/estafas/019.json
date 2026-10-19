@@ -1,0 +1,92 @@
+{
+  "id": "estafas-019-prestamo-adelantado",
+  "label": "Falso préstamo",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Te concedemos el préstamo, pero antes paga una tasa\".\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#prestamos"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ojo",
+      "title": "con el préstamo que pide dinero antes",
+      "foot": "Préstamos falsos"
+    },
+    {
+      "t": "point",
+      "head": "Para darte un préstamo, [[te piden dinero]]",
+      "body": "Te ofrecen crédito fácil, sin papeles, pero antes debes pagar un seguro, una tasa o un depósito.",
+      "foot": "Un préstamo real no lo pide",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Sin requisitos",
+          "b": "Aprobado seguro para todos."
+        },
+        {
+          "t": "Pago previo",
+          "b": "Para \"desbloquear\" el crédito."
+        },
+        {
+          "t": "Contacto por redes",
+          "b": "Sin oficina ni datos reales."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Un prestamista real [[no cobra por adelantado]]",
+      "body": "Los costes de un préstamo se descuentan o se pagan en las cuotas, no antes de recibirlo. Comprueba que la entidad esté autorizada.",
+      "note": "Consulta los registros del Banco de España.",
+      "foot": "Comprueba la entidad",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de pedir",
+      "steps": [
+        {
+          "t": "Busca la entidad",
+          "b": "En el registro oficial."
+        },
+        {
+          "t": "Lee las condiciones",
+          "b": "TAE y comisiones."
+        },
+        {
+          "t": "Desconfía de las prisas",
+          "b": "Y de las promesas."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No envíes [[más]]",
+      "body": "No pagues más para recuperar lo perdido. Guarda pruebas, avisa a tu banco y denuncia.",
+      "foot": "No caigas dos veces",
+      "kicker": "Si ya pagaste"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Un crédito que pide dinero primero es una estafa.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien necesite financiación.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

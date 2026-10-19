@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-020-reformas",
+  "label": "Reformas con presupuesto",
+  "accent": "green",
+  "caption": "Reformar sin que se dispare el presupuesto 🛠️ Cómo controlar el gasto.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#reformas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Reforma",
+      "title": "sin sustos",
+      "foot": "Controlar el presupuesto"
+    },
+    {
+      "t": "point",
+      "head": "Pide [[varios presupuestos]]",
+      "body": "Compara al menos tres, con el mismo alcance. Fíjate en qué incluye cada uno, no solo en el total.",
+      "foot": "Por escrito",
+      "kicker": "Lo primero"
+    },
+    {
+      "t": "cards",
+      "head": "En el presupuesto",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Desglose",
+          "b": "Materiales y mano de obra por separado."
+        },
+        {
+          "t": "Plazo",
+          "b": "Fechas de inicio y fin."
+        },
+        {
+          "t": "Forma de pago",
+          "b": "Y qué se paga por adelantado."
+        }
+      ],
+      "foot": "Qué comprobar"
+    },
+    {
+      "t": "point",
+      "head": "Cuenta con [[imprevistos]]",
+      "body": "En una reforma suelen aparecer problemas ocultos. Muchos recomiendan reservar un 10–15 % extra.",
+      "note": "Es una referencia general.",
+      "foot": "Guarda un margen",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Define lo que quieres",
+          "b": "Antes de pedir precios."
+        },
+        {
+          "t": "Comprueba licencias",
+          "b": "Si la obra las necesita."
+        },
+        {
+          "t": "No pagues todo por adelantado",
+          "b": "Paga por fases."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "El [[contrato]] protege",
+      "body": "Un contrato claro, con plazos y garantías, te permite reclamar si algo falla.",
+      "foot": "Guarda facturas",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una reforma bien planificada [[ahorra dinero]]",
+      "body": "Ten el presupuesto por escrito.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo antes de reformar.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

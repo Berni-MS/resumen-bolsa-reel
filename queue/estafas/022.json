@@ -1,0 +1,93 @@
+{
+  "id": "estafas-022-sorteo-falso",
+  "label": "Sorteo falso",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Has ganado un sorteo\": el premio que cuesta dinero.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#sorteo",
+    "#redessociales"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"has ganado un sorteo\"",
+      "foot": "Premios que cuestan dinero"
+    },
+    {
+      "t": "point",
+      "head": "Ganas un premio [[que no pediste]]",
+      "body": "Una cuenta falsa te dice que has ganado y pide pagar envío, tasas o datos para recibirlo.",
+      "foot": "No participaste",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Cuenta nueva",
+          "b": "Con pocos seguidores y logo copiado."
+        },
+        {
+          "t": "Te piden pagar",
+          "b": "Envío o impuestos."
+        },
+        {
+          "t": "Un enlace",
+          "b": "Para reclamar el premio."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Los premios [[no se pagan]]",
+      "body": "Si hay que pagar para recibir un premio, es una estafa. Mira la cuenta oficial de la marca: no te escribirá por privado.",
+      "note": "Comprueba la verificación de la cuenta.",
+      "foot": "Mira la cuenta oficial",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No contestes",
+          "b": "Ni pulses enlaces."
+        },
+        {
+          "t": "Comprueba la cuenta de la marca",
+          "b": "Y si hay un sorteo real."
+        },
+        {
+          "t": "Denuncia la cuenta",
+          "b": "Y bloquea."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Cambia [[las claves]]",
+      "body": "Cambia las contraseñas y avisa a tu banco si diste los datos de tu tarjeta.",
+      "foot": "Vigila tus cuentas",
+      "kicker": "Si diste tus datos"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Si no jugaste, no puedes ganar.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien use redes.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

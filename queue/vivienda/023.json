@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-023-vender-casa",
+  "label": "Vender tu casa",
+  "accent": "green",
+  "caption": "Vender tu casa: los impuestos y gastos que debes tener en cuenta 🏷️\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#vender"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Vender",
+      "title": "tu casa: lo que pagas",
+      "foot": "Impuestos y gastos"
+    },
+    {
+      "t": "point",
+      "head": "Vender también [[cuesta]]",
+      "body": "Además de recibir el precio, hay impuestos y gastos que descontar para saber cuánto te queda realmente.",
+      "foot": "Haz la cuenta antes",
+      "kicker": "Lo básico"
+    },
+    {
+      "t": "cards",
+      "head": "Qué suele haber",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Plusvalía municipal",
+          "b": "Impuesto del ayuntamiento."
+        },
+        {
+          "t": "IRPF por la ganancia",
+          "b": "Si vendes por más de lo que pagaste."
+        },
+        {
+          "t": "Cancelar la hipoteca",
+          "b": "Y sus comisiones."
+        }
+      ],
+      "foot": "Tres costes"
+    },
+    {
+      "t": "point",
+      "head": "Hay [[exenciones]]",
+      "body": "En algunos casos, como reinvertir en otra vivienda habitual o tener cierta edad, la ganancia puede estar exenta. Consulta tu caso.",
+      "note": "Pregunta a un asesor fiscal antes de vender.",
+      "foot": "Mira las condiciones",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de vender",
+      "steps": [
+        {
+          "t": "Pide el saldo de tu hipoteca",
+          "b": "Y el coste de cancelarla."
+        },
+        {
+          "t": "Reúne los documentos",
+          "b": "Escritura, certificado, recibos."
+        },
+        {
+          "t": "Calcula lo que te queda",
+          "b": "Después de todo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pon [[precio realista]]",
+      "body": "Una vivienda sobrevalorada tarda más en venderse. Compara con pisos parecidos de la zona.",
+      "foot": "El mercado decide",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Vender bien es [[saber cuánto te queda]]",
+      "body": "Calcula antes de poner el precio.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo si piensas vender.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

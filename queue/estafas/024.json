@@ -1,0 +1,93 @@
+{
+  "id": "estafas-024-proteger-cuentas",
+  "label": "Protege tus cuentas",
+  "accent": "red",
+  "caption": "Protege tus cuentas en 10 minutos 🔐 Contraseñas y verificación en dos pasos.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#contrasenas",
+    "#seguridad"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Protege",
+      "title": "tus cuentas en 10 minutos",
+      "foot": "Tres cambios que ayudan"
+    },
+    {
+      "t": "point",
+      "head": "Una contraseña [[distinta en cada sitio]]",
+      "body": "Si repites contraseña y se filtra en una web, pueden entrar en todas tus cuentas. Un gestor de contraseñas lo hace fácil.",
+      "foot": "Empieza por el correo y el banco",
+      "kicker": "Lo básico"
+    },
+    {
+      "t": "cards",
+      "head": "Tres cambios",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Verificación en dos pasos",
+          "b": "Un código extra al entrar."
+        },
+        {
+          "t": "Contraseñas largas",
+          "b": "Frases fáciles de recordar."
+        },
+        {
+          "t": "Avisos del banco",
+          "b": "Activa las notificaciones de cada pago."
+        }
+      ],
+      "foot": "Rápidos y útiles"
+    },
+    {
+      "t": "point",
+      "head": "Revisa [[tus movimientos]]",
+      "body": "Mira tu app del banco una vez por semana. Un cargo pequeño que no reconoces puede ser el principio de un fraude.",
+      "note": "Con las notificaciones lo ves al momento.",
+      "foot": "Detecta a tiempo",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Hazlo hoy",
+      "steps": [
+        {
+          "t": "Activa la verificación en dos pasos",
+          "b": "En correo y banco."
+        },
+        {
+          "t": "Cambia las contraseñas repetidas",
+          "b": "Una a una."
+        },
+        {
+          "t": "Activa los avisos de pago",
+          "b": "En tu app del banco."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Tu [[correo]] es la llave",
+      "body": "Quien controla tu correo puede restablecer casi todas tus cuentas. Es la más importante de proteger.",
+      "foot": "Protégelo primero",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Diez minutos de [[prevención]] valen más que una denuncia",
+      "body": "Hazlo hoy y compártelo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a tu familia.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

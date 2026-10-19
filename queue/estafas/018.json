@@ -1,0 +1,93 @@
+{
+  "id": "estafas-018-voz-clonada",
+  "label": "Voz clonada con IA",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 Una llamada con la voz de un familiar: puede ser inteligencia artificial.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#ia",
+    "#deepfake"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "la voz de tu familiar",
+      "foot": "Estafas con IA"
+    },
+    {
+      "t": "point",
+      "head": "La voz suena [[idéntica]]",
+      "body": "Con unos segundos de audio de redes, se puede imitar la voz de una persona. Te llaman diciendo que tiene un problema y necesita dinero.",
+      "foot": "Suena a tu familiar",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Urgencia",
+          "b": "Una emergencia que no admite espera."
+        },
+        {
+          "t": "Pago raro",
+          "b": "Transferencia, criptomonedas o tarjetas."
+        },
+        {
+          "t": "Pide secreto",
+          "b": "Que no se lo cuentes a nadie."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Una [[palabra clave]] en familia",
+      "body": "Acordad una palabra o pregunta que solo vosotros sepáis. Si la persona no la conoce, cuelga.",
+      "note": "Y llama tú al número de siempre.",
+      "foot": "Un código familiar",
+      "kicker": "La defensa"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Cuelga",
+          "b": "Y llama a su número de siempre."
+        },
+        {
+          "t": "Pregunta algo que solo sabéis",
+          "b": "O la palabra clave."
+        },
+        {
+          "t": "No envíes dinero",
+          "b": "Hasta confirmarlo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Cuida [[tu voz en redes]]",
+      "body": "Cuantos más audios y vídeos públicos, más material para imitarte. Revisa tu privacidad.",
+      "foot": "Menos exposición",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Una voz conocida no siempre es la persona.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Envíaselo a tus padres.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-024-mudanza",
+  "label": "Checklist de mudanza",
+  "accent": "green",
+  "caption": "Te mudas: lo que no puedes olvidar 📦 Gastos y trámites del cambio de casa.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#mudanza"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Mudanza",
+      "title": "gastos y trámites",
+      "foot": "Una lista para no olvidar nada"
+    },
+    {
+      "t": "point",
+      "head": "Cuenta [[los gastos]]",
+      "body": "Transporte, limpieza, pequeñas reparaciones, altas de suministros y muebles. Suma una cantidad para imprevistos.",
+      "foot": "Hazte un presupuesto",
+      "kicker": "Antes"
+    },
+    {
+      "t": "cards",
+      "head": "Trámites",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Suministros",
+          "b": "Luz, agua, gas e internet."
+        },
+        {
+          "t": "Empadronamiento",
+          "b": "En tu nuevo ayuntamiento."
+        },
+        {
+          "t": "Cambio de domicilio",
+          "b": "Banco, seguros, trabajo, DGT."
+        }
+      ],
+      "foot": "Cuanto antes"
+    },
+    {
+      "t": "point",
+      "head": "Revisa [[los contadores]]",
+      "body": "Haz fotos de los contadores el día de la entrada y de la salida para evitar discusiones por lecturas.",
+      "note": "Guarda las fotos.",
+      "foot": "Evita disputas",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Paso a paso",
+      "steps": [
+        {
+          "t": "Haz inventario del estado",
+          "b": "Con fotos de la casa."
+        },
+        {
+          "t": "Da de alta los suministros",
+          "b": "A tu nombre."
+        },
+        {
+          "t": "Avisa del cambio de dirección",
+          "b": "A todos."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Da de baja [[lo viejo]]",
+      "body": "Cancela los suministros de tu casa anterior para no pagar de más. Comprueba la fianza.",
+      "foot": "Cierra cuentas pendientes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una buena mudanza se [[planifica]]",
+      "body": "Con lista y presupuesto, todo sale mejor.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo antes de mudarte.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

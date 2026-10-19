@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-017-compartir-piso",
+  "label": "Compartir piso",
+  "accent": "green",
+  "caption": "Compartir piso sin líos de dinero 🛋️ Contrato, fianza y gastos.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#compartirpiso"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Piso",
+      "title": "compartido sin líos",
+      "foot": "Dinero y compañeros"
+    },
+    {
+      "t": "point",
+      "head": "Mira [[qué firmas]]",
+      "body": "Puede ser un contrato por toda la vivienda (con todos) o por una habitación. Las responsabilidades son distintas.",
+      "foot": "Léelo antes de firmar",
+      "kicker": "Lo primero"
+    },
+    {
+      "t": "cards",
+      "head": "Aclara por escrito",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Fianza",
+          "b": "Quién la pone y cómo se devuelve."
+        },
+        {
+          "t": "Suministros",
+          "b": "Quién los paga y a nombre de quién."
+        },
+        {
+          "t": "Salida",
+          "b": "Qué pasa si alguien se va antes."
+        }
+      ],
+      "foot": "Tres temas"
+    },
+    {
+      "t": "point",
+      "head": "En un contrato conjunto, [[respondéis todos]]",
+      "body": "Si uno no paga, el propietario puede reclamar a cualquiera de los inquilinos. Elige con quién compartes.",
+      "note": "Pregunta cómo se reparte la deuda.",
+      "foot": "La confianza importa",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Para llevaros bien",
+      "steps": [
+        {
+          "t": "Haced una hoja de gastos",
+          "b": "Compartida y actualizada."
+        },
+        {
+          "t": "Fijad una fecha de pago",
+          "b": "Y un método."
+        },
+        {
+          "t": "Guardad los justificantes",
+          "b": "De todo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Los [[suministros]] a tu nombre",
+      "body": "Si figuras tú como titular, la deuda es tuya. Pon la factura a nombre de quien se haga cargo.",
+      "foot": "Cuidado con las altas",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Compartir piso es [[compartir cuentas claras]]",
+      "body": "Un acuerdo por escrito evita discusiones.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Envíaselo a tus compañeros.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

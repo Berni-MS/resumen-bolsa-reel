@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-021-negociar-alquiler",
+  "label": "Negociar el alquiler",
+  "accent": "green",
+  "caption": "Cómo negociar el precio del alquiler 🤝 Con datos, no con prisas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#alquiler"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Negocia",
+      "title": "el alquiler",
+      "foot": "Con datos, no con prisas"
+    },
+    {
+      "t": "point",
+      "head": "Ve [[con datos]]",
+      "body": "Mira los precios de pisos parecidos en la zona. Si el que visitas está por encima, tienes un argumento.",
+      "foot": "Compara anuncios",
+      "kicker": "La base"
+    },
+    {
+      "t": "cards",
+      "head": "Qué puedes ofrecer",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Contrato largo",
+          "b": "Estabilidad para el propietario."
+        },
+        {
+          "t": "Pago por adelantado",
+          "b": "Solo si es seguro y por escrito."
+        },
+        {
+          "t": "Buen historial",
+          "b": "Nóminas y referencias."
+        }
+      ],
+      "foot": "Tres argumentos"
+    },
+    {
+      "t": "point",
+      "head": "No todo es el [[precio]]",
+      "body": "Puedes negociar quién paga qué, una pequeña reforma, un periodo de carencia o el mobiliario.",
+      "note": "Lo que se acuerde, por escrito.",
+      "foot": "Todo al contrato",
+      "kicker": "Otras opciones"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo hacerlo",
+      "steps": [
+        {
+          "t": "Conoce tu límite",
+          "b": "Cuánto puedes pagar."
+        },
+        {
+          "t": "Pregunta por la flexibilidad",
+          "b": "Sin presionar."
+        },
+        {
+          "t": "Cierra por escrito",
+          "b": "Todo lo acordado."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Sin [[prisa]]",
+      "body": "Quien negocia con calma suele conseguir mejores condiciones. Si no te cuadra, sigue buscando.",
+      "foot": "Tienes alternativas",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Negociar [[no es regatear]]",
+      "body": "Es llegar a un acuerdo que os sirva a los dos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo antes de ir a visitar pisos.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

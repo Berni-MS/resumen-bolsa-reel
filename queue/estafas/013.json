@@ -1,0 +1,92 @@
+{
+  "id": "estafas-013-correo-factura-falsa",
+  "label": "Correo con factura falsa",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Tu suscripción ha caducado\": el correo falso que roba tus datos.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#phishing"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"tu suscripción ha caducado\"",
+      "foot": "El correo falso"
+    },
+    {
+      "t": "point",
+      "head": "Un correo dice que [[tu pago ha fallado]]",
+      "body": "Parece de una plataforma que usas (streaming, almacenamiento, compras) y te pide actualizar tu tarjeta en un enlace.",
+      "foot": "Es phishing",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Remitente raro",
+          "b": "La dirección no es la oficial."
+        },
+        {
+          "t": "Amenaza de cancelación",
+          "b": "Y un plazo muy corto."
+        },
+        {
+          "t": "Enlace para pagar",
+          "b": "Que no lleva a la web real."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Entra [[por tu cuenta]]",
+      "body": "No uses el enlace del correo. Abre la app o escribe tú la dirección de la plataforma y mira si hay algún aviso.",
+      "note": "Si no hay aviso, el correo era falso.",
+      "foot": "Comprueba en la app oficial",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No pulses el enlace",
+          "b": "Ni abras adjuntos."
+        },
+        {
+          "t": "Entra desde la app oficial",
+          "b": "Y revisa tu cuenta."
+        },
+        {
+          "t": "Borra el correo",
+          "b": "Y márcalo como spam."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Cambia [[la contraseña]]",
+      "body": "Cámbiala en esa y en otras cuentas donde la repitas, y avisa a tu banco por si hay cargos.",
+      "foot": "No repitas contraseñas",
+      "kicker": "Si ya metiste tus datos"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Un correo urgente rara vez es de verdad.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con tu familia.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

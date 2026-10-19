@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-022-sube-la-cuota",
+  "label": "Si sube la cuota",
+  "accent": "green",
+  "caption": "Si te sube la cuota de la hipoteca 📈 Qué puedes hacer.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#euribor"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Sube",
+      "title": "la cuota de la hipoteca",
+      "foot": "Qué puedes hacer"
+    },
+    {
+      "t": "point",
+      "head": "Lo primero, [[calcula]]",
+      "body": "Mira cuánto sube exactamente y qué parte de tus ingresos supone. A veces el impacto es menor de lo que parece.",
+      "foot": "Con números",
+      "kicker": "Respira"
+    },
+    {
+      "t": "cards",
+      "head": "Opciones",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Hablar con tu banco",
+          "b": "Pedir un cambio de condiciones."
+        },
+        {
+          "t": "Cambiar a tipo fijo",
+          "b": "Si quieres estabilidad."
+        },
+        {
+          "t": "Alargar el plazo",
+          "b": "Bajas la cuota, pagas más intereses."
+        }
+      ],
+      "foot": "Tres vías"
+    },
+    {
+      "t": "point",
+      "head": "Si tienes [[problemas para pagar]]",
+      "body": "Habla cuanto antes con el banco. Existen medidas de protección para hogares vulnerables y códigos de buenas prácticas.",
+      "note": "Consulta las vigentes.",
+      "foot": "No esperes a un impago",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Plan de acción",
+      "steps": [
+        {
+          "t": "Revisa tu contrato",
+          "b": "Tipo, diferencial y revisiones."
+        },
+        {
+          "t": "Haz un presupuesto",
+          "b": "Dónde puedes recortar."
+        },
+        {
+          "t": "Pide ofertas",
+          "b": "Y compara el coste total."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Evita [[préstamos para pagar la cuota]]",
+      "body": "Endeudarte más suele empeorar el problema. Habla primero con tu banco.",
+      "foot": "Primero, el banco",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una cuota que sube [[no es el fin]]",
+      "body": "Hay opciones si actúas pronto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo por si lo necesitas.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

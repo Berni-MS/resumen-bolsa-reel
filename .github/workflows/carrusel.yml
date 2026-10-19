@@ -26,7 +26,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
       ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
@@ -118,39 +118,13 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER: "17841438528056370"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KIND: carrusel
           DRY: ${{ inputs.dry_run }}
         run: |
-          set -uo pipefail
-          node render-teaser.mjs out/01.jpg "$(cat out/series.txt 2>/dev/null || jq -r '.label // empty' item.json)" teaser.png
-          NAME="aviso-$(jq -r .id item.json | tr -c 'A-Za-z0-9\n_-' '-')-${GITHUB_RUN_ID}.png"
-          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
-          REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-          rm -rf site2 && git clone --depth 1 --branch gh-pages "$REMOTE" site2
-          which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
-          mkdir -p site2/historias && ffmpeg -y -loop 1 -framerate 30 -t 15 -i teaser.png -f lavfi -t 15 -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart teaser.mp4 || rm -f teaser.mp4
-          cp teaser.png "site2/historias/$NAME" && { [ -f teaser.mp4 ] && cp teaser.mp4 "site2/historias/${NAME%.png}.mp4" || true; } && touch site2/.nojekyll
-          ls -1t site2/historias/* | tail -n +61 | xargs -r rm -f
-          cd site2 && git add -A && git commit -q -m "Historia de aviso $NAME"
-          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
-          cd ..
-          URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/historias/$NAME"
-          for i in $(seq 1 40); do
-            CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true); echo "intento $i: HTTP $CODE"
-            [ "$CODE" = "200" ] && break; [ "$i" = "40" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
-          done
-          VIDEO_URL=""
-          if [ -f teaser.mp4 ]; then
-            for i in $(seq 1 40); do
-              CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "${URL%.png}.mp4" || true); echo "vídeo intento $i: HTTP $CODE"
-              [ "$CODE" = "200" ] && { VIDEO_URL="${URL%.png}.mp4"; break; }; sleep 15
-            done
-          fi
-          if [ "$DRY" = "true" ]; then echo "Prueba: historia generada, no publicada"; exit 0; fi
-          if [ -z "$IG_TOKEN" ]; then echo "::error::Falta IG_ACCESS_TOKEN"; exit 1; fi
-          # esperar a que Make haya publicado el carrusel
-          sleep 150
-          export IMAGE_URL="$URL" VIDEO_URL
-          bash tools/ig-story.sh
+          export COVER=out/01.jpg
+          export LABEL="$(cat out/series.txt 2>/dev/null || jq -r '.label // empty' item.json)"
+          bash tools/announce-story.sh
 
       - name: Avisar a Make si falla
         if: ${{ failure() && inputs.dry_run != 'true' }}

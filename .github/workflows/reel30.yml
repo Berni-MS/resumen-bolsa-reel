@@ -25,7 +25,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
     steps:
@@ -95,35 +95,27 @@ jobs:
           done
           echo "La URL no respondió a tiempo (¿está activado GitHub Pages?)"; exit 1
 
-      - name: Publicar también como historia
-        if: ${{ inputs.dry_run != 'true' }}
-        continue-on-error: true
-        env:
-          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER: "17841438528056370"
-          VIDEO_URL: ${{ steps.publish.outputs.url }}
-        run: |
-          if [ -z "$IG_TOKEN" ]; then echo "Sin IG_ACCESS_TOKEN: no se publica la historia."; exit 0; fi
-          IG_TOKEN=$(printf %s "$IG_TOKEN" | tr -d "[:space:]\"'")
-          case "$IG_TOKEN" in IG*) API="https://graph.instagram.com/v21.0";; *) API="https://graph.facebook.com/v21.0";; esac
-          RES=$(curl -sS -X POST "$API/$IG_USER/media" --data-urlencode "media_type=STORIES" --data-urlencode "video_url=$VIDEO_URL" --data-urlencode "access_token=$IG_TOKEN")
-          ID=$(echo "$RES" | jq -r '.id // empty')
-          if [ -z "$ID" ]; then echo "::error::No se creó el contenedor de la historia: $(echo "$RES" | jq -c '.error // .' | sed "s/$IG_TOKEN/***/g")"; exit 1; fi
-          for i in $(seq 1 30); do
-            ST=$(curl -sS "$API/$ID?fields=status_code&access_token=$IG_TOKEN" | jq -r '.status_code // "?"')
-            echo "estado: $ST"
-            [ "$ST" = "FINISHED" ] && break
-            [ "$ST" = "ERROR" ] && { echo "::error::Instagram rechazó el vídeo de la historia"; exit 1; }
-            sleep 10
-          done
-          OUT=$(curl -sS -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN"); echo "$OUT" | jq -e '.id' >/dev/null || { echo "::error::Fallo al publicar la historia: $(echo "$OUT" | jq -c '.error // .')"; exit 1; }; echo "Historia publicada: $(echo "$OUT" | jq -r .id)"
-
       - name: Avisar a Make
         if: ${{ inputs.dry_run != 'true' }}
         run: |
           jq -n --arg url "${{ steps.publish.outputs.url }}" --rawfile caption out/caption.txt --arg date "$(jq -r .date item.json)" --arg title "$(jq -r 'if .badge then "Un consejo para tu bolsillo" else "En 30 segundos" end' item.json)" \
             '{status:"ok", video_url:$url, caption:$caption, date:$date, title:$title}' \
           | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
+
+      - name: Historia de aviso del reel
+        if: ${{ always() && steps.publish.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KIND: reel
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          ffmpeg -y -loglevel error -i out/reel.mp4 -frames:v 1 cover.jpg
+          export COVER=cover.jpg
+          export LABEL="$(jq -r 'if .badge then "Un consejo para tu bolsillo" else "En 30 segundos" end' item.json)"
+          bash tools/announce-story.sh
 
       - name: Avisar a Make si falla
         if: ${{ failure() && inputs.dry_run != 'true' }}

@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-016-certificado-energetico",
+  "label": "Certificado energético",
+  "accent": "green",
+  "caption": "La etiqueta energética de tu casa ⚡ Qué es y cuánto afecta a tu factura.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#eficienciaenergetica"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "A–G",
+      "title": "la etiqueta de tu casa",
+      "foot": "Certificado energético"
+    },
+    {
+      "t": "point",
+      "head": "Una nota de la [[A a la G]]",
+      "body": "Indica cuánta energía consume una vivienda en condiciones normales. Cuanto más cerca de la A, menos gasta.",
+      "foot": "Es obligatorio al vender o alquilar",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué mirar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Letra",
+          "b": "De la A (mejor) a la G (peor)."
+        },
+        {
+          "t": "Consumo y emisiones",
+          "b": "Dos valores distintos."
+        },
+        {
+          "t": "Recomendaciones",
+          "b": "Mejoras posibles."
+        }
+      ],
+      "foot": "En el documento"
+    },
+    {
+      "t": "point",
+      "head": "Una letra peor [[puede costarte más]]",
+      "body": "Una vivienda poco eficiente suele gastar más en calefacción y refrigeración. Pregunta por las facturas del año.",
+      "note": "La etiqueta es orientativa; las facturas reales cuentan más.",
+      "foot": "Pide facturas",
+      "kicker": "El efecto"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de decidir",
+      "steps": [
+        {
+          "t": "Pide el certificado",
+          "b": "Debe mostrarse en el anuncio."
+        },
+        {
+          "t": "Pregunta por las facturas",
+          "b": "De luz y gas."
+        },
+        {
+          "t": "Mira ventanas y aislamiento",
+          "b": "Y orientación."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Mejorar [[puede tener ayudas]]",
+      "body": "Algunas reformas de eficiencia cuentan con ayudas o deducciones. Consulta las vigentes en tu comunidad.",
+      "foot": "Revisa las convocatorias",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una casa eficiente [[ahorra cada mes]]",
+      "body": "Y suele valer más al vender.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para visitar pisos.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

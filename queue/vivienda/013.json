@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-013-seguro-hogar",
+  "label": "Seguro de hogar",
+  "accent": "green",
+  "caption": "Seguro de hogar: lo que de verdad cubre 🏠 Y por qué no tienes que contratarlo con tu banco.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#seguro"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Seguro",
+      "title": "de hogar: qué cubre",
+      "foot": "Continente y contenido"
+    },
+    {
+      "t": "point",
+      "head": "Dos cosas distintas: [[continente y contenido]]",
+      "body": "El continente es el edificio (paredes, instalaciones). El contenido son tus cosas: muebles, ropa, electrónica.",
+      "foot": "Revisa qué incluye el tuyo",
+      "kicker": "Lo básico"
+    },
+    {
+      "t": "cards",
+      "head": "Coberturas habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Daños por agua",
+          "b": "Una de las incidencias más frecuentes."
+        },
+        {
+          "t": "Robo e incendio",
+          "b": "Con límites que debes mirar."
+        },
+        {
+          "t": "Responsabilidad civil",
+          "b": "Si causas daños a un vecino."
+        }
+      ],
+      "foot": "Lee los límites"
+    },
+    {
+      "t": "point",
+      "head": "No tienes que contratarlo [[con tu banco]]",
+      "body": "El banco puede pedirte un seguro, pero puedes contratarlo con otra aseguradora si ofrece garantías equivalentes. Compara precios.",
+      "note": "Si lo usas para bonificar el tipo, calcula si compensa.",
+      "foot": "Compara antes de aceptar",
+      "kicker": "Hipoteca"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo elegir",
+      "steps": [
+        {
+          "t": "Calcula el valor a asegurar",
+          "b": "Reconstruir tu casa, no su precio de venta."
+        },
+        {
+          "t": "Compara tres ofertas",
+          "b": "Con las mismas coberturas."
+        },
+        {
+          "t": "Mira las exclusiones",
+          "b": "Y las franquicias."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Asegurar de menos [[sale caro]]",
+      "body": "Si declaras un valor inferior al real, la aseguradora puede reducir la indemnización proporcionalmente.",
+      "foot": "Infraseguro",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Un seguro bien elegido [[ahorra disgustos]]",
+      "body": "Revisa el tuyo al renovar.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compáralo con tu póliza.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

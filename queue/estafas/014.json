@@ -1,0 +1,92 @@
+{
+  "id": "estafas-014-codigos-qr",
+  "label": "Códigos QR falsos",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 Cuidado con el código QR: puede llevarte a una web falsa.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#qr"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "el código QR falso",
+      "foot": "Quishing"
+    },
+    {
+      "t": "point",
+      "head": "Un QR pegado [[encima del original]]",
+      "body": "Se pegan códigos falsos en parquímetros, menús o carteles. Al escanearlos, te llevan a una web que roba tus datos de pago.",
+      "foot": "Se llama quishing",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde aparecen",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Parquímetros",
+          "b": "Un adhesivo sobre el original."
+        },
+        {
+          "t": "Cartas y correos",
+          "b": "Con un QR en lugar de un enlace."
+        },
+        {
+          "t": "Carteles",
+          "b": "En la calle o en locales."
+        }
+      ],
+      "foot": "Tres sitios"
+    },
+    {
+      "t": "point",
+      "head": "Mira [[la dirección]]",
+      "body": "Antes de entrar, comprueba que la dirección que te muestra el móvil es la oficial. Si no lo es, no sigas.",
+      "note": "Un QR no es más seguro que un enlace.",
+      "foot": "Verifica la URL",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Comprueba el adhesivo",
+          "b": "Si está pegado encima, desconfía."
+        },
+        {
+          "t": "Revisa la dirección",
+          "b": "Antes de abrirla."
+        },
+        {
+          "t": "Paga en la app oficial",
+          "b": "Del servicio."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Avisa al [[banco]]",
+      "body": "Bloquea la tarjeta y pide que revisen los cargos. Avisa al ayuntamiento o al establecimiento.",
+      "foot": "Avisa de la pegatina",
+      "kicker": "Si ya pagaste"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "No todo lo que se escanea es de fiar.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien conduzca.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

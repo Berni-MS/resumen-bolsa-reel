@@ -1,0 +1,93 @@
+{
+  "id": "estafas-017-tienda-falsa",
+  "label": "Tiendas online falsas",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 La tienda online \"demasiado barata\": cómo saber si es falsa.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#compraonline",
+    "#blackfriday"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ojo",
+      "title": "con la tienda demasiado barata",
+      "foot": "Tiendas online falsas"
+    },
+    {
+      "t": "point",
+      "head": "Un chollo [[imposible]]",
+      "body": "Una web copia una marca conocida y vende a precios muy bajos. Pagas y no recibes nada, o recibes algo falso.",
+      "foot": "Se disparan en rebajas",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Descuentos exagerados",
+          "b": "De más del 70 %."
+        },
+        {
+          "t": "Pago raro",
+          "b": "Solo transferencia o criptomonedas."
+        },
+        {
+          "t": "Sin datos de la empresa",
+          "b": "Ni dirección ni contacto reales."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Busca [[la empresa]]",
+      "body": "Mira la dirección web, los datos legales, las opiniones fuera de la propia tienda y cuánto tiempo lleva en internet.",
+      "note": "Una web nueva con precios bajos es sospechosa.",
+      "foot": "Investiga antes de pagar",
+      "kicker": "Cómo comprobar"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de comprar",
+      "steps": [
+        {
+          "t": "Comprueba la dirección",
+          "b": "Pequeñas diferencias engañan."
+        },
+        {
+          "t": "Paga con tarjeta",
+          "b": "O con un método con protección."
+        },
+        {
+          "t": "Guarda capturas y recibos",
+          "b": "De todo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Pide la [[devolución]]",
+      "body": "Contacta con tu banco para reclamar el cargo y denuncia. Cuanto antes lo hagas, mejor.",
+      "foot": "Tu banco puede ayudarte",
+      "kicker": "Si ya pagaste"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Si el precio parece imposible, probablemente lo es.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo antes del Black Friday.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

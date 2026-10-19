@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-018-comprar-en-pareja",
+  "label": "Comprar en pareja",
+  "accent": "green",
+  "caption": "Comprar casa en pareja 💑 Lo que conviene dejar claro antes de firmar.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#pareja"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Pareja",
+      "title": "y una casa en común",
+      "foot": "Lo que hay que hablar"
+    },
+    {
+      "t": "point",
+      "head": "Hablad del dinero [[antes de firmar]]",
+      "body": "Quién aporta cuánto, qué porcentaje es de cada uno y qué pasa si la relación termina. Es incómodo, pero necesario.",
+      "foot": "Cuanto antes, mejor",
+      "kicker": "La clave"
+    },
+    {
+      "t": "cards",
+      "head": "Temas a hablar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Aportaciones",
+          "b": "Entrada, gastos y cuotas de cada uno."
+        },
+        {
+          "t": "Titularidad",
+          "b": "Qué porcentaje es de cada uno."
+        },
+        {
+          "t": "Si se rompe",
+          "b": "Venta, compra de la parte o alquiler."
+        }
+      ],
+      "foot": "Tres temas"
+    },
+    {
+      "t": "point",
+      "head": "Si firmáis la hipoteca, [[respondéis los dos]]",
+      "body": "Ambos figuráis como deudores. Si uno deja de pagar, el banco puede reclamar al otro.",
+      "note": "Pregunta a un notario o abogado por la mejor fórmula.",
+      "foot": "La deuda es de los dos",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo organizarlo",
+      "steps": [
+        {
+          "t": "Anotad las aportaciones",
+          "b": "Quién puso qué."
+        },
+        {
+          "t": "Abrid una cuenta común",
+          "b": "Para cuota y gastos."
+        },
+        {
+          "t": "Dejad el acuerdo por escrito",
+          "b": "Con asesoramiento."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Documentar [[no es desconfiar]]",
+      "body": "Es una forma de cuidaros. Una conversación a tiempo evita conflictos más caros.",
+      "foot": "Con claridad se duerme mejor",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una casa en pareja se compra [[con cuentas claras]]",
+      "body": "Habladlo antes de que sea urgente.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Envíaselo a tu pareja.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

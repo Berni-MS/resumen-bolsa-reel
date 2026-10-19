@@ -1,0 +1,92 @@
+{
+  "id": "estafas-016-tarjetas-regalo",
+  "label": "Tarjetas regalo",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Cómprame una tarjeta regalo\": quien te lo pide te estafa.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#tarjetaregalo"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"cómprame una tarjeta regalo\"",
+      "foot": "Una petición que es estafa"
+    },
+    {
+      "t": "point",
+      "head": "Te piden [[el código de una tarjeta]]",
+      "body": "Alguien que dice ser tu jefe, un familiar o un organismo te pide comprar tarjetas regalo y enviarle los códigos.",
+      "foot": "Imposible de rastrear",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Una urgencia",
+          "b": "Y que no se lo cuentes a nadie."
+        },
+        {
+          "t": "Códigos por mensaje",
+          "b": "En vez de un pago normal."
+        },
+        {
+          "t": "Una autoridad",
+          "b": "Que parece tu jefe o un organismo."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Nadie legítimo [[cobra con tarjetas regalo]]",
+      "body": "Ni un jefe, ni un banco, ni Hacienda. Es una forma de cobrar sin rastro, y por eso la usan los estafadores.",
+      "note": "Es la señal más clara.",
+      "foot": "Una petición así es estafa",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No compres nada",
+          "b": "Ni envíes códigos."
+        },
+        {
+          "t": "Confirma con la persona",
+          "b": "Por otro medio."
+        },
+        {
+          "t": "Denuncia el mensaje",
+          "b": "Y bloquea."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Llama al [[emisor]]",
+      "body": "Contacta cuanto antes con la empresa de la tarjeta y con tu banco. Guarda los recibos y denuncia.",
+      "foot": "Cada hora cuenta",
+      "kicker": "Si ya enviaste códigos"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Ninguna autoridad cobra con tarjetas regalo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo en el trabajo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

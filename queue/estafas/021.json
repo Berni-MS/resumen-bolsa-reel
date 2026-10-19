@@ -1,0 +1,92 @@
+{
+  "id": "estafas-021-cajero-trampa",
+  "label": "Trampas en cajeros",
+  "accent": "red",
+  "caption": "Cajero automático: cómo detectar un cajero manipulado 🏧 Antes de meter la tarjeta.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#cajero"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Cajero",
+      "title": "cómo detectar uno manipulado",
+      "foot": "Antes de meter la tarjeta"
+    },
+    {
+      "t": "point",
+      "head": "Un aparato [[sobre la ranura]]",
+      "body": "Los estafadores colocan lectores o cámaras pequeñas para copiar tu tarjeta y ver tu PIN.",
+      "foot": "Es difícil de ver",
+      "kicker": "La trampa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Piezas sueltas",
+          "b": "Una ranura que se mueve o sobresale."
+        },
+        {
+          "t": "Teclado diferente",
+          "b": "Más grueso o distinto del resto."
+        },
+        {
+          "t": "Cámaras o espejos",
+          "b": "Cerca del teclado."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Tapa [[siempre]] el teclado",
+      "body": "Cubre con la mano al teclear el PIN. Es la defensa más simple contra cámaras ocultas.",
+      "note": "Y usa cajeros dentro de oficinas.",
+      "foot": "Una mano, un PIN seguro",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Tira de la ranura",
+          "b": "Si se mueve, no lo uses."
+        },
+        {
+          "t": "Prefiere cajeros de sucursal",
+          "b": "Mejor vigilados."
+        },
+        {
+          "t": "Revisa tus movimientos",
+          "b": "Con la app."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Si un [[extraño]] te ayuda",
+      "body": "Nadie debe ayudarte con el cajero. Si te piden ayuda o te la ofrecen, cancela la operación.",
+      "foot": "Cancela y avisa",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Un minuto de atención ahorra un buen susto.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con tus padres.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

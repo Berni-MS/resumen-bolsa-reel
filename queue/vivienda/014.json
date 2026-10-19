@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-014-gastos-de-mantener",
+  "label": "Gastos de mantener una casa",
+  "accent": "green",
+  "caption": "Lo que cuesta mantener una casa 🔧 Más allá de la cuota o el alquiler.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#gastos"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Casa",
+      "title": "lo que cuesta mantenerla",
+      "foot": "Gastos que se olvidan"
+    },
+    {
+      "t": "point",
+      "head": "La cuota no es [[el único gasto]]",
+      "body": "Una vivienda en propiedad tiene gastos recurrentes que hay que sumar a la hipoteca.",
+      "foot": "Hazte un presupuesto",
+      "kicker": "Cuenta con ello"
+    },
+    {
+      "t": "cards",
+      "head": "Gastos habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "IBI y comunidad",
+          "b": "Recibos fijos todos los años."
+        },
+        {
+          "t": "Seguro y suministros",
+          "b": "Luz, agua, gas, internet."
+        },
+        {
+          "t": "Mantenimiento",
+          "b": "Caldera, humedades, pintura."
+        }
+      ],
+      "foot": "Todos los años"
+    },
+    {
+      "t": "point",
+      "head": "Aparta [[una cantidad al año]]",
+      "body": "Mucha gente recomienda reservar alrededor del 1 % del valor de la vivienda cada año para reparaciones.",
+      "note": "Es una referencia, no una norma.",
+      "foot": "Un colchón para la casa",
+      "kicker": "Una pauta"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo organizarte",
+      "steps": [
+        {
+          "t": "Suma tus gastos fijos",
+          "b": "Al mes y al año."
+        },
+        {
+          "t": "Abre una cuenta para imprevistos",
+          "b": "Solo para la casa."
+        },
+        {
+          "t": "Revisa los recibos",
+          "b": "Y compara tarifas."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Las [[derramas]]",
+      "body": "La comunidad puede aprobar pagos extra por obras. Pregunta por las previstas antes de comprar.",
+      "foot": "Pídelo en las actas",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una casa [[se paga todos los meses]]",
+      "body": "Cuenta todos los gastos antes de decidir.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para tu presupuesto.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

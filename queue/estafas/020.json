@@ -1,0 +1,93 @@
+{
+  "id": "estafas-020-multa-falsa",
+  "label": "Multa falsa",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Tienes una multa pendiente\": el mensaje falso de tráfico.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#multa",
+    "#dgt"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"tienes una multa pendiente\"",
+      "foot": "La multa falsa"
+    },
+    {
+      "t": "point",
+      "head": "Una multa [[con enlace de pago]]",
+      "body": "Un mensaje o un correo dice que tienes una sanción de tráfico y te da un enlace para pagarla rápido con descuento.",
+      "foot": "Parece oficial",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Importe y urgencia",
+          "b": "Con un descuento por pagar ya."
+        },
+        {
+          "t": "Un enlace",
+          "b": "En vez de un trámite oficial."
+        },
+        {
+          "t": "Datos genéricos",
+          "b": "Sin matrícula ni expediente."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Las multas [[se notifican por canales oficiales]]",
+      "body": "Consulta tus notificaciones en la sede electrónica oficial o en tu buzón de notificaciones. No pagues desde un enlace.",
+      "note": "Mira si hay matrícula y fecha.",
+      "foot": "Entra tú a la web oficial",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No pulses el enlace",
+          "b": "Ni pagues."
+        },
+        {
+          "t": "Comprueba en la sede oficial",
+          "b": "Si tienes alguna notificación."
+        },
+        {
+          "t": "Borra el mensaje",
+          "b": "Y bloquea."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Llama al [[banco]]",
+      "body": "Bloquea la tarjeta, pide revisar el cargo y denuncia. Cambia tus claves si las diste.",
+      "foot": "Rapidez",
+      "kicker": "Si ya pagaste"
+    },
+    {
+      "t": "close",
+      "head": "[[Para y pregunta]] antes de pagar",
+      "body": "Una multa de verdad no llega con un enlace de pago.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien tenga coche.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}
