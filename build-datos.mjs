@@ -66,6 +66,19 @@ async function dinero() {
   console.log('Dinero hoy:', rows.map(r => `${r.name} ${r.value} ${pct(r.ch)}`).join(' | '));
 }
 
-if (kind === 'luz') await luz();
+// «Palabra del día»: un término por día laborable, en orden (sin estado: depende de la fecha). Lun-vie desde el 19/10/2026.
+async function palabra() {
+  const list = JSON.parse(fs.readFileSync('data/palabras.json', 'utf8'));
+  const [y, m, d] = today.split('-').map(Number);
+  const days = Math.round((Date.UTC(y, m - 1, d) - Date.UTC(2026, 9, 19)) / 86400000);
+  const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay(); // 1=lun … 5=vie
+  const n = Math.floor(days / 7) * 5 + Math.min(Math.max(dow - 1, 0), 4);
+  const w = list[((n % list.length) + list.length) % list.length];
+  fs.writeFileSync(out, JSON.stringify({ kind: 'palabra', date: today, n: n + 1, total: list.length, ...w }, null, 2));
+  console.log(`Palabra ${today}: ${w.term}`);
+}
+
+if (kind === 'palabra') await palabra();
+else if (kind === 'luz') await luz();
 else if (kind === 'dinero') await dinero();
-else throw new Error('kind debe ser luz o dinero');
+else throw new Error('kind debe ser luz, dinero o palabra');

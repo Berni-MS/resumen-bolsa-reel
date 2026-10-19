@@ -1,9 +1,9 @@
-name: Historia de datos (luz y dinero)
+name: Historia de datos (luz, mercados y palabra del día)
 on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "luz (precio de la luz de mañana) o dinero (Los mercados hoy)"
+        description: "luz (precio de la luz de mañana), dinero (Los mercados hoy) o palabra (Palabra del día)"
         required: true
         default: luz
       date:

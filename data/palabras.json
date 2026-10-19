@@ -1,0 +1,374 @@
+[
+ {
+  "term": "TAE",
+  "cat": "Ahorro y crédito",
+  "def": "El coste (o la rentabilidad) real de un producto en un año, con intereses y comisiones incluidos.",
+  "ex": "Dos préstamos con el mismo interés pueden tener distinta TAE si uno cobra más comisiones."
+ },
+ {
+  "term": "TIN",
+  "cat": "Ahorro y crédito",
+  "def": "El interés puro de un producto, sin contar comisiones ni gastos.",
+  "ex": "Un TIN bajo no garantiza que sea barato: compara siempre con la TAE."
+ },
+ {
+  "term": "Interés compuesto",
+  "cat": "Ahorro",
+  "def": "Los intereses que ganas pasan a generar nuevos intereses con el tiempo.",
+  "ex": "Imagina 1.000 € al 5 % anual: el segundo año el 5 % ya se calcula sobre 1.050 €."
+ },
+ {
+  "term": "Fondo de emergencia",
+  "cat": "Ahorro",
+  "def": "Dinero guardado y fácil de sacar para imprevistos, como una avería o quedarte sin ingresos.",
+  "ex": "Mucha gente se marca como meta tener varios meses de gastos básicos."
+ },
+ {
+  "term": "Gastos hormiga",
+  "cat": "Ahorro",
+  "def": "Pequeños gastos diarios que casi no notas pero que suman mucho al mes.",
+  "ex": "Imagina un café de 2 € al día: son unos 60 € al mes."
+ },
+ {
+  "term": "Cuenta remunerada",
+  "cat": "Banca",
+  "def": "Cuenta que paga intereses por el dinero que tienes dentro.",
+  "ex": "Antes de abrir una, mira la TAE y si exige domiciliar la nómina o gastar con tarjeta."
+ },
+ {
+  "term": "Depósito a plazo",
+  "cat": "Ahorro",
+  "def": "Dejas tu dinero un tiempo fijo y el banco te paga un interés pactado.",
+  "ex": "Si sacas el dinero antes de la fecha, puedes perder parte de los intereses."
+ },
+ {
+  "term": "Comisión de mantenimiento",
+  "cat": "Banca",
+  "def": "Lo que algunos bancos cobran por tener una cuenta o una tarjeta.",
+  "ex": "Imagina 5 € al mes: son 60 € al año por algo que quizá puedes evitar."
+ },
+ {
+  "term": "Descubierto",
+  "cat": "Banca",
+  "def": "Gastar más dinero del que tienes en la cuenta; el banco cobra por ello.",
+  "ex": "Suele salir caro: pregunta a tu banco cuánto cobraría antes de que te pase."
+ },
+ {
+  "term": "Domiciliación",
+  "cat": "Banca",
+  "def": "Orden para que un recibo se pague solo desde tu cuenta cada mes.",
+  "ex": "Revisa tus domiciliaciones: a veces siguen cobrando algo que ya no usas."
+ },
+ {
+  "term": "Presupuesto",
+  "cat": "Organización",
+  "def": "Plan de cuánto ingresas, cuánto gastas y cuánto ahorras cada mes.",
+  "ex": "Imagina que cobras 1.500 €: decides antes de gastar cuánto va a cada cosa."
+ },
+ {
+  "term": "Tasa de ahorro",
+  "cat": "Ahorro",
+  "def": "El porcentaje de tus ingresos que consigues guardar.",
+  "ex": "Si ingresas 1.500 € y ahorras 150 €, tu tasa de ahorro es del 10 %."
+ },
+ {
+  "term": "Patrimonio neto",
+  "cat": "Organización",
+  "def": "Lo que tienes (ahorros, bienes) menos lo que debes.",
+  "ex": "Imagina 20.000 € en ahorros y bienes y 5.000 € de deudas: tu patrimonio neto es de 15.000 €."
+ },
+ {
+  "term": "Liquidez",
+  "cat": "Ahorro",
+  "def": "Lo fácil y rápido que es convertir algo en dinero sin perder valor.",
+  "ex": "El dinero de tu cuenta es muy líquido; una vivienda, mucho menos."
+ },
+ {
+  "term": "Inflación",
+  "cat": "Economía",
+  "def": "La subida general de precios con el tiempo: con el mismo dinero compras menos.",
+  "ex": "Si todo sube un 3 %, lo que costaba 100 € pasa a costar 103 €."
+ },
+ {
+  "term": "Poder adquisitivo",
+  "cat": "Economía",
+  "def": "Lo que puedes comprar con tu dinero.",
+  "ex": "Si tu sueldo sube un 2 % y los precios un 3 %, tu poder adquisitivo baja."
+ },
+ {
+  "term": "Euríbor",
+  "cat": "Hipotecas",
+  "def": "Índice de referencia al que se ligan muchas hipotecas variables.",
+  "ex": "Si el Euríbor sube, la cuota de una hipoteca variable puede subir al revisarse."
+ },
+ {
+  "term": "Diferencial",
+  "cat": "Hipotecas",
+  "def": "Lo que el banco suma al Euríbor en una hipoteca variable.",
+  "ex": "Imagina Euríbor 2 % + diferencial 1 %: pagas un interés del 3 %."
+ },
+ {
+  "term": "Amortizar",
+  "cat": "Hipotecas",
+  "def": "Devolver parte (o todo) de un préstamo antes de lo previsto.",
+  "ex": "Una amortización anticipada puede reducir tu cuota o el tiempo que te queda."
+ },
+ {
+  "term": "Hipoteca variable",
+  "cat": "Hipotecas",
+  "def": "Hipoteca cuyo interés cambia al revisarse, según el índice pactado.",
+  "ex": "Tu cuota puede subir o bajar en cada revisión."
+ },
+ {
+  "term": "Entrada",
+  "cat": "Hipotecas",
+  "def": "La parte del precio de la casa que pones tú de tu bolsillo.",
+  "ex": "Imagina una casa de 200.000 € y una entrada del 20 %: aportas 40.000 €."
+ },
+ {
+  "term": "Tasación",
+  "cat": "Hipotecas",
+  "def": "Valoración oficial de una vivienda que pide el banco para darte la hipoteca.",
+  "ex": "El banco suele prestar un porcentaje de la tasación, no del precio pagado."
+ },
+ {
+  "term": "Fianza",
+  "cat": "Alquiler",
+  "def": "Dinero que dejas al propietario al alquilar y que debe devolverte al irte, si todo está bien.",
+  "ex": "Guarda el contrato y las fotos del estado de la vivienda al entrar."
+ },
+ {
+  "term": "Salario bruto",
+  "cat": "Nómina",
+  "def": "Lo que cobras antes de descuentos.",
+  "ex": "Es la cifra que suele aparecer en una oferta de empleo."
+ },
+ {
+  "term": "Salario neto",
+  "cat": "Nómina",
+  "def": "Lo que te llega a la cuenta después de descuentos.",
+  "ex": "Es lo que de verdad puedes gastar o ahorrar cada mes."
+ },
+ {
+  "term": "Retención del IRPF",
+  "cat": "Impuestos",
+  "def": "Parte de tu sueldo que tu empresa adelanta a Hacienda cada mes.",
+  "ex": "Por eso en la nómina cobras menos que el salario bruto."
+ },
+ {
+  "term": "Paga extra",
+  "cat": "Nómina",
+  "def": "Pago adicional (verano, Navidad) que puede cobrarse aparte o repartido en los 12 meses.",
+  "ex": "Mira en tu contrato si tus pagas son prorrateadas."
+ },
+ {
+  "term": "Finiquito",
+  "cat": "Trabajo",
+  "def": "Liquidación de lo que te deben al terminar un contrato.",
+  "ex": "Incluye, por ejemplo, el salario pendiente y las vacaciones no disfrutadas."
+ },
+ {
+  "term": "IVA",
+  "cat": "Impuestos",
+  "def": "Impuesto que pagas al comprar casi cualquier producto o servicio; ya va en el precio final.",
+  "ex": "Cuando pagas, el precio que ves ya incluye el IVA."
+ },
+ {
+  "term": "Base imponible",
+  "cat": "Impuestos",
+  "def": "La cantidad sobre la que se calcula un impuesto.",
+  "ex": "No es lo mismo lo que ingresas que la cantidad sobre la que se aplica el impuesto."
+ },
+ {
+  "term": "Deducción",
+  "cat": "Impuestos",
+  "def": "Cantidad que se resta directamente de lo que pagas de impuestos.",
+  "ex": "Reduce lo que pagas euro a euro, a diferencia de otros ajustes."
+ },
+ {
+  "term": "Prima",
+  "cat": "Seguros",
+  "def": "Lo que pagas por tener un seguro.",
+  "ex": "Se paga una vez al año o por cuotas, uses o no el seguro."
+ },
+ {
+  "term": "Póliza",
+  "cat": "Seguros",
+  "def": "El contrato de tu seguro, con lo que cubre y lo que no.",
+  "ex": "Leer qué excluye te evita sorpresas cuando haces un parte."
+ },
+ {
+  "term": "Franquicia",
+  "cat": "Seguros",
+  "def": "Parte del daño que pagas tú antes de que el seguro cubra el resto.",
+  "ex": "Imagina una franquicia de 300 €: esos primeros 300 € los pagas tú."
+ },
+ {
+  "term": "Carencia",
+  "cat": "Seguros",
+  "def": "Tiempo desde que contratas un seguro hasta que ciertas coberturas empiezan a valer.",
+  "ex": "Mira si tu seguro la tiene antes de necesitarlo."
+ },
+ {
+  "term": "Tarjeta de crédito",
+  "cat": "Banca",
+  "def": "Gastas ahora y pagas después; si aplazas, se cobran intereses.",
+  "ex": "Pagada entera a fin de mes, no cuesta intereses; aplazada, puede salir cara."
+ },
+ {
+  "term": "Tarjeta revolving",
+  "cat": "Banca",
+  "def": "Tarjeta que aplaza lo gastado en cuotas con un interés muy alto.",
+  "ex": "Si solo pagas la cuota mínima, la deuda puede tardar años en bajar."
+ },
+ {
+  "term": "Aval",
+  "cat": "Crédito",
+  "def": "Garantía de que otra persona o un bien responderá si no pagas.",
+  "ex": "Si avalas a alguien, puedes tener que pagar tú su deuda."
+ },
+ {
+  "term": "Préstamo personal",
+  "cat": "Crédito",
+  "def": "Dinero que te prestan para lo que necesites y que devuelves en cuotas con intereses.",
+  "ex": "Compara TAE y comisiones, no solo la cuota mensual."
+ },
+ {
+  "term": "Capital pendiente",
+  "cat": "Crédito",
+  "def": "Lo que todavía debes de un préstamo, sin contar los intereses futuros.",
+  "ex": "Baja con cada cuota, aunque al principio baja despacio."
+ },
+ {
+  "term": "Acción",
+  "cat": "Bolsa",
+  "def": "Una pequeña parte de una empresa.",
+  "ex": "Quien tiene acciones es dueño de un trocito de la empresa."
+ },
+ {
+  "term": "Dividendo",
+  "cat": "Bolsa",
+  "def": "Parte del beneficio que una empresa reparte entre sus accionistas.",
+  "ex": "No todas las empresas lo reparten, ni es seguro que lo mantengan."
+ },
+ {
+  "term": "ETF",
+  "cat": "Bolsa",
+  "def": "Fondo que cotiza en bolsa y suele replicar un índice.",
+  "ex": "Con una sola compra tienes un trocito de muchas empresas."
+ },
+ {
+  "term": "Fondo indexado",
+  "cat": "Bolsa",
+  "def": "Fondo que intenta copiar un índice, como el S&P 500.",
+  "ex": "Suele tener comisiones más bajas que un fondo gestionado."
+ },
+ {
+  "term": "Diversificar",
+  "cat": "Bolsa",
+  "def": "Repartir el dinero entre distintos activos para no depender de uno solo.",
+  "ex": "Si uno cae, el resto puede amortiguar el golpe."
+ },
+ {
+  "term": "Volatilidad",
+  "cat": "Bolsa",
+  "def": "Cuánto suben y bajan los precios de un activo.",
+  "ex": "Un activo muy volátil puede subir mucho, pero también caer mucho."
+ },
+ {
+  "term": "Riesgo",
+  "cat": "Bolsa",
+  "def": "La posibilidad de que el resultado sea distinto del que esperas, incluida la pérdida.",
+  "ex": "A más rentabilidad posible, normalmente más riesgo."
+ },
+ {
+  "term": "Rentabilidad",
+  "cat": "Bolsa",
+  "def": "Lo que gana o pierde una inversión, normalmente en porcentaje.",
+  "ex": "Si pones 1.000 € y pasan a valer 1.050 €, la rentabilidad es del 5 %."
+ },
+ {
+  "term": "Horizonte temporal",
+  "cat": "Bolsa",
+  "def": "Tiempo que piensas mantener una inversión.",
+  "ex": "No es lo mismo necesitar el dinero en 1 año que en 20."
+ },
+ {
+  "term": "Aportaciones periódicas",
+  "cat": "Bolsa",
+  "def": "Invertir una cantidad fija cada cierto tiempo, en vez de todo de golpe.",
+  "ex": "Imagina 100 € al mes: compras más barato unos meses y más caro otros."
+ },
+ {
+  "term": "Comisión de gestión",
+  "cat": "Bolsa",
+  "def": "Lo que cobra un fondo cada año por gestionar tu dinero.",
+  "ex": "Una diferencia pequeña en comisiones se nota con los años."
+ },
+ {
+  "term": "Bono",
+  "cat": "Bolsa",
+  "def": "Deuda que emite un Estado o una empresa y que paga intereses.",
+  "ex": "Prestas dinero y te lo devuelven, con intereses, en una fecha pactada."
+ },
+ {
+  "term": "Mercado bajista",
+  "cat": "Bolsa",
+  "def": "Periodo de caídas prolongadas en los precios.",
+  "ex": "Los mercados han pasado por varios y se han recuperado, pero no hay garantías."
+ },
+ {
+  "term": "Coste de oportunidad",
+  "cat": "Economía",
+  "def": "Lo que dejas de ganar por elegir una opción en lugar de otra.",
+  "ex": "Gastar 100 € hoy es no tenerlos ahorrados para otra cosa."
+ },
+ {
+  "term": "Gastos fijos",
+  "cat": "Organización",
+  "def": "Los que se repiten cada mes con un importe parecido.",
+  "ex": "Alquiler, luz y suscripciones: son los primeros que conviene revisar."
+ },
+ {
+  "term": "Gastos variables",
+  "cat": "Organización",
+  "def": "Los que cambian de un mes a otro.",
+  "ex": "Ocio o compras: son los que más fácil se ajustan."
+ },
+ {
+  "term": "Meta de ahorro",
+  "cat": "Ahorro",
+  "def": "Un objetivo con cantidad y fecha para tu dinero.",
+  "ex": "Imagina 1.200 € en un año: son 100 € al mes."
+ },
+ {
+  "term": "Regla 50/30/20",
+  "cat": "Organización",
+  "def": "Referencia para repartir ingresos: 50 % necesidades, 30 % deseos, 20 % ahorro.",
+  "ex": "Es una guía de partida: cada persona la ajusta a su situación."
+ },
+ {
+  "term": "Plan de pensiones",
+  "cat": "Ahorro",
+  "def": "Producto para ahorrar pensando en la jubilación.",
+  "ex": "Mira siempre sus comisiones y las condiciones para rescatar el dinero."
+ },
+ {
+  "term": "Fondo de garantía de depósitos",
+  "cat": "Banca",
+  "def": "Protección que cubre tus depósitos si un banco quiebra, hasta un límite.",
+  "ex": "Consulta el límite vigente: se aplica por persona y por entidad."
+ },
+ {
+  "term": "Suscripción",
+  "cat": "Organización",
+  "def": "Pago periódico por un servicio, que se renueva solo.",
+  "ex": "Revisa las tuyas: quizá pagas algo que no usas."
+ },
+ {
+  "term": "Falso banco",
+  "cat": "Seguridad",
+  "def": "Mensaje o llamada de alguien que se hace pasar por tu banco para que le des tus claves.",
+  "ex": "Tu banco no te pide tus claves completas por teléfono ni por SMS."
+ }
+]

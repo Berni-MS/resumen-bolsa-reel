@@ -1,4 +1,4 @@
-// Historias de datos (PNG 1080x1920): luz de mañana y «Los mercados hoy».
+// Historias de datos (PNG 1080x1920): luz de mañana, «Los mercados hoy» y «Palabra del día».
 // Uso: node render-datos.mjs <datos.json> <salida.png>
 import fs from 'node:fs';
 import { storySeconds } from './story-dur.mjs';
@@ -64,6 +64,15 @@ ${m.before != null ? `<div style="background:${CARD};border-radius:28px;padding:
 <div style="background:${CARD};border-radius:28px;padding:${S(26)} ${S(38)};font-size:${S(42)};font-weight:700;line-height:1.3">Lo que hace un año costaba 100 €, hoy cuesta <span style="color:${item.annual > 0 ? RED : GREEN}">${esc(nf(hundred, 2))} €</span></div>
 <div style="font-size:${S(34)};font-weight:700;color:${MUTED}">Cuánto ha subido cada cosa en un año</div>${rows}`;
   footer = 'Tasa anual del IPC, base 2025 · Fuente: INE · En rojo, lo que sube más que la media';
+} else if (item.kind === 'palabra') {
+  header = 'Palabra del día';
+  const size = item.term.length > 18 ? 130 : item.term.length > 12 ? 170 : 230;
+  body = `<div style="align-self:flex-start;background:${GREEN};color:${INK};border-radius:999px;padding:${S(8)} ${S(30)};font-size:${S(38)};font-weight:700">${esc(item.cat)}</div>
+<div class="d" style="font-size:${S(size)};line-height:1;color:${GREEN}">${esc(item.term)}</div>
+<div style="background:${CARD};border-radius:28px;padding:${S(34)} ${S(40)}"><div style="font-size:${S(32)};font-weight:700;color:${MUTED};margin-bottom:${S(8)}">En una frase</div><div style="font-size:${S(56)};line-height:1.25;font-weight:700">${esc(item.def)}</div></div>
+<div style="background:${CARD};border-radius:28px;padding:${S(34)} ${S(40)}"><div style="font-size:${S(32)};font-weight:700;color:${MUTED};margin-bottom:${S(8)}">Para entenderlo</div><div style="font-size:${S(46)};line-height:1.3;font-weight:500;color:${SOFT}">${esc(item.ex)}</div></div>
+<div style="font-size:${S(36)};font-weight:700;color:${MUTED}">Guárdala por si te la encuentras 💾</div>`;
+  footer = 'Contenido educativo · Ejemplos con cifras redondas · No es asesoramiento financiero';
 } else if (item.kind === 'calc') {
   header = 'Calculadora de la semana';
   const rows = item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:${S(24)} ${S(38)}"><div style="font-size:${S(36)};font-weight:700;color:${MUTED}">${esc(r.a)}</div><div class="d" style="font-size:${S(100)};line-height:1.05;color:${item.bad ? RED : GREEN}">${esc(r.b)}</div><div style="font-size:${S(32)};color:${SOFT}">${esc(r.c)}</div></div>`).join('');
