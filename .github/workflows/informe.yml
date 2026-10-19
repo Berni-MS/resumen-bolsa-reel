@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       data_b64:
-        description: "Publicaciones recientes de Instagram (JSON en base64) enviadas por Make"
-        required: true
+        description: "Opcional: publicaciones (JSON en base64). Si se omite, el informe las descarga de Instagram con sus métricas"
+        required: false
 
 permissions:
   contents: write
@@ -24,10 +24,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Generar informe
+      - name: Descargar métricas de Instagram
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
         run: |
-          printf '%s' "${{ inputs.data_b64 }}" | base64 -d > datos.json
-          node build-informe.mjs datos.json informe.html
+          if node tools/ig-metrics.mjs datos.json; then echo "Métricas descargadas"; else
+            echo "::warning::No se pudieron descargar las métricas; se usan los datos enviados por Make"
+            printf '%s' "${{ inputs.data_b64 }}" | base64 -d > datos.json
+          fi
+      - name: Generar informe
+        run: node build-informe.mjs datos.json informe.html
       - name: Publicar en GitHub Pages
         run: |
           set -euo pipefail
