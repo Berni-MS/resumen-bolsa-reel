@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos), ahorro (ahorro y presupuesto), vida (vida cotidiana), euros (1.000 € hace N años), calendario (agenda de la semana) o semana (la semana en datos)"
+        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos), ahorro (ahorro y presupuesto), vida (vida cotidiana), vivienda (hipoteca y alquiler), estafas (alerta estafa), renta (campaña de la Renta; solo en temporada), euros (1.000 € hace N años), calendario (agenda de la semana) o semana (la semana en datos)"
         required: true
         default: edu
       index:
@@ -43,6 +43,7 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Elegir carrusel de la semana
+        id: select
         run: |
           if [ "${{ inputs.kind }}" = "euros" ]; then
             node build-euros.mjs item.json "${{ inputs.index }}"
@@ -55,9 +56,11 @@ jobs:
           fi
 
       - name: Generar diapositivas
+        if: ${{ steps.select.outputs.skip != 'true' }}
         run: CAROUSEL_KIND="${{ inputs.kind }}" node render-carousel.mjs item.json out
 
       - name: Publicar imágenes en GitHub Pages
+        if: ${{ steps.select.outputs.skip != 'true' }}
         id: publish
         run: |
           set -euo pipefail
@@ -85,6 +88,7 @@ jobs:
           echo "base=$BASE" >> "$GITHUB_OUTPUT"
 
       - name: Esperar a que las imágenes estén disponibles
+        if: ${{ steps.select.outputs.skip != 'true' }}
         run: |
           BASE="${{ steps.publish.outputs.base }}"
           for f in out/*.jpg; do
@@ -99,7 +103,7 @@ jobs:
           done
 
       - name: Avisar a Make
-        if: ${{ inputs.dry_run != 'true' }}
+        if: ${{ inputs.dry_run != 'true' && steps.select.outputs.skip != 'true' }}
         run: |
           N=$(ls out/*.jpg | wc -l)
           if [ "$N" != "7" ]; then echo "::error::El carrusel tiene $N diapositivas y Instagram necesita exactamente 7: no se publica"; exit 1; fi

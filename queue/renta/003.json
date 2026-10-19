@@ -1,0 +1,91 @@
+{
+  "id": "renta-003-borrador",
+  "label": "El borrador",
+  "accent": "green",
+  "caption": "Renta: qué hacer con el borrador 📝 No lo confirmes sin revisar.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#irpf",
+    "#hacienda",
+    "#finanzaspersonales"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Borrador",
+      "title": "de la Renta",
+      "foot": "Revísalo antes de confirmar"
+    },
+    {
+      "t": "point",
+      "head": "La Agencia te lo [[prepara]]",
+      "body": "Con los datos que tiene sobre ti, la Agencia Tributaria elabora una propuesta de declaración. Tú decides si la confirmas o la modificas.",
+      "foot": "No es definitivo",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Cómo acceder",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Cl@ve",
+          "b": "La forma más habitual."
+        },
+        {
+          "t": "Certificado digital",
+          "b": "Si lo tienes."
+        },
+        {
+          "t": "Número de referencia",
+          "b": "Con tus datos personales."
+        }
+      ],
+      "foot": "Tres opciones"
+    },
+    {
+      "t": "point",
+      "head": "Revisa [[línea por línea]]",
+      "body": "Faltan cosas a menudo: un segundo pagador, el alquiler, una deducción o un ingreso que no tienen. Revísalo con tus documentos.",
+      "note": "Confirmar sin mirar puede costarte dinero.",
+      "foot": "Compáralo con tus papeles",
+      "kicker": "Lo importante"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de enviarla",
+      "steps": [
+        {
+          "t": "Descarga tus datos fiscales",
+          "b": "Y compáralos con tus papeles."
+        },
+        {
+          "t": "Añade lo que falta",
+          "b": "Deducciones, otros ingresos."
+        },
+        {
+          "t": "Comprueba el resultado",
+          "b": "A pagar o a devolver."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Guarda el [[justificante]]",
+      "body": "Cuando la presentes, descarga el PDF y el justificante. Te harán falta si hay que revisarla.",
+      "foot": "Guárdalo varios años",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "El borrador es [[una propuesta]], no una sentencia",
+      "body": "Revísalo con calma.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando lo tengas delante.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

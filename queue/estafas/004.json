@@ -1,0 +1,92 @@
+{
+  "id": "estafas-004-bizum",
+  "label": "Estafas con Bizum",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 Bizum: pedirte dinero \"por error\" y otras trampas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#bizum"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Bizum",
+      "title": "las trampas más comunes",
+      "foot": "Cómo no caer"
+    },
+    {
+      "t": "point",
+      "head": "\"Te he enviado un Bizum [[por error]]\"",
+      "body": "Te piden que devuelvas dinero que nunca recibiste, o te envían un enlace de pago que no es lo que parece.",
+      "foot": "Bizum no se anula sin más",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Casos típicos",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Compra en una web de segunda mano",
+          "b": "Te piden un Bizum \"para reservar\" y desaparecen."
+        },
+        {
+          "t": "Devolución por error",
+          "b": "Verifica en tu app si has recibido algo."
+        },
+        {
+          "t": "Enlace de cobro",
+          "b": "Te piden meter datos para \"recibir\"."
+        }
+      ],
+      "foot": "Tres trampas"
+    },
+    {
+      "t": "point",
+      "head": "Bizum es para [[gente que conoces]]",
+      "body": "No lo uses para pagar a desconocidos sin garantía. Para comprar de segunda mano, usa un método con protección.",
+      "note": "Para recibir dinero nunca necesitas dar tu clave.",
+      "foot": "Dinero enviado, dinero perdido",
+      "kicker": "Regla básica"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Comprueba tu cuenta",
+          "b": "Antes de devolver nada."
+        },
+        {
+          "t": "No pagues por adelantado",
+          "b": "A desconocidos."
+        },
+        {
+          "t": "Avisa a tu banco",
+          "b": "Si ya enviaste."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Para recibir [[nunca pagas]]",
+      "body": "Si alguien te pide dinero o tus claves para \"enviarte\" un pago, es una estafa.",
+      "foot": "Recibir es gratis",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "La confianza es para las personas, no para los mensajes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien use Bizum.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

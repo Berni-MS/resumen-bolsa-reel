@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-004-comprar-o-alquilar",
+  "label": "Comprar o alquilar",
+  "accent": "green",
+  "caption": "Comprar o alquilar: ¿qué sale mejor? 🏠 No hay respuesta única, pero sí una forma de compararlo.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#comprarcasa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Comprar",
+      "title": "o alquilar",
+      "foot": "Cómo compararlo bien"
+    },
+    {
+      "t": "point",
+      "head": "No gana [[siempre]] uno",
+      "body": "Depende de tu ciudad, de cuánto tiempo vas a quedarte, de tus ahorros y de cómo estén los tipos y los alquileres.",
+      "foot": "Cada caso es distinto",
+      "kicker": "La pregunta"
+    },
+    {
+      "t": "cards",
+      "head": "Si compras, cuenta",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "La cuota",
+          "b": "Capital más intereses cada mes."
+        },
+        {
+          "t": "Gastos de la casa",
+          "b": "IBI, comunidad, seguro y reparaciones."
+        },
+        {
+          "t": "Tu entrada",
+          "b": "Dinero que ya no tienes disponible."
+        }
+      ],
+      "foot": "Costes de propietario"
+    },
+    {
+      "t": "point",
+      "head": "Cuenta [[el alquiler y lo que ahorras]]",
+      "body": "Una parte de la diferencia con una cuota la puedes ahorrar o invertir. Pero el alquiler no genera patrimonio y puede subir.",
+      "note": "Ahorrar la diferencia es lo que decide la comparación.",
+      "foot": "Pon números a los dos",
+      "kicker": "Si alquilas"
+    },
+    {
+      "t": "steps",
+      "head": "Compáralo tú",
+      "steps": [
+        {
+          "t": "Calcula el coste de comprar",
+          "b": "Cuota, gastos y mantenimiento al mes."
+        },
+        {
+          "t": "Calcula el coste de alquilar",
+          "b": "Alquiler y lo que ahorrarías."
+        },
+        {
+          "t": "Piensa en cuánto te quedas",
+          "b": "Si te mueves pronto, comprar pesa más."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "La [[estabilidad]] también vale",
+      "body": "Comprar da seguridad, pero te ata. Alquilar da libertad, pero con menos control sobre el precio.",
+      "foot": "Un factor que no sale en el Excel",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Decide con [[números, no con prisas]]",
+      "body": "Compara el coste total de cada opción.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compáralo con tu caso.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

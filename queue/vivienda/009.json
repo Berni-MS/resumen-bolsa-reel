@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-009-amortizar",
+  "label": "Amortizar hipoteca",
+  "accent": "green",
+  "caption": "¿Conviene adelantar pagos de la hipoteca? 💶 Cuota o plazo: lo que cambia.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#amortizar"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Amortizar",
+      "title": "¿cuota o plazo?",
+      "foot": "Adelantar pagos"
+    },
+    {
+      "t": "point",
+      "head": "Pagar [[parte del capital]] antes de tiempo",
+      "body": "Es entregar dinero extra a la hipoteca para que debas menos. Puedes hacerlo cuando quieras, con las condiciones de tu contrato.",
+      "foot": "Se llama amortización anticipada",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Dos formas",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Reducir la cuota",
+          "b": "Pagas menos cada mes; el plazo sigue igual."
+        },
+        {
+          "t": "Reducir el plazo",
+          "b": "Pagas lo mismo, pero terminas antes."
+        },
+        {
+          "t": "La comisión",
+          "b": "La ley la limita; revisa tu contrato."
+        }
+      ],
+      "foot": "Tú eliges"
+    },
+    {
+      "t": "point",
+      "head": "Acortar el plazo [[ahorra más intereses]]",
+      "body": "Al reducir los años pagas menos intereses en total. Reducir la cuota da más aire mensual.",
+      "note": "Depende de tu objetivo.",
+      "foot": "Piensa en tu objetivo",
+      "kicker": "Lo que ahorra más"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de amortizar",
+      "steps": [
+        {
+          "t": "Revisa tu fondo de emergencia",
+          "b": "No te quedes sin colchón."
+        },
+        {
+          "t": "Compara con otras opciones",
+          "b": "Ahorrar o invertir ese dinero."
+        },
+        {
+          "t": "Pide el cálculo por escrito",
+          "b": "Con y sin comisión."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Si tu tipo es [[bajo]]",
+      "body": "A veces compensa más guardar el dinero o amortizar deudas más caras antes, como tarjetas o préstamos personales.",
+      "foot": "Primero, las deudas caras",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Amortizar es [[una decisión]], no una obligación",
+      "body": "Hazla cuando tengas colchón.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando tengas dinero extra.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

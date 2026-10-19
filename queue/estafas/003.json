@@ -1,0 +1,92 @@
+{
+  "id": "estafas-003-hijo-nuevo-movil",
+  "label": "Hijo con móvil nuevo",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Mamá, he cambiado de móvil\": el mensaje que vacía cuentas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#whatsapp"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"mamá, soy yo\"",
+      "foot": "La estafa del móvil nuevo"
+    },
+    {
+      "t": "point",
+      "head": "\"He cambiado de móvil y [[necesito dinero]]\"",
+      "body": "Un número desconocido te escribe por WhatsApp haciéndose pasar por un hijo o un familiar, con una urgencia: un pago que no puede hacer.",
+      "foot": "Juega con tus emociones",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Número nuevo",
+          "b": "Dice que el viejo no funciona."
+        },
+        {
+          "t": "Mucha prisa",
+          "b": "Necesita una transferencia ya."
+        },
+        {
+          "t": "No puede llamar",
+          "b": "Siempre hay una excusa."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Llama al [[número de siempre]]",
+      "body": "Antes de enviar dinero, llama a tu familiar al número que ya tenías. Pide algo que solo él sepa.",
+      "note": "Acuerda una palabra clave en familia.",
+      "foot": "Verifica con una llamada",
+      "kicker": "Cómo evitarlo"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No transfieras",
+          "b": "Hasta confirmar quién es."
+        },
+        {
+          "t": "Llama al número antiguo",
+          "b": "O a otro familiar."
+        },
+        {
+          "t": "Bloquea y denuncia el número",
+          "b": "En WhatsApp."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Llama al [[banco]]",
+      "body": "Cuéntales que ha sido una estafa: pueden intentar frenar la transferencia. Guarda las capturas y denuncia.",
+      "foot": "Lo antes posible",
+      "kicker": "Si ya enviaste dinero"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Una palabra clave en la familia vale más que mil consejos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Envíaselo a tus padres o abuelos.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

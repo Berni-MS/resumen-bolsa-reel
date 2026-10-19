@@ -1,0 +1,92 @@
+{
+  "id": "estafas-009-soporte-tecnico",
+  "label": "Falso soporte técnico",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Tienes un virus\": la llamada o aviso del falso soporte técnico.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#virus"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"tienes un virus\"",
+      "foot": "El falso soporte técnico"
+    },
+    {
+      "t": "point",
+      "head": "Un aviso dice que tu equipo [[está infectado]]",
+      "body": "Una ventana o una llamada de un \"técnico\" te pide instalar un programa para controlar tu ordenador.",
+      "foot": "Con ello acceden a tu banco",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Aviso con sonido",
+          "b": "Una ventana que no se cierra."
+        },
+        {
+          "t": "Te llaman ellos",
+          "b": "Microsoft y Apple no llaman así."
+        },
+        {
+          "t": "Instalar un programa",
+          "b": "Para \"ayudarte\" en remoto."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Nadie puede [[ver tu pantalla]] sin tu permiso",
+      "body": "No instales ningún programa que te pida un desconocido. Con acceso remoto pueden ver y mover tu dinero.",
+      "note": "Si ya instalaste algo, desconéctate de internet.",
+      "foot": "No des acceso remoto",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Cierra el aviso",
+          "b": "Sin llamar a ningún número."
+        },
+        {
+          "t": "No instales nada",
+          "b": "Ni des acceso remoto."
+        },
+        {
+          "t": "Pasa un antivirus",
+          "b": "De tu propio equipo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Corta y [[cambia claves]]",
+      "body": "Desconecta el equipo, cambia las contraseñas desde otro dispositivo y llama a tu banco.",
+      "foot": "Desde otro aparato",
+      "kicker": "Si ya diste acceso"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Un virus de verdad no te llama por teléfono.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien use poco el ordenador.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

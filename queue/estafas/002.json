@@ -1,0 +1,92 @@
+{
+  "id": "estafas-002-paquete-correos",
+  "label": "Falso paquete",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Tu paquete está retenido\": el SMS falso de mensajería.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#correos"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "el paquete que no esperabas",
+      "foot": "La falsa tasa de aduana"
+    },
+    {
+      "t": "point",
+      "head": "\"Tu paquete está [[retenido]]\"",
+      "body": "Un mensaje dice que debes pagar una pequeña tasa para recibirlo. Es una web falsa para robarte los datos de la tarjeta.",
+      "foot": "Son importes pequeños",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "No esperabas nada",
+          "b": "Ni has comprado ni te han avisado."
+        },
+        {
+          "t": "Una tasa mínima",
+          "b": "1 o 2 euros para \"liberar\" el envío."
+        },
+        {
+          "t": "Enlace extraño",
+          "b": "No es la web oficial de la empresa."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "El [[pago pequeño]] es el cebo",
+      "body": "Al meter la tarjeta, se roban los datos y después hacen cargos mucho mayores o los venden.",
+      "note": "Nunca metas los datos de tu tarjeta en un enlace de un mensaje.",
+      "foot": "El importe no importa",
+      "kicker": "Cómo funciona"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Comprueba el envío",
+          "b": "En la web o app oficial."
+        },
+        {
+          "t": "No pagues nada",
+          "b": "Las tasas reales no llegan por SMS."
+        },
+        {
+          "t": "Reporta el mensaje",
+          "b": "Y bórralo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Avisa al [[banco]]",
+      "body": "Bloquea la tarjeta y pide que revisen los movimientos. Pide una tarjeta nueva y vigila tu cuenta unos días.",
+      "foot": "Revisa los cargos",
+      "kicker": "Si ya pagaste"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Los estafadores cuentan con tu prisa y tu curiosidad.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con tu familia.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

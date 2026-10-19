@@ -1,0 +1,92 @@
+{
+  "id": "estafas-007-falsa-hacienda",
+  "label": "Falsa Hacienda",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Hacienda te devuelve dinero\": el correo falso.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#hacienda"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "\"Hacienda te devuelve dinero\"",
+      "foot": "Correos y SMS falsos"
+    },
+    {
+      "t": "point",
+      "head": "Te dicen que tienes [[una devolución]]",
+      "body": "Un mensaje con el logo de la Agencia Tributaria te pide tus datos bancarios para ingresar el dinero.",
+      "foot": "Es phishing",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Un enlace en el mensaje",
+          "b": "Con una dirección que no es la oficial."
+        },
+        {
+          "t": "Te piden la tarjeta",
+          "b": "Para \"ingresarte\" dinero."
+        },
+        {
+          "t": "Faltas de ortografía",
+          "b": "O un tono demasiado urgente."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Hacienda no te [[pide datos por enlace]]",
+      "body": "Para pagar o cobrar siempre se usan los canales de su sede electrónica. Entra tú escribiendo la dirección.",
+      "note": "Tus devoluciones se ven en tu declaración.",
+      "foot": "Entra por la web oficial",
+      "kicker": "Lo que debes saber"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No abras el enlace",
+          "b": "Ni descargues adjuntos."
+        },
+        {
+          "t": "Entra a la sede oficial",
+          "b": "Y mira si hay avisos."
+        },
+        {
+          "t": "Reenvía el mensaje",
+          "b": "Al organismo para que lo bloquee."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Avisa al [[banco]]",
+      "body": "Bloquea tarjetas y cambia contraseñas. Si usaste Cl@ve, cámbiala también.",
+      "foot": "Cambia tus claves",
+      "kicker": "Si diste datos"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "La Agencia Tributaria no te escribe para pedirte la tarjeta.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien haga la Renta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

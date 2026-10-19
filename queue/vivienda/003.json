@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-003-fija-variable-mixta",
+  "label": "Tipos de hipoteca",
+  "accent": "green",
+  "caption": "Hipoteca fija, variable o mixta: ¿cuál te conviene? 🤔 La diferencia en un minuto.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#euribor"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Fija",
+      "title": "variable o mixta",
+      "foot": "Qué cambia en tu cuota"
+    },
+    {
+      "t": "point",
+      "head": "[[Misma cuota]] todo el tiempo",
+      "body": "El tipo de interés no cambia. Sabes lo que pagarás cada mes, aunque suban los tipos. Suele empezar más alta que la variable.",
+      "foot": "Estabilidad",
+      "kicker": "Fija"
+    },
+    {
+      "t": "cards",
+      "head": "Las tres opciones",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Fija",
+          "b": "Cuota estable durante todo el préstamo."
+        },
+        {
+          "t": "Variable",
+          "b": "Euríbor más un diferencial; la cuota se revisa."
+        },
+        {
+          "t": "Mixta",
+          "b": "Fija los primeros años y variable después."
+        }
+      ],
+      "foot": "Cambia el riesgo"
+    },
+    {
+      "t": "point",
+      "head": "Depende del [[Euríbor]]",
+      "body": "Si el Euríbor sube, tu cuota sube en la siguiente revisión. Si baja, baja. Se revisa normalmente cada seis o doce meses.",
+      "note": "Mira cómo evoluciona el Euríbor en esta cuenta cada mes.",
+      "foot": "Revisión periódica",
+      "kicker": "Variable"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo elegir",
+      "steps": [
+        {
+          "t": "Mira tu margen",
+          "b": "¿Podrías pagar una cuota más alta?"
+        },
+        {
+          "t": "Piensa en tu estabilidad",
+          "b": "Ingresos fijos o variables."
+        },
+        {
+          "t": "Compara la TAE",
+          "b": "Pide las tres opciones por escrito."
+        }
+      ],
+      "foot": "Tres preguntas"
+    },
+    {
+      "t": "point",
+      "head": "No hay una [[opción mejor para todos]]",
+      "body": "La fija da tranquilidad; la variable puede salir más barata o más cara. Depende de ti y de los tipos.",
+      "foot": "Decide con números",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Elige la que [[puedas pagar sin agobios]]",
+      "body": "Si dudas, compara por escrito con tu banco.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compáralo con tu oferta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

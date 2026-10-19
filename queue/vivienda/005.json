@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-005-contrato-alquiler",
+  "label": "Contrato de alquiler",
+  "accent": "green",
+  "caption": "Antes de firmar un alquiler 📝 Lo que debes revisar en el contrato.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#inquilino"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alquiler",
+      "title": "lo que debes revisar",
+      "foot": "Antes de firmar"
+    },
+    {
+      "t": "point",
+      "head": "Una mensualidad, [[no más]]",
+      "body": "En vivienda habitual, la fianza legal es de un mes. Se puede pedir una garantía adicional de hasta dos mensualidades más.",
+      "foot": "Pide recibo de todo",
+      "kicker": "Fianza"
+    },
+    {
+      "t": "cards",
+      "head": "En el contrato mira",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Duración",
+          "b": "La ley protege una duración mínima de 5 años si el arrendador es persona física."
+        },
+        {
+          "t": "Subidas",
+          "b": "Están limitadas; revisa el índice vigente."
+        },
+        {
+          "t": "Quién paga qué",
+          "b": "Gestión inmobiliaria, comunidad, suministros."
+        }
+      ],
+      "foot": "Tres cosas"
+    },
+    {
+      "t": "point",
+      "head": "Los gastos de [[gestión inmobiliaria]]",
+      "body": "La ley actual los atribuye al propietario cuando los genera la inmobiliaria. Pregúntalo si te piden pagarlos tú.",
+      "note": "Revisa la normativa vigente de tu comunidad.",
+      "foot": "Pregunta quién paga",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de firmar",
+      "steps": [
+        {
+          "t": "Lee todo el contrato",
+          "b": "Y las cláusulas sobre obras y salida."
+        },
+        {
+          "t": "Haz fotos del estado de la casa",
+          "b": "Para evitar discusiones al irte."
+        },
+        {
+          "t": "Guarda los recibos",
+          "b": "Fianza y mensualidades."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "La [[fianza]] se deposita",
+      "body": "En muchas comunidades el propietario debe depositarla en un organismo público. Pregunta si se ha hecho.",
+      "foot": "Un detalle poco conocido",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Firma [[con calma]]",
+      "body": "Si algo no te cuadra, pide que lo cambien por escrito.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo antes de firmar.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

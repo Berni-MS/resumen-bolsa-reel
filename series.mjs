@@ -6,6 +6,9 @@ export const SERIES = {
   mitos: { name: 'Mito o dato', day: 'jueves', tag: '#MitoODato' },
   vida: { name: 'Finanzas de la vida real', day: 'viernes', tag: '#FinanzasDeLaVidaReal' },
   semana: { name: 'La semana en datos', day: 'domingo', tag: '#LaSemanaEnDatos' },
+  vivienda: { name: 'Tu casa, tus cuentas', day: 'sábado', tag: '#TuCasaTusCuentas' },
+  estafas: { name: 'Alerta estafa', day: 'miércoles', tag: '#AlertaEstafa' },
+  renta: { name: 'Renta sin miedo', day: 'jueves', tag: '#RentaSinMiedo' },
   calendario: { name: 'Tu semana en bolsa', day: 'domingo', tag: '#TuSemanaEnBolsa' },
 };
 // Número de episodio: el del archivo de la cola (p. ej. mitos-012-…) o, si no lo hay, la semana desde el 19/10/2026.

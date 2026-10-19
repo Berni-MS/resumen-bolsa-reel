@@ -1,0 +1,91 @@
+{
+  "id": "renta-005-pagar-o-devolver",
+  "label": "A pagar o a devolver",
+  "accent": "green",
+  "caption": "Renta: ¿por qué me sale a pagar o a devolver? 🤔 Cómo funciona la retención.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#irpf",
+    "#hacienda",
+    "#finanzaspersonales"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Pagar",
+      "title": "o devolver",
+      "foot": "Por qué sale una cosa u otra"
+    },
+    {
+      "t": "point",
+      "head": "La retención es [[un adelanto]]",
+      "body": "Tu empresa te retiene un porcentaje cada mes. La declaración compara lo retenido con lo que realmente te toca pagar.",
+      "foot": "Se ajusta al declarar",
+      "kicker": "La clave"
+    },
+    {
+      "t": "cards",
+      "head": "Qué puede pasar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Te retuvieron de más",
+          "b": "Te devuelven la diferencia."
+        },
+        {
+          "t": "Te retuvieron de menos",
+          "b": "Pagas lo que falta."
+        },
+        {
+          "t": "Justo",
+          "b": "Resultado cero."
+        }
+      ],
+      "foot": "Tres casos"
+    },
+    {
+      "t": "point",
+      "head": "Puedes [[fraccionar]]",
+      "body": "Normalmente puedes pagar el 60 % en junio y el 40 % restante a principios de noviembre, sin intereses.",
+      "note": "Comprueba la opción cada año.",
+      "foot": "Mira el plazo del segundo pago",
+      "kicker": "Si sale a pagar"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo prepararte",
+      "steps": [
+        {
+          "t": "Mira tu resultado del año pasado",
+          "b": "Para hacerte una idea."
+        },
+        {
+          "t": "Aparta una cantidad",
+          "b": "Si sueles pagar."
+        },
+        {
+          "t": "Revisa tu retención",
+          "b": "Con tu empresa si ha cambiado algo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Que [[te devuelvan]] no es un regalo",
+      "body": "Es dinero tuyo que te adelantaste de más. Ajustar la retención puede dejarte más cada mes.",
+      "foot": "Pregunta a tu empresa",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Entender la retención [[cambia cómo lo ves]]",
+      "body": "No es un castigo ni un premio: es una cuenta.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "estafas-005-llamada-banco",
+  "label": "Falsa llamada del banco",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 Te llaman \"del banco\": lo que nunca debes hacer.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#vishing"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "la llamada del \"banco\"",
+      "foot": "Suplantación telefónica"
+    },
+    {
+      "t": "point",
+      "head": "\"Hemos detectado [[un cargo sospechoso]]\"",
+      "body": "Te llaman desde un número que parece el de tu banco. Un supuesto empleado te pide que \"protejas\" tu dinero moviéndolo o dando un código.",
+      "foot": "El número puede ser falso",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Te meten miedo",
+          "b": "Dicen que te están robando ahora."
+        },
+        {
+          "t": "Te piden un código",
+          "b": "El que te llega por SMS."
+        },
+        {
+          "t": "Te dicen que muevas tu dinero",
+          "b": "A una cuenta \"segura\"."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Cuelga y [[llama tú]]",
+      "body": "Un banco nunca te pide que muevas tu dinero ni que le digas un código. Cuelga, espera unos minutos y llama tú al número de tu tarjeta.",
+      "note": "Un número en pantalla se puede falsificar.",
+      "foot": "Llama al número oficial",
+      "kicker": "Lo clave"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Cuelga",
+          "b": "Sin dar ningún dato."
+        },
+        {
+          "t": "Llama al banco por tu cuenta",
+          "b": "Al teléfono de tu tarjeta."
+        },
+        {
+          "t": "No instales nada",
+          "b": "Ni aplicaciones de \"ayuda\"."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Bloquea [[todo]]",
+      "body": "Llama a tu banco, bloquea las tarjetas y el acceso, cambia las contraseñas y denuncia.",
+      "foot": "Rapidez",
+      "kicker": "Si diste datos"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Tu banco no te pide que muevas el dinero por teléfono.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con alguien mayor.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

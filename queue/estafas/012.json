@@ -1,0 +1,92 @@
+{
+  "id": "estafas-012-como-actuar",
+  "label": "Si te han estafado",
+  "accent": "red",
+  "caption": "Si te han estafado, esto es lo que debes hacer ahora ⏱️ Los primeros minutos importan.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#denuncia"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ahora",
+      "title": "qué hacer si te han estafado",
+      "foot": "Los primeros minutos"
+    },
+    {
+      "t": "point",
+      "head": "Llama a tu [[banco]]",
+      "body": "Cuanto antes bloquees tarjetas y accesos, más opciones hay de frenar movimientos o recuperar dinero.",
+      "foot": "Hazlo ya",
+      "kicker": "Lo primero"
+    },
+    {
+      "t": "cards",
+      "head": "En orden",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "1. Banco",
+          "b": "Bloquea y pide revisar los cargos."
+        },
+        {
+          "t": "2. Pruebas",
+          "b": "Capturas, mensajes, recibos."
+        },
+        {
+          "t": "3. Denuncia",
+          "b": "En la Policía o la Guardia Civil."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Hay una [[línea gratuita]]",
+      "body": "El INCIBE tiene la Línea de Ayuda en Ciberseguridad 017, gratuita y confidencial, para consultar dudas y pedir orientación.",
+      "note": "Es un servicio público.",
+      "foot": "Llama al 017",
+      "kicker": "Más ayuda"
+    },
+    {
+      "t": "steps",
+      "head": "Después",
+      "steps": [
+        {
+          "t": "Cambia tus contraseñas",
+          "b": "Desde un dispositivo limpio."
+        },
+        {
+          "t": "Activa la verificación en dos pasos",
+          "b": "En tus cuentas."
+        },
+        {
+          "t": "Vigila tus movimientos",
+          "b": "Las semanas siguientes."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No te [[avergüences]]",
+      "body": "Cualquiera puede caer; los estafadores son profesionales. Contarlo ayuda a que otros no caigan.",
+      "foot": "Compartirlo ayuda",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Actuar [[rápido]] lo cambia todo",
+      "body": "Guarda esta lista por si algún día la necesitas.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y envíaselo a tu familia.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

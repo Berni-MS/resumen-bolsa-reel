@@ -1,0 +1,91 @@
+{
+  "id": "renta-002-fechas-campana",
+  "label": "Fechas de la campaña",
+  "accent": "green",
+  "caption": "Renta: las fechas clave de la campaña 📅 Cuándo empieza y cuándo termina.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#irpf",
+    "#hacienda",
+    "#finanzaspersonales"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Fechas",
+      "title": "de la campaña de la Renta",
+      "foot": "No te pases del plazo"
+    },
+    {
+      "t": "point",
+      "head": "De [[abril a junio]], más o menos",
+      "body": "La campaña suele abrir a principios de abril y cerrar a finales de junio. Cada año se publican las fechas exactas.",
+      "foot": "Mira las oficiales",
+      "kicker": "El calendario"
+    },
+    {
+      "t": "cards",
+      "head": "Lo habitual",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Abril",
+          "b": "Empieza la presentación por internet."
+        },
+        {
+          "t": "Mayo–junio",
+          "b": "Se abre la atención presencial."
+        },
+        {
+          "t": "Finales de junio",
+          "b": "Termina el plazo."
+        }
+      ],
+      "foot": "Fechas aproximadas"
+    },
+    {
+      "t": "point",
+      "head": "Si te sale a pagar [[y domicilias]]",
+      "body": "El plazo para domiciliar el pago suele terminar unos días antes que el resto de la campaña.",
+      "note": "Confirma las fechas exactas en la web oficial.",
+      "foot": "Mira la fecha de domiciliación",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo organizarte",
+      "steps": [
+        {
+          "t": "Marca la fecha en tu calendario",
+          "b": "Mejor pronto que tarde."
+        },
+        {
+          "t": "Pide cita si la necesitas",
+          "b": "Se agotan rápido."
+        },
+        {
+          "t": "Reúne tus documentos",
+          "b": "Antes de abrir el borrador."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Presentarla [[pronto]] no cambia lo que pagas",
+      "body": "Pero si te sale a devolver, te lo ingresan antes cuanto antes la presentes.",
+      "foot": "Si te devuelven, antes",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una fecha en el calendario [[te ahorra recargos]]",
+      "body": "No lo dejes para el último día.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando empiece la campaña.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

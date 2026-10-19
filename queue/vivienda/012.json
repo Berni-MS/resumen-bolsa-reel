@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-012-antes-de-firmar",
+  "label": "Antes de comprar",
+  "accent": "green",
+  "caption": "Antes de firmar la compra de un piso ✍️ Lo que conviene comprobar.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#comprarcasa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Antes",
+      "title": "de firmar la compra",
+      "foot": "Una lista para comprobar"
+    },
+    {
+      "t": "point",
+      "head": "Pide la [[nota simple]]",
+      "body": "Es un documento del Registro de la Propiedad. Te dice quién es el titular y si hay cargas, como una hipoteca vigente.",
+      "foot": "Se pide en el registro",
+      "kicker": "Lo básico"
+    },
+    {
+      "t": "cards",
+      "head": "Comprueba también",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Deudas",
+          "b": "IBI y comunidad pendientes."
+        },
+        {
+          "t": "Certificado energético",
+          "b": "Es obligatorio para vender."
+        },
+        {
+          "t": "Estado del edificio",
+          "b": "Derramas, ITE y obras previstas."
+        }
+      ],
+      "foot": "Tres documentos"
+    },
+    {
+      "t": "point",
+      "head": "Visita [[varias veces]]",
+      "body": "A distintas horas y días. Mira humedades, ruido, luz y vecinos. Pregunta por la comunidad y las derramas.",
+      "note": "Una sola visita no basta.",
+      "foot": "No te fíes de una visita",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de la firma",
+      "steps": [
+        {
+          "t": "Revisa los documentos",
+          "b": "Con tiempo, no el mismo día."
+        },
+        {
+          "t": "Compara el precio",
+          "b": "Con pisos parecidos de la zona."
+        },
+        {
+          "t": "Consulta a un profesional",
+          "b": "Si dudas del contrato."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No firmes [[con prisas]]",
+      "body": "Quien te mete prisa no siempre te ayuda. Una compra de este tamaño merece tiempo.",
+      "foot": "Tú decides el ritmo",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una buena compra es [[la que has revisado]]",
+      "body": "Cada documento comprobado es un susto menos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando visites pisos.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

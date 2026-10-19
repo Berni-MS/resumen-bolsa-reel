@@ -1,0 +1,93 @@
+{
+  "id": "vivienda-010-ahorrar-entrada",
+  "label": "Ahorrar la entrada",
+  "accent": "green",
+  "caption": "¿Cómo ahorrar la entrada de un piso? 🏠 Un plan por años y por meses.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#ahorro",
+    "#entrada"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Entrada",
+      "title": "cuánto y en cuánto tiempo",
+      "foot": "Un plan para ahorrarla"
+    },
+    {
+      "t": "point",
+      "head": "Entrada más gastos, [[cerca del 30 %]]",
+      "body": "Aportar el 20 % del precio más un 10–12 % de gastos es una referencia habitual. Para un piso de 150.000 € son unos 45.000–50.000 €.",
+      "foot": "Cifras orientativas",
+      "kicker": "El objetivo"
+    },
+    {
+      "t": "cards",
+      "head": "Ejemplo: 45.000 €",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "En 5 años",
+          "b": "Unos 750 € al mes."
+        },
+        {
+          "t": "En 7 años",
+          "b": "Unos 535 € al mes."
+        },
+        {
+          "t": "En 10 años",
+          "b": "Unos 375 € al mes."
+        }
+      ],
+      "foot": "Sin contar intereses"
+    },
+    {
+      "t": "point",
+      "head": "Una cuenta [[solo para la entrada]]",
+      "body": "Separar el dinero evita gastarlo. Programa una transferencia el día que cobras.",
+      "note": "Puedes usar una cuenta remunerada o un depósito seguro.",
+      "foot": "Automatiza",
+      "kicker": "Cómo"
+    },
+    {
+      "t": "steps",
+      "head": "Empieza hoy",
+      "steps": [
+        {
+          "t": "Fija el precio y la fecha",
+          "b": "Con números realistas."
+        },
+        {
+          "t": "Calcula tu aportación mensual",
+          "b": "La entrada partida entre los meses."
+        },
+        {
+          "t": "Revisa cada trimestre",
+          "b": "Y ajusta si cambian tus ingresos."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Ahorrar no es [[renunciar a todo]]",
+      "body": "Mejor un plan que puedas mantener que uno tan duro que lo dejes a los tres meses.",
+      "foot": "La constancia gana",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Una entrada se hace [[mes a mes]]",
+      "body": "Cada aportación te acerca.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y empieza esta semana.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

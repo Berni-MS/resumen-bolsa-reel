@@ -1,0 +1,92 @@
+{
+  "id": "estafas-010-amor-y-dinero",
+  "label": "Estafa del amor",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 Conoces a alguien por internet y te pide dinero: la estafa romántica.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#estafaromantica"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ojo",
+      "title": "con quien te pide dinero",
+      "foot": "La estafa romántica"
+    },
+    {
+      "t": "point",
+      "head": "Una persona [[encantadora]] que no puedes ver",
+      "body": "Te escribe con cariño por redes o apps de citas. Con el tiempo aparece una emergencia que solo se arregla con dinero.",
+      "foot": "Construyen confianza primero",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Nunca hay videollamada",
+          "b": "Siempre hay una excusa."
+        },
+        {
+          "t": "Una emergencia",
+          "b": "Un viaje, una operación, una aduana."
+        },
+        {
+          "t": "Piden pagos raros",
+          "b": "Tarjetas regalo, criptomonedas."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Nunca [[envíes dinero]] a alguien que no conoces",
+      "body": "Por muy bonita que sea la historia. Si no os habéis visto, no hay base para una petición de dinero.",
+      "note": "Habla con un amigo de confianza.",
+      "foot": "Cuéntaselo a alguien",
+      "kicker": "Una regla"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "Pide una videollamada",
+          "b": "Si se niega, desconfía."
+        },
+        {
+          "t": "Busca su foto",
+          "b": "En buscadores de imágenes."
+        },
+        {
+          "t": "No des dinero ni datos",
+          "b": "Ni fotos privadas."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Corta el [[contacto]]",
+      "body": "Guarda las conversaciones, avisa a tu banco y denuncia. No te culpes: es muy común.",
+      "foot": "Pide ayuda sin vergüenza",
+      "kicker": "Si ya enviaste dinero"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Quien de verdad te quiere no te pide dinero sin verte.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien conozca gente online.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

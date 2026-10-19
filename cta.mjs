@@ -4,9 +4,13 @@ const GUIAS = {
   AHORRO: { guia: 'la plantilla de presupuesto mensual', seo: 'ahorro · presupuesto · finanzas personales en España' },
   RENTA: { guia: 'el checklist de la declaración de la renta', seo: 'declaración de la renta · Hacienda · finanzas personales en España' },
   BOLSA: { guia: 'el glosario de bolsa en 30 términos', seo: 'bolsa · inversión · aprender a invertir en España' },
+  VIVIENDA: { guia: 'el checklist para comprar o alquilar con cabeza', seo: 'hipoteca · alquiler · comprar casa · finanzas personales en España' },
+  ESTAFAS: { guia: 'la guía antiestafas', seo: 'estafas · ciberseguridad · Bizum · finanzas personales en España' },
   GASTOS: { guia: 'la lista para revisar tus gastos fijos y comisiones', seo: 'gastos fijos · comisiones · TAE · finanzas personales en España' },
 };
 export function pickKey(kind, id = '') {
+  if (kind === 'vivienda') return 'VIVIENDA';
+  if (kind === 'estafas') return 'ESTAFAS';
   if (/renta|irpf|hacienda|declaraci/i.test(id)) return 'RENTA';
   if (kind === 'ahorro' || kind === 'consejo') return 'AHORRO';
   if (kind === 'vida' || kind === 'semana') return 'GASTOS';

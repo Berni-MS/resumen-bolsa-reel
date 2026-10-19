@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-002-gastos-de-comprar",
+  "label": "Gastos de comprar",
+  "accent": "green",
+  "caption": "Comprar casa cuesta más que el precio 🧾 Estos son los gastos que casi nadie cuenta.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#comprarcasa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "+10 %",
+      "title": "lo que no pone el precio",
+      "foot": "Los gastos de comprar casa"
+    },
+    {
+      "t": "point",
+      "head": "Además del precio, [[impuestos y gastos]]",
+      "body": "Al comprar pagas el precio y, aparte, impuestos, notaría, registro, gestoría y tasación.",
+      "foot": "Se paga el día de la firma",
+      "kicker": "Cuenta con ello"
+    },
+    {
+      "t": "cards",
+      "head": "Los gastos típicos",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Impuestos",
+          "b": "Segunda mano: ITP según tu comunidad. Obra nueva: IVA y actos jurídicos documentados."
+        },
+        {
+          "t": "Notaría y registro",
+          "b": "Escritura y cambio de titular."
+        },
+        {
+          "t": "Gestoría y tasación",
+          "b": "Trámites y valoración de la vivienda."
+        }
+      ],
+      "foot": "Varían según el caso"
+    },
+    {
+      "t": "point",
+      "head": "Suele rondar el [[10–12 %]] del precio",
+      "body": "Depende de tu comunidad autónoma y de si la vivienda es nueva o de segunda mano. Pide un presupuesto de gastos antes de decidir.",
+      "note": "Cifra orientativa; confirma los tipos vigentes en tu comunidad.",
+      "foot": "Pide el desglose",
+      "kicker": "Una cifra para orientarte"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo preparar el dinero",
+      "steps": [
+        {
+          "t": "Calcula el precio total",
+          "b": "Precio más gastos aproximados."
+        },
+        {
+          "t": "Separa la entrada de los gastos",
+          "b": "Son dos partidas distintas."
+        },
+        {
+          "t": "Deja un colchón",
+          "b": "Obras y mudanza también cuestan."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No los [[incluyas en la hipoteca]] sin pensarlo",
+      "body": "Algunos bancos financian solo parte del precio. Los gastos casi siempre salen de tus ahorros.",
+      "foot": "Pregúntalo antes de firmar",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "El precio es [[solo el principio]]",
+      "body": "Cuenta todos los gastos antes de dar una señal.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando vayas a comprar.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

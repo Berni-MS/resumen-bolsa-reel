@@ -1,0 +1,91 @@
+{
+  "id": "renta-001-quien-declara",
+  "label": "Quién declara",
+  "accent": "green",
+  "caption": "¿Tienes que hacer la declaración de la Renta? 🧾 Quién está obligado.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#irpf",
+    "#hacienda",
+    "#finanzaspersonales"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Renta",
+      "title": "¿tienes que declarar?",
+      "foot": "Quién está obligado"
+    },
+    {
+      "t": "point",
+      "head": "Depende de [[cuánto y de quién]] cobras",
+      "body": "El límite habitual está en 22.000 € de ingresos del trabajo con un solo pagador. Con varios pagadores, es más bajo.",
+      "foot": "Confirma el límite cada año",
+      "kicker": "Lo básico"
+    },
+    {
+      "t": "cards",
+      "head": "Casos habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Un solo pagador",
+          "b": "El límite suele estar en 22.000 € al año."
+        },
+        {
+          "t": "Varios pagadores",
+          "b": "El límite baja y se aplican condiciones."
+        },
+        {
+          "t": "Otras rentas",
+          "b": "Alquileres, ganancias, autónomos."
+        }
+      ],
+      "foot": "Según tu caso"
+    },
+    {
+      "t": "point",
+      "head": "Aunque no estés obligado, [[puede salirte a devolver]]",
+      "body": "Si te han retenido más de lo que corresponde, declarar te permite recuperar dinero. Merece la pena comprobarlo.",
+      "note": "Los límites pueden cambiar cada año; confírmalos en la web oficial.",
+      "foot": "Comprueba si te devuelven",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo saberlo",
+      "steps": [
+        {
+          "t": "Mira tus ingresos",
+          "b": "Y cuántos pagadores tienes."
+        },
+        {
+          "t": "Revisa tus datos fiscales",
+          "b": "En la web de la Agencia Tributaria."
+        },
+        {
+          "t": "Usa el simulador",
+          "b": "O consulta a un asesor."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No declarar [[teniendo que hacerlo]]",
+      "body": "Puede suponer recargos y sanciones. Si tienes dudas, es mejor preguntar a tiempo.",
+      "foot": "Pregunta antes del plazo",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Saber si declaras es [[el primer paso]]",
+      "body": "Comprobarlo ahora te evita sustos en junio.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compruébalo cuando abra la campaña.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

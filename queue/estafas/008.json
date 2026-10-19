@@ -1,0 +1,93 @@
+{
+  "id": "estafas-008-segunda-mano",
+  "label": "Estafas de segunda mano",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 Vendes o compras de segunda mano: las trampas más comunes.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#wallapop",
+    "#vinted"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ojo",
+      "title": "si compras o vendes de segunda mano",
+      "foot": "Las trampas del \"pago seguro\""
+    },
+    {
+      "t": "point",
+      "head": "\"Te mando [[un enlace]] para cobrar\"",
+      "body": "Un comprador dice que pagará con un servicio de pago o envío y te manda un enlace para que metas tus datos. Es falso.",
+      "foot": "El enlace no es de la app",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Sacarte de la app",
+          "b": "Te piden hablar por WhatsApp."
+        },
+        {
+          "t": "Un enlace de cobro",
+          "b": "Que no es de la plataforma oficial."
+        },
+        {
+          "t": "Prisa por cerrar",
+          "b": "Y no ve el artículo."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Usa solo [[los pagos de la propia app]]",
+      "body": "Para cobrar nunca necesitas meter tu tarjeta ni dar un código. Si te piden hacerlo, es una estafa.",
+      "note": "Cobrar es gratis y no pide claves.",
+      "foot": "Quédate dentro de la app",
+      "kicker": "Regla básica"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No salgas de la plataforma",
+          "b": "Ni des tu teléfono."
+        },
+        {
+          "t": "No abras enlaces",
+          "b": "De quien no conoces."
+        },
+        {
+          "t": "Entrega en mano",
+          "b": "Si es posible, y revisa el pago."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Desconfía del [[precio muy bajo]]",
+      "body": "Y de quien te pide pagar fuera de la plataforma. Paga siempre con protección al comprador.",
+      "foot": "Pago protegido",
+      "kicker": "Si compras"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Tus datos de tarjeta no hacen falta para cobrar.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien venda.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

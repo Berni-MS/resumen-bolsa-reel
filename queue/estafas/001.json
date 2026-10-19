@@ -1,0 +1,92 @@
+{
+  "id": "estafas-001-sms-banco",
+  "label": "SMS falso del banco",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 El SMS falso de tu banco: cómo reconocerlo antes de pulsar.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#smishing"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Alerta",
+      "title": "el SMS falso del banco",
+      "foot": "Cómo reconocerlo"
+    },
+    {
+      "t": "point",
+      "head": "\"Tu cuenta está [[bloqueada]]\"",
+      "body": "Recibes un SMS o un WhatsApp que parece de tu banco, con un enlace para \"verificar tus datos\". La web es falsa y copia tus claves.",
+      "foot": "Se llama smishing",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Urgencia",
+          "b": "Te dicen que actúes ya o perderás el acceso."
+        },
+        {
+          "t": "Enlace raro",
+          "b": "La dirección no es la web oficial de tu banco."
+        },
+        {
+          "t": "Te piden claves",
+          "b": "Contraseña, código o PIN: tu banco nunca lo hace."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Tu banco [[nunca]] te pide claves",
+      "body": "Ni por SMS, ni por correo, ni por teléfono. Si dudas, entra tú mismo desde la app oficial o llama al número de tu tarjeta.",
+      "note": "No uses los datos del mensaje.",
+      "foot": "Entra por tu cuenta",
+      "kicker": "Lo que debes saber"
+    },
+    {
+      "t": "steps",
+      "head": "Qué hacer",
+      "steps": [
+        {
+          "t": "No pulses el enlace",
+          "b": "Ni respondas al mensaje."
+        },
+        {
+          "t": "Comprueba en la app oficial",
+          "b": "Si hay algún aviso real."
+        },
+        {
+          "t": "Borra y bloquea el número",
+          "b": "Y avisa a tu banco."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Llama a tu banco [[ya]]",
+      "body": "Pide que bloqueen tus tarjetas y accesos. Cambia las contraseñas y denuncia en la Policía o la Guardia Civil.",
+      "foot": "Cada minuto cuenta",
+      "kicker": "Si ya metiste tus datos"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Un mensaje urgente es la señal más clara de estafa.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien menos lo sepa.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

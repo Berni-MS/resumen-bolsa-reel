@@ -1,0 +1,91 @@
+{
+  "id": "renta-004-deducciones",
+  "label": "Deducciones",
+  "accent": "green",
+  "caption": "Renta: deducciones que mucha gente olvida 💶 Revisa si te corresponden.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#irpf",
+    "#hacienda",
+    "#finanzaspersonales"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Deducir",
+      "title": "lo que olvidas",
+      "foot": "Revisa si te tocan"
+    },
+    {
+      "t": "point",
+      "head": "Una deducción [[resta directamente]]",
+      "body": "Reduce lo que pagas, no solo la base. Algunas son estatales y otras dependen de tu comunidad autónoma.",
+      "foot": "Mira las de tu comunidad",
+      "kicker": "La idea"
+    },
+    {
+      "t": "cards",
+      "head": "Algunas habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Familia",
+          "b": "Hijos, familia numerosa, discapacidad."
+        },
+        {
+          "t": "Vivienda y alquiler",
+          "b": "Según comunidad y condiciones."
+        },
+        {
+          "t": "Donativos",
+          "b": "A entidades que lo permiten."
+        }
+      ],
+      "foot": "Ejemplos"
+    },
+    {
+      "t": "point",
+      "head": "Las [[autonómicas]] varían mucho",
+      "body": "Cada comunidad tiene las suyas: alquiler, nacimiento, estudios, familia. Mira las de tu comunidad cada año.",
+      "note": "Los requisitos y cuantías cambian.",
+      "foot": "Consulta tu comunidad",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo buscarlas",
+      "steps": [
+        {
+          "t": "Revisa la web de la Agencia",
+          "b": "Sección de deducciones."
+        },
+        {
+          "t": "Busca las de tu comunidad",
+          "b": "En su web oficial."
+        },
+        {
+          "t": "Guarda los justificantes",
+          "b": "Facturas y recibos."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Sin [[justificante]], no hay deducción",
+      "body": "Si te lo piden y no lo tienes, pierdes el derecho. Guarda los recibos del año.",
+      "foot": "Papeles en orden",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Lo que no pides, [[no te lo dan]]",
+      "body": "Revisa cada año si te corresponde algo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y revísalo en campaña.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

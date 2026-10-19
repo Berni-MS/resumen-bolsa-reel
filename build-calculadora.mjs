@@ -5,6 +5,17 @@ import { nf } from './lib-datos.mjs';
 const e0 = n => `${nf(n, 0)} €`;
 const fv = (p, rate, years) => { const i = rate / 100 / 12, n = years * 12; return p * ((Math.pow(1 + i, n) - 1) / i); };
 const pmt = (cap, rate, years) => { const i = rate / 100 / 12, n = years * 12; return (cap * i) / (1 - Math.pow(1 + i, -n)); };
+const cap = (cuota, rate, years) => { const i = rate / 100 / 12, n = years * 12; return cuota * (1 - Math.pow(1 + i, -n)) / i; };
+// Sueldo neto orientativo: soltero sin hijos, contrato indefinido, 12 pagas, tramos generales (estatal + autonómico medio)
+const irpf = base => { const T = [[12450, .19], [20200, .24], [35200, .30], [60000, .37], [300000, .45], [Infinity, .47]]; let prev = 0, tax = 0; for (const [lim, r] of T) { if (base > prev) tax += (Math.min(base, lim) - prev) * r; prev = lim; } return tax; };
+const neto = bruto => {
+  const ss = bruto * 0.065;
+  const w = bruto - ss; // rendimiento neto previo
+  const red = w <= 14852 ? 7302 : w <= 17673.52 ? 7302 - 1.75 * (w - 14852) : w <= 19747.5 ? 2364.34 - 1.14 * (w - 17673.52) : 0;
+  const base = Math.max(0, w - 2000 - Math.max(0, red));
+  const cuota = Math.max(0, irpf(base) - irpf(5550));
+  return { net: bruto - ss - cuota, ret: cuota / bruto * 100 };
+};
 const SUP = 'Cálculo orientativo con supuestos simples · No es asesoramiento financiero';
 
 const CALCS = [
@@ -35,6 +46,12 @@ const CALCS = [
   () => ({ title: 'Tu meta de', accent: 'ahorro', q: '¿Cuánto tienes que apartar cada mes para llegar a tu objetivo?',
     rows: [[1200, 1], [3000, 1], [6000, 1]].map(([m, y]) => ({ a: `${e0(m)} en ${y} año`, b: `${e0(m / 12)} al mes`, c: `O ${e0(m / 24)} al mes si te das 2 años` })),
     note: 'Sin contar intereses.' }),
+  () => ({ title: 'Tu sueldo', accent: 'neto', q: 'Lo que llega a tu cuenta cada mes según tu sueldo bruto anual.',
+    rows: [18000, 25000, 35000].map(b => { const r = neto(b); return { a: `Bruto de ${nf(b, 0)} € al año`, b: `≈ ${e0(r.net / 12)} al mes`, c: `12 pagas · retención aprox. ${nf(r.ret, 0)} %` }; }),
+    note: 'Soltero sin hijos, contrato indefinido, 12 pagas. Tu nómina real puede variar según comunidad, familia y pagas.' }),
+  () => ({ title: 'Lo que te', accent: 'prestan', q: '¿Qué hipoteca puedes pedir según tu sueldo neto mensual?',
+    rows: [1500, 2000, 2500].map(n => ({ a: `Cobras ${e0(n)} netos al mes`, b: `Cuota máx. ≈ ${e0(n * 0.35)}`, c: `≈ ${e0(Math.round(cap(n * 0.35, 3.5, 25) / 1000) * 1000)} de préstamo (3,5 % · 25 años)` })),
+    note: 'Regla orientativa: la cuota no debería pasar del 35 % de tu neto. Cada banco decide.' }),
 ];
 
 const today = process.argv[3] || new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());

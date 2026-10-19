@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-006-zona-tensionada",
+  "label": "Zonas tensionadas",
+  "accent": "green",
+  "caption": "¿Qué es una zona tensionada? 🏙️ Y por qué puede cambiar lo que pagas de alquiler.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#zonatensionada"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Zona",
+      "title": "tensionada",
+      "foot": "Qué significa para ti"
+    },
+    {
+      "t": "point",
+      "head": "Una zona con [[alquileres muy altos]]",
+      "body": "Las comunidades pueden pedir que ciertos municipios o barrios se declaren zona tensionada cuando los precios pesan demasiado en los ingresos.",
+      "foot": "Lo declara la comunidad",
+      "kicker": "Qué es"
+    },
+    {
+      "t": "cards",
+      "head": "Qué cambia",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Límites de precio",
+          "b": "En contratos nuevos, hay topes de referencia."
+        },
+        {
+          "t": "Más protección",
+          "b": "Para algunos propietarios e inquilinos."
+        },
+        {
+          "t": "Más trámites",
+          "b": "Depende del caso y de la comunidad."
+        }
+      ],
+      "foot": "En esas zonas"
+    },
+    {
+      "t": "point",
+      "head": "Comprueba si [[tu zona]] lo es",
+      "body": "La lista cambia: busca en la web de tu comunidad autónoma o ayuntamiento si tu municipio o barrio está declarado.",
+      "note": "La normativa y las zonas pueden cambiar.",
+      "foot": "Consulta la fuente oficial",
+      "kicker": "Cómo saberlo"
+    },
+    {
+      "t": "steps",
+      "head": "Si buscas piso",
+      "steps": [
+        {
+          "t": "Mira si la zona está declarada",
+          "b": "Antes de negociar el precio."
+        },
+        {
+          "t": "Pregunta el precio de referencia",
+          "b": "El propietario debe conocerlo."
+        },
+        {
+          "t": "Guarda el anuncio y el contrato",
+          "b": "Por si hay que reclamar."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Si te piden [[más de lo legal]]",
+      "body": "Pregunta cómo han calculado el precio. Si dudas, consulta a la oficina de consumo o vivienda de tu comunidad.",
+      "foot": "Tienes derecho a preguntar",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Informarte es [[proteger tu bolsillo]]",
+      "body": "Una pregunta a tiempo puede ahorrarte cientos de euros.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compártelo con quien busque piso.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

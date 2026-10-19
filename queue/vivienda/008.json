@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-008-tae-vinculaciones",
+  "label": "TAE y vinculaciones",
+  "accent": "green",
+  "caption": "Hipoteca: el tipo no lo es todo 🧐 La TAE y las vinculaciones cambian lo que de verdad pagas.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#tae"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "TAE",
+      "title": "la cifra que sí compara",
+      "foot": "Y las vinculaciones"
+    },
+    {
+      "t": "point",
+      "head": "El [[tipo]] no lo cuenta todo",
+      "body": "Un tipo bajo puede esconder comisiones y productos obligatorios. La TAE incluye intereses y gastos, y sirve mejor para comparar.",
+      "foot": "Compara la TAE",
+      "kicker": "Primero"
+    },
+    {
+      "t": "cards",
+      "head": "Vinculaciones habituales",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Nómina domiciliada",
+          "b": "Para mantener la bonificación."
+        },
+        {
+          "t": "Seguros",
+          "b": "Hogar, vida u otros asociados."
+        },
+        {
+          "t": "Tarjetas o planes",
+          "b": "Productos que a veces cuestan al año."
+        }
+      ],
+      "foot": "Pueden bajar el tipo"
+    },
+    {
+      "t": "point",
+      "head": "¿Te [[compensan]]?",
+      "body": "Si un seguro te cuesta 300 € al año y te ahorra 200 € de intereses, la bonificación no compensa. Suma todo el coste anual.",
+      "note": "Cada producto debe valer por sí solo.",
+      "foot": "Haz la suma anual",
+      "kicker": "La cuenta"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de firmar",
+      "steps": [
+        {
+          "t": "Pide la FEIN",
+          "b": "La ficha con todas las condiciones."
+        },
+        {
+          "t": "Compara tres ofertas",
+          "b": "Por escrito y con TAE."
+        },
+        {
+          "t": "Calcula el coste de las vinculaciones",
+          "b": "Y si te interesan."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Tienes [[tiempo]] para leer",
+      "body": "La normativa exige que tengas la documentación antes de firmar y que el notario te explique las condiciones.",
+      "foot": "No te dejes presionar",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "La mejor oferta es la que [[sale más barata en total]]",
+      "body": "No solo la que anuncia el tipo más bajo.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y compáralo con tu oferta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

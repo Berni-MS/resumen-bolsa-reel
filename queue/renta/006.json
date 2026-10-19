@@ -1,0 +1,91 @@
+{
+  "id": "renta-006-errores-tipicos",
+  "label": "Errores típicos",
+  "accent": "green",
+  "caption": "Renta: los errores que más cuestan 🚫 Evítalos esta campaña.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#renta",
+    "#irpf",
+    "#hacienda",
+    "#finanzaspersonales"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Errores",
+      "title": "típicos en la Renta",
+      "foot": "Cómo evitarlos"
+    },
+    {
+      "t": "point",
+      "head": "No revisar [[los datos]]",
+      "body": "Confirmar el borrador sin comprobar ingresos, deducciones o datos familiares es la causa más habitual de problemas.",
+      "foot": "Compáralo con tus papeles",
+      "kicker": "Los más comunes"
+    },
+    {
+      "t": "cards",
+      "head": "Otros errores",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Olvidar ingresos",
+          "b": "Alquileres, ganancias, un segundo pagador."
+        },
+        {
+          "t": "No guardar justificantes",
+          "b": "Facturas, recibos, certificados."
+        },
+        {
+          "t": "Pasarse del plazo",
+          "b": "Hay recargos."
+        }
+      ],
+      "foot": "Tres errores"
+    },
+    {
+      "t": "point",
+      "head": "La Agencia puede revisar [[cuatro años]]",
+      "body": "El plazo general para que la Administración revise una declaración es de cuatro años. Guarda tus justificantes.",
+      "note": "Plazos generales; en algunos casos varían.",
+      "foot": "Guarda tu papeleo",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo evitarlos",
+      "steps": [
+        {
+          "t": "Revisa con calma",
+          "b": "No el último día."
+        },
+        {
+          "t": "Ordena los documentos",
+          "b": "Antes de empezar."
+        },
+        {
+          "t": "Consulta tus dudas",
+          "b": "A un asesor o a la Agencia."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Se puede [[corregir]]",
+      "body": "Existe la declaración complementaria y la rectificación. Lo importante es avisar antes de que te reclamen.",
+      "foot": "Antes es mejor",
+      "kicker": "Si te equivocas"
+    },
+    {
+      "t": "close",
+      "head": "Declarar bien [[es declarar con tiempo]]",
+      "body": "Un poco de orden hoy es dinero mañana.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para la campaña.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

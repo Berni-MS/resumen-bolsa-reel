@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-001-cuanto-te-prestan",
+  "label": "Hipoteca",
+  "accent": "green",
+  "caption": "Hipoteca: ¿cuánto te pueden prestar? 🏠 Una regla sencilla para saber tu tope antes de visitar pisos.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#comprarcasa"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Hipoteca",
+      "title": "¿cuánto te prestan?",
+      "foot": "Una regla para empezar"
+    },
+    {
+      "t": "point",
+      "head": "La cuota, [[un tercio]] de tus ingresos",
+      "body": "Muchos bancos no quieren que la cuota supere el 30–35 % de tus ingresos netos. Es una referencia, no una norma fija.",
+      "foot": "Cada banco decide",
+      "kicker": "Lo básico"
+    },
+    {
+      "t": "cards",
+      "head": "Lo que mira el banco",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tus ingresos",
+          "b": "Sueldo neto, tipo de contrato y antigüedad."
+        },
+        {
+          "t": "Tus deudas",
+          "b": "Préstamos y tarjetas reducen lo que te prestan."
+        },
+        {
+          "t": "Tus ahorros",
+          "b": "Suelen pedir que aportes parte del precio."
+        }
+      ],
+      "foot": "Tres cosas clave"
+    },
+    {
+      "t": "point",
+      "head": "Con [[2.000 €]] netos al mes",
+      "body": "Una cuota de unos 700 € (el 35 %) sería el tope. A un 3,5 % y 25 años, eso equivale a unos 140.000 € de préstamo.",
+      "note": "Cálculo orientativo; cada banco aplica sus propios criterios.",
+      "foot": "Haz la cuenta con tu sueldo",
+      "kicker": "Ejemplo"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de pedirla",
+      "steps": [
+        {
+          "t": "Calcula tu cuota máxima",
+          "b": "El 30–35 % de tu sueldo neto."
+        },
+        {
+          "t": "Suma lo que debes ahorrar",
+          "b": "La entrada y los gastos de la compra."
+        },
+        {
+          "t": "Compara ofertas",
+          "b": "Mira la TAE y las condiciones, no solo el tipo."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "La [[entrada]] también cuenta",
+      "body": "Lo habitual es financiar hasta el 80 % del valor y aportar el resto, más los gastos. Hay excepciones según el caso.",
+      "foot": "No todo es la cuota",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Calcula antes de [[enamorarte de un piso]]",
+      "body": "Saber tu tope te ahorra visitas y disgustos.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo y haz la cuenta con tu sueldo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

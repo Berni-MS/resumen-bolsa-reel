@@ -1,0 +1,93 @@
+{
+  "id": "estafas-006-inversion-famosos",
+  "label": "Inversión milagro",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 \"Gana 300 € al día\": los anuncios con famosos que son falsos.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#cripto",
+    "#inversion"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ojo",
+      "title": "con la inversión milagro",
+      "foot": "Famosos, cripto y rentabilidades"
+    },
+    {
+      "t": "point",
+      "head": "Un famoso te dice cómo [[hacerte rico]]",
+      "body": "Anuncios con la cara de un famoso (a veces creada con IA) prometen rentabilidades enormes con una plataforma de cripto o forex.",
+      "foot": "Las caras pueden ser falsas",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Rentabilidad enorme",
+          "b": "Ganancias fijas y garantizadas."
+        },
+        {
+          "t": "Presión para meter más",
+          "b": "Primero poco, luego mucho más."
+        },
+        {
+          "t": "No puedes retirar",
+          "b": "Piden tasas para dejarte sacar tu dinero."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Rentabilidad alta = [[riesgo alto]]",
+      "body": "Nadie puede garantizarte ganancias. Si algo promete mucho y sin riesgo, es una señal de estafa.",
+      "note": "Comprueba si la entidad está autorizada en la CNMV.",
+      "foot": "Consulta la CNMV",
+      "kicker": "Una regla"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de invertir",
+      "steps": [
+        {
+          "t": "Busca la entidad",
+          "b": "En los registros de la CNMV."
+        },
+        {
+          "t": "Desconfía de la prisa",
+          "b": "Y de las garantías."
+        },
+        {
+          "t": "Habla con alguien",
+          "b": "Antes de enviar dinero."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "No [[pagues más]]",
+      "body": "No envíes más dinero para recuperar lo perdido. Guarda pruebas, avisa a tu banco y denuncia.",
+      "foot": "No caigas en la segunda trampa",
+      "kicker": "Si ya invertiste"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Si fuera tan fácil, no lo anunciarían en redes.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien invierta.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

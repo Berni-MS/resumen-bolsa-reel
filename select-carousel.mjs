@@ -5,7 +5,7 @@ import fs from 'node:fs';
 const kind = process.argv[2];
 const dst = process.argv[3];
 const forced = process.argv[4];
-if (!['edu', 'mitos', 'ahorro', 'vida'].includes(kind)) throw new Error('kind debe ser edu, mitos, ahorro o vida');
+if (!['edu', 'mitos', 'ahorro', 'vida', 'vivienda', 'estafas', 'renta'].includes(kind)) throw new Error('kind debe ser edu, mitos, ahorro, vida, vivienda, estafas o renta');
 const dir = `queue/${kind}`;
 const queue = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort().map(f => JSON.parse(fs.readFileSync(`${dir}/${f}`, 'utf8')));
 
@@ -16,7 +16,19 @@ const [y, m, d] = today.split('-').map(Number);
 const week = Math.floor((Date.UTC(y, m - 1, d) - START) / (7 * 86400000));
 // ahorro y vida: el nº 1 de cada cola ya se publicó como prueba, así que arrancan en el 2 y el 1 cierra el ciclo
 const OFFSET = { ahorro: 1, vida: 1 }[kind] || 0;
-const idx = forced !== undefined && forced !== '' ? Number(forced) : (((week + OFFSET) % queue.length) + queue.length) % queue.length;
+// renta: solo se publica durante la campaña (25 de marzo a 30 de junio); fuera de ella no se publica nada
+let rentaWeek = 0;
+if (kind === 'renta') {
+  const inSeason = (m, d) => (m === 3 && d >= 25) || m === 4 || m === 5 || (m === 6 && d <= 30);
+  const isForced = forced !== undefined && forced !== '';
+  if (!isForced && !inSeason(m, d)) {
+    console.log(`Hoy ${today}: fuera de la campaña de la Renta, no se publica nada.`);
+    if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'skip=true\n');
+    process.exit(0);
+  }
+  rentaWeek = Math.max(0, Math.floor((Date.UTC(y, m - 1, d) - Date.UTC(y, 2, 25)) / (7 * 86400000)));
+}
+const idx = forced !== undefined && forced !== '' ? Number(forced) : (((kind === 'renta' ? rentaWeek : week + OFFSET) % queue.length) + queue.length) % queue.length;
 const item = queue[idx];
 if (!item) throw new Error(`No hay carrusel con índice ${idx}`);
 fs.writeFileSync(dst, JSON.stringify(item, null, 2));

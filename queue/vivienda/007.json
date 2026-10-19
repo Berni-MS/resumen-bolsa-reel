@@ -1,0 +1,92 @@
+{
+  "id": "vivienda-007-ayudas-vivienda",
+  "label": "Ayudas a la vivienda",
+  "accent": "green",
+  "caption": "Ayudas para comprar o alquilar 🔑 Dónde mirar antes de pagar de más.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#ayudas"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ayudas",
+      "title": "para comprar o alquilar",
+      "foot": "Dónde mirar"
+    },
+    {
+      "t": "point",
+      "head": "Pero [[cambian mucho]]",
+      "body": "Hay ayudas al alquiler, avales públicos para jóvenes y deducciones. Los requisitos, plazos y cuantías cambian cada año.",
+      "foot": "Siempre confirma",
+      "kicker": "Existen"
+    },
+    {
+      "t": "cards",
+      "head": "Dónde buscar",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Tu comunidad autónoma",
+          "b": "Muchas ayudas son autonómicas."
+        },
+        {
+          "t": "ICO y ministerios",
+          "b": "Avales y programas estatales."
+        },
+        {
+          "t": "Tu ayuntamiento",
+          "b": "Ayudas locales y alquiler social."
+        }
+      ],
+      "foot": "Fuentes oficiales"
+    },
+    {
+      "t": "point",
+      "head": "Qué suelen pedir",
+      "body": "Edad, ingresos máximos, residencia, que sea tu vivienda habitual y un precio máximo de la vivienda.",
+      "note": "Los requisitos exactos dependen de cada programa.",
+      "foot": "Lee las bases",
+      "kicker": "Ejemplos"
+    },
+    {
+      "t": "steps",
+      "head": "Cómo pedirlas",
+      "steps": [
+        {
+          "t": "Busca la convocatoria vigente",
+          "b": "En la web oficial, no en anuncios."
+        },
+        {
+          "t": "Prepara documentos",
+          "b": "Nómina, declaración, contrato."
+        },
+        {
+          "t": "Respeta los plazos",
+          "b": "Suelen ser cortos."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Nadie [[cobra por tramitarlas]] de forma oficial",
+      "body": "Desconfía de quien te pida dinero por conseguirte una ayuda pública. Los trámites oficiales son gratuitos.",
+      "foot": "Fíjate en la dirección web",
+      "kicker": "Ojo"
+    },
+    {
+      "t": "close",
+      "head": "Pide lo que te [[corresponde]]",
+      "body": "Una ayuda bien tramitada es dinero que no se pierde.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Guárdalo para cuando busques casa.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

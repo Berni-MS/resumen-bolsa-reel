@@ -1,0 +1,93 @@
+{
+  "id": "vivienda-011-alquiler-falso",
+  "label": "Alquiler fraudulento",
+  "accent": "green",
+  "caption": "Cuidado con los pisos \"demasiado buenos\" 🚩 Las señales de un alquiler fraudulento.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#vivienda",
+    "#hipoteca",
+    "#alquiler",
+    "#finanzaspersonales",
+    "#estafa",
+    "#alerta"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ojo",
+      "title": "con el piso demasiado barato",
+      "foot": "Señales de un alquiler falso"
+    },
+    {
+      "t": "point",
+      "head": "Piso bonito, [[precio increíble]]",
+      "body": "Los estafadores publican pisos por debajo del mercado y piden una señal antes de que lo veas.",
+      "foot": "Si parece demasiado bueno…",
+      "kicker": "La trampa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales de alarma",
+      "accent": "green",
+      "cards": [
+        {
+          "t": "Precio muy bajo",
+          "b": "Muy por debajo de los pisos de la zona."
+        },
+        {
+          "t": "\"Estoy fuera\"",
+          "b": "Dice que no puede enseñarlo y te manda las llaves."
+        },
+        {
+          "t": "Prisa y pago previo",
+          "b": "Te pide una señal por transferencia o app."
+        }
+      ],
+      "foot": "Tres banderas rojas"
+    },
+    {
+      "t": "point",
+      "head": "Antes de pagar, [[visita]]",
+      "body": "No pagues nada sin ver el piso y sin comprobar que quien lo alquila es el propietario.",
+      "note": "Pide una nota simple del registro para ver el titular.",
+      "foot": "Verifica al propietario",
+      "kicker": "Qué hacer"
+    },
+    {
+      "t": "steps",
+      "head": "Compruébalo",
+      "steps": [
+        {
+          "t": "Visita el piso",
+          "b": "En persona o con alguien de confianza."
+        },
+        {
+          "t": "Pide documentos",
+          "b": "Identificación y prueba de propiedad."
+        },
+        {
+          "t": "Paga con rastro",
+          "b": "Nada de efectivo ni envíos a desconocidos."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Actúa [[rápido]]",
+      "body": "Avisa a tu banco, guarda las capturas y denuncia en la Policía o la Guardia Civil lo antes posible.",
+      "foot": "Cuanto antes, mejor",
+      "kicker": "Si ya pagaste"
+    },
+    {
+      "t": "close",
+      "head": "Si no lo has visto, [[no pagues]]",
+      "body": "Ninguna ganga merece perder tu fianza.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien busque piso.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}

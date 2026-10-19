@@ -1,0 +1,93 @@
+{
+  "id": "estafas-011-oferta-empleo",
+  "label": "Oferta de empleo falsa",
+  "accent": "red",
+  "caption": "Alerta estafa 🚨 Ofertas de trabajo desde casa que son una trampa.\n\nDesliza para verlo paso a paso.\n\n💾 Guárdalo y envíaselo a alguien a quien le venga bien.\n\nContenido educativo; no es asesoramiento financiero.",
+  "tags": [
+    "#estafas",
+    "#ciberseguridad",
+    "#alerta",
+    "#finanzaspersonales",
+    "#empleo",
+    "#teletrabajo"
+  ],
+  "sources": [],
+  "slides": [
+    {
+      "t": "cover",
+      "big": "Ojo",
+      "title": "con el trabajo fácil desde casa",
+      "foot": "Ofertas de empleo falsas"
+    },
+    {
+      "t": "point",
+      "head": "Cobrar mucho por [[hacer casi nada]]",
+      "body": "Ofertas muy bien pagadas por reenviar paquetes, mover dinero o dar \"me gusta\". Te hacen participar en un fraude.",
+      "foot": "Pueden implicarte a ti",
+      "kicker": "La estafa"
+    },
+    {
+      "t": "cards",
+      "head": "Señales",
+      "accent": "red",
+      "cards": [
+        {
+          "t": "Muy bien pagado",
+          "b": "Por un trabajo sin requisitos."
+        },
+        {
+          "t": "Te piden dinero",
+          "b": "Por un curso o un material."
+        },
+        {
+          "t": "Mover dinero de otros",
+          "b": "Recibes y reenvías transferencias."
+        }
+      ],
+      "foot": "Tres señales"
+    },
+    {
+      "t": "point",
+      "head": "Podrías ser una [[mula]]",
+      "body": "Si recibes dinero de una estafa y lo reenvías, la justicia puede considerarte responsable aunque no supieras nada.",
+      "note": "Es un delito para quien mueve el dinero.",
+      "foot": "Cuidado con lo que reenvías",
+      "kicker": "El riesgo"
+    },
+    {
+      "t": "steps",
+      "head": "Antes de aceptar",
+      "steps": [
+        {
+          "t": "Busca la empresa",
+          "b": "Web, dirección y opiniones."
+        },
+        {
+          "t": "Habla con un reclutador real",
+          "b": "Y exige un contrato."
+        },
+        {
+          "t": "Nada de pagos previos",
+          "b": "Para empezar a trabajar."
+        }
+      ],
+      "foot": "Tres pasos"
+    },
+    {
+      "t": "point",
+      "head": "Para y [[cuéntalo]]",
+      "body": "Deja de mover dinero, avisa a tu banco y denuncia. Lo mejor es explicarlo cuanto antes.",
+      "foot": "Hablar te protege",
+      "kicker": "Si ya reenviaste dinero"
+    },
+    {
+      "t": "close",
+      "head": "Si dudas, [[para y pregunta]]",
+      "body": "Un trabajo de verdad no empieza pidiéndote dinero.",
+      "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
+      "extra": "Compártelo con quien busque empleo.",
+      "extraBold": true,
+      "extraSize": 36
+    }
+  ]
+}
