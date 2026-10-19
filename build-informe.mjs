@@ -30,6 +30,24 @@ const group = key => [...new Set(posts.map(p => p[key]))].map(k => {
 const tipos = group('tipo'), series = group('serie').filter(s => s.k !== 'Sin serie' || s.n >= 3);
 const top = [...posts].sort((a, b) => score(b) - score(a)).slice(0, 5);
 const low = [...posts].sort((a, b) => score(a) - score(b)).slice(0, 3);
+
+// Historias de la semana -> destacado al que van (las que pierden vigencia no se guardan)
+const DEST = [
+  [/^aviso-vivienda-/, 'Vivienda', 'Aviso de un carrusel de vivienda'], [/^aviso-estafas-/, 'Estafas', 'Aviso de un carrusel de estafas'],
+  [/^aviso-renta-/, 'Renta', 'Aviso de un carrusel de la Renta'], [/^calculadora-/, 'Calculadoras', 'Calculadora'],
+];
+const CADUCAN = /^(dia|dinero|luz|carburantes|euribor|ipc|pregunta|aviso-)/;
+let historias = [];
+try {
+  const txt = fs.readFileSync(process.argv[4] || 'historias.txt', 'utf8'); let fecha = '';
+  const seen = new Set();
+  for (const l of txt.split('\n')) {
+    if (l.startsWith('@@')) { fecha = l.slice(2, 12); continue; }
+    const m = l.match(/^historias\/(.+?)-\d{6,}\.png$/); if (!m) continue;
+    const base = m[1]; if (seen.has(base)) continue; seen.add(base);
+    const d = DEST.find(([re]) => re.test(base)); if (d) historias.push({ fecha, nombre: d[2], dest: d[1] });
+  }
+} catch {}
 const hoy = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());
 const cols = hasIns ? ['Likes', 'Coment.', 'Guard.', 'Comp.', 'Alcance'] : ['Likes', 'Coment.'];
 const cells = p => (hasIns ? [p.likes, p.comentarios, p.guardados ?? '–', p.compartidos ?? '–', p.alcance ?? '–'] : [p.likes, p.comentarios]).map(v => `<td>${v}</td>`).join('');
@@ -58,6 +76,7 @@ table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;p
 <h2>Qué hacer esta semana</h2><ul>${rec.map(r => `<li>${r}</li>`).join('')}</ul>
 <h2>Por serie</h2><table><tr><th>Serie</th>${grpHead}</tr>${series.map(grpRow).join('')}</table>
 <h2>Por formato</h2><table><tr><th>Formato</th>${grpHead}</tr>${tipos.map(grpRow).join('')}</table>
+<h2>Historias de la semana: a qué destacado van</h2>${historias.length ? `<p class="s">Solo estas se guardan, porque no caducan. Búscalas en tu archivo de historias por la fecha y añádelas al destacado indicado (Perfil → destacado → Editar → Historias). Las de precios, mercados y preguntas pierden vigencia al día siguiente y no hace falta guardarlas.</p><table><tr><th>Fecha</th><th>Historia</th><th>Añadir a</th></tr>${historias.map(h => `<tr><td>${h.fecha}</td><td>${h.nombre}</td><td><b>${h.dest}</b></td></tr>`).join('')}</table>` : '<p class="s">Esta semana no hay historias que merezca la pena guardar en destacados.</p>'}
 <h2>Para fijar en tu perfil</h2><p class="s">Fija la publicación de bienvenida («Empieza aquí») y, junto a ella, estas dos, que son las que mejor han funcionado (Instagram permite fijar hasta 3):</p><ol>${top.slice(0, 2).map(p => `<li><a href="${p.enlace}">${p.titulo || p.enlace}</a> (${p.tipo}, ${p.fecha})</li>`).join('')}</ol>
 <h2>Las 5 mejores</h2><table><tr><th>Fecha</th><th>Formato</th>${cols.map(c => `<th>${c}</th>`).join('')}<th>Publicación</th></tr>${top.map(row).join('')}</table>
 <h2>Las 3 con menos respuesta</h2><table><tr><th>Fecha</th><th>Formato</th>${cols.map(c => `<th>${c}</th>`).join('')}<th>Publicación</th></tr>${low.map(row).join('')}</table>

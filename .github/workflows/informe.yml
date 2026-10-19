@@ -21,6 +21,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -33,8 +35,13 @@ jobs:
             echo "::warning::No se pudieron descargar las métricas; se usan los datos enviados por Make"
             printf '%s' "${{ inputs.data_b64 }}" | base64 -d > datos.json
           fi
+      - name: Listar las historias de la última semana
+        run: |
+          git fetch --quiet --shallow-since="9 days ago" origin gh-pages || true
+          git log FETCH_HEAD --since="7 days ago" --format='@@%cI' --name-only -- historias > historias.txt 2>/dev/null || : > historias.txt
+          echo "Historias en la lista: $(grep -c '\.png$' historias.txt || true)"
       - name: Generar informe
-        run: node build-informe.mjs datos.json informe.html
+        run: node build-informe.mjs datos.json informe.html historias.txt
       - name: Publicar en GitHub Pages
         run: |
           set -euo pipefail
