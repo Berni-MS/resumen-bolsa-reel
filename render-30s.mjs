@@ -80,7 +80,7 @@ body{background:${INK}}
 </style></head><body><div class="root">
 <div class="top"><span class="badge">${esc(item.badge || 'EN 30 SEGUNDOS')}</span><span class="count d" id="count">30</span></div>
 <div class="bar"><i id="prog"></i></div>
-${sceneHtml('hook', `<div class="kick" id="hk">${esc(item.date_label || 'Hoy en bolsa')}</div><div class="txt" data-fit>${words(item.hook)}</div>`)}
+${sceneHtml('hook', `<div class="kick" id="hk">${esc(item.date_label || 'Hoy en bolsa')}</div><div class="txt" data-fit>${words(item.hook)}</div><div class="handle d" style="font-size:56px;margin-top:40px">@tuamigodelasfinanzas</div>`)}
 ${scenes.map((s, i) => sceneHtml('body', `<div class="kick">${esc(s.kicker)}</div>${s.big ? `<div class="big d">${esc(s.big)}</div>` : ''}<div class="txt" data-fit>${words(s.text)}</div>`)).join('\n')}
 ${sceneHtml('outro', `<div class="kick">¿Lo entendiste?</div><div class="txt" data-fit>${words(item.badge ? 'La semana que viene, [[otro consejo]]' : 'Mañana, [[otro]] en 30 segundos')}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
 </div></body></html>`;

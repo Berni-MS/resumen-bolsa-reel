@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import { ctaBlock } from './cta.mjs';
 import { SERIES, episode } from './series.mjs';
+import { trustFoot, trustCaption } from './trust.mjs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
@@ -18,6 +19,7 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const INK = '#0F1B33', GREEN = '#35D07F', RED = '#FF5247', MUTED = '#9FB0CC', CARD = '#16264A', SOFT = '#DCE5F5';
 const N = item.slides.length;
+const KIND = process.env.CAROUSEL_KIND || '';
 const SER = SERIES[process.env.CAROUSEL_KIND || ''];
 const EP = SER ? episode(process.env.CAROUSEL_KIND, item.id || '') : 0;
 const SERIES_LABEL = SER ? `${SER.name} · Nº ${EP}` : '';
@@ -107,7 +109,7 @@ function labelFor(sl, i) {
 
 function html(sl, i) {
   const accent = item.accent === 'red' ? RED : GREEN;
-  const isClose = sl.t === 'close';
+  const isClose = i === N - 1;
   return `<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
 ${fontFace()}
 *{box-sizing:border-box}body{margin:0}
@@ -120,7 +122,7 @@ ${fontFace()}
 </style></head><body><div class="root">
 <div class="top"><span>@tuamigodelasfinanzas</span><span>${esc(labelFor(sl, i))}</span></div>
 <div class="mid" id="mid">${body(sl, accent)}</div>
-<div class="bot"><span style="font-size:${isClose ? 28 : 32}px;line-height:1.3;font-weight:${isClose ? 500 : 700};max-width:850px">${esc(sl.foot || '')}</span><span style="font-size:32px;color:${GREEN}">${i + 1}/${N}</span></div>
+<div class="bot"><span style="font-size:${isClose ? 25 : 32}px;line-height:1.3;font-weight:${isClose ? 500 : 700};max-width:850px;white-space:pre-line">${esc(isClose ? trustFoot(item, KIND, /^Fuentes?\b/i.test(sl.extra || '')) : (sl.foot || ''))}</span><span style="font-size:32px;color:${GREEN}">${i + 1}/${N}</span></div>
 </div></body></html>`;
 }
 
@@ -148,7 +150,7 @@ await browser.close();
 
 // Texto de la publicación
 const legal = 'ℹ️ Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.';
-const src = item.sources && item.sources.length ? '\n\nFuentes: ' + item.sources.join(' · ') : '';
+const src = trustCaption(item, KIND);
 const tags = [...new Set([...(item.tags || []), ...(SER ? [SER.tag] : []), '#tuamigodelasfinanzas'])].join(' ');
 const kindArg = process.env.CAROUSEL_KIND || '';
 const caption = `${item.caption}${src}\n\n${ctaBlock(item.caption, kindArg, item.id || '')}${SER ? `\n📌 Serie «${SER.name}», cada ${SER.day}.` : ''}\n\n${legal}\n\n${tags}`;

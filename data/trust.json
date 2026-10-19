@@ -1,0 +1,23 @@
+{
+  "_nota": "Registro de confianza. 'reviewed' = último mes en que se revisó el contenido estático (colas edu, ahorro, vida, vivienda, estafas, renta, mitos). 'watch' = datos con fecha de caducidad; tools/vigilante.mjs avisa cuando faltan menos de 'warnDays' días. Al revisar un dato, cambia su validUntil y, si has repasado las colas, 'reviewed'.",
+  "reviewed": "2026-10",
+  "reviewEveryDays": 180,
+  "warnDays": 45,
+  "sources": {
+    "edu": ["BME", "CNMV", "Banco de España"],
+    "ahorro": ["Banco de España", "INE", "CNMV"],
+    "vida": ["INE", "Banco de España", "Agencia Tributaria"],
+    "vivienda": ["Banco de España", "Ministerio de Vivienda", "Agencia Tributaria", "BOE"],
+    "estafas": ["INCIBE (017)", "Policía Nacional", "Banco de España"],
+    "renta": ["Agencia Tributaria", "BOE"],
+    "mitos": ["Fuentes citadas en cada dato"]
+  },
+  "watch": [
+    { "id": "irpf-calculadora", "name": "Tramos del IRPF y cotización de la calculadora de sueldo neto", "where": "build-calculadora.mjs (función irpf y neto)", "validUntil": "2026-12-31", "blocks": [] },
+    { "id": "renta", "name": "Datos de la campaña de la Renta (plazos, límites y tramos)", "where": "queue/renta/*.json y guias/build.py (renta)", "validUntil": "2027-03-01", "blocks": ["renta"] },
+    { "id": "festivos-bme", "name": "Festivos de la bolsa española (BME)", "where": "data/calendar.json (festivos_es, horizonte_bme)", "validUntil": "2026-12-31", "blocks": [] },
+    { "id": "calendario-bancos-centrales", "name": "Calendario de la Fed, el BCE, el IPC y el empleo de EE. UU.", "where": "data/calendar.json (horizonte)", "validUntil": "2027-12-31", "blocks": [] },
+    { "id": "hipoteca-supuestos", "name": "Supuestos de la calculadora de hipoteca (3,5 %, 25 años, 35 % de cuota)", "where": "build-calculadora.mjs (cap)", "validUntil": "2027-04-30", "blocks": [] },
+    { "id": "vivienda-gastos", "name": "Porcentajes de entrada, gastos de compra y fianza de las guías de vivienda", "where": "guias/build.py (vivienda) y queue/vivienda/*.json", "validUntil": "2027-04-30", "blocks": [] }
+  ]
+}

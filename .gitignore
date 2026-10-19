@@ -1,5 +1,6 @@
+data.json
 node_modules/
 out/
-site/
 record.json
-data.json
+site/
+vigilante.md

@@ -1,0 +1,46 @@
+name: Vigilante de datos
+
+# Cada lunes comprueba qué datos fiscales o legales caducan (data/trust.json).
+# Si hay alguno caducado o a punto de caducar, abre (o actualiza) una incidencia en el repositorio: GitHub te avisa por correo.
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Revisar fechas de caducidad
+        id: check
+        run: node tools/vigilante.mjs
+      - name: Abrir o actualizar la incidencia
+        if: ${{ steps.check.outputs.alert == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Datos por revisar"
+          NUM=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number,title --jq "[.[] | select(.title==\"$TITLE\")][0].number // empty")
+          if [ -n "$NUM" ]; then
+            gh issue edit "$NUM" --body-file vigilante.md
+            echo "Incidencia #$NUM actualizada"
+          else
+            gh issue create --title "$TITLE" --body-file vigilante.md
+          fi
+      - name: Cerrar la incidencia si ya no hay nada pendiente
+        if: ${{ steps.check.outputs.alert == 'false' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Datos por revisar"
+          NUM=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number,title --jq "[.[] | select(.title==\"$TITLE\")][0].number // empty")
+          [ -n "$NUM" ] && gh issue close "$NUM" --comment "Todo al día." || true

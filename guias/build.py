@@ -1,4 +1,7 @@
-import html, os
+import html, os, json
+T=json.load(open('../data/trust.json'))
+_M=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+REV=f"{_M[int(T['reviewed'][5:7])-1]} de {T['reviewed'][:4]}"
 CSS = """
 :root{--ink:#0F1B33;--green:#35D07F;--red:#FF5247;--muted:#9FB0CC;--card:#16264A;--soft:#DCE5F5}
 *{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--soft);font:17px/1.55 'Hanken Grotesk',system-ui,sans-serif}
@@ -20,7 +23,7 @@ a.g{display:block;text-decoration:none;color:inherit}a.g .card{transition:transf
 HEAD = """<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>%s · Tu Amigo de las Finanzas</title>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"><style>%s</style></head><body><main>"""
 FOOT = """<p class="small">Contenido informativo y educativo. No es asesoramiento financiero ni fiscal. Comprueba siempre los datos y plazos vigentes en las fuentes oficiales.</p>
-<p class="small">@tuamigodelasfinanzas · <a href="./" style="color:#35D07F">Más guías</a></p></main></body></html>"""
+<p class="small">Revisado en %s · <a href="metodologia.html" style="color:#35D07F">Cómo trabajamos</a> · <a href="./" style="color:#35D07F">Más guías</a> · @tuamigodelasfinanzas</p></main></body></html>""" % REV
 def e(s): return html.escape(s)
 def chk(items): return '<ul class="chk">'+''.join(f'<li>{e(i)}</li>' for i in items)+'</ul>'
 def dl(items): return '<dl>'+''.join(f'<dt>{e(a)}</dt><dd>{e(b)}</dd>' for a,b in items)+'</dl>'
@@ -68,9 +71,19 @@ page('gastos','Revisión de <em>gastos fijos</em> y comisiones','Una tarde al a�
  sec('TAE y TIN',card('<p>El <b>TIN</b> es el tipo de interés nominal, sin contar comisiones. La <b>TAE</b> incluye comisiones y la frecuencia de pago de intereses, y por eso sirve mejor para comparar productos.</p>'))+
  sec('Tu resumen',table(['Qué reviso','Cuánto pago al año','¿Lo mantengo?'],[['','___ €',''],['','___ €',''],['','___ €','']])))
 
+page('metodologia','Cómo <em>trabajamos</em>','Qué hacemos, de dónde salen los datos y cómo corregimos los errores.',
+ sec('Qué es esta cuenta',card('<p>@tuamigodelasfinanzas explica el dinero sin jerga: ahorro, vivienda, estafas, Renta y bolsa. Es contenido <b>educativo</b>. No somos asesores financieros ni fiscales, y no recomendamos productos, entidades ni operaciones concretas.</p>'))+
+ sec('De dónde salen los datos',table(['Tema','Fuentes'],[['Precio de la luz','Red Eléctrica (PVPC)'],['Euríbor y euro-dólar','Banco Central Europeo'],['IPC e inflación','INE'],['Carburantes','Ministerio para la Transición Ecológica'],['Bolsa, índices, oro y petróleo','Datos públicos de mercado (Polygon, Yahoo Finance, Alpha Vantage)'],['Criptomonedas','CoinGecko'],['Calendario de bancos centrales, IPC y empleo de EE. UU., festivos','Federal Reserve, BCE, BLS, NYSE, Bolsas y Mercados Españoles'],['Ahorro, vivienda y banca','Banco de España, CNMV, Ministerio de Vivienda, BOE'],['Impuestos y Renta','Agencia Tributaria y BOE'],['Estafas','INCIBE (línea 017), Policía Nacional']]))+
+ sec('Qué verás en cada publicación',dl([('Fuentes','La última diapositiva de cada carrusel indica de dónde sale la información. Si el dato es concreto (una cifra, una fecha), se cita la fuente exacta en el pie de la publicación.'),('Fecha de revisión','El contenido educativo lleva el mes en que se revisó por última vez.'),('Ejemplos','Usan números redondos y se presentan siempre como ejemplo. No son predicciones ni casos reales.'),('Referencias','Reglas como el reparto 50/30/20 son puntos de partida, no normas. Cada hogar es distinto.')]))+
+ sec('Cómo lo revisamos',chk(['Los datos fiscales y legales tienen fecha de caducidad y se comprueban en la fuente oficial antes de cada campaña o cambio de año','Si un dato caduca sin revisar, ese contenido no se publica','Cada seis meses se repasa todo el contenido educativo','Los datos de mercado se descargan automáticamente de fuentes públicas el mismo día; pueden tener retraso respecto al cierre']))+
+ sec('Qué hay detrás',card('<p>Parte de la producción (datos, gráficos y publicación) está automatizada para que los datos salgan puntuales y sin errores de copia. Los textos educativos se elaboran a partir de fuentes oficiales.</p><p class="small">A fecha de hoy no tenemos acuerdos con bancos, brokers ni plataformas. Si algún día hay contenido patrocinado, lo indicaremos de forma clara en la propia publicación.</p>'))+
+ sec('Correcciones',card('<p>Si ves un error, escríbenos por mensaje directo a <b>@tuamigodelasfinanzas</b> o coméntalo en la publicación. Lo comprobamos con la fuente oficial, lo corregimos y lo anotamos aquí.</p>')+'<h2 style="font-size:24px;margin-top:22px">Registro de correcciones</h2><p class="small">Sin correcciones hasta ahora (actualizado en '+REV+').</p>')+
+ sec('Aviso legal',card('<p>Todo el contenido es informativo y educativo. No constituye asesoramiento financiero, fiscal ni legal personalizado, ni una recomendación de compra o venta de ningún producto. Invertir en bolsa conlleva riesgo, incluida la pérdida de parte o de todo el dinero invertido, y las rentabilidades pasadas no garantizan las futuras. Antes de tomar decisiones importantes, consulta con un profesional autorizado y comprueba los datos y plazos vigentes en las fuentes oficiales.</p>')))
+
 idx=HEAD%('Guías gratis',CSS)+'<div class="top">@tuamigodelasfinanzas</div><h1>Guías <em>gratis</em></h1><p class="lead">Plantillas y listas para ahorrar mejor y entender tu dinero. Todo gratis, sin registro.</p>'
 for slug,k,t,d in [('ahorro','AHORRO','Presupuesto mensual en 15 minutos','Plantilla paso a paso y reparto 50/30/20 como referencia.'),('renta','RENTA','Checklist de la declaración de la renta','Documentos y pasos antes de abrir el borrador.'),('bolsa','BOLSA','Glosario de bolsa: 30 términos','Para entender las noticias sin jerga.'),('gastos','GASTOS','Revisión de gastos fijos y comisiones','Suscripciones, banco, seguros, TAE y TIN.'),('vivienda','VIVIENDA','Comprar o alquilar con cabeza','Presupuesto, documentos, hipoteca y contrato de alquiler.'),('estafas','ESTAFAS','Guía antiestafas','Las trampas más comunes y qué hacer si caes.')]:
     idx+=f'<a class="g" href="{slug}.html"><div class="card"><h2 style="margin:0 0 4px;font-size:28px">{t}<span class="kw">{k}</span></h2><p style="margin:0">{d}</p></div></a>'
+idx+='<a class="g" href="metodologia.html"><div class="card"><h2 style="margin:0 0 4px;font-size:28px">Cómo trabajamos</h2><p style="margin:0">De dónde salen los datos, cómo se revisan y cómo corregimos errores.</p></div></a>'
 idx+=FOOT
 open('index.html','w',encoding='utf-8').write(idx)
 print('ok')

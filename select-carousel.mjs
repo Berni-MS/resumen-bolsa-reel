@@ -1,11 +1,12 @@
 // Elige el carrusel que toca esta semana (sin estado: depende solo de la fecha).
 // Uso: node select-carousel.mjs <edu|mitos|ahorro|vida> <item.json> [indice]
 import fs from 'node:fs';
+import { isExpired } from './tools/vigilante.mjs';
 
 const kind = process.argv[2];
 const dst = process.argv[3];
 const forced = process.argv[4];
-if (!['edu', 'mitos', 'ahorro', 'vida', 'vivienda', 'estafas', 'renta'].includes(kind)) throw new Error('kind debe ser edu, mitos, ahorro, vida, vivienda, estafas o renta');
+if (!['edu', 'mitos', 'ahorro', 'vida', 'vivienda', 'estafas', 'renta', 'bienvenida'].includes(kind)) throw new Error('kind debe ser edu, mitos, ahorro, vida, vivienda, estafas, renta o bienvenida');
 const dir = `queue/${kind}`;
 const queue = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort().map(f => JSON.parse(fs.readFileSync(`${dir}/${f}`, 'utf8')));
 
@@ -23,6 +24,12 @@ if (kind === 'renta') {
   const isForced = forced !== undefined && forced !== '';
   if (!isForced && !inSeason(m, d)) {
     console.log(`Hoy ${today}: fuera de la campaña de la Renta, no se publica nada.`);
+    if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'skip=true\n');
+    process.exit(0);
+  }
+  // Datos fiscales caducados (data/trust.json): no se publica hasta revisarlos
+  if (!isForced && isExpired('renta', today)) {
+    console.log('::warning::Carrusel de la Renta NO publicado: los datos fiscales están caducados. Revísalos y actualiza data/trust.json.');
     if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'skip=true\n');
     process.exit(0);
   }

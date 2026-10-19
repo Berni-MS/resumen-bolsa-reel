@@ -9,6 +9,7 @@ const GUIAS = {
   GASTOS: { guia: 'la lista para revisar tus gastos fijos y comisiones', seo: 'gastos fijos · comisiones · TAE · finanzas personales en España' },
 };
 export function pickKey(kind, id = '') {
+  if (kind === 'bienvenida') return 'AHORRO';
   if (kind === 'vivienda') return 'VIVIENDA';
   if (kind === 'estafas') return 'ESTAFAS';
   if (/renta|irpf|hacienda|declaraci/i.test(id)) return 'RENTA';

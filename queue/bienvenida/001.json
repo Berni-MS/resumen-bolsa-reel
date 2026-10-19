@@ -1,0 +1,33 @@
+{
+  "id": "bienvenida-001-empieza-aqui",
+  "label": "Empieza aquí",
+  "accent": "green",
+  "caption": "👋 Hola, soy Tu Amigo de las Finanzas. Aquí te explico el dinero sin jerga: ahorro, vivienda, estafas, Renta y bolsa, con datos de fuentes oficiales y sin vender nada.\n\nEn este carrusel tienes lo que publicamos cada semana, las guías gratis y cómo cuidamos lo que ves. Si es tu primera visita, empieza por aquí. 📌\n\n¿Qué te gustaría entender mejor? Cuéntamelo en comentarios.",
+  "tags": ["#finanzaspersonales", "#educacionfinanciera", "#ahorro", "#Renta", "#vivienda", "#estafas", "#bolsa"],
+  "slides": [
+    { "t": "cover", "big": "Hola", "bigSize": 340, "title": "Soy tu amigo de las [[finanzas]]", "foot": "Empieza aquí" },
+    { "t": "point", "kicker": "Qué es esta cuenta", "head": "El dinero, explicado [[sin jerga]]", "body": "Ahorro, vivienda, estafas, Renta y bolsa. Contenido educativo, con datos de fuentes oficiales y sin vender nada.", "foot": "Para entenderlo y decidir tú" },
+    { "t": "agenda", "kicker": "Cada semana", "head": "Qué vas a [[encontrar]]", "rows": [
+      { "d": "Lun", "n": "El ABC de la bolsa", "k": 0 },
+      { "d": "Mar", "n": "Ahorra sin sufrir", "k": 0 },
+      { "d": "Mié", "n": "Alerta estafa y 1.000 € hace N años", "k": 0 },
+      { "d": "Jue", "n": "Mito o dato y Renta sin miedo", "k": 0 },
+      { "d": "Vie", "n": "Finanzas de la vida real", "k": 0 },
+      { "d": "Sáb", "n": "Tu casa, tus cuentas", "k": 0 },
+      { "d": "Dom", "n": "La semana en datos y el calendario", "k": 0 }
+    ], "foot": "Y cada día, el precio de la luz y los mercados" },
+    { "t": "cards", "head": "Guías gratis", "accent": "green", "cards": [
+      { "t": "AHORRO", "b": "Plantilla de presupuesto mensual" },
+      { "t": "RENTA", "b": "Checklist de la declaración" },
+      { "t": "VIVIENDA", "b": "Comprar o alquilar con cabeza" },
+      { "t": "ESTAFAS", "b": "Guía antiestafas, paso a paso" }
+    ], "foot": "También BOLSA y GASTOS" },
+    { "t": "steps", "head": "Cómo sacarle [[partido]]", "steps": [
+      { "t": "Guarda lo que te sirva", "b": "Así lo tendrás a mano cuando lo necesites." },
+      { "t": "Compártelo", "b": "Con quien tenga la duda o el problema." },
+      { "t": "Comenta una palabra clave", "b": "Te contesto con la guía que quieras, gratis." }
+    ], "foot": "Sin registro, sin letra pequeña" },
+    { "t": "point", "kicker": "Cómo cuidamos lo que publicamos", "head": "Datos [[con fuente]]", "body": "Cada carrusel acaba con sus fuentes y la fecha de revisión. Si ves un error, escríbenos y lo corregimos.", "note": "Todo el detalle está en «Cómo trabajamos», en el enlace del perfil.", "foot": "Transparencia ante todo" },
+    { "t": "close", "head": "Empieza por lo que [[más te preocupa]]", "body": "Cuéntame en comentarios qué quieres entender y lo explico en un próximo post.", "extra": "Sigue la cuenta y guarda este post para volver.", "extraBold": true, "extraSize": 36 }
+  ]
+}

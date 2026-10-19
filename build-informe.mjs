@@ -58,6 +58,7 @@ table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;p
 <h2>Qué hacer esta semana</h2><ul>${rec.map(r => `<li>${r}</li>`).join('')}</ul>
 <h2>Por serie</h2><table><tr><th>Serie</th>${grpHead}</tr>${series.map(grpRow).join('')}</table>
 <h2>Por formato</h2><table><tr><th>Formato</th>${grpHead}</tr>${tipos.map(grpRow).join('')}</table>
+<h2>Para fijar en tu perfil</h2><p class="s">Fija la publicación de bienvenida («Empieza aquí») y, junto a ella, estas dos, que son las que mejor han funcionado (Instagram permite fijar hasta 3):</p><ol>${top.slice(0, 2).map(p => `<li><a href="${p.enlace}">${p.titulo || p.enlace}</a> (${p.tipo}, ${p.fecha})</li>`).join('')}</ol>
 <h2>Las 5 mejores</h2><table><tr><th>Fecha</th><th>Formato</th>${cols.map(c => `<th>${c}</th>`).join('')}<th>Publicación</th></tr>${top.map(row).join('')}</table>
 <h2>Las 3 con menos respuesta</h2><table><tr><th>Fecha</th><th>Formato</th>${cols.map(c => `<th>${c}</th>`).join('')}<th>Publicación</th></tr>${low.map(row).join('')}</table>
 </main></body></html>`;
