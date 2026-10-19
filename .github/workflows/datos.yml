@@ -33,9 +33,13 @@ jobs:
           npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
       - name: Obtener datos
-        run: node build-datos.mjs "${{ inputs.kind }}" datos.json "${{ inputs.date }}"
+        run: |
+          set -o pipefail
+          node build-datos.mjs "${{ inputs.kind }}" datos.json "${{ inputs.date }}" 2>&1 | tee run.log
       - name: Generar imagen
-        run: node render-datos.mjs datos.json story.png
+        run: |
+          set -o pipefail
+          node render-datos.mjs datos.json story.png 2>&1 | tee -a run.log
       - name: Crear vídeo de la historia
         continue-on-error: true
         run: |
@@ -79,3 +83,12 @@ jobs:
           IMAGE_URL: ${{ steps.publish.outputs.url }}
           VIDEO_URL: ${{ steps.publish.outputs.video }}
         run: bash tools/ig-story.sh
+      - name: Guardar el motivo del fallo (si lo hay)
+        if: ${{ failure() }}
+        run: |
+          [ -f run.log ] || echo "Fallo antes de generar la historia (instalación o preparación)" > run.log
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git clone --depth 1 --branch gh-pages "$REMOTE" site-fallo
+          mkdir -p site-fallo/estado && { echo "Fallo de ${{ inputs.kind }} · $(date -u +%FT%TZ) · ejecución ${GITHUB_RUN_ID}"; tail -n 60 run.log; } > "site-fallo/estado/fallo-datos-${{ inputs.kind }}.txt"
+          cd site-fallo && git add -A && git commit -q -m "Fallo de la historia ${{ inputs.kind }}" && git push origin gh-pages || true
