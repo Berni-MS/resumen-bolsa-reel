@@ -1,0 +1,28 @@
+name: Cuentas del nicho
+# Lee las últimas publicaciones de las cuentas de data/nicho.json y guarda el resultado en gh-pages (estado/nicho.json).
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Leer cuentas
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
+        run: node tools/nicho.mjs data/nicho.json nicho.json
+      - name: Guardar en gh-pages
+        run: |
+          set -euo pipefail
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git clone --depth 1 --branch gh-pages "$REMOTE" site
+          mkdir -p site/estado && cp nicho.json site/estado/nicho.json
+          cd site && git add -A && git commit -q -m "Cuentas del nicho" && git push origin gh-pages
