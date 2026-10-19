@@ -8,16 +8,15 @@ START=$(date -u +%s)
 IG_TOKEN=$(printf %s "${IG_TOKEN:-}" | tr -d "[:space:]\"'")
 case "$IG_TOKEN" in IG*) API="https://graph.instagram.com/v21.0";; *) API="https://graph.facebook.com/v21.0";; esac
 LINK=""
-if [ "$DRY" = "true" ]; then
-  LINK="instagram.com/p/EJEMPLO"
-elif [ -n "$IG_TOKEN" ]; then
-  # esperar (hasta 12 min) a que aparezca el post nuevo del tipo esperado
-  for i in $(seq 1 36); do
+if [ -n "$IG_TOKEN" ]; then
+  # esperar (hasta 12 min) a que aparezca el post nuevo del tipo esperado; en pruebas, coge el último que haya
+  MAXI=36; MINT=$((START - 300)); [ "$DRY" = "true" ] && { MAXI=1; MINT=0; }
+  for i in $(seq 1 $MAXI); do
     JSON=$(curl -sS "$API/$IG_USER/media?fields=permalink,media_type,media_product_type,timestamp&limit=6&access_token=$IG_TOKEN" || true)
     while IFS=$'\t' read -r PL MT PT TS; do
       [ -z "$PL" ] && continue
       T=$(date -u -d "$TS" +%s 2>/dev/null || echo 0)
-      [ "$T" -lt $((START - 300)) ] && continue
+      [ "$T" -lt "$MINT" ] && continue
       if { [ "$KIND" = "carrusel" ] && [ "$MT" = "CAROUSEL_ALBUM" ]; } || { [ "$KIND" = "reel" ] && [ "$PT" = "REELS" ]; }; then LINK="$PL"; break; fi
     done < <(echo "$JSON" | jq -r '.data[]? | [.permalink, .media_type, .media_product_type, .timestamp] | @tsv')
     [ -n "$LINK" ] && break
