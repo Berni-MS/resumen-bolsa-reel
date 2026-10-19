@@ -23,7 +23,14 @@ create() { # $1 = video|image
 }
 MODE=image
 if [ -z "${VIDEO_URL:-}" ]; then echo "::warning::No hay URL de vídeo: se publica la imagen"; fi
-if [ -n "${VIDEO_URL:-}" ] && create video; then MODE=video
+VIDEO_OK=0
+if [ -n "${VIDEO_URL:-}" ]; then
+  for TRY in 1 2 3; do
+    if create video; then VIDEO_OK=1; break; fi
+    echo "::warning::Intento $TRY de 3 con el vídeo fallido"; sleep 45
+  done
+fi
+if [ "$VIDEO_OK" = "1" ]; then MODE=video
 elif create image; then MODE=image
 else echo "::error::No se pudo preparar la historia"; exit 1; fi
 OUT=$(curl -sS -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN")
