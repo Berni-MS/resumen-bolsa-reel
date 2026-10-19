@@ -121,14 +121,14 @@ await pg.evaluate(({ HOOK, SCENE, N, OUT, TOTAL }) => {
       const fadeOut = i === scs.length - 1 ? 1 : Math.min(1, Math.max(0, (dur - lt) / 0.25));
       sc.style.opacity = on ? fadeOut : 0;
       const step = i === 0 ? 0.11 : 0.085;
-      const off = i === 0 ? -0.3 : 0.15; // el gancho ya está visible en el primer fotograma
+      const off = i === 0 ? -10 : 0.15; // el gancho está COMPLETO desde el primer fotograma (portada y primeros segundos fijos)
       sc.querySelectorAll('.w').forEach((w, k) => {
         const p = Math.min(1, Math.max(0, (lt - (k * step + off)) / 0.28));
         w.style.opacity = on ? p : 0;
         w.style.transform = `translateY(${(1 - ease(p)) * 40}px) scale(${0.9 + 0.1 * ease(p)})`;
       });
       const extra = sc.querySelectorAll('.kick,.big,.handle,.small');
-      extra.forEach(e => { const p = Math.min(1, Math.max(0, (lt + 0.2) / 0.3)); e.style.opacity = on ? p : 0; });
+      extra.forEach(e => { const p = i === 0 ? 1 : Math.min(1, Math.max(0, (lt + 0.2) / 0.3)); e.style.opacity = on ? p : 0; });
     });
     document.getElementById('prog').style.width = (t / TOTAL * 100) + '%';
     document.getElementById('count').textContent = String(Math.max(0, Math.ceil(TOTAL - t)));
