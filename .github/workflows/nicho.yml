@@ -4,6 +4,10 @@ name: Cuentas del nicho
 on:
   workflow_dispatch:
     inputs:
+      archivo:
+        description: "Nombre del fichero en estado/ (por defecto nicho.json)"
+        required: false
+        default: "nicho.json"
       data_b64:
         description: "JSON en base64 con las publicaciones leídas por Make"
         required: true
@@ -17,6 +21,7 @@ jobs:
       - name: Guardar en gh-pages
         env:
           DATA: ${{ inputs.data_b64 }}
+          ARCHIVO: ${{ inputs.archivo }}
         run: |
           set -euo pipefail
           printf '%s' "$DATA" | base64 -d > nicho.json
@@ -24,5 +29,6 @@ jobs:
           git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
           REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git clone --depth 1 --branch gh-pages "$REMOTE" site
-          mkdir -p site/estado && cp nicho.json site/estado/nicho.json
+          mkdir -p site/estado && case "$ARCHIVO" in *[!a-z0-9._-]*|"") echo "nombre no válido"; exit 1;; esac
+          cp nicho.json "site/estado/$ARCHIVO"
           cd site && git add -A && git commit -q -m "Cuentas del nicho" && git push origin gh-pages
