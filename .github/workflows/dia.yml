@@ -5,6 +5,10 @@ on:
       date:
         description: "Opcional: fecha AAAA-MM-DD para probar (por defecto, hoy en Madrid)"
         required: false
+      probar_ig:
+        description: "true = crea el contenido en Instagram pero NO lo publica (diagnóstico)"
+        required: false
+        default: "false"
       dry_run:
         description: "true = genera la imagen pero NO publica la historia"
         required: false
@@ -77,4 +81,5 @@ jobs:
           IG_USER: "17841438528056370"
           IMAGE_URL: ${{ steps.publish.outputs.url }}
           VIDEO_URL: ${{ steps.publish.outputs.video }}
+          IG_NO_PUBLISH: ${{ inputs.probar_ig }}
         run: bash tools/ig-story.sh

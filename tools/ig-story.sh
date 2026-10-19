@@ -33,6 +33,7 @@ fi
 if [ "$VIDEO_OK" = "1" ]; then MODE=video
 elif create image; then MODE=image
 else echo "::error::No se pudo preparar la historia"; exit 1; fi
+if [ "${IG_NO_PUBLISH:-}" = "true" ]; then echo "::warning::PRUEBA sin publicar: modo=$MODE, video_url=${VIDEO_URL:-vacía}"; exit 0; fi
 OUT=$(curl -sS -X POST "$API/$IG_USER/media_publish" --data-urlencode "creation_id=$ID" --data-urlencode "access_token=$IG_TOKEN")
 echo "$OUT" | jq -e '.id' >/dev/null || { echo "::error::Fallo al publicar: $(echo "$OUT" | jq -c '.error // .' | safe)"; exit 1; }
 echo "::notice::Historia publicada ($MODE): $(echo "$OUT" | jq -r .id)"
