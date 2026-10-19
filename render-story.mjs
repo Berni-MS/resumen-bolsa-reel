@@ -26,6 +26,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>${faces.jo
 <div id="mid">
 ${item.pregunta ? `<div class="d" style="font-size:calc(200px*var(--s));line-height:1.08">${esc(item.pregunta)}</div>
 <div style="background:${CARD};border-radius:28px;padding:calc(34px*var(--s)) calc(40px*var(--s));font-size:calc(46px*var(--s));font-weight:700;line-height:1.25">Respóndeme por mensaje directo 💬<div style="font-size:calc(36px*var(--s));font-weight:500;color:${MUTED};margin-top:10px">Elegiré tus dudas para los próximos contenidos.</div></div>` : `<div class="d" style="font-size:calc(190px*var(--s));line-height:1.08">Hoy en los <span style="color:${GREEN}">mercados</span></div>
+${item.quiet ? `<div style="font-size:calc(42px*var(--s));font-weight:700;color:${MUTED};line-height:1.25">Hoy no hay citas importantes en el calendario. Lo próximo:</div>` : ''}
 ${item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:calc(34px*var(--s)) calc(40px*var(--s))">
   <div style="display:flex;align-items:baseline;gap:24px"><span class="d" style="font-size:calc(76px*var(--s));color:${r.k >= 3 ? RED : GREEN}">${esc(r.t || 'Hoy')}</span><span style="font-size:calc(44px*var(--s));font-weight:700;line-height:1.15">${esc(r.n)}</span></div>
   ${r.b ? `<div style="font-size:calc(34px*var(--s));line-height:1.3;color:${MUTED};margin-top:10px">${esc(r.b)}</div>` : ''}</div>`).join('')}`}
