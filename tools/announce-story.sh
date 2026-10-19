@@ -38,13 +38,13 @@ ls -1t site2/historias/* | tail -n +61 | xargs -r rm -f
 curl -sS -X POST -H "Authorization: Bearer ${GITHUB_TOKEN}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds" >/dev/null || true
 OWNER="${GITHUB_REPOSITORY%%/*}"; RNAME="${GITHUB_REPOSITORY##*/}"
 URL="https://${OWNER}.github.io/${RNAME}/historias/$NAME"
-for i in $(seq 1 40); do
+for i in $(seq 1 120); do
   CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true); echo "intento $i: HTTP $CODE"
-  [ "$CODE" = "200" ] && break; [ "$i" = "40" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
+  [ "$CODE" = "200" ] && break; [ "$i" = "120" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
 done
 VIDEO_URL=""
 if [ -f teaser.mp4 ]; then
-  for i in $(seq 1 40); do
+  for i in $(seq 1 120); do
     CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "${URL%.png}.mp4" || true); echo "vídeo intento $i: HTTP $CODE"
     [ "$CODE" = "200" ] && { VIDEO_URL="${URL%.png}.mp4"; break; }; sleep 15
   done

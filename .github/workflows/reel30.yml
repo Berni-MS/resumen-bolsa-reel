@@ -25,7 +25,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 55
     env:
       MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
     steps:
@@ -87,7 +87,7 @@ jobs:
       - name: Esperar a que la URL esté disponible
         run: |
           URL="${{ steps.publish.outputs.url }}"
-          for i in $(seq 1 40); do
+          for i in $(seq 1 120); do
             CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true)
             echo "intento $i: HTTP $CODE"
             [ "$CODE" = "200" ] && exit 0

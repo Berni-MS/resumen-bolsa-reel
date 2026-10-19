@@ -26,7 +26,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 55
     env:
       MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
       ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
@@ -93,11 +93,11 @@ jobs:
           BASE="${{ steps.publish.outputs.base }}"
           for f in out/*.jpg; do
             URL="${BASE}/$(basename "$f")"
-            for i in $(seq 1 40); do
+            for i in $(seq 1 120); do
               CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true)
               echo "$URL intento $i: HTTP $CODE"
               [ "$CODE" = "200" ] && break
-              [ "$i" = "40" ] && { echo "La URL no respondió a tiempo"; exit 1; }
+              [ "$i" = "120" ] && { echo "La URL no respondió a tiempo"; exit 1; }
               sleep 15
             done
           done
