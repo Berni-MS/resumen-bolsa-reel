@@ -19,7 +19,7 @@ export function pickKey(kind, id = '') {
 export function ctaBlock(caption, kind, id = '') {
   const key = pickKey(kind, id), g = GUIAS[key];
   const share = /env[ií]aselo|m[áa]ndaselo|comp[áa]rtelo/i.test(caption) ? '' : '📲 Mándaselo a alguien a quien le venga bien.\n';
-  // Mientras no esté activa la respuesta automática a comentarios (COMMENT_KEYWORD=1), se remite al enlace del perfil
-  const gancho = process.env.COMMENT_KEYWORD === '1' ? `🎁 Comenta ${key} y te digo dónde conseguir gratis ${g.guia}.` : `🎁 Gratis en el enlace de mi perfil: ${g.guia}.`;
+  // Respuesta automática a comentarios activa (tools/ig-comments.mjs). Con COMMENT_KEYWORD=0 se remite al enlace del perfil
+  const gancho = process.env.COMMENT_KEYWORD !== '0' ? `🎁 Comenta ${key} y te paso gratis ${g.guia}.` : `🎁 Gratis en el enlace de mi perfil: ${g.guia}.`;
   return `${share}${gancho}\n🔎 ${g.seo}`;
 }

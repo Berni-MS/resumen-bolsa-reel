@@ -1,0 +1,28 @@
+name: Respuestas a comentarios con palabra clave
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "true = solo muestra lo que respondería, sin publicar"
+        required: false
+        default: "false"
+concurrency:
+  group: comentarios
+  cancel-in-progress: false
+jobs:
+  responder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Responder comentarios
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
+          DRY: ${{ inputs.dry_run }}
+        run: node tools/ig-comments.mjs
