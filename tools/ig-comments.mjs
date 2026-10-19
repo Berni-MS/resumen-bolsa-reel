@@ -52,7 +52,7 @@ if (process.argv[1] && process.argv[1].endsWith('ig-comments.mjs')) {
   const limite = Date.now() - 72 * 3600 * 1000;
   let hechos = 0, last = -1;
   for (const m of media) {
-    let cs = []; try { cs = (await call(`${m.id}/comments`, { fields: 'id,text,username,timestamp,replies{username}', limit: 50 })).data || []; } catch (e) { console.log(`Sin acceso a comentarios de ${m.id}: ${e.message}`); continue; }
+    let cs = []; try { cs = (await call(`${m.id}/comments`, { fields: 'id,text,username,timestamp,replies{username}', limit: 50 })).data || []; } catch (e) { console.log(`::warning::Sin acceso a comentarios de ${m.id}: ${e.message}`); continue; }
     for (const c of cs) {
       if (!c.username || c.username === me) continue;
       if (Date.parse(c.timestamp) < limite) continue;
@@ -65,5 +65,5 @@ if (process.argv[1] && process.argv[1].endsWith('ig-comments.mjs')) {
       catch (e) { console.log(`::warning::No se pudo responder a ${c.username}: ${e.message}`); }
     }
   }
-  console.log(`Revisadas ${media.length} publicaciones; respuestas${DRY ? ' (prueba)' : ''}: ${hechos}`);
+  console.log(`::notice::Revisadas ${media.length} publicaciones; respuestas${DRY ? ' (prueba)' : ''}: ${hechos}`);
 }
