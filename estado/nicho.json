@@ -1,0 +1,86 @@
+{
+  "generado": "2026-10-19T17:15:50.117Z",
+  "cuentas": [],
+  "no_disponibles": [
+    {
+      "cuenta": "mispropiasfinanzas",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "financia_tuvida",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "socialmario",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "gabrielgarciax",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "franromerooriginal",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "carlos.estratega",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "johnny_stock",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "dmj_finance",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "mastermoneymanagement",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "ramgaldavis",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "elidefferary",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "rafauskiv",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "dianamendezfinanzas",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "maria.lafuente.coach",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "hectorchamizo1",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "finect",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "ahorraconmigo",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "finanzasparatodos",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "sergiofinanzas",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "cuenta": "ahorrarinvertir",
+      "motivo": "Tried accessing nonexisting field (business_discovery)"
+    }
+  ]
+}
