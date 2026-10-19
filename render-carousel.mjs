@@ -151,7 +151,7 @@ await browser.close();
 // Texto de la publicación
 const legal = 'ℹ️ Contenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.';
 const src = trustCaption(item, KIND);
-const tags = [...new Set([...(item.tags || []), ...(SER ? [SER.tag] : []), '#tuamigodelasfinanzas'])].join(' ');
+const tags = [...new Set([...(item.tags || []).slice(0, SER ? 2 : 3), ...(SER ? [SER.tag] : []), '#tuamigodelasfinanzas'])].join(' ');
 const kindArg = process.env.CAROUSEL_KIND || '';
 const caption = `${item.caption}${src}\n\n${ctaBlock(item.caption, kindArg, item.id || '')}${SER ? `\n📌 Serie «${SER.name}», cada ${SER.day}.` : ''}\n\n${legal}\n\n${tags}`;
 fs.writeFileSync(path.join(outDir, 'caption.txt'), caption);

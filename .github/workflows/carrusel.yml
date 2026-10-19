@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos), ahorro (ahorro y presupuesto), vida (vida cotidiana), vivienda (hipoteca y alquiler), estafas (alerta estafa), renta (campaña de la Renta; solo en temporada), tramites (trámites y ayudas), bienvenida (post de presentación, se publica una vez), euros (1.000 € hace N años), calendario (agenda de la semana) o semana (la semana en datos)"
+        description: "Tipo de carrusel: edu (educativo), mitos (datos y mitos), ahorro (ahorro y presupuesto), vida (vida cotidiana), vivienda (hipoteca y alquiler), estafas (alerta estafa), renta (campaña de la Renta; solo en temporada), ipc o euribor (reacción el día del dato; solo si hay dato nuevo), tramites (trámites y ayudas), bienvenida (post de presentación, se publica una vez), euros (1.000 € hace N años), calendario (agenda de la semana) o semana (la semana en datos)"
         required: true
         default: edu
       index:
@@ -49,6 +49,10 @@ jobs:
             node build-euros.mjs item.json "${{ inputs.index }}"
           elif [ "${{ inputs.kind }}" = "calendario" ]; then
             node build-calendar.mjs item.json "${{ inputs.index }}"
+          elif [ "${{ inputs.kind }}" = "ipc" ] || [ "${{ inputs.kind }}" = "euribor" ]; then
+            git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+            git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" estado-tmp
+            node build-reaccion.mjs "${{ inputs.kind }}" item.json estado-tmp/estado "${{ inputs.index }}"
           elif [ "${{ inputs.kind }}" = "semana" ]; then
             node build-semana.mjs item.json "${{ inputs.index }}"
           else
@@ -111,6 +115,13 @@ jobs:
           jq -n --arg base "$BASE" --rawfile caption out/caption.txt --arg id "$(jq -r .id item.json)" \
             '{status:"carousel", id:$id, caption:$caption, images:[range(1; ($n|tonumber)+1) | ($base + "/" + (if . < 10 then "0" else "" end) + (. | tostring) + ".jpg")]}' --arg n "$(ls out/*.jpg | wc -l)" \
           | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
+
+      - name: Marcar reacción como publicada
+        if: ${{ inputs.dry_run != 'true' && steps.select.outputs.skip != 'true' && (inputs.kind == 'ipc' || inputs.kind == 'euribor') }}
+        run: |
+          cd site && mkdir -p estado && date -u +%FT%TZ > "estado/reaccion-$(cat ../reaccion.key).txt"
+          git add -A && git commit -q -m "Reacción publicada $(cat ../reaccion.key)"
+          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
 
       - name: Historia de aviso del carrusel
         if: ${{ always() && steps.publish.outcome == 'success' }}

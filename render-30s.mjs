@@ -72,6 +72,7 @@ body{background:${INK}}
 .big{font-size:260px;line-height:.95;margin-bottom:26px;color:${ACC};white-space:nowrap}
 .txt{font-size:120px;line-height:1.14;font-family:'Big Shoulders Display','Arial Narrow','Liberation Sans Narrow',sans-serif;font-weight:900;overflow:hidden}
 .hook .txt{font-size:170px}
+.hook .big{font-size:300px;margin-bottom:14px}
 .w{display:inline-block;opacity:0;margin-right:.22em}
 .hi{color:${ACC}}
 .small{font-size:30px;font-weight:500;color:${MUTED};line-height:1.35;margin-top:30px}
@@ -80,7 +81,7 @@ body{background:${INK}}
 </style></head><body><div class="root">
 <div class="top"><span class="badge">${esc(item.badge || 'EN 30 SEGUNDOS')}</span><span class="count d" id="count">30</span></div>
 <div class="bar"><i id="prog"></i></div>
-${sceneHtml('hook', `<div class="kick" id="hk">${esc(item.date_label || 'Hoy en bolsa')}</div><div class="txt" data-fit>${words(item.hook)}</div><div class="handle d" style="font-size:56px;margin-top:40px">@tuamigodelasfinanzas</div>`)}
+${sceneHtml('hook', `<div class="kick" id="hk">${esc(item.date_label || 'Hoy en bolsa')}</div>${item.hook_big ? `<div class="big d">${esc(item.hook_big)}</div>` : ''}<div class="txt" data-fit>${words(item.hook)}</div><div class="handle d" style="font-size:56px;margin-top:40px">@tuamigodelasfinanzas</div>`)}
 ${scenes.map((s, i) => sceneHtml('body', `<div class="kick">${esc(s.kicker)}</div>${s.big ? `<div class="big d">${esc(s.big)}</div>` : ''}<div class="txt" data-fit>${words(s.text)}</div>`)).join('\n')}
 ${sceneHtml('outro', `<div class="kick">¿Lo entendiste?</div><div class="txt" data-fit>${words(item.badge ? 'La semana que viene, [[otro consejo]]' : 'Mañana, [[otro]] en 30 segundos')}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
 </div></body></html>`;
@@ -162,7 +163,7 @@ await browser.close();
 fs.unlinkSync(f);
 
 // pie del Reel
-const tags = (item.tags && item.tags.length ? item.tags : ['#bolsa', '#inversion', '#finanzas', '#aprenderbolsa']).slice(0, 8);
+const tags = (item.tags && item.tags.length ? item.tags : ['#bolsa', '#inversion', '#finanzas', '#aprenderbolsa']).slice(0, 3);
 const caption = `${item.caption}\n\n${ctaBlock(item.caption, item.badge ? 'consejo' : 'bolsa')}\n\nFuente: ${item.source || 'medios financieros'}.\n\nContenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.\n\n${[...new Set([...tags, '#tuamigodelasfinanzas'])].join(' ')}`;
 if (caption.length > 2200) throw new Error('El pie supera 2.200 caracteres');
 fs.writeFileSync(path.join(outDir, 'caption.txt'), caption);

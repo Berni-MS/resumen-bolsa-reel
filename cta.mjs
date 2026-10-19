@@ -14,6 +14,8 @@ export function pickKey(kind, id = '') {
   if (kind === 'vivienda') return 'VIVIENDA';
   if (kind === 'estafas') return 'ESTAFAS';
   if (kind === 'tramites') return 'TRAMITES';
+  if (kind === 'euribor') return 'VIVIENDA';
+  if (kind === 'ipc') return 'GASTOS';
   if (/renta|irpf|hacienda|declaraci/i.test(id)) return 'RENTA';
   if (kind === 'ahorro' || kind === 'consejo') return 'AHORRO';
   if (kind === 'vida' || kind === 'semana') return 'GASTOS';

@@ -88,7 +88,7 @@ function buildCaption(withName) {
     ctaBlock('', 'bolsa'),
     '',
     'ℹ️ Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.',
-    '#bolsa #wallstreet #SP500 #nasdaq #dowjones #mercados #inversion #finanzas #tuamigodelasfinanzas',
+    '#bolsa #wallstreet #SP500 #tuamigodelasfinanzas',
   ].join('\n');
 }
 let caption = buildCaption(true);

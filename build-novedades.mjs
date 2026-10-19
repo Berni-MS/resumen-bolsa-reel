@@ -14,7 +14,7 @@ const monthName = ym => MONTHS[Number(ym.slice(5, 7)) - 1];
 const monthLabel = ym => `${monthName(ym)} de ${ym.slice(0, 4)}`;
 const prevMonth = ym => { let y = Number(ym.slice(0, 4)), m = Number(ym.slice(5, 7)) - 1; if (m === 0) { y--; m = 12; } return `${y}-${String(m).padStart(2, '0')}`; };
 const mean = a => a.reduce((s, x) => s + x, 0) / a.length;
-const markerFile = key => path.join(stateDir, `${key}.txt`);
+const markerFile = key => path.join(stateDir, process.env.MARKER_PREFIX ? `${process.env.MARKER_PREFIX}${key}.txt` : `${key}.txt`);
 
 function finish(res) {
   if (!force && fs.existsSync(markerFile(res.key))) return skip(`ya publicado (${res.key})`);

@@ -6,7 +6,7 @@ import { isExpired } from './tools/vigilante.mjs';
 const kind = process.argv[2];
 const dst = process.argv[3];
 const forced = process.argv[4];
-if (!['edu', 'mitos', 'ahorro', 'vida', 'vivienda', 'estafas', 'renta', 'bienvenida', 'tramites'].includes(kind)) throw new Error('kind debe ser edu, mitos, ahorro, vida, vivienda, estafas, renta, bienvenida o tramites');
+if (!['edu', 'mitos', 'ahorro', 'vida', 'vivienda', 'estafas', 'renta', 'bienvenida', 'tramites', 'ipc', 'euribor'].includes(kind)) throw new Error('kind debe ser edu, mitos, ahorro, vida, vivienda, estafas, renta, bienvenida o tramites');
 const dir = `queue/${kind}`;
 const queue = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort().map(f => JSON.parse(fs.readFileSync(`${dir}/${f}`, 'utf8')));
 
