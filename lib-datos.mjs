@@ -1,4 +1,4 @@
-// Utilidades de datos para las historias diarias (luz, «Tu dinero hoy») y el carrusel semanal.
+// Utilidades de datos para las historias diarias (luz, «Los mercados hoy») y el carrusel semanal.
 // Fuentes: Red Eléctrica (REData, PVPC), BCE (euro-dólar), Yahoo Finance (índices, oro, Brent), CoinGecko (bitcoin).
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; tuamigodelasfinanzas)' };
 export const sleep = ms => new Promise(r => setTimeout(r, ms));

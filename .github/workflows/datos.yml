@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "luz (precio de la luz de mañana) o dinero (Tu dinero hoy)"
+        description: "luz (precio de la luz de mañana) o dinero (Los mercados hoy)"
         required: true
         default: luz
       date:

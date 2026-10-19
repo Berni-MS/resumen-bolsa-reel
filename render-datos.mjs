@@ -1,4 +1,4 @@
-// Historias de datos (PNG 1080x1920): luz de mañana y «Tu dinero hoy».
+// Historias de datos (PNG 1080x1920): luz de mañana y «Los mercados hoy».
 // Uso: node render-datos.mjs <datos.json> <salida.png>
 import fs from 'node:fs';
 import { storySeconds } from './story-dur.mjs';
@@ -73,12 +73,12 @@ ${m.before != null ? `<div style="background:${CARD};border-radius:28px;padding:
 <div style="background:${CARD};border-radius:28px;padding:${S(26)} ${S(38)};font-size:${S(40)};font-weight:700;line-height:1.3">Cuéntame tu caso por mensaje 💬<div style="font-size:${S(32)};font-weight:500;color:${MUTED};margin-top:${S(6)}">Y guárdala para cuando la necesites.</div></div>`;
   footer = item.footer;
 } else {
-  header = 'Tu dinero hoy';
+  header = 'Los mercados hoy';
   const rows = item.rows.map(r => `<div style="background:${CARD};border-radius:28px;padding:${S(24)} ${S(38)};display:flex;align-items:center;justify-content:space-between;gap:${S(24)}">
 <div><div style="font-size:${S(48)};font-weight:700">${esc(r.name)}</div><div style="font-size:${S(30)};color:${MUTED}">${esc(r.note)}</div></div>
 <div style="text-align:right"><div class="d" style="font-size:${S(84)};line-height:1">${esc(r.value)}</div><div style="font-size:${S(30)};color:${MUTED}">${esc(r.unit)}</div></div>
 <div style="width:${S(230)};white-space:nowrap;text-align:right;font-size:${S(46)};font-weight:700;color:${r.ch >= 0 ? GREEN : RED}">${r.ch >= 0 ? '▲' : '▼'} ${esc(pct(r.ch).replace(/^[+−]/, ''))}</div></div>`).join('');
-  body = `<div class="d" style="font-size:${S(190)};line-height:1">Tu dinero <span style="color:${GREEN}">hoy</span></div>
+  body = `<div class="d" style="font-size:${S(175)};line-height:1">Los mercados <span style="color:${GREEN}">hoy</span></div>
 <div style="font-size:${S(46)};font-weight:700;color:${MUTED}">${esc(item.label)} · datos a las ${esc(item.time)}</div>${rows}`;
   footer = 'Fuentes: BCE, Yahoo Finance, CoinGecko · Datos informativos, pueden tener retraso · No es asesoramiento';
 }
