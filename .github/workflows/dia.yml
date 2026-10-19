@@ -47,7 +47,7 @@ jobs:
           which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; } || echo "::warning::No se pudo instalar ffmpeg"
           DUR=$(cat story.dur 2>/dev/null || echo 12)
           ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -f lavfi -t "$DUR" -i anullsrc=r=44100:cl=stereo -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -b:a 64k -shortest -movflags +faststart story.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 600 ffmpeg.log | tr '\n' ' ')"; exit 1; }
-          echo "Vídeo de ${DUR} s creado"
+          echo "Vídeo de ${DUR} s creado"; echo "::notice::Archivos: $(ls -la story.* | tr '\n' ' ')"
       - name: Publicar imagen en GitHub Pages
         id: publish
         run: |
@@ -68,6 +68,7 @@ jobs:
             [ "$CODE" = "200" ] && break; [ "$i" = "40" ] && { echo "::error::La imagen no respondió a tiempo"; exit 1; }; sleep 15
           done
           echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "::notice::mp4 local: $(ls -la story.mp4 2>&1)"
           if [ -f story.mp4 ]; then
             VURL="${URL%.png}.mp4"
             for i in $(seq 1 40); do
