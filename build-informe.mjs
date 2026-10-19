@@ -38,8 +38,9 @@ const grpHead = hasIns ? '<th>Publ.</th><th>Puntuación</th><th>Alcance medio</t
 const grpRow = g => `<tr><td>${esc(g.k)}</td><td>${g.n}</td><td>${f1(g.score)}</td>${hasIns ? `<td>${Math.round(g.alcance)}</td><td>${f1(g.guardados)}</td><td>${f1(g.compartidos)}</td>` : ''}</tr>`;
 // Recomendaciones automáticas
 const rec = [];
-if (series.length >= 2) {
-  const s0 = series[0], sl = series[series.length - 1];
+const reales = series.filter(x => x.k !== 'Sin serie');
+if (reales.length >= 2) {
+  const s0 = reales[0], sl = reales[reales.length - 1];
   rec.push(`Mejor serie: <b>${esc(s0.k)}</b> (${f1(s0.score)} puntos de media). Plantéate publicarla más o repetir su tipo de gancho.`);
   if (sl.k !== s0.k && sl.n >= 2) rec.push(`Serie con menos respuesta: <b>${esc(sl.k)}</b> (${f1(sl.score)}). Prueba otro título de portada o otra hora antes de descartarla.`);
 }
