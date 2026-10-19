@@ -1,5 +1,5 @@
 // Cierre de los pies de publicación: invitación a compartir, palabra clave para recibir una guía gratis y palabras de búsqueda.
-// Las guías están en https://berni-ms.github.io/resumen-bolsa-reel/guias/ y el escenario de Make «COMENTARIOS palabra clave» responde a estas palabras.
+// Las guías están en https://tuamigodelasfinanzas.github.io/resumen-bolsa-reel/guias/ y el escenario de Make «COMENTARIOS palabra clave» responde a estas palabras.
 const GUIAS = {
   AHORRO: { guia: 'la plantilla de presupuesto mensual', seo: 'ahorro · presupuesto · finanzas personales en España' },
   RENTA: { guia: 'el checklist de la declaración de la renta', seo: 'declaración de la renta · Hacienda · finanzas personales en España' },

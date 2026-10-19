@@ -4,7 +4,7 @@
 const token = String(process.env.IG_TOKEN || '').replace(/[\s"']/g, ''), user = process.env.IG_USER, DRY = process.env.DRY === 'true';
 if (!token || !user) throw new Error('Faltan IG_TOKEN o IG_USER');
 const API = token.startsWith('IG') ? 'https://graph.instagram.com/v21.0' : 'https://graph.facebook.com/v21.0';
-const BASE = 'https://berni-ms.github.io/resumen-bolsa-reel/guias';
+const BASE = 'https://tuamigodelasfinanzas.github.io/resumen-bolsa-reel/guias';
 const GUIAS = {
   ahorro: ['la plantilla de presupuesto mensual', 'ahorro'],
   renta: ['el checklist de la declaración de la renta', 'renta'],
