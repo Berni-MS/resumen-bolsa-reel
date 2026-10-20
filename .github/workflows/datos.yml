@@ -40,13 +40,34 @@ jobs:
         run: |
           set -o pipefail
           node render-datos.mjs datos.json story.png 2>&1 | tee -a run.log
+      - name: Voz en off (solo palabra del día)
+        if: ${{ inputs.kind == 'palabra' }}
+        continue-on-error: true
+        run: |
+          pip install -q edge-tts 2>&1 | tail -1
+          jq -r '"La palabra del día: \(.term). \(.def) \(.ex)"' datos.json | tr '\n' ' ' > voz.txt
+          cat voz.txt
+          for i in 1 2 3; do
+            edge-tts --voice es-ES-AlvaroNeural --rate=+8% --file voz.txt --write-media voz.mp3 2>voz.err && [ -s voz.mp3 ] && break
+            echo "intento $i falló: $(tail -c 200 voz.err)"; rm -f voz.mp3; sleep 5
+          done
+          [ -s voz.mp3 ] || echo "::warning::Sin voz en off, se publica solo con música"
       - name: Crear vídeo de la historia
         continue-on-error: true
         run: |
           exec 2>&1
           which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; } || echo "::warning::No se pudo instalar ffmpeg"
           DUR=$(cat story.dur 2>/dev/null || echo 12)
-          ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -stream_loop -1 -t "$DUR" -i assets/music.mp3 -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -af "volume=0.55,afade=t=in:d=0.5,afade=t=out:st=$(awk -v d="$DUR" 'BEGIN{print d-1.5}'):d=1.5" -c:a aac -ar 44100 -ac 2 -b:a 128k -shortest -movflags +faststart story.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 600 ffmpeg.log | tr '\n' ' ')"; exit 1; }
+          if [ -s voz.mp3 ]; then
+            VD=$(ffprobe -v error -show_entries format=duration -of csv=p=0 voz.mp3)
+            DUR=$(awk -v d="$DUR" -v v="$VD" 'BEGIN{t=v+2.5; if(t<d)t=d; if(t>58)t=58; printf "%.1f", t}')
+            FADE=$(awk -v d="$DUR" 'BEGIN{print d-1.5}')
+            ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -stream_loop -1 -t "$DUR" -i assets/music.mp3 -i voz.mp3 -filter_complex "[1:a]volume=0.5,afade=t=in:d=0.5,afade=t=out:st=$FADE:d=1.5[m];[2:a]adelay=700|700,volume=1.6,asplit=2[v][k];[m][k]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md];[md][v]amix=inputs=2:duration=first:normalize=0,apad,atrim=0:$DUR[a]" -map 0:v -map "[a]" -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -c:a aac -ar 44100 -ac 2 -b:a 128k -t "$DUR" -movflags +faststart story.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg con voz falló, sigo sin voz: $(tail -c 400 ffmpeg.log | tr '\n' ' ')"; rm -f story.mp4; }
+          fi
+          if [ ! -f story.mp4 ]; then
+            DUR=$(cat story.dur 2>/dev/null || echo 12)
+            ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -stream_loop -1 -t "$DUR" -i assets/music.mp3 -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -af "volume=0.55,afade=t=in:d=0.5,afade=t=out:st=$(awk -v d="$DUR" 'BEGIN{print d-1.5}'):d=1.5" -c:a aac -ar 44100 -ac 2 -b:a 128k -shortest -movflags +faststart story.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 600 ffmpeg.log | tr '\n' ' ')"; exit 1; }
+          fi
           echo "Vídeo de ${DUR} s creado"
       - name: Publicar imagen en GitHub Pages
         id: publish
