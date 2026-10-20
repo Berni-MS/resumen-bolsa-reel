@@ -21,7 +21,15 @@ async function page(title) {
   }
   return out;
 }
-const sp = await page('List of S&P 500 companies'), nq = await page('Nasdaq-100').catch(async e1 => page('Nasdaq-100 companies').catch(e2 => { throw new Error(e1.message + ' || ' + e2.message); }));
+const sp = await page('List of S&P 500 companies');
+let nq = null; const tried = [];
+{
+  const q = await (await fetch('https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=10&format=json&srsearch=' + encodeURIComponent('Nasdaq-100 companies components ticker'), { headers: { 'User-Agent': 'revision-stocks/1.0' } })).json();
+  for (const t of ['Nasdaq-100', ...(q.query?.search || []).map(x => x.title)]) {
+    try { const m = await page(t); if (m.size > 80) { nq = m; console.log('Nasdaq-100 leído de:', t); break; } tried.push(t + ':' + m.size); } catch (e) { tried.push(t + ':no'); }
+  }
+}
+if (!nq) throw new Error('No se encontró la lista del Nasdaq-100. Probadas: ' + tried.join(', '));
 console.log(`Wikipedia: S&P ${sp.size}, Nasdaq-100 ${nq.size}`);
 const STOP = new Set('inc corp corporation company co ltd plc the group holdings holding class a b c and of de sa nv ag se cos limited international'.split(' '));
 const toks = s => (s || '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 1 && !STOP.has(w));
