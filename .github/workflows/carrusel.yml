@@ -136,7 +136,7 @@ jobs:
           fi
           cd ..
           # Telegram al momento solo para los carruseles elegidos
-          if echo "$ID" | grep -qE '^(mitos|estafas|vivienda|semana)'; then ONLY="$NAME" node tools/telegram-tiktok.mjs site || echo "::warning::No se pudo enviar a Telegram"; fi
+          if echo "$ID" | grep -qE '^(mitos|estafas|vivienda|semana|edu|tramites|ahorro|vida)'; then ONLY="$NAME" node tools/telegram-tiktok.mjs site || echo "::warning::No se pudo enviar a Telegram"; fi
           cd site
           ls -1t tiktok-carruseles/*.mp4 | tail -n +15 | while read f; do rm -f "$f" "${f%.mp4}.txt"; done
           git add -A && git commit -q -m "Vídeo TikTok ${ID}" || exit 0
