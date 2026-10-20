@@ -1,0 +1,99 @@
+name: Reel del carrusel del día
+
+# Publica como reel de Instagram (y Facebook y YouTube, vía Make) el vídeo con voz
+# que se generó al publicar el carrusel de ese mismo día. Lo lanza Make por la tarde.
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "Serie del carrusel: mitos, estafas, vivienda o semana"
+        required: true
+      fecha:
+        description: "Opcional: día del carrusel (AAAA-MM-DD). Por defecto, hoy (hora de Madrid)"
+        required: false
+      dry_run:
+        description: "true = lo prepara pero NO avisa a Make (no publica)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reel-carrusel
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+    steps:
+      - name: Buscar el vídeo del carrusel de hoy
+        id: find
+        run: |
+          set -euo pipefail
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
+          DAY="${{ inputs.fecha }}"; [ -n "$DAY" ] || DAY=$(TZ=Europe/Madrid date +%F)
+          R="reels-carrusel/${{ inputs.kind }}-${DAY}"
+          if [ ! -f "site/${R}.mp4" ]; then
+            echo "::notice::No hay vídeo de carrusel '${{ inputs.kind }}' del ${DAY} (¿no se publicó el carrusel?). No se publica nada."
+            echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if [ -f "site/${R}.done" ]; then
+            echo "::notice::El reel de ${R} ya se publicó."; echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          echo "r=${R}" >> "$GITHUB_OUTPUT"
+          echo "url=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${R}.mp4" >> "$GITHUB_OUTPUT"
+
+      - name: Texto del reel
+        if: ${{ steps.find.outputs.skip != 'true' }}
+        run: |
+          R="site/${{ steps.find.outputs.r }}"
+          node -e '
+            const fs=require("fs"); const r=process.argv[1];
+            let t=fs.readFileSync(r+".txt","utf8");
+            // en un vídeo no se desliza: se quitan esas líneas y se apunta al carrusel del perfil
+            t=t.split("\n").filter(l=>!/^\s*Desliza\b/i.test(l)).join("\n").replace(/\n{3,}/g,"\n\n");
+            const lines=t.split("\n"); const i=Math.max(1,lines.findIndex((l,k)=>k>0&&l.trim()===""));
+            lines.splice(i,0,"","📌 Tienes el carrusel completo en mi perfil para guardarlo.");
+            fs.writeFileSync("caption.txt",lines.join("\n").replace(/\n{3,}/g,"\n\n").trim()+"\n");
+          ' "$R"
+          cat caption.txt
+          LABEL=$(cat "${R}.label" 2>/dev/null | head -1)
+          [ -n "$LABEL" ] || LABEL="Tu Amigo de las Finanzas"
+          echo "LABEL=${LABEL}" >> "$GITHUB_ENV"
+
+      - name: Comprobar que el vídeo está en línea
+        if: ${{ steps.find.outputs.skip != 'true' }}
+        run: |
+          URL="${{ steps.find.outputs.url }}"
+          for i in $(seq 1 60); do
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true)
+            echo "intento $i: HTTP $CODE"
+            [ "$CODE" = "200" ] && exit 0
+            sleep 15
+          done
+          echo "El vídeo no responde en ${URL}"; exit 1
+
+      - name: Avisar a Make (publica el reel)
+        if: ${{ steps.find.outputs.skip != 'true' && inputs.dry_run != 'true' }}
+        run: |
+          jq -n --arg url "${{ steps.find.outputs.url }}" --rawfile caption caption.txt --arg date "$(TZ=Europe/Madrid date +%F)" --arg title "$LABEL" \
+            '{status:"ok", video_url:$url, caption:$caption, date:$date, title:$title}' \
+          | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
+
+      - name: Marcar como publicado
+        if: ${{ steps.find.outputs.skip != 'true' && inputs.dry_run != 'true' }}
+        run: |
+          cd site && date -u +%FT%TZ > "${{ steps.find.outputs.r }}.done"
+          git add -A && git commit -q -m "Reel publicado ${{ steps.find.outputs.r }}"
+          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
+
+      - name: Avisar a Make si falla
+        if: ${{ failure() && inputs.dry_run != 'true' }}
+        run: |
+          curl -sS -X POST -H 'Content-Type: application/json' \
+            -d '{"status":"error","run_url":"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' "$MAKE_WEBHOOK_URL" || true

@@ -124,6 +124,16 @@ jobs:
           node tools/carrusel-video.mjs out "${NAME}.mp4" voz || bash tools/carrusel-video-simple.sh out "${NAME}.mp4" voz || bash tools/carrusel-video-simple.sh out "${NAME}.mp4"
           cd site && mkdir -p tiktok-carruseles
           cp "../${NAME}.mp4" tiktok-carruseles/ && cp ../out/caption.txt "tiktok-carruseles/${NAME}.txt"
+          # Series que también salen como reel en Instagram por la tarde (reel-carrusel.yml lo publica)
+          KIND="${{ inputs.kind }}"
+          if echo "$KIND" | grep -qxE 'mitos|estafas|vivienda|semana'; then
+            mkdir -p reels-carrusel
+            R="reels-carrusel/${KIND}-${DAY}"
+            cp "../${NAME}.mp4" "${R}.mp4" && cp ../out/caption.txt "${R}.txt"
+            { cat ../out/series.txt 2>/dev/null || jq -r '.label // empty' ../item.json; } > "${R}.label" || true
+            # conservar solo los 12 últimos
+            ls -1t reels-carrusel/*.mp4 2>/dev/null | tail -n +13 | while read f; do rm -f "$f" "${f%.mp4}".txt "${f%.mp4}".label "${f%.mp4}".done; done
+          fi
           cd ..
           # Telegram al momento solo para los carruseles elegidos
           if echo "$ID" | grep -qE '^(mitos|estafas|vivienda|semana)'; then ONLY="$NAME" node tools/telegram-tiktok.mjs site || echo "::warning::No se pudo enviar a Telegram"; fi
