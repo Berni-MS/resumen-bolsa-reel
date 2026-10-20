@@ -1,10 +1,35 @@
-file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:24
-const sp = await page('List of S&P 500 companies'), nq = await page('Nasdaq-100').catch(async e1 => page('Nasdaq-100 companies').catch(e2 => { throw new Error(e1.message + ' || ' + e2.message); }));
-                                                                                                                                                     ^
+Revisión STOCKS_RELEVANTES · 2026-10-20T07:01:02.562Z
+Registros en la tabla: 518
 
-Error: Sin tabla de componentes en Nasdaq-100 · tablas: 16 · cabeceras: Nasdaq-100 Index from 1985 to 2015 | Category All-Time Highs | Year Closing level Change in Indexin Points Change in Indexi | Milestone (closing) Date of Record (closing) Trading Days | Milestone (closing) Date of Record (closing) Trading Days | .mw-parser-output .navbar{display:inline;font-size:88%;font- | vteNasdaq, Inc. | vteStock market indices | Asia S&P Asia 50 | Energy Amex Oil Index | USMajor Dow Jones Industrial Average NYSE Composite Nasdaq C | UK FT 30 FTSE 100 Index FTSE 250 Index FTSE 350 Index FTSE S | China SSE Composite SZSE Component SSE 50 Index SSE 180 Inde | Australia S&P/A || Wikipedia: Nasdaq-100 companies
-    at file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:24:150
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:24:58
+== NOMBRES QUE NO COINCIDEN (13) ==
+ADM: tabla="Admiral Group" · Wikipedia="Archer Daniels Midland"
+BDX: tabla="BD" · Wikipedia="Becton Dickinson"
+COP: tabla="CompuGroup Medical" · Wikipedia="ConocoPhillips"
+FICO: tabla="FICO" · Wikipedia="Fair Isaac"
+FIS: tabla="FIS" · Wikipedia="Fidelity National Information Services"
+KKR: tabla="Kohlberg Kravis Roberts" · Wikipedia="KKR & Co."
+MSTR: tabla="Strategy" · Wikipedia="MicroStrategy"
+NEM: tabla="Nemetschek" · Wikipedia="Newmont"
+ON: tabla="Onsemi" · Wikipedia="ON Semiconductor"
+P: tabla="Pandora Media" · Wikipedia="Everpure"
+STT: tabla="Seagate Technology" · Wikipedia="State Street Corporation"
+TSCO: tabla="Tesco" · Wikipedia="Tractor Supply"
+VMRK: tabla="Verisk Analytics" · Wikipedia="Vivmark Residential"
 
-Node.js v22.23.3
+== MARCADOS EN UN ÍNDICE AL QUE NO PERTENECEN SEGÚN WIKIPEDIA (7) ==
+CBOE (Cboe Global Markets) marcado S&P 500 y no está en la lista de Wikipedia
+CTVA (Corteva) marcado S&P 500 y no está en la lista de Wikipedia
+FI (Fiserv) marcado S&P 500 y no está en la lista de Wikipedia
+FMC (FMC Corporation) marcado S&P 500 y no está en la lista de Wikipedia
+MKTX (MarketAxess) marcado S&P 500 y no está en la lista de Wikipedia
+PSKY (Paramount Skydance) marcado S&P 500 y no está en la lista de Wikipedia
+WBD (Warner Bros. Discovery) marcado S&P 500 y no está en la lista de Wikipedia
+
+== EN WIKIPEDIA Y FALTAN EN LA TABLA (7) ==
+S&P 500: CIK (Symbol)
+S&P 500: CMS (CMS Energy)
+S&P 500: LII (Lennox International)
+S&P 500: SKYD (Skydance Corporation)
+S&P 500: SOLV (Solventum)
+S&P 500: TWLO (Twilio)
+S&P 500: VYLR (Vylor)
