@@ -67,7 +67,7 @@ function slideOverview() {
     const big = !!i.big;
     const w = Math.min(100, Math.abs(i.chg) / maxScale * 100).toFixed(1);
     const detail = i.pts ? `${num(i.close, 0)} puntos (antes ${num(i.prev, 0)})` : `${usd(i.close)} (antes ${usd(i.prev)})`;
-    return `<div style="position:relative;height:${big ? 226 : 128}px;padding:0 30px 14px;background:${up ? GREEN : RED};color:${INK};display:flex;align-items:center;justify-content:space-between;overflow:hidden;${big ? 'border-left:18px solid ' + INK : ''}">
+    return `<div style="position:relative;height:${big ? 226 : 128}px;padding:0 30px 14px;background:${up ? GREEN : RED};color:${INK};display:flex;align-items:center;justify-content:space-between;overflow:hidden;">
       <div><div class="d" style="font-size:${big ? 138 : 70}px;line-height:.9">${esc(i.ticker)}</div><div style="font-size:${big ? 32 : 24}px;font-weight:700">${esc(i.name)}</div></div>
       <div style="text-align:right"><div class="d" style="font-size:${big ? 128 : 74}px;line-height:.85">${pct(i.chg)}</div>
       ${big ? `<div style="font-size:26px;font-weight:500;margin-top:10px">${detail}</div>` : ''}</div>
