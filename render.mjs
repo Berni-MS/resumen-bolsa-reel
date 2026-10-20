@@ -201,12 +201,12 @@ if (voces.length && hasMusic) {
   const fu = fuente(path.join(tmp, 'fonts'));
   const clean = s => s.replace(/ese y pe quinientos/gi, 'S&P 500').replace(/ese y pe/gi, 'S&P').replace(/ por ciento/g, ' %').replace(/\bnasdaq cien\b/gi, 'Nasdaq 100');
   const segs = voces.map(v => ({ start: starts[v.name] + 0.5, dur: v.dur, text: clean(guionTxt[v.name]) }));
-  const ass = path.join(tmp, 'subs.ass'); fs.writeFileSync(ass, assDe(segs, { yBase: 1700, fontName: fu.name }));
+  const ass = path.join(tmp, 'subs.ass'); fs.writeFileSync(ass, assDe(segs, { yBase: 1520, fontName: fu.name }));
   const fc = [...vf, vmix, ...wf,
     `[1:a]volume=0.5,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8[m]`,
     `[m][k]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md]`,
     `[md][v][wh]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]`,
-    `[0:v]fps=30,format=yuv420p[b]`,
+    `[0:v]fps=30,scale=886:1574,pad=1080:1920:97:100:color=0x0F1B33,format=yuv420p[b]`,
     `[b][2:v]overlay=x='-w+w*t/${total}':y=1908:shortest=1[pv]`,
     `[pv]ass='${ass}':fontsdir='${fu.dir}'[vs]`].join(';');
   args.push('-filter_complex', fc);

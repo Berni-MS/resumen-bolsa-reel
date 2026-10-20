@@ -29,7 +29,7 @@ if (vz) for (let i = 0; i < N; i++) args.push('-i', path.join(dirVoz, `${String(
 let f = '';
 imgs.forEach((_, i) => {
   const F = Math.round(dur[i] * FPS);
-  f += `[${i}:v]scale=1944:-1,zoompan=z='1+0.05*on/${F}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${F}:s=972x1215:fps=${FPS},pad=1080:1920:54:130:color=0x0F1B33,setsar=1,format=yuv420p[v${i}];`;
+  f += `[${i}:v]scale=1944:-1,zoompan=z='1+0.05*on/${F}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${F}:s=918x1148:fps=${FPS},pad=1080:1920:81:240:color=0x0F1B33,setsar=1,format=yuv420p[v${i}];`;
 });
 let prev = 'v0';
 for (let i = 1; i < N; i++) { f += `[${prev}][v${i}]xfade=transition=fade:duration=${FADE}:offset=${starts[i].toFixed(3)}[x${i}];`; prev = `x${i}`; }
@@ -41,7 +41,7 @@ if (vz) {
   const fu = fuente(path.join(tmp, 'fonts'));
   const segs = vz.textos.map((t, i) => ({ start: starts[i] + 0.25, dur: vz.durs[i], text: t }));
   ass = path.join(tmp, 'subs.ass');
-  fs.writeFileSync(ass, assDe(segs, { yBase: 1700, fontName: fu.name }));
+  fs.writeFileSync(ass, assDe(segs, { yBase: 1520, fontName: fu.name }));
   f += `[${prev}]ass='${ass}':fontsdir='${fu.dir}'[vs];`;
   prev = 'vs';
 }
