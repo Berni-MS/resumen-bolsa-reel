@@ -64,28 +64,30 @@ function slideOverview() {
   const allUp = d.indices.every(i => i.chg > 0), allDown = d.indices.every(i => i.chg < 0);
   const slabs = d.indices.map(i => {
     const up = i.chg >= 0;
+    const big = !!i.big;
     const w = Math.min(100, Math.abs(i.chg) / maxScale * 100).toFixed(1);
-    return `<div style="position:relative;height:200px;padding:0 30px 16px;background:${up ? GREEN : RED};color:${INK};display:flex;align-items:center;justify-content:space-between;overflow:hidden">
-      <div><div class="d" style="font-size:104px;line-height:.9">${esc(i.ticker)}</div><div style="font-size:28px;font-weight:700">${esc(i.name)}</div></div>
-      <div style="text-align:right"><div class="d" style="font-size:108px;line-height:.85">${pct(i.chg)}</div>
-      <div style="font-size:24px;font-weight:500;margin-top:10px">${usd(i.close)} (antes ${usd(i.prev)})</div></div>
-      <div style="position:absolute;left:0;bottom:0;width:100%;height:14px;background:rgba(15,27,51,.22)"><div style="width:${w}%;height:14px;background:${INK}"></div></div>
+    const detail = i.pts ? `${num(i.close, 0)} puntos (antes ${num(i.prev, 0)})` : `${usd(i.close)} (antes ${usd(i.prev)})`;
+    return `<div style="position:relative;height:${big ? 226 : 128}px;padding:0 30px 14px;background:${up ? GREEN : RED};color:${INK};display:flex;align-items:center;justify-content:space-between;overflow:hidden;${big ? 'border-left:18px solid ' + INK : ''}">
+      <div><div class="d" style="font-size:${big ? 138 : 70}px;line-height:.9">${esc(i.ticker)}</div><div style="font-size:${big ? 32 : 24}px;font-weight:700">${esc(i.name)}</div></div>
+      <div style="text-align:right"><div class="d" style="font-size:${big ? 128 : 74}px;line-height:.85">${pct(i.chg)}</div>
+      ${big ? `<div style="font-size:26px;font-weight:500;margin-top:10px">${detail}</div>` : ''}</div>
+      <div style="position:absolute;left:0;bottom:0;width:100%;height:${big ? 14 : 10}px;background:rgba(15,27,51,.22)"><div style="width:${w}%;height:${big ? 14 : 10}px;background:${INK}"></div></div>
     </div>`;
-  }).join('<div style="height:16px"></div>');
+  }).join('<div style="height:14px"></div>');
   const note = allUp || allDown ? 'La barra mide el cambio frente a un máximo de 3 %.' : 'La barra mide el cambio frente a un máximo de 3 %. Verde sube, rojo baja.';
   return page(INK, '#fff', `<div style="padding:${SAFE_TOP}px ${SAFE_R}px 0 ${SAFE_L}px">
-    <div style="font-size:36px;font-weight:700;color:${MUTED}">${esc(d.dateLabel)}</div>
-    <div class="d" style="font-size:116px;line-height:1.08;margin-top:12px;max-height:262px;overflow:hidden">${esc(d.headline)}</div>
-    <div style="margin-top:28px">${slabs}</div>
+    <div style="font-size:52px;font-weight:700;color:${GREEN};line-height:1.1">${esc(d.dateLabel)}</div>
+    <div class="d" style="font-size:104px;line-height:1.05;margin-top:10px;max-height:230px;overflow:hidden">${esc(d.headline)}</div>
+    <div style="margin-top:22px">${slabs}</div>
     <div style="margin-top:22px;font-size:25px;font-weight:500;color:${MUTED};line-height:1.3">${note} Variación respecto al cierre de la sesión anterior.</div>
   </div>`);
 }
 
 // ---------- pantallas 2-7: top 5 ----------
-const INDEX_NAME = { SPY: 'S&P 500 (SPY)', QQQ: 'Nasdaq 100 (QQQ)', DIA: 'Dow Jones (DIA)' };
+const INDEX_NAME = { SPY: 'S&P 500 (SPY)', QQQ: 'Nasdaq 100 (QQQ)', DIA: 'Dow Jones (DIA)', IBEX: 'IBEX 35' };
 function tape() {
   return `<div style="margin-top:22px;height:56px;background:${INK};color:#fff;display:flex;align-items:center;padding-left:24px;gap:28px;font-size:28px;font-weight:700;white-space:nowrap">${
-    d.indices.map(i => `<span><span style="color:${i.chg >= 0 ? GREEN : RED}">${i.chg >= 0 ? '▲' : '▼'}</span> ${esc(i.ticker)} ${pct(i.chg)}</span>`).join('')}</div>`;
+    d.indices.filter(i => !d.hasIbex || ['SPY', 'IBEX', 'QQQ'].includes(i.ticker)).map(i => `<span><span style="color:${i.chg >= 0 ? GREEN : RED}">${i.chg >= 0 ? '▲' : '▼'}</span> ${esc(i.ticker)} ${pct(i.chg)}</span>`).join('')}</div>`;
 }
 function slideTop(idx, kind) {
   const rows = d.lists[idx][kind];
@@ -100,7 +102,7 @@ function slideTop(idx, kind) {
     </div>`).join('');
   return page(gain ? GREEN : RED, INK, `<div style="padding:${SAFE_TOP}px ${SAFE_R}px 0 ${SAFE_L}px">
     <div class="d" style="font-size:112px;line-height:.9">Top 5 ${gain ? 'subidas' : 'bajadas'}</div>
-    <div style="font-size:40px;font-weight:700;margin-top:10px">${esc(INDEX_NAME[idx])}</div>
+    <div style="display:inline-block;background:${INK};color:${gain ? GREEN : RED};font-size:64px;font-weight:700;line-height:1;padding:14px 32px;margin-top:16px">${esc(INDEX_NAME[idx])}</div>
     <div style="margin-top:26px">${html}</div>${tape()}</div>`);
 }
 
@@ -115,17 +117,18 @@ function slideFactors() {
   }).join('<div style="height:12px"></div>');
   return page(INK, '#fff', `<div style="padding:${SAFE_TOP}px ${SAFE_R}px 0 ${SAFE_L}px">
     <div class="d" style="font-size:98px;line-height:.9">Qué movió la bolsa</div>
-    <div style="font-size:36px;font-weight:700;color:${MUTED};margin-top:8px">${esc(d.sessionLabel)}</div>
+    <div style="font-size:54px;font-weight:700;color:${GREEN};margin-top:10px;line-height:1.1">${esc(d.sessionLabel)}</div>
     <div style="margin-top:20px">${blocks}</div>
-    <div style="margin-top:14px;font-size:22px;font-weight:500;color:${MUTED};line-height:1.3">Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.</div></div>`);
+    <div style="margin-top:14px;font-size:22px;font-weight:500;color:${MUTED};line-height:1.3">Cotizaciones: Polygon.io${d.hasIbex ? ' y Yahoo Finance (IBEX)' : ''}. Contenido informativo, no es asesoramiento financiero.</div></div>`);
 }
 
+const SECOND = d.lists.IBEX ? 'IBEX' : 'QQQ'; // segundo ranking: IBEX 35 (o Nasdaq 100 si faltan datos del IBEX)
 const slides = [
   ['01-variacion', slideOverview()],
   ['02-spy-subidas', slideTop('SPY', 'gainers')],
   ['03-spy-bajadas', slideTop('SPY', 'losers')],
-  ['04-qqq-subidas', slideTop('QQQ', 'gainers')],
-  ['05-qqq-bajadas', slideTop('QQQ', 'losers')],
+  [`04-${SECOND.toLowerCase()}-subidas`, slideTop(SECOND, 'gainers')],
+  [`05-${SECOND.toLowerCase()}-bajadas`, slideTop(SECOND, 'losers')],
   ['08-factores', slideFactors()],
 ];
 

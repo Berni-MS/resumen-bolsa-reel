@@ -1,0 +1,13 @@
+{
+ "nota": "Componentes del IBEX 35 (símbolos de Yahoo Finance). La composición se revisa en junio y diciembre: actualizar esta lista cuando cambie.",
+ "revisado": "2026-10",
+ "indice": "^IBEX",
+ "valores": [
+  ["ACS.MC","ACS"],["ACX.MC","Acerinox"],["AENA.MC","Aena"],["AMS.MC","Amadeus"],["ANA.MC","Acciona"],["ANE.MC","Acciona Energía"],
+  ["BBVA.MC","BBVA"],["BKT.MC","Bankinter"],["CABK.MC","CaixaBank"],["CLNX.MC","Cellnex"],["COL.MC","Colonial"],["ELE.MC","Endesa"],
+  ["ENG.MC","Enagás"],["FDR.MC","Fluidra"],["FER.MC","Ferrovial"],["GRF.MC","Grifols"],["IAG.MC","IAG"],["IBE.MC","Iberdrola"],
+  ["IDR.MC","Indra"],["ITX.MC","Inditex"],["LOG.MC","Logista"],["MAP.MC","Mapfre"],["MRL.MC","Merlin"],["MTS.MC","ArcelorMittal"],
+  ["NTGY.MC","Naturgy"],["PUIG.MC","Puig"],["RED.MC","Redeia"],["REP.MC","Repsol"],["ROVI.MC","Rovi"],["SAB.MC","Sabadell"],
+  ["SAN.MC","Santander"],["SCYR.MC","Sacyr"],["SLR.MC","Solaria"],["TEF.MC","Telefónica"],["UNI.MC","Unicaja"]
+ ]
+}

@@ -2,6 +2,7 @@
 // Uso: node prepare.mjs <record.json | -> <data.json>
 import fs from 'node:fs';
 import { ctaBlock } from './cta.mjs';
+import { ibexData } from './ibex.mjs';
 
 const src = process.argv[2];
 const dst = process.argv[3] || 'data.json';
@@ -30,6 +31,9 @@ else {
   else headline = cap(`${joinEs(u)} ${u.length > 1 ? 'suben' : 'sube'}, ${joinEs(dn)} ${dn.length > 1 ? 'caen' : 'cae'}`);
 }
 const big = Math.abs(r.spy_chg) >= 1.5;
+let ibex = null;
+try { ibex = await ibexData(r.date); console.log(`IBEX 35 (${ibex.date}): ${ibex.chg} %`); }
+catch (e) { console.warn('AVISO: sin datos del IBEX, se usa el Nasdaq 100:', e.message); }
 
 // Nombres cortos
 const KEEP = new Set(['APA']);
@@ -56,6 +60,7 @@ const pctEs = x => (x < 0 ? '−' : '+') + Math.abs(x).toLocaleString('es-ES', {
 const arrow = x => (x < 0 ? '🔻' : x > 0 ? '🟢' : '⚪');
 const idxLines = [
   `${arrow(r.spy_chg)} S&P 500 (SPY): ${pctEs(r.spy_chg)}`,
+  ...(ibex ? [`${arrow(ibex.chg)} IBEX 35: ${pctEs(ibex.chg)}`] : []),
   `${arrow(r.qqq_chg)} Nasdaq 100 (QQQ): ${pctEs(r.qqq_chg)}`,
   `${arrow(r.dia_chg)} Dow Jones (DIA): ${pctEs(r.dia_chg)}`,
 ];
@@ -65,8 +70,11 @@ function topLine(label, rows, withName) {
 }
 function buildCaption(withName) {
   const L = { SPY: 'S&P 500', QQQ: 'Nasdaq 100', DIA: 'Dow Jones' };
-  const ups = ['SPY', 'QQQ', 'DIA'].map(k => topLine(L[k], list(k === 'SPY' ? r.sp500_gainers : k === 'QQQ' ? r.nasdaq100_gainers : r.dow30_gainers), withName));
-  const dns = ['SPY', 'QQQ', 'DIA'].map(k => topLine(L[k], list(k === 'SPY' ? r.sp500_losers : k === 'QQQ' ? r.nasdaq100_losers : r.dow30_losers), withName));
+  const keys = ibex ? ['SPY', 'IBEX'] : ['SPY', 'QQQ', 'DIA'];
+  L.IBEX = 'IBEX 35';
+  const src = { SPY: [r.sp500_gainers, r.sp500_losers], QQQ: [r.nasdaq100_gainers, r.nasdaq100_losers], DIA: [r.dow30_gainers, r.dow30_losers], IBEX: ibex ? [ibex.gainers, ibex.losers] : [[], []] };
+  const ups = keys.map(k => topLine(L[k], list(src[k][0]), withName));
+  const dns = keys.map(k => topLine(L[k], list(src[k][1]), withName));
   return [
     `${headline} 📊`,
     `${sessionLabel}. Variación de cada índice respecto al cierre de la sesión anterior.`,
@@ -83,11 +91,11 @@ function buildCaption(withName) {
     '💬 Qué pasó',
     r.summary || '',
     '',
-    '🎞️ En el Reel: la variación de los tres índices, el top 5 de subidas y bajadas del S&P 500 y del Nasdaq 100 y los factores que movieron el mercado.',
+    '🎞️ En el Reel: la variación de los tres índices, el top 5 de subidas y bajadas del S&P 500 y del '+(ibex ? 'IBEX 35' : 'Nasdaq 100')+' y los factores que movieron el mercado.',
     '',
     ctaBlock('', 'bolsa'),
     '',
-    'ℹ️ Cotizaciones: Polygon.io. Contenido informativo, no es asesoramiento financiero.',
+    `ℹ️ Cotizaciones: Polygon.io${ibex ? ' y Yahoo Finance (IBEX)' : ''}. Contenido informativo, no es asesoramiento financiero.`,
     '#bolsa #wallstreet #SP500 #tuamigodelasfinanzas',
   ].join('\n');
 }
@@ -97,7 +105,8 @@ if (caption.length > 2100) caption = buildCaption(false);
 const data = {
   dateLabel, sessionLabel, headline,
   indices: [
-    { ticker: 'SPY', name: 'S&P 500', close: r.spy_close, prev: r.spy_prev_close, chg: r.spy_chg },
+    { ticker: 'SPY', name: 'S&P 500', close: r.spy_close, prev: r.spy_prev_close, chg: r.spy_chg, big: true },
+    ...(ibex ? [{ ticker: 'IBEX', name: 'IBEX 35', close: ibex.close, prev: ibex.prev, chg: ibex.chg, big: true, pts: true }] : []),
     { ticker: 'QQQ', name: 'Nasdaq 100', close: r.qqq_close, prev: r.qqq_prev_close, chg: r.qqq_chg },
     { ticker: 'DIA', name: 'Dow Jones', close: r.dia_close, prev: r.dia_prev_close, chg: r.dia_chg },
   ],
@@ -105,7 +114,9 @@ const data = {
     SPY: { gainers: list(r.sp500_gainers), losers: list(r.sp500_losers) },
     QQQ: { gainers: list(r.nasdaq100_gainers), losers: list(r.nasdaq100_losers) },
     DIA: { gainers: list(r.dow30_gainers), losers: list(r.dow30_losers) },
+    ...(ibex ? { IBEX: { gainers: list(ibex.gainers), losers: list(ibex.losers) } } : {}),
   },
+  hasIbex: !!ibex,
   factors, caption,
 };
 fs.writeFileSync(dst, JSON.stringify(data, null, 2));
