@@ -76,9 +76,10 @@ jobs:
           [ -s aviso.txt ] && curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=Registro de la prueba: $(cat aviso.txt)" >/dev/null || true
           DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/reel.mp4 | cut -d. -f1)
           curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (no se ha publicado): reel del resumen de bolsa${{ inputs.voz == 'true' && ' CON VOZ EN OFF' || '' }}, ${DUR} s." >/dev/null && echo "Prueba enviada"
-          [ -s out/voz.txt ] && curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=Guion de la voz:
-
-$(cat out/voz.txt)" >/dev/null || echo "Sin guion de voz (el vídeo salió sin voz)"
+          if [ -s out/voz.txt ]; then
+            { printf 'Guion de la voz:\n\n'; cat out/voz.txt; } > voz-msg.txt
+            curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=<voz-msg.txt" >/dev/null || true
+          else echo "Sin guion de voz (el vídeo salió sin voz)"; fi
 
       - name: Guardar el registro de la prueba
         if: ${{ always() && inputs.prueba == 'true' }}
