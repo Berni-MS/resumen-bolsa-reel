@@ -22,6 +22,14 @@ for (const [dir, test, kind] of [['reels', n => n.endsWith('.mp4') && new RegExp
   if (!fs.existsSync(d)) continue;
   for (const n of fs.readdirSync(d).filter(test).sort()) found.push({ dir, name: n, kind, file: path.join(d, n) });
 }
+// El reel del resumen de bolsa lleva la fecha de la sesión (la del día anterior): se toma el más reciente de los últimos 4 días
+{
+  const addD = (iso, n) => { const d = new Date(iso + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+  const d = path.join(site, 'reels');
+  const res = fs.existsSync(d) ? fs.readdirSync(d).filter(n => /^\d{4}-\d\d-\d\d-\d+\.mp4$/.test(n) && n.slice(0, 10) >= addD(today, -4) && n.slice(0, 10) <= today).sort() : [];
+  const last = res.at(-1);
+  if (last && !found.some(v => v.name === last)) found.push({ dir: 'reels', name: last, kind: 'reel', file: path.join(d, last) });
+}
 const todo = found.filter(v => FORCE || !sent.includes(v.name));
 console.log(`Vídeos de hoy: ${found.length}; por enviar: ${todo.length}`);
 if (!todo.length) process.exit(0);
