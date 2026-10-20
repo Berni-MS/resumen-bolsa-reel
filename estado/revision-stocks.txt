@@ -1,9 +1,9 @@
-file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:9
-  const j = await r.json(); if (!j.parse) throw new Error('Wikipedia: ' + title);
-                                                ^
+file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:24
+const sp = await page('List of S&P 500 companies'), nq = await page('Nasdaq-100').catch(async e1 => page('Nasdaq-100 companies').catch(e2 => { throw new Error(e1.message + ' || ' + e2.message); }));
+                                                                                                                                                     ^
 
-Error: Wikipedia: List of Nasdaq-100 companies
-    at page (file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:9:49)
+Error: Sin tabla de componentes en Nasdaq-100 · tablas: 16 · cabeceras: Nasdaq-100 Index from 1985 to 2015 | Category All-Time Highs | Year Closing level Change in Indexin Points Change in Indexi | Milestone (closing) Date of Record (closing) Trading Days | Milestone (closing) Date of Record (closing) Trading Days | .mw-parser-output .navbar{display:inline;font-size:88%;font- | vteNasdaq, Inc. | vteStock market indices | Asia S&P Asia 50 | Energy Amex Oil Index | USMajor Dow Jones Industrial Average NYSE Composite Nasdaq C | UK FT 30 FTSE 100 Index FTSE 250 Index FTSE 350 Index FTSE S | China SSE Composite SZSE Component SSE 50 Index SSE 180 Inde | Australia S&P/A || Wikipedia: Nasdaq-100 companies
+    at file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:24:150
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
     at async file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:24:58
 
