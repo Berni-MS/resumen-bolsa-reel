@@ -8,6 +8,10 @@ on:
       record_b64:
         description: Registro de RESUMEN_BOLSA (JSON en base64), lo envía Make
         required: false
+      prueba:
+        description: "true = genera el vídeo con datos de ejemplo y lo envía solo a Telegram; NO publica nada"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -50,7 +54,17 @@ jobs:
       - name: Generar pantallas y vídeo
         run: node render.mjs data.json out
 
+      - name: Enviar prueba a Telegram (sin publicar)
+        if: ${{ inputs.prueba == 'true' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/reel.mp4 | cut -d. -f1)
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (datos de ejemplo, no se ha publicado): reel del resumen de bolsa, versión reducida de ${DUR} s." >/dev/null && echo "Prueba enviada"
+
       - name: Publicar vídeo en GitHub Pages
+        if: ${{ inputs.prueba != 'true' }}
         id: publish
         run: |
           set -euo pipefail
@@ -83,6 +97,7 @@ jobs:
           echo "url=$URL" >> "$GITHUB_OUTPUT"
 
       - name: Esperar a que la URL esté disponible
+        if: ${{ inputs.prueba != 'true' }}
         run: |
           URL="${{ steps.publish.outputs.url }}"
           for i in $(seq 1 120); do
@@ -94,6 +109,7 @@ jobs:
           echo "La URL no respondió a tiempo (¿está activado GitHub Pages?)"; exit 1
 
       - name: Avisar a Make
+        if: ${{ inputs.prueba != 'true' }}
         run: |
           jq -n --arg url "${{ steps.publish.outputs.url }}" --rawfile caption out/caption.txt --arg date "$(jq -r .date record.json)" \
             '{status:"ok", video_url:$url, caption:$caption, date:$date}' \
@@ -114,7 +130,7 @@ jobs:
           bash tools/announce-story.sh
 
       - name: Avisar a Make si falla
-        if: failure()
+        if: ${{ failure() && inputs.prueba != 'true' }}
         run: |
           curl -sS -X POST -H 'Content-Type: application/json' \
             -d '{"status":"error","run_url":"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' "$MAKE_WEBHOOK_URL" || true
