@@ -21,7 +21,7 @@ async function page(title) {
   }
   return out;
 }
-const sp = await page('List of S&P 500 companies'), nq = await page('Nasdaq-100').catch(() => page('List of Nasdaq-100 companies'));
+const sp = await page('List of S&P 500 companies'), nq = await page('Nasdaq-100').catch(async e1 => page('Nasdaq-100 companies').catch(e2 => { throw new Error(e1.message + ' || ' + e2.message); }));
 console.log(`Wikipedia: S&P ${sp.size}, Nasdaq-100 ${nq.size}`);
 const STOP = new Set('inc corp corporation company co ltd plc the group holdings holding class a b c and of de sa nv ag se cos limited international'.split(' '));
 const toks = s => (s || '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 1 && !STOP.has(w));
