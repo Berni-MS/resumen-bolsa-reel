@@ -17,7 +17,10 @@ let sent = []; try { sent = JSON.parse(fs.readFileSync(sentFile, 'utf8')); } cat
 
 // Vídeos de hoy
 const found = [];
-for (const [dir, test, kind] of [['reels', n => n.endsWith('.mp4') && new RegExp(`(^|-)${today}-`).test(n), 'reel'], ['historias', n => /^palabra-/.test(n) && n.endsWith('.mp4') && n.includes(`-${today}-`), 'palabra']]) {
+const ONLY = process.env.ONLY || '';
+// Carruseles con vídeo para TikTok: solo los de más valor (o todos si se pide con ALL_CARRUSELES=true)
+const TK_OK = /^tk-\d{4}-\d\d-\d\d-(mitos|estafas|vivienda|semana)/;
+for (const [dir, test, kind] of [['tiktok-carruseles', n => n.endsWith('.mp4') && new RegExp(`^tk-${today}-`).test(n) && (process.env.ALL_CARRUSELES === 'true' || TK_OK.test(n)), 'carrusel'], ['reels', n => n.endsWith('.mp4') && new RegExp(`(^|-)${today}-`).test(n), 'reel'], ['historias', n => /^palabra-/.test(n) && n.endsWith('.mp4') && n.includes(`-${today}-`), 'palabra']]) {
   const d = path.join(site, dir);
   if (!fs.existsSync(d)) continue;
   for (const n of fs.readdirSync(d).filter(test).sort()) found.push({ dir, name: n, kind, file: path.join(d, n) });
@@ -30,7 +33,7 @@ for (const [dir, test, kind] of [['reels', n => n.endsWith('.mp4') && new RegExp
   const last = res.at(-1);
   if (last && !found.some(v => v.name === last)) found.push({ dir: 'reels', name: last, kind: 'reel', file: path.join(d, last) });
 }
-const todo = found.filter(v => FORCE || !sent.includes(v.name));
+const todo = found.filter(v => (FORCE || !sent.includes(v.name)) && (!ONLY || v.name.includes(ONLY)));
 console.log(`Vídeos de hoy: ${found.length}; por enviar: ${todo.length}`);
 if (!todo.length) process.exit(0);
 

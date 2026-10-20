@@ -1,0 +1,63 @@
+name: Vídeo TikTok de un carrusel ya publicado
+on:
+  workflow_dispatch:
+    inputs:
+      carpeta:
+        description: "Carpeta del carrusel en gh-pages/carruseles (p. ej. tramites-001-clave-39419085567)"
+        required: true
+      kind:
+        description: "Tipo (para el texto): tramites, mitos, estafas, vivienda..."
+        required: true
+      enviar:
+        description: "true = enviarlo a Telegram"
+        required: false
+        default: "true"
+permissions:
+  contents: write
+concurrency:
+  group: tiktok-aviso
+  cancel-in-progress: false
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Preparar
+        run: |
+          sudo apt-get install -y ffmpeg >/dev/null 2>&1 || true
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
+      - name: Generar vídeo y texto
+        run: |
+          set -euo pipefail
+          DIR="site/carruseles/${{ inputs.carpeta }}"
+          ID=$(echo "${{ inputs.carpeta }}" | sed -E 's/-[0-9]{8,}$//')
+          DAY=$(TZ=Europe/Madrid date +%F)
+          NAME="tk-${DAY}-${ID}"
+          bash tools/carrusel-video.sh "$DIR" "${NAME}.mp4"
+          # texto: el del carrusel (cola) + hashtags
+          node -e "
+            const fs=require('fs');const d='queue/${{ inputs.kind }}';
+            const it=fs.readdirSync(d).filter(f=>f.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync(d+'/'+f,'utf8'))).find(x=>x.id==='${ID}');
+            if(!it) throw new Error('No encuentro ${ID} en la cola');
+            fs.writeFileSync('${NAME}.txt', it.caption+'\n\n#finanzaspersonales #ahorro #tuamigodelasfinanzas');
+          "
+          mkdir -p site/tiktok-carruseles && cp "${NAME}.mp4" "${NAME}.txt" site/tiktok-carruseles/
+          echo "NAME=${NAME}" >> "$GITHUB_ENV"
+      - name: Enviar a Telegram
+        if: ${{ inputs.enviar == 'true' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ONLY: ${{ env.NAME }}
+          ALL_CARRUSELES: "true"
+          FORCE: "true"
+        run: node tools/telegram-tiktok.mjs site
+      - name: Guardar en gh-pages
+        run: |
+          cd site && git add -A && { git commit -q -m "Vídeo TikTok ${NAME}" || exit 0; }
+          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
