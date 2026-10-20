@@ -66,6 +66,15 @@ jobs:
           DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/reel.mp4 | cut -d. -f1)
           curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (no se ha publicado): reel del resumen de bolsa, versión reducida de ${DUR} s." >/dev/null && echo "Prueba enviada"
 
+      - name: Guardar el registro de la prueba
+        if: ${{ always() && inputs.prueba == 'true' }}
+        continue-on-error: true
+        run: |
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site-log
+          mkdir -p site-log/estado && { date -u +%FT%TZ; cat prepare.log 2>/dev/null; } > site-log/estado/prueba-reel.txt
+          cd site-log && git add -A && git commit -q -m "Registro de la prueba del reel" && git push origin gh-pages
+
       - name: Publicar vídeo en GitHub Pages
         if: ${{ inputs.prueba != 'true' }}
         id: publish
