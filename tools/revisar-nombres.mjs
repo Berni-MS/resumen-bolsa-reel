@@ -10,7 +10,7 @@ async function page(title) {
   const html = j.parse.text;
   const tables = html.match(/<table[\s\S]*?<\/table>/g) || [];
   const m = [tables.find(t => /id="constituents"/.test(t)) ?? tables.filter(t => /<th[^>]*>\s*(<[^>]+>\s*)*(Ticker|Symbol)/i.test(t)).sort((a, b) => b.length - a.length)[0]];
-  if (!m[0]) throw new Error('Sin tabla de componentes en ' + title);
+  if (!m[0]) throw new Error('Sin tabla de componentes en ' + title + ' · tablas: ' + tables.length + ' · cabeceras: ' + tables.map(t => clean((t.match(/<tr[\s\S]*?<\/tr>/) || [''])[0]).slice(0, 60)).join(' | ').slice(0, 600));
   const out = new Map();
   for (const tr of m[0].match(/<tr[\s\S]*?<\/tr>/g) || []) {
     const cells = (tr.match(/<t[dh][\s\S]*?<\/t[dh]>/g) || []).map(clean);
@@ -21,7 +21,7 @@ async function page(title) {
   }
   return out;
 }
-const sp = await page('List of S&P 500 companies'), nq = await page('Nasdaq-100');
+const sp = await page('List of S&P 500 companies'), nq = await page('Nasdaq-100').catch(() => page('List of Nasdaq-100 companies'));
 console.log(`Wikipedia: S&P ${sp.size}, Nasdaq-100 ${nq.size}`);
 const STOP = new Set('inc corp corporation company co ltd plc the group holdings holding class a b c and of de sa nv ag se cos limited international'.split(' '));
 const toks = s => (s || '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 1 && !STOP.has(w));
