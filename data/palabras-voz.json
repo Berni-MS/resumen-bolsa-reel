@@ -1,0 +1,193 @@
+{
+ "TAE": {
+  "say": "T A E",
+  "voz": "Son las siglas de Tasa Anual Equivalente. Te dice cuánto cuesta de verdad un préstamo, o cuánto rinde un ahorro, en un año, porque incluye los intereses y también las comisiones. Por eso dos préstamos con el mismo interés pueden tener distinta T A E si uno cobra más comisiones. Cuando compares productos, fíjate en la T A E."
+ },
+ "TIN": {
+  "voz": "El T I N es el tipo de interés nominal: el interés puro de un producto, sin contar comisiones ni otros gastos. Por eso un T I N bajo no garantiza que el producto sea barato. Para saber lo que de verdad pagas, compáralo siempre con la T A E."
+ },
+ "Interés compuesto": {
+  "voz": "Es cuando los intereses que ganas se suman a tu dinero y, a partir de ahí, también generan intereses. Imagina mil euros al cinco por ciento anual. El primer año ganas cincuenta euros. El segundo año el cinco por ciento ya se calcula sobre mil cincuenta, y ganas algo más. Con el tiempo, el efecto crece."
+ },
+ "Fondo de emergencia": {
+  "voz": "Es dinero que guardas aparte, en un sitio al que puedas acceder rápido, para los imprevistos: una avería, una factura inesperada o un periodo sin ingresos. Mucha gente se marca como meta tener varios meses de gastos básicos. No es para invertir ni para caprichos: es tu colchón."
+ },
+ "Gastos hormiga": {
+  "voz": "Son esos pequeños gastos del día a día que casi no notas, pero que sumados pesan. Imagina un café de dos euros cada día: al mes son unos sesenta euros, y al año, más de setecientos. No se trata de dejar de disfrutar, sino de saber en qué se te va el dinero."
+ },
+ "Cuenta remunerada": {
+  "voz": "Es una cuenta que te paga intereses por el dinero que tienes dentro. Suena muy bien, pero antes de abrir una mira dos cosas: la T A E real que ofrece y si te exige domiciliar la nómina o gastar con tarjeta para conseguirla. A veces la condición cambia mucho el resultado."
+ },
+ "Depósito a plazo": {
+  "voz": "Es dejar tu dinero en el banco durante un tiempo fijo, y a cambio el banco te paga un interés que se pacta desde el principio. Ojo con los plazos: si sacas el dinero antes de la fecha, puedes perder parte de los intereses. Lee bien las condiciones antes de contratarlo."
+ },
+ "Comisión de mantenimiento": {
+  "voz": "Es lo que algunos bancos cobran simplemente por tener una cuenta o una tarjeta. Imagina cinco euros al mes: parece poco, pero son sesenta euros al año por algo que quizá puedes evitar. Revisa tus recibos y pregunta a tu banco si hay alternativas sin esa comisión."
+ },
+ "Descubierto": {
+  "voz": "Es gastar más dinero del que tienes en la cuenta. El banco te lo permite, pero te cobra por ello, y suele salir caro. Antes de que te pase, pregunta a tu banco cuánto cobraría, para que no te lleves una sorpresa en el extracto."
+ },
+ "Domiciliación": {
+  "voz": "Es la orden que das para que un recibo se pague solo desde tu cuenta, cada mes. Es cómodo, pero conviene revisarlo. A veces seguimos pagando algo que ya no usamos, solo porque nadie lo ha cancelado. Echa un vistazo a tus recibos domiciliados de vez en cuando."
+ },
+ "Presupuesto": {
+  "voz": "Es un plan sencillo de cuánto ingresas, cuánto gastas y cuánto ahorras cada mes. Imagina que cobras mil quinientos euros: la idea es decidir antes de gastar cuánto va a cada cosa, en lugar de descubrirlo a final de mes. No hace falta que sea perfecto, solo que lo tengas."
+ },
+ "Tasa de ahorro": {
+  "voz": "Es el porcentaje de tus ingresos que consigues guardar. Se calcula fácil: si ingresas mil quinientos euros al mes y ahorras ciento cincuenta, tu tasa de ahorro es del diez por ciento. Es un buen número para seguir mes a mes y ver cómo evolucionas."
+ },
+ "Patrimonio neto": {
+  "voz": "Es lo que tienes, entre ahorros y bienes, menos lo que debes. Imagina veinte mil euros entre ahorros y bienes, y cinco mil de deudas: tu patrimonio neto es de quince mil euros. Es una foto de tu situación, y lo interesante es ver cómo cambia con el tiempo."
+ },
+ "Liquidez": {
+  "voz": "Mide lo fácil y rápido que es convertir algo en dinero sin perder valor. El dinero de tu cuenta es muy líquido, porque lo tienes al instante. Una vivienda, en cambio, es mucho menos líquida: venderla lleva tiempo y gestiones. Por eso conviene tener algo de liquidez para imprevistos."
+ },
+ "Inflación": {
+  "voz": "Es la subida general de los precios con el tiempo: con el mismo dinero, cada vez compras menos. Si todo sube un tres por ciento, lo que costaba cien euros pasa a costar ciento tres. Por eso el dinero parado pierde poder de compra poco a poco."
+ },
+ "Poder adquisitivo": {
+  "voz": "Es lo que realmente puedes comprar con tu dinero. Depende de lo que ganas y también de los precios. Si tu sueldo sube un dos por ciento pero los precios suben un tres, tu poder adquisitivo baja, aunque cobres algo más que antes."
+ },
+ "Euríbor": {
+  "voz": "Es un índice de referencia al que se ligan muchas hipotecas variables. Si el Euríbor sube, la cuota de una hipoteca variable puede subir cuando se revisa, y si baja, puede bajar. Por eso se sigue tanto en las noticias."
+ },
+ "Diferencial": {
+  "voz": "Es lo que el banco suma al Euríbor en una hipoteca variable. Imagina un Euríbor del dos por ciento y un diferencial del uno por ciento: pagas un interés del tres por ciento. El Euríbor cambia con el mercado, pero el diferencial lo pactas al firmar, así que mira bien cuál te ofrecen."
+ },
+ "Amortizar": {
+  "voz": "Es devolver parte de un préstamo, o todo, antes de lo previsto. Con una amortización anticipada puedes reducir la cuota que pagas cada mes o el tiempo que te queda para terminar de pagar. Antes de hacerlo, revisa si tu contrato tiene alguna comisión."
+ },
+ "Hipoteca variable": {
+  "voz": "Es una hipoteca cuyo interés cambia cada vez que se revisa, según el índice que se haya pactado, normalmente el Euríbor. Eso significa que tu cuota puede subir o bajar en cada revisión. Es importante saber que tienes margen para asumir una subida."
+ },
+ "Entrada": {
+  "voz": "Es la parte del precio de la casa que pones tú de tu bolsillo, y el banco financia el resto. Imagina una casa de doscientos mil euros y una entrada del veinte por ciento: aportas cuarenta mil euros. Y recuerda que, además, suele haber impuestos y gastos de la compra."
+ },
+ "Tasación": {
+  "voz": "Es la valoración oficial de una vivienda que pide el banco antes de darte la hipoteca. Es importante porque el banco suele prestarte un porcentaje de la tasación, no del precio que pagas. Si la tasación sale más baja que el precio, tendrás que poner tú la diferencia."
+ },
+ "Fianza": {
+  "voz": "Es el dinero que dejas al propietario cuando alquilas, como garantía. Si al irte todo está bien, te la debe devolver. Por eso es buena idea guardar el contrato y hacer fotos del estado de la vivienda cuando entras, por si hay desacuerdos más adelante."
+ },
+ "Salario bruto": {
+  "voz": "Es lo que cobras antes de descuentos, es decir, antes de impuestos y cotizaciones. Es la cifra que suele aparecer en las ofertas de empleo. Pero ojo: no es lo que te llega a la cuenta. Eso es el salario neto."
+ },
+ "Salario neto": {
+  "voz": "Es lo que te llega a la cuenta después de los descuentos. Es la cifra que de verdad puedes gastar o ahorrar cada mes. Por eso, cuando compares ofertas de trabajo, conviene saber no solo el salario bruto, sino cuánto te queda en neto."
+ },
+ "Retención del IRPF": {
+  "voz": "Es la parte de tu sueldo que tu empresa adelanta a Hacienda cada mes, a cuenta del impuesto sobre la renta. Por eso en la nómina cobras menos que el salario bruto. Después, en la declaración de la renta, se ajusta lo que realmente te corresponde pagar.",
+  "say": "Retención del I R P F"
+ },
+ "Paga extra": {
+  "voz": "Es un pago adicional, normalmente en verano y en Navidad. Puede cobrarse aparte, en esos meses, o repartida entre los doce meses del año, lo que se llama prorrateada. Mira en tu contrato cómo son las tuyas, porque cambia lo que ves cada mes en la nómina."
+ },
+ "Finiquito": {
+  "voz": "Es la liquidación de todo lo que te deben cuando termina un contrato de trabajo. Incluye, por ejemplo, el salario que quede pendiente y las vacaciones que no hayas disfrutado. Revisa bien el documento antes de firmarlo."
+ },
+ "IVA": {
+  "voz": "Es el impuesto que pagas al comprar casi cualquier producto o servicio. No lo ves aparte, porque ya va incluido en el precio final. El tipo general es del veintiuno por ciento, aunque algunos productos tienen tipos reducidos. Cuando pagas, el precio que ves ya incluye el I V A.",
+  "say": "I V A"
+ },
+ "Base imponible": {
+  "voz": "Es la cantidad sobre la que se calcula un impuesto. Y no siempre coincide con lo que ingresas, porque antes se pueden restar ciertos gastos o reducciones. Por eso no es lo mismo lo que ganas que la cantidad sobre la que se aplica el impuesto."
+ },
+ "Deducción": {
+  "voz": "Es una cantidad que se resta directamente de lo que pagas de impuestos. Reduce tu factura euro a euro, a diferencia de otros ajustes que solo bajan la cantidad sobre la que se calcula. Conviene informarse de cuáles te corresponden cada año."
+ },
+ "Prima": {
+  "voz": "Es lo que pagas por tener un seguro. Puede pagarse una vez al año o en cuotas, y se paga uses o no el seguro, porque es el precio de estar cubierto. Al comparar seguros, mira la prima, pero también qué cubre cada uno."
+ },
+ "Póliza": {
+  "voz": "Es el contrato de tu seguro, donde figura lo que cubre y también lo que no cubre. Es un documento largo y poco apetecible, pero leer qué excluye te evita sorpresas desagradables justo cuando más necesitas el seguro, al dar un parte."
+ },
+ "Franquicia": {
+  "voz": "Es la parte de un daño que pagas tú antes de que el seguro cubra el resto. Imagina una franquicia de trescientos euros: esos primeros trescientos los pagas tú, y el seguro se hace cargo del resto. Suele hacer la prima más barata, pero tenla presente."
+ },
+ "Carencia": {
+  "voz": "Es el tiempo que pasa desde que contratas un seguro hasta que ciertas coberturas empiezan a valer. Durante ese periodo, si pasa algo, el seguro todavía no te cubre. Mira si tu seguro la tiene antes de necesitarlo, no después."
+ },
+ "Tarjeta de crédito": {
+  "voz": "Es una tarjeta con la que gastas ahora y pagas después. Si pagas todo a final de mes, no te cuesta intereses. Pero si aplazas el pago, se cobran intereses y puede salir cara. Conviene tener claro cómo la vas a usar antes de ponerte a gastar."
+ },
+ "Tarjeta revolving": {
+  "voz": "Es una tarjeta que aplaza lo que gastas en cuotas, con un interés muy alto. Lo peligroso es que, si solo pagas la cuota mínima, la deuda puede tardar años en bajar, porque gran parte de lo que pagas se va en intereses. Lee bien las condiciones antes de aceptarla."
+ },
+ "Aval": {
+  "voz": "Es una garantía de que otra persona, o un bien, responderá si tú no pagas. Por eso conviene pensarlo mucho antes de avalar a alguien: si esa persona deja de pagar, puedes tener que pagar tú su deuda."
+ },
+ "Préstamo personal": {
+  "voz": "Es dinero que te prestan para lo que necesites, y que devuelves en cuotas con intereses. Al compararlos, no te fijes solo en la cuota mensual. Mira la T A E y las comisiones, porque ahí está el coste real del préstamo."
+ },
+ "Capital pendiente": {
+  "voz": "Es lo que todavía debes de un préstamo, sin contar los intereses futuros. Baja con cada cuota que pagas, aunque al principio baja despacio, porque en las primeras cuotas gran parte se va en intereses. Es el número que cuenta si quieres amortizar."
+ },
+ "Acción": {
+  "voz": "Es una pequeña parte de una empresa. Quien tiene acciones es dueño de un trocito de esa empresa, y su valor puede subir o bajar según cómo le vaya a la empresa y al mercado. Es una forma de participar en el negocio, con riesgo."
+ },
+ "Dividendo": {
+  "voz": "Es la parte del beneficio que una empresa reparte entre sus accionistas. Pero ojo: no todas las empresas lo reparten, y tampoco es seguro que lo mantengan en el futuro. Es una decisión de cada empresa, y puede cambiar."
+ },
+ "ETF": {
+  "say": "E T F",
+  "voz": "Es un fondo que cotiza en bolsa, y que normalmente replica un índice. Con una sola compra tienes un trocito de muchas empresas a la vez. Eso no elimina el riesgo, pero evita depender de una sola. Siempre merece la pena mirar sus comisiones."
+ },
+ "Fondo indexado": {
+  "voz": "Es un fondo que intenta copiar un índice, por ejemplo el ese y pe quinientos. En lugar de que alguien elija en qué empresas invertir, el fondo simplemente sigue al índice. Por eso suele tener comisiones más bajas que un fondo gestionado."
+ },
+ "Diversificar": {
+  "voz": "Es repartir tu dinero entre distintos activos, para no depender de uno solo. La idea es sencilla: si uno cae, el resto puede amortiguar el golpe. No evita las pérdidas del todo, pero reduce el riesgo de que un solo fallo lo afecte todo."
+ },
+ "Volatilidad": {
+  "voz": "Es una medida de cuánto suben y bajan los precios de un activo. Un activo muy volátil puede subir mucho, pero también caer mucho, y en poco tiempo. Por eso, cuanto más volátil es algo, más importa tener paciencia y no necesitar ese dinero pronto."
+ },
+ "Riesgo": {
+  "voz": "Es la posibilidad de que el resultado sea distinto del que esperas, incluyendo perder dinero. Normalmente, a más rentabilidad posible, más riesgo. Por eso no existe la rentabilidad alta sin riesgo, y desconfía de quien te la prometa."
+ },
+ "Rentabilidad": {
+  "voz": "Es lo que gana o pierde una inversión, normalmente expresado en porcentaje. Si pones mil euros y pasan a valer mil cincuenta, la rentabilidad es del cinco por ciento. Pero recuerda que la rentabilidad pasada no garantiza la futura."
+ },
+ "Horizonte temporal": {
+  "voz": "Es el tiempo que piensas mantener una inversión. No es lo mismo necesitar el dinero dentro de un año que dentro de veinte. Cuanto más corto es el plazo, menos margen tienes para esperar a que se recupere una caída. Por eso es de las primeras cosas que hay que tener claras."
+ },
+ "Aportaciones periódicas": {
+  "voz": "Consisten en invertir una cantidad fija cada cierto tiempo, en lugar de poner todo de golpe. Imagina cien euros al mes: unos meses compras más barato y otros más caro, y así no dependes de acertar el momento. Además, te ayuda a crear el hábito."
+ },
+ "Comisión de gestión": {
+  "voz": "Es lo que cobra un fondo cada año por gestionar tu dinero. Parece poca cosa, pero una diferencia pequeña en comisiones se nota con los años, porque se cobra todos los años sobre lo que tienes. Por eso conviene mirarla antes de elegir un fondo."
+ },
+ "Bono": {
+  "voz": "Es una deuda que emite un Estado o una empresa, y que paga intereses. Dicho de otra forma: tú prestas dinero y te lo devuelven, con intereses, en una fecha pactada. Es menos conocido que las acciones, pero también tiene riesgos, como que el emisor no pueda pagar."
+ },
+ "Mercado bajista": {
+  "voz": "Es un periodo de caídas prolongadas en los precios. Suele definirse como una bajada de más del veinte por ciento desde los máximos. Los mercados han pasado por varios y se han recuperado, pero no hay garantías de que siempre ocurra igual."
+ },
+ "Coste de oportunidad": {
+  "voz": "Es lo que dejas de ganar por elegir una opción en lugar de otra. Por ejemplo, gastar cien euros hoy significa no tenerlos ahorrados para otra cosa. No quiere decir que no debas gastar, sino que cada elección tiene un coste escondido."
+ },
+ "Gastos fijos": {
+  "voz": "Son los que se repiten cada mes con un importe parecido. El alquiler, la luz o las suscripciones son ejemplos. Son los primeros que conviene revisar, porque cualquier ajuste que hagas ahí se repite cada mes."
+ },
+ "Gastos variables": {
+  "voz": "Son los que cambian de un mes a otro, como el ocio o las compras. Son los que más fácilmente puedes ajustar, porque dependen más de tus decisiones. Si necesitas recortar, suele ser un buen sitio por donde empezar."
+ },
+ "Meta de ahorro": {
+  "voz": "Es un objetivo con cantidad y con fecha para tu dinero. Imagina que quieres mil doscientos euros en un año: son cien euros al mes. Ponerle número y fecha a un objetivo lo hace mucho más fácil de cumplir que un simple, quiero ahorrar más."
+ },
+ "Regla 50/30/20": {
+  "say": "Regla cincuenta, treinta, veinte",
+  "voz": "Es una referencia para repartir tus ingresos: el cincuenta por ciento para necesidades, el treinta para deseos y el veinte para ahorro. Es solo una guía de partida, no una norma. Cada persona la ajusta a su situación."
+ },
+ "Plan de pensiones": {
+  "voz": "Es un producto para ahorrar pensando en la jubilación. Antes de contratar uno, mira siempre sus comisiones y las condiciones para rescatar el dinero, porque no siempre puedes sacarlo cuando quieras."
+ },
+ "Fondo de garantía de depósitos": {
+  "voz": "Es una protección que cubre tus depósitos si un banco quiebra, hasta un límite. Actualmente, ese límite es de cien mil euros. Se aplica por persona y por entidad, así que consulta siempre el límite vigente."
+ },
+ "Suscripción": {
+  "voz": "Es un pago periódico por un servicio, que se renueva solo. Es fácil olvidarse de ellas, porque cada una cuesta poco. Pero juntas pueden sumar bastante. Revisa las tuyas de vez en cuando: quizá estás pagando algo que ya no usas."
+ },
+ "Falso banco": {
+  "voz": "Es cuando alguien te llama o te escribe haciéndose pasar por tu banco, para que le des tus claves. Recuerda que tu banco nunca te pide tus claves completas por teléfono ni por SMS. Si dudas, cuelga y llama tú al número oficial de tu banco."
+ }
+}

@@ -45,7 +45,7 @@ jobs:
         continue-on-error: true
         run: |
           pip install -q edge-tts 2>&1 | tail -1
-          jq -r '"La palabra del día: \(.term). \(.def) \(.ex)"' datos.json | tr '\n' ' ' > voz.txt
+          node tools/voz-palabra.mjs datos.json > voz.txt
           cat voz.txt
           for i in 1 2 3; do
             edge-tts --voice es-ES-AlvaroNeural --rate=+8% --file voz.txt --write-media voz.mp3 2>voz.err && [ -s voz.mp3 ] && break
