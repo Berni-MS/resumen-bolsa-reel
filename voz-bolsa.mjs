@@ -38,14 +38,13 @@ export function vozBolsa(d, isoDate, ayer = true) {
   const signos = new Set(orden.filter(k => !plano(idx[k].chg)).map(k => Math.sign(idx[k].chg)));
   let destaca = '';
   if (signos.size > 1) destaca = 'Una jornada con índices en direcciones distintas.';
-  else if (!plano(idx[mayor].chg)) destaca = `Destaca ${NOMBRE_VOZ[mayor]}, con un ${idx[mayor].chg > 0 ? 'avance' : 'descenso'} del ${por(idx[mayor].chg)}.`;
-  else destaca = 'Una jornada tranquila, sin grandes movimientos.';
-  seg['01-variacion'] = `Os traigo el resumen de la bolsa de ${ayer ? 'ayer, ' : ''}${fechaVoz(isoDate)}. ${destaca} ${junta(orden.filter(k => k !== mayor || plano(idx[k].chg)).map(frase)).replace(/^./, c => c.toUpperCase())}.`;
+    else if (orden.every(k => plano(idx[k].chg))) destaca = 'Una jornada tranquila, sin grandes movimientos.';
+  seg['01-variacion'] = `Os traigo el resumen de la bolsa de ${ayer ? 'ayer, ' : ''}${fechaVoz(isoDate)}. ${destaca} ${junta(orden.map(frase)).replace(/^./, c => c.toUpperCase())}.`;
 
   // 2-5) Rankings: los tres primeros de cada lista, con nombre y variación
   const lista = (k, tipo) => {
     const rows = (d.lists[k] || {})[tipo] || [];
-    const r3 = rows.slice(0, 2).map(r => `${nombre(r)}, con un ${n1(r.chg)}`);
+    const r3 = rows.slice(0, 1).map(r => `${nombre(r)}, un ${n1(r.chg)}`);
     return r3.length ? r3.join('; ').replace(/; ([^;]*)$/, '; y $1') + ' por ciento' : '';
   };
   const L = { SPY: 'S&P 500', IBEX: 'IBEX 35', QQQ: 'Nasdaq 100' };
@@ -54,14 +53,14 @@ export function vozBolsa(d, isoDate, ayer = true) {
   const nom = k => ({ SPY: 'el ese y pe quinientos', IBEX: 'el Íbex', QQQ: 'el Nasdaq cien' }[k]);
   const top = (k, t) => rows(k, t)[0];
   seg['02-spy-subidas'] = rows('SPY', 'gainers').length
-    ? `Entre las empresas del ese y pe quinientos, suben ${lista('SPY', 'gainers')}.` : '';
+    ? `En el ese y pe quinientos, sube más ${lista('SPY', 'gainers')}.` : '';
   seg['03-spy-bajadas'] = rows('SPY', 'losers').length
-    ? `Y caen ${lista('SPY', 'losers')}.` : '';
+    ? `Y baja más ${lista('SPY', 'losers')}.` : '';
   const s2 = second.toLowerCase();
   seg[`04-${s2}-subidas`] = rows(second, 'gainers').length
-    ? `En ${nom(second)}, lideran las subidas ${lista(second, 'gainers')}.` : '';
+    ? `En ${nom(second)}, sube más ${lista(second, 'gainers')}.` : '';
   seg[`05-${s2}-bajadas`] = rows(second, 'losers').length
-    ? `Y entre las que más ceden, ${lista(second, 'losers')}.` : '';
+    ? `Y baja más ${lista(second, 'losers')}.` : '';
 
   // 6) Motivos: factores al alza y a la baja, con su explicación
   const fs_ = d.factors || [];
@@ -69,8 +68,8 @@ export function vozBolsa(d, isoDate, ayer = true) {
   const exp = f => `${lower1(sinPunto(f.title))}: ${lower1(sinPunto(f.text))}.`;
   const CU = ['Por un lado, ', 'Además, '], CD = ['Por otro lado, ', 'Y también, '];
   const corto = f => (f.title + ' ' + f.text).split(/\s+/).length <= 24;
-  const ups = up.slice(0, 1).concat(up.slice(1, 2).filter(corto));
+  const ups = up.slice(0, 1);
   const partes = [...ups.map((f, i) => CU[i] + exp(f)), ...dn.slice(0, 1).map((f, i) => CD[i] + exp(f))];
-  seg['08-factores'] = `¿Y por qué se ha movido así el mercado? ${partes.join(' ')} Son los motivos que han podido influir. Información, no asesoramiento financiero.`.replace(/\s+/g, ' ');
+  seg['08-factores'] = `¿Por qué se ha movido así? ${partes.join(' ')} Información, no asesoramiento financiero.`.replace(/\s+/g, ' ');
   return seg;
 }
