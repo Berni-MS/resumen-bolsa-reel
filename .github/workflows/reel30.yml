@@ -59,7 +59,7 @@ jobs:
 
       - name: Instalar voz (edge-tts)
         continue-on-error: true
-        run: pip install -q edge-tts 2>&1 | tail -1
+        run: pip install -q edge-tts fonttools brotli 2>&1 | tail -1
 
       - name: Generar vídeo
         env:

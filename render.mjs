@@ -6,6 +6,7 @@ import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 import { vozBolsa } from './voz-bolsa.mjs';
+import { assDe, fuente, whoosh } from './subs-lib.mjs';
 
 const require = createRequire(import.meta.url);
 let chromium;
@@ -153,13 +154,14 @@ await browser.close();
 const VOICE = process.env.VOZ_VOICE || 'es-ES-AlvaroNeural';
 const probe = f => Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString().trim());
 const voces = []; // { file, name }
+const guionTxt = {};
 if (process.env.VOZ === 'true') {
   try {
     const iso = process.env.VOZ_FECHA || d.isoDate;
     const guion = vozBolsa(d, iso);
     fs.writeFileSync(path.join(outDir, 'voz.txt'), slides.map(([n]) => guion[n] ? `[${n}] ${guion[n]}` : '').filter(Boolean).join('\n\n'));
     for (const [n] of slides) {
-      const txt = guion[n]; if (!txt) continue;
+      const txt = guion[n]; if (!txt) continue; guionTxt[n] = txt;
       const f = path.join(outDir, `voz-${n}.mp3`); const tf = path.join(outDir, `voz-${n}.txt`);
       fs.writeFileSync(tf, txt);
       let ok = false;
@@ -183,24 +185,45 @@ const hasMusic = fs.existsSync(music);
 const args = ['-y', '-f', 'concat', '-safe', '0', '-i', list];
 if (hasMusic) args.push('-stream_loop', '-1', '-i', music);
 else args.push('-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo');
-let mapAudio = '1:a';
+let mapAudio = '1:a', mapVideo = '0:v';
 if (voces.length && hasMusic) {
   let t = 0; const starts = {};
   for (const [n] of slides) { starts[n] = t; t += durOf(n); }
-  for (const v of voces) args.push('-i', v.file);
-  const vf = voces.map((v, i) => `[${i + 2}:a]adelay=${Math.round((starts[v.name] + 0.5) * 1000)}|${Math.round((starts[v.name] + 0.5) * 1000)},volume=1.7[s${i}]`);
+  const tmp = fs.mkdtempSync('bs-');
+  args.push('-f', 'lavfi', '-i', `color=c=0x35D07F:s=1080x12:r=30`, '-i', whoosh(path.join(tmp, 'wh.wav')));   // 2 barra, 3 whoosh
+  for (const v of voces) args.push('-i', v.file); // 4..
+  const V0 = 4, nW = slides.length - 1;
+  const vf = voces.map((v, i) => `[${i + V0}:a]adelay=${Math.round((starts[v.name] + 0.5) * 1000)}|${Math.round((starts[v.name] + 0.5) * 1000)},volume=1.7[s${i}]`);
   const vmix = voces.length > 1 ? `${voces.map((_, i) => `[s${i}]`).join('')}amix=inputs=${voces.length}:normalize=0,asplit=2[v][k]` : '[s0]asplit=2[v][k]';
-  const fc = [...vf, vmix,
+  const wst = slides.slice(1).map(([n]) => Math.max(0, Math.round((starts[n] - 0.05) * 1000)));
+  const wf = [`[3:a]asplit=${nW}${wst.map((_, i) => `[w${i}]`).join('')}`, ...wst.map((ms, i) => `[w${i}]adelay=${ms}|${ms}[ww${i}]`), `${wst.map((_, i) => `[ww${i}]`).join('')}amix=inputs=${nW}:normalize=0[wh]`];
+  // subtítulos (sobre la zona libre inferior) + barra de progreso
+  const fu = fuente(path.join(tmp, 'fonts'));
+  const clean = s => s.replace(/ese y pe quinientos/gi, 'S&P 500').replace(/ese y pe/gi, 'S&P').replace(/ por ciento/g, ' %').replace(/\bnasdaq cien\b/gi, 'Nasdaq 100');
+  const segs = voces.map(v => ({ start: starts[v.name] + 0.5, dur: v.dur, text: clean(guionTxt[v.name]) }));
+  const ass = path.join(tmp, 'subs.ass'); fs.writeFileSync(ass, assDe(segs, { yBase: 1700, fontName: fu.name }));
+  const fc = [...vf, vmix, ...wf,
     `[1:a]volume=0.5,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8[m]`,
     `[m][k]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md]`,
-    `[md][v]amix=inputs=2:duration=first:normalize=0[a]`].join(';');
+    `[md][v][wh]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]`,
+    `[0:v]fps=30,format=yuv420p[b]`,
+    `[b][2:v]overlay=x='-w+w*t/${total}':y=1908:shortest=1[pv]`,
+    `[pv]ass='${ass}':fontsdir='${fu.dir}'[vs]`].join(';');
   args.push('-filter_complex', fc);
-  mapAudio = '[a]';
-}
-args.push('-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart');
+  mapAudio = '[a]'; mapVideo = '[vs]';
+  process.on('exit', () => { try { fs.rmSync(tmp, { recursive: true, force: true }); } catch {} });
+} else args.push('-vf', 'fps=30,format=yuv420p');
+args.push('-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart');
 if (hasMusic && !voces.length) args.push('-af', `volume=0.55,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8`);
-args.push('-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', '0:v', '-map', mapAudio, '-t', String(total), path.join(outDir, 'reel.mp4'));
-execFileSync('ffmpeg', args, { stdio: 'inherit' });
+args.push('-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', mapVideo, '-map', mapAudio, '-t', String(total), path.join(outDir, 'reel.mp4'));
+try { execFileSync('ffmpeg', args, { stdio: 'inherit' }); }
+catch (e) {
+  if (!voces.length) throw e;
+  console.warn('AVISO: falló el montaje con voz/subtítulos; se genera con música sola:', e.message);
+  const a2 = ['-y', '-f', 'concat', '-safe', '0', '-i', list, '-stream_loop', '-1', '-i', music, '-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart',
+    '-af', `volume=0.55,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8`, '-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', '0:v', '-map', '1:a', '-t', String(total), path.join(outDir, 'reel.mp4')];
+  execFileSync('ffmpeg', a2, { stdio: 'inherit' });
+}
 for (const v of voces) { fs.unlinkSync(v.file); try { fs.unlinkSync(v.file.replace('.mp3', '.txt')); } catch {} }
 fs.unlinkSync(list);
 fs.writeFileSync(path.join(outDir, 'caption.txt'), d.caption || '');
