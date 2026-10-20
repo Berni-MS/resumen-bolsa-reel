@@ -106,9 +106,12 @@ jobs:
             done
           done
 
-      - name: Vídeo para TikTok (se envía por Telegram solo si es de los elegidos)
+      - name: Vídeo para TikTok (se envía a Telegram al generarlo si es de los elegidos)
         if: ${{ steps.select.outputs.skip != 'true' && inputs.dry_run != 'true' }}
         continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           sudo apt-get install -y ffmpeg >/dev/null 2>&1 || true
           ID=$(jq -r .id item.json)
@@ -117,6 +120,10 @@ jobs:
           bash tools/carrusel-video.sh out "${NAME}.mp4"
           cd site && mkdir -p tiktok-carruseles
           cp "../${NAME}.mp4" tiktok-carruseles/ && cp ../out/caption.txt "tiktok-carruseles/${NAME}.txt"
+          cd ..
+          # Telegram al momento solo para los carruseles elegidos
+          if echo "$ID" | grep -qE '^(mitos|estafas|vivienda|semana)'; then ONLY="$NAME" node tools/telegram-tiktok.mjs site || echo "::warning::No se pudo enviar a Telegram"; fi
+          cd site
           ls -1t tiktok-carruseles/*.mp4 | tail -n +15 | while read f; do rm -f "$f" "${f%.mp4}.txt"; done
           git add -A && git commit -q -m "Vídeo TikTok ${ID}" || exit 0
           for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
