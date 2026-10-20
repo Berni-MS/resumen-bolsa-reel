@@ -11,7 +11,7 @@ if (!vozActiva()) { console.log('Voz desactivada'); process.exit(0); }
 fs.mkdirSync(dir, { recursive: true });
 try { await guionesGemini(item); } catch (e) { console.warn('Gemini no disponible:', e.message); }
 
-const p = s => { const h = hablar(s); return h && !/[.!?:]$/.test(h) ? h + '.' : h; };
+const p = s => { const h = String(s ?? '').replace(/\[\[|\]\]/g, '').replace(/\s+/g, ' ').trim(); return h && !/[.!?:]$/.test(h) ? h + '.' : h; };
 const ORD = ['Uno', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis'];
 function strings(o) { return typeof o === 'string' ? [o] : Array.isArray(o) ? o.flatMap(strings) : o && typeof o === 'object' ? Object.values(o).flatMap(strings) : []; }
 
@@ -25,7 +25,7 @@ const junta = a => a.length > 1 ? a.slice(0, -1).join(', ') + ' y ' + a.at(-1) :
 const sinPunto = s => String(s || '').trim().replace(/[.\s]+$/, '');
 
 function guion(sl, i, n, mythN) {
-  if (sl.voz) return hablar(sl.voz); // guion de voz escrito a mano (o generado) para esta diapositiva
+  if (sl.voz) return String(sl.voz).replace(/\s+/g, ' ').trim(); // guion de voz escrito a mano (o generado) para esta diapositiva
   const k = [];
   switch (sl.t) {
     case 'cover': {
@@ -71,7 +71,7 @@ const textos = slides.map((sl, i) => { if (sl.t === 'myth') mythN++; return guio
 const MAXV = 58, durSlide = v => Math.max(4, v + 0.8);
 const total = ds => ds.reduce((a, v) => a + durSlide(v), 0) - 0.5 * (ds.length - 1);
 let rate = 10;
-const sintetizar = () => textos.map((t, i) => tts(t, path.join(dir, `${String(i + 1).padStart(2, '0')}.mp3`), rate));
+const sintetizar = () => textos.map((t, i) => tts(hablar(t), path.join(dir, `${String(i + 1).padStart(2, '0')}.mp3`), rate));
 let ds = sintetizar();
 for (let intento = 0; total(ds) > MAXV && intento < 6; intento++) {
   if (rate < 22) rate = 22; // primero, algo más de ritmo
@@ -86,5 +86,6 @@ for (let intento = 0; total(ds) > MAXV && intento < 6; intento++) {
 console.log(`Duración estimada del vídeo: ${total(ds).toFixed(1)} s (tope ${MAXV} s, ritmo +${rate} %)`);
 slides.forEach((sl, i) => { const nn = String(i + 1).padStart(2, '0'); durs.push(ds[i]); lines.push(`[${nn}${sl.voz ? (sl.vozFuente === 'gemini' ? ' · IA' : ' · manual') : ' · plantilla'}] ${textos[i]}`); });
 fs.writeFileSync(path.join(dir, 'durs.txt'), durs.join('\n') + '\n');
+fs.writeFileSync(path.join(dir, 'voz.json'), JSON.stringify({ textos, durs }));
 fs.writeFileSync(path.join(dir, 'voz.txt'), lines.join('\n\n') + `\n\n(duración estimada: ${total(ds).toFixed(0)} s)`);
 console.log('Voz del carrusel: ' + durs.map(d => d.toFixed(1) + 's').join(' '));

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Vídeo vertical (1080x1920) para TikTok con las 7 diapositivas de un carrusel y la música de la marca.
 # Si existe <VOZ_DIR>/durs.txt (y NN.mp3), añade voz en off: cada diapositiva dura lo que su locución + 0,8 s (mínimo 4 s).
-# Uso: tools/carrusel-video.sh <carpeta con 01.jpg..07.jpg> <salida.mp4> [carpeta_voz]
+# Uso: tools/carrusel-video-simple.sh <carpeta con 01.jpg..07.jpg> <salida.mp4> [carpeta_voz]
 set -euo pipefail
 DIR="$1"; OUT="$2"; VOZ="${3:-}"
 MIN=4.0      # segundos mínimos por diapositiva (texto denso: tiempo para leerla)

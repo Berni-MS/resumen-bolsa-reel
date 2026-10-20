@@ -9,8 +9,11 @@ export const vozActiva = () => String(process.env.VOZ ?? 'true') !== 'false';
 
 const PRONUNCIABLES = { IBEX: 'Íbex', TIN: 'tin', NASDAQ: 'Nasdaq', DOW: 'Dow', BIZUM: 'Bizum', SEPA: 'Sepa', OTAN: 'Otan', EURIBOR: 'Euríbor', PIN: 'pin', IPC: 'I P C' };
 // Pasa un texto de pantalla a texto que suene bien hablado
+// Pronunciación de nombres ingleses frecuentes (ampliable)
+const DICC = { sandisk: 'Sándisk', datadog: 'Dátadog', palantir: 'Palantír', nvidia: 'Envídia', honeywell: 'Jóniguel', broadcom: 'Brodcom', netflix: 'Nétflix', tesla: 'Tesla', meta: 'Meta', amazon: 'Ámazon', alphabet: 'Álfabet', microsoft: 'Máicrosoft', apple: 'Ápel', walmart: 'Guólmart', intel: 'Íntel', oracle: 'Órakel', salesforce: 'Séilsfors', uber: 'Úber', airbnb: 'Érbienbi', paypal: 'Péipal', moderna: 'Moderna', pfizer: 'Fáizer', coinbase: 'Cóinbeis', snowflake: 'Snóufleik', crowdstrike: 'Cráudstraik', micron: 'Máicron', qualcomm: 'Cuálcom', starbucks: 'Stárbocs', mcdonalds: 'Macdónalds', visa: 'Visa', mastercard: 'Máster card' };
 export function hablar(t) {
   let s = String(t ?? '').replace(/\[\[|\]\]/g, '').replace(/\s+/g, ' ').trim();
+  s = s.replace(/\b(\w+)\b/g, (m, w) => DICC[w.toLowerCase()] || m);
   s = s.replace(/S&P/g, 'ese y pe').replace(/&/g, ' y ');
   s = s.replace(/(\d)\.(\d{3})(?!\d)/g, '$1$2').replace(/(\d)\.(\d{3})(?!\d)/g, '$1$2'); // 1.000 -> 1000
   s = s.replace(/([+−\-–])\s?(\d)/g, (m, sg, d) => (sg === '+' ? 'más ' : 'menos ') + d);
@@ -58,6 +61,6 @@ export function mezcla({ musicIdx, voices, total, musicVol = 0.5, fadeOut = 1.8 
   parts.push(voices.length > 1 ? `${voices.map((_, i) => `[s${i}]`).join('')}amix=inputs=${voices.length}:normalize=0,asplit=2[v][k]` : '[s0]asplit=2[v][k]');
   parts.push(`[${musicIdx}:a]volume=${musicVol},afade=t=in:st=0:d=0.5,afade=t=out:st=${Math.max(0, total - fadeOut)}:d=${fadeOut}[m]`);
   parts.push('[m][k]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md]');
-  parts.push('[md][v]amix=inputs=2:duration=first:normalize=0[a]');
+  parts.push('[md][v]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]');
   return parts.join(';');
 }

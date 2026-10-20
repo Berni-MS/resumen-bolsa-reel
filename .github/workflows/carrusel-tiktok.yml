@@ -49,9 +49,9 @@ jobs:
             fs.writeFileSync('item.json', JSON.stringify(it));
           "
           # voz en off (si falla, el vídeo sale sin voz)
-          pip install -q edge-tts 2>&1 | tail -1 || true
+          pip install -q edge-tts fonttools brotli 2>&1 | tail -1 || true
           node tools/carrusel-voz.mjs item.json voz || { echo "::warning::sin voz"; rm -rf voz; }
-          bash tools/carrusel-video.sh "$DIR" "${NAME}.mp4" voz || bash tools/carrusel-video.sh "$DIR" "${NAME}.mp4"
+          node tools/carrusel-video.mjs "$DIR" "${NAME}.mp4" voz || bash tools/carrusel-video-simple.sh "$DIR" "${NAME}.mp4" voz || bash tools/carrusel-video-simple.sh "$DIR" "${NAME}.mp4"
           mkdir -p site/tiktok-carruseles && cp "${NAME}.mp4" "${NAME}.txt" site/tiktok-carruseles/
           echo "NAME=${NAME}" >> "$GITHUB_ENV"
       - name: Enviar a Telegram

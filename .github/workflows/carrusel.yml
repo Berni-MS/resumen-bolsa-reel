@@ -119,9 +119,9 @@ jobs:
           DAY=$(TZ=Europe/Madrid date +%F)
           NAME="tk-${DAY}-${ID}"
           # voz en off (si falla, el vídeo sale sin voz)
-          pip install -q edge-tts 2>&1 | tail -1 || true
+          pip install -q edge-tts fonttools brotli 2>&1 | tail -1 || true
           node tools/carrusel-voz.mjs item.json voz || { echo "::warning::sin voz"; rm -rf voz; }
-          bash tools/carrusel-video.sh out "${NAME}.mp4" voz || bash tools/carrusel-video.sh out "${NAME}.mp4"
+          node tools/carrusel-video.mjs out "${NAME}.mp4" voz || bash tools/carrusel-video-simple.sh out "${NAME}.mp4" voz || bash tools/carrusel-video-simple.sh out "${NAME}.mp4"
           cd site && mkdir -p tiktok-carruseles
           cp "../${NAME}.mp4" tiktok-carruseles/ && cp ../out/caption.txt "tiktok-carruseles/${NAME}.txt"
           cd ..
