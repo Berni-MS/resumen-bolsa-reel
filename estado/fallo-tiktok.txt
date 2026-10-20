@@ -1,4 +1,4 @@
-Fallo del aviso TikTok · 2026-10-20T05:05:53Z
+Fallo del aviso TikTok · 2026-10-20T05:10:14Z
 Vídeos de hoy: 1; por enviar: 1
 file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/telegram-tiktok.mjs:43
   if (!j.ok) throw new Error(`Telegram ${method}: ${j.description || r.status}`);
