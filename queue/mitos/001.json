@@ -21,42 +21,42 @@
       "bigSize": 420,
       "title": "mitos de la bolsa que te cuestan dinero",
       "foot": "Con datos reales",
-      "voz": "Hoy desmontamos cinco mitos de la bolsa que pueden acabar costándote dinero."
+      "voz": "Cinco mitos de la bolsa que pueden costarte dinero."
     },
     {
       "t": "myth",
       "myth": "«Si la bolsa se desploma, es que se acabó»",
       "reality": "En 2020 el S&P 500 cayó un 34 % entre el 19 de febrero y el 23 de marzo. El 18 de agosto ya cerraba en un nuevo récord: unos seis meses después.",
       "foot": "Fuente: NPR, 18/08/2020",
-      "voz": "Primer mito: si la bolsa se desploma, se acabó. Pues en 2020 el S&P 500 cayó un 34 % entre el 19 de febrero y el 23 de marzo. Y el 18 de agosto ya cerraba en un nuevo récord, unos seis meses después."
+      "voz": "Mito uno: si la bolsa se desploma, se acabó. En 2020 el S&P 500 cayó un 34 %, y en agosto, unos seis meses después, ya cerraba en récord."
     },
     {
       "t": "myth",
       "myth": "«Las caídas siempre se recuperan rápido»",
       "reality": "Depende. Tras el máximo de octubre de 2007, el S&P 500 llegó a cerrar en 676,53 (marzo de 2009) y no recuperó ese máximo hasta 2013. La recuperación de 2020 fue la excepción, no la norma.",
       "foot": "Fuente: Wikipedia, hitos del S&P 500",
-      "voz": "Segundo mito: las caídas siempre se recuperan rápido. Depende. Después del máximo de octubre de 2007, el S&P 500 llegó a cerrar en 676,53 en marzo de 2009, y no recuperó aquel máximo hasta 2013. La recuperación de 2020 fue la excepción, no la norma."
+      "voz": "Mito dos: las caídas se recuperan rápido. Depende. Tras el máximo de 2007, el S&P 500 no volvió a él hasta 2013."
     },
     {
       "t": "myth",
       "myth": "«Espero a que se calme y entro»",
       "reality": "Tras el mínimo de marzo de 2020, el S&P 500 subió más de un 50 % en pocos meses. Quien esperó a la calma entró cuando buena parte del rebote ya había ocurrido.",
       "foot": "Fuente: NPR, 18/08/2020",
-      "voz": "Tercer mito: espero a que se calme y entro. Pero tras el mínimo de marzo de 2020, el S&P 500 subió más de un 50 % en pocos meses. Quien esperó a la calma entró cuando buena parte del rebote ya había ocurrido."
+      "voz": "Mito tres: espero a que se calme y entro. Tras el mínimo de marzo de 2020 subió más de un 50 % en pocos meses, y quien esperó entró tarde."
     },
     {
       "t": "myth",
       "myth": "«Necesitas mucho dinero para empezar»",
       "reality": "Hoy muchos brókeres permiten empezar con importes pequeños y comprar fracciones de acciones o ETF. Lo que importa más que la cantidad es la constancia y entender qué compras.",
       "foot": "Comprueba las condiciones de tu bróker",
-      "voz": "Cuarto mito: necesitas mucho dinero para empezar. Hoy muchos brókeres permiten empezar con importes pequeños, y comprar fracciones de acciones o ETF. Lo que importa más que la cantidad es la constancia, y entender qué compras."
+      "voz": "Mito cuatro: hace falta mucho dinero. Hoy puedes empezar con importes pequeños; importa más la constancia y entender qué compras."
     },
     {
       "t": "myth",
       "myth": "«La bolsa es un casino»",
       "reality": "Comprar una empresa entera o un índice diversificado no es lo mismo que apostar a corto plazo con una sola acción. Especular es posible, pero no es la única forma de participar en el mercado.",
       "foot": "Riesgo sí, azar puro no",
-      "voz": "Y quinto: la bolsa es un casino. No es lo mismo comprar una empresa entera, o un índice diversificado, que apostar a corto plazo con una sola acción. Especular es posible, pero no es la única forma de participar en el mercado."
+      "voz": "Mito cinco: la bolsa es un casino. Comprar un índice diversificado no es lo mismo que apostar a corto plazo con una sola acción."
     },
     {
       "t": "close",
@@ -65,7 +65,7 @@
       "extra": "Fuentes: NPR (18/08/2020) para el desplome y la recuperación de 2020; Wikipedia, «Closing milestones of the S&P 500», para 2007–2013. Los datos del S&P 500 son históricos.",
       "extraSize": 30,
       "foot": "Contenido informativo. No es asesoramiento financiero. La rentabilidad pasada no garantiza resultados futuros.",
-      "voz": "¿Y tú, cuál te habías creído? Cuéntanoslo en los comentarios, y envía este vídeo a alguien que repita alguno de estos mitos. Los datos del S&P 500 son históricos, y las fuentes aparecen en la última imagen. Contenido educativo, no es asesoramiento financiero."
+      "voz": "¿Cuál te habías creído? Cuéntanoslo en comentarios. Las fuentes están en la última imagen. Contenido educativo, no es asesoramiento financiero."
     }
   ]
 }

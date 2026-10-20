@@ -16,7 +16,7 @@
       "big": "💡",
       "title": "Cómo leer tu factura de la luz",
       "foot": "Qué pagas realmente",
-      "voz": "¿Entiendes tu factura de la luz? Hoy te explico cómo leerla, paso a paso."
+      "voz": "¿Sabes leer tu factura de la luz? Te lo explico rápido."
     },
     {
       "t": "cards",
@@ -37,7 +37,7 @@
         }
       ],
       "foot": "Tres bloques",
-      "voz": "Una factura de la luz tiene tres partes principales. La potencia, que es lo que pagas por tener contratada cierta capacidad. La energía, que es lo que has consumido en el periodo. Y los impuestos y otros conceptos, como el alquiler del contador."
+      "voz": "Tiene tres partes: la potencia que tienes contratada, la energía que consumes, y los impuestos y otros conceptos, como el alquiler del contador."
     },
     {
       "t": "point",
@@ -45,7 +45,7 @@
       "body": "Si es mayor de lo que necesitas, pagas de más cada mes. Revísala con tus consumos reales.",
       "foot": "Ajústala",
       "kicker": "Primero",
-      "voz": "Empieza por la potencia contratada. Si es mayor de lo que necesitas, estás pagando de más cada mes. Conviene revisarla con tus consumos reales."
+      "voz": "Revisa la potencia: si es mayor de la que necesitas, pagas de más cada mes."
     },
     {
       "t": "point",
@@ -53,7 +53,7 @@
       "body": "Mira en qué horas consumes. Con ciertas tarifas, el precio cambia según el horario.",
       "foot": "Horarios",
       "kicker": "Después",
-      "voz": "Después, mira el consumo, y en qué horas lo haces. Con ciertas tarifas, el precio de la energía cambia según el horario, así que no cuesta lo mismo a todas horas."
+      "voz": "Y mira cuándo consumes, porque con algunas tarifas el precio cambia según la hora."
     },
     {
       "t": "steps",
@@ -77,7 +77,7 @@
         }
       ],
       "foot": "Cuatro pasos",
-      "voz": "Para revisarla, haz cuatro cosas. Mira tu consumo mensual y compáralo con meses anteriores. Comprueba que la potencia se ajuste a ti. Revisa el tipo de tarifa y sus condiciones. Y por último, compara ofertas, siempre con tu consumo real."
+      "voz": "Compara tu consumo con meses anteriores, comprueba que la potencia se ajusta a ti, revisa tu tarifa y compara ofertas con tu consumo real."
     },
     {
       "t": "point",
@@ -85,7 +85,7 @@
       "body": "Mantenimientos o seguros que no pediste. Pregunta por cada concepto.",
       "foot": "Revisa",
       "kicker": "Cuidado",
-      "voz": "Y ojo con los servicios añadidos: mantenimientos o seguros que quizá no pediste. Pregunta por cada concepto que no entiendas."
+      "voz": "Ojo con servicios añadidos que no pediste, como mantenimientos o seguros. Pregunta por cada concepto."
     },
     {
       "t": "close",
@@ -95,7 +95,7 @@
       "extra": "Información general; consulta tu contrato.",
       "extraBold": true,
       "extraSize": 36,
-      "voz": "Entender tu factura es poder ahorrar. Así que hoy mismo, echa un vistazo a la última. Es información general, consulta tu contrato. Y recuerda: contenido educativo, no es asesoramiento financiero."
+      "voz": "Entender tu factura es poder ahorrar: mira hoy la última. Información general, consulta tu contrato. Contenido educativo, no es asesoramiento financiero."
     }
   ]
 }

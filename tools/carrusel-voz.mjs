@@ -56,7 +56,13 @@ function guion(sl, i, n, mythN) {
     }
     default: k.push(...strings(sl).filter(s => s.length > 2 && !/^#/.test(s)).map(p));
   }
-  return k.filter(Boolean).join(' ').replace(/\s+/g, ' ');
+  return recorta(k.filter(Boolean).join(' ').replace(/\s+/g, ' '), sl.t === 'close' ? 34 : 28);
+}
+function recorta(txt, max) {
+  if (txt.split(' ').length <= max) return txt;
+  const fr = txt.split(/(?<=[.!?])\s+/); let out = '';
+  for (const f of fr) { if ((out + ' ' + f).trim().split(' ').length > max && out) break; out = (out + ' ' + f).trim(); }
+  return out;
 }
 
 const lines = [], durs = [];
@@ -65,7 +71,7 @@ for (const [i, sl] of item.slides.slice(0, 7).entries()) {
   const nn = String(i + 1).padStart(2, '0');
   if (sl.t === 'myth') mythN++;
   const txt = guion(sl, i, item.slides.length, mythN);
-  const d = tts(txt, path.join(dir, `${nn}.mp3`), 4);
+  const d = tts(txt, path.join(dir, `${nn}.mp3`), 10);
   durs.push(d); lines.push(`[${nn}${sl.voz ? (sl.vozFuente === 'gemini' ? ' · IA' : ' · manual') : ' · plantilla'}] ${txt}`);
 }
 fs.writeFileSync(path.join(dir, 'durs.txt'), durs.join('\n') + '\n');
