@@ -7,7 +7,7 @@ import { execFileSync } from 'node:child_process';
 export const VOICE = process.env.VOZ_VOICE || 'es-ES-AlvaroNeural';
 export const vozActiva = () => String(process.env.VOZ ?? 'true') !== 'false';
 
-const PRONUNCIABLES = { IBEX: 'Íbex', TIN: 'tin', NASDAQ: 'Nasdaq', DOW: 'Dow', BIZUM: 'Bizum', SEPA: 'Sepa', OTAN: 'Otan', EURIBOR: 'Euríbor' };
+const PRONUNCIABLES = { IBEX: 'Íbex', TIN: 'tin', NASDAQ: 'Nasdaq', DOW: 'Dow', BIZUM: 'Bizum', SEPA: 'Sepa', OTAN: 'Otan', EURIBOR: 'Euríbor', PIN: 'pin', IPC: 'I P C' };
 // Pasa un texto de pantalla a texto que suene bien hablado
 export function hablar(t) {
   let s = String(t ?? '').replace(/\[\[|\]\]/g, '').replace(/\s+/g, ' ').trim();

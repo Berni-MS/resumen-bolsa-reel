@@ -15,21 +15,24 @@
       "t": "cover",
       "big": "1º",
       "title": "Págate a ti primero",
-      "foot": "El truco para ahorrar sin pensarlo"
+      "foot": "El truco para ahorrar sin pensarlo",
+      "voz": "Hoy te cuento un truco muy sencillo para ahorrar sin tener que pensarlo: págate a ti primero."
     },
     {
       "t": "point",
       "head": "«Ahorro lo que [[sobre]]»",
       "body": "Suena razonable, pero el gasto se estira hasta llenar el mes. Lo que sobra suele ser cero.",
       "foot": "El problema",
-      "kicker": "Por qué falla"
+      "kicker": "Por qué falla",
+      "voz": "Mucha gente se dice: ahorro lo que sobre a final de mes. Suena razonable, pero el gasto tiene la costumbre de estirarse hasta llenar todo el mes. Y al final, lo que sobra suele ser cero."
     },
     {
       "t": "point",
       "head": "Al revés: ahorra [[antes]] de gastar",
       "body": "El día que cobras, aparta una cantidad fija. Con lo que queda, vives el mes.",
       "foot": "La idea",
-      "kicker": "El truco"
+      "kicker": "El truco",
+      "voz": "La idea es darle la vuelta: ahorra antes de gastar. El día que cobras, aparta una cantidad fija, y con lo que queda vives el resto del mes."
     },
     {
       "t": "steps",
@@ -52,7 +55,8 @@
           "b": "Salvo emergencia real."
         }
       ],
-      "foot": "Cuatro pasos"
+      "foot": "Cuatro pasos",
+      "voz": "Y se puede automatizar en cinco minutos. Primero, elige una cantidad pequeña, pero que no se te pueda olvidar. Segundo, abre una cuenta aparte, para no mezclarla con el día a día. Tercero, programa una transferencia para el día siguiente a cobrar. Y cuarto, no la toques, salvo que sea una emergencia real."
     },
     {
       "t": "cards",
@@ -72,14 +76,16 @@
           "b": "La constancia pesa más que la cantidad."
         }
       ],
-      "foot": "La psicología a tu favor"
+      "foot": "La psicología a tu favor",
+      "voz": "¿Y por qué funciona? Porque no dependes de la fuerza de voluntad: se hace solo, cada mes. Además, te acostumbras, y ajustas tu gasto a lo que te queda. Y con los meses se nota, porque la constancia pesa más que la cantidad."
     },
     {
       "t": "point",
       "head": "¿Y si el mes viene [[justo]]?",
       "body": "Baja la cantidad, no la elimines. Mantener el hábito vale más que la cifra.",
       "foot": "Constancia antes que cantidad",
-      "kicker": "Un matiz"
+      "kicker": "Un matiz",
+      "voz": "¿Y si el mes viene justo? No pasa nada: baja la cantidad, pero no la elimines. Mantener el hábito vale más que la cifra."
     },
     {
       "t": "close",
@@ -88,7 +94,8 @@
       "foot": "Contenido informativo y educativo. No es asesoramiento financiero.",
       "extra": "Guárdalo y envíaselo a alguien a quien le venga bien.",
       "extraBold": true,
-      "extraSize": 36
+      "extraSize": 36,
+      "voz": "Así que tu yo del futuro te lo agradecerá. Empieza este mes con la cantidad más pequeña que te parezca ridícula. Guarda este vídeo y envíaselo a alguien a quien le venga bien. Y recuerda: contenido educativo, no es asesoramiento financiero."
     }
   ]
 }
