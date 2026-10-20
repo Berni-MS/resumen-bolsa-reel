@@ -37,9 +37,17 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DRY: ${{ inputs.dry_run }}
           FORCE: ${{ inputs.force }}
-        run: node tools/telegram-tiktok.mjs site "${{ inputs.date }}"
+        run: |
+          set -o pipefail
+          node tools/telegram-tiktok.mjs site "${{ inputs.date }}" 2>&1 | tee run.log
       - name: Guardar lo enviado
         if: ${{ inputs.dry_run != 'true' }}
         run: |
           cd site && git add -A && { git commit -q -m "TikTok: vídeos avisados" || exit 0; }
           for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
+      - name: Guardar el motivo del fallo (si lo hay)
+        if: ${{ failure() }}
+        run: |
+          [ -f run.log ] || echo "Fallo antes de ejecutar el envío" > run.log
+          cd site && mkdir -p estado && { echo "Fallo del aviso TikTok · $(date -u +%FT%TZ)"; tail -n 40 ../run.log; } | sed -E 's/[0-9]{8,12}:[A-Za-z0-9_-]{30,}/[TOKEN]/g' > estado/fallo-tiktok.txt
+          git add -A && git commit -q -m "Fallo del aviso TikTok" && git push origin gh-pages || true
