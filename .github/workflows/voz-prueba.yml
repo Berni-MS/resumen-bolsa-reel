@@ -1,0 +1,37 @@
+name: Prueba de voz en off (edge-tts)
+on:
+  workflow_dispatch:
+    inputs:
+      texto:
+        description: "Texto a locutar (vacío = la última palabra del día publicada)"
+        required: false
+permissions:
+  contents: read
+jobs:
+  voz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Preparar
+        run: pip install edge-tts 2>&1 | tail -1; which ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+      - name: Texto
+        env:
+          TXT: ${{ inputs.texto }}
+        run: |
+          if [ -n "$TXT" ]; then printf '%s' "$TXT" > t.txt; else
+            git clone -q --depth 1 --branch gh-pages "https://github.com/${{ github.repository }}.git" site
+            F=$(ls -1 site/historias/palabra-*.txt | sort | tail -1)
+            sed -e '/^#/d' -e 's/^Palabra del día: /La palabra del día es /' "$F" | tr '\n' ' ' > t.txt
+          fi
+          cat t.txt
+      - name: Generar voces y enviar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          for V in es-ES-AlvaroNeural es-ES-ElviraNeural es-ES-XimenaNeural es-ES-ArabellaMultilingualNeural es-ES-TristanMultilingualNeural; do
+            if edge-tts --voice "$V" --rate=+8% --file t.txt --write-media "$V.mp3" 2>err.log && [ -s "$V.mp3" ]; then
+              ffmpeg -y -loglevel error -i "$V.mp3" -c:a libopus -b:a 48k "$V.ogg" || continue
+              curl -sS -F chat_id="$TELEGRAM_CHAT_ID" -F voice=@"$V.ogg" -F caption="Voz: $V" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendVoice" >/dev/null && echo "enviada $V"
+            else echo "falló $V: $(tail -c 200 err.log)"; fi
+          done
