@@ -1,0 +1,10 @@
+file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:12
+  if (!m) throw new Error('Sin tabla constituents en ' + title);
+                ^
+
+Error: Sin tabla constituents en Nasdaq-100
+    at page (file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:12:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:23:58
+
+Node.js v22.23.3
