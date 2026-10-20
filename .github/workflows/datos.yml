@@ -84,6 +84,18 @@ jobs:
           IMAGE_URL: ${{ steps.publish.outputs.url }}
           VIDEO_URL: ${{ steps.publish.outputs.video }}
         run: bash tools/ig-story.sh
+      - name: Vídeo de la palabra del día a Telegram (para TikTok)
+        if: ${{ inputs.kind == 'palabra' && inputs.dry_run != 'true' && steps.publish.outputs.video != '' }}
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ONLY: palabra-
+        run: |
+          cd site && git pull -q --rebase origin gh-pages && cd ..
+          node tools/telegram-tiktok.mjs site
+          cd site && git add -A && { git commit -q -m "TikTok: palabra del día avisada" || exit 0; }
+          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
       - name: Guardar el motivo del fallo (si lo hay)
         if: ${{ failure() }}
         run: |
