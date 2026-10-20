@@ -1,0 +1,45 @@
+name: Aviso diario de vídeos para TikTok (Telegram)
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Opcional: fecha AAAA-MM-DD (por defecto, hoy en Madrid)"
+        required: false
+      dry_run:
+        description: "true = solo muestra en el registro lo que se enviaría"
+        required: false
+        default: "false"
+      force:
+        description: "true = reenvía también lo que ya se envió"
+        required: false
+        default: "false"
+permissions:
+  contents: write
+concurrency:
+  group: tiktok-aviso
+  cancel-in-progress: false
+jobs:
+  aviso:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Clonar vídeos (gh-pages)
+        run: |
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
+      - name: Enviar a Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY: ${{ inputs.dry_run }}
+          FORCE: ${{ inputs.force }}
+        run: node tools/telegram-tiktok.mjs site "${{ inputs.date }}"
+      - name: Guardar lo enviado
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          cd site && git add -A && { git commit -q -m "TikTok: vídeos avisados" || exit 0; }
+          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done

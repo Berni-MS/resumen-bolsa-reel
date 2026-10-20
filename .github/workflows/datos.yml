@@ -57,7 +57,8 @@ jobs:
           git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
           REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           git clone --depth 1 --branch gh-pages "$REMOTE" site
-          mkdir -p site/historias && cp story.png "site/historias/$NAME" && { [ -f story.mp4 ] && cp story.mp4 "site/historias/${NAME%.png}.mp4" || true; } && touch site/.nojekyll
+          [ "${{ inputs.kind }}" = "palabra" ] && jq -r '"Palabra del día: \(.term). \(.def) \(.ex)\n\n#finanzaspersonales #educacionfinanciera #tuamigodelasfinanzas"' datos.json > story.txt || true
+          mkdir -p site/historias && { [ -f story.txt ] && cp story.txt "site/historias/${NAME%.png}.txt" || true; } && cp story.png "site/historias/$NAME" && { [ -f story.mp4 ] && cp story.mp4 "site/historias/${NAME%.png}.mp4" || true; } && touch site/.nojekyll
           ls -1t site/historias/* | tail -n +61 | xargs -r rm -f
           cd site && git add -A && git commit -q -m "Historia $NAME"
           for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done

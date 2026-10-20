@@ -72,9 +72,11 @@ jobs:
           fi
           mkdir -p site/reels
           cp out/reel.mp4 "site/reels/${NAME}"
+          cp out/caption.txt "site/reels/${NAME%.mp4}.txt" 2>/dev/null || true
           touch site/.nojekyll
           # conservar solo los 14 últimos vídeos
           ls -1t site/reels/*.mp4 | tail -n +31 | xargs -r rm -f
+          for f in site/reels/*.txt; do [ -f "${f%.txt}.mp4" ] || rm -f "$f"; done
           cd site
           git add -A
           git commit -q -m "Reel ${DATE}"
