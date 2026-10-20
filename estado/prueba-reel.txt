@@ -1,4 +1,4 @@
-2026-10-20T06:12:21Z
-IBEX: 35 sin dato (índice 2026-10-19): ACS.MC(2026-10-16), ACX.MC(2026-10-16), AENA.MC(2026-10-16), AMS.MC(2026-10-16), ANA.MC(2026-10-16), ANE.MC(2026-10-16)
-AVISO: sin datos del IBEX, se usa el Nasdaq 100: IBEX: solo 0 valores con dato
+2026-10-20T06:16:30Z
+IBEX: índice 2026-10-19 (yahoo); valores por fuente: {"yahoo":35}
+IBEX 35 (2026-10-19): -1.49 %
 data.json listo: S&P y Nasdaq suben, Dow cae | Lunes 19 de octubre de 2026
