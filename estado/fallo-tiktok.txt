@@ -1,0 +1,12 @@
+Fallo del aviso TikTok · 2026-10-20T05:05:53Z
+Vídeos de hoy: 1; por enviar: 1
+file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/telegram-tiktok.mjs:43
+  if (!j.ok) throw new Error(`Telegram ${method}: ${j.description || r.status}`);
+                   ^
+
+Error: Telegram sendMessage: Bad Request: chat not found
+    at tg (file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/telegram-tiktok.mjs:43:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/telegram-tiktok.mjs:54:1
+
+Node.js v22.23.3
