@@ -19,7 +19,7 @@ let sent = []; try { sent = JSON.parse(fs.readFileSync(sentFile, 'utf8')); } cat
 const found = [];
 const ONLY = process.env.ONLY || '';
 // Carruseles con vídeo para TikTok: solo los de más valor (o todos si se pide con ALL_CARRUSELES=true)
-const TK_OK = /^tk-\d{4}-\d\d-\d\d-(mitos|estafas|vivienda|semana)/;
+const TK_OK = /^tk-\d{4}-\d\d-\d\d-(mitos|estafas|vivienda|semana|edu|tramites|ahorro|vida)/;
 for (const [dir, test, kind] of [['tiktok-carruseles', n => n.endsWith('.mp4') && new RegExp(`^tk-${today}-`).test(n) && (process.env.ALL_CARRUSELES === 'true' || TK_OK.test(n)), 'carrusel'], ['reels', n => n.endsWith('.mp4') && new RegExp(`(^|-)${today}-`).test(n), 'reel'], ['historias', n => /^palabra-/.test(n) && n.endsWith('.mp4') && n.includes(`-${today}-`), 'palabra']]) {
   const d = path.join(site, dir);
   if (!fs.existsSync(d)) continue;

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       kind:
-        description: "Serie del carrusel: mitos, estafas, vivienda o semana"
+        description: "Serie del carrusel: mitos, estafas, vivienda, semana, edu, tramites, ahorro o vida"
         required: true
       fecha:
         description: "Opcional: día del carrusel (AAAA-MM-DD). Por defecto, hoy (hora de Madrid)"

@@ -126,7 +126,7 @@ jobs:
           cp "../${NAME}.mp4" tiktok-carruseles/ && cp ../out/caption.txt "tiktok-carruseles/${NAME}.txt"
           # Series que también salen como reel en Instagram por la tarde (reel-carrusel.yml lo publica)
           KIND="${{ inputs.kind }}"
-          if echo "$KIND" | grep -qxE 'mitos|estafas|vivienda|semana'; then
+          if echo "$KIND" | grep -qxE 'mitos|estafas|vivienda|semana|edu|tramites|ahorro|vida'; then
             mkdir -p reels-carrusel
             R="reels-carrusel/${KIND}-${DAY}"
             cp "../${NAME}.mp4" "${R}.mp4" && cp ../out/caption.txt "${R}.txt"
