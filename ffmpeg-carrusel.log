@@ -9,36 +9,31 @@ ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
   libswscale      7.  5.100 /  7.  5.100
   libswresample   4. 12.100 /  4. 12.100
   libpostproc    57.  3.100 / 57.  3.100
-[Parsed_ass_42 @ 0x55e5ce550600] libass API version: 0x1701000
-[Parsed_ass_42 @ 0x55e5ce550600] libass source: tarball: 0.17.1
-[Parsed_ass_42 @ 0x55e5ce550600] Shaper: FriBidi 1.0.13 (SIMPLE) HarfBuzz-ng 8.3.0 (COMPLEX)
-[Parsed_ass_42 @ 0x55e5ce550600] Using font provider fontconfig
-[Parsed_ass_42 @ 0x55e5ce550600] Added subtitle file: 'cv-VKB0WZ/subs.ass' (2 styles, 12 events)
-[mjpeg @ 0x55e5ce557f00] EOI missing, emulating
+[mjpeg @ 0x559ceb7a2d40] EOI missing, emulating
 Input #0, image2, from '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/img/01.jpg':
   Duration: 00:00:00.04, start: 0.000000, bitrate: 1778 kb/s
   Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1350 [SAR 1:1 DAR 4:5], 25 fps, 25 tbr, 25 tbn
-[mjpeg @ 0x55e5ce540c40] EOI missing, emulating
+[mjpeg @ 0x559ceb7a2500] EOI missing, emulating
 Input #1, image2, from '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/img/02.jpg':
   Duration: 00:00:00.04, start: 0.000000, bitrate: 1778 kb/s
   Stream #1:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1350 [SAR 1:1 DAR 4:5], 25 fps, 25 tbr, 25 tbn
-[mjpeg @ 0x55e5ce543a40] EOI missing, emulating
+[mjpeg @ 0x559ceb797480] EOI missing, emulating
 Input #2, image2, from '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/img/03.jpg':
   Duration: 00:00:00.04, start: 0.000000, bitrate: 1778 kb/s
   Stream #2:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1350 [SAR 1:1 DAR 4:5], 25 fps, 25 tbr, 25 tbn
-[mjpeg @ 0x55e5ce554740] EOI missing, emulating
+[mjpeg @ 0x559ceb796180] EOI missing, emulating
 Input #3, image2, from '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/img/04.jpg':
   Duration: 00:00:00.04, start: 0.000000, bitrate: 1778 kb/s
   Stream #3:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1350 [SAR 1:1 DAR 4:5], 25 fps, 25 tbr, 25 tbn
-[mjpeg @ 0x55e5ce54d9c0] EOI missing, emulating
+[mjpeg @ 0x559ceb79c7c0] EOI missing, emulating
 Input #4, image2, from '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/img/05.jpg':
   Duration: 00:00:00.04, start: 0.000000, bitrate: 1778 kb/s
   Stream #4:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1350 [SAR 1:1 DAR 4:5], 25 fps, 25 tbr, 25 tbn
-[mjpeg @ 0x55e5ce547c40] EOI missing, emulating
+[mjpeg @ 0x559ceb80f200] EOI missing, emulating
 Input #5, image2, from '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/img/06.jpg':
   Duration: 00:00:00.04, start: 0.000000, bitrate: 1778 kb/s
   Stream #5:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1350 [SAR 1:1 DAR 4:5], 25 fps, 25 tbr, 25 tbn
-[mjpeg @ 0x55e5ce53d340] EOI missing, emulating
+[mjpeg @ 0x559ceb783940] EOI missing, emulating
 Input #6, image2, from '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/img/07.jpg':
   Duration: 00:00:00.04, start: 0.000000, bitrate: 1778 kb/s
   Stream #6:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1080x1350 [SAR 1:1 DAR 4:5], 25 fps, 25 tbr, 25 tbn
@@ -52,8 +47,8 @@ Input #7, mp3, from '/home/claude/resumen-bolsa-reel/assets/music.mp3':
 Input #8, lavfi, from 'color=c=0x35D07F:s=1080x12:r=30':
   Duration: N/A, start: 0.000000, bitrate: N/A
   Stream #8:0: Video: wrapped_avframe, yuv420p, 1080x12 [SAR 1:1 DAR 90:1], 30 fps, 30 tbr, 30 tbn
-[aist#9:0/pcm_s16le @ 0x55e5ce5f3300] Guessed Channel Layout: mono
-Input #9, wav, from 'cv-VKB0WZ/whoosh.wav':
+[aist#9:0/pcm_s16le @ 0x559ceb821a40] Guessed Channel Layout: mono
+Input #9, wav, from 'cv-W5CJgq/whoosh.wav':
   Metadata:
     encoder         : Lavf60.16.100
   Duration: 00:00:00.50, bitrate: 706 kb/s
@@ -125,41 +120,38 @@ Stream mapping:
   Stream #14:0 (mp3float) -> adelay:default
   Stream #15:0 (mp3float) -> adelay:default
   Stream #16:0 (mp3float) -> adelay:default
-  ass:default -> Stream #0:0 (libx264)
+  overlay:default -> Stream #0:0 (libx264)
   loudnorm:default -> Stream #0:1 (aac)
 Press [q] to stop, [?] for help
-[Parsed_ass_42 @ 0x55e5ce6e8800] libass API version: 0x1701000
-[Parsed_ass_42 @ 0x55e5ce6e8800] libass source: tarball: 0.17.1
-[Parsed_ass_42 @ 0x55e5ce6e8800] Shaper: FriBidi 1.0.13 (SIMPLE) HarfBuzz-ng 8.3.0 (COMPLEX)
-[Parsed_ass_42 @ 0x55e5ce6e8800] Using font provider fontconfig
-[Parsed_ass_42 @ 0x55e5ce6e8800] Added subtitle file: 'cv-VKB0WZ/subs.ass' (2 styles, 12 events)
-[swscaler @ 0x55e5cec1c680] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cee3ab40] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cf059000] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cf2774c0] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cf495980] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cf6b3e40] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cf8d2300] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cecad100] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x55e5cec4d600] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebb082c0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebd255c0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebf43a80] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec161f40] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec380400] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec59e8c0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec7bcd80] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebbf7680] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebb380c0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebbf7680] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebe15b80] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 2 times
+[swscaler @ 0x559cebf43a80] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebfa9800] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cebf43a80] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec2524c0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec243840] deprecated pixel format used, make sure you did set range correctly
     Last message repeated 1 times
-[swscaler @ 0x55e5cee6bac0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec1c3500] deprecated pixel format used, make sure you did set range correctly
     Last message repeated 2 times
-[swscaler @ 0x55e5cf059000] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec3e4440] deprecated pixel format used, make sure you did set range correctly
     Last message repeated 2 times
-[swscaler @ 0x55e5cf2a8440] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x559cec604f40] deprecated pixel format used, make sure you did set range correctly
     Last message repeated 2 times
-[swscaler @ 0x55e5cf495980] deprecated pixel format used, make sure you did set range correctly
-    Last message repeated 2 times
-[swscaler @ 0x55e5cf7a4380] deprecated pixel format used, make sure you did set range correctly
-    Last message repeated 2 times
-[swscaler @ 0x55e5cf903280] deprecated pixel format used, make sure you did set range correctly
-    Last message repeated 2 times
-[libx264 @ 0x55e5ce6f9880] using SAR=1/1
-[libx264 @ 0x55e5ce6f9880] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
-[libx264 @ 0x55e5ce6f9880] profile High, level 4.0, 4:2:0, 8-bit
-[libx264 @ 0x55e5ce6f9880] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=3 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-Output #0, mp4, to '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/o.mp4':
+[libx264 @ 0x559ceb93ff80] using SAR=1/1
+[libx264 @ 0x559ceb93ff80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x559ceb93ff80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x559ceb93ff80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=3 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241ae56/scratchpad/t/o2.mp4':
   Metadata:
     encoder         : Lavf60.16.100
   Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn
@@ -170,23 +162,22 @@ Output #0, mp4, to '/tmp/claude-0/-home-claude/1cd1642b-fa0b-5c1e-86b9-eb40a241a
   Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s
     Metadata:
       encoder         : Lavc60.31.102 aac
-frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.02 bitrate=  16.5kbits/s speed=0.0632x    [Parsed_ass_42 @ 0x55e5ce6e8800] fontselect: (DejaVu Sans, 700, 0) -> /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf, 0, DejaVuSans-Bold
-frame=    8 fps=0.0 q=29.0 size=       0kB time=00:00:00.81 bitrate=   0.5kbits/s speed=0.928x    frame=   37 fps= 27 q=29.0 size=       0kB time=00:00:01.81 bitrate=   0.2kbits/s speed=1.31x    frame=   65 fps= 34 q=29.0 size=       0kB time=00:00:02.71 bitrate=   0.1kbits/s speed=1.44x    frame=   95 fps= 40 q=29.0 size=       0kB time=00:00:03.71 bitrate=   0.1kbits/s speed=1.55x    frame=  110 fps= 38 q=29.0 size=       0kB time=00:00:04.22 bitrate=   0.1kbits/s speed=1.45x    frame=  129 fps= 38 q=29.0 size=       0kB time=00:00:04.92 bitrate=   0.1kbits/s speed=1.44x    frame=  154 fps= 39 q=29.0 size=       0kB time=00:00:05.71 bitrate=   0.1kbits/s speed=1.46x    frame=  179 fps= 40 q=29.0 size=       0kB time=00:00:06.52 bitrate=   0.1kbits/s speed=1.47x    frame=  197 fps= 40 q=29.0 size=       0kB time=00:00:07.22 bitrate=   0.1kbits/s speed=1.46x    frame=  223 fps= 41 q=29.0 size=       0kB time=00:00:08.01 bitrate=   0.0kbits/s speed=1.47x    frame=  239 fps= 40 q=29.0 size=       0kB time=00:00:08.52 bitrate=   0.0kbits/s speed=1.43x    frame=  260 fps= 40 q=29.0 size=       0kB time=00:00:09.21 bitrate=   0.0kbits/s speed=1.42x    frame=  283 fps= 40 q=29.0 size=       0kB time=00:00:10.00 bitrate=   0.0kbits/s speed=1.43x    frame=  303 fps= 40 q=29.0 size=       0kB time=00:00:10.72 bitrate=   0.0kbits/s speed=1.43x    frame=  329 fps= 41 q=29.0 size=       0kB time=00:00:11.51 bitrate=   0.0kbits/s speed=1.44x    frame=  353 fps= 41 q=29.0 size=     256kB time=00:00:12.42 bitrate= 168.8kbits/s speed=1.46x    frame=  379 fps= 42 q=29.0 size=     256kB time=00:00:13.21 bitrate= 158.8kbits/s speed=1.46x    frame=  396 fps= 42 q=29.0 size=     256kB time=00:00:13.81 bitrate= 151.8kbits/s speed=1.45x    frame=  418 fps= 42 q=29.0 size=     256kB time=00:00:14.51 bitrate= 144.5kbits/s speed=1.44x    frame=  436 fps= 41 q=29.0 size=     256kB time=00:00:15.11 bitrate= 138.8kbits/s speed=1.43x    frame=  455 fps= 41 q=29.0 size=     256kB time=00:00:15.71 bitrate= 133.4kbits/s speed=1.42x    frame=  479 fps= 41 q=29.0 size=     256kB time=00:00:16.50 bitrate= 127.1kbits/s speed=1.43x    frame=  500 fps= 41 q=29.0 size=     256kB time=00:00:17.22 bitrate= 121.7kbits/s speed=1.43x    frame=  518 fps= 41 q=29.0 size=     256kB time=00:00:17.80 bitrate= 117.8kbits/s speed=1.42x    frame=  542 fps= 41 q=29.0 size=     256kB time=00:00:18.62 bitrate= 112.6kbits/s speed=1.42x    frame=  562 fps= 41 q=29.0 size=     256kB time=00:00:19.31 bitrate= 108.6kbits/s speed=1.42x    frame=  590 fps= 42 q=29.0 size=     256kB time=00:00:20.22 bitrate= 103.7kbits/s speed=1.43x    frame=  615 fps= 42 q=29.0 size=     256kB time=00:00:21.10 bitrate=  99.4kbits/s speed=1.44x    frame=  633 fps= 42 q=29.0 size=     256kB time=00:00:21.71 bitrate=  96.6kbits/s speed=1.44x    frame=  655 fps= 42 q=29.0 size=     256kB time=00:00:22.40 bitrate=  93.6kbits/s speed=1.43x    frame=  682 fps= 42 q=29.0 size=     512kB time=00:00:23.31 bitrate= 179.9kbits/s speed=1.45x    frame=  705 fps= 42 q=29.0 size=     512kB time=00:00:24.12 bitrate= 173.9kbits/s speed=1.45x    frame=  727 fps= 42 q=29.0 size=     512kB time=00:00:24.82 bitrate= 169.0kbits/s speed=1.45x    frame=  745 fps= 42 q=29.0 size=     512kB time=00:00:25.42 bitrate= 165.0kbits/s speed=1.44x    frame=  770 fps= 42 q=29.0 size=     512kB time=00:00:26.21 bitrate= 160.0kbits/s speed=1.44x    frame=  793 fps= 42 q=29.0 size=     512kB time=00:00:27.02 bitrate= 155.2kbits/s speed=1.45x    frame=  818 fps= 43 q=29.0 size=     512kB time=00:00:27.91 bitrate= 150.3kbits/s speed=1.45x    frame=  844 fps= 43 q=29.0 size=     512kB time=00:00:28.72 bitrate= 146.0kbits/s speed=1.46x    [mp4 @ 0x55e5ce6f8c00] Starting second pass: moving the moov atom to the beginning of the file
-[out#0/mp4 @ 0x55e5ce6f8b00] video:170kB audio:507kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 4.790629%
-frame=  885 fps= 44 q=-1.0 Lsize=     710kB time=00:00:29.48 bitrate= 197.2kbits/s speed=1.45x    
-[libx264 @ 0x55e5ce6f9880] frame I:14    Avg QP: 8.51  size:  2259
-[libx264 @ 0x55e5ce6f9880] frame P:249   Avg QP:13.27  size:   314
-[libx264 @ 0x55e5ce6f9880] frame B:622   Avg QP:13.75  size:   103
-[libx264 @ 0x55e5ce6f9880] consecutive B-frames:  4.4%  4.1%  4.7% 86.8%
-[libx264 @ 0x55e5ce6f9880] mb I  I16..4: 96.4%  3.2%  0.5%
-[libx264 @ 0x55e5ce6f9880] mb P  I16..4:  6.2%  1.0%  0.0%  P16..4:  0.3%  0.0%  0.0%  0.0%  0.0%    skip:92.5%
-[libx264 @ 0x55e5ce6f9880] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 1.0%  skip:98.9%  L0:53.5% L1:46.5% BI: 0.1%
-[libx264 @ 0x55e5ce6f9880] 8x8 transform intra:9.2% inter:8.7%
-[libx264 @ 0x55e5ce6f9880] coded y,uvDC,uvAC intra: 1.5% 0.6% 0.5% inter: 0.0% 0.8% 0.0%
-[libx264 @ 0x55e5ce6f9880] i16 v,h,dc,p: 96%  3%  0%  0%
-[libx264 @ 0x55e5ce6f9880] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  4% 24% 71%  0%  0%  0%  0%  0%  0%
-[libx264 @ 0x55e5ce6f9880] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42% 22% 19%  3%  3%  3%  3%  2%  3%
-[libx264 @ 0x55e5ce6f9880] i8c dc,h,v,p: 95%  3%  3%  0%
-[libx264 @ 0x55e5ce6f9880] Weighted P-Frames: Y:4.4% UV:4.4%
-[libx264 @ 0x55e5ce6f9880] kb/s:47.04
-[aac @ 0x55e5ce6fb3c0] Qavg: 548.781
+frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.02 bitrate=  16.5kbits/s speed=0.0568x    frame=    8 fps=0.0 q=29.0 size=       0kB time=00:00:00.81 bitrate=   0.5kbits/s speed=0.894x    frame=   38 fps= 27 q=29.0 size=       0kB time=00:00:01.81 bitrate=   0.2kbits/s speed=1.28x    frame=   65 fps= 34 q=29.0 size=       0kB time=00:00:02.71 bitrate=   0.1kbits/s speed=1.42x    frame=   89 fps= 37 q=29.0 size=       0kB time=00:00:03.52 bitrate=   0.1kbits/s speed=1.46x    frame=  110 fps= 38 q=29.0 size=       0kB time=00:00:04.22 bitrate=   0.1kbits/s speed=1.45x    frame=  134 fps= 39 q=29.0 size=       0kB time=00:00:05.01 bitrate=   0.1kbits/s speed=1.46x    frame=  160 fps= 40 q=29.0 size=       0kB time=00:00:05.92 bitrate=   0.1kbits/s speed= 1.5x    frame=  184 fps= 41 q=29.0 size=       0kB time=00:00:06.71 bitrate=   0.1kbits/s speed=1.51x    frame=  209 fps= 42 q=29.0 size=       0kB time=00:00:07.52 bitrate=   0.1kbits/s speed=1.52x    frame=  230 fps= 42 q=29.0 size=       0kB time=00:00:08.21 bitrate=   0.0kbits/s speed= 1.5x    frame=  245 fps= 41 q=29.0 size=       0kB time=00:00:08.82 bitrate=   0.0kbits/s speed=1.48x    frame=  272 fps= 42 q=29.0 size=       0kB time=00:00:09.72 bitrate=   0.0kbits/s speed= 1.5x    frame=  299 fps= 43 q=29.0 size=       0kB time=00:00:10.51 bitrate=   0.0kbits/s speed=1.51x    frame=  324 fps= 43 q=29.0 size=       0kB time=00:00:11.42 bitrate=   0.0kbits/s speed=1.52x    frame=  353 fps= 44 q=29.0 size=       0kB time=00:00:12.32 bitrate=   0.0kbits/s speed=1.54x    frame=  382 fps= 45 q=29.0 size=       0kB time=00:00:13.32 bitrate=   0.0kbits/s speed=1.57x    frame=  399 fps= 44 q=29.0 size=     256kB time=00:00:13.90 bitrate= 150.8kbits/s speed=1.54x    frame=  425 fps= 44 q=29.0 size=     256kB time=00:00:14.72 bitrate= 142.5kbits/s speed=1.54x    frame=  454 fps= 45 q=29.0 size=     256kB time=00:00:15.71 bitrate= 133.4kbits/s speed=1.56x    frame=  478 fps= 45 q=29.0 size=     256kB time=00:00:16.50 bitrate= 127.1kbits/s speed=1.56x    frame=  498 fps= 45 q=29.0 size=     256kB time=00:00:17.22 bitrate= 121.7kbits/s speed=1.56x    frame=  515 fps= 44 q=29.0 size=     256kB time=00:00:17.71 bitrate= 118.4kbits/s speed=1.53x    frame=  538 fps= 44 q=29.0 size=     256kB time=00:00:18.52 bitrate= 113.2kbits/s speed=1.53x    frame=  557 fps= 44 q=29.0 size=     256kB time=00:00:19.11 bitrate= 109.8kbits/s speed=1.52x    frame=  575 fps= 44 q=29.0 size=     256kB time=00:00:19.82 bitrate= 105.8kbits/s speed=1.51x    frame=  595 fps= 44 q=29.0 size=     256kB time=00:00:20.41 bitrate= 102.8kbits/s speed= 1.5x    frame=  620 fps= 44 q=29.0 size=     256kB time=00:00:21.22 bitrate=  98.8kbits/s speed= 1.5x    frame=  637 fps= 43 q=29.0 size=     256kB time=00:00:21.82 bitrate=  96.1kbits/s speed=1.49x    frame=  658 fps= 43 q=29.0 size=     256kB time=00:00:22.52 bitrate=  93.1kbits/s speed=1.49x    frame=  683 fps= 44 q=29.0 size=     256kB time=00:00:23.31 bitrate=  90.0kbits/s speed=1.49x    frame=  703 fps= 43 q=29.0 size=     256kB time=00:00:24.00 bitrate=  87.4kbits/s speed=1.48x    frame=  725 fps= 43 q=29.0 size=     512kB time=00:00:24.72 bitrate= 169.6kbits/s speed=1.48x    frame=  738 fps= 43 q=29.0 size=     512kB time=00:00:25.21 bitrate= 166.3kbits/s speed=1.47x    frame=  760 fps= 43 q=29.0 size=     512kB time=00:00:25.91 bitrate= 161.9kbits/s speed=1.46x    frame=  784 fps= 43 q=29.0 size=     512kB time=00:00:26.72 bitrate= 157.0kbits/s speed=1.47x    frame=  807 fps= 43 q=29.0 size=     512kB time=00:00:27.51 bitrate= 152.4kbits/s speed=1.47x    frame=  830 fps= 43 q=29.0 size=     512kB time=00:00:28.32 bitrate= 148.1kbits/s speed=1.47x    frame=  854 fps= 43 q=29.0 size=     512kB time=00:00:29.11 bitrate= 144.1kbits/s speed=1.48x    [mp4 @ 0x559ceb93f300] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x559ceb93f200] video:149kB audio:507kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 4.825740%
+frame=  885 fps= 44 q=-1.0 Lsize=     688kB time=00:00:29.48 bitrate= 191.2kbits/s speed=1.46x    
+[libx264 @ 0x559ceb93ff80] frame I:46    Avg QP: 9.08  size:  1144
+[libx264 @ 0x559ceb93ff80] frame P:309   Avg QP:12.82  size:   137
+[libx264 @ 0x559ceb93ff80] frame B:530   Avg QP:13.76  size:   108
+[libx264 @ 0x559ceb93ff80] consecutive B-frames: 17.6%  6.3%  3.7% 72.3%
+[libx264 @ 0x559ceb93ff80] mb I  I16..4: 94.0%  6.0%  0.1%
+[libx264 @ 0x559ceb93ff80] mb P  I16..4:  3.3%  1.4%  0.0%  P16..4:  0.2%  0.0%  0.0%  0.0%  0.0%    skip:95.1%
+[libx264 @ 0x559ceb93ff80] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 1.4%  skip:98.5%  L0:52.3% L1:47.7% BI: 0.0%
+[libx264 @ 0x559ceb93ff80] 8x8 transform intra:11.5% inter:81.4%
+[libx264 @ 0x559ceb93ff80] coded y,uvDC,uvAC intra: 3.2% 0.5% 0.5% inter: 0.0% 1.0% 0.0%
+[libx264 @ 0x559ceb93ff80] i16 v,h,dc,p: 96%  3%  1%  0%
+[libx264 @ 0x559ceb93ff80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  6% 41% 53%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x559ceb93ff80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 19% 41%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x559ceb93ff80] i8c dc,h,v,p: 95%  2%  3%  0%
+[libx264 @ 0x559ceb93ff80] Weighted P-Frames: Y:9.1% UV:9.1%
+[libx264 @ 0x559ceb93ff80] kb/s:41.26
+[aac @ 0x559ceb941b40] Qavg: 550.688

@@ -153,6 +153,7 @@ await browser.close();
 // ---------- voz en off (opcional: VOZ=true) ----------
 const VOICE = process.env.VOZ_VOICE || 'es-ES-AlvaroNeural';
 const probe = f => Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString().trim());
+const SUBS = process.env.SUBS === 'true'; // subtítulos grabados: desactivados por ahora
 const voces = []; // { file, name }
 const guionTxt = {};
 if (process.env.VOZ === 'true') {
@@ -206,9 +207,9 @@ if (voces.length && hasMusic) {
     `[1:a]volume=0.5,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8[m]`,
     `[m][k]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md]`,
     `[md][v][wh]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]`,
-    `[0:v]fps=30,scale=886:1574,pad=1080:1920:97:100:color=0x0F1B33,format=yuv420p[b]`,
+    `[0:v]fps=30,${SUBS ? 'scale=886:1574,pad=1080:1920:97:100:color=0x0F1B33,' : ''}format=yuv420p[b]`,
     `[b][2:v]overlay=x='-w+w*t/${total}':y=1908:shortest=1[pv]`,
-    `[pv]ass='${ass}':fontsdir='${fu.dir}'[vs]`].join(';');
+    SUBS ? `[pv]ass='${ass}':fontsdir='${fu.dir}'[vs]` : `[pv]null[vs]`].join(';');
   args.push('-filter_complex', fc);
   mapAudio = '[a]'; mapVideo = '[vs]';
   process.on('exit', () => { try { fs.rmSync(tmp, { recursive: true, force: true }); } catch {} });
