@@ -11,6 +11,8 @@ if (!lunes) { let d = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madri
 const R = 'REEL', C = 'CARRUSEL', H = 'HISTORIA';
 const DIAS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+// Publicaciones cuyo vídeo llega a Telegram para subirlo a TikTok: todos los reels, la palabra del día y los carruseles elegidos
+const TT = n => ['Palabra del día', 'Mitos y datos', 'Alerta estafa', 'Vivienda', 'La semana en datos'].includes(n);
 const car = kind => ({ car: kind });
 // [hora, tipo, nombre, tema (texto fijo o resolutor)]
 const SCHED = [
@@ -63,7 +65,8 @@ SCHED.forEach((items, i) => {
   const rows = items.map(([hora, tipo, nombre, t]) => {
     if (tipo === R) nR++; else if (tipo === C) nC++; else nH++;
     const tm = tema(t, fecha);
-    return `<div class="it"><div class="t">${hora}</div><span class="b ${cls[tipo]}">${tipo}</span><div class="n">${esc(nombre)}</div><div class="tm ${tm.fijo ? 'f' : ''}">${esc(tm.texto)}</div></div>`;
+    const tk = tipo === R || TT(nombre) ? '<span class="tk">(t)</span>' : '';
+    return `<div class="it"><div class="t">${hora}</div><span class="b ${cls[tipo]}">${tipo}</span>${tk}<div class="n">${esc(nombre)}</div><div class="tm ${tm.fijo ? 'f' : ''}">${esc(tm.texto)}</div></div>`;
   }).join('');
   cols += `<div class="col"><h2>${DIAS[i]} ${dn}</h2>${rows}</div>`;
 });
@@ -90,10 +93,11 @@ h2{color:#35D07F;font-size:34px;font-weight:700;padding-bottom:10px;border-botto
 .it{padding:9px 0;border-bottom:1px solid #0F1B33}.t{font-size:29px;font-weight:700;display:inline-block;margin-right:8px}.n{font-size:22px;color:#DCE5F5;margin-top:2px;line-height:1.15;font-weight:500}
 .tm{font-size:21px;color:#9FB0CC;margin-top:2px;line-height:1.15}.tm.f{color:#fff;font-weight:700;font-size:23px}
 .b{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.5px;padding:2px 10px;border-radius:10px;color:#0F1B33;vertical-align:4px}
+.tk{color:#fff;font-weight:700;font-size:24px;margin-left:8px;vertical-align:1px}
 .r{background:#FF5247}.c{background:#35D07F}.h{background:#9FB0CC}
 .foot{margin-top:22px;color:#9FB0CC;font-size:22px;line-height:1.4}
 </style></head><body><h1>Planning <em>${rango}</em></h1>
-<div class="sub">@tuamigodelasfinanzas · horario de Madrid · ${nR} reels · ${nC} carruseles · ${nH} historias · en negrita, el tema ya fijado</div>
+<div class="sub">@tuamigodelasfinanzas · horario de Madrid · ${nR} reels · ${nC} carruseles · ${nH} historias · en negrita, el tema ya fijado · (t) = su vídeo llega a Telegram para TikTok</div>
 <div class="grid">${cols}</div>
 <div class="foot">Cada carrusel lleva una historia de aviso a los pocos minutos. ${notas.join(' · ')}${notas.length ? ' · ' : ''}Los vídeos de TikTok llegan a Telegram: 09:00 (mar–sáb), 13:30 (lun), 21:30 (diario) y al instante los carruseles elegidos.</div></body></html>`;
 if (process.env.DUMP_HTML) { fs.writeFileSync(process.env.DUMP_HTML, html); console.log('HTML guardado'); process.exit(0); }
