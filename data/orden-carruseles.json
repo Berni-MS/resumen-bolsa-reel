@@ -1,0 +1,27 @@
+{
+  "nota": "Orden de los carruseles por interés para todas las edades. 'posiciones' fija un carrusel en un hueco concreto (empezando en 0): lo ya publicado y lo estacional (Black Friday, Navidad, Renta…). 'prioridad' ordena el resto, de más a menos interés. Lo no listado conserva su orden original. Los números van sin el tipo: 005-interes-compuesto = edu-005-interes-compuesto.",
+  "edu": {
+    "posiciones": { "001-etf": 0 },
+    "prioridad": ["005-interes-compuesto","007-inflacion","004-diversificacion","023-fondo-emergencia","016-indexado-vs-etf","021-aportaciones","024-riesgo-horizonte","036-impuestos-espana","035-costes-ter","017-bonos","052-plan-personal","002-accion","003-indice","006-dividendo","015-broker","037-acumulacion-distribucion","022-rebalanceo","048-fomo","049-aversion-perdidas","051-leer-empresa"]
+  },
+  "ahorro": {
+    "posiciones": { "001-5030": 0, "002-paga-primero": 1, "006-black-friday": 5, "008-regalos-navidad": 7, "010-pagas-extra": 9, "011-loteria": 10, "012-propositos": 11, "013-cuesta-enero": 12, "014-rebajas": 13, "047-vuelta-cole": 46 },
+    "prioridad": ["040-primer-sueldo","025-inflacion-ahorro","003-hormiga","033-cuanto-ahorrar","039-independizarse","050-ahorro-hijos","017-emergencia-5","004-100-al-mes","021-tres-cuentas","032-gastos-anuales","038-energia","022-super","018-ahorro-pareja","007-suscripciones","005-presupuesto-15","026-transporte","048-coste-coche","030-ahorro-inversion"]
+  },
+  "vida": {
+    "posiciones": { "001-bruto-neto": 0, "025-renta-que-es": 24, "026-irpf": 25, "027-renta-documentos": 26, "028-renta-errores": 27 },
+    "prioridad": ["038-factura-luz","029-pensiones","032-letras-tesoro","031-remunerada","009-deposito","030-plan-vs-fondo","044-paga-ninos","011-herencias","016-regla-72","008-bizum","024-fgd","039-tarifas","015-alquilar-comprar","019-amortizar","018-euribor","051-ipc","017-deudas","043-negociar-sueldo","042-pedir-subida"]
+  },
+  "vivienda": {
+    "posiciones": { "001-cuanto-te-prestan": 0 },
+    "prioridad": ["010-ahorrar-entrada","004-comprar-o-alquilar","003-fija-variable-mixta","007-ayudas-vivienda","009-amortizar","011-alquiler-falso","017-compartir-piso","021-negociar-alquiler","002-gastos-de-comprar","015-cambiar-hipoteca","018-comprar-en-pareja","005-contrato-alquiler","006-zona-tensionada"]
+  },
+  "tramites": {
+    "posiciones": { "001-clave": 0 },
+    "prioridad": ["011-jubilacion","008-ayudas-alquiler","009-nacimiento","021-herencia","005-paro","004-vida-laboral","022-becas","006-ingreso-minimo","007-bono-social","003-cita-previa","002-certificado-digital","010-maternidad","013-autonomo"]
+  },
+  "estafas": {
+    "posiciones": { "001-sms-banco": 0, "017-tienda-falsa": 5, "016-tarjetas-regalo": 7, "022-sorteo-falso": 8 },
+    "prioridad": ["018-voz-clonada","004-bizum","005-llamada-banco","003-hijo-nuevo-movil","011-oferta-empleo","008-segunda-mano","012-como-actuar","006-inversion-famosos","010-amor-y-dinero","002-paquete-correos","007-falsa-hacienda","014-codigos-qr"]
+  }
+}

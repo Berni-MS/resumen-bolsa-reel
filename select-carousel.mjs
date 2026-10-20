@@ -8,7 +8,21 @@ const dst = process.argv[3];
 const forced = process.argv[4];
 if (!['edu', 'mitos', 'ahorro', 'vida', 'vivienda', 'estafas', 'renta', 'bienvenida', 'tramites', 'ipc', 'euribor'].includes(kind)) throw new Error('kind debe ser edu, mitos, ahorro, vida, vivienda, estafas, renta, bienvenida o tramites');
 const dir = `queue/${kind}`;
-const queue = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort().map(f => JSON.parse(fs.readFileSync(`${dir}/${f}`, 'utf8')));
+const base = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort().map(f => JSON.parse(fs.readFileSync(`${dir}/${f}`, 'utf8')));
+// Orden por interés (data/orden-carruseles.json): lo fijado se queda en su hueco y el resto sigue la prioridad
+function ordenar(base, kind) {
+  let cfg; try { cfg = JSON.parse(fs.readFileSync(new URL('./data/orden-carruseles.json', import.meta.url), 'utf8'))[kind]; } catch { cfg = null; }
+  if (!cfg) return base;
+  const short = it => String(it.id).replace(new RegExp(`^${kind}-`), '');
+  const out = new Array(base.length).fill(null), used = new Set();
+  for (const [id, pos] of Object.entries(cfg.posiciones || {})) { const it = base.find(x => short(x) === id); if (it && pos < out.length && !out[pos]) { out[pos] = it; used.add(it); } }
+  const rest = [];
+  for (const id of cfg.prioridad || []) { const it = base.find(x => short(x) === id); if (it && !used.has(it)) { rest.push(it); used.add(it); } }
+  for (const it of base) if (!used.has(it)) rest.push(it);
+  let k = 0; for (let i = 0; i < out.length; i++) if (!out[i]) out[i] = rest[k++];
+  return out;
+}
+const queue = ordenar(base, kind);
 
 // Semana 0 = lunes 19/10/2026; la fecha se toma en horario de Madrid
 const START = Date.UTC(2026, 9, 19);
