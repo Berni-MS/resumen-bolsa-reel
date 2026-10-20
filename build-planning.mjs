@@ -14,13 +14,13 @@ const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'o
 const car = kind => ({ car: kind });
 // [hora, tipo, nombre, tema (texto fijo o resolutor)]
 const SCHED = [
-  [['12:40', R, 'En 30 segundos', 'Tema de actualidad'], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['19:20', C, 'Educativo', car('edu')]],
-  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['14:00', C, 'Trámites y ayudas', car('tramites')], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['20:10', C, 'Ahorro y presupuesto', car('ahorro')]],
-  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['13:00', H, 'Calculadora de la semana', { calc: 1 }], ['14:00', C, 'Alerta estafa', car('estafas')], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['19:20', C, '1.000 € hace N años', 'Cálculo con datos reales']],
-  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['19:20', C, 'Mitos y datos', car('mitos')]],
-  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['14:00', C, 'Vida cotidiana', car('vida')], ['18:00', H, 'Palabra del día', { palabra: 1 }]],
-  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['10:00', R, 'Un consejo para tu bolsillo', 'Consejo breve'], ['19:20', C, 'Vivienda', car('vivienda')]],
-  [['10:30', C, 'La semana en datos', 'Resumen de la semana'], ['19:20', C, 'Calendario de la semana', 'Agenda económica']],
+  [['08:30', H, 'Hoy en los mercados', 'Cierres y datos del día'], ['12:40', R, 'En 30 segundos', 'Tema de actualidad'], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['19:20', C, 'Educativo', car('edu')], ['20:20', H, 'La luz de mañana', 'Precio por horas']],
+  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['08:30', H, 'Hoy en los mercados', 'Cierres y datos del día'], ['14:00', C, 'Trámites y ayudas', car('tramites')], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['20:10', C, 'Ahorro y presupuesto', car('ahorro')], ['20:20', H, 'La luz de mañana', 'Precio por horas']],
+  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['08:30', H, 'Hoy en los mercados', 'Cierres y datos del día'], ['13:00', H, 'Calculadora de la semana', { calc: 1 }], ['14:00', C, 'Alerta estafa', car('estafas')], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['19:20', C, '1.000 € hace N años', 'Cálculo con datos reales'], ['20:20', H, 'La luz de mañana', 'Precio por horas']],
+  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['08:30', H, 'Hoy en los mercados', 'Cierres y datos del día'], ['13:00', H, 'Gasolina y diésel', 'Precio medio de la semana'], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['19:20', C, 'Mitos y datos', car('mitos')], ['20:20', H, 'La luz de mañana', 'Precio por horas']],
+  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['08:30', H, 'Hoy en los mercados', 'Cierres y datos del día'], ['14:00', C, 'Vida cotidiana', car('vida')], ['18:00', H, 'Palabra del día', { palabra: 1 }], ['20:20', H, 'La luz de mañana', 'Precio por horas']],
+  [['07:40', R, 'Resumen Bolsa', 'Cierre de la sesión anterior'], ['10:00', R, 'Un consejo para tu bolsillo', 'Consejo breve'], ['19:20', C, 'Vivienda', car('vivienda')], ['20:20', H, 'La luz de mañana', 'Precio por horas']],
+  [['10:30', C, 'La semana en datos', 'Resumen de la semana'], ['11:00', H, 'Pregunta de la semana', { pregunta: 1 }], ['19:20', C, 'Calendario de la semana', 'Agenda económica'], ['20:20', H, 'La luz de mañana', 'Precio por horas']],
 ];
 
 function tema(t, fecha) {
@@ -71,8 +71,8 @@ const fin = addDays(lunes, 6);
 const rango = `${Number(lunes.slice(8))} ${MESES[Number(lunes.slice(5, 7)) - 1]} – ${Number(fin.slice(8))} ${MESES[Number(fin.slice(5, 7)) - 1]}`;
 const doms = [...Array(7)].map((_, i) => Number(addDays(lunes, i).slice(8)));
 const notas = [];
-if (doms.some(d => d >= 2 && d <= 12)) notas.push('Euríbor: si hay dato nuevo, carrusel 12:30');
-if (doms.some(d => d >= 12 && d <= 19)) notas.push('IPC: si hay dato nuevo, carrusel 12:30 (y su historia)');
+if (doms.some(d => d >= 2 && d <= 12)) notas.push('Euríbor: si hay dato nuevo, historia 12:00 y carrusel 12:30');
+if (doms.some(d => d >= 12 && d <= 19)) notas.push('IPC: si hay dato nuevo, historia 12:00 y carrusel 12:30');
 
 // Fuentes de la marca (incrustadas, como en los vídeos)
 const base = path.resolve('node_modules/@fontsource');
