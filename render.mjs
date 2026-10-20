@@ -13,7 +13,7 @@ catch { ({ chromium } = require('/opt/npm-tools/node_modules/playwright')); }
 
 const dataFile = process.argv[2] || 'data.json';
 const outDir = path.resolve(process.argv[3] || 'out');
-// Duración por diapositiva (s): resumen 5, cada top 5 ocupa 5 y los factores 8 → 43 s en total (cabe también en una historia, máx. 60 s)
+// Duración por diapositiva (s): resumen 5, cuatro rankings de 5 y los factores 8 → 33 s en total (cabe también en una historia, máx. 60 s)
 const DUR = { '01-variacion': 5, '08-factores': 8 };
 const SECONDS_PER_SLIDE = Number(process.env.SECONDS_PER_SLIDE || 5);
 const durOf = n => (process.env.SECONDS_PER_SLIDE ? SECONDS_PER_SLIDE : (DUR[n] ?? SECONDS_PER_SLIDE));
@@ -126,8 +126,6 @@ const slides = [
   ['03-spy-bajadas', slideTop('SPY', 'losers')],
   ['04-qqq-subidas', slideTop('QQQ', 'gainers')],
   ['05-qqq-bajadas', slideTop('QQQ', 'losers')],
-  ['06-dia-subidas', slideTop('DIA', 'gainers')],
-  ['07-dia-bajadas', slideTop('DIA', 'losers')],
   ['08-factores', slideFactors()],
 ];
 

@@ -83,7 +83,7 @@ function buildCaption(withName) {
     '💬 Qué pasó',
     r.summary || '',
     '',
-    '🎞️ En el Reel: la variación de los tres índices, el top 5 de subidas y bajadas en cada uno y los factores que movieron el mercado.',
+    '🎞️ En el Reel: la variación de los tres índices, el top 5 de subidas y bajadas del S&P 500 y del Nasdaq 100 y los factores que movieron el mercado.',
     '',
     ctaBlock('', 'bolsa'),
     '',
