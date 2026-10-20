@@ -8,8 +8,9 @@ async function page(title) {
   const r = await fetch(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&formatversion=2`, { headers: { 'User-Agent': 'revision-stocks/1.0 (tuamigodelasfinanzas)' } });
   const j = await r.json(); if (!j.parse) throw new Error('Wikipedia: ' + title);
   const html = j.parse.text;
-  const m = html.match(/<table[^>]*id="constituents"[\s\S]*?<\/table>/);
-  if (!m) throw new Error('Sin tabla constituents en ' + title);
+  const tables = html.match(/<table[\s\S]*?<\/table>/g) || [];
+  const m = [tables.find(t => /id="constituents"/.test(t)) ?? tables.filter(t => /<th[^>]*>\s*(<[^>]+>\s*)*(Ticker|Symbol)/i.test(t)).sort((a, b) => b.length - a.length)[0]];
+  if (!m[0]) throw new Error('Sin tabla de componentes en ' + title);
   const out = new Map();
   for (const tr of m[0].match(/<tr[\s\S]*?<\/tr>/g) || []) {
     const cells = (tr.match(/<t[dh][\s\S]*?<\/t[dh]>/g) || []).map(clean);
