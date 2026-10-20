@@ -15,17 +15,15 @@ export async function ibexData(sessionDate) {
   const idx = lastTwo((await yahoo(cfg.indice, '1mo')).bars, sessionDate);
   if (!idx) throw new Error('IBEX: sin datos del índice');
   const rows = [], failed = [];
-  for (let i = 0; i < cfg.valores.length; i += 5) {
-    await Promise.all(cfg.valores.slice(i, i + 5).map(async ([sym, name]) => {
-      try {
-        const q = lastTwo((await yahoo(sym, '1mo')).bars, sessionDate);
-        if (q && q.date === idx.date) rows.push({ ticker: sym.replace(/\.MC$/, ''), company: name, chg: q.chg, close: round2(q.close) });
-        else failed.push(sym);
-      } catch { failed.push(sym); }
-    }));
-    await sleep(150);
+  for (const [sym, name] of cfg.valores) { // uno a uno y con pausa: Yahoo limita las peticiones en paralelo
+    try {
+      const q = lastTwo((await yahoo(sym, '1mo')).bars, sessionDate);
+      if (q && q.date === idx.date) rows.push({ ticker: sym.replace(/\.MC$/, ''), company: name, chg: q.chg, close: round2(q.close) });
+      else failed.push(`${sym}(${q ? q.date : 'sin dato'})`);
+    } catch (e) { failed.push(`${sym}(${String(e.message).slice(-30)})`); }
+    await sleep(250);
   }
-  if (failed.length) console.warn('IBEX: sin dato de', failed.join(', '));
+  if (failed.length) console.warn(`IBEX: ${failed.length} sin dato (índice ${idx.date}):`, failed.slice(0, 6).join(', '));
   if (rows.length < 25) throw new Error(`IBEX: solo ${rows.length} valores con dato`);
   const sorted = [...rows].sort((a, b) => b.chg - a.chg);
   return {

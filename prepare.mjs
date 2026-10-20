@@ -13,6 +13,9 @@ const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const d = new Date(r.date + 'T12:00:00Z');
 const fmt = o => new Intl.DateTimeFormat('es-ES', { timeZone: 'UTC', ...o }).format(d);
 const dateLabel = cap(`${fmt({ weekday: 'long' })} ${fmt({ day: 'numeric' })} de ${fmt({ month: 'long' })} de ${fmt({ year: 'numeric' })}`);
+const todayMadrid = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());
+const yday = new Date(todayMadrid + 'T12:00:00Z'); yday.setUTCDate(yday.getUTCDate() - 1);
+const closeLabel = yday.toISOString().slice(0, 10) === r.date ? 'Cierre de ayer' : 'Cierre de la sesión';
 const sessionLabel = `Sesión del ${fmt({ weekday: 'long' })} ${fmt({ day: 'numeric' })} de ${fmt({ month: 'long' })}`;
 
 // Titular corto y determinista según los tres índices
@@ -103,7 +106,7 @@ let caption = buildCaption(true);
 if (caption.length > 2100) caption = buildCaption(false);
 
 const data = {
-  dateLabel, sessionLabel, headline,
+  dateLabel, sessionLabel, closeLabel, headline,
   indices: [
     { ticker: 'SPY', name: 'S&P 500', close: r.spy_close, prev: r.spy_prev_close, chg: r.spy_chg, big: true },
     ...(ibex ? [{ ticker: 'IBEX', name: 'IBEX 35', close: ibex.close, prev: ibex.prev, chg: ibex.chg, big: true, pts: true }] : []),

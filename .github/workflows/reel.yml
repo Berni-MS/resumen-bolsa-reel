@@ -44,12 +44,13 @@ jobs:
         env:
           RECORD_B64: ${{ inputs.record_b64 }}
         run: |
+          set -o pipefail
           if [ -n "$RECORD_B64" ]; then
             printf '%s' "$RECORD_B64" | base64 -d > record.json
           else
             cp record.sample.json record.json
           fi
-          node prepare.mjs record.json data.json
+          node prepare.mjs record.json data.json 2>&1 | tee prepare.log
 
       - name: Generar pantallas y vídeo
         run: node render.mjs data.json out
@@ -60,8 +61,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
+          grep -E "IBEX|AVISO" prepare.log | head -8 > aviso.txt || true
+          [ -s aviso.txt ] && curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=Registro de la prueba: $(cat aviso.txt)" >/dev/null || true
           DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/reel.mp4 | cut -d. -f1)
-          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (datos de ejemplo, no se ha publicado): reel del resumen de bolsa, versión reducida de ${DUR} s." >/dev/null && echo "Prueba enviada"
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (no se ha publicado): reel del resumen de bolsa, versión reducida de ${DUR} s." >/dev/null && echo "Prueba enviada"
 
       - name: Publicar vídeo en GitHub Pages
         if: ${{ inputs.prueba != 'true' }}

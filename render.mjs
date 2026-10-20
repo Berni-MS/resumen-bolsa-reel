@@ -76,7 +76,8 @@ function slideOverview() {
   }).join('<div style="height:14px"></div>');
   const note = allUp || allDown ? 'La barra mide el cambio frente a un máximo de 3 %.' : 'La barra mide el cambio frente a un máximo de 3 %. Verde sube, rojo baja.';
   return page(INK, '#fff', `<div style="padding:${SAFE_TOP}px ${SAFE_R}px 0 ${SAFE_L}px">
-    <div style="font-size:52px;font-weight:700;color:${GREEN};line-height:1.1">${esc(d.dateLabel)}</div>
+    <div style="font-size:62px;font-weight:700;color:${GREEN};line-height:1.05">${esc(d.closeLabel || 'Cierre de la sesión')}</div>
+    <div style="font-size:48px;font-weight:700;color:#fff;line-height:1.1;margin-top:6px">${esc(d.dateLabel.replace(/ de \d{4}$/, ''))}</div>
     <div class="d" style="font-size:104px;line-height:1.05;margin-top:10px;max-height:230px;overflow:hidden">${esc(d.headline)}</div>
     <div style="margin-top:22px">${slabs}</div>
     <div style="margin-top:22px;font-size:25px;font-weight:500;color:${MUTED};line-height:1.3">${note} Variación respecto al cierre de la sesión anterior.</div>
@@ -117,7 +118,7 @@ function slideFactors() {
   }).join('<div style="height:12px"></div>');
   return page(INK, '#fff', `<div style="padding:${SAFE_TOP}px ${SAFE_R}px 0 ${SAFE_L}px">
     <div class="d" style="font-size:98px;line-height:.9">Qué movió la bolsa</div>
-    <div style="font-size:54px;font-weight:700;color:${GREEN};margin-top:10px;line-height:1.1">${esc(d.sessionLabel)}</div>
+    <div style="font-size:54px;font-weight:700;color:${GREEN};margin-top:10px;line-height:1.1">${esc((d.closeLabel || 'Cierre') + ' · ' + d.sessionLabel.replace(/^Sesión del /, ''))}</div>
     <div style="margin-top:20px">${blocks}</div>
     <div style="margin-top:14px;font-size:22px;font-weight:500;color:${MUTED};line-height:1.3">Cotizaciones: Polygon.io${d.hasIbex ? ' y Yahoo Finance (IBEX)' : ''}. Contenido informativo, no es asesoramiento financiero.</div></div>`);
 }
