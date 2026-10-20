@@ -13,7 +13,10 @@ catch { ({ chromium } = require('/opt/npm-tools/node_modules/playwright')); }
 
 const dataFile = process.argv[2] || 'data.json';
 const outDir = path.resolve(process.argv[3] || 'out');
-const SECONDS_PER_SLIDE = Number(process.env.SECONDS_PER_SLIDE || 3);
+// Duración por diapositiva (s): resumen 5, cada top 5 ocupa 5 y los factores 8 → 43 s en total (cabe también en una historia, máx. 60 s)
+const DUR = { '01-variacion': 5, '08-factores': 8 };
+const SECONDS_PER_SLIDE = Number(process.env.SECONDS_PER_SLIDE || 5);
+const durOf = n => (process.env.SECONDS_PER_SLIDE ? SECONDS_PER_SLIDE : (DUR[n] ?? SECONDS_PER_SLIDE));
 const d = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
 fs.mkdirSync(outDir, { recursive: true });
 
@@ -144,8 +147,8 @@ await browser.close();
 
 // ---------- vídeo ----------
 const list = path.join(outDir, 'list.txt');
-fs.writeFileSync(list, slides.map(([n]) => `file '${n}.png'\nduration ${SECONDS_PER_SLIDE}`).join('\n') + `\nfile '${slides.at(-1)[0]}.png'\n`);
-const total = SECONDS_PER_SLIDE * slides.length;
+fs.writeFileSync(list, slides.map(([n]) => `file '${n}.png'\nduration ${durOf(n)}`).join('\n') + `\nfile '${slides.at(-1)[0]}.png'\n`);
+const total = slides.reduce((a, [n]) => a + durOf(n), 0);
 const music = path.resolve('assets/music.mp3');
 const hasMusic = fs.existsSync(music);
 const args = ['-y', '-f', 'concat', '-safe', '0', '-i', list];
