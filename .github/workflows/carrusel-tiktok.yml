@@ -32,6 +32,8 @@ jobs:
           git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
           git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
       - name: Generar vídeo y texto
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           set -euo pipefail
           DIR="site/carruseles/${{ inputs.carpeta }}"
@@ -60,7 +62,12 @@ jobs:
           ONLY: ${{ env.NAME }}
           ALL_CARRUSELES: "true"
           FORCE: "true"
-        run: node tools/telegram-tiktok.mjs site
+        run: |
+          node tools/telegram-tiktok.mjs site
+          if [ -s voz/voz.txt ]; then
+            { printf 'Guion de la voz (%s):\n\n' "${NAME}"; cat voz/voz.txt; } | head -c 3900 > voz-msg.txt
+            curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=<voz-msg.txt" >/dev/null || true
+          fi
       - name: Guardar en gh-pages
         run: |
           cd site && git add -A && { git commit -q -m "Vídeo TikTok ${NAME}" || exit 0; }

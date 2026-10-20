@@ -3,11 +3,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { hablar, tts, vozActiva } from '../voz-lib.mjs';
+import { guionesGemini } from './voz-gemini.mjs';
 
 const item = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const dir = path.resolve(process.argv[3]);
 if (!vozActiva()) { console.log('Voz desactivada'); process.exit(0); }
 fs.mkdirSync(dir, { recursive: true });
+try { await guionesGemini(item); } catch (e) { console.warn('Gemini no disponible:', e.message); }
 
 const p = s => { const h = hablar(s); return h && !/[.!?:]$/.test(h) ? h + '.' : h; };
 const ORD = ['Uno', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis'];
@@ -64,7 +66,7 @@ for (const [i, sl] of item.slides.slice(0, 7).entries()) {
   if (sl.t === 'myth') mythN++;
   const txt = guion(sl, i, item.slides.length, mythN);
   const d = tts(txt, path.join(dir, `${nn}.mp3`), 4);
-  durs.push(d); lines.push(`[${nn}] ${txt}`);
+  durs.push(d); lines.push(`[${nn}${sl.voz ? (sl.vozFuente === 'gemini' ? ' · IA' : ' · manual') : ' · plantilla'}] ${txt}`);
 }
 fs.writeFileSync(path.join(dir, 'durs.txt'), durs.join('\n') + '\n');
 fs.writeFileSync(path.join(dir, 'voz.txt'), lines.join('\n\n'));
