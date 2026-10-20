@@ -1,0 +1,33 @@
+name: Revisar nombres de STOCKS_RELEVANTES
+on:
+  workflow_dispatch:
+    inputs:
+      data_b64:
+        description: "Volcado de la tabla (JSON en base64), lo envía Make"
+        required: true
+permissions:
+  contents: write
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Comparar con Wikipedia
+        env:
+          DATA_B64: ${{ inputs.data_b64 }}
+        run: |
+          printf '%s' "$DATA_B64" | base64 -d > dump.json
+          node tools/revisar-nombres.mjs dump.json revision.txt 2>&1 | tee run.log
+      - name: Guardar el informe en gh-pages
+        if: ${{ always() }}
+        run: |
+          git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
+          git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
+          mkdir -p site/estado
+          if [ -f revision.txt ]; then cp revision.txt site/estado/revision-stocks.txt; else cp run.log site/estado/revision-stocks.txt; fi
+          cd site && git add -A && { git commit -q -m "Revisión de nombres de STOCKS_RELEVANTES" || exit 0; }
+          for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done
