@@ -11,6 +11,10 @@ on:
       fecha:
         description: "Opcional: día del carrusel (AAAA-MM-DD). Por defecto, hoy (hora de Madrid)"
         required: false
+      dias_atras:
+        description: "Cuántos días antes se publicó el carrusel cuyo vídeo se usa (0 = hoy, 1 = ayer)"
+        required: false
+        default: "0"
       dry_run:
         description: "true = lo prepara pero NO avisa a Make (no publica)"
         required: false
@@ -36,7 +40,7 @@ jobs:
           set -euo pipefail
           git config --global user.name "reel-bot"; git config --global user.email "reel-bot@users.noreply.github.com"
           git clone --depth 1 --branch gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" site
-          DAY="${{ inputs.fecha }}"; [ -n "$DAY" ] || DAY=$(TZ=Europe/Madrid date +%F)
+          DAY="${{ inputs.fecha }}"; [ -n "$DAY" ] || DAY=$(TZ=Europe/Madrid date -d "${{ inputs.dias_atras || 0 }} days ago" +%F)
           R="reels-carrusel/${{ inputs.kind }}-${DAY}"
           if [ ! -f "site/${R}.mp4" ]; then
             echo "::notice::No hay vídeo de carrusel '${{ inputs.kind }}' del ${DAY} (¿no se publicó el carrusel?). No se publica nada."
