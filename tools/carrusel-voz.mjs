@@ -20,6 +20,7 @@ const ORDM = ['Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto'];
 const LEAD = { ojo: 'Ojo: ', cuidado: 'Ojo: ', 'un matiz': 'Ojo, un matiz: ', atención: 'Atención: ', 'un consejo': 'Un consejo: ', consejo: 'Un consejo: ', 'el truco': 'Y aquí está el truco: ', ejemplo: 'Veamos un ejemplo. ', 'lo básico': 'Lo primero, lo básico: ', primero: 'Lo primero: ', después: 'Después, ', 'la estafa': 'Así funciona la estafa. ' };
 const ROT = ['Fíjate en esto: ', 'Otro punto importante: ', 'Y algo más: ', 'Sigamos: '];
 let rot = 0;
+const junta = a => a.length > 1 ? a.slice(0, -1).join(', ') + ' y ' + a.at(-1) : (a[0] || '');
 const sinPunto = s => String(s || '').trim().replace(/[.\s]+$/, '');
 
 function guion(sl, i, n, mythN) {
@@ -37,19 +38,15 @@ function guion(sl, i, n, mythN) {
       k.push(p(`${lead}${h2}`), p(sl.body), p(sl.note)); break;
     }
     case 'cards': {
-      const c = sl.cards || [];
-      k.push(p(sl.head), p(`Hay ${c.length === 3 ? 'tres' : c.length === 2 ? 'dos' : c.length} cosas a tener en cuenta`));
-      c.forEach((x, j) => k.push(p(`${j === c.length - 1 && c.length > 1 ? 'Y ' + ORDF[j] : j === 0 ? 'Empiezo por ' + ORDF[j] : 'Después, ' + ORDF[j]}: ${sinPunto(x.t)}. ${x.b}`)));
-      break;
+      const lista = (sl.cards || []).map(x => sinPunto(x.t).replace(/^./, ch => ch.toLowerCase()));
+      k.push(p(`${sinPunto(sl.head)}: ${junta(lista)}`)); break;
     }
     case 'steps': {
-      const st = sl.steps || [];
-      k.push(p(sl.head));
-      st.forEach((x, j) => k.push(p(`${j === st.length - 1 && st.length > 1 ? 'Y por último' : ORDM[j]}, ${sinPunto(x.t).replace(/^./, c => c.toLowerCase())}. ${x.b}`)));
-      break;
+      const lista = (sl.steps || []).map(x => sinPunto(x.t).replace(/^./, ch => ch.toLowerCase()));
+      k.push(p(`${sinPunto(sl.head)}: ${junta(lista)}`)); break;
     }
     case 'stat': if (sl.kicker) k.push(p(sl.kicker)); k.push(p(sl.head), p(sl.big), p(sl.body)); break;
-    case 'myth': k.push(p(`Mito número ${mythN}: ${sl.myth}`), p(`Pero la realidad es otra. ${sl.reality}`)); break;
+    case 'myth': k.push(p(`${['Hay quien cree que', 'Otros piensan que', 'También se dice que', 'Y se oye mucho que'][(mythN - 1) % 4]} ${String(sl.myth).replace(/[«»"]/g, '').replace(/^./, ch => ch.toLowerCase())}`), p(`Pero ${String(sl.reality).replace(/^./, ch => ch.toLowerCase())}`)); break;
     case 'close': {
       const ex = /^fuentes?:/i.test(String(sl.extra || '').trim()) ? 'Las fuentes aparecen en la última imagen.' : sl.extra;
       k.push(p(sl.head), p(sl.body), p(ex), 'Y recuerda: contenido educativo, no es asesoramiento financiero.'); break;
@@ -67,13 +64,25 @@ function recorta(txt, max) {
 
 const lines = [], durs = [];
 let mythN = 0;
-for (const [i, sl] of item.slides.slice(0, 7).entries()) {
-  const nn = String(i + 1).padStart(2, '0');
-  if (sl.t === 'myth') mythN++;
-  const txt = guion(sl, i, item.slides.length, mythN);
-  const d = tts(txt, path.join(dir, `${nn}.mp3`), 10);
-  durs.push(d); lines.push(`[${nn}${sl.voz ? (sl.vozFuente === 'gemini' ? ' · IA' : ' · manual') : ' · plantilla'}] ${txt}`);
+const slides = item.slides.slice(0, 7);
+const textos = slides.map((sl, i) => { if (sl.t === 'myth') mythN++; return guion(sl, i, item.slides.length, mythN); });
+const MAXV = 58, durSlide = v => Math.max(4, v + 0.8);
+const total = ds => ds.reduce((a, v) => a + durSlide(v), 0) - 0.5 * (ds.length - 1);
+let rate = 10;
+const sintetizar = () => textos.map((t, i) => tts(t, path.join(dir, `${String(i + 1).padStart(2, '0')}.mp3`), rate));
+let ds = sintetizar();
+for (let intento = 0; total(ds) > MAXV && intento < 6; intento++) {
+  if (rate < 22) rate = 22; // primero, algo más de ritmo
+  else { // después, se quita la última frase de la diapositiva más larga (sin tocar gancho ni cierre)
+    const j = ds.map((v, i) => [v, i]).filter(([, i]) => i > 0 && i < ds.length - 1).sort((x, y) => y[0] - x[0])[0]?.[1];
+    const fr = textos[j]?.split(/(?<=[.!?])\s+/) || [];
+    if (fr.length < 2) break;
+    textos[j] = fr.slice(0, -1).join(' ');
+  }
+  ds = sintetizar();
 }
+console.log(`Duración estimada del vídeo: ${total(ds).toFixed(1)} s (tope ${MAXV} s, ritmo +${rate} %)`);
+slides.forEach((sl, i) => { const nn = String(i + 1).padStart(2, '0'); durs.push(ds[i]); lines.push(`[${nn}${sl.voz ? (sl.vozFuente === 'gemini' ? ' · IA' : ' · manual') : ' · plantilla'}] ${textos[i]}`); });
 fs.writeFileSync(path.join(dir, 'durs.txt'), durs.join('\n') + '\n');
-fs.writeFileSync(path.join(dir, 'voz.txt'), lines.join('\n\n'));
+fs.writeFileSync(path.join(dir, 'voz.txt'), lines.join('\n\n') + `\n\n(duración estimada: ${total(ds).toFixed(0)} s)`);
 console.log('Voz del carrusel: ' + durs.map(d => d.toFixed(1) + 's').join(' '));

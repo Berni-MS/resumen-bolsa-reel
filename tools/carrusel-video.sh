@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Vídeo vertical (1080x1920) para TikTok con las 7 diapositivas de un carrusel y la música de la marca.
-# Si existe <VOZ_DIR>/durs.txt (y NN.mp3), añade voz en off: cada diapositiva dura lo que su locución + 1,3 s (mínimo 4,5 s).
+# Si existe <VOZ_DIR>/durs.txt (y NN.mp3), añade voz en off: cada diapositiva dura lo que su locución + 0,8 s (mínimo 4 s).
 # Uso: tools/carrusel-video.sh <carpeta con 01.jpg..07.jpg> <salida.mp4> [carpeta_voz]
 set -euo pipefail
 DIR="$1"; OUT="$2"; VOZ="${3:-}"
-MIN=4.5      # segundos mínimos por diapositiva (texto denso: tiempo para leerla)
+MIN=4.0      # segundos mínimos por diapositiva (texto denso: tiempo para leerla)
 FADE=0.5   # fundido entre diapositivas
 FILES=("$DIR"/0[1-7].jpg)
 N=${#FILES[@]}
@@ -14,7 +14,7 @@ DUR=()
 for i in "${!FILES[@]}"; do
   if [ "$CONVOZ" = 1 ]; then
     V=$(sed -n "$((i+1))p" "$VOZ/durs.txt")
-    DUR+=("$(awk -v v="${V:-0}" -v m="$MIN" 'BEGIN{t=v+1.3; if(t<m)t=m; printf "%.2f", t}')")
+    DUR+=("$(awk -v v="${V:-0}" -v m="$MIN" 'BEGIN{t=v+0.8; if(t<m)t=m; printf "%.2f", t}')")
   else DUR+=("$MIN"); fi
 done
 ARGS=(); FILTER=""
@@ -37,7 +37,7 @@ if [ "$CONVOZ" = 1 ]; then
   for ((i=0;i<N;i++)); do
     NN=$(printf '%02d' $((i+1)))
     VARGS+=(-i "$VOZ/$NN.mp3")
-    MS=$(awk -v s="${STARTS[$i]}" 'BEGIN{printf "%d", (s+0.6)*1000}')
+    MS=$(awk -v s="${STARTS[$i]}" 'BEGIN{printf "%d", (s+0.25)*1000}')
     VF+="[$((N+1+i)):a]adelay=${MS}|${MS},volume=1.7[s$i];"
     MIX+="[s$i]"
   done

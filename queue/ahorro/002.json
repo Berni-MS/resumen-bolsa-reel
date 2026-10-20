@@ -16,7 +16,7 @@
       "big": "1º",
       "title": "Págate a ti primero",
       "foot": "El truco para ahorrar sin pensarlo",
-      "voz": "Un truco sencillo para ahorrar sin pensarlo: págate a ti primero."
+      "voz": "Te cuento un truco sencillo para ahorrar sin pensarlo: págate a ti primero."
     },
     {
       "t": "point",
@@ -24,7 +24,7 @@
       "body": "Suena razonable, pero el gasto se estira hasta llenar el mes. Lo que sobra suele ser cero.",
       "foot": "El problema",
       "kicker": "Por qué falla",
-      "voz": "Si ahorras lo que sobre, casi nunca sobra nada: el gasto se estira hasta llenar el mes."
+      "voz": "Porque si ahorras lo que sobre, casi nunca sobra nada: el gasto se estira hasta llenar el mes."
     },
     {
       "t": "point",
@@ -32,7 +32,7 @@
       "body": "El día que cobras, aparta una cantidad fija. Con lo que queda, vives el mes.",
       "foot": "La idea",
       "kicker": "El truco",
-      "voz": "Hazlo al revés: el día que cobras, aparta una cantidad fija y vive con el resto."
+      "voz": "Así que hazlo al revés: el día que cobras, aparta una cantidad fija y vive con el resto."
     },
     {
       "t": "steps",
@@ -56,7 +56,7 @@
         }
       ],
       "foot": "Cuatro pasos",
-      "voz": "Automatízalo: elige una cantidad, abre una cuenta aparte y programa una transferencia al día siguiente de cobrar. Y no la toques."
+      "voz": "Y automatízalo: elige una cantidad, abre una cuenta aparte y programa una transferencia para después de cobrar. Luego, no la toques."
     },
     {
       "t": "cards",
@@ -77,7 +77,7 @@
         }
       ],
       "foot": "La psicología a tu favor",
-      "voz": "Funciona porque no depende de tu fuerza de voluntad, te acostumbras y, con los meses, la constancia pesa más que la cantidad."
+      "voz": "Funciona porque no depende de tu fuerza de voluntad, y con los meses la constancia pesa más que la cantidad."
     },
     {
       "t": "point",
@@ -85,7 +85,7 @@
       "body": "Baja la cantidad, no la elimines. Mantener el hábito vale más que la cifra.",
       "foot": "Constancia antes que cantidad",
       "kicker": "Un matiz",
-      "voz": "¿Mes justo? Baja la cantidad, pero no la elimines. Lo importante es mantener el hábito."
+      "voz": "¿Que el mes viene justo? Baja la cantidad, pero no la quites: lo importante es mantener el hábito."
     },
     {
       "t": "close",
@@ -95,7 +95,7 @@
       "extra": "Guárdalo y envíaselo a alguien a quien le venga bien.",
       "extraBold": true,
       "extraSize": 36,
-      "voz": "Empieza este mes con la cantidad más pequeña que te parezca ridícula. Guárdalo y compártelo. Contenido educativo, no es asesoramiento financiero."
+      "voz": "Así que empieza ya, con la cantidad más pequeña que te parezca ridícula. Guárdalo y compártelo. Contenido educativo, no es asesoramiento financiero."
     }
   ]
 }

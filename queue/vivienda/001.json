@@ -46,7 +46,7 @@
         }
       ],
       "foot": "Tres cosas clave",
-      "voz": "Miran tus ingresos, tus deudas, que restan, y tus ahorros, porque suelen pedir que aportes parte del precio."
+      "voz": "Y miran tus ingresos, tus deudas, que restan, y tus ahorros, porque suelen pedir que aportes parte del precio."
     },
     {
       "t": "point",
@@ -55,7 +55,7 @@
       "note": "Cálculo orientativo; cada banco aplica sus propios criterios.",
       "foot": "Haz la cuenta con tu sueldo",
       "kicker": "Ejemplo",
-      "voz": "Ejemplo: con 2.000 euros netos al mes, una cuota de unos 700 euros sería el tope. A un 3,5 % y 25 años, son unos 140.000 euros de préstamo. Es orientativo."
+      "voz": "Un ejemplo: con 2.000 euros netos al mes, el tope sería una cuota de unos 700 euros. A un 3,5 % y 25 años, serían unos 140.000 euros de préstamo, solo orientativo."
     },
     {
       "t": "steps",
@@ -75,7 +75,7 @@
         }
       ],
       "foot": "Tres pasos",
-      "voz": "Calcula tu cuota máxima, suma la entrada y los gastos, y compara ofertas mirando la TAE, no solo el tipo."
+      "voz": "Así que calcula tu cuota máxima, suma la entrada y los gastos, y compara ofertas mirando la TAE."
     },
     {
       "t": "point",
@@ -83,7 +83,7 @@
       "body": "Lo habitual es financiar hasta el 80 % del valor y aportar el resto, más los gastos. Hay excepciones según el caso.",
       "foot": "No todo es la cuota",
       "kicker": "Ojo",
-      "voz": "Lo habitual es que el banco financie hasta el 80 % y tú pongas el resto, más los gastos. Hay excepciones."
+      "voz": "Y recuerda la entrada: lo habitual es que el banco financie hasta el 80 % y tú pongas el resto, más los gastos."
     },
     {
       "t": "close",
@@ -93,7 +93,7 @@
       "extra": "Guárdalo y haz la cuenta con tu sueldo.",
       "extraBold": true,
       "extraSize": 36,
-      "voz": "Calcula antes de enamorarte de un piso. Guárdalo y haz la cuenta con tu sueldo. Contenido educativo, no es asesoramiento financiero."
+      "voz": "Por eso, calcula antes de enamorarte de un piso. Guárdalo y haz la cuenta con tu sueldo. Contenido educativo, no es asesoramiento financiero."
     }
   ]
 }

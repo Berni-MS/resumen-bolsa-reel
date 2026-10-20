@@ -25,7 +25,7 @@
       "body": "Recibes un SMS o un WhatsApp que parece de tu banco, con un enlace para \"verificar tus datos\". La web es falsa y copia tus claves.",
       "foot": "Se llama smishing",
       "kicker": "La estafa",
-      "voz": "Te llega un mensaje que dice que tu cuenta está bloqueada, con un enlace para verificar tus datos. Es una web falsa que copia tus claves."
+      "voz": "Te dicen que tu cuenta está bloqueada y te piden verificar tus datos en un enlace. Pero esa web es falsa y copia tus claves."
     },
     {
       "t": "cards",
@@ -46,7 +46,7 @@
         }
       ],
       "foot": "Tres señales",
-      "voz": "Tres señales: urgencia, un enlace que no es el oficial, y que te pidan contraseñas, códigos o PIN. Tu banco nunca lo hace."
+      "voz": "Y se reconoce fácil: mucha urgencia, un enlace que no es el oficial, y que te pidan contraseñas, códigos o PIN. Tu banco nunca lo hace."
     },
     {
       "t": "point",
@@ -55,7 +55,7 @@
       "note": "No uses los datos del mensaje.",
       "foot": "Entra por tu cuenta",
       "kicker": "Lo que debes saber",
-      "voz": "Si dudas, no uses el mensaje: entra desde la app oficial o llama al número de tu tarjeta."
+      "voz": "Por eso, si dudas, ignora el mensaje: entra desde la app oficial o llama al número de tu tarjeta."
     },
     {
       "t": "steps",
@@ -75,7 +75,7 @@
         }
       ],
       "foot": "Tres pasos",
-      "voz": "No pulses el enlace ni respondas. Comprueba en la app si hay algún aviso real, borra el mensaje y avisa a tu banco."
+      "voz": "Es decir, no pulses el enlace ni respondas: comprueba en la app, borra el mensaje y avisa a tu banco."
     },
     {
       "t": "point",
@@ -83,7 +83,7 @@
       "body": "Pide que bloqueen tus tarjetas y accesos. Cambia las contraseñas y denuncia en la Policía o la Guardia Civil.",
       "foot": "Cada minuto cuenta",
       "kicker": "Si ya metiste tus datos",
-      "voz": "Si ya metiste tus datos, llama a tu banco ya para bloquear tarjetas y accesos, cambia las contraseñas y denuncia."
+      "voz": "Y si ya metiste tus datos, llama a tu banco ya para bloquear tarjetas y accesos, cambia contraseñas y denuncia."
     },
     {
       "t": "close",
@@ -93,7 +93,7 @@
       "extra": "Compártelo con quien menos lo sepa.",
       "extraBold": true,
       "extraSize": 36,
-      "voz": "Ante la duda, para y pregunta. Un mensaje urgente es la señal más clara de estafa. Compártelo con quien menos lo sepa. Contenido educativo, no es asesoramiento financiero."
+      "voz": "En resumen: ante la duda, para y pregunta. Un mensaje urgente es la señal más clara de estafa. Compártelo con quien menos lo sepa. Contenido educativo, no es asesoramiento financiero."
     }
   ]
 }

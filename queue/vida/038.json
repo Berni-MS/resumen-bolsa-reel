@@ -37,7 +37,7 @@
         }
       ],
       "foot": "Tres bloques",
-      "voz": "Tiene tres partes: la potencia que tienes contratada, la energía que consumes, y los impuestos y otros conceptos, como el alquiler del contador."
+      "voz": "Se compone de la potencia que tienes contratada, la energía que consumes, y los impuestos y otros conceptos, como el alquiler del contador."
     },
     {
       "t": "point",
@@ -45,7 +45,7 @@
       "body": "Si es mayor de lo que necesitas, pagas de más cada mes. Revísala con tus consumos reales.",
       "foot": "Ajústala",
       "kicker": "Primero",
-      "voz": "Revisa la potencia: si es mayor de la que necesitas, pagas de más cada mes."
+      "voz": "Empieza por la potencia: si es mayor de la que necesitas, pagas de más cada mes."
     },
     {
       "t": "point",
@@ -53,7 +53,7 @@
       "body": "Mira en qué horas consumes. Con ciertas tarifas, el precio cambia según el horario.",
       "foot": "Horarios",
       "kicker": "Después",
-      "voz": "Y mira cuándo consumes, porque con algunas tarifas el precio cambia según la hora."
+      "voz": "Después mira cuándo consumes, porque con algunas tarifas el precio cambia según la hora."
     },
     {
       "t": "steps",
@@ -77,7 +77,7 @@
         }
       ],
       "foot": "Cuatro pasos",
-      "voz": "Compara tu consumo con meses anteriores, comprueba que la potencia se ajusta a ti, revisa tu tarifa y compara ofertas con tu consumo real."
+      "voz": "Para revisarla, compara tu consumo con meses anteriores, comprueba que la potencia se ajusta a ti y compara tarifas y ofertas con tu consumo real."
     },
     {
       "t": "point",
@@ -85,7 +85,7 @@
       "body": "Mantenimientos o seguros que no pediste. Pregunta por cada concepto.",
       "foot": "Revisa",
       "kicker": "Cuidado",
-      "voz": "Ojo con servicios añadidos que no pediste, como mantenimientos o seguros. Pregunta por cada concepto."
+      "voz": "Y ojo con los servicios añadidos que no pediste, como mantenimientos o seguros: pregunta por cada concepto."
     },
     {
       "t": "close",
@@ -95,7 +95,7 @@
       "extra": "Información general; consulta tu contrato.",
       "extraBold": true,
       "extraSize": 36,
-      "voz": "Entender tu factura es poder ahorrar: mira hoy la última. Información general, consulta tu contrato. Contenido educativo, no es asesoramiento financiero."
+      "voz": "Entender tu factura es poder ahorrar, así que mira hoy la última. Información general, consulta tu contrato. Contenido educativo, no es asesoramiento financiero."
     }
   ]
 }
