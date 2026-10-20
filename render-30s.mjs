@@ -8,6 +8,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { spawn } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
+import { hablar, ttsFit, mezcla, vozActiva } from './voz-lib.mjs';
 
 const require = createRequire(import.meta.url);
 let chromium;
@@ -143,14 +144,39 @@ if (STILL_ONLY) {
   await browser.close(); fs.unlinkSync(f); process.exit(0);
 }
 
+// ---- voz en off: gancho, cada escena y cierre, ajustados a su hueco de la línea de tiempo ----
+const voces = [];
+if (vozActiva()) {
+  try {
+    const conBig = (big, txt) => (big && !/\d/.test(String(txt)) ? `${hablar(txt)}: ${hablar(big)}.` : `${hablar(txt)}.`).replace(/\.\.$/, '.');
+    const guion = [
+      { start: 0.25, slot: HOOK_DUR - 0.5, text: item.voz_hook || conBig(item.hook_big, item.hook) },
+      ...scenes.map((s, i) => ({ start: HOOK_DUR + i * SCENE_DUR + 0.25, slot: SCENE_DUR - 0.5, text: s.voz || conBig(s.big, s.text) })),
+      { start: HOOK_DUR + scenes.length * SCENE_DUR + 0.25, slot: OUTRO_DUR - 0.8, text: item.badge ? 'La semana que viene, otro consejo para tu bolsillo. Sígueme para no perdértelo.' : 'Mañana, otro en treinta segundos. Sígueme para no perdértelo.' },
+    ];
+    for (const [i, g] of guion.entries()) {
+      const file = path.join(outDir, `voz-${i}.mp3`);
+      const dur = ttsFit(g.text, file, g.slot);
+      voces.push({ file, start: g.start, dur, text: g.text });
+    }
+    fs.writeFileSync(path.join(outDir, 'voz.txt'), voces.map((v, i) => `[${i === 0 ? 'gancho' : i <= scenes.length ? 'escena ' + i : 'cierre'}] ${v.text}`).join('\n\n'));
+  } catch (e) { console.warn('AVISO: se genera el vídeo SIN voz:', e.message); voces.length = 0; }
+}
+
 // vídeo: fotogramas a CAP_FPS enviados a ffmpeg
 const music = path.resolve('assets/music.mp3');
 const hasMusic = fs.existsSync(music);
 const args = ['-y', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-'];
 if (hasMusic) args.push('-stream_loop', '-1', '-i', music); else args.push('-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo');
+let mapAudio = '1:a';
+if (voces.length && hasMusic) {
+  for (const v of voces) args.push('-i', v.file);
+  args.push('-filter_complex', mezcla({ musicIdx: 1, voices: voces.map((v, i) => ({ idx: i + 2, start: v.start })), total: TOTAL }));
+  mapAudio = '[a]';
+}
 args.push('-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart');
-if (hasMusic) args.push('-af', `volume=0.55,afade=t=in:st=0:d=0.5,afade=t=out:st=${TOTAL - 1.8}:d=1.8`);
-args.push('-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', '0:v', '-map', '1:a', '-t', String(TOTAL), path.join(outDir, 'reel.mp4'));
+if (hasMusic && !voces.length) args.push('-af', `volume=0.55,afade=t=in:st=0:d=0.5,afade=t=out:st=${TOTAL - 1.8}:d=1.8`);
+args.push('-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', '0:v', '-map', mapAudio, '-t', String(TOTAL), path.join(outDir, 'reel.mp4'));
 const ff = spawn('ffmpeg', args, { stdio: ['pipe', 'inherit', 'inherit'] });
 const done = new Promise((res, rej) => { ff.on('close', c => c === 0 ? res() : rej(new Error('ffmpeg terminó con código ' + c))); });
 for (let n = 0; n < TOTAL * FPS; n++) {
@@ -159,6 +185,7 @@ for (let n = 0; n < TOTAL * FPS; n++) {
 }
 ff.stdin.end();
 await done;
+for (const v of voces) fs.rmSync(v.file, { force: true });
 await browser.close();
 fs.unlinkSync(f);
 

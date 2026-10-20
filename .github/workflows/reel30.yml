@@ -9,6 +9,10 @@ on:
       date:
         description: Fecha de publicación (AAAA-MM-DD), la envía Make
         required: false
+      voz:
+        description: "false = sin voz en off (por defecto, con voz)"
+        required: false
+        default: "true"
       dry_run:
         description: "true = no avisar a Make (no se publica)"
         required: false
@@ -53,7 +57,13 @@ jobs:
           fi
           node prepare-30s.mjs item.raw item.json "$ITEM_DATE"
 
+      - name: Instalar voz (edge-tts)
+        continue-on-error: true
+        run: pip install -q edge-tts 2>&1 | tail -1
+
       - name: Generar vídeo
+        env:
+          VOZ: ${{ inputs.voz != 'false' }}
         run: node render-30s.mjs item.json out
 
       - name: Publicar vídeo en GitHub Pages

@@ -38,14 +38,18 @@ jobs:
           ID=$(echo "${{ inputs.carpeta }}" | sed -E 's/-[0-9]{8,}$//')
           DAY=$(TZ=Europe/Madrid date +%F)
           NAME="tk-${DAY}-${ID}"
-          bash tools/carrusel-video.sh "$DIR" "${NAME}.mp4"
           # texto: el del carrusel (cola) + hashtags
           node -e "
             const fs=require('fs');const d='queue/${{ inputs.kind }}';
             const it=fs.readdirSync(d).filter(f=>f.endsWith('.json')).map(f=>JSON.parse(fs.readFileSync(d+'/'+f,'utf8'))).find(x=>x.id==='${ID}');
             if(!it) throw new Error('No encuentro ${ID} en la cola');
             fs.writeFileSync('${NAME}.txt', it.caption+'\n\n#finanzaspersonales #ahorro #tuamigodelasfinanzas');
+            fs.writeFileSync('item.json', JSON.stringify(it));
           "
+          # voz en off (si falla, el vídeo sale sin voz)
+          pip install -q edge-tts 2>&1 | tail -1 || true
+          node tools/carrusel-voz.mjs item.json voz || { echo "::warning::sin voz"; rm -rf voz; }
+          bash tools/carrusel-video.sh "$DIR" "${NAME}.mp4" voz || bash tools/carrusel-video.sh "$DIR" "${NAME}.mp4"
           mkdir -p site/tiktok-carruseles && cp "${NAME}.mp4" "${NAME}.txt" site/tiktok-carruseles/
           echo "NAME=${NAME}" >> "$GITHUB_ENV"
       - name: Enviar a Telegram
