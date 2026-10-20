@@ -1,9 +1,9 @@
-file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:13
-  if (!m[0]) throw new Error('Sin tabla de componentes en ' + title);
-                   ^
+file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:9
+  const j = await r.json(); if (!j.parse) throw new Error('Wikipedia: ' + title);
+                                                ^
 
-Error: Sin tabla de componentes en Nasdaq-100
-    at page (file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:13:20)
+Error: Wikipedia: List of Nasdaq-100 companies
+    at page (file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:9:49)
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
     at async file:///home/runner/work/resumen-bolsa-reel/resumen-bolsa-reel/tools/revisar-nombres.mjs:24:58
 
