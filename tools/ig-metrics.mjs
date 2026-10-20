@@ -11,7 +11,7 @@ const get = async (path, params = {}) => {
   return j;
 };
 const media = (await get(`${user}/media`, { fields: 'id,caption,media_type,media_product_type,timestamp,like_count,comments_count,permalink', limit: 60 })).data || [];
-const SETS = ['reach,saved,shares,total_interactions,views', 'reach,saved,shares,total_interactions', 'reach,saved,shares', 'reach,saved'];
+const SETS = ['reach,saved,shares,total_interactions,views,follows', 'reach,saved,shares,total_interactions,views', 'reach,saved,shares,total_interactions', 'reach,saved,shares', 'reach,saved'];
 const out = []; let metricErr = '';
 for (const m of media) {
   const row = { id: m.id, tipo: m.media_type, producto: m.media_product_type, fecha: m.timestamp, likes: m.like_count || 0, comentarios: m.comments_count || 0, texto: m.caption || '', enlace: m.permalink };

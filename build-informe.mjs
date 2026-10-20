@@ -12,11 +12,14 @@ const posts = (Array.isArray(raw) ? raw : []).map(p => {
     serie: m ? m[1] : 'Sin serie',
     fecha: String(p.fecha || '').slice(0, 10), likes: n(p.likes), comentarios: n(p.comentarios),
     guardados: p.guardados == null ? null : n(p.guardados), compartidos: p.compartidos == null ? null : n(p.compartidos),
-    alcance: p.alcance == null ? null : n(p.alcance),
+    alcance: p.alcance == null ? null : n(p.alcance), seguidores: p.follows == null ? null : n(p.follows),
     titulo: texto.split('\n')[0].slice(0, 90), enlace: String(p.enlace || ''),
   };
 }).filter(p => p.fecha);
 const hasIns = posts.some(p => p.alcance != null);
+const hasFol = posts.some(p => p.seguidores != null);
+// Tasas por cada 1.000 personas alcanzadas (suma de la métrica entre suma del alcance), para comparar publicaciones de distinto tamaño
+const per1000 = (a, f) => { const r = a.filter(p => p.alcance > 0 && f(p) != null); const al = r.reduce((s, p) => s + p.alcance, 0); return al ? r.reduce((s, p) => s + f(p), 0) / al * 1000 : 0; };
 const score = p => hasIns ? p.likes + 3 * p.comentarios + 4 * (p.guardados || 0) + 5 * (p.compartidos || 0) : p.likes + 3 * p.comentarios;
 const since = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
 const week = posts.filter(p => p.fecha >= since);
@@ -25,7 +28,7 @@ const avg = (a, f) => a.length ? a.reduce((s, x) => s + f(x), 0) / a.length : 0;
 const f1 = x => x.toFixed(1).replace('.', ',');
 const group = key => [...new Set(posts.map(p => p[key]))].map(k => {
   const a = posts.filter(p => p[key] === k), w = week.filter(p => p[key] === k);
-  return { k, n: a.length, score: avg(a, score), semana: w.length, alcance: avg(a.filter(p => p.alcance != null), p => p.alcance), guardados: avg(a.filter(p => p.guardados != null), p => p.guardados), compartidos: avg(a.filter(p => p.compartidos != null), p => p.compartidos), comentarios: avg(a, p => p.comentarios) };
+  return { k, n: a.length, score: avg(a, score), semana: w.length, alcance: avg(a.filter(p => p.alcance != null), p => p.alcance), guardados: avg(a.filter(p => p.guardados != null), p => p.guardados), compartidos: avg(a.filter(p => p.compartidos != null), p => p.compartidos), g1000: per1000(a, p => p.guardados), c1000: per1000(a, p => p.compartidos), s1000: per1000(a, p => p.seguidores), seg: a.reduce((s, p) => s + (p.seguidores || 0), 0), comentarios: avg(a, p => p.comentarios) };
 }).sort((a, b) => b.score - a.score);
 const tipos = group('tipo'), series = group('serie').filter(s => s.k !== 'Sin serie' || s.n >= 3);
 const top = [...posts].sort((a, b) => score(b) - score(a)).slice(0, 5);
@@ -52,8 +55,8 @@ const hoy = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).form
 const cols = hasIns ? ['Likes', 'Coment.', 'Guard.', 'Comp.', 'Alcance'] : ['Likes', 'Coment.'];
 const cells = p => (hasIns ? [p.likes, p.comentarios, p.guardados ?? '–', p.compartidos ?? '–', p.alcance ?? '–'] : [p.likes, p.comentarios]).map(v => `<td>${v}</td>`).join('');
 const row = p => `<tr><td>${esc(p.fecha)}</td><td>${p.tipo}</td>${cells(p)}<td>${p.enlace ? `<a href="${esc(p.enlace)}">${esc(p.titulo)}</a>` : esc(p.titulo)}</td></tr>`;
-const grpHead = hasIns ? '<th>Publ.</th><th>Puntuación</th><th>Alcance medio</th><th>Guard. medios</th><th>Comp. medios</th>' : '<th>Publ.</th><th>Puntuación media</th>';
-const grpRow = g => `<tr><td>${esc(g.k)}</td><td>${g.n}</td><td>${f1(g.score)}</td>${hasIns ? `<td>${Math.round(g.alcance)}</td><td>${f1(g.guardados)}</td><td>${f1(g.compartidos)}</td>` : ''}</tr>`;
+const grpHead = hasIns ? `<th>Publ.</th><th>Puntuación</th><th>Alcance medio</th><th>Guard. por 1.000</th><th>Comp. por 1.000</th>${hasFol ? '<th>Seguidores nuevos</th><th>Seg. por 1.000</th>' : ''}` : '<th>Publ.</th><th>Puntuación media</th>';
+const grpRow = g => `<tr><td>${esc(g.k)}</td><td>${g.n}</td><td>${f1(g.score)}</td>${hasIns ? `<td>${Math.round(g.alcance)}</td><td>${f1(g.g1000)}</td><td>${f1(g.c1000)}</td>${hasFol ? `<td>${g.seg}</td><td>${f1(g.s1000)}</td>` : ''}` : ''}</tr>`;
 // Recomendaciones automáticas
 const rec = [];
 const reales = series.filter(x => x.k !== 'Sin serie');
@@ -74,7 +77,7 @@ const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta n
 table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid rgba(159,176,204,.25);vertical-align:top}th{color:#35D07F}a{color:#35D07F}.s{color:#9FB0CC;font-size:14px}li{margin:6px 0}</style></head><body><main>
 <h1>Informe semanal · ${hoy}</h1><p class="s">@tuamigodelasfinanzas · ${posts.length} publicaciones recientes, ${week.length} de los últimos 7 días. ${hasIns ? 'Puntuación = likes + 3 × comentarios + 4 × guardados + 5 × compartidos.' : 'Puntuación = likes + 3 × comentarios (no se han podido leer guardados y compartidos).'}</p>
 <h2>Qué hacer esta semana</h2><ul>${rec.map(r => `<li>${r}</li>`).join('')}</ul>
-<h2>Por serie</h2><table><tr><th>Serie</th>${grpHead}</tr>${series.map(grpRow).join('')}</table>
+<h2>Por serie</h2><p class="s">«Por 1.000» = guardados, compartidos y seguidores nuevos por cada 1.000 personas alcanzadas: sirve para comparar series con distinto alcance. Con pocas publicaciones, los datos son orientativos; decide con 4 semanas.</p><table><tr><th>Serie</th>${grpHead}</tr>${series.map(grpRow).join('')}</table>
 <h2>Por formato</h2><table><tr><th>Formato</th>${grpHead}</tr>${tipos.map(grpRow).join('')}</table>
 <h2>Historias de la semana: a qué destacado van</h2>${historias.length ? `<p class="s">Solo estas se guardan, porque no caducan. Búscalas en tu archivo de historias por la fecha y añádelas al destacado indicado (Perfil → destacado → Editar → Historias). Las de precios, mercados y preguntas pierden vigencia al día siguiente y no hace falta guardarlas.</p><table><tr><th>Fecha</th><th>Historia</th><th>Añadir a</th></tr>${historias.map(h => `<tr><td>${h.fecha}</td><td>${h.nombre}</td><td><b>${h.dest}</b></td></tr>`).join('')}</table>` : '<p class="s">Esta semana no hay historias que merezca la pena guardar en destacados.</p>'}
 <h2>Visitas a las guías</h2><p class="s">Mira cuántas personas abren cada guía en <a href="https://tuamigodelasfinanzas.goatcounter.com">tuamigodelasfinanzas.goatcounter.com</a>: así sabes qué palabra clave (AHORRO, RENTA, VIVIENDA, ESTAFAS, TRAMITES…) funciona mejor.</p><h2>Para fijar en tu perfil</h2><p class="s">Fija la publicación de bienvenida («Empieza aquí») y, junto a ella, estas dos, que son las que mejor han funcionado (Instagram permite fijar hasta 3):</p><ol>${top.slice(0, 2).map(p => `<li><a href="${p.enlace}">${p.titulo || p.enlace}</a> (${p.tipo}, ${p.fecha})</li>`).join('')}</ol>
