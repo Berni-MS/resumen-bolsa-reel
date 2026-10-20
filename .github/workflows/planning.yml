@@ -1,0 +1,33 @@
+name: Planning semanal por Telegram
+on:
+  workflow_dispatch:
+    inputs:
+      lunes:
+        description: "Opcional: lunes de la semana (AAAA-MM-DD). Por defecto, el próximo lunes"
+        required: false
+permissions:
+  contents: read
+jobs:
+  planning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Instalar dependencias
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Generar la imagen
+        run: node build-planning.mjs planning.png "${{ inputs.lunes }}" | tee planning.log
+      - name: Enviar a Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          RANGO=$(sed -E 's/^Planning ([^:]+): .*/\1/' planning.log | head -1)
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto" \
+            -F chat_id="${TELEGRAM_CHAT_ID}" -F photo=@planning.png \
+            -F caption="📅 Planning de la semana ${RANGO}. En negrita, el tema ya fijado de cada publicación." > /dev/null

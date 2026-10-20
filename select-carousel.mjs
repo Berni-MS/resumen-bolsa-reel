@@ -26,7 +26,7 @@ const queue = ordenar(base, kind);
 
 // Semana 0 = lunes 19/10/2026; la fecha se toma en horario de Madrid
 const START = Date.UTC(2026, 9, 19);
-const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());
+const today = process.env.FECHA_SIMULADA || new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date());
 const [y, m, d] = today.split('-').map(Number);
 const week = Math.floor((Date.UTC(y, m - 1, d) - START) / (7 * 86400000));
 // ahorro y vida: el nº 1 de cada cola ya se publicó como prueba, así que arrancan en el 2 y el 1 cierra el ciclo
