@@ -19,7 +19,8 @@ const ORDF = ['la primera', 'la segunda', 'la tercera', 'la cuarta', 'la quinta'
 const ORDM = ['Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto'];
 const LEAD = { ojo: 'Ojo: ', cuidado: 'Ojo: ', 'un matiz': 'Ojo, un matiz: ', atención: 'Atención: ', 'un consejo': 'Un consejo: ', consejo: 'Un consejo: ', 'el truco': 'Y aquí está el truco: ', ejemplo: 'Veamos un ejemplo. ', 'lo básico': 'Lo primero, lo básico: ', primero: 'Lo primero: ', después: 'Después, ', 'la estafa': 'Así funciona la estafa. ' };
 const ROT = ['Fíjate en esto: ', 'Otro punto importante: ', 'Y algo más: ', 'Sigamos: '];
-let rot = 0;
+let soft = 0;
+const SOFT = ['', 'Y ', 'Además, ', '', 'Y también '];
 const junta = a => a.length > 1 ? a.slice(0, -1).join(', ') + ' y ' + a.at(-1) : (a[0] || '');
 const sinPunto = s => String(s || '').trim().replace(/[.\s]+$/, '');
 
@@ -33,9 +34,10 @@ function guion(sl, i, n, mythN) {
       k.push(p(`${pref}${sl.title || ''}`), p(sl.foot)); break;
     }
     case 'point': {
-      const lead = LEAD[String(sl.kicker || '').trim().toLowerCase()] || ROT[rot++ % ROT.length];
-      const hd = sinPunto(sl.head).replace(/\[\[|\]\]/g, ''); const h2 = /: $/.test(lead) && /^\p{Lu}\p{Ll}/u.test(hd) ? hd.charAt(0).toLowerCase() + hd.slice(1) : hd;
-      k.push(p(`${lead}${h2}`), p(sl.body), p(sl.note)); break;
+      const hd = sinPunto(sl.head).replace(/\[\[|\]\]/g, '');
+      const con = SOFT[soft++ % SOFT.length];
+      const h2 = con && /^\p{Lu}\p{Ll}/u.test(hd) ? hd.charAt(0).toLowerCase() + hd.slice(1) : hd;
+      k.push(p(`${con}${h2}`), p(sl.body), p(sl.note)); break;
     }
     case 'cards': {
       const lista = (sl.cards || []).map(x => sinPunto(x.t).replace(/^./, ch => ch.toLowerCase()));
@@ -45,7 +47,7 @@ function guion(sl, i, n, mythN) {
       const lista = (sl.steps || []).map(x => sinPunto(x.t).replace(/^./, ch => ch.toLowerCase()));
       k.push(p(`${sinPunto(sl.head)}: ${junta(lista)}`)); break;
     }
-    case 'stat': if (sl.kicker) k.push(p(sl.kicker)); k.push(p(sl.head), p(sl.big), p(sl.body)); break;
+    case 'stat': k.push(p(sl.head), p(sl.big), p(sl.body)); break;
     case 'myth': k.push(p(`${['Hay quien cree que', 'Otros piensan que', 'También se dice que', 'Y se oye mucho que'][(mythN - 1) % 4]} ${String(sl.myth).replace(/[«»"]/g, '').replace(/^./, ch => ch.toLowerCase())}`), p(`Pero ${String(sl.reality).replace(/^./, ch => ch.toLowerCase())}`)); break;
     case 'close': {
       const ex = /^fuentes?:/i.test(String(sl.extra || '').trim()) ? 'Las fuentes aparecen en la última imagen.' : sl.extra;

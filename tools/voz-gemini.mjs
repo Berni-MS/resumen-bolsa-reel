@@ -3,7 +3,7 @@
 const MODELOS = [process.env.GEMINI_MODEL, 'gemini-2.5-flash', 'gemini-flash-latest', 'gemini-2.0-flash'].filter(Boolean);
 
 function limpiar(sl) {
-  const { foot, accent, extraBold, extraSize, headSize, bigSize, color, voz, ...r } = sl;
+  const { foot, kicker, accent, extraBold, extraSize, headSize, bigSize, color, voz, ...r } = sl;
   return r;
 }
 const nums = s => (String(s).match(/\d[\d.,]*\d|\d/g) || []).map(x => x.replace(/[.,]$/, ''));
@@ -20,6 +20,7 @@ Reglas:
 - El vídeo entero debe durar MENOS DE UN MINUTO de voz: en total, unas 100 a 125 palabras entre todas las diapositivas. Diapositiva 1: gancho de 6 a 12 palabras. Las demás: de 10 a 24 palabras cada una (máximo 28).
 - Los textos forman UN SOLO DISCURSO CONTINUO: cada diapositiva debe enlazar con la anterior con un conector natural («y», «por eso», «así que», «pero», «además», «y ojo con esto») para que el paso de una a otra suene fluido, no como frases sueltas. Fluido y natural, como se lo contarías a un amigo: frases cortas, lenguaje de calle, nada de tono de locutor ni de lectura.
 - Si hay una lista (pasos, pautas, opciones, tarjetas, señales), NO uses números ni ordinales («primero», «segundo», «paso uno», «tres señales»): nómbralos seguidos en una sola frase, con comas y una «y» final, solo el nombre de cada uno, sin entrar en detalles ni en la letra pequeña. Evita también «mito uno», «el primero»: usa fórmulas como «hay quien cree que…», «otros piensan que…», «y también se dice que…».
+- NO leas las etiquetas o cabeceras pequeñas de las diapositivas (campos «kicker» y «foot»: «Ojo», «Importante», «Un consejo», «Lo básico», «El truco», «Cuidado»…). No las pronuncies nunca como encabezado; si la idea importa, intégrala en la frase de forma natural.
 - Quédate con lo esencial de cada diapositiva. Puedes reformular, pero SIN introducir datos, cifras, fechas, leyes, porcentajes ni nombres que no estén en las diapositivas.
 - Escribe las cifras tal como aparecen (por ejemplo 34 %, 3,5 %, 2.000 euros). No uses emojis, hashtags, viñetas ni comillas raras. Las siglas, tal cual (TAE, IRPF).
 - Contenido educativo: nada de recomendar productos, comprar o vender, ni prometer rentabilidades. Mantén los matices y avisos de la fuente («es una referencia», «depende del caso»).
