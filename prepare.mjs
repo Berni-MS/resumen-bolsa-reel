@@ -106,7 +106,7 @@ let caption = buildCaption(true);
 if (caption.length > 2100) caption = buildCaption(false);
 
 const data = {
-  dateLabel, sessionLabel, closeLabel, headline,
+  isoDate: r.date, dateLabel, sessionLabel, closeLabel, headline,
   indices: [
     { ticker: 'SPY', name: 'S&P 500', close: r.spy_close, prev: r.spy_prev_close, chg: r.spy_chg, big: true },
     ...(ibex ? [{ ticker: 'IBEX', name: 'IBEX 35', close: ibex.close, prev: ibex.prev, chg: ibex.chg, big: true, pts: true }] : []),

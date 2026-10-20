@@ -5,6 +5,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
+import { vozBolsa } from './voz-bolsa.mjs';
 
 const require = createRequire(import.meta.url);
 let chromium;
@@ -16,7 +17,8 @@ const outDir = path.resolve(process.argv[3] || 'out');
 // Duración por diapositiva (s): resumen 5, cuatro rankings de 5 y los factores 8 → 33 s en total (cabe también en una historia, máx. 60 s)
 const DUR = { '01-variacion': 5, '08-factores': 8 };
 const SECONDS_PER_SLIDE = Number(process.env.SECONDS_PER_SLIDE || 5);
-const durOf = n => (process.env.SECONDS_PER_SLIDE ? SECONDS_PER_SLIDE : (DUR[n] ?? SECONDS_PER_SLIDE));
+const VOZDUR = {};
+const durOf = n => VOZDUR[n] ?? (process.env.SECONDS_PER_SLIDE ? SECONDS_PER_SLIDE : (DUR[n] ?? SECONDS_PER_SLIDE));
 const d = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
 fs.mkdirSync(outDir, { recursive: true });
 
@@ -147,6 +149,31 @@ for (const [name, html] of slides) {
 }
 await browser.close();
 
+// ---------- voz en off (opcional: VOZ=true) ----------
+const VOICE = process.env.VOZ_VOICE || 'es-ES-AlvaroNeural';
+const probe = f => Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString().trim());
+const voces = []; // { file, name }
+if (process.env.VOZ === 'true') {
+  try {
+    const iso = process.env.VOZ_FECHA || d.isoDate;
+    const guion = vozBolsa(d, iso);
+    fs.writeFileSync(path.join(outDir, 'voz.txt'), slides.map(([n]) => guion[n] ? `[${n}] ${guion[n]}` : '').filter(Boolean).join('\n\n'));
+    for (const [n] of slides) {
+      const txt = guion[n]; if (!txt) continue;
+      const f = path.join(outDir, `voz-${n}.mp3`); const tf = path.join(outDir, `voz-${n}.txt`);
+      fs.writeFileSync(tf, txt);
+      let ok = false;
+      for (let i = 0; i < 3 && !ok; i++) {
+        try { execFileSync('edge-tts', ['--voice', VOICE, '--rate=+6%', '--file', tf, '--write-media', f], { stdio: 'pipe' }); ok = fs.existsSync(f) && fs.statSync(f).size > 1000; }
+        catch (e) { console.warn(`edge-tts intento ${i + 1} (${n}) falló: ${String(e.stderr || e.message).slice(-200)}`); }
+      }
+      if (!ok) throw new Error(`sin voz para ${n}`);
+      voces.push({ file: f, name: n, dur: probe(f) });
+    }
+    for (const v of voces) VOZDUR[v.name] = Math.max(durOf(v.name), Math.round((v.dur + 1.1) * 10) / 10);
+  } catch (e) { console.warn('AVISO: se genera el vídeo SIN voz:', e.message); voces.length = 0; for (const k in VOZDUR) delete VOZDUR[k]; }
+}
+
 // ---------- vídeo ----------
 const list = path.join(outDir, 'list.txt');
 fs.writeFileSync(list, slides.map(([n]) => `file '${n}.png'\nduration ${durOf(n)}`).join('\n') + `\nfile '${slides.at(-1)[0]}.png'\n`);
@@ -156,10 +183,25 @@ const hasMusic = fs.existsSync(music);
 const args = ['-y', '-f', 'concat', '-safe', '0', '-i', list];
 if (hasMusic) args.push('-stream_loop', '-1', '-i', music);
 else args.push('-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo');
+let mapAudio = '1:a';
+if (voces.length && hasMusic) {
+  let t = 0; const starts = {};
+  for (const [n] of slides) { starts[n] = t; t += durOf(n); }
+  for (const v of voces) args.push('-i', v.file);
+  const vf = voces.map((v, i) => `[${i + 2}:a]adelay=${Math.round((starts[v.name] + 0.5) * 1000)}|${Math.round((starts[v.name] + 0.5) * 1000)},volume=1.7[s${i}]`);
+  const vmix = voces.length > 1 ? `${voces.map((_, i) => `[s${i}]`).join('')}amix=inputs=${voces.length}:normalize=0,asplit=2[v][k]` : '[s0]asplit=2[v][k]';
+  const fc = [...vf, vmix,
+    `[1:a]volume=0.5,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8[m]`,
+    `[m][k]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md]`,
+    `[md][v]amix=inputs=2:duration=first:normalize=0[a]`].join(';');
+  args.push('-filter_complex', fc);
+  mapAudio = '[a]';
+}
 args.push('-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart');
-if (hasMusic) args.push('-af', `volume=0.55,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8`);
-args.push('-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', '0:v', '-map', '1:a', '-t', String(total), path.join(outDir, 'reel.mp4'));
+if (hasMusic && !voces.length) args.push('-af', `volume=0.55,afade=t=in:st=0:d=0.5,afade=t=out:st=${total - 1.8}:d=1.8`);
+args.push('-c:a', 'aac', '-ar', '48000', '-ac', '2', '-b:a', '128k', '-map', '0:v', '-map', mapAudio, '-t', String(total), path.join(outDir, 'reel.mp4'));
 execFileSync('ffmpeg', args, { stdio: 'inherit' });
+for (const v of voces) { fs.unlinkSync(v.file); try { fs.unlinkSync(v.file.replace('.mp3', '.txt')); } catch {} }
 fs.unlinkSync(list);
 fs.writeFileSync(path.join(outDir, 'caption.txt'), d.caption || '');
 console.log('Vídeo listo:', path.join(outDir, 'reel.mp4'));

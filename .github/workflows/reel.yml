@@ -8,6 +8,10 @@ on:
       record_b64:
         description: Registro de RESUMEN_BOLSA (JSON en base64), lo envía Make
         required: false
+      voz:
+        description: "true = añade voz en off (edge-tts, Álvaro) al vídeo"
+        required: false
+        default: "false"
       prueba:
         description: "true = genera el vídeo con datos de ejemplo y lo envía solo a Telegram; NO publica nada"
         required: false
@@ -52,7 +56,14 @@ jobs:
           fi
           node prepare.mjs record.json data.json 2>&1 | tee prepare.log
 
+      - name: Instalar voz (edge-tts)
+        if: ${{ inputs.voz == 'true' }}
+        continue-on-error: true
+        run: pip install -q edge-tts 2>&1 | tail -1
+
       - name: Generar pantallas y vídeo
+        env:
+          VOZ: ${{ inputs.voz }}
         run: node render.mjs data.json out
 
       - name: Enviar prueba a Telegram (sin publicar)
@@ -64,7 +75,10 @@ jobs:
           grep -E "IBEX|AVISO" prepare.log | head -8 > aviso.txt || true
           [ -s aviso.txt ] && curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=Registro de la prueba: $(cat aviso.txt)" >/dev/null || true
           DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/reel.mp4 | cut -d. -f1)
-          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (no se ha publicado): reel del resumen de bolsa, versión reducida de ${DUR} s." >/dev/null && echo "Prueba enviada"
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (no se ha publicado): reel del resumen de bolsa${{ inputs.voz == 'true' && ' CON VOZ EN OFF' || '' }}, ${DUR} s." >/dev/null && echo "Prueba enviada"
+          [ -s out/voz.txt ] && curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=Guion de la voz:
+
+$(cat out/voz.txt)" >/dev/null || echo "Sin guion de voz (el vídeo salió sin voz)"
 
       - name: Guardar el registro de la prueba
         if: ${{ always() && inputs.prueba == 'true' }}
