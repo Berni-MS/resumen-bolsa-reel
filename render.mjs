@@ -6,6 +6,7 @@ import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 import { vozBolsa } from './voz-bolsa.mjs';
+import { endcardInner, CIERRE_VOZ } from './endcard-lib.mjs';
 import { assDe, fuente, whoosh, pistaMusica } from './subs-lib.mjs';
 
 const require = createRequire(import.meta.url);
@@ -16,7 +17,7 @@ catch { ({ chromium } = require('/opt/npm-tools/node_modules/playwright')); }
 const dataFile = process.argv[2] || 'data.json';
 const outDir = path.resolve(process.argv[3] || 'out');
 // Duración por diapositiva (s): resumen 5, cuatro rankings de 5 y los factores 8 → 33 s en total (cabe también en una historia, máx. 60 s)
-const DUR = { '01-variacion': 5, '08-factores': 8 };
+const DUR = { '01-variacion': 5, '08-factores': 8, '09-cierre': 4 };
 const SECONDS_PER_SLIDE = Number(process.env.SECONDS_PER_SLIDE || 5);
 const VOZDUR = {};
 const durOf = n => VOZDUR[n] ?? (process.env.SECONDS_PER_SLIDE ? SECONDS_PER_SLIDE : (DUR[n] ?? SECONDS_PER_SLIDE));
@@ -134,6 +135,7 @@ const slides = [
   [`04-${SECOND.toLowerCase()}-subidas`, slideTop(SECOND, 'gainers')],
   [`05-${SECOND.toLowerCase()}-bajadas`, slideTop(SECOND, 'losers')],
   ['08-factores', slideFactors()],
+  ['09-cierre', page(INK, '#fff', endcardInner({ INK, GREEN, MUTED, DISPLAY, sub: 'El resumen de la bolsa, cada mañana.' }))],
 ];
 
 const browser = await chromium.launch({ args: ['--no-sandbox'] });
@@ -160,6 +162,7 @@ if (process.env.VOZ === 'true') {
   try {
     const iso = process.env.VOZ_FECHA || d.isoDate;
     const guion = vozBolsa(d, iso);
+    guion['09-cierre'] = CIERRE_VOZ;
     fs.writeFileSync(path.join(outDir, 'voz.txt'), slides.map(([n]) => guion[n] ? `[${n}] ${guion[n]}` : '').filter(Boolean).join('\n\n'));
     for (const [n] of slides) {
       const txt = guion[n]; if (!txt) continue; guionTxt[n] = txt;

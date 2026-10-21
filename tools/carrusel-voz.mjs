@@ -78,7 +78,7 @@ const textos = slides.map((sl, i) => { if (sl.t === 'myth') mythN++; return guio
   if (k >= 0) fr.splice(k, 0, cta); else fr.push(cta);
   textos[L] = fr.join(' ');
 }
-const MAXV = 58, durSlide = v => Math.max(4, v + 0.8);
+const MAXV = 54, durSlide = v => Math.max(4, v + 0.8);
 const total = ds => ds.reduce((a, v) => a + durSlide(v), 0) - 0.5 * (ds.length - 1);
 const rate = VOZ_RATE; // ritmo único: la voz no se acelera nunca; si no cabe, se recorta
 const sintetizar = () => textos.map((t, i) => tts(hablar(t), path.join(dir, `${String(i + 1).padStart(2, '0')}.mp3`), rate));

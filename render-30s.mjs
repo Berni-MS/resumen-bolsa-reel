@@ -34,7 +34,7 @@ const conBig = (big, txt) => (big && !/\d/.test(String(txt)) ? `${hablar(txt)}: 
 const textosVoz = [
   item.voz_hook || conBig(item.hook_big, item.hook),
   ...scenes.map(s => s.voz || conBig(s.big, s.text)),
-  item.voz_outro || (item.badge ? 'La semana que viene, otro consejo para tu bolsillo. Sígueme para no perdértelo.' : 'Mañana, otro en treinta segundos. Sígueme para no perdértelo.'),
+  item.voz_outro || (item.badge ? 'Guárdalo y compártelo con quien lo necesite. La semana que viene, otro consejo para tu bolsillo. Sígueme para no perdértelo.' : 'Guárdalo y compártelo con quien lo necesite. Mañana, otro en treinta segundos. Sígueme para no perdértelo.'),
 ];
 const MIN_HOOK = 4, MIN_SCENE = 5.5, MIN_OUTRO = 4, MAX_TOTAL = Number(process.env.MAX_TOTAL || 45);
 let voces = [];
@@ -116,7 +116,7 @@ body{background:${INK}}
 <div class="bar"><i id="prog"></i></div>
 ${sceneHtml('hook', `<div class="kick" id="hk">${esc(item.date_label || 'Hoy en bolsa')}</div>${item.hook_big ? `<div class="big d">${esc(item.hook_big)}</div>` : ''}<div class="txt" data-fit>${words(item.hook)}</div><div class="handle d" style="font-size:56px;margin-top:40px">@tuamigodelasfinanzas</div>`)}
 ${scenes.map((s, i) => sceneHtml('body', `<div class="kick">${esc(s.kicker)}</div>${s.big ? `<div class="big d">${esc(s.big)}</div>` : ''}<div class="txt" data-fit>${words(s.text)}</div>`)).join('\n')}
-${sceneHtml('outro', `<div class="kick">${esc(item.outro_kick || '¿Lo entendiste?')}</div><div class="txt" data-fit>${words(item.outro_txt || (item.badge ? 'La semana que viene, [[otro consejo]]' : 'Mañana, [[otro]] en 30 segundos'))}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
+${sceneHtml('outro', `<div class="kick">${esc(item.outro_kick || 'Guárdalo y compártelo')}</div><div class="txt" data-fit>${words(item.outro_txt || (item.badge ? 'La semana que viene, [[otro consejo]]' : 'Mañana, [[otro]] en 30 segundos'))}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
 </div></body></html>`;
 
 const f = path.join(outDir, 'reel.html');

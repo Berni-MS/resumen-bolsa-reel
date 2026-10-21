@@ -4,15 +4,37 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { execFileSync as _ex } from 'node:child_process';
+import { tts } from '../voz-lib.mjs';
+import { CIERRE_VOZ } from '../endcard-lib.mjs';
 import { assDe, fuente, whoosh, pistaMusica } from '../subs-lib.mjs';
 
 const [dirImgs, out, dirVoz] = process.argv.slice(2);
 const imgs = fs.readdirSync(dirImgs).filter(f => /^0[1-7]\.jpg$/.test(f)).sort().map(f => path.join(dirImgs, f));
-const N = imgs.length; if (N < 2) throw new Error('Faltan diapositivas');
+const nSlides = imgs.length; if (nSlides < 2) throw new Error('Faltan diapositivas');
 const vz = dirVoz && fs.existsSync(path.join(dirVoz, 'voz.json')) ? JSON.parse(fs.readFileSync(path.join(dirVoz, 'voz.json'), 'utf8')) : null;
+const vozFiles = vz ? imgs.map((_, i) => path.join(dirVoz, `${String(i + 1).padStart(2, '0')}.mp3`)) : [];
+const durV = vz ? [...vz.durs] : [];
+// Cierre estándar "Guárdalo · Compártelo · Sígueme" como escena final (los carruseles siguen con sus 7 diapositivas)
+if (process.env.CIERRE !== 'false') {
+  try {
+    const ec = path.resolve('endcard-video.png');
+    _ex('node', [path.join(path.dirname(new URL(import.meta.url).pathname), 'endcard.mjs'), ec], { stdio: 'pipe' });
+    if (!fs.existsSync(ec)) throw new Error('sin tarjeta');
+    if (vz) {
+      const ev = path.join(dirVoz, 'cierre.mp3');
+      tts(CIERRE_VOZ, ev);
+      if (!fs.existsSync(ev) || fs.statSync(ev).size < 1000) throw new Error('sin voz de cierre');
+      const d = Number(_ex('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', ev]).toString().trim());
+      vozFiles.push(ev); durV.push(d);
+    }
+    imgs.push(ec);
+  } catch (e) { console.warn('::warning::sin cierre estándar: ' + String(e.stderr || e.message).slice(-200)); }
+}
+const N = imgs.length;
 const SUBS = process.env.SUBS === 'true';
 const MIN = 4, FADE = 0.5, FPS = 30;
-const dur = imgs.map((_, i) => vz ? Math.max(MIN, (vz.durs[i] || 0) + 0.8) : 5);
+const dur = imgs.map((_, i) => vz ? Math.max(MIN, (durV[i] || 0) + 0.8) : 5);
 const starts = []; let acc = 0;
 dur.forEach((d, i) => { starts.push(i === 0 ? 0 : acc - FADE); acc = i === 0 ? d : acc + d - FADE; });
 const TOTAL = acc;
@@ -25,7 +47,7 @@ args.push('-stream_loop', '-1', '-i', music);                // N
 args.push('-f', 'lavfi', '-i', `color=c=0x35D07F:s=1080x12:r=${FPS}`); // N+1 barra de progreso
 const wh = whoosh(path.join(tmp, 'whoosh.wav')); args.push('-i', wh); // N+2
 const IV = N + 3;
-if (vz) for (let i = 0; i < N; i++) args.push('-i', path.join(dirVoz, `${String(i + 1).padStart(2, '0')}.mp3`)); // N+3..
+if (vz) for (let i = 0; i < N; i++) args.push('-i', vozFiles[i]); // N+3..
 
 let f = '';
 imgs.forEach((_, i) => {
@@ -40,7 +62,7 @@ prev = 'pv';
 let ass = null;
 if (vz && SUBS) {
   const fu = fuente(path.join(tmp, 'fonts'));
-  const segs = vz.textos.map((t, i) => ({ start: starts[i] + 0.25, dur: vz.durs[i], text: t }));
+  const segs = vz.textos.map((t, i) => ({ start: starts[i] + 0.25, dur: durV[i], text: t }));
   ass = path.join(tmp, 'subs.ass');
   fs.writeFileSync(ass, assDe(segs, { yBase: 1520, fontName: fu.name }));
   f += `[${prev}]ass='${ass}':fontsdir='${fu.dir}'[vs];`;
