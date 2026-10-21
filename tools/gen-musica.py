@@ -45,14 +45,8 @@ def clap(vel=0.35):
     n = int(0.2 * SR); t = np.arange(n) / SR
     return vel * hp(lp(rng.standard_normal(n), 3500), 900) * np.exp(-t / 0.05)
 def add(buf, x, pos, pan=0.0):
-    pos = int(pos * SR); n = len(buf)
-    for k in range(len(x)):
-        pass
-    end = pos + len(x)
-    seg = x[: max(0, min(len(x), n + 0 - pos))] if end > n else x
-    # circular: lo que se sale del final vuelve al principio (bucle limpio)
-    for i0 in range(0, len(x), 1 << 30): pass
-    idx = (np.arange(len(x)) + pos) % n
+    n = len(buf[0])
+    idx = (np.arange(len(x)) + int(pos * SR)) % n  # lo que se sale del final vuelve al principio (bucle limpio)
     buf[0][idx] += x * (1 - max(pan, 0) * 0.6)
     buf[1][idx] += x * (1 + min(pan, 0) * 0.6)
 def reverb(buf, mix=0.18, sec=1.1):
@@ -118,6 +112,11 @@ def render(name, p):
     tmp = dst + '.tmp.mp3'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', dst, '-af', f'volume={-13.2 - li:.2f}dB,alimiter=limit=0.85:level=false', '-ar', '48000', '-b:a', '160k', tmp], check=True)
     os.replace(tmp, dst)
+    d = subprocess.run(['ffmpeg', '-v', 'error', '-i', dst, '-f', 's16le', '-ac', '1', '-ar', '8000', '-'], capture_output=True).stdout
+    a = np.frombuffer(d, dtype='<i2').astype(float) / 32768
+    for k in range(0, len(a) - 32000, 32000):
+        r = 20 * np.log10(np.sqrt((a[k:k + 32000] ** 2).mean()) + 1e-9)
+        assert r > -32, f'{name}: tramo {k // 8000}s casi en silencio ({r:.1f} dB)'
     os.remove(raw); print(name, f'{total:.1f}s')
 M = [0, 2, 3, 5, 7, 10]; MAJ = [0, 2, 4, 7, 9]
 TRACKS = {
