@@ -77,11 +77,23 @@ export function whoosh(file) {
   return file;
 }
 
-// Pista de música: rota entre assets/music*.mp3 según el día (con una sola pista, siempre la misma)
-export function pistaMusica(seed = new Date()) {
-  const dir = path.resolve('assets');
-  const pistas = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => /^music.*\.(mp3|m4a|wav)$/i.test(f)).sort() : [];
-  if (!pistas.length) return null;
+// Pista de música por tipo (bolsa, calma, alerta, optimista, neutral). Rota por día entre las pistas de ese tipo.
+// Respaldo: cualquier pista de assets/music/, luego assets/music.mp3.
+export const TIPO_MUSICA = {
+  bolsa: 'bolsa', '30s': 'bolsa', estafas: 'alerta', estafa: 'alerta',
+  ahorro: 'optimista', vida: 'optimista', consejo: 'optimista', cuesta: 'optimista',
+  edu: 'calma', tramites: 'calma', mitos: 'calma', vivienda: 'calma', semana: 'calma', palabra: 'calma',
+};
+export function pistaMusica(tipo = 'neutral', seed = new Date()) {
+  const t0 = String(tipo).toLowerCase();
+  if (!TIPO_MUSICA[t0]) { const k = Object.keys(TIPO_MUSICA).find(k => t0.includes(k)); if (k) tipo = k; }
+  tipo = TIPO_MUSICA[tipo] || (['bolsa','calma','alerta','optimista','neutral'].includes(tipo) ? tipo : 'neutral');
+  const dir = path.resolve('assets/music');
+  const todas = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => /\.(mp3|m4a|wav)$/i.test(f)).sort() : [];
+  const delTipo = todas.filter(f => f.startsWith(tipo + '-'));
+  const lista = delTipo.length ? delTipo : todas;
   const dia = Math.floor(seed.getTime() / 86400000);
-  return path.join(dir, pistas[dia % pistas.length]);
+  if (lista.length) return path.join(dir, lista[dia % lista.length]);
+  const legacy = path.resolve('assets/music.mp3');
+  return fs.existsSync(legacy) ? legacy : null;
 }

@@ -8,7 +8,7 @@ const [img, voz, txt, durS, out] = process.argv.slice(2);
 const DUR = Number(durS);
 const SUBS = process.env.SUBS === 'true';
 const vd = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', voz]).toString().trim());
-const music = pistaMusica() || path.resolve('assets/music.mp3');
+const music = pistaMusica('palabra') || path.resolve('assets/music.mp3');
 const tmp = fs.mkdtempSync('hv-');
 try {
   const fu = fuente(path.join(tmp, 'fonts'));

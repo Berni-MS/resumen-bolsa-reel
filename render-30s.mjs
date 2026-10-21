@@ -8,6 +8,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { spawn } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
+import { pistaMusica } from './subs-lib.mjs';
 import { hablar, tts, VOZ_RATE, mezcla, vozActiva } from './voz-lib.mjs';
 
 const require = createRequire(import.meta.url);
@@ -181,7 +182,7 @@ if (voces.length) {
 }
 
 // vídeo: fotogramas a CAP_FPS enviados a ffmpeg
-const music = path.resolve('assets/music.mp3');
+const music = pistaMusica('bolsa') || path.resolve('assets/music.mp3');
 const hasMusic = fs.existsSync(music);
 const args = ['-y', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-'];
 if (hasMusic) args.push('-stream_loop', '-1', '-i', music); else args.push('-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo');

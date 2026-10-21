@@ -6,7 +6,7 @@ import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 import { vozBolsa } from './voz-bolsa.mjs';
-import { assDe, fuente, whoosh } from './subs-lib.mjs';
+import { assDe, fuente, whoosh, pistaMusica } from './subs-lib.mjs';
 
 const require = createRequire(import.meta.url);
 let chromium;
@@ -181,7 +181,7 @@ if (process.env.VOZ === 'true') {
 const list = path.join(outDir, 'list.txt');
 fs.writeFileSync(list, slides.map(([n]) => `file '${n}.png'\nduration ${durOf(n)}`).join('\n') + `\nfile '${slides.at(-1)[0]}.png'\n`);
 const total = slides.reduce((a, [n]) => a + durOf(n), 0);
-const music = path.resolve('assets/music.mp3');
+const music = pistaMusica('bolsa') || path.resolve('assets/music.mp3');
 const hasMusic = fs.existsSync(music);
 const args = ['-y', '-f', 'concat', '-safe', '0', '-i', list];
 if (hasMusic) args.push('-stream_loop', '-1', '-i', music);

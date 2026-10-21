@@ -42,12 +42,12 @@ if [ "$CONVOZ" = 1 ]; then
     MIX+="[s$i]"
   done
   FILTER+="${VF}${MIX}amix=inputs=$N:normalize=0,asplit=2[v][k];[$N:a]volume=0.5,afade=t=in:d=0.5,afade=t=out:st=${FADEOUT}:d=1.5[m];[m][k]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[md];[md][v]amix=inputs=2:duration=first:normalize=0[a]"
-  ffmpeg -y "${ARGS[@]}" -stream_loop -1 -i assets/music.mp3 "${VARGS[@]}" \
+  ffmpeg -y "${ARGS[@]}" -stream_loop -1 -i "$(node tools/musica.mjs "$OUT" 2>/dev/null || echo assets/music.mp3)" "${VARGS[@]}" \
     -filter_complex "$FILTER" -map "[$PREV]" -map "[a]" -t "$TOTAL" \
     -c:v libx264 -preset veryfast -pix_fmt yuv420p -r 30 -c:a aac -ar 44100 -ac 2 -b:a 128k -movflags +faststart "$OUT" > ffmpeg-carrusel.log 2>&1 \
     || { echo "::warning::ffmpeg con voz falló: $(tail -c 600 ffmpeg-carrusel.log | tr '\n' ' ')"; exit 1; }
 else
-  ffmpeg -y "${ARGS[@]}" -stream_loop -1 -i assets/music.mp3 \
+  ffmpeg -y "${ARGS[@]}" -stream_loop -1 -i "$(node tools/musica.mjs "$OUT" 2>/dev/null || echo assets/music.mp3)" \
     -filter_complex "${FILTER%;}" -map "[$PREV]" -map "$N:a" -t "$TOTAL" \
     -af "volume=0.55,afade=t=in:d=0.5,afade=t=out:st=${FADEOUT}:d=1.5" \
     -c:v libx264 -preset veryfast -pix_fmt yuv420p -r 30 -c:a aac -ar 44100 -ac 2 -b:a 128k -movflags +faststart "$OUT" > ffmpeg-carrusel.log 2>&1 \

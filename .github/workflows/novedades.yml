@@ -52,7 +52,7 @@ jobs:
           exec 2>&1
           which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; } || echo "::warning::No se pudo instalar ffmpeg"
           DUR=$(cat story.dur 2>/dev/null || echo 12)
-          ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -stream_loop -1 -t "$DUR" -i assets/music.mp3 -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -af "volume=0.55,afade=t=in:d=0.5,afade=t=out:st=$(awk -v d="$DUR" 'BEGIN{print d-1.5}'):d=1.5" -c:a aac -ar 44100 -ac 2 -b:a 128k -shortest -movflags +faststart story.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 600 ffmpeg.log | tr '\n' ' ')"; exit 1; }
+          ffmpeg -y -loop 1 -framerate 30 -t "$DUR" -i story.png -stream_loop -1 -t "$DUR" -i "$(node tools/musica.mjs neutral 2>/dev/null || echo assets/music.mp3)" -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -af "volume=0.55,afade=t=in:d=0.5,afade=t=out:st=$(awk -v d="$DUR" 'BEGIN{print d-1.5}'):d=1.5" -c:a aac -ar 44100 -ac 2 -b:a 128k -shortest -movflags +faststart story.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 600 ffmpeg.log | tr '\n' ' ')"; exit 1; }
           echo "Vídeo de ${DUR} s creado"
       - name: Publicar imagen en GitHub Pages
         id: publish

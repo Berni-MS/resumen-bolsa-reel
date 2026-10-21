@@ -31,7 +31,7 @@ git config --global user.name "reel-bot"; git config --global user.email "reel-b
 REMOTE="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 rm -rf site2 && git clone --depth 1 --branch gh-pages "$REMOTE" site2
 which ffmpeg >/dev/null 2>&1 || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
-ffmpeg -y -loop 1 -framerate 30 -t 15 -i teaser.png -stream_loop -1 -t 15 -i assets/music.mp3 -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -af "volume=0.55,afade=t=in:d=0.5,afade=t=out:st=13.5:d=1.5" -c:a aac -ar 44100 -ac 2 -b:a 128k -shortest -movflags +faststart teaser.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 500 ffmpeg.log | tr '\n' ' ')"; rm -f teaser.mp4; }
+ffmpeg -y -loop 1 -framerate 30 -t 15 -i teaser.png -stream_loop -1 -t 15 -i "$(node tools/musica.mjs neutral 2>/dev/null || echo assets/music.mp3)" -c:v libx264 -preset veryfast -tune stillimage -pix_fmt yuv420p -r 30 -af "volume=0.55,afade=t=in:d=0.5,afade=t=out:st=13.5:d=1.5" -c:a aac -ar 44100 -ac 2 -b:a 128k -shortest -movflags +faststart teaser.mp4 > ffmpeg.log 2>&1 || { echo "::warning::ffmpeg falló: $(tail -c 500 ffmpeg.log | tr '\n' ' ')"; rm -f teaser.mp4; }
 mkdir -p site2/historias && cp teaser.png "site2/historias/$NAME" && { [ -f teaser.mp4 ] && cp teaser.mp4 "site2/historias/${NAME%.png}.mp4" || true; } && touch site2/.nojekyll
 ls -1t site2/historias/* | tail -n +61 | xargs -r rm -f
 ( cd site2 && git add -A && git commit -q -m "Historia de aviso $NAME" && for i in 1 2 3 4 5; do git push origin gh-pages && break || { git pull -q --rebase origin gh-pages; sleep 3; }; done )

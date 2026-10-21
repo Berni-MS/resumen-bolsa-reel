@@ -17,7 +17,7 @@ const starts = []; let acc = 0;
 dur.forEach((d, i) => { starts.push(i === 0 ? 0 : acc - FADE); acc = i === 0 ? d : acc + d - FADE; });
 const TOTAL = acc;
 
-const music = pistaMusica() || path.resolve('assets/music.mp3');
+const music = pistaMusica(path.basename(out)) || path.resolve('assets/music.mp3');
 const tmp = fs.mkdtempSync('cv-');
 const args = ['-y'];
 imgs.forEach(f => args.push('-i', f));                       // 0..N-1
