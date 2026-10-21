@@ -8,7 +8,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { spawn } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
-import { hablar, ttsFit, mezcla, vozActiva } from './voz-lib.mjs';
+import { hablar, tts, VOZ_RATE, mezcla, vozActiva } from './voz-lib.mjs';
 
 const require = createRequire(import.meta.url);
 let chromium;
@@ -28,8 +28,39 @@ const SAFE_TOP = 430, SAFE_BOTTOM = 400, SAFE_L = 70, SAFE_R = 140;
 // ---- validación ----
 if (!item.hook || !Array.isArray(item.scenes) || item.scenes.length < 3 || item.scenes.length > 5) throw new Error('Guion inválido: falta hook o escenas (3 a 5).');
 const scenes = item.scenes.slice(0, 4);
-const TOTAL = 30, HOOK_DUR = 4, OUTRO_DUR = 4;
-const SCENE_DUR = (TOTAL - HOOK_DUR - OUTRO_DUR) / scenes.length;
+// ---- voz en off y duración: la voz NO se acelera nunca; si el texto es largo, la escena dura más (tope MAX_TOTAL) o se recorta la última frase ----
+const conBig = (big, txt) => (big && !/\d/.test(String(txt)) ? `${hablar(txt)}: ${hablar(big)}.` : `${hablar(txt)}.`).replace(/\.\.$/, '.');
+const textosVoz = [
+  item.voz_hook || conBig(item.hook_big, item.hook),
+  ...scenes.map(s => s.voz || conBig(s.big, s.text)),
+  item.voz_outro || (item.badge ? 'La semana que viene, otro consejo para tu bolsillo. Sígueme para no perdértelo.' : 'Mañana, otro en treinta segundos. Sígueme para no perdértelo.'),
+];
+const MIN_HOOK = 4, MIN_SCENE = 5.5, MIN_OUTRO = 4, MAX_TOTAL = Number(process.env.MAX_TOTAL || 45);
+let voces = [];
+let HOOK_DUR = MIN_HOOK, OUTRO_DUR = MIN_OUTRO, SCENE_DURS = scenes.map(() => (30 - MIN_HOOK - MIN_OUTRO) / scenes.length);
+if (vozActiva() && !STILL_ONLY) {
+  try {
+    const tmpDir = fs.mkdtempSync(path.join(outDir, 'v-'));
+    const sintetiza = i => tts(textosVoz[i], path.join(tmpDir, `voz-${i}.mp3`), VOZ_RATE);
+    const ds = textosVoz.map((_, i) => sintetiza(i));
+    const plan = () => ({ hook: Math.max(MIN_HOOK, ds[0] + 0.9), sc: scenes.map((_, i) => Math.max(MIN_SCENE, ds[i + 1] + 0.8)), outro: Math.max(MIN_OUTRO, ds.at(-1) + 0.9) });
+    const suma = p => p.hook + p.sc.reduce((a, b) => a + b, 0) + p.outro;
+    let p = plan();
+    for (let n = 0; suma(p) > MAX_TOTAL && n < 8; n++) {
+      // se recorta la última frase de la escena cuya voz sea más larga (nunca el gancho ni el cierre)
+      const j = ds.map((v, i) => [v, i]).filter(([, i]) => i > 0 && i < ds.length - 1 && textosVoz[i].split(/(?<=[.!?])\s+/).filter(Boolean).length > 1).sort((a, b) => b[0] - a[0])[0]?.[1];
+      if (j === undefined) break;
+      textosVoz[j] = textosVoz[j].split(/(?<=[.!?])\s+/).filter(Boolean).slice(0, -1).join(' ');
+      ds[j] = sintetiza(j); p = plan();
+    }
+    HOOK_DUR = p.hook; SCENE_DURS = p.sc; OUTRO_DUR = p.outro;
+    textosVoz.forEach((t, i) => voces.push({ file: path.join(tmpDir, `voz-${i}.mp3`), dur: ds[i], text: t }));
+    console.log(`Duración del reel con voz: ${suma(p).toFixed(1)} s (voz a ritmo fijo +${VOZ_RATE} %)`);
+  } catch (e) { console.warn('AVISO: se genera el vídeo SIN voz:', e.message); voces = []; HOOK_DUR = MIN_HOOK; OUTRO_DUR = MIN_OUTRO; SCENE_DURS = scenes.map(() => (30 - MIN_HOOK - MIN_OUTRO) / scenes.length); }
+}
+const TOTAL = HOOK_DUR + SCENE_DURS.reduce((a, b) => a + b, 0) + OUTRO_DUR;
+const STARTS = [0]; { let t = HOOK_DUR; for (const d of SCENE_DURS) { STARTS.push(t); t += d; } STARTS.push(t); }
+const ENDS = [...STARTS.slice(1), TOTAL];
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 // [[frase]] -> palabras resaltadas
@@ -111,11 +142,10 @@ const shrunk = await pg.evaluate(() => {
 shrunk.forEach(l => console.warn('AVISO:', l));
 
 // línea de tiempo
-await pg.evaluate(({ HOOK, SCENE, N, OUT, TOTAL }) => {
+await pg.evaluate(({ STARTS, ENDS, TOTAL }) => {
   const ease = p => 1 - Math.pow(1 - p, 3);
   const scs = [...document.querySelectorAll('.sc')];
-  const starts = scs.map((_, i) => i === 0 ? 0 : i <= N ? HOOK + (i - 1) * SCENE : HOOK + N * SCENE);
-  const ends = scs.map((_, i) => i === 0 ? HOOK : i <= N ? HOOK + i * SCENE : TOTAL);
+  const starts = STARTS, ends = ENDS;
   window.setT = t => {
     scs.forEach((sc, i) => {
       const lt = t - starts[i], dur = ends[i] - starts[i];
@@ -135,7 +165,7 @@ await pg.evaluate(({ HOOK, SCENE, N, OUT, TOTAL }) => {
     document.getElementById('prog').style.width = (t / TOTAL * 100) + '%';
     document.getElementById('count').textContent = String(Math.max(0, Math.ceil(TOTAL - t)));
   };
-}, { HOOK: HOOK_DUR, SCENE: SCENE_DUR, N: scenes.length, OUT: OUTRO_DUR, TOTAL });
+}, { STARTS, ENDS, TOTAL });
 
 const shot = async t => { await pg.evaluate(t => window.setT(t), t); return pg.screenshot({ type: 'jpeg', quality: 92 }); };
 
@@ -144,23 +174,10 @@ if (STILL_ONLY) {
   await browser.close(); fs.unlinkSync(f); process.exit(0);
 }
 
-// ---- voz en off: gancho, cada escena y cierre, ajustados a su hueco de la línea de tiempo ----
-const voces = [];
-if (vozActiva()) {
-  try {
-    const conBig = (big, txt) => (big && !/\d/.test(String(txt)) ? `${hablar(txt)}: ${hablar(big)}.` : `${hablar(txt)}.`).replace(/\.\.$/, '.');
-    const guion = [
-      { start: 0.25, slot: HOOK_DUR - 0.5, text: item.voz_hook || conBig(item.hook_big, item.hook) },
-      ...scenes.map((s, i) => ({ start: HOOK_DUR + i * SCENE_DUR + 0.25, slot: SCENE_DUR - 0.5, text: s.voz || conBig(s.big, s.text) })),
-      { start: HOOK_DUR + scenes.length * SCENE_DUR + 0.25, slot: OUTRO_DUR - 0.8, text: item.voz_outro || (item.badge ? 'La semana que viene, otro consejo para tu bolsillo. Sígueme para no perdértelo.' : 'Mañana, otro en treinta segundos. Sígueme para no perdértelo.') },
-    ];
-    for (const [i, g] of guion.entries()) {
-      const file = path.join(outDir, `voz-${i}.mp3`);
-      const dur = ttsFit(g.text, file, g.slot);
-      voces.push({ file, start: g.start, dur, text: g.text });
-    }
-    fs.writeFileSync(path.join(outDir, 'voz.txt'), voces.map((v, i) => `[${i === 0 ? 'gancho' : i <= scenes.length ? 'escena ' + i : 'cierre'}] ${v.text}`).join('\n\n'));
-  } catch (e) { console.warn('AVISO: se genera el vídeo SIN voz:', e.message); voces.length = 0; }
+// ---- voz en off: ya sintetizada arriba; se coloca al inicio de cada bloque ----
+if (voces.length) {
+  voces.forEach((v, i) => { v.start = STARTS[i] + 0.25; });
+  fs.writeFileSync(path.join(outDir, 'voz.txt'), voces.map((v, i) => `[${i === 0 ? 'gancho' : i <= scenes.length ? 'escena ' + i : 'cierre'}] ${v.text}`).join('\n\n'));
 }
 
 // vídeo: fotogramas a CAP_FPS enviados a ffmpeg
@@ -186,6 +203,7 @@ for (let n = 0; n < TOTAL * FPS; n++) {
 ff.stdin.end();
 await done;
 for (const v of voces) fs.rmSync(v.file, { force: true });
+for (const d of fs.readdirSync(outDir)) if (d.startsWith('v-')) fs.rmSync(path.join(outDir, d), { recursive: true, force: true });
 await browser.close();
 fs.unlinkSync(f);
 

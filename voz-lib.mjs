@@ -28,7 +28,9 @@ export function hablar(t) {
 
 export const probe = f => Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString().trim());
 
-export function tts(text, file, rate = 6) {
+// Ritmo único de la voz en TODOS los vídeos (no se acelera nunca para que quepa)
+export const VOZ_RATE = 5;
+export function tts(text, file, rate = VOZ_RATE) {
   const tf = path.join(os.tmpdir(), `voz-${process.pid}-${Math.random().toString(36).slice(2)}.txt`);
   fs.writeFileSync(tf, text);
   let err = '';
@@ -41,18 +43,6 @@ export function tts(text, file, rate = 6) {
   }
   fs.rmSync(tf, { force: true });
   throw new Error('edge-tts no generó audio: ' + err);
-}
-
-// Genera la voz y la acelera lo justo (máx. +35 %, y como último recurso atempo) para que quepa en `slot` segundos
-export function ttsFit(text, file, slot) {
-  let d = tts(text, file, 6);
-  if (d <= slot) return d;
-  d = tts(text, file, Math.min(35, Math.ceil((d / slot * 1.06 - 1) * 100)));
-  if (d <= slot) return d;
-  const f = Math.min(1.3, d / slot), tmp = file + '.t.mp3';
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', file, '-filter:a', `atempo=${f.toFixed(3)}`, tmp]);
-  fs.renameSync(tmp, file);
-  return probe(file);
 }
 
 // Mezcla: música (entrada musicIdx) bajando mientras habla la voz; voces = [{ idx, start }]

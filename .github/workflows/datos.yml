@@ -48,7 +48,7 @@ jobs:
           node tools/voz-palabra.mjs datos.json > voz.txt
           cat voz.txt
           for i in 1 2 3; do
-            edge-tts --voice es-ES-AlvaroNeural --rate=+8% --file voz.txt --write-media voz.mp3 2>voz.err && [ -s voz.mp3 ] && break
+            edge-tts --voice es-ES-AlvaroNeural --rate=+5% --file voz.txt --write-media voz.mp3 2>voz.err && [ -s voz.mp3 ] && break
             echo "intento $i falló: $(tail -c 200 voz.err)"; rm -f voz.mp3; sleep 5
           done
           [ -s voz.mp3 ] || echo "::warning::Sin voz en off, se publica solo con música"

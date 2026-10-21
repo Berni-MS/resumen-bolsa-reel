@@ -167,7 +167,7 @@ if (process.env.VOZ === 'true') {
       fs.writeFileSync(tf, txt);
       let ok = false;
       for (let i = 0; i < 3 && !ok; i++) {
-        try { execFileSync('edge-tts', ['--voice', VOICE, '--rate=+6%', '--file', tf, '--write-media', f], { stdio: 'pipe' }); ok = fs.existsSync(f) && fs.statSync(f).size > 1000; }
+        try { execFileSync('edge-tts', ['--voice', VOICE, '--rate=+5%', '--file', tf, '--write-media', f], { stdio: 'pipe' }); ok = fs.existsSync(f) && fs.statSync(f).size > 1000; }
         catch (e) { console.warn(`edge-tts intento ${i + 1} (${n}) falló: ${String(e.stderr || e.message).slice(-200)}`); }
       }
       if (!ok) throw new Error(`sin voz para ${n}`);

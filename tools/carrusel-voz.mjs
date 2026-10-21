@@ -2,7 +2,7 @@
 // Escribe <carpeta_voz>/NN.mp3 y <carpeta_voz>/durs.txt (segundos por diapositiva, una por línea) y voz.txt (guion).
 import fs from 'node:fs';
 import path from 'node:path';
-import { hablar, tts, vozActiva } from '../voz-lib.mjs';
+import { hablar, tts, vozActiva, VOZ_RATE } from '../voz-lib.mjs';
 import { guionesGemini } from './voz-gemini.mjs';
 import { pickKey } from '../cta.mjs';
 
@@ -80,15 +80,14 @@ const textos = slides.map((sl, i) => { if (sl.t === 'myth') mythN++; return guio
 }
 const MAXV = 58, durSlide = v => Math.max(4, v + 0.8);
 const total = ds => ds.reduce((a, v) => a + durSlide(v), 0) - 0.5 * (ds.length - 1);
-let rate = 10;
+const rate = VOZ_RATE; // ritmo único: la voz no se acelera nunca; si no cabe, se recorta
 const sintetizar = () => textos.map((t, i) => tts(hablar(t), path.join(dir, `${String(i + 1).padStart(2, '0')}.mp3`), rate));
 let ds = sintetizar();
-for (let intento = 0; total(ds) > MAXV && intento < 6; intento++) {
-  if (rate < 22) rate = 22; // primero, algo más de ritmo
-  else { // después, se quita la última frase de la diapositiva más larga (sin tocar gancho ni cierre)
-    const j = ds.map((v, i) => [v, i]).filter(([, i]) => i > 0 && i < ds.length - 1).sort((x, y) => y[0] - x[0])[0]?.[1];
-    const fr = textos[j]?.split(/(?<=[.!?])\s+/) || [];
-    if (fr.length < 2) break;
+for (let intento = 0; total(ds) > MAXV && intento < 14; intento++) {
+  { // después, se quita la última frase de la diapositiva más larga (sin tocar gancho ni cierre)
+    const j = ds.map((v, i) => [v, i]).filter(([, i]) => i > 0 && i < ds.length - 1 && (textos[i].split(/(?<=[.!?])\s+/).length > 1)).sort((x, y) => y[0] - x[0])[0]?.[1];
+    if (j === undefined) break;
+    const fr = textos[j].split(/(?<=[.!?])\s+/);
     textos[j] = fr.slice(0, -1).join(' ');
   }
   ds = sintetizar();
