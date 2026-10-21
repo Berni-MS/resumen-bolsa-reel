@@ -84,7 +84,7 @@ body{background:${INK}}
 <div class="bar"><i id="prog"></i></div>
 ${sceneHtml('hook', `<div class="kick" id="hk">${esc(item.date_label || 'Hoy en bolsa')}</div>${item.hook_big ? `<div class="big d">${esc(item.hook_big)}</div>` : ''}<div class="txt" data-fit>${words(item.hook)}</div><div class="handle d" style="font-size:56px;margin-top:40px">@tuamigodelasfinanzas</div>`)}
 ${scenes.map((s, i) => sceneHtml('body', `<div class="kick">${esc(s.kicker)}</div>${s.big ? `<div class="big d">${esc(s.big)}</div>` : ''}<div class="txt" data-fit>${words(s.text)}</div>`)).join('\n')}
-${sceneHtml('outro', `<div class="kick">¿Lo entendiste?</div><div class="txt" data-fit>${words(item.badge ? 'La semana que viene, [[otro consejo]]' : 'Mañana, [[otro]] en 30 segundos')}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
+${sceneHtml('outro', `<div class="kick">${esc(item.outro_kick || '¿Lo entendiste?')}</div><div class="txt" data-fit>${words(item.outro_txt || (item.badge ? 'La semana que viene, [[otro consejo]]' : 'Mañana, [[otro]] en 30 segundos'))}</div><div class="handle d">@tuamigodelasfinanzas</div><div class="small">Fuente: ${esc(item.source || 'medios financieros')}. Contenido informativo y educativo; no es asesoramiento financiero.</div>`)}
 </div></body></html>`;
 
 const f = path.join(outDir, 'reel.html');
@@ -152,7 +152,7 @@ if (vozActiva()) {
     const guion = [
       { start: 0.25, slot: HOOK_DUR - 0.5, text: item.voz_hook || conBig(item.hook_big, item.hook) },
       ...scenes.map((s, i) => ({ start: HOOK_DUR + i * SCENE_DUR + 0.25, slot: SCENE_DUR - 0.5, text: s.voz || conBig(s.big, s.text) })),
-      { start: HOOK_DUR + scenes.length * SCENE_DUR + 0.25, slot: OUTRO_DUR - 0.8, text: item.badge ? 'La semana que viene, otro consejo para tu bolsillo. Sígueme para no perdértelo.' : 'Mañana, otro en treinta segundos. Sígueme para no perdértelo.' },
+      { start: HOOK_DUR + scenes.length * SCENE_DUR + 0.25, slot: OUTRO_DUR - 0.8, text: item.voz_outro || (item.badge ? 'La semana que viene, otro consejo para tu bolsillo. Sígueme para no perdértelo.' : 'Mañana, otro en treinta segundos. Sígueme para no perdértelo.') },
     ];
     for (const [i, g] of guion.entries()) {
       const file = path.join(outDir, `voz-${i}.mp3`);
@@ -191,7 +191,7 @@ fs.unlinkSync(f);
 
 // pie del Reel
 const tags = (item.tags && item.tags.length ? item.tags : ['#bolsa', '#inversion', '#finanzas', '#aprenderbolsa']).slice(0, 3);
-const caption = `${item.caption}\n\n${ctaBlock(item.caption, item.badge ? 'consejo' : 'bolsa')}\n\nFuente: ${item.source || 'medios financieros'}.\n\nContenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.\n\n${[...new Set([...tags, '#tuamigodelasfinanzas'])].join(' ')}`;
+const caption = `${item.caption}\n\n${ctaBlock(item.caption, item.cta_kind || (item.badge ? 'consejo' : 'bolsa'))}\n\nFuente: ${item.source || 'medios financieros'}.\n\nContenido informativo y educativo. No es asesoramiento financiero ni una recomendación de compra o venta.\n\n${[...new Set([...tags, '#tuamigodelasfinanzas'])].join(' ')}`;
 if (caption.length > 2200) throw new Error('El pie supera 2.200 caracteres');
 fs.writeFileSync(path.join(outDir, 'caption.txt'), caption);
 console.log('Vídeo listo:', path.join(outDir, 'reel.mp4'));

@@ -1,0 +1,141 @@
+name: Reel Cuánto cuesta (luz por horas)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Opcional: fecha AAAA-MM-DD (por defecto, hoy en Madrid)"
+        required: false
+      voz:
+        description: "false = sin voz en off (por defecto, con voz)"
+        required: false
+        default: "true"
+      dry_run:
+        description: "true = no avisar a Make (no se publica)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: reel-cuesta
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar dependencias
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Preparar guion con el precio de la luz de hoy
+        env:
+          ITEM_DATE: ${{ inputs.date }}
+        run: |
+          node tools/build-cuesta.mjs item.raw $ITEM_DATE
+          node prepare-30s.mjs item.raw item.json "$ITEM_DATE"
+
+      - name: Instalar voz (edge-tts)
+        continue-on-error: true
+        run: pip install -q edge-tts fonttools brotli 2>&1 | tail -1
+
+      - name: Generar vídeo
+        env:
+          VOZ: ${{ inputs.voz != 'false' }}
+        run: node render-30s.mjs item.json out
+
+      - name: Enviar prueba a Telegram (solo con dry_run)
+        if: ${{ inputs.dry_run == 'true' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/reel.mp4 | cut -d. -f1)
+          curl -sS --fail -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendVideo" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "video=@out/reel.mp4" -F "supports_streaming=true" -F "caption=PRUEBA (no se ha publicado): reel Cuánto cuesta, ${DUR} s." >/dev/null
+          { printf 'Guion de la voz:\n\n'; cat out/voz.txt 2>/dev/null; printf '\n\nPie del reel:\n\n'; cat out/caption.txt; } > msg.txt
+          curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" -F "chat_id=${TELEGRAM_CHAT_ID}" -F "text=<msg.txt" >/dev/null || true
+
+      - name: Publicar vídeo en GitHub Pages
+        id: publish
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          set -euo pipefail
+          DATE=$(jq -r .date item.json)
+          NAME="cuesta-${DATE}-${GITHUB_RUN_ID}.mp4"
+          git config --global user.name "reel-bot"
+          git config --global user.email "reel-bot@users.noreply.github.com"
+          REMOTE="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$REMOTE" gh-pages >/dev/null 2>&1; then
+            git clone --depth 1 --branch gh-pages "$REMOTE" site
+          else
+            mkdir site && cd site && git init -q -b gh-pages && git remote add origin "$REMOTE" && cd ..
+          fi
+          mkdir -p site/reels
+          cp out/reel.mp4 "site/reels/${NAME}"
+          cp out/caption.txt "site/reels/${NAME%.mp4}.txt" 2>/dev/null || true
+          touch site/.nojekyll
+          # conservar solo los 14 últimos vídeos
+          ls -1t site/reels/*.mp4 | tail -n +31 | xargs -r rm -f
+          for f in site/reels/*.txt; do [ -f "${f%.txt}.mp4" ] || rm -f "$f"; done
+          cd site
+          git add -A
+          git commit -q -m "Reel ${DATE}"
+          for i in 1 2 3 4; do git push origin gh-pages && break; git pull --rebase -q origin gh-pages; done
+          # un push hecho con GITHUB_TOKEN no lanza solo la publicación de Pages: se pide expresamente
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
+          URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reels/${NAME}"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+      - name: Esperar a que la URL esté disponible
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          URL="${{ steps.publish.outputs.url }}"
+          for i in $(seq 1 120); do
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' -I "$URL" || true)
+            echo "intento $i: HTTP $CODE"
+            [ "$CODE" = "200" ] && exit 0
+            sleep 15
+          done
+          echo "La URL no respondió a tiempo (¿está activado GitHub Pages?)"; exit 1
+
+      - name: Avisar a Make
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          jq -n --arg url "${{ steps.publish.outputs.url }}" --rawfile caption out/caption.txt --arg date "$(jq -r .date item.json)" --arg title "Cuánto cuesta" \
+            '{status:"ok", video_url:$url, caption:$caption, date:$date, title:$title}' \
+          | curl -sS --fail -X POST -H 'Content-Type: application/json' --data @- "$MAKE_WEBHOOK_URL"
+
+      - name: Historia de aviso del reel
+        if: ${{ always() && steps.publish.outcome == 'success' && inputs.dry_run != 'true' }}
+        continue-on-error: true
+        env:
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER: "17841438528056370"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KIND: reel
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          ffmpeg -y -loglevel error -i out/reel.mp4 -frames:v 1 cover.jpg
+          export COVER=cover.jpg
+          export LABEL="Cuánto cuesta"
+          bash tools/announce-story.sh
+
+      - name: Avisar a Make si falla
+        if: ${{ failure() && inputs.dry_run != 'true' }}
+        run: |
+          curl -sS -X POST -H 'Content-Type: application/json' \
+            -d '{"status":"error","run_url":"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' "$MAKE_WEBHOOK_URL" || true

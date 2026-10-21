@@ -28,12 +28,16 @@ const PLANTILLAS = [
   '¡Enseguida, @{u}! ⚡ {guia}: {url} ¡Que te sea útil!',
   '@{u} ¡Aquí estoy! 😄 {guia}: {url} Si prefieres otra guía, comenta su palabra clave.',
 ];
+// Palabras parecidas que la gente escribe en lugar de la clave exacta
+const SINONIMOS = { hipoteca: 'vivienda', alquiler: 'vivienda', casa: 'vivienda', piso: 'vivienda', estafa: 'estafas', fraude: 'estafas', tramite: 'tramites', ayudas: 'tramites', ayuda: 'tramites', impuestos: 'renta', irpf: 'renta', hacienda: 'renta', presupuesto: 'ahorro', ahorrar: 'ahorro', invertir: 'bolsa', inversion: 'bolsa', acciones: 'bolsa', comisiones: 'gastos', gasto: 'gastos', luz: 'gastos', factura: 'gastos' };
 const norm = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ\s]/g, ' ').replace(/\s+/g, ' ').trim();
 // Solo cuenta si el comentario es corto (pide la guía), para no contestar a opiniones largas que mencionan "bolsa" o "ahorro".
 export function detect(text) {
   const t = norm(text), words = t.split(' ').filter(Boolean);
   if (!words.length || words.length > 6) return [];
-  return Object.keys(GUIAS).filter(k => words.includes(k));
+  const hit = new Set(Object.keys(GUIAS).filter(k => words.includes(k)));
+  for (const [syn, k] of Object.entries(SINONIMOS)) if (words.includes(syn)) hit.add(k);
+  return [...hit];
 }
 const hash = s => [...String(s)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
 export function reply(username, keys, seed, avoid = -1) {

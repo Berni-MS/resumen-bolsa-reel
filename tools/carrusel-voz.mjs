@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { hablar, tts, vozActiva } from '../voz-lib.mjs';
 import { guionesGemini } from './voz-gemini.mjs';
+import { pickKey } from '../cta.mjs';
 
 const item = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const dir = path.resolve(process.argv[3]);
@@ -68,6 +69,15 @@ const lines = [], durs = [];
 let mythN = 0;
 const slides = item.slides.slice(0, 7);
 const textos = slides.map((sl, i) => { if (sl.t === 'myth') mythN++; return guion(sl, i, item.slides.length, mythN); });
+// Llamada a comentar la palabra clave de la guía del tema (antes de la frase legal final)
+{
+  const key = pickKey(String(item.id || '').split('-')[0], item.id || '').toLowerCase();
+  const cta = `Si quieres la guía gratis, comenta ${key}.`;
+  const L = textos.length - 1, fr = textos[L].split(/(?<=[.!?])\s+/).filter(Boolean);
+  const k = fr.findIndex(s => /asesoramiento/i.test(s));
+  if (k >= 0) fr.splice(k, 0, cta); else fr.push(cta);
+  textos[L] = fr.join(' ');
+}
 const MAXV = 58, durSlide = v => Math.max(4, v + 0.8);
 const total = ds => ds.reduce((a, v) => a + durSlide(v), 0) - 0.5 * (ds.length - 1);
 let rate = 10;

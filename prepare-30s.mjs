@@ -16,6 +16,7 @@ it.scenes = it.scenes.map((s, n) => ({
   kicker: str(s.kicker, 24, `kicker ${n + 1}`),
   text: str(s.text, 130, `text ${n + 1}`),
   ...(s.big && String(s.big).length <= 9 ? { big: String(s.big) } : {}),
+  ...(typeof s.voz === 'string' && s.voz.trim() ? { voz: s.voz.trim() } : {}),
 }));
 if (it.badge) it.badge = str(it.badge, 20, 'badge').toUpperCase();
 it.caption = str(it.caption, 900, 'caption');
