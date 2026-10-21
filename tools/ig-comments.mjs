@@ -49,9 +49,18 @@ export function reply(username, keys, seed, avoid = -1) {
 if (process.argv[1] && process.argv[1].endsWith('ig-comments.mjs')) {
   const call = async (path, params = {}, method = 'GET') => {
     const u = new URL(`${API}/${path}`); const body = new URLSearchParams({ ...params, access_token: token });
-    const r = method === 'GET' ? await fetch(`${u}?${body}`) : await fetch(u, { method, body });
-    const j = await r.json().catch(() => ({})); if (!r.ok || j.error) throw new Error(j.error?.message || `HTTP ${r.status}`); return j;
+    let ult;
+    for (let n = 0; n < 3; n++) {
+      try {
+        const r = method === 'GET' ? await fetch(`${u}?${body}`) : await fetch(u, { method, body });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || j.error) { const e = new Error(j.error?.message || `HTTP ${r.status}`); e.code = j.error?.code; e.http = r.status; e.transient = r.status >= 500 || [1, 2, 4, 17, 32, 341, 613].includes(j.error?.code); throw e; }
+        return j;
+      } catch (e) { ult = e; if (method !== 'GET' || (e.http && !e.transient)) break; await new Promise(res => setTimeout(res, 2500 * (n + 1))); if (!e.http) e.transient = true; }
+    }
+    throw ult;
   };
+  try {
   const me = (await call('me', { fields: 'username,user_id' })).username;
   const media = (await call(`${user}/media`, { fields: 'id,permalink', limit: 20 })).data || [];
   const limite = Date.now() - 72 * 3600 * 1000;
@@ -71,4 +80,14 @@ if (process.argv[1] && process.argv[1].endsWith('ig-comments.mjs')) {
     }
   }
   console.log(`::notice::Revisadas ${media.length} publicaciones; respuestas${DRY ? ' (prueba)' : ''}: ${hechos}`);
+  } catch (e) {
+    const msg = `${e.message}${e.code ? ` (código ${e.code})` : ''}${e.http ? ` [HTTP ${e.http}]` : ''}`;
+    console.log(`::error::Respuestas a comentarios: ${msg}`);
+    // Aviso por Telegram como mucho una vez por hora (el cron corre cada 10 min)
+    if (new Date().getMinutes() < 10 && process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID) {
+      const txt = `⚠️ Respuestas a comentarios: ${e.transient ? 'fallo temporal de Instagram (se reintenta solo)' : 'error que requiere revisar'}\n${msg}${e.code === 190 ? '\nEl token de Instagram ha caducado o no es válido: hay que renovarlo.' : ''}`;
+      try { await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chat_id: process.env.TELEGRAM_CHAT_ID, text: txt }) }); } catch {}
+    }
+    if (!e.transient) process.exit(1);
+  }
 }
