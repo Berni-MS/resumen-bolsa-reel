@@ -61,7 +61,7 @@ if (process.argv[1] && process.argv[1].endsWith('ig-comments.mjs')) {
     throw ult;
   };
   try {
-  const me = (await call('me', { fields: 'username,user_id' })).username;
+  const me = (await call(user, { fields: 'username' })).username;
   const media = (await call(`${user}/media`, { fields: 'id,permalink', limit: 20 })).data || [];
   const limite = Date.now() - 72 * 3600 * 1000;
   let hechos = 0, last = -1;
