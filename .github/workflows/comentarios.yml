@@ -1,7 +1,8 @@
 name: Respuestas a comentarios con palabra clave
 on:
-  schedule:
-    - cron: "*/30 * * * *"
+  # PAUSADO: sin ejecución automática. Para reactivarlo, descomenta las dos líneas siguientes.
+  # schedule:
+  #   - cron: "*/30 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
