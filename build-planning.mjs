@@ -1,4 +1,4 @@
-// Planning semanal en imagen (con el tema de cada publicación). Uso: node build-planning.mjs <salida.png> [lunes AAAA-MM-DD]
+// Planning semanal en imagen (con el tema de cada publicación). Uso: node build-planning.mjs <salida.png> [fecha de inicio AAAA-MM-DD; si no es lunes, 7 días corridos]
 // Por defecto, la semana que empieza el próximo lunes. El horario replica los escenarios de Make: si cambias un horario allí, cámbialo aquí.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -60,7 +60,9 @@ function tema(t, fecha) {
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const cls = { [R]: 'r', [C]: 'c', [H]: 'h' };
 let nR = 0, nC = 0, nH = 0, cols = '';
-SCHED.forEach((items, i) => {
+const OFF = dow(lunes) - 1; // si la fecha de inicio no es lunes, son 7 días corridos desde esa fecha
+[...Array(7)].forEach((_, i) => {
+  const items = SCHED[(i + OFF) % 7];
   const fecha = addDays(lunes, i), dn = Number(fecha.slice(8));
   const rows = items.map(([hora, tipo, nombre, t]) => {
     if (tipo === R) nR++; else if (tipo === C) nC++; else nH++;
@@ -68,7 +70,7 @@ SCHED.forEach((items, i) => {
     const tk = tipo === R || TT(nombre) ? '<span class="tk">(t)</span>' : '';
     return `<div class="it"><div class="t">${hora}</div><span class="b ${cls[tipo]}">${tipo}</span>${tk}<div class="n">${esc(nombre)}</div><div class="tm ${tm.fijo ? 'f' : ''}">${esc(tm.texto)}</div></div>`;
   }).join('');
-  cols += `<div class="col"><h2>${DIAS[i]} ${dn}</h2>${rows}</div>`;
+  cols += `<div class="col"><h2>${DIAS[(i + OFF) % 7]} ${dn}</h2>${rows}</div>`;
 });
 const fin = addDays(lunes, 6);
 const rango = `${Number(lunes.slice(8))} ${MESES[Number(lunes.slice(5, 7)) - 1]} – ${Number(fin.slice(8))} ${MESES[Number(fin.slice(5, 7)) - 1]}`;
